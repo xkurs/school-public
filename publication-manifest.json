@@ -1,0 +1,22 @@
+{
+  "repository": "xkurs/school-public",
+  "home": "topics/physics-7/physics-7.md",
+  "pages": [
+    {
+      "source": "topics/physics-7/physics-7.md",
+      "output": "index.html",
+      "title": "Физика 7"
+    },
+    {
+      "source": "topics/informatics-7/computer-and-safety.md",
+      "output": "topics/informatics-7/computer-and-safety.html",
+      "title": "Информатика 7. Компьютер как универсальное устройство. Техника безопасности"
+    },
+    {
+      "source": "topics/physics-7/physics-as-science-and-natural-phenomena.md",
+      "output": "topics/physics-7/physics-as-science-and-natural-phenomena.html",
+      "title": "Физика 7. Физика — наука о природе. Явления природы"
+    }
+  ],
+  "assets": []
+}
