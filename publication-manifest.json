@@ -8,6 +8,11 @@
       "title": "Физика 7"
     },
     {
+      "source": "schedule/2025-10-21.md",
+      "output": "schedule/2025-10-21.html",
+      "title": "Расписание на 21.10.2025"
+    },
+    {
       "source": "topics/informatics-7/computer-and-safety.md",
       "output": "topics/informatics-7/computer-and-safety.html",
       "title": "Информатика 7. Компьютер как универсальное устройство. Техника безопасности"
