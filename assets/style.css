@@ -52,7 +52,26 @@ main {
   margin: 0;
 }
 
-.site-nav li + li {
+.site-nav .nav-root > li + li {
+  margin-top: 0.8rem;
+}
+
+.site-nav .nav-section > ul {
+  margin-top: 0.45rem;
+  padding-left: 0.8rem;
+  border-left: 2px solid #dce7f2;
+}
+
+.site-nav .nav-subject + .nav-subject {
+  margin-top: 0.55rem;
+}
+
+.site-nav .nav-subject > ul {
+  margin-top: 0.25rem;
+  padding-left: 0.8rem;
+}
+
+.site-nav .nav-subject li + li {
   margin-top: 0.55rem;
 }
 
@@ -60,9 +79,87 @@ main {
   font-weight: 700;
 }
 
+.site-nav .nav-root > li > a,
+.site-nav .nav-subject > a {
+  font-weight: 600;
+}
+
 main {
   min-width: 0;
   padding: clamp(1rem, 3vw, 2.5rem);
+}
+
+.breadcrumbs {
+  margin-bottom: 1.25rem;
+  color: #526176;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumbs li + li::before {
+  content: "›";
+  margin-right: 0.35rem;
+  color: #8794a6;
+}
+
+.lead {
+  max-width: 48rem;
+  color: #3f4f64;
+  font-size: 1.08rem;
+}
+
+.section-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.section-card {
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid #cfdbe8;
+  border-radius: 0.65rem;
+  background: #f8fbff;
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-card:hover {
+  border-color: #78a2c9;
+  background: #f1f7fd;
+}
+
+.section-card h2 {
+  margin-top: 0;
+}
+
+.section-card p {
+  margin-bottom: 0;
+}
+
+.course-list,
+.schedule-list {
+  padding-left: 1.25rem;
+}
+
+.course-list li + li,
+.schedule-list li + li {
+  margin-top: 0.8rem;
+}
+
+.course-list p,
+.schedule-list p {
+  margin: 0.2rem 0 0;
+  color: #526176;
 }
 
 h1,
@@ -124,6 +221,10 @@ details {
 
 @media (max-width: 48rem) {
   .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .section-cards {
     grid-template-columns: 1fr;
   }
 }
