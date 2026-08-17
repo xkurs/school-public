@@ -2,8 +2,9 @@
   "repository": "xkurs/school-public",
   "home": "index.html",
   "sections": [
-    "topics/index.html",
-    "schedule/index.html"
+    "schedule/index.html",
+    "physics/index.html",
+    "informatics/index.html"
   ],
   "pages": [
     {
@@ -12,14 +13,44 @@
       "title": "Расписание на 21.10.2025"
     },
     {
-      "source": "topics/informatics-7/computer-and-safety.md",
-      "output": "topics/informatics-7/computer-and-safety.html",
-      "title": "Информатика 7. Компьютер как универсальное устройство. Техника безопасности"
+      "source": "topics/informatics-10-1h/informatics-10-1h.md",
+      "output": "topics/informatics-10-1h/informatics-10-1h.html",
+      "title": "Информатика 10 — 1 час"
     },
     {
-      "source": "topics/informatics-7/informatics-7.md",
-      "output": "topics/informatics-7/informatics-7.html",
-      "title": "Информатика 7"
+      "source": "topics/informatics-10-4h/informatics-10-4h.md",
+      "output": "topics/informatics-10-4h/informatics-10-4h.html",
+      "title": "Информатика 10 — 4 часа"
+    },
+    {
+      "source": "topics/informatics-11-1h/informatics-11-1h.md",
+      "output": "topics/informatics-11-1h/informatics-11-1h.html",
+      "title": "Информатика 11 — 1 час"
+    },
+    {
+      "source": "topics/informatics-11-4h/informatics-11-4h.md",
+      "output": "topics/informatics-11-4h/informatics-11-4h.html",
+      "title": "Информатика 11 — 4 часа"
+    },
+    {
+      "source": "topics/informatics-practicum-10/informatics-practicum-10.md",
+      "output": "topics/informatics-practicum-10/informatics-practicum-10.html",
+      "title": "Практикум по информатике 10"
+    },
+    {
+      "source": "topics/physics-10/physics-10.md",
+      "output": "topics/physics-10/physics-10.html",
+      "title": "Физика 10"
+    },
+    {
+      "source": "topics/physics-11/physics-11.md",
+      "output": "topics/physics-11/physics-11.html",
+      "title": "Физика 11"
+    },
+    {
+      "source": "topics/physics-11v-1h/physics-11v-1h.md",
+      "output": "topics/physics-11v-1h/physics-11v-1h.html",
+      "title": "Физика 11В — 1 час"
     },
     {
       "source": "topics/physics-7/physics-7.md",
@@ -30,6 +61,16 @@
       "source": "topics/physics-7/physics-as-science-and-natural-phenomena.md",
       "output": "topics/physics-7/physics-as-science-and-natural-phenomena.html",
       "title": "Физика 7. Физика — наука о природе. Явления природы"
+    },
+    {
+      "source": "topics/physics-8/physics-8.md",
+      "output": "topics/physics-8/physics-8.html",
+      "title": "Физика 8"
+    },
+    {
+      "source": "topics/physics-9/physics-9.md",
+      "output": "topics/physics-9/physics-9.html",
+      "title": "Физика 9"
     }
   ],
   "assets": []
