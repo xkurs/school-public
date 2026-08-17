@@ -56,31 +56,11 @@ main {
   margin-top: 0.8rem;
 }
 
-.site-nav .nav-section > ul {
-  margin-top: 0.45rem;
-  padding-left: 0.8rem;
-  border-left: 2px solid #dce7f2;
-}
-
-.site-nav .nav-subject + .nav-subject {
-  margin-top: 0.55rem;
-}
-
-.site-nav .nav-subject > ul {
-  margin-top: 0.25rem;
-  padding-left: 0.8rem;
-}
-
-.site-nav .nav-subject li + li {
-  margin-top: 0.55rem;
-}
-
 .site-nav a[aria-current="page"] {
   font-weight: 700;
 }
 
-.site-nav .nav-root > li > a,
-.site-nav .nav-subject > a {
+.site-nav .nav-root > li > a {
   font-weight: 600;
 }
 
