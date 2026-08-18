@@ -2,15 +2,45 @@
   "repository": "xkurs/school-public",
   "home": "index.html",
   "sections": [
-    "schedule/index.html",
+    "daily/index.html",
     "physics/index.html",
     "informatics/index.html"
   ],
   "pages": [
     {
-      "source": "schedule/2025-10-21.md",
-      "output": "schedule/2025-10-21.html",
+      "source": "daily/2025-10-14.md",
+      "output": "daily/2025-10-14.html",
+      "title": "Расписание на 14.10.2025"
+    },
+    {
+      "source": "daily/2025-10-17.md",
+      "output": "daily/2025-10-17.html",
+      "title": "Расписание на 17.10.2025"
+    },
+    {
+      "source": "daily/2025-10-21.md",
+      "output": "daily/2025-10-21.html",
       "title": "Расписание на 21.10.2025"
+    },
+    {
+      "source": "daily/2026-08-17.md",
+      "output": "daily/2026-08-17.html",
+      "title": "Пробное расписание на 17.08.2026"
+    },
+    {
+      "source": "daily/index.md",
+      "output": "daily/index.html",
+      "title": "Расписания"
+    },
+    {
+      "source": "index.md",
+      "output": "index.html",
+      "title": "Школьные материалы"
+    },
+    {
+      "source": "topics/index.md",
+      "output": "topics/index.html",
+      "title": "Учебные материалы"
     },
     {
       "source": "topics/informatics-10-1h/informatics-10-1h.md",
