@@ -64,6 +64,25 @@ main {
   font-weight: 600;
 }
 
+.site-nav .nav-submenu {
+  margin-top: 0.45rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid #dce2ec;
+}
+
+.site-nav .nav-submenu li + li {
+  margin-top: 0.35rem;
+}
+
+.site-nav .nav-submenu a {
+  font-size: 0.94rem;
+}
+
+.site-nav .nav-section-active > a,
+.site-nav .nav-submenu .is-active > a {
+  font-weight: 700;
+}
+
 main {
   min-width: 0;
   padding: clamp(1rem, 3vw, 2.5rem);
