@@ -13,94 +13,104 @@
       "title": "Школьные материалы"
     },
     {
-      "source": "informatics/10-1h-practicum/index.md",
-      "output": "informatics/10-1h-practicum/index.html",
-      "title": "Практикум по информатике 10"
-    },
-    {
-      "source": "informatics/10-1h/index.md",
-      "output": "informatics/10-1h/index.html",
-      "title": "Информатика 10 — 1 час"
-    },
-    {
-      "source": "informatics/10-4h/index.md",
-      "output": "informatics/10-4h/index.html",
-      "title": "Информатика 10 — 4 часа"
-    },
-    {
-      "source": "informatics/11-1h/index.md",
-      "output": "informatics/11-1h/index.html",
-      "title": "Информатика 11 — 1 час"
-    },
-    {
-      "source": "informatics/11-4h/index.md",
-      "output": "informatics/11-4h/index.html",
-      "title": "Информатика 11 — 4 часа"
-    },
-    {
-      "source": "informatics/index.md",
+      "source": "informatics/informatics.md",
       "output": "informatics/index.html",
       "title": "Информатика"
     },
     {
-      "source": "physics/10-2h/index.md",
-      "output": "physics/10-2h/index.html",
-      "title": "Физика 10"
+      "source": "informatics/informatics-10-1h-practicum/informatics-10-1h-practicum.md",
+      "output": "informatics/informatics-10-1h-practicum/index.html",
+      "title": "Практикум по информатике 10"
     },
     {
-      "source": "physics/11-2h/index.md",
-      "output": "physics/11-2h/index.html",
-      "title": "Физика 11"
+      "source": "informatics/informatics-10-1h/informatics-10-1h.md",
+      "output": "informatics/informatics-10-1h/index.html",
+      "title": "Информатика 10 — 1 час"
     },
     {
-      "source": "physics/11v-1h/index.md",
-      "output": "physics/11v-1h/index.html",
-      "title": "Физика 11В — 1 час"
+      "source": "informatics/informatics-10-4h/informatics-10-4h.md",
+      "output": "informatics/informatics-10-4h/index.html",
+      "title": "Информатика 10 — 4 часа"
     },
     {
-      "source": "physics/7-2h/index.md",
-      "output": "physics/7-2h/index.html",
-      "title": "Физика 7"
+      "source": "informatics/informatics-11-1h/computer-networks-and-internet-addressing.md",
+      "output": "informatics/informatics-11-1h/computer-networks-and-internet-addressing.html",
+      "title": "Информатика 11. Компьютерные сети и адресация в Интернете"
     },
     {
-      "source": "physics/7-2h/physics-as-science-and-natural-phenomena.md",
-      "output": "physics/7-2h/physics-as-science-and-natural-phenomena.html",
-      "title": "Физика 7. Физика — наука о природе. Явления природы"
+      "source": "informatics/informatics-11-1h/informatics-11-1h.md",
+      "output": "informatics/informatics-11-1h/index.html",
+      "title": "Информатика 11 — 1 час"
     },
     {
-      "source": "physics/8-2h/index.md",
-      "output": "physics/8-2h/index.html",
-      "title": "Физика 8"
+      "source": "informatics/informatics-11-4h/informatics-11-4h.md",
+      "output": "informatics/informatics-11-4h/index.html",
+      "title": "Информатика 11 — 4 часа"
     },
     {
-      "source": "physics/9-3h/index.md",
-      "output": "physics/9-3h/index.html",
-      "title": "Физика 9"
-    },
-    {
-      "source": "physics/index.md",
+      "source": "physics/physics.md",
       "output": "physics/index.html",
       "title": "Физика"
     },
     {
-      "source": "schedules/daily/2025-10-14.md",
-      "output": "schedules/daily/2025-10-14.html",
-      "title": "Расписание на 14.10.2025"
+      "source": "physics/physics-10-2h/physics-10-2h.md",
+      "output": "physics/physics-10-2h/index.html",
+      "title": "Физика 10"
     },
     {
-      "source": "schedules/daily/2025-10-17.md",
-      "output": "schedules/daily/2025-10-17.html",
-      "title": "Расписание на 17.10.2025"
+      "source": "physics/physics-10-5h/physics-10-5h.md",
+      "output": "physics/physics-10-5h/index.html",
+      "title": "Физика 10 — 5 часов"
     },
     {
-      "source": "schedules/daily/2025-10-21.md",
-      "output": "schedules/daily/2025-10-21.html",
-      "title": "Расписание на 21.10.2025"
+      "source": "physics/physics-11-1h/physics-11-1h.md",
+      "output": "physics/physics-11-1h/index.html",
+      "title": "Физика 11В — 1 час"
     },
     {
-      "source": "schedules/daily/2026-08-17.md",
-      "output": "schedules/daily/2026-08-17.html",
-      "title": "Пробное расписание на 17.08.2026"
+      "source": "physics/physics-11-2h/physics-11-2h.md",
+      "output": "physics/physics-11-2h/index.html",
+      "title": "Физика 11"
+    },
+    {
+      "source": "physics/physics-11-5h/physics-11-5h.md",
+      "output": "physics/physics-11-5h/index.html",
+      "title": "Физика 11 — 5 часов"
+    },
+    {
+      "source": "physics/physics-7-2h/physics-7-2h.md",
+      "output": "physics/physics-7-2h/index.html",
+      "title": "Физика 7"
+    },
+    {
+      "source": "physics/physics-7-2h/physics-as-science-and-natural-phenomena.md",
+      "output": "physics/physics-7-2h/physics-as-science-and-natural-phenomena.html",
+      "title": "Физика 7. Физика — наука о природе. Явления природы"
+    },
+    {
+      "source": "physics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.md",
+      "output": "physics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.html",
+      "title": "Физика 8. Основные положения молекулярно-кинетической теории"
+    },
+    {
+      "source": "physics/physics-8-2h/physics-8-2h.md",
+      "output": "physics/physics-8-2h/index.html",
+      "title": "Физика 8"
+    },
+    {
+      "source": "physics/physics-9-3h/physics-9-3h.md",
+      "output": "physics/physics-9-3h/index.html",
+      "title": "Физика 9"
+    },
+    {
+      "source": "physics/physics-9-3h/mechanical-motion-and-material-point.md",
+      "output": "physics/physics-9-3h/mechanical-motion-and-material-point.html",
+      "title": "Физика 9. Механическое движение. Материальная точка"
+    },
+    {
+      "source": "schedules/daily/2026-09-02.md",
+      "output": "schedules/daily/2026-09-02.html",
+      "title": "Расписание на 02.09.2026"
     },
     {
       "source": "schedules/daily/index.md",
