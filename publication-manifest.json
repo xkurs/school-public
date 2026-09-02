@@ -3,8 +3,7 @@
   "home": "index.html",
   "sections": [
     "schedules/index.html",
-    "informatics/index.html",
-    "physics/index.html"
+    "topics/index.html"
   ],
   "pages": [
     {
@@ -13,104 +12,14 @@
       "title": "Школьные материалы"
     },
     {
-      "source": "informatics/informatics.md",
-      "output": "informatics/index.html",
-      "title": "Информатика"
-    },
-    {
-      "source": "informatics/informatics-10-1h-practicum/informatics-10-1h-practicum.md",
-      "output": "informatics/informatics-10-1h-practicum/index.html",
-      "title": "Практикум по информатике 10"
-    },
-    {
-      "source": "informatics/informatics-10-1h/informatics-10-1h.md",
-      "output": "informatics/informatics-10-1h/index.html",
-      "title": "Информатика 10 — 1 час"
-    },
-    {
-      "source": "informatics/informatics-10-4h/informatics-10-4h.md",
-      "output": "informatics/informatics-10-4h/index.html",
-      "title": "Информатика 10 — 4 часа"
-    },
-    {
-      "source": "informatics/informatics-11-1h/computer-networks-and-internet-addressing.md",
-      "output": "informatics/informatics-11-1h/computer-networks-and-internet-addressing.html",
-      "title": "Информатика 11. Компьютерные сети и адресация в Интернете"
-    },
-    {
-      "source": "informatics/informatics-11-1h/informatics-11-1h.md",
-      "output": "informatics/informatics-11-1h/index.html",
-      "title": "Информатика 11 — 1 час"
-    },
-    {
-      "source": "informatics/informatics-11-4h/informatics-11-4h.md",
-      "output": "informatics/informatics-11-4h/index.html",
-      "title": "Информатика 11 — 4 часа"
-    },
-    {
-      "source": "physics/physics.md",
-      "output": "physics/index.html",
-      "title": "Физика"
-    },
-    {
-      "source": "physics/physics-10-2h/physics-10-2h.md",
-      "output": "physics/physics-10-2h/index.html",
-      "title": "Физика 10"
-    },
-    {
-      "source": "physics/physics-10-5h/physics-10-5h.md",
-      "output": "physics/physics-10-5h/index.html",
-      "title": "Физика 10 — 5 часов"
-    },
-    {
-      "source": "physics/physics-11-1h/physics-11-1h.md",
-      "output": "physics/physics-11-1h/index.html",
-      "title": "Физика 11В — 1 час"
-    },
-    {
-      "source": "physics/physics-11-2h/physics-11-2h.md",
-      "output": "physics/physics-11-2h/index.html",
-      "title": "Физика 11"
-    },
-    {
-      "source": "physics/physics-11-5h/physics-11-5h.md",
-      "output": "physics/physics-11-5h/index.html",
-      "title": "Физика 11 — 5 часов"
-    },
-    {
-      "source": "physics/physics-7-2h/physics-7-2h.md",
-      "output": "physics/physics-7-2h/index.html",
-      "title": "Физика 7"
-    },
-    {
-      "source": "physics/physics-7-2h/physics-as-science-and-natural-phenomena.md",
-      "output": "physics/physics-7-2h/physics-as-science-and-natural-phenomena.html",
-      "title": "Физика 7. Физика — наука о природе. Явления природы"
-    },
-    {
-      "source": "physics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.md",
-      "output": "physics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.html",
-      "title": "Физика 8. Основные положения молекулярно-кинетической теории"
-    },
-    {
-      "source": "physics/physics-8-2h/physics-8-2h.md",
-      "output": "physics/physics-8-2h/index.html",
-      "title": "Физика 8"
-    },
-    {
-      "source": "physics/physics-9-3h/physics-9-3h.md",
-      "output": "physics/physics-9-3h/index.html",
-      "title": "Физика 9"
-    },
-    {
-      "source": "physics/physics-9-3h/mechanical-motion-and-material-point.md",
-      "output": "physics/physics-9-3h/mechanical-motion-and-material-point.html",
-      "title": "Физика 9. Механическое движение. Материальная точка"
-    },
-    {
       "source": "schedules/daily/2026-09-02.md",
       "output": "schedules/daily/2026-09-02.html",
       "title": "Расписание на 02.09.2026"
+    },
+    {
+      "source": "schedules/daily/2026-09-03.md",
+      "output": "schedules/daily/2026-09-03.html",
+      "title": "Расписание на 03.09.2026"
     },
     {
       "source": "schedules/daily/index.md",
@@ -121,6 +30,96 @@
       "source": "schedules/index.md",
       "output": "schedules/index.html",
       "title": "Расписания"
+    },
+    {
+      "source": "topics/README.md",
+      "output": "topics/index.html",
+      "title": "Учебные материалы"
+    },
+    {
+      "source": "topics/informatics-10-1h-practicum/README.md",
+      "output": "topics/informatics-10-1h-practicum/index.html",
+      "title": "Практикум по информатике 10"
+    },
+    {
+      "source": "topics/informatics-10-1h/README.md",
+      "output": "topics/informatics-10-1h/index.html",
+      "title": "Информатика 10 — 1 час"
+    },
+    {
+      "source": "topics/informatics-10-4h/README.md",
+      "output": "topics/informatics-10-4h/index.html",
+      "title": "Информатика 10 — 4 часа"
+    },
+    {
+      "source": "topics/informatics-11-1h/computer-networks-and-internet-addressing.md",
+      "output": "topics/informatics-11-1h/computer-networks-and-internet-addressing.html",
+      "title": "Информатика 11. Компьютерные сети и адресация в Интернете"
+    },
+    {
+      "source": "topics/informatics-11-1h/README.md",
+      "output": "topics/informatics-11-1h/index.html",
+      "title": "Информатика 11 — 1 час"
+    },
+    {
+      "source": "topics/informatics-11-4h/README.md",
+      "output": "topics/informatics-11-4h/index.html",
+      "title": "Информатика 11 — 4 часа"
+    },
+    {
+      "source": "topics/physics-10-2h/README.md",
+      "output": "topics/physics-10-2h/index.html",
+      "title": "Физика 10"
+    },
+    {
+      "source": "topics/physics-10-5h/README.md",
+      "output": "topics/physics-10-5h/index.html",
+      "title": "Физика 10 — 5 часов"
+    },
+    {
+      "source": "topics/physics-11-1h/README.md",
+      "output": "topics/physics-11-1h/index.html",
+      "title": "Физика 11В — 1 час"
+    },
+    {
+      "source": "topics/physics-11-2h/README.md",
+      "output": "topics/physics-11-2h/index.html",
+      "title": "Физика 11"
+    },
+    {
+      "source": "topics/physics-11-5h/README.md",
+      "output": "topics/physics-11-5h/index.html",
+      "title": "Физика 11 — 5 часов"
+    },
+    {
+      "source": "topics/physics-7-2h/README.md",
+      "output": "topics/physics-7-2h/index.html",
+      "title": "Физика 7"
+    },
+    {
+      "source": "topics/physics-7-2h/physics-as-science-and-natural-phenomena.md",
+      "output": "topics/physics-7-2h/physics-as-science-and-natural-phenomena.html",
+      "title": "Физика 7. Физика — наука о природе. Явления природы"
+    },
+    {
+      "source": "topics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.md",
+      "output": "topics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.html",
+      "title": "Физика 8. Основные положения молекулярно-кинетической теории"
+    },
+    {
+      "source": "topics/physics-8-2h/README.md",
+      "output": "topics/physics-8-2h/index.html",
+      "title": "Физика 8"
+    },
+    {
+      "source": "topics/physics-9-3h/README.md",
+      "output": "topics/physics-9-3h/index.html",
+      "title": "Физика 9"
+    },
+    {
+      "source": "topics/physics-9-3h/mechanical-motion-and-material-point.md",
+      "output": "topics/physics-9-3h/mechanical-motion-and-material-point.html",
+      "title": "Физика 9. Механическое движение. Материальная точка"
     }
   ],
   "assets": []
