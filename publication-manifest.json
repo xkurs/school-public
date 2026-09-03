@@ -22,6 +22,11 @@
       "title": "Расписание на 03.09.2026"
     },
     {
+      "source": "schedules/daily/2026-09-04.md",
+      "output": "schedules/daily/2026-09-04.html",
+      "title": "Расписание на 04.09.2026"
+    },
+    {
       "source": "schedules/daily/index.md",
       "output": "schedules/daily/index.html",
       "title": "Ежедневное расписание"
@@ -40,6 +45,11 @@
       "source": "topics/informatics-10-1h-practicum/README.md",
       "output": "topics/informatics-10-1h-practicum/index.html",
       "title": "Практикум по информатике 10"
+    },
+    {
+      "source": "topics/informatics-10-1h/computer-technology-development-trends.md",
+      "output": "topics/informatics-10-1h/computer-technology-development-trends.html",
+      "title": "Информатика 10. Тенденции развития компьютерных технологий"
     },
     {
       "source": "topics/informatics-10-1h/README.md",
