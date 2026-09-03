@@ -72,6 +72,11 @@
       "title": "Физика 10"
     },
     {
+      "source": "topics/physics-10-2h/mechanical-motion-relativity-displacement-velocity-and-acceleration.md",
+      "output": "topics/physics-10-2h/mechanical-motion-relativity-displacement-velocity-and-acceleration.html",
+      "title": "Механическое движение. Относительность движения. Перемещение, скорость, ускорение"
+    },
+    {
       "source": "topics/physics-10-5h/README.md",
       "output": "topics/physics-10-5h/index.html",
       "title": "Физика 10 — 5 часов"
@@ -85,6 +90,11 @@
       "source": "topics/physics-11-2h/README.md",
       "output": "topics/physics-11-2h/index.html",
       "title": "Физика 11"
+    },
+    {
+      "source": "topics/physics-11-2h/permanent-magnets-and-magnetic-field.md",
+      "output": "topics/physics-11-2h/permanent-magnets-and-magnetic-field.html",
+      "title": "Постоянные магниты. Магнитное поле. Вектор магнитной индукции"
     },
     {
       "source": "topics/physics-11-5h/README.md",
@@ -112,6 +122,11 @@
       "title": "Физика 8"
     },
     {
+      "source": "topics/physics-8-2h/internal-energy-and-ways-of-changing-it.md",
+      "output": "topics/physics-8-2h/internal-energy-and-ways-of-changing-it.html",
+      "title": "Физика 8. Внутренняя энергия и способы её изменения"
+    },
+    {
       "source": "topics/physics-9-3h/README.md",
       "output": "topics/physics-9-3h/index.html",
       "title": "Физика 9"
@@ -120,6 +135,11 @@
       "source": "topics/physics-9-3h/mechanical-motion-and-material-point.md",
       "output": "topics/physics-9-3h/mechanical-motion-and-material-point.html",
       "title": "Физика 9. Механическое движение. Материальная точка"
+    },
+    {
+      "source": "topics/physics-9-3h/nonuniform-linear-motion-average-and-instantaneous-speed.md",
+      "output": "topics/physics-9-3h/nonuniform-linear-motion-average-and-instantaneous-speed.html",
+      "title": "Физика 9. Неравномерное прямолинейное движение"
     }
   ],
   "assets": []
