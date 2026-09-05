@@ -211,6 +211,12 @@ details {
   border-radius: 0.5rem;
 }
 
+div.arithmatex {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 0.25rem;
+}
+
 .site-footer {
   width: min(72rem, calc(100% - 2rem));
   margin: 0 auto 1.5rem;
