@@ -27,6 +27,11 @@
       "title": "Расписание на 04.09.2026"
     },
     {
+      "source": "schedules/daily/2026-09-07.md",
+      "output": "schedules/daily/2026-09-07.html",
+      "title": "Расписание на 07.09.2026"
+    },
+    {
       "source": "schedules/daily/index.md",
       "output": "schedules/daily/index.html",
       "title": "Ежедневное расписание"
@@ -117,6 +122,11 @@
       "title": "Физика 7"
     },
     {
+      "source": "topics/physics-7-2h/physical-quantities-and-measurement.md",
+      "output": "topics/physics-7-2h/physical-quantities-and-measurement.html",
+      "title": "Физика 7. Физические величины и их измерение"
+    },
+    {
       "source": "topics/physics-7-2h/physics-as-science-and-natural-phenomena.md",
       "output": "topics/physics-7-2h/physics-as-science-and-natural-phenomena.html",
       "title": "Физика 7. Физика — наука о природе. Явления природы"
@@ -137,6 +147,11 @@
       "title": "Физика 8. Внутренняя энергия и способы её изменения"
     },
     {
+      "source": "topics/physics-8-2h/mass-and-size-of-atoms-and-molecules.md",
+      "output": "topics/physics-8-2h/mass-and-size-of-atoms-and-molecules.html",
+      "title": "Физика 8. Масса и размеры атомов и молекул"
+    },
+    {
       "source": "topics/physics-9-3h/README.md",
       "output": "topics/physics-9-3h/index.html",
       "title": "Физика 9"
@@ -150,6 +165,11 @@
       "source": "topics/physics-9-3h/nonuniform-linear-motion-average-and-instantaneous-speed.md",
       "output": "topics/physics-9-3h/nonuniform-linear-motion-average-and-instantaneous-speed.html",
       "title": "Физика 9. Неравномерное прямолинейное движение"
+    },
+    {
+      "source": "topics/physics-9-3h/uniform-rectilinear-motion.md",
+      "output": "topics/physics-9-3h/uniform-rectilinear-motion.html",
+      "title": "Физика 9. Равномерное прямолинейное движение"
     }
   ],
   "assets": []
