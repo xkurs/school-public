@@ -32,6 +32,11 @@
       "title": "Расписание на 07.09.2026"
     },
     {
+      "source": "schedules/daily/2026-09-08.md",
+      "output": "schedules/daily/2026-09-08.html",
+      "title": "Расписание на 08.09.2026"
+    },
+    {
       "source": "schedules/daily/index.md",
       "output": "schedules/daily/index.html",
       "title": "Ежедневное расписание"
@@ -92,6 +97,11 @@
       "title": "Механическое движение. Относительность движения. Перемещение, скорость, ускорение"
     },
     {
+      "source": "topics/physics-10-2h/uniform-rectilinear-motion.md",
+      "output": "topics/physics-10-2h/uniform-rectilinear-motion.html",
+      "title": "Физика 10. Равномерное прямолинейное движение"
+    },
+    {
       "source": "topics/physics-10-5h/README.md",
       "output": "topics/physics-10-5h/index.html",
       "title": "Физика 10 — 5 часов"
@@ -132,6 +142,11 @@
       "title": "Физика 7. Физика — наука о природе. Явления природы"
     },
     {
+      "source": "topics/physics-7-2h/temperature-measurement-with-thermometer-and-sensor.md",
+      "output": "topics/physics-7-2h/temperature-measurement-with-thermometer-and-sensor.html",
+      "title": "Физика 7. Измерение температуры термометром и датчиком"
+    },
+    {
       "source": "topics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.md",
       "output": "topics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.html",
       "title": "Физика 8. Основные положения молекулярно-кинетической теории"
@@ -170,6 +185,11 @@
       "source": "topics/physics-9-3h/uniform-rectilinear-motion.md",
       "output": "topics/physics-9-3h/uniform-rectilinear-motion.html",
       "title": "Физика 9. Равномерное прямолинейное движение"
+    },
+    {
+      "source": "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.md",
+      "output": "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html",
+      "title": "Физика 9. Прямолинейное равноускоренное движение. Ускорение"
     }
   ],
   "assets": []
