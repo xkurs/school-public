@@ -37,14 +37,54 @@
       "title": "Расписание на 08.09.2026"
     },
     {
-      "source": "schedules/daily/index.md",
+      "source": "schedules/daily/2026-09-09.md",
+      "output": "schedules/daily/2026-09-09.html",
+      "title": "Расписание на 09.09.2026"
+    },
+    {
+      "source": "schedules/daily/README.md",
       "output": "schedules/daily/index.html",
       "title": "Ежедневное расписание"
     },
     {
-      "source": "schedules/index.md",
+      "source": "schedules/README.md",
       "output": "schedules/index.html",
       "title": "Расписания"
+    },
+    {
+      "source": "schedules/personal/2026-09-02.md",
+      "output": "schedules/personal/2026-09-02.html",
+      "title": "Личное расписание на 02.09.2026"
+    },
+    {
+      "source": "schedules/personal/2026-09-03.md",
+      "output": "schedules/personal/2026-09-03.html",
+      "title": "Личное расписание на 03.09.2026"
+    },
+    {
+      "source": "schedules/personal/2026-09-04.md",
+      "output": "schedules/personal/2026-09-04.html",
+      "title": "Личное расписание на 04.09.2026"
+    },
+    {
+      "source": "schedules/personal/2026-09-07.md",
+      "output": "schedules/personal/2026-09-07.html",
+      "title": "Личное расписание на 07.09.2026"
+    },
+    {
+      "source": "schedules/personal/2026-09-08.md",
+      "output": "schedules/personal/2026-09-08.html",
+      "title": "Личное расписание на 08.09.2026"
+    },
+    {
+      "source": "schedules/personal/2026-09-09.md",
+      "output": "schedules/personal/2026-09-09.html",
+      "title": "Личное расписание на 09.09.2026"
+    },
+    {
+      "source": "schedules/personal/README.md",
+      "output": "schedules/personal/index.html",
+      "title": "Личное расписание"
     },
     {
       "source": "topics/README.md",
@@ -82,9 +122,19 @@
       "title": "Информатика 11 — 1 час"
     },
     {
+      "source": "topics/informatics-11-1h/website-webpage-and-web-applications.md",
+      "output": "topics/informatics-11-1h/website-webpage-and-web-applications.html",
+      "title": "Информатика 11. Веб-сайт, веб-страница и интернет-приложения"
+    },
+    {
       "source": "topics/informatics-11-4h/README.md",
       "output": "topics/informatics-11-4h/index.html",
       "title": "Информатика 11 — 4 часа"
+    },
+    {
+      "source": "topics/informatics-11-4h/quantity-of-information.md",
+      "output": "topics/informatics-11-4h/quantity-of-information.html",
+      "title": "Информатика 11. Количество информации"
     },
     {
       "source": "topics/physics-10-2h/README.md",
