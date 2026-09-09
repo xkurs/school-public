@@ -7,7 +7,7 @@
   ],
   "pages": [
     {
-      "source": "index.md",
+      "source": "README.md",
       "output": "index.html",
       "title": "Школьные материалы"
     },
