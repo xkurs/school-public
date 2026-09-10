@@ -42,6 +42,11 @@
       "title": "Расписание на 09.09.2026"
     },
     {
+      "source": "schedules/daily/2026-09-11.md",
+      "output": "schedules/daily/2026-09-11.html",
+      "title": "Расписание на 11.09.2026"
+    },
+    {
       "source": "schedules/daily/README.md",
       "output": "schedules/daily/index.html",
       "title": "Ежедневное расписание"
@@ -82,6 +87,11 @@
       "title": "Личное расписание на 09.09.2026"
     },
     {
+      "source": "schedules/personal/2026-09-11.md",
+      "output": "schedules/personal/2026-09-11.html",
+      "title": "Личное расписание на 11.09.2026"
+    },
+    {
       "source": "schedules/personal/README.md",
       "output": "schedules/personal/index.html",
       "title": "Личное расписание"
@@ -95,6 +105,11 @@
       "source": "topics/informatics-10-1h-practicum/README.md",
       "output": "topics/informatics-10-1h-practicum/index.html",
       "title": "Практикум по информатике 10"
+    },
+    {
+      "source": "topics/informatics-10-1h/computer-safety-and-principles-of-operation.md",
+      "output": "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html",
+      "title": "Информатика 10. Техника безопасности и гигиена при работе с компьютерами. Принципы работы компьютера"
     },
     {
       "source": "topics/informatics-10-1h/computer-technology-development-trends.md",
@@ -152,6 +167,11 @@
       "title": "Физика 10. Равномерное прямолинейное движение"
     },
     {
+      "source": "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.md",
+      "output": "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.html",
+      "title": "Физика 10. Равноускоренное прямолинейное движение"
+    },
+    {
       "source": "topics/physics-10-5h/README.md",
       "output": "topics/physics-10-5h/index.html",
       "title": "Физика 10 — 5 часов"
@@ -165,6 +185,11 @@
       "source": "topics/physics-11-2h/README.md",
       "output": "topics/physics-11-2h/index.html",
       "title": "Физика 11"
+    },
+    {
+      "source": "topics/physics-11-2h/magnetic-field-of-current-carrying-conductor-and-ersted-experiment.md",
+      "output": "topics/physics-11-2h/magnetic-field-of-current-carrying-conductor-and-ersted-experiment.html",
+      "title": "Физика 11. Магнитное поле проводника с током. Опыт Эрстеда. Взаимодействие проводников с током"
     },
     {
       "source": "topics/physics-11-2h/permanent-magnets-and-magnetic-field.md",
@@ -217,6 +242,11 @@
       "title": "Физика 8. Масса и размеры атомов и молекул"
     },
     {
+      "source": "topics/physics-8-2h/properties-of-states-of-matter-from-molecular-kinetic-theory.md",
+      "output": "topics/physics-8-2h/properties-of-states-of-matter-from-molecular-kinetic-theory.html",
+      "title": "Физика 8. Объяснение свойств твёрдого, жидкого и газообразного состояний вещества на основе МКТ"
+    },
+    {
       "source": "topics/physics-9-3h/README.md",
       "output": "topics/physics-9-3h/index.html",
       "title": "Физика 9"
@@ -232,6 +262,11 @@
       "title": "Физика 9. Неравномерное прямолинейное движение"
     },
     {
+      "source": "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.md",
+      "output": "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.html",
+      "title": "Физика 9. Скорость прямолинейного равноускоренного движения. График скорости"
+    },
+    {
       "source": "topics/physics-9-3h/uniform-rectilinear-motion.md",
       "output": "topics/physics-9-3h/uniform-rectilinear-motion.html",
       "title": "Физика 9. Равномерное прямолинейное движение"
@@ -242,5 +277,8 @@
       "title": "Физика 9. Прямолинейное равноускоренное движение. Ускорение"
     }
   ],
-  "assets": []
+  "assets": [
+    "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.svg",
+    "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
+  ]
 }

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">График скорости при равноускоренном движении</title>
+  <desc id="desc">График v равно 2 плюс 3t: возрастающая прямая через точки 0,2; 1,5; 2,8; 3,11.</desc>
+  <rect width="720" height="420" fill="white"/>
+  <g stroke="#d9e2ec" stroke-width="1">
+    <path d="M100 60H640 M100 120H640 M100 180H640 M100 240H640 M100 300H640 M100 360H640"/>
+    <path d="M100 60V360 M235 60V360 M370 60V360 M505 60V360 M640 60V360"/>
+  </g>
+  <g stroke="#1f2937" stroke-width="2.5" fill="none">
+    <path d="M100 360H655 M100 360V45"/>
+    <path d="M655 360l-12-7m12 7l-12 7 M100 45l-7 12m7-12l7 12"/>
+  </g>
+  <path d="M100 336 L505 66" stroke="#2563eb" stroke-width="4" fill="none"/>
+  <g fill="#dc2626" stroke="white" stroke-width="2">
+    <circle cx="100" cy="336" r="7"/>
+    <circle cx="235" cy="246" r="7"/>
+    <circle cx="370" cy="156" r="7"/>
+    <circle cx="505" cy="66" r="7"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18" fill="#1f2937">
+    <text x="655" y="385">t, с</text>
+    <text x="58" y="48">v, м/с</text>
+    <text x="94" y="385">0</text>
+    <text x="229" y="385">1</text>
+    <text x="364" y="385">2</text>
+    <text x="499" y="385">3</text>
+    <text x="72" y="342">2</text>
+    <text x="72" y="252">5</text>
+    <text x="64" y="162">8</text>
+    <text x="55" y="72">11</text>
+    <text x="390" y="105" fill="#2563eb">v = 2 + 3t</text>
+  </g>
+</svg>
