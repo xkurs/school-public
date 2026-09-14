@@ -12,21 +12,6 @@
       "title": "Школьные материалы"
     },
     {
-      "source": "schedules/daily/2026-09-02.md",
-      "output": "schedules/daily/2026-09-02.html",
-      "title": "Расписание на 02.09.2026"
-    },
-    {
-      "source": "schedules/daily/2026-09-03.md",
-      "output": "schedules/daily/2026-09-03.html",
-      "title": "Расписание на 03.09.2026"
-    },
-    {
-      "source": "schedules/daily/2026-09-04.md",
-      "output": "schedules/daily/2026-09-04.html",
-      "title": "Расписание на 04.09.2026"
-    },
-    {
       "source": "schedules/daily/2026-09-07.md",
       "output": "schedules/daily/2026-09-07.html",
       "title": "Расписание на 07.09.2026"
@@ -47,6 +32,11 @@
       "title": "Расписание на 11.09.2026"
     },
     {
+      "source": "schedules/daily/2026-09-15.md",
+      "output": "schedules/daily/2026-09-15.html",
+      "title": "Расписание на 15.09.2026"
+    },
+    {
       "source": "schedules/daily/README.md",
       "output": "schedules/daily/index.html",
       "title": "Ежедневное расписание"
@@ -55,21 +45,6 @@
       "source": "schedules/README.md",
       "output": "schedules/index.html",
       "title": "Расписания"
-    },
-    {
-      "source": "schedules/personal/2026-09-02.md",
-      "output": "schedules/personal/2026-09-02.html",
-      "title": "Личное расписание на 02.09.2026"
-    },
-    {
-      "source": "schedules/personal/2026-09-03.md",
-      "output": "schedules/personal/2026-09-03.html",
-      "title": "Личное расписание на 03.09.2026"
-    },
-    {
-      "source": "schedules/personal/2026-09-04.md",
-      "output": "schedules/personal/2026-09-04.html",
-      "title": "Личное расписание на 04.09.2026"
     },
     {
       "source": "schedules/personal/2026-09-07.md",
@@ -90,6 +65,11 @@
       "source": "schedules/personal/2026-09-11.md",
       "output": "schedules/personal/2026-09-11.html",
       "title": "Личное расписание на 11.09.2026"
+    },
+    {
+      "source": "schedules/personal/2026-09-15.md",
+      "output": "schedules/personal/2026-09-15.html",
+      "title": "Личное расписание на 15.09.2026"
     },
     {
       "source": "schedules/personal/README.md",
@@ -207,6 +187,11 @@
       "title": "Физика 7"
     },
     {
+      "source": "topics/physics-7-2h/natural-science-method-and-models.md",
+      "output": "topics/physics-7-2h/natural-science-method-and-models.html",
+      "title": "Физика 7. Как физика и другие естественные науки изучают природу"
+    },
+    {
       "source": "topics/physics-7-2h/physical-quantities-and-measurement.md",
       "output": "topics/physics-7-2h/physical-quantities-and-measurement.html",
       "title": "Физика 7. Физические величины и их измерение"
@@ -225,6 +210,11 @@
       "source": "topics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.md",
       "output": "topics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.html",
       "title": "Физика 8. Основные положения молекулярно-кинетической теории"
+    },
+    {
+      "source": "topics/physics-8-2h/crystalline-and-amorphous-bodies.md",
+      "output": "topics/physics-8-2h/crystalline-and-amorphous-bodies.html",
+      "title": "Физика 8. Кристаллические и аморфные тела"
     },
     {
       "source": "topics/physics-8-2h/README.md",
