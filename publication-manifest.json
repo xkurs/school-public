@@ -37,6 +37,11 @@
       "title": "Расписание на 15.09.2026"
     },
     {
+      "source": "schedules/daily/2026-09-16.md",
+      "output": "schedules/daily/2026-09-16.html",
+      "title": "Расписание на 16.09.2026"
+    },
+    {
       "source": "schedules/daily/README.md",
       "output": "schedules/daily/index.html",
       "title": "Ежедневное расписание"
@@ -70,6 +75,11 @@
       "source": "schedules/personal/2026-09-15.md",
       "output": "schedules/personal/2026-09-15.html",
       "title": "Личное расписание на 15.09.2026"
+    },
+    {
+      "source": "schedules/personal/2026-09-16.md",
+      "output": "schedules/personal/2026-09-16.html",
+      "title": "Личное расписание на 16.09.2026"
     },
     {
       "source": "schedules/personal/README.md",
@@ -115,6 +125,11 @@
       "source": "topics/informatics-11-1h/README.md",
       "output": "topics/informatics-11-1h/index.html",
       "title": "Информатика 11 — 1 час"
+    },
+    {
+      "source": "topics/informatics-11-1h/internet-activities-and-services.md",
+      "output": "topics/informatics-11-1h/internet-activities-and-services.html",
+      "title": "Виды деятельности в сети Интернет. Сервисы Интернета"
     },
     {
       "source": "topics/informatics-11-1h/website-webpage-and-web-applications.md",
