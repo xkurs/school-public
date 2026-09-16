@@ -12,21 +12,6 @@
       "title": "Школьные материалы"
     },
     {
-      "source": "schedules/daily/2026-09-07.md",
-      "output": "schedules/daily/2026-09-07.html",
-      "title": "Расписание на 07.09.2026"
-    },
-    {
-      "source": "schedules/daily/2026-09-08.md",
-      "output": "schedules/daily/2026-09-08.html",
-      "title": "Расписание на 08.09.2026"
-    },
-    {
-      "source": "schedules/daily/2026-09-09.md",
-      "output": "schedules/daily/2026-09-09.html",
-      "title": "Расписание на 09.09.2026"
-    },
-    {
       "source": "schedules/daily/2026-09-11.md",
       "output": "schedules/daily/2026-09-11.html",
       "title": "Расписание на 11.09.2026"
@@ -42,6 +27,11 @@
       "title": "Расписание на 16.09.2026"
     },
     {
+      "source": "schedules/daily/2026-09-17.md",
+      "output": "schedules/daily/2026-09-17.html",
+      "title": "Расписание на 17.09.2026"
+    },
+    {
       "source": "schedules/daily/README.md",
       "output": "schedules/daily/index.html",
       "title": "Ежедневное расписание"
@@ -50,21 +40,6 @@
       "source": "schedules/README.md",
       "output": "schedules/index.html",
       "title": "Расписания"
-    },
-    {
-      "source": "schedules/personal/2026-09-07.md",
-      "output": "schedules/personal/2026-09-07.html",
-      "title": "Личное расписание на 07.09.2026"
-    },
-    {
-      "source": "schedules/personal/2026-09-08.md",
-      "output": "schedules/personal/2026-09-08.html",
-      "title": "Личное расписание на 08.09.2026"
-    },
-    {
-      "source": "schedules/personal/2026-09-09.md",
-      "output": "schedules/personal/2026-09-09.html",
-      "title": "Личное расписание на 09.09.2026"
     },
     {
       "source": "schedules/personal/2026-09-11.md",
@@ -80,6 +55,11 @@
       "source": "schedules/personal/2026-09-16.md",
       "output": "schedules/personal/2026-09-16.html",
       "title": "Личное расписание на 16.09.2026"
+    },
+    {
+      "source": "schedules/personal/2026-09-17.md",
+      "output": "schedules/personal/2026-09-17.html",
+      "title": "Личное расписание на 17.09.2026"
     },
     {
       "source": "schedules/personal/README.md",
@@ -182,6 +162,11 @@
       "title": "Физика 11"
     },
     {
+      "source": "topics/physics-11-2h/magnetic-field-of-coil-force-dependence-on-current.md",
+      "output": "topics/physics-11-2h/magnetic-field-of-coil-force-dependence-on-current.html",
+      "title": "Физика 11. Изучение магнитного поля катушки с током"
+    },
+    {
       "source": "topics/physics-11-2h/magnetic-field-of-current-carrying-conductor-and-ersted-experiment.md",
       "output": "topics/physics-11-2h/magnetic-field-of-current-carrying-conductor-and-ersted-experiment.html",
       "title": "Физика 11. Магнитное поле проводника с током. Опыт Эрстеда. Взаимодействие проводников с током"
@@ -250,6 +235,11 @@
       "source": "topics/physics-8-2h/properties-of-states-of-matter-from-molecular-kinetic-theory.md",
       "output": "topics/physics-8-2h/properties-of-states-of-matter-from-molecular-kinetic-theory.html",
       "title": "Физика 8. Объяснение свойств твёрдого, жидкого и газообразного состояний вещества на основе МКТ"
+    },
+    {
+      "source": "topics/physics-8-2h/wetting-capillarity-and-surface-tension.md",
+      "output": "topics/physics-8-2h/wetting-capillarity-and-surface-tension.html",
+      "title": "Физика 8. Смачивание и капиллярность. Поверхностное натяжение"
     },
     {
       "source": "topics/physics-9-3h/README.md",
