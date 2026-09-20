@@ -12,11 +12,6 @@
       "title": "Школьные материалы"
     },
     {
-      "source": "schedules/daily/2026-09-11.md",
-      "output": "schedules/daily/2026-09-11.html",
-      "title": "Расписание на 11.09.2026"
-    },
-    {
       "source": "schedules/daily/2026-09-15.md",
       "output": "schedules/daily/2026-09-15.html",
       "title": "Расписание на 15.09.2026"
@@ -42,11 +37,6 @@
       "title": "Расписания"
     },
     {
-      "source": "schedules/personal/2026-09-11.md",
-      "output": "schedules/personal/2026-09-11.html",
-      "title": "Личное расписание на 11.09.2026"
-    },
-    {
       "source": "schedules/personal/2026-09-15.md",
       "output": "schedules/personal/2026-09-15.html",
       "title": "Личное расписание на 15.09.2026"
@@ -60,6 +50,11 @@
       "source": "schedules/personal/2026-09-17.md",
       "output": "schedules/personal/2026-09-17.html",
       "title": "Личное расписание на 17.09.2026"
+    },
+    {
+      "source": "schedules/personal/2026-09-21.md",
+      "output": "schedules/personal/2026-09-21.html",
+      "title": "Личное расписание на 21.09.2026"
     },
     {
       "source": "schedules/personal/README.md",
@@ -182,6 +177,11 @@
       "title": "Физика 11 — 5 часов"
     },
     {
+      "source": "topics/physics-7-2h/horizontal-launch-height-and-range.md",
+      "output": "topics/physics-7-2h/horizontal-launch-height-and-range.html",
+      "title": "Физика 7. Как высота пуска влияет на дальность полёта шарика"
+    },
+    {
       "source": "topics/physics-7-2h/README.md",
       "output": "topics/physics-7-2h/index.html",
       "title": "Физика 7"
@@ -240,6 +240,11 @@
       "source": "topics/physics-8-2h/wetting-capillarity-and-surface-tension.md",
       "output": "topics/physics-8-2h/wetting-capillarity-and-surface-tension.html",
       "title": "Физика 8. Смачивание и капиллярность. Поверхностное натяжение"
+    },
+    {
+      "source": "topics/physics-9-3h/free-fall-and-galileos-experiments.md",
+      "output": "topics/physics-9-3h/free-fall-and-galileos-experiments.html",
+      "title": "Физика 9. Свободное падение тел. Опыты Галилея"
     },
     {
       "source": "topics/physics-9-3h/README.md",
