@@ -57,6 +57,11 @@
       "title": "Личное расписание на 21.09.2026"
     },
     {
+      "source": "schedules/personal/2026-09-22.md",
+      "output": "schedules/personal/2026-09-22.html",
+      "title": "Личное расписание на 22.09.2026"
+    },
+    {
       "source": "schedules/personal/README.md",
       "output": "schedules/personal/index.html",
       "title": "Личное расписание"
@@ -152,6 +157,11 @@
       "title": "Физика 11В — 1 час"
     },
     {
+      "source": "topics/physics-11-2h/ampere-force-and-current-loop-in-magnetic-field.md",
+      "output": "topics/physics-11-2h/ampere-force-and-current-loop-in-magnetic-field.html",
+      "title": "Физика 11. Действие магнитного поля на проводник с током. Сила Ампера"
+    },
+    {
       "source": "topics/physics-11-2h/README.md",
       "output": "topics/physics-11-2h/index.html",
       "title": "Физика 11"
@@ -200,6 +210,11 @@
       "source": "topics/physics-7-2h/physics-as-science-and-natural-phenomena.md",
       "output": "topics/physics-7-2h/physics-as-science-and-natural-phenomena.html",
       "title": "Физика 7. Физика — наука о природе. Явления природы"
+    },
+    {
+      "source": "topics/physics-7-2h/structure-of-matter-and-discrete-model.md",
+      "output": "topics/physics-7-2h/structure-of-matter-and-discrete-model.html",
+      "title": "Физика 7. Строение вещества и опыты, доказывающие его дискретность"
     },
     {
       "source": "topics/physics-7-2h/temperature-measurement-with-thermometer-and-sensor.md",
@@ -265,6 +280,11 @@
       "source": "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.md",
       "output": "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.html",
       "title": "Физика 9. Скорость прямолинейного равноускоренного движения. График скорости"
+    },
+    {
+      "source": "topics/physics-9-3h/uniform-circular-motion-period-frequency-and-velocities.md",
+      "output": "topics/physics-9-3h/uniform-circular-motion-period-frequency-and-velocities.html",
+      "title": "Физика 9. Равномерное движение по окружности: период, частота, линейная и угловая скорости"
     },
     {
       "source": "topics/physics-9-3h/uniform-rectilinear-motion.md",
