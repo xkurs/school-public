@@ -62,6 +62,11 @@
       "title": "Личное расписание на 22.09.2026"
     },
     {
+      "source": "schedules/personal/2026-09-23.md",
+      "output": "schedules/personal/2026-09-23.html",
+      "title": "Личное расписание на 23.09.2026"
+    },
+    {
       "source": "schedules/personal/README.md",
       "output": "schedules/personal/index.html",
       "title": "Личное расписание"
@@ -110,6 +115,11 @@
       "source": "topics/informatics-11-1h/internet-activities-and-services.md",
       "output": "topics/informatics-11-1h/internet-activities-and-services.html",
       "title": "Виды деятельности в сети Интернет. Сервисы Интернета"
+    },
+    {
+      "source": "topics/informatics-11-1h/netiquette-and-information-authenticity.md",
+      "output": "topics/informatics-11-1h/netiquette-and-information-authenticity.html",
+      "title": "Сетевой этикет. Проблема подлинности полученной информации"
     },
     {
       "source": "topics/informatics-11-1h/website-webpage-and-web-applications.md",
