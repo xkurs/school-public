@@ -217,6 +217,11 @@
       "title": "Физика 7"
     },
     {
+      "source": "topics/physics-7-2h/mechanical-motion-uniform-and-nonuniform.md",
+      "output": "topics/physics-7-2h/mechanical-motion-uniform-and-nonuniform.html",
+      "title": "Физика 7. Механическое движение. Равномерное и неравномерное движение"
+    },
+    {
       "source": "topics/physics-7-2h/natural-science-method-and-models.md",
       "output": "topics/physics-7-2h/natural-science-method-and-models.html",
       "title": "Физика 7. Как физика и другие естественные науки изучают природу"
@@ -252,6 +257,11 @@
       "title": "Физика 8. Кристаллические и аморфные тела"
     },
     {
+      "source": "topics/physics-8-2h/heat-quantity-and-specific-heat-capacity.md",
+      "output": "topics/physics-8-2h/heat-quantity-and-specific-heat-capacity.html",
+      "title": "Физика 8. Количество теплоты. Удельная теплоемкость"
+    },
+    {
       "source": "topics/physics-8-2h/README.md",
       "output": "topics/physics-8-2h/index.html",
       "title": "Физика 8"
@@ -275,6 +285,11 @@
       "source": "topics/physics-8-2h/wetting-capillarity-and-surface-tension.md",
       "output": "topics/physics-8-2h/wetting-capillarity-and-surface-tension.html",
       "title": "Физика 8. Смачивание и капиллярность. Поверхностное натяжение"
+    },
+    {
+      "source": "topics/physics-9-3h/centripetal-acceleration.md",
+      "output": "topics/physics-9-3h/centripetal-acceleration.html",
+      "title": "Физика 9. Центростремительное ускорение"
     },
     {
       "source": "topics/physics-9-3h/free-fall-and-galileos-experiments.md",
