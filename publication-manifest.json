@@ -12,24 +12,14 @@
       "title": "Школьные материалы"
     },
     {
-      "source": "schedules/daily/2026-09-15.md",
-      "output": "schedules/daily/2026-09-15.html",
-      "title": "Расписание на 15.09.2026"
-    },
-    {
-      "source": "schedules/daily/2026-09-16.md",
-      "output": "schedules/daily/2026-09-16.html",
-      "title": "Расписание на 16.09.2026"
-    },
-    {
-      "source": "schedules/daily/2026-09-17.md",
-      "output": "schedules/daily/2026-09-17.html",
-      "title": "Расписание на 17.09.2026"
-    },
-    {
       "source": "schedules/daily/2026-10-05.json",
       "output": "schedules/daily/2026-10-05.html",
       "title": "Расписание на 05.10.2026"
+    },
+    {
+      "source": "schedules/daily/2026-10-06.json",
+      "output": "schedules/daily/2026-10-06.html",
+      "title": "Расписание на 06.10.2026"
     },
     {
       "source": "schedules/daily/README.md",
@@ -40,21 +30,6 @@
       "source": "schedules/README.md",
       "output": "schedules/index.html",
       "title": "Расписания"
-    },
-    {
-      "source": "schedules/personal/2026-09-15.md",
-      "output": "schedules/personal/2026-09-15.html",
-      "title": "Личное расписание на 15.09.2026"
-    },
-    {
-      "source": "schedules/personal/2026-09-16.md",
-      "output": "schedules/personal/2026-09-16.html",
-      "title": "Личное расписание на 16.09.2026"
-    },
-    {
-      "source": "schedules/personal/2026-09-17.md",
-      "output": "schedules/personal/2026-09-17.html",
-      "title": "Личное расписание на 17.09.2026"
     },
     {
       "source": "schedules/personal/2026-09-21.md",
@@ -75,6 +50,11 @@
       "source": "schedules/personal/2026-10-05.md",
       "output": "schedules/personal/2026-10-05.html",
       "title": "Личное расписание на 05.10.2026"
+    },
+    {
+      "source": "schedules/personal/2026-10-06.md",
+      "output": "schedules/personal/2026-10-06.html",
+      "title": "Личное расписание на 06.10.2026"
     },
     {
       "source": "schedules/personal/README.md",
@@ -145,6 +125,11 @@
       "source": "topics/informatics-11-4h/quantity-of-information.md",
       "output": "topics/informatics-11-4h/quantity-of-information.html",
       "title": "Информатика 11. Количество информации"
+    },
+    {
+      "source": "topics/physics-10-2h/curvilinear-motion-and-circular-motion.md",
+      "output": "topics/physics-10-2h/curvilinear-motion-and-circular-motion.html",
+      "title": "Физика 10. Криволинейное движение. Движение материальной точки по окружности"
     },
     {
       "source": "topics/physics-10-2h/README.md",
@@ -237,6 +222,11 @@
       "title": "Физика 7. Физика — наука о природе. Явления природы"
     },
     {
+      "source": "topics/physics-7-2h/speed-and-speed-units.md",
+      "output": "topics/physics-7-2h/speed-and-speed-units.html",
+      "title": "Физика 7. Скорость. Единицы скорости"
+    },
+    {
       "source": "topics/physics-7-2h/structure-of-matter-and-discrete-model.md",
       "output": "topics/physics-7-2h/structure-of-matter-and-discrete-model.html",
       "title": "Физика 7. Строение вещества и опыты, доказывающие его дискретность"
@@ -305,6 +295,11 @@
       "source": "topics/physics-9-3h/mechanical-motion-and-material-point.md",
       "output": "topics/physics-9-3h/mechanical-motion-and-material-point.html",
       "title": "Физика 9. Механическое движение. Материальная точка"
+    },
+    {
+      "source": "topics/physics-9-3h/newtons-first-law-and-force-vector.md",
+      "output": "topics/physics-9-3h/newtons-first-law-and-force-vector.html",
+      "title": "Физика 9. Первый закон Ньютона. Вектор силы"
     },
     {
       "source": "topics/physics-9-3h/nonuniform-linear-motion-average-and-instantaneous-speed.md",
