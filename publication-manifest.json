@@ -22,6 +22,11 @@
       "title": "Расписание на 06.10.2026"
     },
     {
+      "source": "schedules/daily/2026-10-08.json",
+      "output": "schedules/daily/2026-10-08.html",
+      "title": "Расписание на 08.10.2026"
+    },
+    {
       "source": "schedules/daily/README.md",
       "output": "schedules/daily/index.html",
       "title": "Ежедневное расписание"
@@ -55,6 +60,11 @@
       "source": "schedules/personal/2026-10-06.md",
       "output": "schedules/personal/2026-10-06.html",
       "title": "Личное расписание на 06.10.2026"
+    },
+    {
+      "source": "schedules/personal/2026-10-08.md",
+      "output": "schedules/personal/2026-10-08.html",
+      "title": "Личное расписание на 08.10.2026"
     },
     {
       "source": "schedules/personal/README.md",
@@ -127,9 +137,19 @@
       "title": "Информатика 11. Количество информации"
     },
     {
+      "source": "topics/physics-10-1h/README.md",
+      "output": "topics/physics-10-1h/index.html",
+      "title": "Физика 10В — 1 час"
+    },
+    {
       "source": "topics/physics-10-2h/curvilinear-motion-and-circular-motion.md",
       "output": "topics/physics-10-2h/curvilinear-motion-and-circular-motion.html",
       "title": "Физика 10. Криволинейное движение. Движение материальной точки по окружности"
+    },
+    {
+      "source": "topics/physics-10-2h/galilean-relativity-inertial-frames-and-newtons-first-law.md",
+      "output": "topics/physics-10-2h/galilean-relativity-inertial-frames-and-newtons-first-law.html",
+      "title": "Физика 10. Принцип относительности Галилея. Инерциальные системы отсчета. Первый закон Ньютона"
     },
     {
       "source": "topics/physics-10-2h/README.md",
@@ -170,6 +190,11 @@
       "source": "topics/physics-11-2h/README.md",
       "output": "topics/physics-11-2h/index.html",
       "title": "Физика 11"
+    },
+    {
+      "source": "topics/physics-11-2h/lorentz-force-and-its-work.md",
+      "output": "topics/physics-11-2h/lorentz-force-and-its-work.html",
+      "title": "Физика 11. Действие магнитного поля на движущуюся заряженную частицу. Сила Лоренца. Работа силы Лоренца"
     },
     {
       "source": "topics/physics-11-2h/magnetic-field-of-coil-force-dependence-on-current.md",
@@ -270,6 +295,11 @@
       "source": "topics/physics-8-2h/properties-of-states-of-matter-from-molecular-kinetic-theory.md",
       "output": "topics/physics-8-2h/properties-of-states-of-matter-from-molecular-kinetic-theory.html",
       "title": "Физика 8. Объяснение свойств твёрдого, жидкого и газообразного состояний вещества на основе МКТ"
+    },
+    {
+      "source": "topics/physics-8-2h/thermal-balance-and-thermal-equilibrium.md",
+      "output": "topics/physics-8-2h/thermal-balance-and-thermal-equilibrium.html",
+      "title": "Физика 8. Уравнение теплового баланса. Теплообмен и тепловое равновесие"
     },
     {
       "source": "topics/physics-8-2h/wetting-capillarity-and-surface-tension.md",
