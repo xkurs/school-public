@@ -27,6 +27,11 @@
       "title": "Расписание на 08.10.2026"
     },
     {
+      "source": "schedules/daily/2026-10-09.json",
+      "output": "schedules/daily/2026-10-09.html",
+      "title": "Расписание на 09.10.2026"
+    },
+    {
       "source": "schedules/daily/README.md",
       "output": "schedules/daily/index.html",
       "title": "Ежедневное расписание"
@@ -65,6 +70,11 @@
       "source": "schedules/personal/2026-10-08.md",
       "output": "schedules/personal/2026-10-08.html",
       "title": "Личное расписание на 08.10.2026"
+    },
+    {
+      "source": "schedules/personal/2026-10-09.md",
+      "output": "schedules/personal/2026-10-09.html",
+      "title": "Личное расписание на 09.10.2026"
     },
     {
       "source": "schedules/personal/README.md",
@@ -310,6 +320,11 @@
       "source": "topics/physics-9-3h/centripetal-acceleration.md",
       "output": "topics/physics-9-3h/centripetal-acceleration.html",
       "title": "Физика 9. Центростремительное ускорение"
+    },
+    {
+      "source": "topics/physics-9-3h/elastic-force-and-hookes-law.md",
+      "output": "topics/physics-9-3h/elastic-force-and-hookes-law.html",
+      "title": "Физика 9. Сила упругости. Закон Гука"
     },
     {
       "source": "topics/physics-9-3h/free-fall-and-galileos-experiments.md",
