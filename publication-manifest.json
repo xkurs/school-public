@@ -3,7 +3,8 @@
   "home": "index.html",
   "sections": [
     "schedules/index.html",
-    "topics/index.html"
+    "topics/index.html",
+    "spo/topics/index.html"
   ],
   "pages": [
     {
@@ -80,6 +81,71 @@
       "source": "schedules/personal/README.md",
       "output": "schedules/personal/index.html",
       "title": "Личное расписание"
+    },
+    {
+      "source": "spo/topics/demo-and-tool-limits.md",
+      "output": "spo/topics/demo-and-tool-limits.html",
+      "title": "Демонстрация и пределы конструктора"
+    },
+    {
+      "source": "spo/topics/events-and-state/README.md",
+      "output": "spo/topics/events-and-state/index.html",
+      "title": "Событие, переменная и изменение состояния"
+    },
+    {
+      "source": "spo/topics/first-screen/README.md",
+      "output": "spo/topics/first-screen/index.html",
+      "title": "Собираем первый экран"
+    },
+    {
+      "source": "spo/topics/first-working-scenario.md",
+      "output": "spo/topics/first-working-scenario.html",
+      "title": "Первый работающий сценарий"
+    },
+    {
+      "source": "spo/topics/from-blocks-to-code.md",
+      "output": "spo/topics/from-blocks-to-code.html",
+      "title": "От визуальных блоков к текстовому коду"
+    },
+    {
+      "source": "spo/topics/README.md",
+      "output": "spo/topics/index.html",
+      "title": "СПО — разработка мобильных приложений"
+    },
+    {
+      "source": "spo/topics/mini-app-testing.md",
+      "output": "spo/topics/mini-app-testing.html",
+      "title": "Доработка и тестирование мини-приложения"
+    },
+    {
+      "source": "spo/topics/mit-app-inventor/README.md",
+      "output": "spo/topics/mit-app-inventor/index.html",
+      "title": "Интерфейс MIT App Inventor и подключение телефона"
+    },
+    {
+      "source": "spo/topics/mobile-app-types/README.md",
+      "output": "spo/topics/mobile-app-types/index.html",
+      "title": "Какие бывают мобильные приложения"
+    },
+    {
+      "source": "spo/topics/second-scenario-and-edge-cases.md",
+      "output": "spo/topics/second-scenario-and-edge-cases.html",
+      "title": "Второй сценарий и отрицательные случаи"
+    },
+    {
+      "source": "spo/topics/storage-and-device-features.md",
+      "output": "spo/topics/storage-and-device-features.html",
+      "title": "Сохранение результата и функции телефона"
+    },
+    {
+      "source": "spo/topics/technology-choice-and-diagnostics/README.md",
+      "output": "spo/topics/technology-choice-and-diagnostics/index.html",
+      "title": "Сравнение подходов и диагностика группы"
+    },
+    {
+      "source": "spo/topics/variables-and-lists.md",
+      "output": "spo/topics/variables-and-lists.html",
+      "title": "Переменные, списки и данные"
     },
     {
       "source": "topics/README.md",
@@ -373,6 +439,27 @@
     }
   ],
   "assets": [
+    "spo/topics/events-and-state/assets/add-event.jpg",
+    "spo/topics/events-and-state/assets/add-handler.jpg",
+    "spo/topics/events-and-state/assets/complete-blocks-overview.jpg",
+    "spo/topics/events-and-state/assets/counter-trace.png",
+    "spo/topics/events-and-state/assets/event-state-flow.png",
+    "spo/topics/events-and-state/assets/increment-state.jpg",
+    "spo/topics/events-and-state/assets/initialize-count.jpg",
+    "spo/topics/events-and-state/assets/reset-handler.jpg",
+    "spo/topics/events-and-state/assets/state-and-display.png",
+    "spo/topics/first-screen/assets/counter-screen.png",
+    "spo/topics/first-screen/assets/empty-designer.jpg",
+    "spo/topics/first-screen/assets/finished-screen.jpg",
+    "spo/topics/first-screen/assets/label-properties.jpg",
+    "spo/topics/first-screen/assets/rename-label.jpg",
+    "spo/topics/first-screen/assets/screen-review.png",
+    "spo/topics/mit-app-inventor/assets/blocks-screenshot.jpg",
+    "spo/topics/mit-app-inventor/assets/button-properties-screenshot.jpg",
+    "spo/topics/mit-app-inventor/assets/connect-usb-screenshot.jpg",
+    "spo/topics/mit-app-inventor/assets/designer-and-blocks.png",
+    "spo/topics/mit-app-inventor/assets/designer-screenshot.jpg",
+    "spo/topics/mit-app-inventor/assets/phone-connection.png",
     "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.svg",
     "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ]
