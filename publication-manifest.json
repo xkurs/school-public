@@ -13,76 +13,6 @@
       "title": "Школьные материалы"
     },
     {
-      "source": "schedules/daily/2026-10-05.json",
-      "output": "schedules/daily/2026-10-05.html",
-      "title": "Расписание на 05.10.2026"
-    },
-    {
-      "source": "schedules/daily/2026-10-06.json",
-      "output": "schedules/daily/2026-10-06.html",
-      "title": "Расписание на 06.10.2026"
-    },
-    {
-      "source": "schedules/daily/2026-10-08.json",
-      "output": "schedules/daily/2026-10-08.html",
-      "title": "Расписание на 08.10.2026"
-    },
-    {
-      "source": "schedules/daily/2026-10-09.json",
-      "output": "schedules/daily/2026-10-09.html",
-      "title": "Расписание на 09.10.2026"
-    },
-    {
-      "source": "schedules/daily/README.md",
-      "output": "schedules/daily/index.html",
-      "title": "Ежедневное расписание"
-    },
-    {
-      "source": "schedules/README.md",
-      "output": "schedules/index.html",
-      "title": "Расписания"
-    },
-    {
-      "source": "schedules/personal/2026-09-21.md",
-      "output": "schedules/personal/2026-09-21.html",
-      "title": "Личное расписание на 21.09.2026"
-    },
-    {
-      "source": "schedules/personal/2026-09-22.md",
-      "output": "schedules/personal/2026-09-22.html",
-      "title": "Личное расписание на 22.09.2026"
-    },
-    {
-      "source": "schedules/personal/2026-09-23.md",
-      "output": "schedules/personal/2026-09-23.html",
-      "title": "Личное расписание на 23.09.2026"
-    },
-    {
-      "source": "schedules/personal/2026-10-05.md",
-      "output": "schedules/personal/2026-10-05.html",
-      "title": "Личное расписание на 05.10.2026"
-    },
-    {
-      "source": "schedules/personal/2026-10-06.md",
-      "output": "schedules/personal/2026-10-06.html",
-      "title": "Личное расписание на 06.10.2026"
-    },
-    {
-      "source": "schedules/personal/2026-10-08.md",
-      "output": "schedules/personal/2026-10-08.html",
-      "title": "Личное расписание на 08.10.2026"
-    },
-    {
-      "source": "schedules/personal/2026-10-09.md",
-      "output": "schedules/personal/2026-10-09.html",
-      "title": "Личное расписание на 09.10.2026"
-    },
-    {
-      "source": "schedules/personal/README.md",
-      "output": "schedules/personal/index.html",
-      "title": "Личное расписание"
-    },
-    {
       "source": "spo/topics/demo-and-tool-limits.md",
       "output": "spo/topics/demo-and-tool-limits.html",
       "title": "Демонстрация и пределы конструктора"
@@ -150,12 +80,7 @@
     {
       "source": "topics/README.md",
       "output": "topics/index.html",
-      "title": "Учебные материалы"
-    },
-    {
-      "source": "topics/informatics-10-1h-practicum/README.md",
-      "output": "topics/informatics-10-1h-practicum/index.html",
-      "title": "Практикум по информатике 10"
+      "title": "Школа"
     },
     {
       "source": "topics/informatics-10-1h/computer-safety-and-principles-of-operation.md",
@@ -171,11 +96,6 @@
       "source": "topics/informatics-10-1h/README.md",
       "output": "topics/informatics-10-1h/index.html",
       "title": "Информатика 10 — 1 час"
-    },
-    {
-      "source": "topics/informatics-10-4h/README.md",
-      "output": "topics/informatics-10-4h/index.html",
-      "title": "Информатика 10 — 4 часа"
     },
     {
       "source": "topics/informatics-11-1h/computer-networks-and-internet-addressing.md",
@@ -201,16 +121,6 @@
       "source": "topics/informatics-11-1h/website-webpage-and-web-applications.md",
       "output": "topics/informatics-11-1h/website-webpage-and-web-applications.html",
       "title": "Информатика 11. Веб-сайт, веб-страница и интернет-приложения"
-    },
-    {
-      "source": "topics/informatics-11-4h/README.md",
-      "output": "topics/informatics-11-4h/index.html",
-      "title": "Информатика 11 — 4 часа"
-    },
-    {
-      "source": "topics/informatics-11-4h/quantity-of-information.md",
-      "output": "topics/informatics-11-4h/quantity-of-information.html",
-      "title": "Информатика 11. Количество информации"
     },
     {
       "source": "topics/physics-10-1h/README.md",
@@ -248,11 +158,6 @@
       "title": "Физика 10. Равноускоренное прямолинейное движение"
     },
     {
-      "source": "topics/physics-10-5h/README.md",
-      "output": "topics/physics-10-5h/index.html",
-      "title": "Физика 10 — 5 часов"
-    },
-    {
       "source": "topics/physics-11-1h/README.md",
       "output": "topics/physics-11-1h/index.html",
       "title": "Физика 11В — 1 час"
@@ -288,9 +193,9 @@
       "title": "Постоянные магниты. Магнитное поле. Вектор магнитной индукции"
     },
     {
-      "source": "topics/physics-11-5h/README.md",
-      "output": "topics/physics-11-5h/index.html",
-      "title": "Физика 11 — 5 часов"
+      "source": "topics/physics-7-2h/distance-and-travel-time.md",
+      "output": "topics/physics-7-2h/distance-and-travel-time.html",
+      "title": "Физика 7. Расчёт пути и времени движения"
     },
     {
       "source": "topics/physics-7-2h/horizontal-launch-height-and-range.md",
@@ -421,6 +326,11 @@
       "source": "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.md",
       "output": "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.html",
       "title": "Физика 9. Скорость прямолинейного равноускоренного движения. График скорости"
+    },
+    {
+      "source": "topics/physics-9-3h/spring-stiffness-lab.md",
+      "output": "topics/physics-9-3h/spring-stiffness-lab.html",
+      "title": "Физика 9. Лабораторная работа «Определение жёсткости пружины»"
     },
     {
       "source": "topics/physics-9-3h/uniform-circular-motion-period-frequency-and-velocities.md",
