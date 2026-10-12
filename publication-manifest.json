@@ -2,7 +2,6 @@
   "repository": "xkurs/school-public",
   "home": "index.html",
   "sections": [
-    "schedules/index.html",
     "topics/index.html",
     "spo/topics/index.html"
   ],
@@ -13,67 +12,67 @@
       "title": "Школьные материалы"
     },
     {
-      "source": "spo/topics/demo-and-tool-limits.md",
+      "source": "topics/spo-mobile-app-development/012-demo-and-tool-limits.md",
       "output": "spo/topics/demo-and-tool-limits.html",
       "title": "Демонстрация и пределы конструктора"
     },
     {
-      "source": "spo/topics/events-and-state/README.md",
+      "source": "topics/spo-mobile-app-development/005-events-and-state/README.md",
       "output": "spo/topics/events-and-state/index.html",
       "title": "Событие, переменная и изменение состояния"
     },
     {
-      "source": "spo/topics/first-screen/README.md",
+      "source": "topics/spo-mobile-app-development/004-first-screen/README.md",
       "output": "spo/topics/first-screen/index.html",
       "title": "Собираем первый экран"
     },
     {
-      "source": "spo/topics/first-working-scenario.md",
+      "source": "topics/spo-mobile-app-development/006-first-working-scenario.md",
       "output": "spo/topics/first-working-scenario.html",
       "title": "Первый работающий сценарий"
     },
     {
-      "source": "spo/topics/from-blocks-to-code.md",
+      "source": "topics/spo-mobile-app-development/011-from-blocks-to-code.md",
       "output": "spo/topics/from-blocks-to-code.html",
       "title": "От визуальных блоков к текстовому коду"
     },
     {
-      "source": "spo/topics/README.md",
+      "source": "topics/spo-mobile-app-development/README.md",
       "output": "spo/topics/index.html",
       "title": "СПО — разработка мобильных приложений"
     },
     {
-      "source": "spo/topics/mini-app-testing.md",
+      "source": "topics/spo-mobile-app-development/010-mini-app-testing.md",
       "output": "spo/topics/mini-app-testing.html",
       "title": "Доработка и тестирование мини-приложения"
     },
     {
-      "source": "spo/topics/mit-app-inventor/README.md",
+      "source": "topics/spo-mobile-app-development/003-mit-app-inventor/README.md",
       "output": "spo/topics/mit-app-inventor/index.html",
       "title": "Интерфейс MIT App Inventor и подключение телефона"
     },
     {
-      "source": "spo/topics/mobile-app-types/README.md",
+      "source": "topics/spo-mobile-app-development/001-mobile-app-types/README.md",
       "output": "spo/topics/mobile-app-types/index.html",
       "title": "Какие бывают мобильные приложения"
     },
     {
-      "source": "spo/topics/second-scenario-and-edge-cases.md",
+      "source": "topics/spo-mobile-app-development/008-second-scenario-and-edge-cases.md",
       "output": "spo/topics/second-scenario-and-edge-cases.html",
       "title": "Второй сценарий и отрицательные случаи"
     },
     {
-      "source": "spo/topics/storage-and-device-features.md",
+      "source": "topics/spo-mobile-app-development/009-storage-and-device-features.md",
       "output": "spo/topics/storage-and-device-features.html",
       "title": "Сохранение результата и функции телефона"
     },
     {
-      "source": "spo/topics/technology-choice-and-diagnostics/README.md",
+      "source": "topics/spo-mobile-app-development/002-technology-choice-and-diagnostics/README.md",
       "output": "spo/topics/technology-choice-and-diagnostics/index.html",
       "title": "Сравнение подходов и диагностика группы"
     },
     {
-      "source": "spo/topics/variables-and-lists.md",
+      "source": "topics/spo-mobile-app-development/007-variables-and-lists.md",
       "output": "spo/topics/variables-and-lists.html",
       "title": "Переменные, списки и данные"
     },
@@ -83,12 +82,12 @@
       "title": "Школа"
     },
     {
-      "source": "topics/informatics-10-1h/computer-safety-and-principles-of-operation.md",
+      "source": "topics/informatics-10-1h/001-computer-safety-and-principles-of-operation.md",
       "output": "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html",
       "title": "Информатика 10. Техника безопасности и гигиена при работе с компьютерами. Принципы работы компьютера"
     },
     {
-      "source": "topics/informatics-10-1h/computer-technology-development-trends.md",
+      "source": "topics/informatics-10-1h/002-computer-technology-development-trends.md",
       "output": "topics/informatics-10-1h/computer-technology-development-trends.html",
       "title": "Информатика 10. Тенденции развития компьютерных технологий"
     },
@@ -98,7 +97,7 @@
       "title": "Информатика 10 — 1 час"
     },
     {
-      "source": "topics/informatics-11-1h/computer-networks-and-internet-addressing.md",
+      "source": "topics/informatics-11-1h/001-computer-networks-and-internet-addressing.md",
       "output": "topics/informatics-11-1h/computer-networks-and-internet-addressing.html",
       "title": "Информатика 11. Компьютерные сети и адресация в Интернете"
     },
@@ -108,17 +107,17 @@
       "title": "Информатика 11 — 1 час"
     },
     {
-      "source": "topics/informatics-11-1h/internet-activities-and-services.md",
+      "source": "topics/informatics-11-1h/003-internet-activities-and-services.md",
       "output": "topics/informatics-11-1h/internet-activities-and-services.html",
       "title": "Виды деятельности в сети Интернет. Сервисы Интернета"
     },
     {
-      "source": "topics/informatics-11-1h/netiquette-and-information-authenticity.md",
+      "source": "topics/informatics-11-1h/004-netiquette-and-information-authenticity.md",
       "output": "topics/informatics-11-1h/netiquette-and-information-authenticity.html",
       "title": "Сетевой этикет. Проблема подлинности полученной информации"
     },
     {
-      "source": "topics/informatics-11-1h/website-webpage-and-web-applications.md",
+      "source": "topics/informatics-11-1h/002-website-webpage-and-web-applications.md",
       "output": "topics/informatics-11-1h/website-webpage-and-web-applications.html",
       "title": "Информатика 11. Веб-сайт, веб-страница и интернет-приложения"
     },
@@ -128,12 +127,12 @@
       "title": "Физика 10В — 1 час"
     },
     {
-      "source": "topics/physics-10-2h/curvilinear-motion-and-circular-motion.md",
+      "source": "topics/physics-10-2h/007-curvilinear-motion-and-circular-motion.md",
       "output": "topics/physics-10-2h/curvilinear-motion-and-circular-motion.html",
       "title": "Физика 10. Криволинейное движение. Движение материальной точки по окружности"
     },
     {
-      "source": "topics/physics-10-2h/galilean-relativity-inertial-frames-and-newtons-first-law.md",
+      "source": "topics/physics-10-2h/008-galilean-relativity-inertial-frames-and-newtons-first-law.md",
       "output": "topics/physics-10-2h/galilean-relativity-inertial-frames-and-newtons-first-law.html",
       "title": "Физика 10. Принцип относительности Галилея. Инерциальные системы отсчета. Первый закон Ньютона"
     },
@@ -143,19 +142,24 @@
       "title": "Физика 10"
     },
     {
-      "source": "topics/physics-10-2h/mechanical-motion-relativity-displacement-velocity-and-acceleration.md",
+      "source": "topics/physics-10-2h/003-mechanical-motion-relativity-displacement-velocity-and-acceleration.md",
       "output": "topics/physics-10-2h/mechanical-motion-relativity-displacement-velocity-and-acceleration.html",
       "title": "Механическое движение. Относительность движения. Перемещение, скорость, ускорение"
     },
     {
-      "source": "topics/physics-10-2h/uniform-rectilinear-motion.md",
+      "source": "topics/physics-10-2h/004-uniform-rectilinear-motion.md",
       "output": "topics/physics-10-2h/uniform-rectilinear-motion.html",
       "title": "Физика 10. Равномерное прямолинейное движение"
     },
     {
-      "source": "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.md",
+      "source": "topics/physics-10-2h/005-uniformly-accelerated-rectilinear-motion/README.md",
       "output": "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.html",
       "title": "Физика 10. Равноускоренное прямолинейное движение"
+    },
+    {
+      "source": "topics/physics-10-2h/011-universal-gravitation-and-first-cosmic-speed.md",
+      "output": "topics/physics-10-2h/universal-gravitation-and-first-cosmic-speed.html",
+      "title": "Физика 10. Закон всемирного тяготения. Сила тяжести. Первая космическая скорость"
     },
     {
       "source": "topics/physics-11-1h/README.md",
@@ -163,9 +167,14 @@
       "title": "Физика 11В — 1 час"
     },
     {
-      "source": "topics/physics-11-2h/ampere-force-and-current-loop-in-magnetic-field.md",
+      "source": "topics/physics-11-2h/004-ampere-force-and-current-loop-in-magnetic-field.md",
       "output": "topics/physics-11-2h/ampere-force-and-current-loop-in-magnetic-field.html",
       "title": "Физика 11. Действие магнитного поля на проводник с током. Сила Ампера"
+    },
+    {
+      "source": "topics/physics-11-2h/006-electromagnetic-induction-magnetic-flux-and-faradays-law.md",
+      "output": "topics/physics-11-2h/electromagnetic-induction-magnetic-flux-and-faradays-law.html",
+      "title": "Физика 11. Электромагнитная индукция. Магнитный поток. Закон Фарадея"
     },
     {
       "source": "topics/physics-11-2h/README.md",
@@ -173,32 +182,32 @@
       "title": "Физика 11"
     },
     {
-      "source": "topics/physics-11-2h/lorentz-force-and-its-work.md",
+      "source": "topics/physics-11-2h/005-lorentz-force-and-its-work.md",
       "output": "topics/physics-11-2h/lorentz-force-and-its-work.html",
       "title": "Физика 11. Действие магнитного поля на движущуюся заряженную частицу. Сила Лоренца. Работа силы Лоренца"
     },
     {
-      "source": "topics/physics-11-2h/magnetic-field-of-coil-force-dependence-on-current.md",
+      "source": "topics/physics-11-2h/003-magnetic-field-of-coil-force-dependence-on-current.md",
       "output": "topics/physics-11-2h/magnetic-field-of-coil-force-dependence-on-current.html",
       "title": "Физика 11. Изучение магнитного поля катушки с током"
     },
     {
-      "source": "topics/physics-11-2h/magnetic-field-of-current-carrying-conductor-and-ersted-experiment.md",
+      "source": "topics/physics-11-2h/002-magnetic-field-of-current-carrying-conductor-and-ersted-experiment.md",
       "output": "topics/physics-11-2h/magnetic-field-of-current-carrying-conductor-and-ersted-experiment.html",
       "title": "Физика 11. Магнитное поле проводника с током. Опыт Эрстеда. Взаимодействие проводников с током"
     },
     {
-      "source": "topics/physics-11-2h/permanent-magnets-and-magnetic-field.md",
+      "source": "topics/physics-11-2h/001-permanent-magnets-and-magnetic-field.md",
       "output": "topics/physics-11-2h/permanent-magnets-and-magnetic-field.html",
       "title": "Постоянные магниты. Магнитное поле. Вектор магнитной индукции"
     },
     {
-      "source": "topics/physics-7-2h/distance-and-travel-time.md",
+      "source": "topics/physics-7-2h/014-distance-and-travel-time.md",
       "output": "topics/physics-7-2h/distance-and-travel-time.html",
       "title": "Физика 7. Расчёт пути и времени движения"
     },
     {
-      "source": "topics/physics-7-2h/horizontal-launch-height-and-range.md",
+      "source": "topics/physics-7-2h/006-horizontal-launch-height-and-range.md",
       "output": "topics/physics-7-2h/horizontal-launch-height-and-range.html",
       "title": "Физика 7. Как высота пуска влияет на дальность полёта шарика"
     },
@@ -208,52 +217,62 @@
       "title": "Физика 7"
     },
     {
-      "source": "topics/physics-7-2h/mechanical-motion-uniform-and-nonuniform.md",
+      "source": "topics/physics-7-2h/015-inertia-and-interaction-of-bodies.md",
+      "output": "topics/physics-7-2h/inertia-and-interaction-of-bodies.html",
+      "title": "Физика 7. Инерция и взаимодействие тел"
+    },
+    {
+      "source": "topics/physics-7-2h/012-mechanical-motion-uniform-and-nonuniform.md",
       "output": "topics/physics-7-2h/mechanical-motion-uniform-and-nonuniform.html",
       "title": "Физика 7. Механическое движение. Равномерное и неравномерное движение"
     },
     {
-      "source": "topics/physics-7-2h/natural-science-method-and-models.md",
+      "source": "topics/physics-7-2h/005-natural-science-method-and-models.md",
       "output": "topics/physics-7-2h/natural-science-method-and-models.html",
       "title": "Физика 7. Как физика и другие естественные науки изучают природу"
     },
     {
-      "source": "topics/physics-7-2h/physical-quantities-and-measurement.md",
+      "source": "topics/physics-7-2h/003-physical-quantities-and-measurement.md",
       "output": "topics/physics-7-2h/physical-quantities-and-measurement.html",
       "title": "Физика 7. Физические величины и их измерение"
     },
     {
-      "source": "topics/physics-7-2h/physics-as-science-and-natural-phenomena.md",
+      "source": "topics/physics-7-2h/001-physics-as-science-and-natural-phenomena.md",
       "output": "topics/physics-7-2h/physics-as-science-and-natural-phenomena.html",
       "title": "Физика 7. Физика — наука о природе. Явления природы"
     },
     {
-      "source": "topics/physics-7-2h/speed-and-speed-units.md",
+      "source": "topics/physics-7-2h/013-speed-and-speed-units.md",
       "output": "topics/physics-7-2h/speed-and-speed-units.html",
       "title": "Физика 7. Скорость. Единицы скорости"
     },
     {
-      "source": "topics/physics-7-2h/structure-of-matter-and-discrete-model.md",
+      "source": "topics/physics-7-2h/007-structure-of-matter-and-discrete-model.md",
       "output": "topics/physics-7-2h/structure-of-matter-and-discrete-model.html",
       "title": "Физика 7. Строение вещества и опыты, доказывающие его дискретность"
     },
     {
-      "source": "topics/physics-7-2h/temperature-measurement-with-thermometer-and-sensor.md",
+      "source": "topics/physics-7-2h/004-temperature-measurement-with-thermometer-and-sensor.md",
       "output": "topics/physics-7-2h/temperature-measurement-with-thermometer-and-sensor.html",
       "title": "Физика 7. Измерение температуры термометром и датчиком"
     },
     {
-      "source": "topics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.md",
+      "source": "topics/physics-8-2h/001-basic-principles-of-molecular-kinetic-theory.md",
       "output": "topics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.html",
       "title": "Физика 8. Основные положения молекулярно-кинетической теории"
     },
     {
-      "source": "topics/physics-8-2h/crystalline-and-amorphous-bodies.md",
+      "source": "topics/physics-8-2h/005-crystalline-and-amorphous-bodies.md",
       "output": "topics/physics-8-2h/crystalline-and-amorphous-bodies.html",
       "title": "Физика 8. Кристаллические и аморфные тела"
     },
     {
-      "source": "topics/physics-8-2h/heat-quantity-and-specific-heat-capacity.md",
+      "source": "topics/physics-8-2h/014-heat-exchange-when-mixing-water-lab.md",
+      "output": "topics/physics-8-2h/heat-exchange-when-mixing-water-lab.html",
+      "title": "Физика 8. Теплообмен при смешивании холодной и горячей воды"
+    },
+    {
+      "source": "topics/physics-8-2h/012-heat-quantity-and-specific-heat-capacity.md",
       "output": "topics/physics-8-2h/heat-quantity-and-specific-heat-capacity.html",
       "title": "Физика 8. Количество теплоты. Удельная теплоемкость"
     },
@@ -263,44 +282,49 @@
       "title": "Физика 8"
     },
     {
-      "source": "topics/physics-8-2h/internal-energy-and-ways-of-changing-it.md",
+      "source": "topics/physics-8-2h/009-internal-energy-and-ways-of-changing-it.md",
       "output": "topics/physics-8-2h/internal-energy-and-ways-of-changing-it.html",
       "title": "Физика 8. Внутренняя энергия и способы её изменения"
     },
     {
-      "source": "topics/physics-8-2h/mass-and-size-of-atoms-and-molecules.md",
+      "source": "topics/physics-8-2h/002-mass-and-size-of-atoms-and-molecules.md",
       "output": "topics/physics-8-2h/mass-and-size-of-atoms-and-molecules.html",
       "title": "Физика 8. Масса и размеры атомов и молекул"
     },
     {
-      "source": "topics/physics-8-2h/properties-of-states-of-matter-from-molecular-kinetic-theory.md",
+      "source": "topics/physics-8-2h/004-properties-of-states-of-matter-from-molecular-kinetic-theory.md",
       "output": "topics/physics-8-2h/properties-of-states-of-matter-from-molecular-kinetic-theory.html",
       "title": "Физика 8. Объяснение свойств твёрдого, жидкого и газообразного состояний вещества на основе МКТ"
     },
     {
-      "source": "topics/physics-8-2h/thermal-balance-and-thermal-equilibrium.md",
+      "source": "topics/physics-8-2h/013-thermal-balance-and-thermal-equilibrium.md",
       "output": "topics/physics-8-2h/thermal-balance-and-thermal-equilibrium.html",
       "title": "Физика 8. Уравнение теплового баланса. Теплообмен и тепловое равновесие"
     },
     {
-      "source": "topics/physics-8-2h/wetting-capillarity-and-surface-tension.md",
+      "source": "topics/physics-8-2h/006-wetting-capillarity-and-surface-tension.md",
       "output": "topics/physics-8-2h/wetting-capillarity-and-surface-tension.html",
       "title": "Физика 8. Смачивание и капиллярность. Поверхностное натяжение"
     },
     {
-      "source": "topics/physics-9-3h/centripetal-acceleration.md",
+      "source": "topics/physics-9-3h/010-centripetal-acceleration.md",
       "output": "topics/physics-9-3h/centripetal-acceleration.html",
       "title": "Физика 9. Центростремительное ускорение"
     },
     {
-      "source": "topics/physics-9-3h/elastic-force-and-hookes-law.md",
+      "source": "topics/physics-9-3h/015-elastic-force-and-hookes-law.md",
       "output": "topics/physics-9-3h/elastic-force-and-hookes-law.html",
       "title": "Физика 9. Сила упругости. Закон Гука"
     },
     {
-      "source": "topics/physics-9-3h/free-fall-and-galileos-experiments.md",
+      "source": "topics/physics-9-3h/008-free-fall-and-galileos-experiments.md",
       "output": "topics/physics-9-3h/free-fall-and-galileos-experiments.html",
       "title": "Физика 9. Свободное падение тел. Опыты Галилея"
+    },
+    {
+      "source": "topics/physics-9-3h/018-friction-force.md",
+      "output": "topics/physics-9-3h/friction-force.html",
+      "title": "Физика 9. Сила трения"
     },
     {
       "source": "topics/physics-9-3h/README.md",
@@ -308,69 +332,69 @@
       "title": "Физика 9"
     },
     {
-      "source": "topics/physics-9-3h/mechanical-motion-and-material-point.md",
+      "source": "topics/physics-9-3h/001-mechanical-motion-and-material-point.md",
       "output": "topics/physics-9-3h/mechanical-motion-and-material-point.html",
       "title": "Физика 9. Механическое движение. Материальная точка"
     },
     {
-      "source": "topics/physics-9-3h/newtons-first-law-and-force-vector.md",
+      "source": "topics/physics-9-3h/011-newtons-first-law-and-force-vector.md",
       "output": "topics/physics-9-3h/newtons-first-law-and-force-vector.html",
       "title": "Физика 9. Первый закон Ньютона. Вектор силы"
     },
     {
-      "source": "topics/physics-9-3h/nonuniform-linear-motion-average-and-instantaneous-speed.md",
+      "source": "topics/physics-9-3h/004-nonuniform-linear-motion-average-and-instantaneous-speed.md",
       "output": "topics/physics-9-3h/nonuniform-linear-motion-average-and-instantaneous-speed.html",
       "title": "Физика 9. Неравномерное прямолинейное движение"
     },
     {
-      "source": "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.md",
+      "source": "topics/physics-9-3h/006-speed-of-uniformly-accelerated-motion-and-velocity-graph/README.md",
       "output": "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.html",
       "title": "Физика 9. Скорость прямолинейного равноускоренного движения. График скорости"
     },
     {
-      "source": "topics/physics-9-3h/spring-stiffness-lab.md",
+      "source": "topics/physics-9-3h/017-spring-stiffness-lab.md",
       "output": "topics/physics-9-3h/spring-stiffness-lab.html",
       "title": "Физика 9. Лабораторная работа «Определение жёсткости пружины»"
     },
     {
-      "source": "topics/physics-9-3h/uniform-circular-motion-period-frequency-and-velocities.md",
+      "source": "topics/physics-9-3h/009-uniform-circular-motion-period-frequency-and-velocities.md",
       "output": "topics/physics-9-3h/uniform-circular-motion-period-frequency-and-velocities.html",
       "title": "Физика 9. Равномерное движение по окружности: период, частота, линейная и угловая скорости"
     },
     {
-      "source": "topics/physics-9-3h/uniform-rectilinear-motion.md",
+      "source": "topics/physics-9-3h/003-uniform-rectilinear-motion.md",
       "output": "topics/physics-9-3h/uniform-rectilinear-motion.html",
       "title": "Физика 9. Равномерное прямолинейное движение"
     },
     {
-      "source": "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.md",
+      "source": "topics/physics-9-3h/005-uniformly-accelerated-motion-and-acceleration.md",
       "output": "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html",
       "title": "Физика 9. Прямолинейное равноускоренное движение. Ускорение"
     }
   ],
   "assets": [
-    "spo/topics/events-and-state/assets/add-event.jpg",
-    "spo/topics/events-and-state/assets/add-handler.jpg",
-    "spo/topics/events-and-state/assets/complete-blocks-overview.jpg",
-    "spo/topics/events-and-state/assets/counter-trace.png",
-    "spo/topics/events-and-state/assets/event-state-flow.png",
-    "spo/topics/events-and-state/assets/increment-state.jpg",
-    "spo/topics/events-and-state/assets/initialize-count.jpg",
-    "spo/topics/events-and-state/assets/reset-handler.jpg",
-    "spo/topics/events-and-state/assets/state-and-display.png",
-    "spo/topics/first-screen/assets/counter-screen.png",
-    "spo/topics/first-screen/assets/empty-designer.jpg",
-    "spo/topics/first-screen/assets/finished-screen.jpg",
-    "spo/topics/first-screen/assets/label-properties.jpg",
-    "spo/topics/first-screen/assets/rename-label.jpg",
-    "spo/topics/first-screen/assets/screen-review.png",
-    "spo/topics/mit-app-inventor/assets/blocks-screenshot.jpg",
-    "spo/topics/mit-app-inventor/assets/button-properties-screenshot.jpg",
-    "spo/topics/mit-app-inventor/assets/connect-usb-screenshot.jpg",
-    "spo/topics/mit-app-inventor/assets/designer-and-blocks.png",
-    "spo/topics/mit-app-inventor/assets/designer-screenshot.jpg",
-    "spo/topics/mit-app-inventor/assets/phone-connection.png",
-    "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.svg",
-    "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
+    "topics/physics-10-2h/005-uniformly-accelerated-rectilinear-motion/uniformly-accelerated-rectilinear-motion.svg",
+    "topics/physics-9-3h/006-speed-of-uniformly-accelerated-motion-and-velocity-graph/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg",
+    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/blocks-screenshot.jpg",
+    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/button-properties-screenshot.jpg",
+    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/connect-usb-screenshot.jpg",
+    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/designer-and-blocks.png",
+    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/designer-screenshot.jpg",
+    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/phone-connection.png",
+    "topics/spo-mobile-app-development/004-first-screen/assets/counter-screen.png",
+    "topics/spo-mobile-app-development/004-first-screen/assets/empty-designer.jpg",
+    "topics/spo-mobile-app-development/004-first-screen/assets/finished-screen.jpg",
+    "topics/spo-mobile-app-development/004-first-screen/assets/label-properties.jpg",
+    "topics/spo-mobile-app-development/004-first-screen/assets/rename-label.jpg",
+    "topics/spo-mobile-app-development/004-first-screen/assets/screen-review.png",
+    "topics/spo-mobile-app-development/005-events-and-state/assets/add-event.jpg",
+    "topics/spo-mobile-app-development/005-events-and-state/assets/add-handler.jpg",
+    "topics/spo-mobile-app-development/005-events-and-state/assets/complete-blocks-overview.jpg",
+    "topics/spo-mobile-app-development/005-events-and-state/assets/counter-trace.png",
+    "topics/spo-mobile-app-development/005-events-and-state/assets/event-state-flow.png",
+    "topics/spo-mobile-app-development/005-events-and-state/assets/increment-state.jpg",
+    "topics/spo-mobile-app-development/005-events-and-state/assets/initialize-count.jpg",
+    "topics/spo-mobile-app-development/005-events-and-state/assets/reset-handler.jpg",
+    "topics/spo-mobile-app-development/005-events-and-state/assets/state-and-display.png"
   ]
 }
