@@ -12,24 +12,219 @@
       "title": "Школьные материалы"
     },
     {
+      "source": "topics/spo-mobile-app-development/006/variants/01/assignment.md",
+      "output": "spo/topics/006/variants/01.html",
+      "title": "Вариант 01 — На тропе"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/02/assignment.md",
+      "output": "spo/topics/006/variants/02.html",
+      "title": "Вариант 02 — На тропе"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/03/assignment.md",
+      "output": "spo/topics/006/variants/03.html",
+      "title": "Вариант 03 — На тропе"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/04/assignment.md",
+      "output": "spo/topics/006/variants/04.html",
+      "title": "Вариант 04 — Книжная полка"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/05/assignment.md",
+      "output": "spo/topics/006/variants/05.html",
+      "title": "Вариант 05 — Книжная полка"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/06/assignment.md",
+      "output": "spo/topics/006/variants/06.html",
+      "title": "Вариант 06 — Книжная полка"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/07/assignment.md",
+      "output": "spo/topics/006/variants/07.html",
+      "title": "Вариант 07 — Тёплая чашка"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/08/assignment.md",
+      "output": "spo/topics/006/variants/08.html",
+      "title": "Вариант 08 — Тёплая чашка"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/09/assignment.md",
+      "output": "spo/topics/006/variants/09.html",
+      "title": "Вариант 09 — Тёплая чашка"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/10/assignment.md",
+      "output": "spo/topics/006/variants/10.html",
+      "title": "Вариант 10 — Музей рядом"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/11/assignment.md",
+      "output": "spo/topics/006/variants/11.html",
+      "title": "Вариант 11 — Музей рядом"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/12/assignment.md",
+      "output": "spo/topics/006/variants/12.html",
+      "title": "Вариант 12 — Музей рядом"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/13/assignment.md",
+      "output": "spo/topics/006/variants/13.html",
+      "title": "Вариант 13 — Спорт после пар"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/14/assignment.md",
+      "output": "spo/topics/006/variants/14.html",
+      "title": "Вариант 14 — Спорт после пар"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/15/assignment.md",
+      "output": "spo/topics/006/variants/15.html",
+      "title": "Вариант 15 — Спорт после пар"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/16/assignment.md",
+      "output": "spo/topics/006/variants/16.html",
+      "title": "Вариант 16 — Зелёный уголок"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/17/assignment.md",
+      "output": "spo/topics/006/variants/17.html",
+      "title": "Вариант 17 — Зелёный уголок"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/18/assignment.md",
+      "output": "spo/topics/006/variants/18.html",
+      "title": "Вариант 18 — Зелёный уголок"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/19/assignment.md",
+      "output": "spo/topics/006/variants/19.html",
+      "title": "Вариант 19 — Мастерская идей"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/20/assignment.md",
+      "output": "spo/topics/006/variants/20.html",
+      "title": "Вариант 20 — Мастерская идей"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/21/assignment.md",
+      "output": "spo/topics/006/variants/21.html",
+      "title": "Вариант 21 — Мастерская идей"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/22/assignment.md",
+      "output": "spo/topics/006/variants/22.html",
+      "title": "Вариант 22 — Друг из приюта"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/23/assignment.md",
+      "output": "spo/topics/006/variants/23.html",
+      "title": "Вариант 23 — Друг из приюта"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/24/assignment.md",
+      "output": "spo/topics/006/variants/24.html",
+      "title": "Вариант 24 — Друг из приюта"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/25/assignment.md",
+      "output": "spo/topics/006/variants/25.html",
+      "title": "Вариант 25 — Экопункт"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/26/assignment.md",
+      "output": "spo/topics/006/variants/26.html",
+      "title": "Вариант 26 — Экопункт"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/27/assignment.md",
+      "output": "spo/topics/006/variants/27.html",
+      "title": "Вариант 27 — Экопункт"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/28/assignment.md",
+      "output": "spo/topics/006/variants/28.html",
+      "title": "Вариант 28 — Афиша вечера"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/29/assignment.md",
+      "output": "spo/topics/006/variants/29.html",
+      "title": "Вариант 29 — Афиша вечера"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/30/assignment.md",
+      "output": "spo/topics/006/variants/30.html",
+      "title": "Вариант 30 — Афиша вечера"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/31/assignment.md",
+      "output": "spo/topics/006/variants/31.html",
+      "title": "Вариант 31 — Учебный клуб"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/32/assignment.md",
+      "output": "spo/topics/006/variants/32.html",
+      "title": "Вариант 32 — Учебный клуб"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/33/assignment.md",
+      "output": "spo/topics/006/variants/33.html",
+      "title": "Вариант 33 — Учебный клуб"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/34/assignment.md",
+      "output": "spo/topics/006/variants/34.html",
+      "title": "Вариант 34 — Снаряжение рядом"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/35/assignment.md",
+      "output": "spo/topics/006/variants/35.html",
+      "title": "Вариант 35 — Снаряжение рядом"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/36/assignment.md",
+      "output": "spo/topics/006/variants/36.html",
+      "title": "Вариант 36 — Снаряжение рядом"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/37/assignment.md",
+      "output": "spo/topics/006/variants/37.html",
+      "title": "Вариант 37 — Космос рядом"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/38/assignment.md",
+      "output": "spo/topics/006/variants/38.html",
+      "title": "Вариант 38 — Космос рядом"
+    },
+    {
+      "source": "topics/spo-mobile-app-development/006/variants/39/assignment.md",
+      "output": "spo/topics/006/variants/39.html",
+      "title": "Вариант 39 — Космос рядом"
+    },
+    {
       "source": "topics/spo-mobile-app-development/012-demo-and-tool-limits.md",
       "output": "spo/topics/demo-and-tool-limits.html",
       "title": "Демонстрация и пределы конструктора"
     },
     {
-      "source": "topics/spo-mobile-app-development/005-events-and-state/README.md",
+      "source": "topics/spo-mobile-app-development/005/events-and-state.md",
       "output": "spo/topics/events-and-state/index.html",
       "title": "Событие, переменная и изменение состояния"
     },
     {
-      "source": "topics/spo-mobile-app-development/004-first-screen/README.md",
+      "source": "topics/spo-mobile-app-development/004/first-screen.md",
       "output": "spo/topics/first-screen/index.html",
       "title": "Собираем первый экран"
     },
     {
-      "source": "topics/spo-mobile-app-development/006-first-working-scenario.md",
+      "source": "topics/spo-mobile-app-development/006/visual-interface-design.md",
       "output": "spo/topics/first-working-scenario.html",
-      "title": "Первый работающий сценарий"
+      "title": "Проектирование визуального интерфейса мобильного приложения"
     },
     {
       "source": "topics/spo-mobile-app-development/011-from-blocks-to-code.md",
@@ -47,12 +242,12 @@
       "title": "Доработка и тестирование мини-приложения"
     },
     {
-      "source": "topics/spo-mobile-app-development/003-mit-app-inventor/README.md",
+      "source": "topics/spo-mobile-app-development/003/mit-app-inventor.md",
       "output": "spo/topics/mit-app-inventor/index.html",
       "title": "Интерфейс MIT App Inventor и подключение телефона"
     },
     {
-      "source": "topics/spo-mobile-app-development/001-mobile-app-types/README.md",
+      "source": "topics/spo-mobile-app-development/001/mobile-app-types.md",
       "output": "spo/topics/mobile-app-types/index.html",
       "title": "Какие бывают мобильные приложения"
     },
@@ -67,14 +262,14 @@
       "title": "Сохранение результата и функции телефона"
     },
     {
-      "source": "topics/spo-mobile-app-development/002-technology-choice-and-diagnostics/README.md",
+      "source": "topics/spo-mobile-app-development/002/technology-choice-and-diagnostics.md",
       "output": "spo/topics/technology-choice-and-diagnostics/index.html",
       "title": "Сравнение подходов и диагностика группы"
     },
     {
       "source": "topics/spo-mobile-app-development/007-variables-and-lists.md",
       "output": "spo/topics/variables-and-lists.html",
-      "title": "Переменные, списки и данные"
+      "title": "Реализация навигации и проверка многоэкранного прототипа мобильного приложения"
     },
     {
       "source": "topics/README.md",
@@ -152,7 +347,7 @@
       "title": "Физика 10. Равномерное прямолинейное движение"
     },
     {
-      "source": "topics/physics-10-2h/005-uniformly-accelerated-rectilinear-motion/README.md",
+      "source": "topics/physics-10-2h/005/uniformly-accelerated-rectilinear-motion.md",
       "output": "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.html",
       "title": "Физика 10. Равноускоренное прямолинейное движение"
     },
@@ -347,7 +542,7 @@
       "title": "Физика 9. Неравномерное прямолинейное движение"
     },
     {
-      "source": "topics/physics-9-3h/006-speed-of-uniformly-accelerated-motion-and-velocity-graph/README.md",
+      "source": "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.md",
       "output": "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.html",
       "title": "Физика 9. Скорость прямолинейного равноускоренного движения. График скорости"
     },
@@ -373,28 +568,262 @@
     }
   ],
   "assets": [
-    "topics/physics-10-2h/005-uniformly-accelerated-rectilinear-motion/uniformly-accelerated-rectilinear-motion.svg",
-    "topics/physics-9-3h/006-speed-of-uniformly-accelerated-motion-and-velocity-graph/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg",
-    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/blocks-screenshot.jpg",
-    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/button-properties-screenshot.jpg",
-    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/connect-usb-screenshot.jpg",
-    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/designer-and-blocks.png",
-    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/designer-screenshot.jpg",
-    "topics/spo-mobile-app-development/003-mit-app-inventor/assets/phone-connection.png",
-    "topics/spo-mobile-app-development/004-first-screen/assets/counter-screen.png",
-    "topics/spo-mobile-app-development/004-first-screen/assets/empty-designer.jpg",
-    "topics/spo-mobile-app-development/004-first-screen/assets/finished-screen.jpg",
-    "topics/spo-mobile-app-development/004-first-screen/assets/label-properties.jpg",
-    "topics/spo-mobile-app-development/004-first-screen/assets/rename-label.jpg",
-    "topics/spo-mobile-app-development/004-first-screen/assets/screen-review.png",
-    "topics/spo-mobile-app-development/005-events-and-state/assets/add-event.jpg",
-    "topics/spo-mobile-app-development/005-events-and-state/assets/add-handler.jpg",
-    "topics/spo-mobile-app-development/005-events-and-state/assets/complete-blocks-overview.jpg",
-    "topics/spo-mobile-app-development/005-events-and-state/assets/counter-trace.png",
-    "topics/spo-mobile-app-development/005-events-and-state/assets/event-state-flow.png",
-    "topics/spo-mobile-app-development/005-events-and-state/assets/increment-state.jpg",
-    "topics/spo-mobile-app-development/005-events-and-state/assets/initialize-count.jpg",
-    "topics/spo-mobile-app-development/005-events-and-state/assets/reset-handler.jpg",
-    "topics/spo-mobile-app-development/005-events-and-state/assets/state-and-display.png"
+    "topics/physics-10-2h/005/uniformly-accelerated-rectilinear-motion.svg",
+    "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg",
+    "topics/spo-mobile-app-development/003/assets/blocks-screenshot.jpg",
+    "topics/spo-mobile-app-development/003/assets/button-properties-screenshot.jpg",
+    "topics/spo-mobile-app-development/003/assets/connect-usb-screenshot.jpg",
+    "topics/spo-mobile-app-development/003/assets/designer-and-blocks.png",
+    "topics/spo-mobile-app-development/003/assets/designer-screenshot.jpg",
+    "topics/spo-mobile-app-development/003/assets/phone-connection.png",
+    "topics/spo-mobile-app-development/004/assets/counter-screen.png",
+    "topics/spo-mobile-app-development/004/assets/empty-designer.jpg",
+    "topics/spo-mobile-app-development/004/assets/finished-screen.jpg",
+    "topics/spo-mobile-app-development/004/assets/label-properties.jpg",
+    "topics/spo-mobile-app-development/004/assets/rename-label.jpg",
+    "topics/spo-mobile-app-development/004/assets/screen-review.png",
+    "topics/spo-mobile-app-development/005/assets/add-event.jpg",
+    "topics/spo-mobile-app-development/005/assets/add-handler.jpg",
+    "topics/spo-mobile-app-development/005/assets/complete-blocks-overview.jpg",
+    "topics/spo-mobile-app-development/005/assets/counter-trace.png",
+    "topics/spo-mobile-app-development/005/assets/event-state-flow.png",
+    "topics/spo-mobile-app-development/005/assets/increment-state.jpg",
+    "topics/spo-mobile-app-development/005/assets/initialize-count.jpg",
+    "topics/spo-mobile-app-development/005/assets/reset-handler.jpg",
+    "topics/spo-mobile-app-development/005/assets/state-and-display.png",
+    "topics/spo-mobile-app-development/006/variants/01/booking-screen.png",
+    "topics/spo-mobile-app-development/006/variants/01/forest.png",
+    "topics/spo-mobile-app-development/006/variants/01/mountains.png",
+    "topics/spo-mobile-app-development/006/variants/01/river.png",
+    "topics/spo-mobile-app-development/006/variants/01/routes-screen.png",
+    "topics/spo-mobile-app-development/006/variants/01/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/02/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/02/form.png",
+    "topics/spo-mobile-app-development/006/variants/02/item1.png",
+    "topics/spo-mobile-app-development/006/variants/02/item2.png",
+    "topics/spo-mobile-app-development/006/variants/02/item3.png",
+    "topics/spo-mobile-app-development/006/variants/02/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/03/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/03/form.png",
+    "topics/spo-mobile-app-development/006/variants/03/item1.png",
+    "topics/spo-mobile-app-development/006/variants/03/item2.png",
+    "topics/spo-mobile-app-development/006/variants/03/item3.png",
+    "topics/spo-mobile-app-development/006/variants/03/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/04/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/04/form.png",
+    "topics/spo-mobile-app-development/006/variants/04/item1.png",
+    "topics/spo-mobile-app-development/006/variants/04/item2.png",
+    "topics/spo-mobile-app-development/006/variants/04/item3.png",
+    "topics/spo-mobile-app-development/006/variants/04/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/05/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/05/form.png",
+    "topics/spo-mobile-app-development/006/variants/05/item1.png",
+    "topics/spo-mobile-app-development/006/variants/05/item2.png",
+    "topics/spo-mobile-app-development/006/variants/05/item3.png",
+    "topics/spo-mobile-app-development/006/variants/05/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/06/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/06/form.png",
+    "topics/spo-mobile-app-development/006/variants/06/item1.png",
+    "topics/spo-mobile-app-development/006/variants/06/item2.png",
+    "topics/spo-mobile-app-development/006/variants/06/item3.png",
+    "topics/spo-mobile-app-development/006/variants/06/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/07/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/07/form.png",
+    "topics/spo-mobile-app-development/006/variants/07/item1.png",
+    "topics/spo-mobile-app-development/006/variants/07/item2.png",
+    "topics/spo-mobile-app-development/006/variants/07/item3.png",
+    "topics/spo-mobile-app-development/006/variants/07/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/08/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/08/form.png",
+    "topics/spo-mobile-app-development/006/variants/08/item1.png",
+    "topics/spo-mobile-app-development/006/variants/08/item2.png",
+    "topics/spo-mobile-app-development/006/variants/08/item3.png",
+    "topics/spo-mobile-app-development/006/variants/08/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/09/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/09/form.png",
+    "topics/spo-mobile-app-development/006/variants/09/item1.png",
+    "topics/spo-mobile-app-development/006/variants/09/item2.png",
+    "topics/spo-mobile-app-development/006/variants/09/item3.png",
+    "topics/spo-mobile-app-development/006/variants/09/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/10/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/10/form.png",
+    "topics/spo-mobile-app-development/006/variants/10/item1.png",
+    "topics/spo-mobile-app-development/006/variants/10/item2.png",
+    "topics/spo-mobile-app-development/006/variants/10/item3.png",
+    "topics/spo-mobile-app-development/006/variants/10/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/11/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/11/form.png",
+    "topics/spo-mobile-app-development/006/variants/11/item1.png",
+    "topics/spo-mobile-app-development/006/variants/11/item2.png",
+    "topics/spo-mobile-app-development/006/variants/11/item3.png",
+    "topics/spo-mobile-app-development/006/variants/11/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/12/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/12/form.png",
+    "topics/spo-mobile-app-development/006/variants/12/item1.png",
+    "topics/spo-mobile-app-development/006/variants/12/item2.png",
+    "topics/spo-mobile-app-development/006/variants/12/item3.png",
+    "topics/spo-mobile-app-development/006/variants/12/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/13/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/13/form.png",
+    "topics/spo-mobile-app-development/006/variants/13/item1.png",
+    "topics/spo-mobile-app-development/006/variants/13/item2.png",
+    "topics/spo-mobile-app-development/006/variants/13/item3.png",
+    "topics/spo-mobile-app-development/006/variants/13/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/14/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/14/form.png",
+    "topics/spo-mobile-app-development/006/variants/14/item1.png",
+    "topics/spo-mobile-app-development/006/variants/14/item2.png",
+    "topics/spo-mobile-app-development/006/variants/14/item3.png",
+    "topics/spo-mobile-app-development/006/variants/14/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/15/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/15/form.png",
+    "topics/spo-mobile-app-development/006/variants/15/item1.png",
+    "topics/spo-mobile-app-development/006/variants/15/item2.png",
+    "topics/spo-mobile-app-development/006/variants/15/item3.png",
+    "topics/spo-mobile-app-development/006/variants/15/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/16/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/16/form.png",
+    "topics/spo-mobile-app-development/006/variants/16/item1.png",
+    "topics/spo-mobile-app-development/006/variants/16/item2.png",
+    "topics/spo-mobile-app-development/006/variants/16/item3.png",
+    "topics/spo-mobile-app-development/006/variants/16/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/17/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/17/form.png",
+    "topics/spo-mobile-app-development/006/variants/17/item1.png",
+    "topics/spo-mobile-app-development/006/variants/17/item2.png",
+    "topics/spo-mobile-app-development/006/variants/17/item3.png",
+    "topics/spo-mobile-app-development/006/variants/17/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/18/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/18/form.png",
+    "topics/spo-mobile-app-development/006/variants/18/item1.png",
+    "topics/spo-mobile-app-development/006/variants/18/item2.png",
+    "topics/spo-mobile-app-development/006/variants/18/item3.png",
+    "topics/spo-mobile-app-development/006/variants/18/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/19/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/19/form.png",
+    "topics/spo-mobile-app-development/006/variants/19/item1.png",
+    "topics/spo-mobile-app-development/006/variants/19/item2.png",
+    "topics/spo-mobile-app-development/006/variants/19/item3.png",
+    "topics/spo-mobile-app-development/006/variants/19/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/20/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/20/form.png",
+    "topics/spo-mobile-app-development/006/variants/20/item1.png",
+    "topics/spo-mobile-app-development/006/variants/20/item2.png",
+    "topics/spo-mobile-app-development/006/variants/20/item3.png",
+    "topics/spo-mobile-app-development/006/variants/20/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/21/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/21/form.png",
+    "topics/spo-mobile-app-development/006/variants/21/item1.png",
+    "topics/spo-mobile-app-development/006/variants/21/item2.png",
+    "topics/spo-mobile-app-development/006/variants/21/item3.png",
+    "topics/spo-mobile-app-development/006/variants/21/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/22/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/22/form.png",
+    "topics/spo-mobile-app-development/006/variants/22/item1.png",
+    "topics/spo-mobile-app-development/006/variants/22/item2.png",
+    "topics/spo-mobile-app-development/006/variants/22/item3.png",
+    "topics/spo-mobile-app-development/006/variants/22/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/23/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/23/form.png",
+    "topics/spo-mobile-app-development/006/variants/23/item1.png",
+    "topics/spo-mobile-app-development/006/variants/23/item2.png",
+    "topics/spo-mobile-app-development/006/variants/23/item3.png",
+    "topics/spo-mobile-app-development/006/variants/23/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/24/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/24/form.png",
+    "topics/spo-mobile-app-development/006/variants/24/item1.png",
+    "topics/spo-mobile-app-development/006/variants/24/item2.png",
+    "topics/spo-mobile-app-development/006/variants/24/item3.png",
+    "topics/spo-mobile-app-development/006/variants/24/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/25/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/25/form.png",
+    "topics/spo-mobile-app-development/006/variants/25/item1.png",
+    "topics/spo-mobile-app-development/006/variants/25/item2.png",
+    "topics/spo-mobile-app-development/006/variants/25/item3.png",
+    "topics/spo-mobile-app-development/006/variants/25/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/26/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/26/form.png",
+    "topics/spo-mobile-app-development/006/variants/26/item1.png",
+    "topics/spo-mobile-app-development/006/variants/26/item2.png",
+    "topics/spo-mobile-app-development/006/variants/26/item3.png",
+    "topics/spo-mobile-app-development/006/variants/26/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/27/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/27/form.png",
+    "topics/spo-mobile-app-development/006/variants/27/item1.png",
+    "topics/spo-mobile-app-development/006/variants/27/item2.png",
+    "topics/spo-mobile-app-development/006/variants/27/item3.png",
+    "topics/spo-mobile-app-development/006/variants/27/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/28/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/28/form.png",
+    "topics/spo-mobile-app-development/006/variants/28/item1.png",
+    "topics/spo-mobile-app-development/006/variants/28/item2.png",
+    "topics/spo-mobile-app-development/006/variants/28/item3.png",
+    "topics/spo-mobile-app-development/006/variants/28/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/29/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/29/form.png",
+    "topics/spo-mobile-app-development/006/variants/29/item1.png",
+    "topics/spo-mobile-app-development/006/variants/29/item2.png",
+    "topics/spo-mobile-app-development/006/variants/29/item3.png",
+    "topics/spo-mobile-app-development/006/variants/29/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/30/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/30/form.png",
+    "topics/spo-mobile-app-development/006/variants/30/item1.png",
+    "topics/spo-mobile-app-development/006/variants/30/item2.png",
+    "topics/spo-mobile-app-development/006/variants/30/item3.png",
+    "topics/spo-mobile-app-development/006/variants/30/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/31/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/31/form.png",
+    "topics/spo-mobile-app-development/006/variants/31/item1.png",
+    "topics/spo-mobile-app-development/006/variants/31/item2.png",
+    "topics/spo-mobile-app-development/006/variants/31/item3.png",
+    "topics/spo-mobile-app-development/006/variants/31/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/32/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/32/form.png",
+    "topics/spo-mobile-app-development/006/variants/32/item1.png",
+    "topics/spo-mobile-app-development/006/variants/32/item2.png",
+    "topics/spo-mobile-app-development/006/variants/32/item3.png",
+    "topics/spo-mobile-app-development/006/variants/32/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/33/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/33/form.png",
+    "topics/spo-mobile-app-development/006/variants/33/item1.png",
+    "topics/spo-mobile-app-development/006/variants/33/item2.png",
+    "topics/spo-mobile-app-development/006/variants/33/item3.png",
+    "topics/spo-mobile-app-development/006/variants/33/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/34/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/34/form.png",
+    "topics/spo-mobile-app-development/006/variants/34/item1.png",
+    "topics/spo-mobile-app-development/006/variants/34/item2.png",
+    "topics/spo-mobile-app-development/006/variants/34/item3.png",
+    "topics/spo-mobile-app-development/006/variants/34/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/35/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/35/form.png",
+    "topics/spo-mobile-app-development/006/variants/35/item1.png",
+    "topics/spo-mobile-app-development/006/variants/35/item2.png",
+    "topics/spo-mobile-app-development/006/variants/35/item3.png",
+    "topics/spo-mobile-app-development/006/variants/35/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/36/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/36/form.png",
+    "topics/spo-mobile-app-development/006/variants/36/item1.png",
+    "topics/spo-mobile-app-development/006/variants/36/item2.png",
+    "topics/spo-mobile-app-development/006/variants/36/item3.png",
+    "topics/spo-mobile-app-development/006/variants/36/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/37/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/37/form.png",
+    "topics/spo-mobile-app-development/006/variants/37/item1.png",
+    "topics/spo-mobile-app-development/006/variants/37/item2.png",
+    "topics/spo-mobile-app-development/006/variants/37/item3.png",
+    "topics/spo-mobile-app-development/006/variants/37/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/38/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/38/form.png",
+    "topics/spo-mobile-app-development/006/variants/38/item1.png",
+    "topics/spo-mobile-app-development/006/variants/38/item2.png",
+    "topics/spo-mobile-app-development/006/variants/38/item3.png",
+    "topics/spo-mobile-app-development/006/variants/38/screen1.png",
+    "topics/spo-mobile-app-development/006/variants/39/catalog.png",
+    "topics/spo-mobile-app-development/006/variants/39/form.png",
+    "topics/spo-mobile-app-development/006/variants/39/item1.png",
+    "topics/spo-mobile-app-development/006/variants/39/item2.png",
+    "topics/spo-mobile-app-development/006/variants/39/item3.png",
+    "topics/spo-mobile-app-development/006/variants/39/screen1.png"
   ]
 }

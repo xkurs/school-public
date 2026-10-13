@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Вариант 01 — На тропе — Школьные материалы</title>
+  <link rel="stylesheet" href="../../../../assets/style.css">
+  
+</head>
+<body>
+  <header class="site-header"><a href="../../../../index.html">Школьные материалы</a></header>
+  <div class="layout">
+    <nav class="site-nav" aria-label="Разделы"><ul class="nav-root"><li><a href="../../../../index.html">Главная</a></li><li><a href="../../../../topics/index.html">Школа</a></li><li class="is-active"><a href="../../index.html">СПО</a></li></ul></nav>
+    <main><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../../../index.html">Главная</a></li><li><a href="../../index.html">СПО</a></li><li><a href="../../first-working-scenario.html">Проектирование визуального интерфейса мобильного приложения</a></li><li aria-current="page">Вариант 01 — На тропе</li></ol></nav><h1 id="вариант-01-на-тропе">Вариант 01 — На тропе</h1>
+<p>Создайте в MIT App Inventor приложение о прогулочных маршрутах. Проект называется <code>Variant01</code>, название приложения — <strong>«На тропе · V01»</strong>. Используйте только номер варианта; фамилия не требуется.</p>
+<p>Это одно задание на две пары. На <a href="../../first-working-scenario.html">паре 6</a> соберите главный экран и каталог. На <a href="../../variables-and-lists.html">паре 7</a> завершите форму, подключите переходы и проверьте результат.</p>
+<h2 id="макеты-экранов">Макеты экранов</h2>
+<p>Ниже представлены три макета. На сайте переключайте их названиями экранов; в Obsidian макеты расположены друг под другом. Названия экранов в App Inventor указаны в заголовках и таблицах.</p>
+<div class="screen-preview" role="group" aria-label="Макеты трёх экранов"><input class="screen-choice choice-home" type="radio" name="preview-screen" id="preview-home" checked><label class="screen-tab" for="preview-home">Screen1 — Главная</label><input class="screen-choice choice-routes" type="radio" name="preview-screen" id="preview-routes"><label class="screen-tab" for="preview-routes">RoutesScreen — Каталог</label><input class="screen-choice choice-booking" type="radio" name="preview-screen" id="preview-booking"><label class="screen-tab" for="preview-booking">BookingScreen — Форма</label><div class="screen-panels"><div class="screen-panel panel-home"><img alt="Screen1: главный экран варианта 01" src="../../../../assets/media/topics/spo-mobile-app-development/006/variants/01/screen1.png"></div><div class="screen-panel panel-routes"><img alt="RoutesScreen: каталог варианта 01" src="../../../../assets/media/topics/spo-mobile-app-development/006/variants/01/routes-screen.png"></div><div class="screen-panel panel-booking"><img alt="BookingScreen: форма варианта 01" src="../../../../assets/media/topics/spo-mobile-app-development/006/variants/01/booking-screen.png"></div></div></div>
+
+<p>Макеты задают состав и расположение элементов. Отрисовка системных полей и кнопок на телефоне может немного отличаться. Изображения для компонента <code>Image</code> возьмите из набора ниже или выберите собственные по тем же сюжетам.</p>
+<h2 id="общие-требования">Общие требования</h2>
+<ul>
+<li>Ровно три экрана: <code>Screen1</code>, <code>RoutesScreen</code>, <code>BookingScreen</code>.</li>
+<li>Фон всех экранов — <code>#F1F8E9</code>; основной текст — <code>#1B3A24</code>.</li>
+<li>Основные кнопки — <code>#2E7D32</code>, текст на них — <code>#FFFFFF</code>. Второстепенные кнопки и поля — белые с тёмным текстом.</li>
+<li>Заголовки экранов: <code>FontSize: 24</code>, <code>FontBold: true</code>. Названия маршрутов: <code>18</code>, полужирные. Обычный текст: <code>14–16</code>.</li>
+<li>Корневой <code>VerticalArrangement</code> занимает всю ширину экрана. Строки каталога и парные кнопки собраны в <code>HorizontalArrangement</code>.</li>
+<li>Подпись <strong>«Учебный прототип · Вариант 01»</strong> присутствует на каждом экране.</li>
+<li>Компоненты имеют английские имена; надписи для пользователя — русские. <code>Label1</code> и <code>Button1</code> переименуйте.</li>
+<li>Текст не обрезается, компоненты не перекрываются, изображения сохраняют пропорции. Прокрутка формы допустима.</li>
+</ul>
+<h2 id="первая-пара-главный-экран-и-каталог">Первая пара: главный экран и каталог</h2>
+<h3 id="screen1">Screen1</h3>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Имя</th>
+<th>Текст или содержание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Label</code></td>
+<td><code>LabelTitle</code></td>
+<td>Маршруты выходного дня</td>
+</tr>
+<tr>
+<td><code>Label</code></td>
+<td><code>LabelSubtitle</code></td>
+<td>Выберите прогулку для небольшой компании</td>
+</tr>
+<tr>
+<td><code>Image</code></td>
+<td><code>ImageCover</code></td>
+<td>Горный пейзаж; по ширине контейнера</td>
+</tr>
+<tr>
+<td><code>Label</code></td>
+<td><code>LabelIntro</code></td>
+<td>Три маршрута: лесная тропа, берег реки и горный обзор. Найдите свой вариант отдыха.</td>
+</tr>
+<tr>
+<td><code>Button</code></td>
+<td><code>ButtonRoutes</code></td>
+<td>Посмотреть маршруты</td>
+</tr>
+<tr>
+<td><code>Button</code></td>
+<td><code>ButtonBooking</code></td>
+<td>Записаться на прогулку</td>
+</tr>
+<tr>
+<td><code>Label</code></td>
+<td><code>LabelVariant</code></td>
+<td>Учебный прототип · Вариант 01</td>
+</tr>
+</tbody>
+</table>
+<p>Расположите элементы сверху вниз. Обе кнопки занимают ширину контейнера и стоят друг под другом.</p>
+<h3 id="routesscreen">RoutesScreen</h3>
+<p>Заголовок <code>LabelRoutesTitle</code> — «Куда пойдём?». Пояснение <code>LabelRoutesIntro</code> — «Прогулки без специального снаряжения».</p>
+<p>Соберите три строки. В каждой слева <code>Image</code>, справа — <code>VerticalArrangement</code> с тремя <code>Label</code>: названием, характеристикой и описанием.</p>
+<table>
+<thead>
+<tr>
+<th>Строка</th>
+<th>Название</th>
+<th>Характеристика</th>
+<th>Описание</th>
+<th>Изображение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Лесная тропа</td>
+<td>3 км · лёгкий маршрут</td>
+<td>Тень деревьев и тихая прогулка</td>
+<td>Лес</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Берег реки</td>
+<td>5 км · средний маршрут</td>
+<td>Дорожка вдоль воды и место отдыха</td>
+<td>Река</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Горный обзор</td>
+<td>7 км · сложный маршрут</td>
+<td>Подъём и панорама с высоты</td>
+<td>Горы</td>
+</tr>
+</tbody>
+</table>
+<p>Имена строк: <code>HorizontalArrangementRoute1</code>, <code>HorizontalArrangementRoute2</code>, <code>HorizontalArrangementRoute3</code>. Для изображений — <code>ImageRoute1</code>–<code>ImageRoute3</code>. Для надписей первой строки — <code>LabelRoute1Name</code>, <code>LabelRoute1Distance</code>, <code>LabelRoute1Description</code>; остальные назовите аналогично.</p>
+<p>Внизу в одном ряду разместите <code>ButtonRoutesBack</code> — «На главную» и <code>ButtonRoutesBooking</code> — «Записаться». Под ними — <code>LabelRoutesVariant</code> с номером варианта.</p>
+<p><strong>Промежуточный результат:</strong> сохранён проект с тремя экранами; главный экран и каталог готовы. Покажите их преподавателю.</p>
+<h2 id="вторая-пара-форма-и-общая-навигация">Вторая пара: форма и общая навигация</h2>
+<h3 id="bookingscreen">BookingScreen</h3>
+<p>Заголовок <code>LabelBookingTitle</code> — «План прогулки». Перед каждым полем разместите отдельную видимую подпись, которая останется на экране после ввода текста.</p>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Имя</th>
+<th>Текст или свойство</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Label</code></td>
+<td><code>LabelRoutePrompt</code></td>
+<td>Название маршрута</td>
+</tr>
+<tr>
+<td><code>TextBox</code></td>
+<td><code>TextBoxRoute</code></td>
+<td><code>Hint</code>: Например, Лесная тропа</td>
+</tr>
+<tr>
+<td><code>Label</code></td>
+<td><code>LabelCountPrompt</code></td>
+<td>Количество участников</td>
+</tr>
+<tr>
+<td><code>TextBox</code></td>
+<td><code>TextBoxCount</code></td>
+<td><code>Text</code>: 2; <code>NumbersOnly: true</code></td>
+</tr>
+<tr>
+<td><code>Label</code></td>
+<td><code>LabelCommentPrompt</code></td>
+<td>Пожелания к прогулке</td>
+</tr>
+<tr>
+<td><code>TextBox</code></td>
+<td><code>TextBoxComment</code></td>
+<td><code>Hint</code>: Что хотелось бы увидеть?; <code>MultiLine: true</code></td>
+</tr>
+<tr>
+<td><code>Label</code></td>
+<td><code>LabelOptionsPrompt</code></td>
+<td>Дополнительно</td>
+</tr>
+<tr>
+<td><code>CheckBox</code></td>
+<td><code>CheckBoxGuide</code></td>
+<td>Нужен сопровождающий; отмечен</td>
+</tr>
+<tr>
+<td><code>CheckBox</code></td>
+<td><code>CheckBoxPhoto</code></td>
+<td>Остановка для фотографий; не отмечен</td>
+</tr>
+<tr>
+<td><code>Label</code></td>
+<td><code>LabelPacePrompt</code></td>
+<td>Темп прогулки</td>
+</tr>
+<tr>
+<td><code>Slider</code></td>
+<td><code>SliderPace</code></td>
+<td><code>MinValue: 1</code>; <code>MaxValue: 5</code>; <code>ThumbPosition: 2</code></td>
+</tr>
+<tr>
+<td>Два <code>Label</code></td>
+<td><code>LabelPaceSlow</code>, <code>LabelPaceFast</code></td>
+<td>Спокойный; Быстрый</td>
+</tr>
+<tr>
+<td><code>Button</code></td>
+<td><code>ButtonBookingBack</code></td>
+<td>Назад</td>
+</tr>
+<tr>
+<td><code>Button</code></td>
+<td><code>ButtonBookingSubmit</code></td>
+<td>Отправить</td>
+</tr>
+<tr>
+<td><code>Label</code></td>
+<td><code>LabelBookingVariant</code></td>
+<td>Учебный прототип · Вариант 01</td>
+</tr>
+</tbody>
+</table>
+<p>Кнопки внизу стоят рядом. Обработчик кнопки «Отправить», расчёты и сохранение данных не нужны.</p>
+<h3 id="подключите-пять-переходов">Подключите пять переходов</h3>
+<table>
+<thead>
+<tr>
+<th>Экран</th>
+<th>Событие кнопки</th>
+<th>Блок из Control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Screen1</code></td>
+<td><code>ButtonRoutes.Click</code></td>
+<td><code>open another screen</code> → <code>RoutesScreen</code></td>
+</tr>
+<tr>
+<td><code>Screen1</code></td>
+<td><code>ButtonBooking.Click</code></td>
+<td><code>open another screen</code> → <code>BookingScreen</code></td>
+</tr>
+<tr>
+<td><code>RoutesScreen</code></td>
+<td><code>ButtonRoutesBooking.Click</code></td>
+<td><code>open another screen</code> → <code>BookingScreen</code></td>
+</tr>
+<tr>
+<td><code>RoutesScreen</code></td>
+<td><code>ButtonRoutesBack.Click</code></td>
+<td><code>close screen</code></td>
+</tr>
+<tr>
+<td><code>BookingScreen</code></td>
+<td><code>ButtonBookingBack.Click</code></td>
+<td><code>close screen</code></td>
+</tr>
+</tbody>
+</table>
+<p>Как соединить эти блоки: <a href="../../variables-and-lists.html">общая инструкция седьмой пары</a>. Для возврата закрывайте дополнительный экран; не открывайте новый <code>Screen1</code>.</p>
+<h2 id="проверка-и-сдача">Проверка и сдача</h2>
+<ol>
+<li>Проверьте цепочку: главная → каталог → форма → назад в каталог → назад на главную.</li>
+<li>Проверьте второй путь: главная → форма → назад на главную.</li>
+<li>Повторите оба пути трижды; убедитесь, что возврат формы ведёт туда, откуда она была открыта.</li>
+<li>Проверьте тексты, цвета, компоненты и имена по таблицам. Исправьте обрезанные надписи и искажённые изображения.</li>
+<li>Сдайте <code>Variant01.aia</code> и три снимка экранов. При показе найдите указанный преподавателем компонент, измените его свойство и объясните назначение.</li>
+</ol>
+<h2 id="изображения-для-работы">Изображения для работы</h2>
+<p>Эти учебные иллюстрации можно сохранить и загрузить в Media проекта. Разрешается заменить их собственными изображениями леса, реки и гор с сохранением расположения по макетам.</p>
+<p><img alt="Горы — для ImageCover и ImageRoute3" src="../../../../assets/media/topics/spo-mobile-app-development/006/variants/01/mountains.png"></p>
+<p><img alt="Лес — для ImageRoute1" src="../../../../assets/media/topics/spo-mobile-app-development/006/variants/01/forest.png"></p>
+<p><img alt="Река — для ImageRoute2" src="../../../../assets/media/topics/spo-mobile-app-development/006/variants/01/river.png"></p>
+<p>Вернуться к <a href="../../first-working-scenario.html">первой паре</a> или <a href="../../variables-and-lists.html">второй паре</a>.</p></main>
+  </div>
+  <footer class="site-footer">Расписания, физика и информатика</footer>
+</body>
+</html>

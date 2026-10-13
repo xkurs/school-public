@@ -246,6 +246,19 @@ aside.callout {
   font-size: 0.9rem;
 }
 
+/* Assignment screen previews work offline using native radio controls. */
+.screen-preview { margin-block: 1.25rem; }
+.screen-choice { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
+.screen-tab { display: inline-block; padding: 0.65rem 0.85rem; margin: 0.2rem; border: 1px solid #607386; border-radius: 0.3rem; color: #243647; background: #fff; cursor: pointer; }
+.screen-choice:checked + .screen-tab { color: #fff; background: #243647; }
+.screen-choice:focus-visible + .screen-tab { outline: 3px solid #3182ce; outline-offset: 3px; }
+.screen-panel { display: none; }
+.screen-panels { padding-block: 1rem; }
+.screen-panel img { display: block; width: min(100%, 360px); height: auto; margin-inline: auto; }
+.screen-preview:has(.choice-home:checked) .panel-home,
+.screen-preview:has(.choice-routes:checked) .panel-routes,
+.screen-preview:has(.choice-booking:checked) .panel-booking { display: block; }
+
 @media (max-width: 48rem) {
   .layout {
     grid-template-columns: 1fr;
