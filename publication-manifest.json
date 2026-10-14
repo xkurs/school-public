@@ -327,6 +327,11 @@
       "title": "Физика 10. Криволинейное движение. Движение материальной точки по окружности"
     },
     {
+      "source": "topics/physics-10-2h/012-elastic-force-hookes-law-and-weight.md",
+      "output": "topics/physics-10-2h/elastic-force-hookes-law-and-weight.html",
+      "title": "Сила упругости. Закон Гука. Вес тела"
+    },
+    {
       "source": "topics/physics-10-2h/008-galilean-relativity-inertial-frames-and-newtons-first-law.md",
       "output": "topics/physics-10-2h/galilean-relativity-inertial-frames-and-newtons-first-law.html",
       "title": "Физика 10. Принцип относительности Галилея. Инерциальные системы отсчета. Первый закон Ньютона"
@@ -375,6 +380,11 @@
       "source": "topics/physics-11-2h/README.md",
       "output": "topics/physics-11-2h/index.html",
       "title": "Физика 11"
+    },
+    {
+      "source": "topics/physics-11-2h/008-inductance-self-induction-and-magnetic-field-energy.md",
+      "output": "topics/physics-11-2h/inductance-self-induction-and-magnetic-field-energy.html",
+      "title": "Индуктивность. Самоиндукция. Энергия магнитного поля. Электромагнитное поле"
     },
     {
       "source": "topics/physics-11-2h/005-lorentz-force-and-its-work.md",
@@ -470,6 +480,11 @@
       "source": "topics/physics-8-2h/012-heat-quantity-and-specific-heat-capacity.md",
       "output": "topics/physics-8-2h/heat-quantity-and-specific-heat-capacity.html",
       "title": "Физика 8. Количество теплоты. Удельная теплоемкость"
+    },
+    {
+      "source": "topics/physics-8-2h/015-heating-and-cooling-heat-calculations.md",
+      "output": "topics/physics-8-2h/heating-and-cooling-heat-calculations.html",
+      "title": "Расчёт количества теплоты при нагревании и охлаждении"
     },
     {
       "source": "topics/physics-8-2h/README.md",
