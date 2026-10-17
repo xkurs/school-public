@@ -15,14 +15,52 @@ body {
 }
 
 .site-header {
-  background: #174a7e;
+  position: relative;
+  min-height: 21.25rem;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),
+    url("header.jpg") center / cover;
+  background-color: #206d8e;
   color: white;
-  padding: 1rem max(1rem, calc((100% - 72rem) / 2));
+  padding: 4.5rem 1.5rem 3rem;
 }
 
 .site-header a {
   color: inherit;
   text-decoration: none;
+}
+
+.site-brand {
+  position: absolute;
+  top: 0.85rem;
+  left: 1.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 40%);
+}
+
+.site-banner-title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  line-height: 1.3;
+  text-align: center;
+  text-wrap: balance;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 40%);
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1;
+  padding: 0.5rem 1rem;
+  background: white;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 .layout {
@@ -240,10 +278,31 @@ aside.callout {
 }
 
 .site-footer {
-  width: min(72rem, calc(100% - 2rem));
-  margin: 0 auto 1.5rem;
-  color: #526176;
-  font-size: 0.9rem;
+  padding: 2rem 1.5rem;
+  background: #206d8e;
+  color: white;
+}
+
+.site-quote {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.site-quote blockquote {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  font-style: italic;
+}
+
+.site-quote p {
+  margin: 0;
+}
+
+.site-quote figcaption {
+  margin-top: 1rem;
+  text-align: right;
 }
 
 /* Assignment screen previews work offline using native radio controls. */
@@ -260,6 +319,14 @@ aside.callout {
 .screen-preview:has(.choice-booking:checked) .panel-booking { display: block; }
 
 @media (max-width: 48rem) {
+  .site-header {
+    min-height: 16rem;
+  }
+
+  .site-brand {
+    left: 1rem;
+  }
+
   .layout {
     grid-template-columns: 1fr;
   }
