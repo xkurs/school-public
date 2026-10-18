@@ -57,7 +57,7 @@
       "title": "Сравнение подходов и диагностика группы"
     },
     {
-      "source": "spo/mobile-app-development/007-variables-and-lists.md",
+      "source": "spo/mobile-app-development/007/variables-and-lists.md",
       "output": "spo/topics/variables-and-lists.html",
       "title": "Реализация навигации и проверка многоэкранного прототипа мобильного приложения"
     },
@@ -432,6 +432,11 @@
       "title": "Физика 7. Механическое движение. Равномерное и неравномерное движение"
     },
     {
+      "source": "topics/physics-7-2h/008-motion-of-particles.md",
+      "output": "topics/physics-7-2h/motion-of-particles.html",
+      "title": "Движение частиц вещества"
+    },
+    {
       "source": "topics/physics-7-2h/005-natural-science-method-and-models.md",
       "output": "topics/physics-7-2h/natural-science-method-and-models.html",
       "title": "Физика 7. Как физика и другие естественные науки изучают природу"
@@ -550,6 +555,11 @@
       "source": "topics/physics-9-3h/011-newtons-first-law-and-force-vector.md",
       "output": "topics/physics-9-3h/newtons-first-law-and-force-vector.html",
       "title": "Физика 9. Первый закон Ньютона. Вектор силы"
+    },
+    {
+      "source": "topics/physics-9-3h/021-newtons-laws-elasticity-and-friction-problems.md",
+      "output": "topics/physics-9-3h/newtons-laws-elasticity-and-friction-problems.html",
+      "title": "Решение задач по теме «Законы Ньютона. Сила упругости. Сила трения»"
     },
     {
       "source": "topics/physics-9-3h/004-nonuniform-linear-motion-average-and-instantaneous-speed.md",
