@@ -20,256 +20,170 @@
   <div class="layout">
     <nav class="site-nav" aria-label="Разделы"><ul class="nav-root"><li><a href="../../../index.html">Главная</a></li><li><a href="../../../topics/index.html">Школа</a></li><li class="is-active"><a href="../index.html">СПО</a></li></ul></nav>
     <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../../index.html">Главная</a></li><li><a href="../index.html">СПО</a></li><li><a href="index.html">Текущий набор индивидуальных заданий</a></li><li aria-current="page">Вариант 04 — Книжная полка</li></ol></nav><h1 id="вариант-04-книжная-полка">Вариант 04 — Книжная полка</h1>
-<p>Создайте в MIT App Inventor проект <code>Variant04</code>. Название приложения — <strong>«Книжная полка · V04»</strong>. Используйте только номер варианта, без фамилии.</p>
-<p>Это одно задание на две пары. На <a href="../first-working-scenario.html">паре 6</a> соберите главный экран и каталог. На <a href="../variables-and-lists.html">паре 7</a> завершите форму, подключите пять переходов и проверьте проект.</p>
-<h2 id="макеты-экранов">Макеты экранов</h2>
-<p>На сайте переключайте макеты названиями экранов. В Obsidian они расположены друг под другом. Системные поля и кнопки App Inventor могут выглядеть немного иначе; соблюдать нужно структуру и свойства из задания.</p>
-<div class="screen-preview" role="group" aria-label="Макеты трёх экранов"><input class="screen-choice choice-home" type="radio" name="preview-screen" id="preview-home" checked><label class="screen-tab" for="preview-home">Screen1 — Главная</label><input class="screen-choice choice-routes" type="radio" name="preview-screen" id="preview-routes"><label class="screen-tab" for="preview-routes">BooksScreen — Каталог</label><input class="screen-choice choice-booking" type="radio" name="preview-screen" id="preview-booking"><label class="screen-tab" for="preview-booking">RequestScreen — Форма</label><div class="screen-panels"><div class="screen-panel panel-home"><img alt="Screen1: макет варианта 04" src="../../../assets/media/spo/variants/04/screen1.png"></div><div class="screen-panel panel-routes"><img alt="BooksScreen: макет варианта 04" src="../../../assets/media/spo/variants/04/catalog.png"></div><div class="screen-panel panel-booking"><img alt="RequestScreen: макет варианта 04" src="../../../assets/media/spo/variants/04/form.png"></div></div></div>
-
-<h2 id="общие-требования">Общие требования</h2>
-<ul>
-<li>Ровно три экрана: <code>Screen1</code>, <code>BooksScreen</code>, <code>RequestScreen</code>. Установите <code>Scrollable: true</code>; для длинного каталога или формы прокрутка допустима.</li>
-<li>Свойство <code>Title</code>: у <code>Screen1</code> — «Книжная полка · V04», у <code>BooksScreen</code> — «Что почитать? · V04», у <code>RequestScreen</code> — «Заявка на книгу · V04».</li>
-<li>Фон — <code>#EEF4FC</code>, текст — <code>#19324D</code>. Основные кнопки — <code>#245A91</code> с текстом <code>#FFFFFF</code>.</li>
-<li>Второстепенные кнопки, поля и блоки каталога — белые с основным цветом текста.</li>
-<li>Заголовки: <code>FontSize: 24</code>, <code>FontBold: true</code>; названия позиций: <code>18</code>, полужирные; обычный текст: <code>14–16</code>.</li>
-<li>Корневой <code>VerticalArrangement</code> занимает всю ширину: <code>Width: Fill parent</code>. Горизонтальные строки собирайте в <code>HorizontalArrangement</code>.</li>
-<li>Изображения сохраняют пропорции. Используйте иллюстрации в конце листа либо свои по тем же сюжетам.</li>
-<li>На каждом экране подпись <strong>«Учебный прототип · Вариант 04»</strong>.</li>
-<li>Имена компонентов — английские, по таблицам; надписи для пользователя — русские.</li>
-<li>Нет перекрытий и обрезанных надписей. Расчёты, обработка формы и сохранение данных не требуются.</li>
-</ul>
-<h2 id="первая-пара-главный-экран-и-каталог">Первая пара: главный экран и каталог</h2>
-<h3 id="screen1">Screen1</h3>
-<p><strong>Расположение:</strong> Заголовок и пояснение → широкое изображение → описание → две кнопки друг под другом.</p>
+<p>Ваше веб-приложение — <strong>«Книжная полка · V04»</strong>. Сохраните номер <strong>04</strong> на всём протяжении работы. Фамилия в приложении не требуется.</p>
+<p>Этот лист определяет <strong>содержание и результат</strong>. Как создавать файлы, писать HTML, подключать CSS и JavaScript, объясняют <a href="../index.html">занятия курса</a>. Выполняйте только изученный этап, не всё задание сразу.</p>
+<h2 id="что-сделать-сейчас">Что сделать сейчас</h2>
+<p>На 21 октября назначены первые три занятия веб-блока:</p>
 <table>
 <thead>
 <tr>
-<th>Компонент</th>
-<th>Имя</th>
-<th>Текст или содержание</th>
+<th>Занятие</th>
+<th>Результат для вашего варианта</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>Label</code></td>
-<td><code>LabelTitle</code></td>
+<td><a href="../mobile-web-page/index.html">10 — исследуем веб-страницу</a></td>
+<td>Найдены название, изображение и предполагаемое действие; объяснено, за что отвечают содержание, оформление и программная логика</td>
+</tr>
+<tr>
+<td><a href="../first-web-project/index.html">11 — создаём первый проект</a></td>
+<td>В браузере открывается страница с вашим названием и пояснением; изменение оформления видно, сообщение с номером 04 найдено в консоли</td>
+</tr>
+<tr>
+<td><a href="../html-content-structure/index.html">12 — размечаем содержание</a></td>
+<td>На главной есть смысловые разделы, список из двух позиций своего каталога, ссылка внутри страницы и одно изображение с описанием</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Сейчас не требуется:</strong> полный каталог, форма, точное повторение макетов, обработка заявок, установка PWA. Эти результаты появятся в следующих занятиях.</p>
+<h2 id="содержание-главной-страницы">Содержание главной страницы</h2>
+<table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Ваш текст или изображение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Название приложения</td>
+<td>Книжная полка · V04</td>
+</tr>
+<tr>
+<td>Заголовок главной</td>
 <td>Книги для свободного вечера</td>
 </tr>
 <tr>
-<td><code>Label</code></td>
-<td><code>LabelSubtitle</code></td>
+<td>Короткое пояснение</td>
 <td>Выберите историю по настроению</td>
 </tr>
 <tr>
-<td><code>Image</code></td>
-<td><code>ImageCover</code></td>
-<td>Иллюстрация первой позиции каталога</td>
-</tr>
-<tr>
-<td><code>Label</code></td>
-<td><code>LabelIntro</code></td>
+<td>Описание</td>
 <td>Три предложения для выбора. Выберите историю по настроению.</td>
 </tr>
 <tr>
-<td><code>Button</code></td>
-<td><code>ButtonCatalog</code></td>
+<td>Основное изображение</td>
+<td><code>item1.png</code> из набора ниже</td>
+</tr>
+<tr>
+<td>Название перехода к каталогу</td>
 <td>Открыть каталог</td>
 </tr>
 <tr>
-<td><code>Button</code></td>
-<td><code>ButtonForm</code></td>
+<td>Название перехода к форме</td>
 <td>Оставить заявку</td>
 </tr>
 <tr>
-<td><code>Label</code></td>
-<td><code>LabelVariant</code></td>
+<td>Подпись</td>
 <td>Учебный прототип · Вариант 04</td>
 </tr>
 </tbody>
 </table>
-<p><code>ButtonCatalog</code> — основная, <code>ButtonForm</code> — второстепенная. Контейнеры назовите <code>VerticalArrangementMain</code>, <code>HorizontalArrangementHero</code> (если изображение рядом с текстом), <code>HorizontalArrangementActions</code> (если кнопки рядом).</p>
-<h3 id="booksscreen">BooksScreen</h3>
-<p><code>LabelCatalogTitle</code> — <strong>«Что почитать?»</strong>; <code>LabelCatalogIntro</code> — <strong>«Выберите одну из трёх позиций»</strong>.</p>
-<p><strong>Расположение:</strong> В каждой строке изображение слева, три надписи справа.</p>
+<p>В первой версии достаточно названия приложения и короткого пояснения. На занятии 12 добавьте заголовок содержания, описание и другие изученные элементы. Переходы между разделами приложения появятся позднее; сейчас проверяется только ссылка внутри главной страницы.</p>
+<h2 id="содержание-каталога">Содержание каталога</h2>
+<p>Название — <strong>«Что почитать?»</strong>. Пояснение — «Выберите одну из трёх позиций».</p>
 <table>
 <thead>
 <tr>
-<th>Позиция</th>
+<th style="text-align: right;">№</th>
 <th>Название</th>
 <th>Характеристика</th>
 <th>Описание</th>
-<th>Компонент изображения</th>
+<th>Файл изображения</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td style="text-align: right;">1</td>
 <td>Тайна старого дома</td>
 <td>Детектив · 240 страниц</td>
 <td>История загадки и внимательного поиска</td>
-<td><code>ImageItem1</code></td>
+<td><code>item1.png</code></td>
 </tr>
 <tr>
-<td>2</td>
+<td style="text-align: right;">2</td>
 <td>Путешествие к морю</td>
 <td>Приключения · 180 страниц</td>
 <td>Дорога, новые встречи и открытия</td>
-<td><code>ImageItem2</code></td>
+<td><code>item2.png</code></td>
 </tr>
 <tr>
-<td>3</td>
+<td style="text-align: right;">3</td>
 <td>Город будущего</td>
 <td>Фантастика · 320 страниц</td>
 <td>Технологии и выбор главных героев</td>
-<td><code>ImageItem3</code></td>
+<td><code>item3.png</code></td>
 </tr>
 </tbody>
 </table>
-<p>В каждой позиции три <code>Label</code>: <code>LabelItem1Name</code>, <code>LabelItem1Info</code>, <code>LabelItem1Description</code>. Для позиций 2 и 3 замените цифру. Контейнеры — <code>HorizontalArrangementItem1</code>–<code>3</code> для изображения сбоку или <code>VerticalArrangementItem1</code>–<code>3</code> для изображения сверху. Группы надписей — <code>VerticalArrangementText1</code>–<code>3</code>.</p>
-<p>Внизу рядом разместите <code>ButtonCatalogBack</code> — <strong>«На главную»</strong> (второстепенная) и <code>ButtonCatalogForm</code> — <strong>«Оставить заявку»</strong> (основная). Под ними <code>LabelCatalogVariant</code> с номером варианта.</p>
-<p><strong>Промежуточная сдача:</strong> покажите главный экран, каталог и дерево Components; сохраните проект с созданным третьим экраном.</p>
-<h2 id="вторая-пара-форма-и-общая-навигация">Вторая пара: форма и общая навигация</h2>
-<h3 id="requestscreen">RequestScreen</h3>
-<p><code>LabelFormTitle</code> — <strong>«Заявка на книгу»</strong>.</p>
-<p><strong>Расположение:</strong> Поля 1, 2, 3 → два флажка → ползунок. Кнопки внизу рядом.</p>
-<p>Три поля в порядке сверху вниз:</p>
+<p>Сохраните этот порядок позиций. На занятии 12 возьмите первые два названия для простого списка. Полные карточки каталога создаются на следующих занятиях.</p>
+<h2 id="содержание-формы-для-следующих-этапов">Содержание формы — для следующих этапов</h2>
+<p>Название формы — <strong>«Заявка на книгу»</strong>. Перед каждым полем должна оставаться видимая подпись.</p>
 <table>
 <thead>
 <tr>
-<th>Номер поля</th>
-<th>Подпись и поле</th>
-<th>Текст подписи</th>
-<th>Свойства поля</th>
+<th>Подпись</th>
+<th>Какие данные нужны</th>
+<th>Уточнение</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td><code>LabelItemPrompt</code> + <code>TextBoxItem</code></td>
 <td>Название книги</td>
-<td><code>Hint</code>: Например, Тайна старого дома</td>
+<td>Название выбранной позиции</td>
+<td>Например, Тайна старого дома</td>
 </tr>
 <tr>
-<td>2</td>
-<td><code>LabelCountPrompt</code> + <code>TextBoxCount</code></td>
 <td>Количество экземпляров</td>
-<td><code>Text</code>: 2; <code>NumbersOnly: true</code></td>
+<td>Целое количество</td>
+<td>Начальное значение: 2</td>
 </tr>
 <tr>
-<td>3</td>
-<td><code>LabelCommentPrompt</code> + <code>TextBoxComment</code></td>
 <td>Пожелания к выдаче</td>
-<td><code>Hint</code>: Опишите ваши пожелания; <code>MultiLine: true</code></td>
+<td>Несколько строк текста</td>
+<td>Подсказка: Опишите ваши пожелания</td>
 </tr>
 </tbody>
 </table>
-<p>Каждое поле имеет отдельную видимую подпись. Многострочное поле высотой не менее двух строк; поля занимают ширину контейнера.</p>
-<p>Остальные элементы:</p>
-<table>
-<thead>
-<tr>
-<th>Компонент</th>
-<th>Имя</th>
-<th>Текст или свойства</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>CheckBox</code></td>
-<td><code>CheckBoxOption1</code></td>
-<td>Нужна закладка; отмечен</td>
-</tr>
-<tr>
-<td><code>CheckBox</code></td>
-<td><code>CheckBoxOption2</code></td>
-<td>Нужен крупный шрифт; не отмечен</td>
-</tr>
-<tr>
-<td><code>Label</code></td>
-<td><code>LabelSliderPrompt</code></td>
-<td>Объём книги</td>
-</tr>
-<tr>
-<td><code>Slider</code></td>
-<td><code>SliderLevel</code></td>
-<td><code>MinValue: 1</code>; <code>MaxValue: 5</code>; <code>ThumbPosition: 2</code></td>
-</tr>
-<tr>
-<td>Два <code>Label</code></td>
-<td><code>LabelSliderMin</code>, <code>LabelSliderMax</code></td>
-<td>Короткая; Большая</td>
-</tr>
-<tr>
-<td><code>Button</code></td>
-<td><code>ButtonFormBack</code></td>
-<td>Назад — второстепенная</td>
-</tr>
-<tr>
-<td><code>Button</code></td>
-<td><code>ButtonSubmit</code></td>
-<td>Отправить — основная</td>
-</tr>
-<tr>
-<td><code>Label</code></td>
-<td><code>LabelFormVariant</code></td>
-<td>Учебный прототип · Вариант 04</td>
-</tr>
-</tbody>
-</table>
-<p>Подписи ползунка стоят рядом в <code>HorizontalArrangementSliderLabels</code>. Его положение демонстрационное; вычисления и вывод значения в надпись не нужны. <code>ButtonSubmit</code> остаётся визуальным элементом, без обработчика отправки.</p>
-<h3 id="подключите-пять-переходов">Подключите пять переходов</h3>
-<table>
-<thead>
-<tr>
-<th>Экран</th>
-<th>Событие кнопки</th>
-<th>Блок из Control</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Screen1</code></td>
-<td><code>ButtonCatalog.Click</code></td>
-<td><code>open another screen</code> → <code>BooksScreen</code></td>
-</tr>
-<tr>
-<td><code>Screen1</code></td>
-<td><code>ButtonForm.Click</code></td>
-<td><code>open another screen</code> → <code>RequestScreen</code></td>
-</tr>
-<tr>
-<td><code>BooksScreen</code></td>
-<td><code>ButtonCatalogForm.Click</code></td>
-<td><code>open another screen</code> → <code>RequestScreen</code></td>
-</tr>
-<tr>
-<td><code>BooksScreen</code></td>
-<td><code>ButtonCatalogBack.Click</code></td>
-<td><code>close screen</code></td>
-</tr>
-<tr>
-<td><code>RequestScreen</code></td>
-<td><code>ButtonFormBack.Click</code></td>
-<td><code>close screen</code></td>
-</tr>
-</tbody>
-</table>
-<p>Как соединить блоки: <a href="../variables-and-lists.html">общая инструкция седьмой пары</a>. Для возврата закрывайте дополнительный экран; новый <code>Screen1</code> не открывайте. Передача данных между экранами не нужна.</p>
-<h2 id="проверка-и-сдача">Проверка и сдача</h2>
-<ol>
-<li>Проверьте маршрут: главная → каталог → форма → назад в каталог → назад на главную.</li>
-<li>Проверьте маршрут: главная → форма → назад на главную.</li>
-<li>Повторите оба маршрута трижды. Форма возвращается туда, откуда была открыта.</li>
-<li>Сверьте расположение изображений, порядок позиций и полей, цвета и начальные состояния элементов со своим вариантом.</li>
-<li>Сдайте <code>Variant04.aia</code> и три снимка экранов. При показе найдите заданный преподавателем компонент, измените его свойство и объясните назначение.</li>
-</ol>
+<p>Дополнительные возможности выбора:</p>
+<ul>
+<li>Нужна закладка: выбрано в начале.</li>
+<li>Нужен крупный шрифт: не выбрано в начале.</li>
+<li>Объём книги: шкала от 1 до 5; начальное значение 2. Края шкалы: «Короткая» и «Большая».</li>
+</ul>
+<p>Действия формы — «Назад» и «Отправить». Это учебная форма: сначала проверяется заполнение, позднее — обработка введённых данных по заданию занятия. Отправка на реальный сервер и сбор персональных данных не требуются.</p>
+<h2 id="ориентир-оформления-после-изучения-css">Ориентир оформления — после изучения CSS</h2>
+<ul>
+<li>Фон: <code>#EEF4FC</code>. Основной текст: <code>#19324D</code>.</li>
+<li>Основной цвет действий: <code>#245A91</code>, текст на нём — белый. Проверяйте читаемость.</li>
+<li>Компоновка каталога: <strong>изображения слева</strong>. На узком экране допускается перестроение для удобства чтения.</li>
+<li>Главное название выделено, подписи полей читаются, изображения сохраняют пропорции.</li>
+<li>При сужении окна текст и действия остаются доступны; элементы не перекрывают друг друга.</li>
+</ul>
+<p>Макеты ниже показывают состав и общий замысел интерфейса. Это не снимки готового сайта и не требование воспроизвести системную панель, точные размеры или прежнюю навигацию. Способ веб-вёрстки и проверка адаптивности разбираются в занятиях.</p>
+<div class="screen-preview" role="group" aria-label="Макеты трёх экранов"><input class="screen-choice choice-home" type="radio" name="preview-screen" id="preview-home" checked><label class="screen-tab" for="preview-home">Главная</label><input class="screen-choice choice-routes" type="radio" name="preview-screen" id="preview-routes"><label class="screen-tab" for="preview-routes">Каталог</label><input class="screen-choice choice-booking" type="radio" name="preview-screen" id="preview-booking"><label class="screen-tab" for="preview-booking">Форма</label><div class="screen-panels"><div class="screen-panel panel-home"><img alt="Главная: ориентир варианта 04" src="../../../assets/media/spo/variants/04/screen1.png"></div><div class="screen-panel panel-routes"><img alt="Каталог: ориентир варианта 04" src="../../../assets/media/spo/variants/04/catalog.png"></div><div class="screen-panel panel-booking"><img alt="Форма: ориентир варианта 04" src="../../../assets/media/spo/variants/04/form.png"></div></div></div>
+
+<h2 id="проверка-текущего-этапа">Проверка текущего этапа</h2>
+<p>После занятия 11 покажите страницу своего варианта, изменение цвета и сообщение в консоли. Измените одну надпись, сохраните и откройте страницу заново.</p>
+<p>После занятия 12 покажите разделы главной, два пункта списка, работающую ссылку внутри страницы и изображение. Найдите в коде соответствующий элемент и объясните его назначение. Сохраните папку веб-проекта целиком.</p>
+<p>Подробный порядок проверки — в статье текущего занятия. Более поздние возможности оцениваются только после их изучения.</p>
 <h2 id="изображения-для-работы">Изображения для работы</h2>
-<p>Сохраните иллюстрации и загрузите в Media проекта. Первую используйте также в <code>ImageCover</code>. Собственные изображения по тем же сюжетам допустимы; расположение компонентов должно сохраниться.</p>
-<p><img alt="Тайна старого дома — ImageItem1 и ImageCover" src="../../../assets/media/spo/variants/04/item1.png"></p>
-<p><img alt="Путешествие к морю — ImageItem2" src="../../../assets/media/spo/variants/04/item2.png"></p>
-<p><img alt="Город будущего — ImageItem3" src="../../../assets/media/spo/variants/04/item3.png"></p>
-<p>Вернуться к <a href="../first-working-scenario.html">первой паре</a> или <a href="../variables-and-lists.html">второй паре</a>.</p></main>
+<p>Сохраните нужные иллюстрации в свой веб-проект по инструкции занятия. Разрешены собственные изображения по тем же сюжетам.</p>
+<p><img alt="Тайна старого дома — иллюстрация варианта 04" src="../../../assets/media/spo/variants/04/item1.png"></p>
+<p><img alt="Путешествие к морю — иллюстрация варианта 04" src="../../../assets/media/spo/variants/04/item2.png"></p>
+<p><img alt="Город будущего — иллюстрация варианта 04" src="../../../assets/media/spo/variants/04/item3.png"></p>
+<p>Вернуться к <a href="index.html">выбору варианта</a> или <a href="../index.html">занятиям курса</a>.</p></main>
   </div>
 </body>
 </html>

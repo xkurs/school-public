@@ -22,9 +22,19 @@
       "title": "Собираем первый экран"
     },
     {
+      "source": "spo/mobile-app-development/011/first-web-project.md",
+      "output": "spo/topics/first-web-project/index.html",
+      "title": "Создание проекта и первой страницы, подключение стилей и скрипта"
+    },
+    {
       "source": "spo/mobile-app-development/006/visual-interface-design.md",
       "output": "spo/topics/first-working-scenario.html",
       "title": "Проектирование визуального интерфейса мобильного приложения"
+    },
+    {
+      "source": "spo/mobile-app-development/012/html-content-structure.md",
+      "output": "spo/topics/html-content-structure/index.html",
+      "title": "HTML: структура документа, смысловые разделы, текст, ссылки и изображения"
     },
     {
       "source": "spo/mobile-app-development/README.md",
@@ -40,6 +50,11 @@
       "source": "spo/mobile-app-development/001/mobile-app-types.md",
       "output": "spo/topics/mobile-app-types/index.html",
       "title": "Какие бывают мобильные приложения"
+    },
+    {
+      "source": "spo/mobile-app-development/010/mobile-web-page.md",
+      "output": "spo/topics/mobile-web-page/index.html",
+      "title": "Мобильная веб-страница: HTML, CSS, JavaScript и инструменты разработчика"
     },
     {
       "source": "spo/mobile-app-development/008/multi-screen-app-refinement.md",

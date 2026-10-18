@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Создание проекта и первой страницы, подключение стилей и скрипта — Школьные материалы</title>
+  <link rel="icon" href="../../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../../assets/style.css">
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <figure class="site-quote">
+      <blockquote><p>Может быть величайшим триумфом человеческого гения является то, что человек может понять вещи, которые он уже не в силах вообразить.</p></blockquote>
+      <figcaption>Лев Ландау</figcaption>
+    </figure>
+  </header>
+  <div class="layout">
+    <nav class="site-nav" aria-label="Разделы"><ul class="nav-root"><li><a href="../../../index.html">Главная</a></li><li><a href="../../../topics/index.html">Школа</a></li><li class="is-active"><a href="../index.html">СПО</a></li></ul></nav>
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../../index.html">Главная</a></li><li><a href="../index.html">СПО</a></li><li aria-current="page">Создание проекта и первой страницы, подключение стилей и скрипта</li></ol></nav><h1 id="создание-проекта-и-первой-страницы-подключение-стилей-и-скрипта">Создание проекта и первой страницы, подключение стилей и скрипта</h1>
+<h2 id="1-свой-номер-знакомая-тема">1. Свой номер, знакомая тема</h2>
+<p>Откройте <a href="../variants/index.html">свой вариант 01–39</a>. В разделе «Содержание главной страницы» найдите строки «Название приложения» и «Короткое пояснение». Название используйте во вкладке и главном заголовке, пояснение — в первом абзаце. Пошаговый способ реализации находится здесь, а лист варианта даёт ваши тексты.</p>
+<p>В примере ниже показан <strong>вариант 01</strong>. В своей работе замените его номер и содержание.</p>
+<p><strong>Итог пары:</strong> страница вашего приложения открывается из папки проекта, получает цвет из CSS и выводит сообщение JavaScript в консоль.</p>
+<h2 id="2-создайте-три-файла">2. Создайте три файла</h2>
+<pre><code class="language-text">VariantNN-web/
+  index.html
+  style.css
+  app.js
+</code></pre>
+<p><code>NN</code> замените своим номером: например, <code>04</code>.</p>
+<p>В редакторе создайте пустые файлы с этими именами. Проверьте расширения: <code>index.html.txt</code> — другое имя.</p>
+<h2 id="3-добавьте-страницу">3. Добавьте страницу</h2>
+<p>В <code>index.html</code> сохраните этот учебный образец в UTF-8:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;ru&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;title&gt;На тропе · V01&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+  &lt;script src=&quot;app.js&quot; defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;На тропе · V01&lt;/h1&gt;
+  &lt;p&gt;Выберите прогулку для небольшой компании&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Сначала откройте файл в браузере и убедитесь, что видны заголовок и абзац. Разбор устройства документа продолжится на следующей паре.</p>
+<h2 id="4-сделайте-страницу-своей">4. Сделайте страницу своей</h2>
+<p>Замените название во вкладке, заголовок и описание на содержание своего варианта.</p>
+<pre><code class="language-text">изменить файл → сохранить → обновить страницу
+</code></pre>
+<p><strong>Проверка:</strong> название во вкладке и заголовок относятся к вашему варианту. После закрытия и повторного открытия файла изменения остаются.</p>
+<h2 id="5-подключите-оформление">5. Подключите оформление</h2>
+<p>В <code>style.css</code> запишите:</p>
+<pre><code class="language-css">body {
+  font-family: sans-serif;
+  margin: 24px;
+}
+h1 {
+  color: darkgreen;
+}
+</code></pre>
+<p>Сохраните и обновите страницу. Затем самостоятельно измените цвет заголовка.</p>
+<p>Сейчас проверяем подключение CSS. Цвета своего макета и подробную вёрстку разберём позже.</p>
+<h2 id="6-подключите-команду">6. Подключите команду</h2>
+<p>В <code>app.js</code> запишите:</p>
+<pre><code class="language-javascript">console.log(&quot;Открыт вариант 01&quot;);
+</code></pre>
+<p>Поставьте свой номер. Сохраните файл, откройте консоль браузера и обновите страницу.</p>
+<p><strong>Проверка:</strong> в консоли видно сообщение с вашим номером. Эта команда не добавляет текст на страницу.</p>
+<h2 id="7-если-изменение-не-видно">7. Если изменение не видно</h2>
+<table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Что проверить сначала</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Старый заголовок</td>
+<td>Сохранён ли файл и та ли страница открыта</td>
+</tr>
+<tr>
+<td>Цвет не изменился</td>
+<td>Точное имя <code>style.css</code>, путь в <code>href</code>, сохранение</td>
+</tr>
+<tr>
+<td>Нет сообщения</td>
+<td>Точное имя <code>app.js</code>, путь в <code>src</code>, консоль и обновление</td>
+</tr>
+<tr>
+<td>Непонятные символы</td>
+<td>Сохранение HTML в UTF-8 и <code>meta charset</code></td>
+</tr>
+</tbody>
+</table>
+<p>Меняйте одну причину за раз. После каждого исправления обновляйте страницу.</p>
+<h2 id="8-покажите-результат">8. Покажите результат</h2>
+<p>Откройте веб-проект из своей папки и покажите преподавателю:</p>
+<ul>
+<li>название и описание своего варианта;</li>
+<li>изменение цвета через CSS;</li>
+<li>сообщение со своим номером в консоли;</li>
+<li>сохранённое изменение заголовка после повторного открытия.</li>
+</ul>
+<p>Сохраните всю папку <code>VariantNN-web</code>, а не один HTML-файл. Работайте с ней и на следующей паре. Публикация, установка PWA, форма и переходы между тремя экранами сегодня не требуются.</p></main>
+  </div>
+</body>
+</html>
