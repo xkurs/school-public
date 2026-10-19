@@ -357,6 +357,11 @@
       "title": "Механическое движение. Относительность движения. Перемещение, скорость, ускорение"
     },
     {
+      "source": "topics/physics-10-2h/014-rigid-body-motion-and-equilibrium.md",
+      "output": "topics/physics-10-2h/rigid-body-motion-and-equilibrium.html",
+      "title": "Поступательное и вращательное движение абсолютно твёрдого тела. Условия равновесия"
+    },
+    {
       "source": "topics/physics-10-2h/004-uniform-rectilinear-motion.md",
       "output": "topics/physics-10-2h/uniform-rectilinear-motion.html",
       "title": "Физика 10. Равномерное прямолинейное движение"
@@ -385,6 +390,11 @@
       "source": "topics/physics-11-2h/006-electromagnetic-induction-magnetic-flux-and-faradays-law.md",
       "output": "topics/physics-11-2h/electromagnetic-induction-magnetic-flux-and-faradays-law.html",
       "title": "Физика 11. Электромагнитная индукция. Магнитный поток. Закон Фарадея"
+    },
+    {
+      "source": "topics/physics-11-2h/012-free-mechanical-and-harmonic-oscillations.md",
+      "output": "topics/physics-11-2h/free-mechanical-and-harmonic-oscillations.html",
+      "title": "Свободные механические и гармонические колебания. Превращение энергии"
     },
     {
       "source": "topics/physics-11-2h/README.md",
@@ -555,6 +565,11 @@
       "source": "topics/physics-9-3h/018-friction-force.md",
       "output": "topics/physics-9-3h/friction-force.html",
       "title": "Физика 9. Сила трения"
+    },
+    {
+      "source": "topics/physics-9-3h/022-gravity-and-universal-gravitation.md",
+      "output": "topics/physics-9-3h/gravity-and-universal-gravitation.html",
+      "title": "Сила тяжести и закон всемирного тяготения. Ускорение свободного падения"
     },
     {
       "source": "topics/physics-9-3h/README.md",
