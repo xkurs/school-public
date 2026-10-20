@@ -9,7 +9,7 @@
     {
       "source": "README.md",
       "output": "index.html",
-      "title": "Школьные материалы"
+      "title": "Система"
     },
     {
       "source": "spo/mobile-app-development/005/events-and-state.md",
@@ -24,7 +24,7 @@
     {
       "source": "spo/mobile-app-development/011/first-web-project.md",
       "output": "spo/topics/first-web-project/index.html",
-      "title": "Создание проекта и первой страницы, подключение стилей и скрипта"
+      "title": "Проверка HTML-страницы, списки и ссылки"
     },
     {
       "source": "spo/mobile-app-development/006/visual-interface-design.md",
@@ -34,7 +34,7 @@
     {
       "source": "spo/mobile-app-development/012/html-content-structure.md",
       "output": "spo/topics/html-content-structure/index.html",
-      "title": "HTML: структура документа, смысловые разделы, текст, ссылки и изображения"
+      "title": "Разбор HTML-страницы и первые стили CSS"
     },
     {
       "source": "spo/mobile-app-development/README.md",
@@ -54,7 +54,7 @@
     {
       "source": "spo/mobile-app-development/010/mobile-web-page.md",
       "output": "spo/topics/mobile-web-page/index.html",
-      "title": "Мобильная веб-страница: HTML, CSS, JavaScript и инструменты разработчика"
+      "title": "Первая HTML-страница: самостоятельная практическая работа"
     },
     {
       "source": "spo/mobile-app-development/008/multi-screen-app-refinement.md",
@@ -659,6 +659,15 @@
     "spo/mobile-app-development/008/assets/screen1-blocks-final.jpg",
     "spo/mobile-app-development/008/assets/text-empty-block.jpg",
     "spo/mobile-app-development/008/assets/textbox-behavior.jpg",
+    "spo/mobile-app-development/010/assets/document-structure.svg",
+    "spo/mobile-app-development/010/assets/first-page.svg",
+    "spo/mobile-app-development/010/assets/heading-paragraph.svg",
+    "spo/mobile-app-development/010/assets/image-element.svg",
+    "spo/mobile-app-development/010/assets/section-text.svg",
+    "spo/mobile-app-development/011/assets/catalog-link.svg",
+    "spo/mobile-app-development/011/assets/catalog-list.svg",
+    "spo/mobile-app-development/012/assets/first-css.svg",
+    "spo/mobile-app-development/012/assets/page-regions.svg",
     "spo/variants/01/booking-screen.png",
     "spo/variants/01/forest.png",
     "spo/variants/01/mountains.png",

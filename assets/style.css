@@ -41,14 +41,10 @@ body {
 }
 
 .layout {
-  display: grid;
-  grid-template-columns: minmax(13rem, 18rem) minmax(0, 1fr);
-  gap: 1.5rem;
   width: min(72rem, calc(100% - 2rem));
   margin: 1.5rem auto;
 }
 
-.site-nav,
 main {
   background: white;
   border: 1px solid #dce2ec;
@@ -60,49 +56,6 @@ main img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.site-nav {
-  align-self: start;
-  padding: 1rem;
-}
-
-.site-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.site-nav .nav-root > li + li {
-  margin-top: 0.8rem;
-}
-
-.site-nav a[aria-current="page"] {
-  font-weight: 700;
-}
-
-.site-nav .nav-root > li > a {
-  font-weight: 600;
-}
-
-.site-nav .nav-submenu {
-  margin-top: 0.45rem;
-  padding-left: 0.9rem;
-  border-left: 2px solid #dce2ec;
-}
-
-.site-nav .nav-submenu li + li {
-  margin-top: 0.35rem;
-}
-
-.site-nav .nav-submenu a {
-  font-size: 0.94rem;
-}
-
-.site-nav .nav-section-active > a,
-.site-nav .nav-root > .is-active > a,
-.site-nav .nav-submenu .is-active > a {
-  font-weight: 700;
 }
 
 main {
@@ -254,32 +207,6 @@ aside.callout {
   background: #eef6ff;
 }
 
-.site-quote {
-  max-width: 44rem;
-  margin: 0 auto;
-  font-size: clamp(1.15rem, 2.3vw, 1.65rem);
-  line-height: 1.5;
-  text-wrap: balance;
-  text-shadow: 0 1px 4px rgb(0 0 0 / 60%);
-}
-
-.site-quote blockquote {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background: transparent;
-  font-style: italic;
-}
-
-.site-quote p {
-  margin: 0;
-}
-
-.site-quote figcaption {
-  margin-top: 1rem;
-  text-align: right;
-}
-
 /* Assignment screen previews work offline using native radio controls. */
 .screen-preview { margin-block: 1.25rem; }
 .screen-choice { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
@@ -296,10 +223,6 @@ aside.callout {
 @media (max-width: 48rem) {
   .site-header {
     min-height: 16rem;
-  }
-
-  .layout {
-    grid-template-columns: 1fr;
   }
 
   .section-cards {
