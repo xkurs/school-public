@@ -9,7 +9,7 @@
     {
       "source": "README.md",
       "output": "index.html",
-      "title": "Система"
+      "title": "Индекс школяра"
     },
     {
       "source": "spo/mobile-app-development/005/events-and-state.md",
@@ -397,6 +397,11 @@
       "title": "Свободные механические и гармонические колебания. Превращение энергии"
     },
     {
+      "source": "topics/physics-11-2h/014-ideal-lc-circuit-and-oscillation-analogy.md",
+      "output": "topics/physics-11-2h/ideal-lc-circuit-and-oscillation-analogy.html",
+      "title": "Колебательный контур. Свободные электромагнитные колебания и их механическая аналогия"
+    },
+    {
       "source": "topics/physics-11-2h/README.md",
       "output": "topics/physics-11-2h/index.html",
       "title": "Физика 11"
@@ -425,6 +430,11 @@
       "source": "topics/physics-11-2h/002-magnetic-field-of-current-carrying-conductor-and-ersted-experiment.md",
       "output": "topics/physics-11-2h/magnetic-field-of-current-carrying-conductor-and-ersted-experiment.html",
       "title": "Физика 11. Магнитное поле проводника с током. Опыт Эрстеда. Взаимодействие проводников с током"
+    },
+    {
+      "source": "topics/physics-11-2h/013-pendulum-period-length-and-mass-lab.md",
+      "output": "topics/physics-11-2h/pendulum-period-length-and-mass-lab.html",
+      "title": "Лабораторная работа «Исследование зависимости периода малых колебаний груза на нити от длины нити и массы груза»"
     },
     {
       "source": "topics/physics-11-2h/001-permanent-magnets-and-magnetic-field.md",
