@@ -9,7 +9,7 @@
     {
       "source": "README.md",
       "output": "index.html",
-      "title": "Индекс школяра"
+      "title": "shkolar.site"
     },
     {
       "source": "spo/mobile-app-development/005/events-and-state.md",
@@ -284,12 +284,12 @@
     {
       "source": "topics/informatics-10-1h/001-computer-safety-and-principles-of-operation.md",
       "output": "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html",
-      "title": "Информатика 10. Техника безопасности и гигиена при работе с компьютерами. Принципы работы компьютера"
+      "title": "Техника безопасности и гигиена при работе с компьютерами. Принципы работы компьютера"
     },
     {
       "source": "topics/informatics-10-1h/002-computer-technology-development-trends.md",
       "output": "topics/informatics-10-1h/computer-technology-development-trends.html",
-      "title": "Информатика 10. Тенденции развития компьютерных технологий"
+      "title": "Тенденции развития компьютерных технологий"
     },
     {
       "source": "topics/informatics-10-1h/README.md",
@@ -329,7 +329,7 @@
     {
       "source": "topics/physics-10-2h/007-curvilinear-motion-and-circular-motion.md",
       "output": "topics/physics-10-2h/curvilinear-motion-and-circular-motion.html",
-      "title": "Физика 10. Криволинейное движение. Движение материальной точки по окружности"
+      "title": "Криволинейное движение. Движение материальной точки по окружности"
     },
     {
       "source": "topics/physics-10-2h/012-elastic-force-hookes-law-and-weight.md",
@@ -344,7 +344,7 @@
     {
       "source": "topics/physics-10-2h/008-galilean-relativity-inertial-frames-and-newtons-first-law.md",
       "output": "topics/physics-10-2h/galilean-relativity-inertial-frames-and-newtons-first-law.html",
-      "title": "Физика 10. Принцип относительности Галилея. Инерциальные системы отсчета. Первый закон Ньютона"
+      "title": "Принцип относительности Галилея. Инерциальные системы отсчета. Первый закон Ньютона"
     },
     {
       "source": "topics/physics-10-2h/README.md",
@@ -364,17 +364,17 @@
     {
       "source": "topics/physics-10-2h/004-uniform-rectilinear-motion.md",
       "output": "topics/physics-10-2h/uniform-rectilinear-motion.html",
-      "title": "Физика 10. Равномерное прямолинейное движение"
+      "title": "Равномерное прямолинейное движение"
     },
     {
       "source": "topics/physics-10-2h/005/uniformly-accelerated-rectilinear-motion.md",
       "output": "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.html",
-      "title": "Физика 10. Равноускоренное прямолинейное движение"
+      "title": "Равноускоренное прямолинейное движение"
     },
     {
       "source": "topics/physics-10-2h/011-universal-gravitation-and-first-cosmic-speed.md",
       "output": "topics/physics-10-2h/universal-gravitation-and-first-cosmic-speed.html",
-      "title": "Физика 10. Закон всемирного тяготения. Сила тяжести. Первая космическая скорость"
+      "title": "Закон всемирного тяготения. Сила тяжести. Первая космическая скорость"
     },
     {
       "source": "topics/physics-11-1h/README.md",
@@ -444,12 +444,12 @@
     {
       "source": "topics/physics-7-2h/014-distance-and-travel-time.md",
       "output": "topics/physics-7-2h/distance-and-travel-time.html",
-      "title": "Физика 7. Расчёт пути и времени движения"
+      "title": "Расчёт пути и времени движения"
     },
     {
       "source": "topics/physics-7-2h/006-horizontal-launch-height-and-range.md",
       "output": "topics/physics-7-2h/horizontal-launch-height-and-range.html",
-      "title": "Физика 7. Как высота пуска влияет на дальность полёта шарика"
+      "title": "Как высота пуска влияет на дальность полёта шарика"
     },
     {
       "source": "topics/physics-7-2h/README.md",
@@ -459,12 +459,12 @@
     {
       "source": "topics/physics-7-2h/015-inertia-and-interaction-of-bodies.md",
       "output": "topics/physics-7-2h/inertia-and-interaction-of-bodies.html",
-      "title": "Физика 7. Инерция и взаимодействие тел"
+      "title": "Инерция и взаимодействие тел"
     },
     {
       "source": "topics/physics-7-2h/012-mechanical-motion-uniform-and-nonuniform.md",
       "output": "topics/physics-7-2h/mechanical-motion-uniform-and-nonuniform.html",
-      "title": "Физика 7. Механическое движение. Равномерное и неравномерное движение"
+      "title": "Механическое движение. Равномерное и неравномерное движение"
     },
     {
       "source": "topics/physics-7-2h/008-motion-of-particles.md",
@@ -474,32 +474,32 @@
     {
       "source": "topics/physics-7-2h/005-natural-science-method-and-models.md",
       "output": "topics/physics-7-2h/natural-science-method-and-models.html",
-      "title": "Физика 7. Как физика и другие естественные науки изучают природу"
+      "title": "Как физика и другие естественные науки изучают природу"
     },
     {
       "source": "topics/physics-7-2h/003-physical-quantities-and-measurement.md",
       "output": "topics/physics-7-2h/physical-quantities-and-measurement.html",
-      "title": "Физика 7. Физические величины и их измерение"
+      "title": "Физические величины и их измерение"
     },
     {
       "source": "topics/physics-7-2h/001-physics-as-science-and-natural-phenomena.md",
       "output": "topics/physics-7-2h/physics-as-science-and-natural-phenomena.html",
-      "title": "Физика 7. Физика — наука о природе. Явления природы"
+      "title": "Физика — наука о природе. Явления природы"
     },
     {
       "source": "topics/physics-7-2h/013-speed-and-speed-units.md",
       "output": "topics/physics-7-2h/speed-and-speed-units.html",
-      "title": "Физика 7. Скорость. Единицы скорости"
+      "title": "Скорость. Единицы скорости"
     },
     {
       "source": "topics/physics-7-2h/007-structure-of-matter-and-discrete-model.md",
       "output": "topics/physics-7-2h/structure-of-matter-and-discrete-model.html",
-      "title": "Физика 7. Строение вещества и опыты, доказывающие его дискретность"
+      "title": "Строение вещества и опыты, доказывающие его дискретность"
     },
     {
       "source": "topics/physics-7-2h/004-temperature-measurement-with-thermometer-and-sensor.md",
       "output": "topics/physics-7-2h/temperature-measurement-with-thermometer-and-sensor.html",
-      "title": "Физика 7. Измерение температуры термометром и датчиком"
+      "title": "Измерение температуры термометром и датчиком"
     },
     {
       "source": "topics/physics-8-2h/001-basic-principles-of-molecular-kinetic-theory.md",
