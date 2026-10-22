@@ -1,8 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="555" viewBox="0 0 900 555" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" viewBox="0 0 900 480" role="img" aria-labelledby="title desc">
 <title id="title">Смысловые части страницы</title>
-<desc id="desc">Схема трёх областей header, main и footer. Рамки и названия элементов — учебные пояснения, которые сами по себе в браузере не появляются.</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#475569"/></marker></defs>
-<rect width="900" height="555" fill="white"/>
-<text x="24" y="34" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#475569" >Схема результата</text>
-<text x="24" y="76" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#475569" >Схема структуры; рамки — пояснение</text><rect x="24" y="106" width="850" height="112" fill="#fff" stroke="#64748b"/><text x="44" y="141" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#475569" >header</text><text x="44" y="186" font-family="Times New Roman, serif" font-size="30" font-weight="400" fill="#111" >Название · пояснение · ссылка</text><rect x="24" y="240" width="850" height="156" fill="#fff" stroke="#64748b"/><text x="44" y="275" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#475569" >main</text><text x="44" y="320" font-family="Times New Roman, serif" font-size="30" font-weight="400" fill="#111" >Описание · изображение · каталог</text><rect x="24" y="418" width="850" height="105" fill="#fff" stroke="#64748b"/><text x="44" y="453" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#475569" >footer</text><text x="44" y="498" font-family="Times New Roman, serif" font-size="30" font-weight="400" fill="#111" >Учебный прототип · Вариант 01</text>
+<desc id="desc">header, main и footer общего примера 00. Рамки и названия тегов являются пояснением.</desc>
+<rect width="900" height="480" fill="#fff"/>
+<text x="24" y="34" font-family="sans-serif" font-size="20" fill="#475569" font-weight="400">Схема результата · общий пример 00</text>
+<text x="24" y="75" font-family="sans-serif" font-size="20" fill="#475569" font-weight="400">Рамки — пояснение структуры, а не действие HTML.</text>
+<rect x="24" y="102" width="852" height="106" fill="#fff" stroke="#b8bec7"/>
+<text x="44" y="136" font-family="sans-serif" font-size="22" fill="#475569" font-weight="400">header</text>
+<text x="44" y="180" font-family="serif" font-size="25" fill="#111" font-weight="400">Техника дома · V00 · пояснение · ссылка</text>
+<rect x="24" y="224" width="852" height="106" fill="#fff" stroke="#b8bec7"/>
+<text x="44" y="258" font-family="sans-serif" font-size="22" fill="#475569" font-weight="400">main</text>
+<text x="44" y="302" font-family="serif" font-size="25" fill="#111" font-weight="400">Описание · изображение · каталог техники</text>
+<rect x="24" y="346" width="852" height="106" fill="#fff" stroke="#b8bec7"/>
+<text x="44" y="380" font-family="sans-serif" font-size="22" fill="#475569" font-weight="400">footer</text>
+<text x="44" y="424" font-family="serif" font-size="25" fill="#111" font-weight="400">Учебный прототип · Вариант 00</text>
 </svg>

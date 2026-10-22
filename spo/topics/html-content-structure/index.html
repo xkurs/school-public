@@ -7,18 +7,32 @@
   <title>Разбор HTML-страницы и первые стили CSS — shkolar.site</title>
   <link rel="icon" href="../../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
   <link rel="stylesheet" href="../../../assets/style.css">
+  <script defer src="../../../assets/quotes.js"></script>
   
 </head>
 <body>
   <a class="skip-link" href="#main-content">К содержанию</a>
   <header class="site-header">
     <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
   </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
   <div class="layout">
     <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../../index.html">shkolar.site</a></li><li><a href="../index.html">СПО</a></li><li aria-current="page">Разбор HTML-страницы и первые стили CSS</li></ol></nav><h1 id="разбор-html-страницы-и-первые-стили-css">Разбор HTML-страницы и первые стили CSS</h1>
 <h2 id="от-готовой-страницы-к-оформлению">От готовой страницы к оформлению</h2>
-<p>Третья пара 21 октября — лекция с короткими действиями в своём проекте. Вместе разберём результаты двух практик и подключим CSS.</p>
+<p>Третья пара веб-блока — лекция с короткими действиями в своём проекте. Вместе разберём результаты двух практик и подключим CSS.</p>
 <p><strong>Сегодня:</strong> понятные части страницы, цвет текста, фон и отступ от края. Карточки, колонки и форму из будущих макетов пока не воспроизводим.</p>
+<p>Примеры и схемы используют <a href="../variants/00.html">общий образец 00 «Техника дома»</a> из папки <code>Variant00-web</code>. Номер 00 студентам не назначается. Продолжайте свой <code>VariantNN-web</code>: тексты, подпись номера и цвета берите из <a href="../variants/index.html">личного варианта 01–39</a>.</p>
 <p>Откройте свой проект после <a href="../first-web-project/index.html">второй пары</a>.</p>
 <hr>
 <h2 id="узнайте-элементы-своей-работы">Узнайте элементы своей работы</h2>
@@ -103,10 +117,10 @@
 <ol>
 <li>Перед <code>h1</code> добавьте <code>&lt;header&gt;</code>, после абзаца со ссылкой — <code>&lt;/header&gt;</code>.</li>
 <li>Перед заголовком главной добавьте <code>&lt;main&gt;</code>, после <code>&lt;/ul&gt;</code> — <code>&lt;/main&gt;</code>.</li>
-<li>Перед <code>&lt;/body&gt;</code> добавьте подпись своего варианта:</li>
+<li>Перед <code>&lt;/body&gt;</code> добавьте подпись своего варианта (ниже показан общий пример 00):</li>
 </ol>
 <pre><code class="language-html">&lt;footer&gt;
-  &lt;p&gt;Учебный прототип · Вариант 01&lt;/p&gt;
+  &lt;p&gt;Учебный прототип · Вариант 00&lt;/p&gt;
 &lt;/footer&gt;
 </code></pre>
 <p>Существующие тексты, изображение и список остаются внутри своих групп. Каркас и <code>head</code> сохраняются. Обновите страницу и проверьте ссылку: её цель <code>catalog</code> должна остаться.</p>
@@ -131,7 +145,7 @@
 <h2 id="измените-цвет-главного-заголовка">Измените цвет главного заголовка</h2>
 <p>В <code>style.css</code> запишите:</p>
 <pre><code class="language-css">h1 {
-  color: darkgreen;
+  color: navy;
 }
 </code></pre>
 <table>
@@ -151,7 +165,7 @@
 <td>Свойство цвета текста</td>
 </tr>
 <tr>
-<td><code>darkgreen</code></td>
+<td><code>navy</code></td>
 <td>Значение цвета</td>
 </tr>
 <tr>
@@ -160,25 +174,25 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Проверка:</strong> сохраните оба файла, обновите страницу. Заголовок стал тёмно-зелёным. Текст остался прежним. Затем попробуйте значение <code>navy</code> и верните <code>darkgreen</code>.</p>
+<p><strong>Проверка:</strong> сохраните оба файла, обновите страницу. Заголовок стал тёмно-синим. Текст остался прежним. Затем замените <code>navy</code> на <code>#1D4ED8</code>: это итоговый синий цвет заголовка общего примера 00, показанный на схеме.</p>
 <hr>
 <h2 id="добавьте-фон-шрифт-и-отступы">Добавьте фон, шрифт и отступы</h2>
 <p>Ниже правила <code>h1</code> в том же CSS добавьте:</p>
 <pre><code class="language-css">body {
   font-family: sans-serif;
-  color: #1B3A24;
-  background-color: #F1F8E9;
+  color: #1E293B;
+  background-color: #EFF6FF;
   margin: 24px;
 }
 </code></pre>
-<p>Это цвета варианта 01. После проверки замените <code>color</code> и <code>background-color</code> значениями «Основной текст» и «Фон» из своего листа.</p>
+<p>Это цвета общего примера 00. После проверки замените <code>color</code> и <code>background-color</code> значениями «Основной текст» и «Фон» из своего листа.</p>
 <ul>
 <li><code>font-family</code> — семейство шрифта; <code>sans-serif</code> — без засечек.</li>
 <li><code>color</code> — основной цвет текста.</li>
 <li><code>background-color</code> — фон.</li>
 <li><code>margin</code> — внешний отступ от краёв; <code>px</code> — единица длины CSS.</li>
 </ul>
-<p>Сохраните и обновите. Результат похож на правую часть схемы, с цветами вашего варианта. Цвет заголовка останется заданным правилом <code>h1</code>.</p>
+<p>Сохраните и обновите. Результат похож на правую часть схемы, с цветами вашего варианта. Цвет заголовка задаётся отдельным правилом <code>h1</code>: для своей работы используйте «Основной цвет действий» из своего листа и проверьте читаемость на фоне.</p>
 <hr>
 <h2 id="проверьте-подключение">Проверьте подключение</h2>
 <p>Если оформление не появилось:</p>

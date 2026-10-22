@@ -32,9 +32,19 @@
       "title": "Проектирование визуального интерфейса мобильного приложения"
     },
     {
+      "source": "spo/mobile-app-development/013/home-page-and-catalog.md",
+      "output": "spo/topics/home-page-and-catalog/index.html",
+      "title": "Разметка главной страницы и каталога своего приложения"
+    },
+    {
       "source": "spo/mobile-app-development/012/html-content-structure.md",
       "output": "spo/topics/html-content-structure/index.html",
       "title": "Разбор HTML-страницы и первые стили CSS"
+    },
+    {
+      "source": "spo/mobile-app-development/014/html-form.md",
+      "output": "spo/topics/html-form/index.html",
+      "title": "HTML-форма: поля, подписи, кнопки и встроенная проверка ввода"
     },
     {
       "source": "spo/mobile-app-development/README.md",
@@ -75,6 +85,11 @@
       "source": "spo/mobile-app-development/007/variables-and-lists.md",
       "output": "spo/topics/variables-and-lists.html",
       "title": "Реализация навигации и проверка многоэкранного прототипа мобильного приложения"
+    },
+    {
+      "source": "spo/variants/00/assignment.md",
+      "output": "spo/topics/variants/00.html",
+      "title": "Вариант 00 — Техника дома"
     },
     {
       "source": "spo/variants/01/assignment.md",
@@ -678,6 +693,13 @@
     "spo/mobile-app-development/011/assets/catalog-list.svg",
     "spo/mobile-app-development/012/assets/first-css.svg",
     "spo/mobile-app-development/012/assets/page-regions.svg",
+    "spo/mobile-app-development/013/assets/catalog-item.svg",
+    "spo/mobile-app-development/013/assets/pages.svg",
+    "spo/mobile-app-development/014/assets/form-controls.svg",
+    "spo/mobile-app-development/014/assets/label-field.svg",
+    "spo/variants/00/fridge.svg",
+    "spo/variants/00/kettle.svg",
+    "spo/variants/00/washer.svg",
     "spo/variants/01/booking-screen.png",
     "spo/variants/01/forest.png",
     "spo/variants/01/mountains.png",

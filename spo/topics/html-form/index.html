@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>HTML-форма: поля, подписи, кнопки и встроенная проверка ввода — shkolar.site</title>
+  <link rel="icon" href="../../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../../assets/style.css">
+  <script defer src="../../../assets/quotes.js"></script>
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../../index.html">shkolar.site</a></li><li><a href="../index.html">СПО</a></li><li aria-current="page">HTML-форма: поля, подписи, кнопки и встроенная проверка ввода</li></ol></nav><h1 id="html-форма-поля-подписи-кнопки-и-встроенная-проверка-ввода">HTML-форма: поля, подписи, кнопки и встроенная проверка ввода</h1>
+<h2 id="что-получится">Что получится</h2>
+<p>Продолжаем работу после создания каталога: добавляем к главной и каталогу <strong>страницу формы</strong>. Работаем в прежнем проекте: после каждого объяснения сразу выполняем действие за компьютером.</p>
+<p><a href="../variants/index.html">Текущий набор индивидуальных заданий</a> — используйте свой номер, названия полей, три позиции каталога и начальные значения. Пример ниже — <a href="../variants/00.html">учебный вариант 00 «Техника дома»</a>, отдельный от студенческих вариантов 01–39. Заменяйте его данные своими; вариант 00 студентам не назначается.</p>
+<p>Сегодня форма помогает ввести данные и обнаружить пропуски. <strong>Приложение пока не сохраняет заявку и не обрабатывает её программой.</strong> Используйте только вымышленные учебные данные.</p>
+<p><img alt="Учебная схема формы: список, количество, комментарий, два флажка, шкала и кнопка" src="../../../assets/media/spo/mobile-app-development/014/assets/form-controls.svg"></p>
+<p>Схема показывает состав формы, а не точное оформление: вид полей зависит от браузера. Справа подписаны HTML-элементы, которые будем добавлять по одному.</p>
+<hr>
+<h2 id="подготовьте-третью-страницу">Подготовьте третью страницу</h2>
+<p>Сначала проверьте переходы между <code>index.html</code> и <code>catalog.html</code> из <a href="../home-page-and-catalog/index.html">предыдущей работы</a>. Если каталог не завершён, сохраните сделанное: для формы нужны его три названия из своего листа, а не готовое оформление.</p>
+<p>Создайте рядом с ними <strong><code>form.html</code></strong>. Вставьте в пустой файл:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;ru&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;title&gt;Форма — Техника дома · V00&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;p&gt;Техника дома · V00&lt;/p&gt;
+    &lt;nav&gt;
+      &lt;a href=&quot;index.html&quot;&gt;Главная&lt;/a&gt;
+      &lt;a href=&quot;catalog.html&quot;&gt;Каталог&lt;/a&gt;
+      &lt;a href=&quot;form.html&quot;&gt;Форма&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;h1&gt;Заказ техники&lt;/h1&gt;
+    &lt;p&gt;Учебная форма. Данные пока не сохраняются.&lt;/p&gt;
+    &lt;form method=&quot;get&quot;&gt;
+    &lt;/form&gt;
+    &lt;p&gt;&lt;a href=&quot;index.html&quot;&gt;Назад&lt;/a&gt;&lt;/p&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Учебный прототип · Вариант 00&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Замените название приложения, формы и подпись своими. В <code>nav</code> <strong>обеих прежних страниц</strong> добавьте третью ссылку на <code>form.html</code>. На главной после ссылки к каталогу добавьте ссылку к форме с надписью из строки «Название перехода к форме» своего листа.</p>
+<p><strong>Проверка:</strong> откройте все три страницы через меню, затем вернитесь из формы по «Назад» на главную.</p>
+<hr>
+<h2 id="как-связаны-подпись-и-поле">Как связаны подпись и поле</h2>
+<p><img alt="Подпись label связана с полем по совпадающим for и id" src="../../../assets/media/spo/mobile-app-development/014/assets/label-field.svg"></p>
+<p><code>label</code> — видимая подпись. <code>for</code> у подписи совпадает с <code>id</code> поля: при нажатии на подпись браузер выбирает связанное поле. Каждый <code>id</code> на странице должен быть уникальным.</p>
+<p><code>name</code> — имя данных при отправке формы. Это другая роль: одного <code>id</code> для передачи значения недостаточно. В примерах имена служебные, их можно сохранить в любом варианте.</p>
+<p><code>placeholder</code> — временная подсказка внутри поля. Она исчезает при вводе и <strong>не заменяет подпись</strong>.</p>
+<hr>
+<h2 id="выберите-позицию-каталога">Выберите позицию каталога</h2>
+<p>В <strong><code>form.html</code>, между <code>&lt;form method="get"&gt;</code> и <code>&lt;/form&gt;</code></strong>, добавьте:</p>
+<pre><code class="language-html">&lt;p&gt;
+  &lt;label for=&quot;item&quot;&gt;Товар&lt;/label&gt;
+  &lt;select id=&quot;item&quot; name=&quot;item&quot; required&gt;
+    &lt;option value=&quot;&quot;&gt;Выберите из списка&lt;/option&gt;
+    &lt;option value=&quot;fridge&quot;&gt;Холодильник&lt;/option&gt;
+    &lt;option value=&quot;washer&quot;&gt;Стиральная машина&lt;/option&gt;
+    &lt;option value=&quot;kettle&quot;&gt;Электрочайник&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/p&gt;
+</code></pre>
+<p><code>select</code> — список выбора, <code>option</code> — его пункт. Подпись «Товар» замените подписью выбора позиции из своего листа. Видимые названия замените <strong>тремя названиями из каталога своего варианта</strong>. Значения <code>value</code> сделайте разными; можно использовать <code>item1</code>, <code>item2</code>, <code>item3</code>.</p>
+<p>Первая строка имеет пустое <code>value=""</code>: это приглашение сделать выбор. <code>required</code> требует непустого выбора. Без пустого первого пункта браузер сразу выбрал бы первую позицию, и студент мог бы не заметить необходимость выбора.</p>
+<p>Сохраните и обновите: список открывается, видны три ваши позиции.</p>
+<hr>
+<h2 id="введите-целое-количество">Введите целое количество</h2>
+<p>Внутри той же формы <strong>после блока со списком</strong> добавьте:</p>
+<pre><code class="language-html">&lt;p&gt;
+  &lt;label for=&quot;quantity&quot;&gt;Количество единиц&lt;/label&gt;
+  &lt;input id=&quot;quantity&quot; name=&quot;quantity&quot; type=&quot;number&quot;
+         min=&quot;1&quot; step=&quot;1&quot; value=&quot;1&quot; required&gt;
+&lt;/p&gt;
+</code></pre>
+<p>Вместо «Количество единиц» возьмите подпись числового поля из своего листа (строка «Целое количество от 1»), вместо <code>1</code> — его начальное значение. Порядок строк формы в разных вариантах может отличаться: после знакомства с элементами расположите блоки по порядку своего листа.</p>
+<table>
+<thead>
+<tr>
+<th>Атрибут</th>
+<th>Для чего нужен</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type="number"</code></td>
+<td>Числовое поле</td>
+</tr>
+<tr>
+<td><code>min="1"</code></td>
+<td>Минимум — единица</td>
+</tr>
+<tr>
+<td><code>step="1"</code></td>
+<td>Допустимы целые значения с шагом один</td>
+</tr>
+<tr>
+<td><code>value="1"</code></td>
+<td>Начальное значение</td>
+</tr>
+<tr>
+<td><code>required</code></td>
+<td>Поле нельзя оставить пустым</td>
+</tr>
+</tbody>
+</table>
+<p><code>input</code> не имеет закрывающего тега. Числовое поле само не считает стоимость и не проверяет наличие товара на складе: это будущая программная логика.</p>
+<hr>
+<h2 id="добавьте-несколько-строк-текста">Добавьте несколько строк текста</h2>
+<p>После числового поля, <strong>внутри формы</strong>, добавьте:</p>
+<pre><code class="language-html">&lt;p&gt;
+  &lt;label for=&quot;notes&quot;&gt;Комментарий к заказу&lt;/label&gt;
+  &lt;textarea id=&quot;notes&quot; name=&quot;notes&quot; rows=&quot;4&quot;
+            placeholder=&quot;Например, удобный день доставки&quot;&gt;&lt;/textarea&gt;
+&lt;/p&gt;
+</code></pre>
+<p>Замените подпись и подсказку данными своего варианта. <code>rows="4"</code> задаёт исходную высоту в строках. У <code>textarea</code> есть закрывающий тег; текст между тегами был бы начальным содержимым.</p>
+<p>Это необязательное поле: <code>required</code> здесь не добавляем. Напишите две строки вымышленного текста и убедитесь, что перенос работает.</p>
+<hr>
+<h2 id="добавьте-два-независимых-флажка">Добавьте два независимых флажка</h2>
+<p>Следом, <strong>внутри формы</strong>, добавьте:</p>
+<pre><code class="language-html">&lt;p&gt;
+  &lt;input id=&quot;extra1&quot; name=&quot;extra1&quot; type=&quot;checkbox&quot; value=&quot;yes&quot; checked&gt;
+  &lt;label for=&quot;extra1&quot;&gt;Нужна доставка&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input id=&quot;extra2&quot; name=&quot;extra2&quot; type=&quot;checkbox&quot; value=&quot;yes&quot;&gt;
+  &lt;label for=&quot;extra2&quot;&gt;Нужна установка&lt;/label&gt;
+&lt;/p&gt;
+</code></pre>
+<p>Замените подписи двумя возможностями своего варианта. Атрибут <code>checked</code> ставьте только у тех, которые по листу выбраны в начале. Для отключённого флажка <strong>уберите атрибут полностью</strong>: <code>checked="false"</code> всё равно означает его присутствие и начальный выбор.</p>
+<p>У этих флажков разные <code>id</code> и <code>name</code>. Можно включить оба, один или ни одного. Нажмите на текст каждой подписи: должен переключиться соответствующий флажок.</p>
+<hr>
+<h2 id="добавьте-шкалу">Добавьте шкалу</h2>
+<p>Следующий блок внутри формы:</p>
+<pre><code class="language-html">&lt;p&gt;
+  &lt;label for=&quot;level&quot;&gt;Срочность заказа&lt;/label&gt;
+  &lt;input id=&quot;level&quot; name=&quot;level&quot; type=&quot;range&quot;
+         min=&quot;1&quot; max=&quot;5&quot; step=&quot;1&quot; value=&quot;3&quot;&gt;
+  &lt;span&gt;1 — Не срочно; 5 — Срочно&lt;/span&gt;
+&lt;/p&gt;
+</code></pre>
+<p>Подпись, начальное <code>value</code> и названия краёв возьмите из своего листа. Диапазон остаётся от 1 до 5.</p>
+<p><code>range</code> показывает ползунок. Точное текущее число рядом автоматически не появляется: для такого индикатора позднее понадобится программный обработчик. Сейчас достаточно подписи, границ и работающего ползунка.</p>
+<hr>
+<h2 id="добавьте-кнопку-проверки">Добавьте кнопку проверки</h2>
+<p><strong>После всех полей, перед <code>&lt;/form&gt;</code></strong>, добавьте:</p>
+<pre><code class="language-html">&lt;button type=&quot;submit&quot;&gt;Проверить заказ&lt;/button&gt;
+</code></pre>
+<p>Надпись возьмите из строки «Текст кнопки отправки» своего варианта. <code>submit</code> запускает штатную отправку формы, а перед ней браузер проверяет ограничения полей. Ссылка «Назад» остаётся <strong>за пределами формы</strong> и просто открывает главную.</p>
+<p>В примере у <code>form</code> задан <code>method="get"</code>, адрес <code>action</code> не указан. После успешной проверки браузер открывает текущую страницу с параметрами из полей в адресе. Например, выбранная позиция передаётся под именем <code>item</code>. В локальном учебном проекте серверного обработчика нет: страница может перезагрузиться, значения вернуться к начальным. <strong>Это не подтверждение сохранения заявки.</strong></p>
+<p>Не добавляйте чужой серверный адрес. Не вводите настоящие телефоны, пароли или другие личные сведения: GET помещает данные в адресную строку.</p>
+<hr>
+<h2 id="испытайте-ограничения">Испытайте ограничения</h2>
+<p>Проводите проверки по одной. Перед каждой новой проверкой заполните остальные обязательные поля корректно.</p>
+<table>
+<thead>
+<tr>
+<th>Действие</th>
+<th>Ожидаемый результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Оставить «Выберите из списка», нажать кнопку</td>
+<td>Браузер просит выбрать позицию</td>
+</tr>
+<tr>
+<td>Выбрать позицию, очистить количество, нажать кнопку</td>
+<td>Браузер требует количество</td>
+</tr>
+<tr>
+<td>Ввести <code>0</code> и нажать кнопку</td>
+<td>Значение меньше минимума не принимается</td>
+</tr>
+<tr>
+<td>Ввести <code>1.5</code> и нажать кнопку</td>
+<td>Дробное значение не соответствует шагу; некоторые браузеры ограничивают его ввод</td>
+</tr>
+<tr>
+<td>Выбрать позицию, ввести <code>3</code>, оставить комментарий пустым</td>
+<td>Встроенная проверка допускает отправку, поскольку комментарий необязателен</td>
+</tr>
+</tbody>
+</table>
+<p>Текст и вид сообщений зависят от браузера. Проверяется поведение, а не совпадение фразы с образцом. Если дробь с точкой не вводится в вашей локали, попробуйте разделитель, который принимает поле; приём дроби и возможность успешной отправки — разные проверки.</p>
+<p>После успешной отправки посмотрите адрес и объясните, откуда берутся имена параметров. Невыбранный checkbox обычно не включается в данные формы. Затем откройте <code>form.html</code> по меню заново для проверки исходных значений.</p>
+<hr>
+<h2 id="покажите-результат">Покажите результат</h2>
+<ol>
+<li>В папке есть три страницы, <code>style.css</code> и изображения; меню открывает каждую страницу.</li>
+<li>Форма соответствует своему варианту: три позиции, количество, многострочный текст, два флажка и шкала.</li>
+<li>Все поля имеют видимые связанные подписи; <code>id</code> не повторяются, у полей есть <code>name</code>.</li>
+<li>Продемонстрированы четыре случая: пропуск выбора, пустое количество, ноль и корректное заполнение.</li>
+<li>По просьбе преподавателя измените начальное число или подпись в исходнике, сохраните и покажите изменение после открытия страницы без параметров.</li>
+</ol>
+<p>Сохраните всю папку. Если остаётся время, проверьте клавиатуру: <code>Tab</code> переводит фокус, пробел переключает флажок, стрелки меняют выбор и положение ползунка. Исправьте непонятные подписи.</p>
+<hr></main>
+  </div>
+</body>
+</html>

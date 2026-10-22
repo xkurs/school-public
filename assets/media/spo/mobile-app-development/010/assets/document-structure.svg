@@ -1,8 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="330" viewBox="0 0 1060 330" role="img" aria-labelledby="title desc">
-<title id="title">Название вкладки и заголовок страницы</title>
-<desc id="desc">Упрощённая вкладка с названием На тропе и заголовок внутри страницы. Пояснения title и h1 расположены справа вне страницы.</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#475569"/></marker></defs>
-<rect width="1060" height="330" fill="white"/>
-<text x="24" y="34" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#475569" >Схема результата</text>
-<rect x="24" y="66" width="710" height="230" fill="#fff" stroke="#b8bec7"/><rect x="24" y="66" width="710" height="54" fill="#f1f3f5" stroke="#b8bec7"/><rect x="40" y="74" width="275" height="46" fill="#fff" stroke="#b8bec7"/><text x="56" y="104" font-family="Times New Roman, serif" font-size="24" font-weight="400" fill="#111" >На тропе · V01</text><text x="48" y="194" font-family="Times New Roman, serif" font-size="48" font-weight="700" fill="#111" >На тропе · V01</text><text x="780" y="104" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#475569" >title · вкладка</text><text x="780" y="196" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#475569" >h1 · заголовок</text><path d="M 772,98 H 332" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/><path d="M 772,187 H 430" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="302" viewBox="0 0 900 302" role="img" aria-labelledby="title desc">
+<title id="title">Вкладка и главный заголовок</title>
+<desc id="desc">title задаёт название вкладки, h1 задаёт видимый заголовок общего примера 00.</desc>
+<rect width="900" height="302" fill="#fff"/>
+<text x="24" y="34" font-family="sans-serif" font-size="20" fill="#475569" font-weight="400">Схема результата · общий пример 00</text>
+<rect x="24" y="64" width="580" height="210" fill="#fff" stroke="#b8bec7"/>
+<rect x="24" y="64" width="580" height="48" fill="#e2e8f0" stroke="#b8bec7"/>
+<text x="44" y="95" font-family="sans-serif" font-size="22" fill="#111" font-weight="400">Техника дома · V00</text>
+<text x="44" y="191" font-family="serif" font-size="38" fill="#111" font-weight="700">Техника дома · V00</text>
+<text x="637" y="96" font-family="sans-serif" font-size="22" fill="#475569" font-weight="400">title · вкладка</text>
+<text x="637" y="192" font-family="sans-serif" font-size="22" fill="#475569" font-weight="400">h1 · заголовок</text>
 </svg>
