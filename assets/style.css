@@ -49,7 +49,7 @@ body {
 }
 
 .site-quote {
-  margin: 0;
+  margin: auto 0 0;
   max-width: 48rem;
   text-align: center;
   text-shadow: 0 2px 8px rgb(0 0 0 / 60%);
@@ -95,7 +95,7 @@ body {
 .site-quote .quote-translation {
   position: absolute;
   z-index: 2;
-  top: calc(100% + 0.5rem);
+  bottom: calc(100% + 0.5rem);
   left: 50%;
   transform: translateX(-50%);
   width: max-content;
@@ -159,6 +159,15 @@ main img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+main mark {
+  color: #172033;
+  background-color: #fff09a;
+  padding: 0.08em 0.2em;
+  border-radius: 0.15em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 main {
