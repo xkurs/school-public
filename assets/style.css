@@ -159,6 +159,7 @@ main img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-inline: auto;
 }
 
 main mark {
@@ -255,13 +256,24 @@ h3 {
   color: #12365a;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
 a {
   color: #075da8;
 }
 
 table {
   display: block;
-  width: 100%;
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
   overflow-x: auto;
   border-collapse: collapse;
 }
