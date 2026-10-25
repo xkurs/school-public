@@ -316,6 +316,11 @@
 <p><strong>Подсказка:</strong> к нужным полям можно применить знакомое по меню состояние <code>:focus-visible</code>; короткое пояснение размещается рядом с полем и при необходимости связывается с ним через <code>aria-describedby="идентификатор-пояснения"</code>.</p>
 <p><strong>Критерии и самопроверка:</strong> каждый элемент достижим с клавиатуры, фокус виден, шкала имеет понятные края, подписи не исчезают при вводе. Поясните, какую трудность исправили, и повторите успешную отправку GET. Если порядок фокуса неожиданен, сначала проверьте порядок блоков в HTML; не назначайте положительные <code>tabindex</code> для искусственной перестановки.</p>
 <hr></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
   </div>
 </body>
 </html>

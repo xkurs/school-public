@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" role="img" aria-labelledby="title desc">
+  <title id="title">Четыре области блочной модели CSS</title>
+  <desc id="desc">Снаружи внутрь: внешний отступ margin, рамка border, внутренний отступ padding, содержимое. Margin не входит в ширину ни при одной модели.</desc>
+  <rect width="900" height="470" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="30" y="38" font-size="26" font-weight="bold">Где находится отступ?</text>
+    <rect x="35" y="62" width="830" height="345" rx="12" fill="#fff0d4" stroke="#a16207" stroke-dasharray="8 6" stroke-width="2"/>
+    <text x="60" y="96" font-size="22">margin — снаружи рамки</text>
+    <rect x="100" y="120" width="700" height="245" rx="3" fill="#dce8f6" stroke="#315a86" stroke-width="8"/>
+    <text x="125" y="153" font-size="21">padding — между рамкой и содержимым</text>
+    <rect x="170" y="180" width="560" height="115" fill="#fff" stroke="#64748b" stroke-width="2"/>
+    <text x="200" y="225" font-size="24" font-weight="bold">Содержимое карточки</text>
+    <text x="200" y="263" font-size="21">Заголовок, изображение, текст</text>
+    <text x="125" y="343" font-size="21">border — рамка блока</text>
+    <text x="35" y="447" font-size="20">border-box: width включает содержимое, padding и border; margin — снаружи.</text>
+  </g>
+</svg>

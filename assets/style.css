@@ -344,6 +344,29 @@ aside.callout {
 .screen-preview:has(.choice-routes:checked) .panel-routes,
 .screen-preview:has(.choice-booking:checked) .panel-booking { display: block; }
 
+.site-updates {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #34475a;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+.site-updates p { margin: 0 0 0.75rem; }
+.site-updates button {
+  padding: 0.65rem 0.85rem;
+  margin: 0.2rem;
+  border: 1px solid #607386;
+  border-radius: 0.3rem;
+  background: #fff;
+  color: #243647;
+  font: inherit;
+  cursor: pointer;
+}
+.site-updates button:focus-visible { outline: 3px solid #3182ce; outline-offset: 3px; }
+.site-updates button:disabled { opacity: 0.65; cursor: wait; }
+.site-updates[hidden], .site-updates button[hidden] { display: none; }
+
 @media (max-width: 48rem) {
   .site-header {
     min-height: 16rem;
