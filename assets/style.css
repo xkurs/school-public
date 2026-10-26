@@ -25,6 +25,12 @@
   flex-wrap: wrap;
   gap: .5rem;
 }
+.calendar-controls {
+  margin-block: 1rem;
+  padding: .75rem 1rem;
+  border: 1px solid #cfd7e3;
+  border-radius: .5rem;
+}
 .calendar-controls[hidden], .calendar-static-nav[hidden] { display: none; }
 #calendar-today { margin-inline-start: auto; }
 .calendar-controls button {
