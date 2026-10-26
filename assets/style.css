@@ -47,7 +47,7 @@
 ol.calendar-grid { list-style: none; margin: .5rem 0; padding: 0; }
 .calendar-day { display: flex; min-height: 2.75rem; border: 1px solid #c7d2e1; border-radius: .45rem; background: #fff; }
 .calendar-day > time, .calendar-day > a { display: flex; align-items: center; flex: 1; padding: .5rem; }
-.calendar-day > a { border-radius: inherit; background: #e8f1ff; font-weight: 600; }
+.calendar-day > a { border-radius: inherit; background: #e8f1ff; font-weight: 600; text-decoration: none; }
 .calendar-today { outline: 3px solid #2456a6; outline-offset: 0; }
 .calendar-today time { font-weight: 800; }
 .calendar-archive { margin-top: 1rem; }
