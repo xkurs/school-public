@@ -26,6 +26,7 @@
   gap: .5rem;
 }
 .calendar-controls[hidden], .calendar-static-nav[hidden] { display: none; }
+#calendar-today { margin-inline-start: auto; }
 .calendar-controls button {
   font: inherit;
   max-width: 100%;
