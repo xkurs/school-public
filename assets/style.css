@@ -45,7 +45,7 @@
 }
 .calendar-weekdays { text-align: center; font-weight: 600; }
 ol.calendar-grid { list-style: none; margin: .5rem 0; padding: 0; }
-.calendar-day { min-height: 5rem; border: 1px solid #c7d2e1; border-radius: .45rem; background: #fff; }
+.calendar-day { min-height: 3.5rem; border: 1px solid #c7d2e1; border-radius: .45rem; background: #fff; }
 .calendar-day > time, .calendar-day > a { display: block; height: 100%; padding: .5rem; }
 .calendar-day > a { border-radius: inherit; background: #e8f1ff; font-weight: 600; }
 .calendar-today { outline: 3px solid #2456a6; outline-offset: 0; }
@@ -53,7 +53,7 @@ ol.calendar-grid { list-style: none; margin: .5rem 0; padding: 0; }
 .calendar-archive { margin-top: 1rem; }
 @media (max-width: 480px) {
   .calendar-weekdays, .calendar-grid { gap: .2rem; }
-  .calendar-day { min-height: 3.5rem; }
+  .calendar-day { min-height: 3rem; }
   .calendar-day > time, .calendar-day > a { padding: .3rem .15rem; text-align: center; }
 }
 
