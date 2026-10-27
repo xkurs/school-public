@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="900" viewBox="0 0 800 900" role="img" aria-labelledby="title desc"><title id="title">Главная — визуальный образец</title><desc id="desc">Учебный визуальный образец варианта 00 для пар 15–16. Вертикальное содержание, синие рамки и плашки характеристик, жёлтые описания. Размеры условны.</desc><g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="800" height="900" rx="0" fill="#EFF6FF" stroke="none" stroke-width="0"/>
+<rect x="0" y="0" width="800" height="76" rx="0" fill="#1E3A8A" stroke="none" stroke-width="0"/>
+<text x="36" y="48" font-size="28" fill="white" font-weight="bold">Техника дома · V00</text>
+<rect x="36" y="96" width="170" height="48" rx="8" fill="white" stroke="#1D4ED8" stroke-width="2"/>
+<text x="58" y="127" font-size="20" fill="#1D4ED8" font-weight="normal">Каталог</text>
+<rect x="222" y="96" width="170" height="48" rx="8" fill="white" stroke="#1D4ED8" stroke-width="2"/>
+<text x="244" y="127" font-size="20" fill="#1D4ED8" font-weight="normal">Форма</text>
+<text x="36" y="201" font-size="32" fill="#1D4ED8" font-weight="bold">Бытовая техника для дома</text>
+<text x="36" y="243" font-size="20" fill="#1E293B" font-weight="normal">Выберите технику для повседневных дел</text>
+<svg x="36" y="275" width="400" height="300" viewBox="0 0 640 480">
+  <title>Холодильник</title>
+  <desc>Нейтральная учебная иллюстрация двухкамерного холодильника без бренда.</desc>
+  <rect width="640" height="480" rx="24" fill="#EFF6FF"/>
+  <ellipse cx="320" cy="432" rx="140" ry="18" fill="#DBEAFE"/>
+  <g stroke="#1E293B" stroke-width="6" stroke-linejoin="round">
+    <path d="M239 418v14m162-14v14" stroke-linecap="round"/>
+    <rect x="216" y="48" width="208" height="374" rx="18" fill="#FFFFFF"/>
+    <path d="M217 190h206"/>
+    <path d="M244 94v54m0 85v82" stroke="#1D4ED8" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <path d="M388 72v92m0 51v180" stroke="#DBEAFE" stroke-width="14" stroke-linecap="round"/>
+</svg>
+
+<text x="36" y="622" font-size="20" fill="#1E293B" font-weight="normal">Три прибора для кухни и дома.</text>
+<text x="36" y="653" font-size="20" fill="#1E293B" font-weight="normal">Сравните характеристики и выберите нужный товар.</text>
+<text text-decoration="underline" x="36" y="714" font-size="22" fill="#1D4ED8" font-weight="normal">Посмотреть технику</text>
+<text text-decoration="underline" x="36" y="761" font-size="22" fill="#1D4ED8" font-weight="normal">Открыть форму заказа</text>
+<text x="36" y="872" font-size="18" fill="#1E293B" font-weight="normal">Учебный прототип · Вариант 00</text>
+</g></svg>

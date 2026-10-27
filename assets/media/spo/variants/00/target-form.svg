@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1270" viewBox="0 0 800 1270" role="img" aria-labelledby="title desc"><title id="title">Форма — визуальный образец</title><desc id="desc">Учебный визуальный образец варианта 00 для пар 15–16. Вертикальное содержание, синие рамки и плашки характеристик, жёлтые описания. Размеры условны.</desc><g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="800" height="1270" rx="0" fill="#EFF6FF" stroke="none" stroke-width="0"/>
+<rect x="0" y="0" width="800" height="76" rx="0" fill="#1E3A8A" stroke="none" stroke-width="0"/>
+<text x="36" y="48" font-size="28" fill="white" font-weight="bold">Техника дома · V00</text>
+<rect x="36" y="96" width="170" height="48" rx="8" fill="white" stroke="#1D4ED8" stroke-width="2"/>
+<text x="58" y="127" font-size="20" fill="#1D4ED8" font-weight="normal">Главная</text>
+<rect x="222" y="96" width="170" height="48" rx="8" fill="white" stroke="#1D4ED8" stroke-width="2"/>
+<text x="244" y="127" font-size="20" fill="#1D4ED8" font-weight="normal">Каталог</text>
+<text x="36" y="201" font-size="32" fill="#1D4ED8" font-weight="bold">Заказ техники</text>
+<rect x="36" y="235" width="728" height="920" rx="12" fill="white" stroke="#94A3B8" stroke-width="1"/>
+<text x="60" y="278" font-size="21" fill="#1E293B" font-weight="bold">Товар</text>
+<rect x="60" y="296" width="680" height="52" rx="6" fill="white" stroke="#94A3B8" stroke-width="2"/>
+<text x="76" y="330" font-size="20" fill="#1E293B" font-weight="normal">— Выберите товар —</text>
+<text x="60" y="400" font-size="21" fill="#1E293B" font-weight="bold">Количество единиц</text>
+<rect x="60" y="418" width="680" height="52" rx="6" fill="white" stroke="#94A3B8" stroke-width="2"/>
+<text x="76" y="452" font-size="20" fill="#1E293B" font-weight="normal">1</text>
+<text x="60" y="522" font-size="21" fill="#1E293B" font-weight="bold">Комментарий к заказу</text>
+<rect x="60" y="540" width="680" height="94" rx="6" fill="white" stroke="#94A3B8" stroke-width="2"/>
+<text x="76" y="574" font-size="20" fill="#64748B" font-weight="normal">Например, удобный день доставки</text>
+<text x="710" y="330" font-size="20" fill="#1E293B" font-weight="normal">▾</text>
+<rect x="60" y="680" width="24" height="24" rx="3" fill="#1D4ED8" stroke="#1D4ED8" stroke-width="2"/>
+<text x="64" y="699" font-size="20" fill="white" font-weight="normal">✓</text>
+<text x="100" y="700" font-size="20" fill="#1E293B" font-weight="normal">Нужна доставка</text>
+<rect x="60" y="736" width="24" height="24" rx="3" fill="white" stroke="#94A3B8" stroke-width="2"/>
+<text x="100" y="756" font-size="20" fill="#1E293B" font-weight="normal">Нужна установка</text>
+<text x="60" y="827" font-size="21" fill="#1E293B" font-weight="bold">Срочность заказа</text>
+<rect x="60" y="858" width="680" height="6" rx="3" fill="#CBD5E1" stroke="none" stroke-width="0"/>
+<rect x="60" y="858" width="340" height="6" rx="3" fill="#1D4ED8" stroke="none" stroke-width="0"/>
+<circle cx="400" cy="861" r="13" fill="#1D4ED8"/>
+<text x="60" y="910" font-size="20" fill="#1E293B" font-weight="normal">Не срочно</text>
+<text x="655" y="910" font-size="20" fill="#1E293B" font-weight="normal">Срочно</text>
+<rect x="54" y="958" width="295" height="68" rx="10" fill="none" stroke="#C2410C" stroke-width="4"/>
+<rect x="60" y="964" width="283" height="56" rx="6" fill="#1D4ED8" stroke="none" stroke-width="0"/>
+<text x="81" y="1000" font-size="22" fill="white" font-weight="bold">Проверить заказ</text>
+<text text-decoration="underline" x="60" y="1093" font-size="22" fill="#1D4ED8" font-weight="normal">Назад</text>
+<text x="36" y="1200" font-size="18" fill="#1E293B" font-weight="normal">Показан фокус кнопки после перехода клавишей Tab.</text>
+<text x="36" y="1242" font-size="18" fill="#1E293B" font-weight="normal">Учебный прототип · Вариант 00</text>
+</g></svg>

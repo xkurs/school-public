@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1790" viewBox="0 0 800 1790" role="img" aria-labelledby="title desc"><title id="title">Каталог — визуальный образец</title><desc id="desc">Учебный визуальный образец варианта 00 для пар 15–16. Вертикальное содержание, синие рамки и плашки характеристик, жёлтые описания. Размеры условны.</desc><g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="800" height="1790" rx="0" fill="#EFF6FF" stroke="none" stroke-width="0"/>
+<rect x="0" y="0" width="800" height="76" rx="0" fill="#1E3A8A" stroke="none" stroke-width="0"/>
+<text x="36" y="48" font-size="28" fill="white" font-weight="bold">Техника дома · V00</text>
+<rect x="36" y="96" width="170" height="48" rx="8" fill="white" stroke="#1D4ED8" stroke-width="2"/>
+<text x="58" y="127" font-size="20" fill="#1D4ED8" font-weight="normal">Главная</text>
+<rect x="222" y="96" width="170" height="48" rx="8" fill="white" stroke="#1D4ED8" stroke-width="2"/>
+<text x="244" y="127" font-size="20" fill="#1D4ED8" font-weight="normal">Форма</text>
+<text x="36" y="201" font-size="32" fill="#1D4ED8" font-weight="bold">Каталог техники</text>
+<text x="36" y="243" font-size="20" fill="#1E293B" font-weight="normal">Три товара с основными характеристиками</text>
+<rect x="36" y="275" width="728" height="450" rx="12" fill="white" stroke="#1D4ED8" stroke-width="4"/>
+<text x="60" y="320" font-size="28" fill="#1D4ED8" font-weight="bold">Холодильник</text>
+<svg x="60" y="342" width="288" height="216" viewBox="0 0 640 480">
+  <title>Холодильник</title>
+  <desc>Нейтральная учебная иллюстрация двухкамерного холодильника без бренда.</desc>
+  <rect width="640" height="480" rx="24" fill="#EFF6FF"/>
+  <ellipse cx="320" cy="432" rx="140" ry="18" fill="#DBEAFE"/>
+  <g stroke="#1E293B" stroke-width="6" stroke-linejoin="round">
+    <path d="M239 418v14m162-14v14" stroke-linecap="round"/>
+    <rect x="216" y="48" width="208" height="374" rx="18" fill="#FFFFFF"/>
+    <path d="M217 190h206"/>
+    <path d="M244 94v54m0 85v82" stroke="#1D4ED8" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <path d="M388 72v92m0 51v180" stroke="#DBEAFE" stroke-width="14" stroke-linecap="round"/>
+</svg>
+
+<rect x="60" y="575" width="680" height="48" rx="6" fill="#1E3A8A" stroke="none" stroke-width="0"/>
+<text x="76" y="606" font-size="21" fill="white" font-weight="bold">300 л · 2 камеры</text>
+<rect x="60" y="639" width="680" height="60" rx="6" fill="#FEF3C7" stroke="none" stroke-width="0"/>
+<text x="76" y="677" font-size="20" fill="#78350F" font-weight="normal">Для хранения свежих и замороженных продуктов</text>
+<rect x="36" y="750" width="728" height="450" rx="12" fill="white" stroke="#1D4ED8" stroke-width="4"/>
+<text x="60" y="795" font-size="28" fill="#1D4ED8" font-weight="bold">Стиральная машина</text>
+<svg x="60" y="817" width="288" height="216" viewBox="0 0 640 480">
+  <title>Стиральная машина</title>
+  <desc>Нейтральная учебная иллюстрация стиральной машины с круглым люком без бренда.</desc>
+  <rect width="640" height="480" rx="24" fill="#EFF6FF"/>
+  <ellipse cx="320" cy="432" rx="154" ry="18" fill="#DBEAFE"/>
+  <g stroke="#1E293B" stroke-width="6" stroke-linejoin="round">
+    <path d="M214 418v14m212-14v14" stroke-linecap="round"/>
+    <rect x="188" y="74" width="264" height="348" rx="18" fill="#FFFFFF"/>
+    <path d="M189 151h262"/>
+    <rect x="211" y="100" width="78" height="24" rx="5" fill="#DBEAFE"/>
+    <circle cx="398" cy="113" r="17" fill="#DBEAFE"/>
+    <circle cx="320" cy="282" r="96" fill="#DBEAFE"/>
+    <circle cx="320" cy="282" r="73" fill="#FFFFFF"/>
+  </g>
+  <path d="M253 294q34-22 67 0t67 0a69 69 0 0 1-134 0" fill="#93C5FD"/>
+  <path d="M349 236q24 16 24 42" fill="none" stroke="#1D4ED8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="331" cy="113" r="5" fill="#1D4ED8"/>
+  <circle cx="350" cy="113" r="5" fill="#1D4ED8"/>
+</svg>
+
+<rect x="60" y="1050" width="680" height="48" rx="6" fill="#1E3A8A" stroke="none" stroke-width="0"/>
+<text x="76" y="1081" font-size="21" fill="white" font-weight="bold">7 кг · 1000 об/мин</text>
+<rect x="60" y="1114" width="680" height="60" rx="6" fill="#FEF3C7" stroke="none" stroke-width="0"/>
+<text x="76" y="1152" font-size="20" fill="#78350F" font-weight="normal">Для стирки повседневной одежды</text>
+<rect x="36" y="1225" width="728" height="450" rx="12" fill="white" stroke="#1D4ED8" stroke-width="4"/>
+<text x="60" y="1270" font-size="28" fill="#1D4ED8" font-weight="bold">Электрочайник</text>
+<svg x="60" y="1292" width="288" height="216" viewBox="0 0 640 480">
+  <title>Электрочайник</title>
+  <desc>Нейтральная учебная иллюстрация электрочайника с ручкой и подставкой без бренда.</desc>
+  <rect width="640" height="480" rx="24" fill="#EFF6FF"/>
+  <ellipse cx="320" cy="432" rx="162" ry="18" fill="#DBEAFE"/>
+  <g stroke="#1E293B" stroke-width="7" stroke-linejoin="round">
+    <path d="M391 166h36c75 0 75 143-9 143h-23" fill="none" stroke-width="19"/>
+    <path d="M232 175l-67-43 30 93 30 15" fill="#DBEAFE"/>
+    <path d="M242 133h142l32 233q3 30-29 30H237q-32 0-29-30z" fill="#FFFFFF"/>
+    <path d="M241 133q0-28 71-28t72 28z" fill="#DBEAFE"/>
+    <rect x="299" y="85" width="29" height="22" rx="7" fill="#1D4ED8"/>
+    <rect x="203" y="402" width="222" height="25" rx="12" fill="#DBEAFE"/>
+  </g>
+  <rect x="292" y="185" width="40" height="139" rx="18" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="5"/>
+  <path d="M304 220h16m-16 32h16m-16 32h16" stroke="#1D4ED8" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="367" cy="366" r="7" fill="#1D4ED8"/>
+</svg>
+
+<rect x="60" y="1525" width="680" height="48" rx="6" fill="#1E3A8A" stroke="none" stroke-width="0"/>
+<text x="76" y="1556" font-size="21" fill="white" font-weight="bold">1,7 л · 2000 Вт</text>
+<rect x="60" y="1589" width="680" height="60" rx="6" fill="#FEF3C7" stroke="none" stroke-width="0"/>
+<text x="76" y="1627" font-size="20" fill="#78350F" font-weight="normal">Для быстрого нагрева воды</text>
+<text x="36" y="1762" font-size="18" fill="#1E293B" font-weight="normal">Учебный прототип · Вариант 00</text>
+</g></svg>
