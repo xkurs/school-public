@@ -48,8 +48,8 @@
 </thead>
 <tbody>
 <tr>
-<td><code>.menu</code></td>
-<td>Селектор: элементы с <code>class="menu"</code></td>
+<td><code>.actions</code></td>
+<td>Селектор: элементы с <code>class="actions"</code></td>
 </tr>
 <tr>
 <td><code>display: flex</code></td>
@@ -74,12 +74,16 @@
 </tbody>
 </table>
 <p>В этой статье используем обычное направление текста слева направо и порядок элементов из HTML. Для строки можно разрешить перенос через <code>wrap</code> или запретить через <code>nowrap</code>. <code>nowrap</code> — значение по умолчанию. <strong>В реальном браузере карточки могут сжиматься.</strong> В бумажных схемах ниже отдельно задано, что их размер сохраняется: здесь изучаем только порядок и перенос.</p>
-<pre><code class="language-text">row:                  column:             row + wrap:
-[1] [2] [3]           [1]                  [1] [2]
-                      [2]                  [3]
-                      [3]
-</code></pre>
-<p>Справа показан случай, когда места хватает на две карточки, но не на три. Перенос сохраняет порядок: сначала 1, затем 2, затем 3.</p>
+<p>На рисунках <strong>четыре карточки с номерами 1–4</strong>. Их размер сохраняется: сжатия и роста нет. Места по ширине хватает на три карточки с промежутками, но не на четыре; по высоте места достаточно. Пунктир показывает границу контейнера.</p>
+<h3 id="строка-без-переноса">Строка без переноса</h3>
+<p><code>flex-direction: row; flex-wrap: nowrap</code> — карточки остаются в одной строке. В нашей модели четвёртая выходит за правую границу.</p>
+<p><img alt="Четыре карточки в строке без переноса: четвёртая выходит за границу контейнера" src="../../../assets/media/spo/mobile-app-development/017/assets/flex-row.svg"></p>
+<h3 id="столбец">Столбец</h3>
+<p><code>flex-direction: column; flex-wrap: nowrap</code> — те же карточки располагаются сверху вниз.</p>
+<p><img alt="Четыре карточки в одном столбце внутри контейнера" src="../../../assets/media/spo/mobile-app-development/017/assets/flex-column.svg"></p>
+<h3 id="строка-с-переносом">Строка с переносом</h3>
+<p><code>flex-direction: row; flex-wrap: wrap</code> — если следующей карточке не хватает места, она переходит на новую строку. Порядок сохраняется: 1, 2, 3, 4.</p>
+<p><img alt="Три карточки в первой строке, четвёртая перенесена на следующую" src="../../../assets/media/spo/mobile-app-development/017/assets/flex-wrap.svg"></p>
 <hr>
 <h2 id="разобранный-пример-две-кнопки">Разобранный пример: две кнопки</h2>
 <p>Нужно расположить <strong>две кнопки рядом</strong>. Места для обеих хватает.</p>
@@ -89,6 +93,7 @@
 &lt;/nav&gt;
 </code></pre>
 <p>Ищем общего родителя кнопок: это <code>nav</code> с классом <code>actions</code>. Значит, правило назначаем <code>.actions</code>.</p>
+<p><img alt="Общий контейнер nav.actions управляет двумя непосредственными детьми button" src="../../../assets/media/spo/mobile-app-development/017/assets/flex-parent-and-buttons.svg"></p>
 <pre><code class="language-css">.actions {
   display: flex;
   flex-direction: row;
@@ -113,7 +118,7 @@
 </tr>
 <tr>
 <td>Расположение</td>
-<td><code>[Сохранить] [Отмена]</code></td>
+<td>Две кнопки рядом, как на рисунке</td>
 </tr>
 </tbody>
 </table>

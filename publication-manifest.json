@@ -769,6 +769,10 @@
     "topics/mobile-app-development/014/assets/label-field.svg",
     "topics/mobile-app-development/015/assets/box-model.svg",
     "topics/mobile-app-development/016/assets/card-and-form.svg",
+    "topics/mobile-app-development/017/assets/flex-column.svg",
+    "topics/mobile-app-development/017/assets/flex-parent-and-buttons.svg",
+    "topics/mobile-app-development/017/assets/flex-row.svg",
+    "topics/mobile-app-development/017/assets/flex-wrap.svg",
     "topics/mobile-app-development/variants/00/fridge.svg",
     "topics/mobile-app-development/variants/00/kettle.svg",
     "topics/mobile-app-development/variants/00/target-catalog.svg",
@@ -896,7 +900,7 @@
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "c354a0e4c64485094777d8d69dbf1b47cae3727c55769d327e72f2ca7240c162",
+  "source_digest": "8a0c7f6322674b12dc75ea2e7dc658d96a10b8713d646f6d12cfdf77035d0590",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1010,6 +1014,10 @@
     "assets/media/spo/mobile-app-development/014/assets/label-field.svg": "234c3ed9bc9d8cbf3e4511b515ca60647fb6297b918c44fa9d3ac2eaf5897b39",
     "assets/media/spo/mobile-app-development/015/assets/box-model.svg": "36b9be347984c4520ccd07a5e2e304cfc4e0d0d2805be759e91902b40af47c89",
     "assets/media/spo/mobile-app-development/016/assets/card-and-form.svg": "5589d22b1df4e706f6e789aa36ab0dea89a9a0dbe2ed8c68d2c78c34734a750f",
+    "assets/media/spo/mobile-app-development/017/assets/flex-column.svg": "4dbf02b018720c961574f2be61b0240547337386d0bde3cef810059805dcdd1d",
+    "assets/media/spo/mobile-app-development/017/assets/flex-parent-and-buttons.svg": "af1b97bcfd26360e95f90f0c10f9a80c1daf4e3661e3b421d7507a1d701caa01",
+    "assets/media/spo/mobile-app-development/017/assets/flex-row.svg": "b00d29dbe82c2583337ded514b7909f9a776a6ede6ef892042c41cec0f085a63",
+    "assets/media/spo/mobile-app-development/017/assets/flex-wrap.svg": "c977fa51dec4cafcae201928fd1072a27da1e46ddf5bda3c0fadabea0338794c",
     "assets/media/spo/variants/00/fridge.svg": "4f27ace333b55eaa3e9a89b19e9f15b9c73bdb070da764ad4f4f7f1d998429f5",
     "assets/media/spo/variants/00/kettle.svg": "c0c4d7f09277fb94bebed0122a4d999c2c54f5e1a360b1f55345967a9bfd7fdf",
     "assets/media/spo/variants/00/target-catalog.svg": "88760c5cf349ab9ff4cc69224595dfdad7b5af7cfa7518899a771450c46cffd8",
@@ -1157,7 +1165,7 @@
     "spo/topics/first-screen/index.html": "f5f08539548b84f291e9b7ec2b04ecd5168f5bb57038bf3762582372b681b4a6",
     "spo/topics/first-web-project/index.html": "097aeba202cdb271e8f56228358a47dd234019a5d44b5e3ec36d714d16c07a49",
     "spo/topics/first-working-scenario.html": "7f9e5805c821829f2dc6cc3196bcc6c9ee8594df20d725d723b6649ac7a12361",
-    "spo/topics/flexbox-and-mobile-viewport/index.html": "162a041b7c96a4d8c6575cabf084dbdc128c78e15b7020a5097a6f626c671098",
+    "spo/topics/flexbox-and-mobile-viewport/index.html": "cb89e30651761bebc6d7977c43cc450cc4543eda6d6dcd5f7353d4a7e70d2f7d",
     "spo/topics/home-page-and-catalog/index.html": "f81f8693c1b204340583baff539aad882922dd307ae22653dfe48581f1db8138",
     "spo/topics/html-content-structure/index.html": "90db1cb567074b48e7ca6f6db4a980e925c531c07025dc98bce54833290505c0",
     "spo/topics/html-form/index.html": "a07c04abda0b0fdf6c7f892ce957b9ea192d4ec8ed1502038bc034cf7f56f5a6",
@@ -1211,7 +1219,7 @@
     "spo/topics/variants/38.html": "eeb5ca428612c30efb20fb01553f059c2701105f7e5ff2533e6ea70d28a731f7",
     "spo/topics/variants/39.html": "7f2041a06345d335d2b8e816a805a958151ce1f5a05672ec88c2f466b5daec89",
     "spo/topics/variants/index.html": "4b0bae77b291fbb44f8c9719e5af65f856f9c2eb2db8d8f6e4965f5f6483ad4f",
-    "sw.js": "e9ea06e2bce84efe2466f0dad9cf005e79e09e565e940e21c190ef43601181af",
+    "sw.js": "fdfa9895a9e3f7da3cac418105c38429eb36f36e6ce49a620913dce0982facaf",
     "topics/index.html": "f910c2083c1b4e2559537bbf472cc8d81ec0f0923da64a4efd701cd7a7cb7af5",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "b78094386f75e5079aa94e62ac38a50c79ef98a7b943c8bb477db30d0352db48",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "de4c98981762a6a6249f764a237e92fed3171248a1ea71982d49c0b3129aed21",
@@ -1285,5 +1293,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a0cbc9730686ea7bd1450b6b9c610eef1eab22f08ee87fdbcf1f45cc89418b58",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "2ae9d3f4b6e4554d3fdb952bc7c81102efd35331cd569243ee42831fd6d15940"
   },
-  "manifest_digest": "e819fe083028a93e35675410efb0a62b8ea041d58f41295059255a2e75ac5eaa"
+  "manifest_digest": "cf621c5f19d1261d4c469afa2f0ef8fc5a78c7db3786ddf0fe8f8a7e8b71ccd4"
 }
