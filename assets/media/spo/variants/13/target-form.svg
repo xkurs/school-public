@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1229" viewBox="0 0 800 1229" role="img" aria-labelledby="title desc">
+<title id="title">Форма — Спорт после пар · V13</title>
+<desc id="desc">Визуальный учебный образец результата пар 15–16. Настоящие HTML-элементы нужно создать самостоятельно. Размеры условны, точное совпадение пикселей не требуется.</desc>
+<rect width="800" height="1229" fill="#EAF7F5"/>
+<g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="800" height="77" rx="0" fill="#176B64" stroke="none" stroke-width="0"/>
+<text font-size="28" fill="#FFFFFF" font-weight="bold">
+<tspan x="36" y="46">Спорт после пар · V13</tspan>
+</text>
+<g id="navigation" aria-label="Меню">
+<rect x="36" y="97" width="170" height="48" rx="8" fill="#FFFFFF" stroke="#176B64" stroke-width="2"/>
+<text font-size="21" fill="#176B64">
+<tspan x="54" y="127">Главная</tspan>
+</text>
+<rect x="222" y="97" width="170" height="48" rx="8" fill="#FFFFFF" stroke="#176B64" stroke-width="2"/>
+<text font-size="21" fill="#176B64">
+<tspan x="240" y="127">Каталог</tspan>
+</text>
+</g>
+<text font-size="32" fill="#176B64" font-weight="bold">
+<tspan x="36" y="207">Запись на занятие</tspan>
+</text>
+<text font-size="22" fill="#183E39">
+<tspan x="36" y="258">Учебная форма. Данные пока не сохраняются.</tspan>
+</text>
+<rect x="36" y="291" width="728" height="752" rx="10" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+<g id="field-1" data-control="select" data-label="Название секции">
+<text font-size="23" fill="#183E39" font-weight="bold">
+<tspan x="60" y="338">Название секции</tspan>
+</text>
+<rect x="60" y="357" width="680" height="53" rx="6" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+<text font-size="21" fill="#183E39">
+<tspan x="76" y="390">Выберите из списка</tspan>
+</text>
+<path d="M710 378 l7 9 l7 -9" fill="none" stroke="#183E39" stroke-width="2"/>
+</g>
+<g id="field-2" data-control="number" data-label="Количество занятий">
+<text font-size="23" fill="#183E39" font-weight="bold">
+<tspan x="60" y="457">Количество занятий</tspan>
+</text>
+<rect x="60" y="476" width="680" height="53" rx="6" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+<text font-size="21" fill="#183E39">
+<tspan x="76" y="509">2</tspan>
+</text>
+</g>
+<g id="field-3" data-control="textarea" data-label="Пожелания к тренировке">
+<text font-size="23" fill="#183E39" font-weight="bold">
+<tspan x="60" y="576">Пожелания к тренировке</tspan>
+</text>
+<rect x="60" y="595" width="680" height="96" rx="6" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+<text font-size="21" fill="#64748B">
+<tspan x="76" y="628">Опишите ваши пожелания</tspan>
+</text>
+</g>
+<g id="field-4" data-control="checkbox" data-label="Нужен инвентарь">
+<rect x="60" y="719" width="24" height="24" rx="3" fill="#176B64" stroke="#176B64" stroke-width="2"/>
+<path d="M65 731 l5 5 l9 -11" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+<text font-size="22" fill="#183E39">
+<tspan x="100" y="737">Нужен инвентарь</tspan>
+</text>
+</g>
+<g id="field-5" data-control="checkbox" data-label="Первое занятие">
+<rect x="60" y="774" width="24" height="24" rx="3" fill="#FFFFFF" stroke="#176B64" stroke-width="2"/>
+<text font-size="22" fill="#183E39">
+<tspan x="100" y="792">Первое занятие</tspan>
+</text>
+</g>
+<g id="field-6" data-control="range" data-label="Интенсивность">
+<text font-size="23" fill="#183E39" font-weight="bold">
+<tspan x="60" y="848">Интенсивность</tspan>
+</text>
+<rect x="60" y="881" width="680" height="6" rx="3" fill="#CBD5E1" stroke="none" stroke-width="0"/>
+<rect x="60" y="881" width="170.0" height="6" rx="3" fill="#176B64" stroke="none" stroke-width="0"/>
+<circle cx="230.0" cy="884" r="13" fill="#176B64"/>
+<text font-size="20" fill="#183E39">
+<tspan x="60" y="931">1 — Лёгкая; 5 — Высокая</tspan>
+</text>
+</g>
+<rect x="54" y="957" width="288" height="68" rx="10" fill="none" stroke="#C2410C" stroke-width="3"/>
+<rect x="60" y="963" width="276" height="56" rx="6" fill="#176B64" stroke="none" stroke-width="0"/>
+<text font-size="23" fill="#FFFFFF" font-weight="bold">
+<tspan x="80" y="998">Выбрать занятие</tspan>
+</text>
+<text font-size="23" fill="#176B64" text-decoration="underline">
+<tspan x="36" y="1090">Назад</tspan>
+</text>
+<text font-size="18" fill="#183E39">
+<tspan x="36" y="1133">Показан фокус кнопки после перехода клавишей Tab.</tspan>
+</text>
+<text font-size="18" fill="#183E39">
+<tspan x="36" y="1194">Учебный прототип · Вариант 13</tspan>
+</text>
+</g>
+</svg>

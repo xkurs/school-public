@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1229" viewBox="0 0 800 1229" role="img" aria-labelledby="title desc">
+<title id="title">Форма — Книжная полка · V06</title>
+<desc id="desc">Визуальный учебный образец результата пар 15–16. Настоящие HTML-элементы нужно создать самостоятельно. Размеры условны, точное совпадение пикселей не требуется.</desc>
+<rect width="800" height="1229" fill="#F7EEFA"/>
+<g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="800" height="77" rx="0" fill="#754383" stroke="none" stroke-width="0"/>
+<text font-size="28" fill="#FFFFFF" font-weight="bold">
+<tspan x="36" y="46">Книжная полка · V06</tspan>
+</text>
+<g id="navigation" aria-label="Меню">
+<rect x="36" y="97" width="170" height="48" rx="8" fill="#FFFFFF" stroke="#754383" stroke-width="2"/>
+<text font-size="21" fill="#754383">
+<tspan x="54" y="127">Главная</tspan>
+</text>
+<rect x="222" y="97" width="170" height="48" rx="8" fill="#FFFFFF" stroke="#754383" stroke-width="2"/>
+<text font-size="21" fill="#754383">
+<tspan x="240" y="127">Каталог</tspan>
+</text>
+</g>
+<text font-size="32" fill="#754383" font-weight="bold">
+<tspan x="36" y="207">Заявка на книгу</tspan>
+</text>
+<text font-size="22" fill="#392844">
+<tspan x="36" y="258">Учебная форма. Данные пока не сохраняются.</tspan>
+</text>
+<rect x="36" y="291" width="728" height="752" rx="10" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+<g id="field-1" data-control="range" data-label="Объём книги">
+<text font-size="23" fill="#392844" font-weight="bold">
+<tspan x="60" y="338">Объём книги</tspan>
+</text>
+<rect x="60" y="371" width="680" height="6" rx="3" fill="#CBD5E1" stroke="none" stroke-width="0"/>
+<rect x="60" y="371" width="510.0" height="6" rx="3" fill="#754383" stroke="none" stroke-width="0"/>
+<circle cx="570.0" cy="374" r="13" fill="#754383"/>
+<text font-size="20" fill="#392844">
+<tspan x="60" y="421">1 — Короткая; 5 — Большая</tspan>
+</text>
+</g>
+<g id="field-2" data-control="textarea" data-label="Пожелания к выдаче">
+<text font-size="23" fill="#392844" font-weight="bold">
+<tspan x="60" y="476">Пожелания к выдаче</tspan>
+</text>
+<rect x="60" y="495" width="680" height="96" rx="6" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+<text font-size="21" fill="#64748B">
+<tspan x="76" y="528">Опишите ваши пожелания</tspan>
+</text>
+</g>
+<g id="field-3" data-control="select" data-label="Название книги">
+<text font-size="23" fill="#392844" font-weight="bold">
+<tspan x="60" y="638">Название книги</tspan>
+</text>
+<rect x="60" y="657" width="680" height="53" rx="6" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+<text font-size="21" fill="#392844">
+<tspan x="76" y="690">Выберите из списка</tspan>
+</text>
+<path d="M710 678 l7 9 l7 -9" fill="none" stroke="#392844" stroke-width="2"/>
+</g>
+<g id="field-4" data-control="number" data-label="Количество экземпляров">
+<text font-size="23" fill="#392844" font-weight="bold">
+<tspan x="60" y="757">Количество экземпляров</tspan>
+</text>
+<rect x="60" y="776" width="680" height="53" rx="6" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+<text font-size="21" fill="#392844">
+<tspan x="76" y="809">4</tspan>
+</text>
+</g>
+<g id="field-5" data-control="checkbox" data-label="Нужен крупный шрифт">
+<rect x="60" y="857" width="24" height="24" rx="3" fill="#FFFFFF" stroke="#754383" stroke-width="2"/>
+<text font-size="22" fill="#392844">
+<tspan x="100" y="875">Нужен крупный шрифт</tspan>
+</text>
+</g>
+<g id="field-6" data-control="checkbox" data-label="Нужна закладка">
+<rect x="60" y="912" width="24" height="24" rx="3" fill="#754383" stroke="#754383" stroke-width="2"/>
+<path d="M65 924 l5 5 l9 -11" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+<text font-size="22" fill="#392844">
+<tspan x="100" y="930">Нужна закладка</tspan>
+</text>
+</g>
+<rect x="54" y="957" width="282" height="68" rx="10" fill="none" stroke="#C2410C" stroke-width="3"/>
+<rect x="60" y="963" width="270" height="56" rx="6" fill="#754383" stroke="none" stroke-width="0"/>
+<text font-size="23" fill="#FFFFFF" font-weight="bold">
+<tspan x="80" y="998">Оставить заявку</tspan>
+</text>
+<text font-size="23" fill="#754383" text-decoration="underline">
+<tspan x="36" y="1090">Назад</tspan>
+</text>
+<text font-size="18" fill="#392844">
+<tspan x="36" y="1133">Показан фокус кнопки после перехода клавишей Tab.</tspan>
+</text>
+<text font-size="18" fill="#392844">
+<tspan x="36" y="1194">Учебный прототип · Вариант 06</tspan>
+</text>
+</g>
+</svg>

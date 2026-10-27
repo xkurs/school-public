@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1229" viewBox="0 0 800 1229" role="img" aria-labelledby="title desc">
+<title id="title">Форма — На тропе · V01</title>
+<desc id="desc">Визуальный учебный образец результата пар 15–16. Настоящие HTML-элементы нужно создать самостоятельно. Размеры условны, точное совпадение пикселей не требуется.</desc>
+<rect width="800" height="1229" fill="#F1F8E9"/>
+<g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="800" height="77" rx="0" fill="#2E7D32" stroke="none" stroke-width="0"/>
+<text font-size="28" fill="#FFFFFF" font-weight="bold">
+<tspan x="36" y="46">На тропе · V01</tspan>
+</text>
+<g id="navigation" aria-label="Меню">
+<rect x="36" y="97" width="170" height="48" rx="8" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+<text font-size="21" fill="#2E7D32">
+<tspan x="54" y="127">Главная</tspan>
+</text>
+<rect x="222" y="97" width="170" height="48" rx="8" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+<text font-size="21" fill="#2E7D32">
+<tspan x="240" y="127">Каталог</tspan>
+</text>
+</g>
+<text font-size="32" fill="#2E7D32" font-weight="bold">
+<tspan x="36" y="207">План прогулки</tspan>
+</text>
+<text font-size="22" fill="#1B3A24">
+<tspan x="36" y="258">Учебная форма. Данные пока не сохраняются.</tspan>
+</text>
+<rect x="36" y="291" width="728" height="752" rx="10" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+<g id="field-1" data-control="select" data-label="Название маршрута">
+<text font-size="23" fill="#1B3A24" font-weight="bold">
+<tspan x="60" y="338">Название маршрута</tspan>
+</text>
+<rect x="60" y="357" width="680" height="53" rx="6" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+<text font-size="21" fill="#1B3A24">
+<tspan x="76" y="390">Выберите из списка</tspan>
+</text>
+<path d="M710 378 l7 9 l7 -9" fill="none" stroke="#1B3A24" stroke-width="2"/>
+</g>
+<g id="field-2" data-control="number" data-label="Количество участников">
+<text font-size="23" fill="#1B3A24" font-weight="bold">
+<tspan x="60" y="457">Количество участников</tspan>
+</text>
+<rect x="60" y="476" width="680" height="53" rx="6" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+<text font-size="21" fill="#1B3A24">
+<tspan x="76" y="509">2</tspan>
+</text>
+</g>
+<g id="field-3" data-control="textarea" data-label="Пожелания к прогулке">
+<text font-size="23" fill="#1B3A24" font-weight="bold">
+<tspan x="60" y="576">Пожелания к прогулке</tspan>
+</text>
+<rect x="60" y="595" width="680" height="96" rx="6" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+<text font-size="21" fill="#64748B">
+<tspan x="76" y="628">Что хотелось бы увидеть?</tspan>
+</text>
+</g>
+<g id="field-4" data-control="checkbox" data-label="Нужен сопровождающий">
+<rect x="60" y="719" width="24" height="24" rx="3" fill="#2E7D32" stroke="#2E7D32" stroke-width="2"/>
+<path d="M65 731 l5 5 l9 -11" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+<text font-size="22" fill="#1B3A24">
+<tspan x="100" y="737">Нужен сопровождающий</tspan>
+</text>
+</g>
+<g id="field-5" data-control="checkbox" data-label="Остановка для фотографий">
+<rect x="60" y="774" width="24" height="24" rx="3" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+<text font-size="22" fill="#1B3A24">
+<tspan x="100" y="792">Остановка для фотографий</tspan>
+</text>
+</g>
+<g id="field-6" data-control="range" data-label="Темп прогулки">
+<text font-size="23" fill="#1B3A24" font-weight="bold">
+<tspan x="60" y="848">Темп прогулки</tspan>
+</text>
+<rect x="60" y="881" width="680" height="6" rx="3" fill="#CBD5E1" stroke="none" stroke-width="0"/>
+<rect x="60" y="881" width="170.0" height="6" rx="3" fill="#2E7D32" stroke="none" stroke-width="0"/>
+<circle cx="230.0" cy="884" r="13" fill="#2E7D32"/>
+<text font-size="20" fill="#1B3A24">
+<tspan x="60" y="931">1 — Спокойный; 5 — Быстрый</tspan>
+</text>
+</g>
+<rect x="54" y="957" width="232" height="68" rx="10" fill="none" stroke="#C2410C" stroke-width="3"/>
+<rect x="60" y="963" width="220" height="56" rx="6" fill="#2E7D32" stroke="none" stroke-width="0"/>
+<text font-size="23" fill="#FFFFFF" font-weight="bold">
+<tspan x="80" y="998">Записаться</tspan>
+</text>
+<text font-size="23" fill="#2E7D32" text-decoration="underline">
+<tspan x="36" y="1090">Назад</tspan>
+</text>
+<text font-size="18" fill="#1B3A24">
+<tspan x="36" y="1133">Показан фокус кнопки после перехода клавишей Tab.</tspan>
+</text>
+<text font-size="18" fill="#1B3A24">
+<tspan x="36" y="1194">Учебный прототип · Вариант 01</tspan>
+</text>
+</g>
+</svg>
