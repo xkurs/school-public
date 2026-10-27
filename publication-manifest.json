@@ -896,7 +896,7 @@
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "40f036ec31f5cd247416bf479b4b0857c22d6e09f9edb1148c2d5e96cec17402",
+  "source_digest": "c354a0e4c64485094777d8d69dbf1b47cae3727c55769d327e72f2ca7240c162",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1285,5 +1285,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a0cbc9730686ea7bd1450b6b9c610eef1eab22f08ee87fdbcf1f45cc89418b58",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "2ae9d3f4b6e4554d3fdb952bc7c81102efd35331cd569243ee42831fd6d15940"
   },
-  "manifest_digest": "95cd8cf51e48f440dcdd5c6dc1369932832bd3f50f47288cd80ae2494f381b9c"
+  "manifest_digest": "e819fe083028a93e35675410efb0a62b8ea041d58f41295059255a2e75ac5eaa"
 }
