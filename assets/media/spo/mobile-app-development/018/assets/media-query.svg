@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="395" viewBox="0 0 900 395" role="img" aria-labelledby="title desc">
+<title id="title">Одни данные при разной ширине</title><desc id="desc">На ширине 768 пикселей две карточки рядом и третья ниже; при 375 пикселях все три стоят друг под другом. Схема условная.</desc>
+<rect width="900" height="395" rx="16" fill="#eff6ff"/>
+<g font-family="Arial, sans-serif" fill="#1e293b"><text x="28" y="36" font-size="23" font-weight="bold">Медиазапрос меняет ширину, данные сохраняются</text>
+<text x="40" y="76" font-size="20">768 px: flex-basis: 16rem</text><text x="570" y="76" font-size="20">375 px: flex-basis: 100%</text>
+<g fill="white" stroke="#64748b" stroke-width="2"><rect x="35" y="93" width="460" height="260" rx="10"/><rect x="570" y="93" width="280" height="260" rx="10"/></g>
+<g fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"><rect x="50" y="110" width="205" height="95" rx="7"/><rect x="275" y="110" width="205" height="95" rx="7"/><rect x="50" y="225" width="430" height="110" rx="7"/><rect x="585" y="110" width="250" height="65" rx="7"/><rect x="585" y="190" width="250" height="65" rx="7"/><rect x="585" y="270" width="250" height="65" rx="7"/></g>
+<g font-size="22"><text x="72" y="166">Товар 1</text><text x="297" y="166">Товар 2</text><text x="72" y="288">Товар 3</text><text x="605" y="151">Товар 1</text><text x="605" y="231">Товар 2</text><text x="605" y="311">Товар 3</text></g>
+<text x="35" y="380" font-size="17">Схема расположения: реальные размеры зависят от содержимого и шрифта.</text></g></svg>

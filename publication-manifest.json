@@ -67,6 +67,11 @@
       "title": "Личное расписание на 28.10.2026"
     },
     {
+      "source": "schedules/personal/2026-10-31.md",
+      "output": "schedules/personal/2026-10-31.html",
+      "title": "Личное расписание на 31.10.2026"
+    },
+    {
       "source": "topics/mobile-app-development/015/00/assignment.md",
       "output": "spo/topics/css-selectors-and-box-model/00.html",
       "title": "Учебный вариант 00 — пара 15"
@@ -142,6 +147,16 @@
       "title": "СПО — разработка мобильных приложений"
     },
     {
+      "source": "topics/mobile-app-development/019/00/assignment.md",
+      "output": "spo/topics/javascript-values-and-input/00.html",
+      "title": "Учебный вариант 00 — пара 19"
+    },
+    {
+      "source": "topics/mobile-app-development/019/javascript-values-and-input.md",
+      "output": "spo/topics/javascript-values-and-input/index.html",
+      "title": "JavaScript — переменные, типы, операции и преобразование пользовательского ввода"
+    },
+    {
       "source": "topics/mobile-app-development/003/mit-app-inventor.md",
       "output": "spo/topics/mit-app-inventor/index.html",
       "title": "Интерфейс MIT App Inventor и подключение телефона"
@@ -170,6 +185,16 @@
       "source": "topics/mobile-app-development/009/phone-testing-and-navigation.md",
       "output": "spo/topics/phone-testing-and-navigation/index.html",
       "title": "Проверка приложения на телефоне и разбор событий и переходов"
+    },
+    {
+      "source": "topics/mobile-app-development/018/00/assignment.md",
+      "output": "spo/topics/responsive-layout-and-browser-testing/00.html",
+      "title": "Учебный вариант 00 — пара 18"
+    },
+    {
+      "source": "topics/mobile-app-development/018/responsive-layout-and-browser-testing.md",
+      "output": "spo/topics/responsive-layout-and-browser-testing/index.html",
+      "title": "Адаптация интерфейса к узкому экрану и проверка в браузере"
     },
     {
       "source": "topics/mobile-app-development/016/00/assignment.md",
@@ -821,6 +846,11 @@
     "topics/mobile-app-development/017/assets/flex-parent-and-buttons.svg",
     "topics/mobile-app-development/017/assets/flex-row.svg",
     "topics/mobile-app-development/017/assets/flex-wrap.svg",
+    "topics/mobile-app-development/018/00/fridge.svg",
+    "topics/mobile-app-development/018/00/kettle.svg",
+    "topics/mobile-app-development/018/00/washer.svg",
+    "topics/mobile-app-development/018/assets/media-query.svg",
+    "topics/mobile-app-development/018/assets/responsive-cards.svg",
     "topics/mobile-app-development/variants/images/00839477c30606411e56997ac011a47910a113161db6becb79dc668e54532062.png",
     "topics/mobile-app-development/variants/images/021deb0469547debcca0ebf57571f738098c1dd0e603b3f639063805c0991fc1.png",
     "topics/mobile-app-development/variants/images/11f90aebf1da4a54cdc67197cf28487d1d0487ea6245ff5c88aef3189b882d1a.png",
@@ -866,7 +896,7 @@
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "097fff72add214e5568462b38af15e91738435097a95738e9e73b41ec875323c",
+  "source_digest": "a4e68940bba8008887e9fb9cf4e728fc0730e5c4ae2ad5a3380ea84d9fdf2a07",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1002,6 +1032,11 @@
     "assets/media/spo/mobile-app-development/017/assets/flex-parent-and-buttons.svg": "af1b97bcfd26360e95f90f0c10f9a80c1daf4e3661e3b421d7507a1d701caa01",
     "assets/media/spo/mobile-app-development/017/assets/flex-row.svg": "b00d29dbe82c2583337ded514b7909f9a776a6ede6ef892042c41cec0f085a63",
     "assets/media/spo/mobile-app-development/017/assets/flex-wrap.svg": "c977fa51dec4cafcae201928fd1072a27da1e46ddf5bda3c0fadabea0338794c",
+    "assets/media/spo/mobile-app-development/018/00/fridge.svg": "4f27ace333b55eaa3e9a89b19e9f15b9c73bdb070da764ad4f4f7f1d998429f5",
+    "assets/media/spo/mobile-app-development/018/00/kettle.svg": "c0c4d7f09277fb94bebed0122a4d999c2c54f5e1a360b1f55345967a9bfd7fdf",
+    "assets/media/spo/mobile-app-development/018/00/washer.svg": "c4b68df80e6da77c0b4829388318ef281009938126fba124ee47467df32c7061",
+    "assets/media/spo/mobile-app-development/018/assets/media-query.svg": "f251d1b4398dfc4054baf4fa1f04ca0e29cfbf6042062af5396d53719574a3e4",
+    "assets/media/spo/mobile-app-development/018/assets/responsive-cards.svg": "3131213161535e9907f16e46297b754b7c56017e3ab87a6831ab7ef6bf8d5091",
     "assets/media/spo/variants/01/forest.png": "e622d6535c332483d2cc60696e1e1fa47780653ee3e68a601185d11e7222256c",
     "assets/media/spo/variants/01/mountains.png": "fc1ae52242b32343d226bde41ad89bbdd3b09b6723e65eeba0516bdee9a9ebd9",
     "assets/media/spo/variants/01/river.png": "c18c245dcec7858d8eda2cdb211ea371b6bf304d83fc0e3e72ff2767f9f9889c",
@@ -1241,10 +1276,10 @@
     "assets/offline.js": "191c8acba0600022a0f65591a9dfbd1d793a7e285cfee8408af1c57017bc8f58",
     "assets/quotes.js": "78bf53c83e493fb4db0ce005a8c35962e03e406d696f3db36e8394f8ae44f5e3",
     "assets/style.css": "3e8b2cd802e87f18ddcf390b8553b9a9b17c3f8c352cc8e5db4e13f202020d77",
-    "calendar/2026-10.html": "8688e08544ecf49e0eff52d265aeac39035e6f0ae2ee3bc99e375fcc827108cd",
+    "calendar/2026-10.html": "d41504d80b415a5a1fb0d1960e0e4e323c434be2b4eb0200b3208a1dd201aee6",
     "CNAME": "a88e58d2742981a3f92b2ca125fdde4b4072ab55106487f4973ceb23b7e66a12",
     "favicon.ico": "db28c1f3a1477b9fe964d09306431d787457f1e95d61dd0effcc461d20837f4c",
-    "index.html": "70efdb7f93165f616ce788570a6856b39c048fbc695d9ddc6a27d716505d4727",
+    "index.html": "57115af84b6f4b1e3a2254bcee21e3ef8847ea636bb3b08d9ee2f12b8c243686",
     "schedules/personal/2026-10-14.html": "a88e3f09e274f8d305fa8d86303569e83543d6a96954a5f675ff0b6444077c48",
     "schedules/personal/2026-10-15.html": "98d6c9add76367979a64fe7105622887bf50ae60682d94ea0390f7292a6d6cff",
     "schedules/personal/2026-10-16.html": "c10bbea79918ff634431002a80f9361946760d0d0b3336fa13b49f2186d824d3",
@@ -1255,6 +1290,7 @@
     "schedules/personal/2026-10-22.html": "b508e43314861ef4c2f8001ecb7fe1a3c0cbb009da9931e90ef5492e2d5ca6f8",
     "schedules/personal/2026-10-24.html": "66b7254cc44aa7a26c834f3d80debd083206de1d94eb03fb385ae09e1853d8c8",
     "schedules/personal/2026-10-28.html": "b06ebe8a27837103257f6b18c265628c0f7c084fa38c5ec351ed607f4bb9cb04",
+    "schedules/personal/2026-10-31.html": "3d393bfa359b9e957e898a2dfe17e18439fe5fbf88ac082a6ebb16df21397d17",
     "spo/topics/css-selectors-and-box-model/00.html": "01e8fcb63015789c39f6bd5d5f0ed63cbd9392f4b2aa1c627ca8ec00f8f4c76a",
     "spo/topics/css-selectors-and-box-model/index.html": "fcce1a85e0d5d8e5ee971145e6470204ca10eea040e60b7901bda657777c9dd3",
     "spo/topics/events-and-state/index.html": "70a21f72a37efa2eabf67727b2f636f712ebcba27d2037e816a7eb34194c8c53",
@@ -1269,13 +1305,17 @@
     "spo/topics/html-content-structure/index.html": "85891873ead3e40934d311050bc89d7f857fae27e050f43620d5aca133eec5f2",
     "spo/topics/html-form/00.html": "afe4cbc49abe0f027d9d50feb09135dc3100a3d29a19c509e920e195add17e6f",
     "spo/topics/html-form/index.html": "be5c06882c7368e6be9837fd428821702c401414266ca42c1a28a22c603556a7",
-    "spo/topics/index.html": "55fd8239d3db19eeb7e2df07353dafd4dd11833fb5b7eebd690dccaeecf6f981",
+    "spo/topics/index.html": "a15d3c8f9f9b62615fba2e3b286b3213bd0614251b16efbd0bd314d7ff7d5365",
+    "spo/topics/javascript-values-and-input/00.html": "0606062e29a2021c0fe0b674da2d116a5b7c5c702a42913cd639299c5dbe67cc",
+    "spo/topics/javascript-values-and-input/index.html": "9062de579fe7863b4c513759985d6d1935c8f68c53fd1cb559bc4e3c3040c872",
     "spo/topics/mit-app-inventor/index.html": "e0b60fa43b2f74dfca2ad8076f16048068e83980bda4fec15f3e0301fd322cbf",
     "spo/topics/mobile-app-types/index.html": "e3fa858a07c0bfdeb0fb91cfdcc60100f8e9156490afa1224d6ca2c3b9281b41",
     "spo/topics/mobile-web-page/00.html": "29b5f8dce5b214f534fe0d1938d2765eb7316288957613c2a52327bf44b142f1",
     "spo/topics/mobile-web-page/index.html": "240b7fbe696c273e345c5084860dbba2295c63b7d073d4f31cb353284c43d5b3",
     "spo/topics/multi-screen-app-refinement/index.html": "993a481acbdcdec1c237e4f5b8d7ec9147776ab7e3b1e5e2f6ee1b273e0d6cd8",
     "spo/topics/phone-testing-and-navigation/index.html": "c8980e276e7a7301db283630305afb579e96ce5545982eef09d2b68a077d08ba",
+    "spo/topics/responsive-layout-and-browser-testing/00.html": "84dbdb31203bbc1edde406eae3788da42f86ee248ff62553ec0df07e4bbb629b",
+    "spo/topics/responsive-layout-and-browser-testing/index.html": "4d05adaad67bebfe7b62247ef9b98f5d9c43fe8cc5e4919674d07846fd28af02",
     "spo/topics/styling-pages-cards-and-form/00.html": "abf4b79b07e21c8e09cf074d4b75c05bdb53c7a86c91099e21baed4678ba40b2",
     "spo/topics/styling-pages-cards-and-form/index.html": "2a519288b30e01fe098ce0be8413f535dc242bc2296d390aa95a653e668692df",
     "spo/topics/technology-choice-and-diagnostics/index.html": "74e863301516213ac92ec6b70184e6d4fa661be57791e94767b40bfee5a1d2e8",
@@ -1321,7 +1361,7 @@
     "spo/topics/variants/38.html": "056573f5de63702a6d29963ae02ea8c2675a9d07f4d70088dadcd64bd5483175",
     "spo/topics/variants/39.html": "bcb5be412f24f1a57c1e5973a54dc5cae97b5080778fad91d501e5f48405e442",
     "spo/topics/variants/index.html": "16d74bdcc5471b56e4200aae6210e3f627bca2cba19c7d090c7b5d9d7726cff9",
-    "sw.js": "7c52b28f9e76f5142d6cb4a502a28bde5224a94ee044ba8ebd1a823da04e1a64",
+    "sw.js": "9cf685a6202a16622f8a99eeca65c7bb8dca3d4757c7edb2182f662f9b189bf3",
     "topics/index.html": "f910c2083c1b4e2559537bbf472cc8d81ec0f0923da64a4efd701cd7a7cb7af5",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "b78094386f75e5079aa94e62ac38a50c79ef98a7b943c8bb477db30d0352db48",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "de4c98981762a6a6249f764a237e92fed3171248a1ea71982d49c0b3129aed21",
@@ -1395,5 +1435,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a0cbc9730686ea7bd1450b6b9c610eef1eab22f08ee87fdbcf1f45cc89418b58",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "2ae9d3f4b6e4554d3fdb952bc7c81102efd35331cd569243ee42831fd6d15940"
   },
-  "manifest_digest": "241f1a0dcbac61659f0e03b370d05b3952df6f23a63d9b5c576c5def3dc361d2"
+  "manifest_digest": "5b6f639ae76fd105396ba06fbacc749707a21fc1865b2b6ec14fd2b2e143f3d4"
 }

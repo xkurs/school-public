@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>JavaScript — переменные, типы, операции и преобразование пользовательского ввода — shkolar.site</title>
+  <link rel="icon" href="../../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../../assets/style.css">
+  <script defer src="../../../assets/quotes.js"></script>
+  <script defer src="../../../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../../index.html">Календарь</a></li><li><a href="../index.html">СПО</a></li><li aria-current="page">JavaScript — переменные, типы, операции и преобразование пользовательского ввода</li></ol></nav><h1 id="javascript-переменные-типы-операции-и-преобразование-пользовательского-ввода">JavaScript — переменные, типы, операции и преобразование пользовательского ввода</h1>
+<p>HTML задаёт содержимое страницы, CSS — оформление, JavaScript позволяет выполнять действия и вычисления. На этой практике сохраним первый <code>script.js</code> и проверим небольшой расчёт в консоли браузера.</p>
+<p><strong>Результат:</strong> файл вычисляет стоимость двух учебных наборов с доставкой. Вы сможете изменить количество и объяснить, почему строку перед расчётом нужно преобразовать в число.</p>
+<p>Продолжайте свою папку <code>VariantNN-web</code> после адаптации страниц. Для первого расчёта у всех одинаковые вымышленные данные: один набор стоит 150 условных рублей, доставка — 50. Это отдельный учебный опыт: добавлять цены товарам своего варианта и переделывать форму не требуется.</p>
+<p><a href="00.html">Полный пример 00 этой пары</a> содержит самостоятельное задание, HTML-страницу и готовый код для показа преподавателем.</p>
+<hr>
+<h2 id="1-подключите-файл">1. Подключите файл</h2>
+<p>В своей папке рядом с <code>index.html</code> и <code>style.css</code> создайте обычный текстовый файл <strong><code>script.js</code></strong>. Проверьте расширение: <code>script.js.txt</code> браузер не найдёт по нашему пути.</p>
+<p>В <strong><code>index.html</code></strong>, между <code>&lt;head&gt;</code> и <code>&lt;/head&gt;</code>, сразу после подключения CSS добавьте одну строку:</p>
+<pre><code class="language-html">&lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+</code></pre>
+<p><code>src</code> указывает путь к файлу. <code>defer</code> откладывает выполнение до завершения разбора HTML. Вставлять JavaScript внутрь этого тега не нужно: программа хранится в отдельном файле. На этой практике достаточно подключить её на главной странице.</p>
+<p>В пустом <code>script.js</code> напишите:</p>
+<pre><code class="language-javascript">console.log(&quot;Расчёт запущен&quot;);
+</code></pre>
+<p>Сохраните оба файла. Откройте главную в браузере, нажмите <code>F12</code> и выберите вкладку <strong>Console / Консоль</strong>. Если <code>F12</code> не открывает инструменты, используйте меню браузера → дополнительные инструменты → инструменты разработчика. Обновите страницу.</p>
+<p><strong>Самопроверка:</strong> в консоли есть строка «Расчёт запущен». На самой странице новый текст не появляется: <code>console.log(...)</code> выводит сообщение в консоль. В скобках — то, что нужно вывести; точка с запятой завершает команду.</p>
+<hr>
+<h2 id="2-дайте-значениям-имена">2. Дайте значениям имена</h2>
+<p>В <code>script.js</code> <strong>замените пробную строку</strong> следующим блоком:</p>
+<pre><code class="language-javascript">const itemName = &quot;Учебный набор&quot;;
+const unitPrice = 150;
+let quantityText = &quot;2&quot;;
+const deliveryPrice = 50;
+const isTraining = true;
+
+console.log(itemName);
+console.log(quantityText);
+console.log(isTraining);
+</code></pre>
+<p><strong>Переменная</strong> — именованное место для значения. <code>=</code> записывает значение справа в имя слева. Команды выполняются сверху вниз.</p>
+<table>
+<thead>
+<tr>
+<th>Запись</th>
+<th>Что означает</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>const unitPrice = 150;</code></td>
+<td>Объявить имя <code>unitPrice</code> и записать число 150; повторное присваивание запрещено</td>
+</tr>
+<tr>
+<td><code>let quantityText = "2";</code></td>
+<td>Объявить имя <code>quantityText</code> и записать строку; позже можно присвоить другое значение</td>
+</tr>
+<tr>
+<td><code>console.log(unitPrice);</code></td>
+<td>Посмотреть значение по его имени</td>
+</tr>
+</tbody>
+</table>
+<p>Имена чувствительны к регистру: <code>unitPrice</code> и <code>UnitPrice</code> — разные имена. В числах не пишем единицу измерения: <code>150</code>, а не <code>150 рублей</code>. Текст записываем в кавычках.</p>
+<p>Сохраните файл и обновите страницу. В консоли должны появиться название, количество и <code>true</code>. Вид кавычек и цвет значений зависят от браузера.</p>
+<p><strong>Маленький опыт:</strong> сразу после строки <code>let quantityText = "2";</code> временно вставьте:</p>
+<pre><code class="language-javascript">quantityText = &quot;3&quot;;
+</code></pre>
+<p>После сохранения и обновления выводится уже 3. При повторном присваивании <code>let</code> не пишут. Удалите временную строку и обновите страницу: снова выводится 2. <code>const</code> используем там, где повторного присваивания в программе не планируем. Редактировать исходный текст строки с <code>const</code> перед новым запуском можно.</p>
+<hr>
+<h2 id="3-различайте-три-типа">3. Различайте три типа</h2>
+<p>Значение имеет <strong>тип</strong>: он определяет, как с ним работает программа.</p>
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>Примеры</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Строка — <code>string</code></td>
+<td><code>"Учебный набор"</code>, <code>"2"</code>, <code>""</code></td>
+<td>Текст, включая цифры в кавычках; <code>""</code> — пустой текст</td>
+</tr>
+<tr>
+<td>Число — <code>number</code></td>
+<td><code>150</code>, <code>2</code>, <code>1.5</code></td>
+<td>Вычисления; дробная часть отделяется точкой</td>
+</tr>
+<tr>
+<td>Логическое значение — <code>boolean</code></td>
+<td><code>true</code>, <code>false</code></td>
+<td>«Да» или «нет», без кавычек</td>
+</tr>
+</tbody>
+</table>
+<p><code>isTraining = true</code> обозначает, что пример учебный. Пока мы только выводим этот признак: он не меняет формулу.</p>
+<p>В конец <code>script.js</code>, после трёх строк вывода, добавьте:</p>
+<pre><code class="language-javascript">console.log(typeof quantityText);
+console.log(typeof unitPrice);
+console.log(typeof isTraining);
+</code></pre>
+<p><code>typeof</code> показывает тип значения. Сохраните и обновите страницу. Последние три строки консоли — <code>string</code>, <code>number</code>, <code>boolean</code>. Поэтому одинаково выглядящие при выводе <code>"2"</code> и <code>2</code> ещё не означают одинаковые данные.</p>
+<hr>
+<h2 id="4-проверьте-сложение-и-преобразование">4. Проверьте сложение и преобразование</h2>
+<p>Следующие <strong>два выражения вводите по одному в строку консоли браузера</strong>, нажимая <code>Enter</code>. Перед запуском попробуйте предсказать результат:</p>
+<pre><code class="language-javascript">&quot;2&quot; + 1
+</code></pre>
+<pre><code class="language-javascript">Number(&quot;2&quot;) + 1
+</code></pre>
+<p>В первом случае получится строка <code>"21"</code>: <code>+</code> присоединяет текст, если один из этих операндов — строка. Во втором — число <code>3</code>: <code>Number("2")</code> преобразует строку в число, и затем выполняется сложение.</p>
+<pre><code class="language-text">&quot;2&quot; — строка → Number(&quot;2&quot;) → 2 — число → 2 + 1 → 3
+</code></pre>
+<p>При чтении значения поля веб-страницы программа обычно получает строку, даже если это числовое поле. К чтению полей перейдём позже. Сейчас <code>quantityText = "2"</code> только изображает уже полученную строку ввода: настоящую форму программа ещё не читает.</p>
+<p>Основные арифметические операции можно проверить там же:</p>
+<table>
+<thead>
+<tr>
+<th>Выражение</th>
+<th style="text-align: right;">Результат</th>
+<th>Действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>150 + 50</code></td>
+<td style="text-align: right;">200</td>
+<td>Сложение</td>
+</tr>
+<tr>
+<td><code>150 - 50</code></td>
+<td style="text-align: right;">100</td>
+<td>Вычитание</td>
+</tr>
+<tr>
+<td><code>150 * 2</code></td>
+<td style="text-align: right;">300</td>
+<td>Умножение</td>
+</tr>
+<tr>
+<td><code>150 / 2</code></td>
+<td style="text-align: right;">75</td>
+<td>Деление</td>
+</tr>
+</tbody>
+</table>
+<p>Умножение и деление выполняются раньше сложения и вычитания. Скобки задают нужный порядок: <code>(150 + 50) * 2</code> даст 400. Строки перед вычислениями преобразуем явно, даже если отдельная операция могла бы сделать это сама.</p>
+<hr>
+<h2 id="5-соберите-расчёт">5. Соберите расчёт</h2>
+<p>В <code>script.js</code> <strong>оставьте первые пять объявлений</strong> из шага 2. Все строки <code>console.log(...)</code> ниже них замените блоком:</p>
+<pre><code class="language-javascript">const quantity = Number(quantityText);
+const totalPrice = unitPrice * quantity + deliveryPrice;
+
+console.log(&quot;Название:&quot;, itemName);
+console.log(&quot;Учебные данные:&quot;, isTraining);
+console.log(&quot;Количество:&quot;, quantity);
+console.log(&quot;Итого:&quot;, totalPrice);
+</code></pre>
+<p>В <code>console.log</code> можно передать несколько значений через запятую: сначала подпись, затем значение. Подпись в кавычках — текст, имя без кавычек — обращение к переменной.</p>
+<p>Формула: цена одного набора × количество + одна доставка. Сначала строка превращается в число, затем вычисляется сумма.</p>
+<p>Сохраните файл и обновите главную. Ожидаемый вывод:</p>
+<pre><code class="language-text">Название: Учебный набор
+Учебные данные: true
+Количество: 2
+Итого: 350
+</code></pre>
+<p><strong>Самопроверка изменением:</strong> в исходной строке <code>let quantityText = "2";</code> замените <code>"2"</code> на <code>"3"</code>, сохраните файл и обновите страницу. Теперь количество — 3, итог — 500. Затем верните <code>"2"</code> и снова обновите: итог — 350.</p>
+<p>Программа вычисляет сумму при запуске. Редактирование файла без сохранения и обновления страницы не запускает расчёт заново.</p>
+<hr>
+<h2 id="6-пустой-текст-ещё-не-означает-корректное-число">6. Пустой текст ещё не означает корректное число</h2>
+<p>В строке <strong>консоли браузера</strong>, по одному, проверьте:</p>
+<pre><code class="language-javascript">Number(&quot;&quot;)
+</code></pre>
+<pre><code class="language-javascript">Number(&quot;два&quot;)
+</code></pre>
+<p>Первое выражение даёт <strong>0</strong>: JavaScript так преобразует пустую строку. Это не доказывает, что человек ввёл количество. Второе даёт <strong><code>NaN</code></strong> — специальное числовое значение, означающее неудачный числовой результат. Умножение такого значения на цену тоже даст <code>NaN</code>.</p>
+<p><code>Number</code> преобразует данные, но само по себе не проверяет допустимость количества. В нашей сохранённой программе используем известную строку <code>"2"</code>. Проверять пустой ввод и показывать сообщение пользователю научимся после знакомства с условиями и обработкой формы.</p>
+<hr>
+<h2 id="7-покажите-один-результат">7. Покажите один результат</h2>
+<p>Сохраните проект с <code>quantityText = "2"</code>. Покажите преподавателю главную страницу, подключение <code>script.js</code> и консоль с итогом 350. Затем измените количество в файле на <code>"3"</code>, сохраните, обновите и покажите итог 500. Объясните своими словами разницу между <code>"2" + 1</code> и <code>Number("2") + 1</code>.</p>
+<p>Отдельный письменный отчёт не требуется. После показа верните исходное количество и сохраните папку проекта.</p>
+<table>
+<thead>
+<tr>
+<th>Если что-то не получилось</th>
+<th>Что проверить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>В консоли нет вывода</td>
+<td>Открыта ли главная, сохранены ли оба файла, совпадает ли путь <code>src</code> с именем JS-файла</td>
+</tr>
+<tr>
+<td>Красная ошибка и программа остановилась</td>
+<td>Номер строки справа от ошибки; кавычки, скобки, написание имени</td>
+</tr>
+<tr>
+<td><code>ReferenceError</code></td>
+<td>Имя написано одинаково и объявлено выше места использования</td>
+</tr>
+<tr>
+<td><code>NaN</code> вместо суммы</td>
+<td>В <code>quantityText</code> должны быть цифры без слов; для начала верните <code>"2"</code></td>
+</tr>
+<tr>
+<td>Старый результат</td>
+<td>Сохраните <code>script.js</code> и обновите страницу; прежний вывод можно очистить кнопкой консоли</td>
+</tr>
+</tbody>
+</table></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>
