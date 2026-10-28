@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="972" viewBox="0 0 375 972" role="img" aria-labelledby="title desc">
+<title id="title">Форма — Зелёный уголок · V17 · 375 CSS px</title>
+<desc id="desc">Схема результата пары 18 с настоящими текстами и иллюстрациями. Это не снимок браузера. Высота показывает страницу целиком с вертикальной прокруткой; точное совпадение пикселей не требуется.</desc>
+<rect width="375" height="972" fill="#F1F8E9"/>
+<g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#2E7D32" stroke="none" stroke-width="0"/>
+<text font-size="16" fill="#FFFFFF">
+<tspan x="16" y="32" data-estimated-width="200.96">Зелёный уголок · V17</tspan>
+</text>
+<g id="navigation" aria-label="Меню">
+<rect x="16" y="72" width="104.32" height="44" rx="5.6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+<text font-size="16" fill="#2E7D32" text-decoration="underline">
+<tspan x="30" y="98" data-estimated-width="76.32">Главная</tspan>
+</text>
+<rect x="128.32" y="72" width="104.32" height="44" rx="5.6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+<text font-size="16" fill="#2E7D32" text-decoration="underline">
+<tspan x="142.32" y="98" data-estimated-width="76.32">Каталог</tspan>
+</text>
+</g>
+<text font-size="32" fill="#2E7D32" font-weight="bold">
+<tspan x="27" y="180" data-estimated-width="313.92">Подбор растения</tspan>
+</text>
+<text font-size="16" fill="#1B3A24">
+<tspan x="27" y="228" data-estimated-width="296.8">Учебная форма. Данные пока не</tspan>
+<tspan x="27" y="252" data-estimated-width="128">сохраняются.</tspan>
+</text>
+<rect x="27" y="276" width="321" height="584" rx="8" fill="#FFFFFF" stroke="#94A3B8"/>
+<g id="field-1" data-control="number" data-label="Количество растений">
+<text font-size="16" fill="#1B3A24" font-weight="bold">
+<tspan x="44" y="309" data-estimated-width="199.84">Количество растений</tspan>
+</text>
+<rect x="44" y="323" width="287" height="44" rx="5.6" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/>
+<text font-size="16" fill="#1B3A24">
+<tspan x="55" y="349" data-estimated-width="10.72">3</tspan>
+</text>
+</g>
+<g id="field-2" data-control="textarea" data-label="Условия в комнате">
+<text font-size="16" fill="#1B3A24" font-weight="bold">
+<tspan x="44" y="399" data-estimated-width="177.76">Условия в комнате</tspan>
+</text>
+<rect x="44" y="413" width="287" height="94" rx="5.6" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/>
+<text font-size="16" fill="#64748B">
+<tspan x="55" y="439" data-estimated-width="240.32">Опишите ваши пожелания</tspan>
+</text>
+</g>
+<g id="field-3" data-control="select" data-label="Название растения">
+<text font-size="16" fill="#1B3A24" font-weight="bold">
+<tspan x="44" y="539" data-estimated-width="178.4">Название растения</tspan>
+</text>
+<rect x="44" y="553" width="287" height="44" rx="5.6" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/>
+<text font-size="16" fill="#1B3A24">
+<tspan x="55" y="579" data-estimated-width="188.48">Выберите из списка</tspan>
+</text>
+<path d="M307 571 l5 7 l5 -7" fill="none" stroke="#1B3A24" stroke-width="2"/>
+</g>
+<g id="field-4" data-control="range" data-label="Освещённость окна">
+<text font-size="16" fill="#1B3A24" font-weight="bold">
+<tspan x="44" y="629" data-estimated-width="182.88">Освещённость окна</tspan>
+</text>
+<rect x="52" y="653" width="271" height="4" rx="2" fill="#CBD5E1" stroke="none" stroke-width="0"/>
+<rect x="52" y="653" width="135.5" height="4" rx="2" fill="#2E7D32" stroke="none" stroke-width="0"/>
+<circle cx="187.5" cy="655" r="8" fill="#2E7D32" data-value="3"/>
+<text font-size="16" fill="#1B3A24">
+<tspan x="44" y="691" data-estimated-width="159.68">1 — Тень; 5 — Свет</tspan>
+</text>
+</g>
+<g id="field-5" data-control="checkbox" data-label="Нужен новый горшок">
+<rect x="44" y="719" width="16" height="16" rx="2" fill="#2E7D32" stroke="#2E7D32" stroke-width="1"/>
+<path d="M47 727 l3 3 l7 -8" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<text font-size="16" fill="#1B3A24">
+<tspan x="70" y="731" data-estimated-width="197.44">Нужен новый горшок</tspan>
+</text>
+</g>
+<g id="field-6" data-control="checkbox" data-label="Нужна памятка ухода">
+<rect x="44" y="759" width="16" height="16" rx="2" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1"/>
+<text font-size="16" fill="#1B3A24">
+<tspan x="70" y="771" data-estimated-width="203.68">Нужна памятка ухода</tspan>
+</text>
+</g>
+<rect x="38" y="789" width="204.96" height="60" rx="8" fill="none" stroke="#C2410C" stroke-width="3"/>
+<rect x="44" y="795" width="192.96" height="48" rx="5.6" fill="#2E7D32" stroke="#2E7D32" stroke-width="2"/>
+<text font-size="16" fill="#FFFFFF">
+<tspan x="62" y="823" data-estimated-width="156.96">Оставить запрос</tspan>
+</text>
+<text font-size="16" fill="#2E7D32" text-decoration="underline">
+<tspan x="27" y="892" data-estimated-width="54.88">Назад</tspan>
+</text>
+<text font-size="16" fill="#1B3A24">
+<tspan x="16" y="948" data-estimated-width="292.32">Учебный прототип · Вариант 17</tspan>
+</text>
+</g>
+</svg>

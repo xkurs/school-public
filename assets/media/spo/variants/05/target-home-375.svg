@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="769" viewBox="0 0 375 769" role="img" aria-labelledby="title desc">
+<title id="title">Главная — Книжная полка · V05 · 375 CSS px</title>
+<desc id="desc">Схема результата пары 18 с настоящими текстами и иллюстрациями. Это не снимок браузера. Высота показывает страницу целиком с вертикальной прокруткой; точное совпадение пикселей не требуется.</desc>
+<rect width="375" height="769" fill="#FFF4E8"/>
+<g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#974414" stroke="none" stroke-width="0"/>
+<text font-size="16" fill="#FFFFFF">
+<tspan x="16" y="32" data-estimated-width="195.36">Книжная полка · V05</tspan>
+</text>
+<g id="navigation" aria-label="Меню">
+<rect x="16" y="72" width="104.32" height="44" rx="5.6" fill="#FFFFFF" stroke="#974414" stroke-width="2"/>
+<text font-size="16" fill="#974414" text-decoration="underline">
+<tspan x="30" y="98" data-estimated-width="76.32">Каталог</tspan>
+</text>
+<rect x="128.32" y="72" width="87.36" height="44" rx="5.6" fill="#FFFFFF" stroke="#974414" stroke-width="2"/>
+<text font-size="16" fill="#974414" text-decoration="underline">
+<tspan x="142.32" y="98" data-estimated-width="59.36">Форма</tspan>
+</text>
+</g>
+<text font-size="32" fill="#974414" font-weight="bold">
+<tspan x="27" y="180" data-estimated-width="185.28">Книги для</tspan>
+<tspan x="27" y="228" data-estimated-width="214.4">свободного</tspan>
+<tspan x="27" y="276" data-estimated-width="128.64">вечера</tspan>
+</text>
+<text font-size="16" fill="#442D21">
+<tspan x="27" y="324" data-estimated-width="320.96">Выберите историю по настроению</tspan>
+</text>
+<image data-source="item1.png" x="27" y="348" width="321" height="180.562" href="data:image/png;base64,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rGwf+E939QH9dPbtsm9Xel9IEoCseOAnB7TLvl327UrvC0kCkBUP/OSAdtm3y75d6X0hSQCy4oGfHNAu+3bZtyu9LyQJQFY88JMD2mXfLvt2pfeFJAHIigd+ckC77Ntl3670vpAkAFnxwE8OaJd9u+zbld4XkgQgKx74yQHtsm+XfbvS+0KSAGTFAz85oF327bJvV3pfSBKArHjgJwe0y75d9u1K7wtJApAVD/zkgHbZt8u+Xel9IUkAsuKBnxzQLvt22bcrvS8kCUBWPPCTA9pl3y77dqX3hSQByIoHfnJAu+zbZd+u9L6QJABZ8cBPDmiXfbvs25XeF5IEICse+MkB7bJvl3270vtCkgBkxQM/OaBd9u2yb1d6X0gSgKx44CcHtMu+XfbtSu8LSQKQFQ/85IB22bfLvl3pfSFJALLigZ8c0C77dtm3K70vJAlAVjzwkwPaZd8u+3al94UkAciKB35yQLvs22XfrvS+kCQAWfHATw5ol3277NuV3heSBCArHvjJAe2yb5d9u9L7QpIAZMUDPzmgXfbtsm9Xel9IEoCseOAnB7TLvl327UrvC0kCkBUP/OSAdtm3y75d6X0hSQCy4oGfHNAu+3bZtyu9LyQJQFY88JMD2mXfLvt2pfeFJAHIigd+ckC77Ntl3670vpAkAFnxwE8OaJd9u+zbld4XkgQgKx74yQHtsm+XfbvS+0KSAGTFAz85oF327bJvV3pfSBKArHz5/rsfHzV+8trj3U4/l30n+3bZtyu9LyQJQACAwwjAm/n9lz98/dd/+3cA+Civ+/bu7nENAXgzr/9I/u7v/wEAPsrrvr27e1xDAN6MAATgEwnAexGANyMAAfhEAvBeBODNCEAAPpEAvBcBeDMCEIBPJADvRQDejAAE4BMJwHsRgDcjAAH4RALwXgTgzQhAAD6RALwXAXgzAhCATyQA70UA3owABOATCcB7EYA3IwAB+EQC8F4E4M0IQAA+kQC8FwF4MwIQgE8kAO9FAN6MAATgEwnAexGANyMAAfhEAvBeBODNCEAAPpEAvBcBeDMCEIBPJADvRQDejAAE4BMJwHsRgDcjAAH4RALwXgTgzfz+yx9+/I8EAD7J6769u3tcQwACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABxGAAIAHEYAAgAcRgACABzlz1//D2r2xo66Dm2kAAAAAElFTkSuQmCC" preserveAspectRatio="xMidYMid meet"/>
+<text font-size="16" fill="#442D21">
+<tspan x="27" y="560.562" data-estimated-width="279.2">Три предложения для выбора.</tspan>
+<tspan x="27" y="584.562" data-estimated-width="203.68">Выберите историю по</tspan>
+<tspan x="27" y="608.562" data-estimated-width="117.28">настроению.</tspan>
+</text>
+<text font-size="16" fill="#974414" text-decoration="underline">
+<tspan x="27" y="648.562" data-estimated-width="161.44">Открыть каталог</tspan>
+</text>
+<text font-size="16" fill="#974414" text-decoration="underline">
+<tspan x="27" y="688.562" data-estimated-width="156.96">Оставить заявку</tspan>
+</text>
+<text font-size="16" fill="#442D21">
+<tspan x="16" y="744.562" data-estimated-width="297.44">Учебный прототип · Вариант 05</tspan>
+</text>
+</g>
+</svg>

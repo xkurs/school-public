@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="1020" viewBox="0 0 375 1020" role="img" aria-labelledby="title desc">
+<title id="title">Форма — Мастерская идей · V21 · 375 CSS px</title>
+<desc id="desc">Схема результата пары 18 с настоящими текстами и иллюстрациями. Это не снимок браузера. Высота показывает страницу целиком с вертикальной прокруткой; точное совпадение пикселей не требуется.</desc>
+<rect width="375" height="1020" fill="#FFF4E8"/>
+<g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#974414" stroke="none" stroke-width="0"/>
+<text font-size="16" fill="#FFFFFF">
+<tspan x="16" y="32" data-estimated-width="210.4">Мастерская идей · V21</tspan>
+</text>
+<g id="navigation" aria-label="Меню">
+<rect x="16" y="72" width="104.32" height="44" rx="5.6" fill="#FFFFFF" stroke="#974414" stroke-width="2"/>
+<text font-size="16" fill="#974414" text-decoration="underline">
+<tspan x="30" y="98" data-estimated-width="76.32">Главная</tspan>
+</text>
+<rect x="128.32" y="72" width="104.32" height="44" rx="5.6" fill="#FFFFFF" stroke="#974414" stroke-width="2"/>
+<text font-size="16" fill="#974414" text-decoration="underline">
+<tspan x="142.32" y="98" data-estimated-width="76.32">Каталог</tspan>
+</text>
+</g>
+<text font-size="32" fill="#974414" font-weight="bold">
+<tspan x="27" y="180" data-estimated-width="163.84">Запись в</tspan>
+<tspan x="27" y="228" data-estimated-width="232.32">мастерскую</tspan>
+</text>
+<text font-size="16" fill="#442D21">
+<tspan x="27" y="276" data-estimated-width="296.8">Учебная форма. Данные пока не</tspan>
+<tspan x="27" y="300" data-estimated-width="128">сохраняются.</tspan>
+</text>
+<rect x="27" y="324" width="321" height="584" rx="8" fill="#FFFFFF" stroke="#94A3B8"/>
+<g id="field-1" data-control="range" data-label="Сложность изделия">
+<text font-size="16" fill="#442D21" font-weight="bold">
+<tspan x="44" y="357" data-estimated-width="182.88">Сложность изделия</tspan>
+</text>
+<rect x="52" y="381" width="271" height="4" rx="2" fill="#CBD5E1" stroke="none" stroke-width="0"/>
+<rect x="52" y="381" width="203.25" height="4" rx="2" fill="#974414" stroke="none" stroke-width="0"/>
+<circle cx="255.25" cy="383" r="8" fill="#974414" data-value="4"/>
+<text font-size="16" fill="#442D21">
+<tspan x="44" y="419" data-estimated-width="228.48">1 — Простая; 5 — Высокая</tspan>
+</text>
+</g>
+<g id="field-2" data-control="textarea" data-label="Идея вашей работы">
+<text font-size="16" fill="#442D21" font-weight="bold">
+<tspan x="44" y="459" data-estimated-width="182.24">Идея вашей работы</tspan>
+</text>
+<rect x="44" y="473" width="287" height="94" rx="5.6" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/>
+<text font-size="16" fill="#64748B">
+<tspan x="55" y="499" data-estimated-width="240.32">Опишите ваши пожелания</tspan>
+</text>
+</g>
+<g id="field-3" data-control="select" data-label="Название мастер-класса">
+<text font-size="16" fill="#442D21" font-weight="bold">
+<tspan x="44" y="599" data-estimated-width="236.48">Название мастер-класса</tspan>
+</text>
+<rect x="44" y="613" width="287" height="44" rx="5.6" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/>
+<text font-size="16" fill="#442D21">
+<tspan x="55" y="639" data-estimated-width="188.48">Выберите из списка</tspan>
+</text>
+<path d="M307 631 l5 7 l5 -7" fill="none" stroke="#442D21" stroke-width="2"/>
+</g>
+<g id="field-4" data-control="number" data-label="Количество участников">
+<text font-size="16" fill="#442D21" font-weight="bold">
+<tspan x="44" y="689" data-estimated-width="221.28">Количество участников</tspan>
+</text>
+<rect x="44" y="703" width="287" height="44" rx="5.6" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/>
+<text font-size="16" fill="#442D21">
+<tspan x="55" y="729" data-estimated-width="10.72">4</tspan>
+</text>
+</g>
+<g id="field-5" data-control="checkbox" data-label="Нужен образец">
+<rect x="44" y="767" width="16" height="16" rx="2" fill="#FFFFFF" stroke="#974414" stroke-width="1"/>
+<text font-size="16" fill="#442D21">
+<tspan x="70" y="779" data-estimated-width="140">Нужен образец</tspan>
+</text>
+</g>
+<g id="field-6" data-control="checkbox" data-label="Нужны материалы">
+<rect x="44" y="807" width="16" height="16" rx="2" fill="#974414" stroke="#974414" stroke-width="1"/>
+<path d="M47 815 l3 3 l7 -8" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<text font-size="16" fill="#442D21">
+<tspan x="70" y="819" data-estimated-width="174.88">Нужны материалы</tspan>
+</text>
+</g>
+<rect x="38" y="837" width="209.44" height="60" rx="8" fill="none" stroke="#C2410C" stroke-width="3"/>
+<rect x="44" y="843" width="197.44" height="48" rx="5.6" fill="#974414" stroke="#974414" stroke-width="2"/>
+<text font-size="16" fill="#FFFFFF">
+<tspan x="62" y="871" data-estimated-width="161.44">Выбрать занятие</tspan>
+</text>
+<text font-size="16" fill="#974414" text-decoration="underline">
+<tspan x="27" y="940" data-estimated-width="54.88">Назад</tspan>
+</text>
+<text font-size="16" fill="#442D21">
+<tspan x="16" y="996" data-estimated-width="292.32">Учебный прототип · Вариант 21</tspan>
+</text>
+</g>
+</svg>

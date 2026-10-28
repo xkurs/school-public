@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="972" viewBox="0 0 375 972" role="img" aria-labelledby="title desc">
+<title id="title">Форма — На тропе · V02 · 375 CSS px</title>
+<desc id="desc">Схема результата пары 18 с настоящими текстами и иллюстрациями. Это не снимок браузера. Высота показывает страницу целиком с вертикальной прокруткой; точное совпадение пикселей не требуется.</desc>
+<rect width="375" height="972" fill="#EEF4FC"/>
+<g font-family="Arial, sans-serif">
+<rect x="0" y="0" width="375" height="56" rx="0" fill="#245A91" stroke="none" stroke-width="0"/>
+<text font-size="16" fill="#FFFFFF">
+<tspan x="16" y="32" data-estimated-width="137.28">На тропе · V02</tspan>
+</text>
+<g id="navigation" aria-label="Меню">
+<rect x="16" y="72" width="104.32" height="44" rx="5.6" fill="#FFFFFF" stroke="#245A91" stroke-width="2"/>
+<text font-size="16" fill="#245A91" text-decoration="underline">
+<tspan x="30" y="98" data-estimated-width="76.32">Главная</tspan>
+</text>
+<rect x="128.32" y="72" width="104.32" height="44" rx="5.6" fill="#FFFFFF" stroke="#245A91" stroke-width="2"/>
+<text font-size="16" fill="#245A91" text-decoration="underline">
+<tspan x="142.32" y="98" data-estimated-width="76.32">Каталог</tspan>
+</text>
+</g>
+<text font-size="32" fill="#245A91" font-weight="bold">
+<tspan x="27" y="180" data-estimated-width="271.04">План прогулки</tspan>
+</text>
+<text font-size="16" fill="#19324D">
+<tspan x="27" y="228" data-estimated-width="296.8">Учебная форма. Данные пока не</tspan>
+<tspan x="27" y="252" data-estimated-width="128">сохраняются.</tspan>
+</text>
+<rect x="27" y="276" width="321" height="584" rx="8" fill="#FFFFFF" stroke="#94A3B8"/>
+<g id="field-1" data-control="number" data-label="Количество участников">
+<text font-size="16" fill="#19324D" font-weight="bold">
+<tspan x="44" y="309" data-estimated-width="221.28">Количество участников</tspan>
+</text>
+<rect x="44" y="323" width="287" height="44" rx="5.6" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/>
+<text font-size="16" fill="#19324D">
+<tspan x="55" y="349" data-estimated-width="10.72">3</tspan>
+</text>
+</g>
+<g id="field-2" data-control="textarea" data-label="Пожелания к прогулке">
+<text font-size="16" fill="#19324D" font-weight="bold">
+<tspan x="44" y="399" data-estimated-width="209.92">Пожелания к прогулке</tspan>
+</text>
+<rect x="44" y="413" width="287" height="94" rx="5.6" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/>
+<text font-size="16" fill="#64748B">
+<tspan x="55" y="439" data-estimated-width="240.32">Опишите ваши пожелания</tspan>
+</text>
+</g>
+<g id="field-3" data-control="select" data-label="Название маршрута">
+<text font-size="16" fill="#19324D" font-weight="bold">
+<tspan x="44" y="539" data-estimated-width="187.36">Название маршрута</tspan>
+</text>
+<rect x="44" y="553" width="287" height="44" rx="5.6" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/>
+<text font-size="16" fill="#19324D">
+<tspan x="55" y="579" data-estimated-width="188.48">Выберите из списка</tspan>
+</text>
+<path d="M307 571 l5 7 l5 -7" fill="none" stroke="#19324D" stroke-width="2"/>
+</g>
+<g id="field-4" data-control="range" data-label="Темп прогулки">
+<text font-size="16" fill="#19324D" font-weight="bold">
+<tspan x="44" y="629" data-estimated-width="140">Темп прогулки</tspan>
+</text>
+<rect x="52" y="653" width="271" height="4" rx="2" fill="#CBD5E1" stroke="none" stroke-width="0"/>
+<rect x="52" y="653" width="135.5" height="4" rx="2" fill="#245A91" stroke="none" stroke-width="0"/>
+<circle cx="187.5" cy="655" r="8" fill="#245A91" data-value="3"/>
+<text font-size="16" fill="#19324D">
+<tspan x="44" y="691" data-estimated-width="258.88">1 — Спокойный; 5 — Быстрый</tspan>
+</text>
+</g>
+<g id="field-5" data-control="checkbox" data-label="Нужен сопровождающий">
+<rect x="44" y="719" width="16" height="16" rx="2" fill="#245A91" stroke="#245A91" stroke-width="1"/>
+<path d="M47 727 l3 3 l7 -8" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+<text font-size="16" fill="#19324D">
+<tspan x="70" y="731" data-estimated-width="228.48">Нужен сопровождающий</tspan>
+</text>
+</g>
+<g id="field-6" data-control="checkbox" data-label="Остановка для фотографий">
+<rect x="44" y="759" width="16" height="16" rx="2" fill="#FFFFFF" stroke="#245A91" stroke-width="1"/>
+<text font-size="16" fill="#19324D">
+<tspan x="70" y="771" data-estimated-width="248.32">Остановка для фотографий</tspan>
+</text>
+</g>
+<rect x="38" y="789" width="156.48" height="60" rx="8" fill="none" stroke="#C2410C" stroke-width="3"/>
+<rect x="44" y="795" width="144.48" height="48" rx="5.6" fill="#245A91" stroke="#245A91" stroke-width="2"/>
+<text font-size="16" fill="#FFFFFF">
+<tspan x="62" y="823" data-estimated-width="108.48">Записаться</tspan>
+</text>
+<text font-size="16" fill="#245A91" text-decoration="underline">
+<tspan x="27" y="892" data-estimated-width="54.88">Назад</tspan>
+</text>
+<text font-size="16" fill="#19324D">
+<tspan x="16" y="948" data-estimated-width="297.44">Учебный прототип · Вариант 02</tspan>
+</text>
+</g>
+</svg>
