@@ -1543,7 +1543,7 @@
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "2683cf60f5c8be4827620ac3227096af38edb244a0a026830009ab623795a2d4",
+  "source_digest": "a632291b81e8f3705a0c15ca7374986ab273c8a0ff80ef2daee664800d447f7e",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2030,8 +2030,8 @@
     "spo/topics/mobile-web-page/index.html": "055e87760aea16bbf443cf2519f135691b106d15762bcd0fe0944a96e550ace3",
     "spo/topics/multi-screen-app-refinement/index.html": "64d068e945b7e15ff3cbe33a82a8c46eae0c94e94ac146646d8da754a8cdf327",
     "spo/topics/phone-testing-and-navigation/index.html": "1fc23bf42e9da10a9cbdb83679682d9c09bb0e8a1006a7f9168b0e7656d62916",
-    "spo/topics/responsive-layout-and-browser-testing/00.html": "cc5ef95727d398fed8b29f9be125a0287bbafdf786fec5b1ab229a69fc31d196",
-    "spo/topics/responsive-layout-and-browser-testing/index.html": "bd61d3705435a7de77b780d9b8277d9e85f93a0e79ca4e8888055e00be02a037",
+    "spo/topics/responsive-layout-and-browser-testing/00.html": "aadf9c3332b8145a931c7285df91e99a7c65922602d90ebbed73d77125f2b9a0",
+    "spo/topics/responsive-layout-and-browser-testing/index.html": "6e55836db3eef41552209aaf5543fe7b8069edac112c217e7a973b47a64a8843",
     "spo/topics/styling-pages-cards-and-form/00.html": "ce34ebf7a8cedc57931057ecd38c7e860c04c882ce82943204adaeeaf36d48af",
     "spo/topics/styling-pages-cards-and-form/index.html": "9af1bdade8b447825272752d5aa45179556ad04f0978e9c9d35f2b8bdd59f8d0",
     "spo/topics/technology-choice-and-diagnostics/index.html": "74e863301516213ac92ec6b70184e6d4fa661be57791e94767b40bfee5a1d2e8",
@@ -2195,7 +2195,7 @@
     "spo/topics/variants/39/018/variant.html": "6501976f190b09c9a388d3171beae7d09b7905e402cc301b41491f60cb189b58",
     "spo/topics/variants/39.html": "e0d65128ade9df13b6b5e5492160c71600f18d8bc84b16b8337f48e3b8a01de5",
     "spo/topics/variants/index.html": "c763cc7995567e80eac41a12945c946016deaba0386d7775d8a1b8bbdb1cba1a",
-    "sw.js": "47423189d04112dc243350c7d772d20b6124abacb272828cfca700f6a22a40a2",
+    "sw.js": "b652eaad1251df9c9dad2dfe0e442a9ef3ed2daac9d29cf9c8a7704a6464474a",
     "topics/index.html": "f910c2083c1b4e2559537bbf472cc8d81ec0f0923da64a4efd701cd7a7cb7af5",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "b78094386f75e5079aa94e62ac38a50c79ef98a7b943c8bb477db30d0352db48",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "de4c98981762a6a6249f764a237e92fed3171248a1ea71982d49c0b3129aed21",
@@ -2269,5 +2269,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a0cbc9730686ea7bd1450b6b9c610eef1eab22f08ee87fdbcf1f45cc89418b58",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "2ae9d3f4b6e4554d3fdb952bc7c81102efd35331cd569243ee42831fd6d15940"
   },
-  "manifest_digest": "a8b235b5b7f9153424aea7138baadbd8f7c21050261a7bb651f57bd3d05c5437"
+  "manifest_digest": "dfc8d495aab2d1d666a7d21522a994334cac2fbc6b94cd92f734139f96fa01f9"
 }
