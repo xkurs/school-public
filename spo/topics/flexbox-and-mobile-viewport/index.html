@@ -77,13 +77,13 @@
 <p>На рисунках <strong>четыре карточки с номерами 1–4</strong>. Их размер сохраняется: сжатия и роста нет. Места по ширине хватает на три карточки с промежутками, но не на четыре; по высоте места достаточно. Пунктир показывает границу контейнера.</p>
 <h3 id="строка-без-переноса">Строка без переноса</h3>
 <p><code>flex-direction: row; flex-wrap: nowrap</code> — карточки остаются в одной строке. В нашей модели четвёртая выходит за правую границу.</p>
-<p><img alt="Четыре карточки в строке без переноса: четвёртая выходит за границу контейнера" src="../../../assets/media/spo/mobile-app-development/017/assets/flex-row.svg"></p>
+<p><img alt="Четыре карточки в строке без переноса: четвёртая выходит за границу контейнера" src="../../../assets/media/spo/mobile-app-development/assets/99-017-flex-row.svg"></p>
 <h3 id="столбец">Столбец</h3>
 <p><code>flex-direction: column; flex-wrap: nowrap</code> — те же карточки располагаются сверху вниз.</p>
-<p><img alt="Четыре карточки в одном столбце внутри контейнера" src="../../../assets/media/spo/mobile-app-development/017/assets/flex-column.svg"></p>
+<p><img alt="Четыре карточки в одном столбце внутри контейнера" src="../../../assets/media/spo/mobile-app-development/assets/99-017-flex-column.svg"></p>
 <h3 id="строка-с-переносом">Строка с переносом</h3>
 <p><code>flex-direction: row; flex-wrap: wrap</code> — если следующей карточке не хватает места, она переходит на новую строку. Порядок сохраняется: 1, 2, 3, 4.</p>
-<p><img alt="Три карточки в первой строке, четвёртая перенесена на следующую" src="../../../assets/media/spo/mobile-app-development/017/assets/flex-wrap.svg"></p>
+<p><img alt="Три карточки в первой строке, четвёртая перенесена на следующую" src="../../../assets/media/spo/mobile-app-development/assets/99-017-flex-wrap.svg"></p>
 <hr>
 <h2 id="разобранный-пример-две-кнопки">Разобранный пример: две кнопки</h2>
 <p>Нужно расположить <strong>две кнопки рядом</strong>. Места для обеих хватает.</p>
@@ -93,7 +93,7 @@
 &lt;/nav&gt;
 </code></pre>
 <p>Ищем общего родителя кнопок: это <code>nav</code> с классом <code>actions</code>. Значит, правило назначаем <code>.actions</code>.</p>
-<p><img alt="Общий контейнер nav.actions управляет двумя непосредственными детьми button" src="../../../assets/media/spo/mobile-app-development/017/assets/flex-parent-and-buttons.svg"></p>
+<p><img alt="Общий контейнер nav.actions управляет двумя непосредственными детьми button" src="../../../assets/media/spo/mobile-app-development/assets/99-017-flex-parent-and-buttons.svg"></p>
 <pre><code class="language-css">.actions {
   display: flex;
   flex-direction: row;
