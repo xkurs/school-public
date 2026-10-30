@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Проектирование визуального интерфейса мобильного приложения — shkolar.site</title>
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/quotes.js"></script>
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">Проектирование визуального интерфейса мобильного приложения</li></ol></nav><h1 id="проектирование-визуального-интерфейса-мобильного-приложения">Проектирование визуального интерфейса мобильного приложения</h1>
+<p><a id="individual-assignments"></a></p>
+<details class="callout" data-callout="example">
+<summary class="callout-title">Индивидуальные задания</summary><p>Для этой пары индивидуальные задания не опубликованы</p>
+</details>
+<h2 id="интерфейс-и-визуальный-прототип">Интерфейс и визуальный прототип</h2>
+<p>Пользовательский интерфейс — часть приложения, которую человек видит: надписи, изображения, кнопки и поля. Визуальный прототип позволяет оценить понятность разделов и предполагаемых действий до разработки программной логики.</p>
+<p>Три экрана должны представлять одно приложение. Например, главный экран сервиса прогулок знакомит с предложением, каталог показывает маршруты, форма позволяет указать пожелания. Пока собирается внешний вид; экраны проверяются по очереди в Designer. На первом этапе переходы не программируются; они подключаются на следующей паре.</p>
+<h2 id="компоновка-экрана">Компоновка экрана</h2>
+<p><code>VerticalArrangement</code> располагает элементы друг под другом. Он подходит для последовательности «заголовок → изображение → описание → кнопки». <code>HorizontalArrangement</code> располагает элементы рядом: например, изображение маршрута слева, описание справа.</p>
+<p>Перед сборкой определите иерархию: какие элементы принадлежат всему экрану, какие — отдельной строке каталога. Для каждой строки удобно создать свой <code>HorizontalArrangement</code>, а внутри него — <code>Image</code> и <code>VerticalArrangement</code> с надписями. Изменение одной строки тогда не нарушает остальные.</p>
+<p>Используйте <code>Fill parent</code>, когда компонент должен занимать ширину контейнера. Произвольные большие размеры могут вывести текст за границу узкого экрана. Проверяйте длинные подписи и сохраняйте пропорции изображений.</p>
+<h2 id="имена-и-оформление">Имена и оформление</h2>
+<p>Названия типов сохраняйте на английском: <code>Label</code>, <code>Button</code>, <code>Image</code>, <code>TextBox</code>. Собственные имена должны объяснять назначение: <code>LabelTitle</code>, <code>ImageCover</code>, <code>ButtonRoutes</code>, <code>LabelRoute1Name</code>. Пользовательские надписи могут быть русскими.</p>
+<p>Имя компонента и свойство <code>Text</code> — разные вещи: <code>ButtonRoutes</code> может показывать надпись «Посмотреть маршруты». Имя помогает найти компонент в дереве Components; надпись помогает пользователю понять действие.</p>
+<p>Цвета, размеры и выравнивание задаются по своему варианту. Главный заголовок выделяется; пояснения остаются читаемыми; одинаковые действия оформляются одинаково.</p>
+<h2 id="практическая-работа-первый-этап">Практическая работа: первый этап</h2>
+<ol>
+<li>Получите номер варианта. Создайте проект <code>VariantNN</code>, где <code>NN</code> — ваш номер варианта.</li>
+<li>Создайте три экрана с именами из задания. Первый экран сохраняет имя <code>Screen1</code>.</li>
+<li>Установите цвета фона и основные свойства экранов.</li>
+<li>Соберите главный экран: заголовок, пояснение, изображение, описание и кнопки разделов.</li>
+<li>Соберите каталог или информационный экран своего варианта. Сохраните требуемое число позиций и расположение элементов.</li>
+<li>Дайте компонентам английские имена. Добавьте номер варианта на готовые экраны.</li>
+<li>Сравните результат с макетами, покажите первый этап преподавателю и сохраните проект.</li>
+</ol>
+<p>Для образца варианта 01 «На тропе» используются <code>Screen1</code>, <code>RoutesScreen</code> и <code>BookingScreen</code>. На первой паре собираются главный экран и каталог из трёх маршрутов; форма остаётся для второго этапа. Фон — <code>#F1F8E9</code>, текст — <code>#1B3A24</code>, основные кнопки — <code>#2E7D32</code> с белым текстом. Проект называется <code>Variant01</code>.</p>
+<h2 id="самопроверка">Самопроверка</h2>
+<ul>
+<li>Главный экран и каталог относятся к одной тематике и оформлены единообразно.</li>
+<li>Число позиций, тексты и размещение соответствуют своему варианту.</li>
+<li>Изображения не искажены; надписи не обрезаны и не перекрывают другие элементы.</li>
+<li>В Components можно найти каждый элемент по назначению.</li>
+<li>Проект сохранён и содержит третий экран для продолжения.</li>
+</ul>
+<p>Продолжение: <a href="007-variables-and-lists.html">Реализация навигации и проверка многоэкранного прототипа мобильного приложения</a>.</p></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>

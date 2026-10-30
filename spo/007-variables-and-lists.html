@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Реализация навигации и проверка многоэкранного прототипа мобильного приложения — shkolar.site</title>
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/quotes.js"></script>
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">Реализация навигации и проверка многоэкранного прототипа мобильного приложения</li></ol></nav><h1 id="реализация-навигации-и-проверка-многоэкранного-прототипа-мобильного-приложения">Реализация навигации и проверка многоэкранного прототипа мобильного приложения</h1>
+<p><a id="individual-assignments"></a></p>
+<details class="callout" data-callout="example">
+<summary class="callout-title">Индивидуальные задания</summary><p>Для этой пары индивидуальные задания не опубликованы</p>
+</details>
+<h2 id="экранная-форма">Экранная форма</h2>
+<p>Форма объединяет элементы, которыми пользователь сообщает приложению свой выбор. <code>Label</code> поясняет, что нужно указать; <code>TextBox</code> предоставляет место для ввода; <code>CheckBox</code> обозначает независимую возможность; <code>Slider</code> показывает выбор значения в диапазоне.</p>
+<p>Подпись поля должна оставаться понятной после ввода текста. Поэтому важную подпись размещают отдельным <code>Label</code>, а <code>Hint</code> используют для примера. Например, над полем написано «Название маршрута», внутри пустого поля — «Например, Лесная тропа».</p>
+<p>Для короткого значения достаточно обычного <code>TextBox</code>. Для пожеланий используют поле с <code>MultiLine: true</code> и достаточной высотой. Кнопки основного действия и возврата различаются назначением и оформлением.</p>
+<p>Элементы формы показывают предполагаемые функции приложения. Значения остаются демонстрационными: проверка ввода, обработка событий и отправка формы в работу не входят.</p>
+<h2 id="согласованность-экранов">Согласованность экранов</h2>
+<p>Прототип воспринимается как единое приложение, когда повторяются основные цвета, стиль заголовков и обозначения действий. Название одного объекта не должно меняться между каталогом и формой.</p>
+<p>На каждом экране должна быть ясна задача. Каталог отвечает на вопрос «что доступно?», форма — «что нужно указать?». Не добавляйте компоненты только для увеличения объёма: каждый должен иметь понятное назначение.</p>
+<h2 id="подключение-переходов">Подключение переходов</h2>
+<p>Это типовое задание для всех индивидуальных вариантов. Индивидуальными остаются экраны, собранные на первой паре: тематика, состав элементов, расположение, тексты и оформление. Создавать второй набор индивидуальных заданий на навигацию не нужно.</p>
+<p>Во всех проектах используется одна схема из пяти обработчиков:</p>
+<ol>
+<li>Кнопка раздела на <code>Screen1</code> открывает второй, информационный экран.</li>
+<li>Кнопка формы на <code>Screen1</code> открывает третий экран.</li>
+<li>Кнопка формы на втором экране открывает третий экран.</li>
+<li>Кнопка возврата на втором экране закрывает его и возвращает на <code>Screen1</code>.</li>
+<li>Кнопка «Назад» на третьем экране закрывает его и возвращает туда, откуда была открыта форма.</li>
+</ol>
+<p>Имена второго и третьего экранов, кнопок и их надписи берутся из своего варианта. Различие этих имён не меняет общую схему. Завершение третьего экрана и проверка оформления тоже выполняются по единым критериям.</p>
+<p>В Designer создаётся внешний вид кнопки; в Blocks задаётся её действие при нажатии. Для перехода достаточно события <code>when ButtonName.Click do</code> и блока <code>open another screen</code> из Built-in → Control. Укажите существующий экран в присоединённом блоке выбора имени экрана. Регистр и написание должны совпадать с Designer.</p>
+<p>Пример для кнопки каталога на <code>Screen1</code>:</p>
+<pre><code class="language-text">when ButtonRoutes.Click do
+    open another screen screenName RoutesScreen
+</code></pre>
+<p>Это схема соединения блоков, а не текст программы для вставки. В Blocks выберите компонент <code>ButtonRoutes</code>, перетащите его событие <code>Click</code>, вложите в область <code>do</code> блок <code>open another screen</code>, а в его вход <code>screenName</code> присоедините блок имени экрана и выберите <code>RoutesScreen</code>.</p>
+<p>Кнопка возврата закрывает дополнительный экран блоком <code>close screen</code>:</p>
+<pre><code class="language-text">when ButtonBookingBack.Click do
+    close screen
+</code></pre>
+<p>Найдите <code>ButtonBookingBack</code> на <code>BookingScreen</code>, добавьте событие <code>Click</code> и вложите <code>close screen</code> из Control. Приложение вернётся на экран, из которого открывалась форма. Если форма открыта из каталога, возврат ведёт в каталог; если с главного экрана — на главный.</p>
+<p>Не открывайте заново <code>Screen1</code> для возврата и не закрывайте сам <code>Screen1</code>. Дополнительный экран закрывается, а предыдущий остаётся доступен. Такая схема не накапливает новые экземпляры экранов при повторных переходах.</p>
+<h3 id="переходы-в-варианте-01">Переходы в варианте 01</h3>
+<table>
+<thead>
+<tr>
+<th>Экран</th>
+<th>Кнопка</th>
+<th>Действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Screen1</code></td>
+<td><code>ButtonRoutes</code> — «Посмотреть маршруты»</td>
+<td><code>open another screen</code> → <code>RoutesScreen</code></td>
+</tr>
+<tr>
+<td><code>Screen1</code></td>
+<td><code>ButtonBooking</code> — «Записаться на прогулку»</td>
+<td><code>open another screen</code> → <code>BookingScreen</code></td>
+</tr>
+<tr>
+<td><code>RoutesScreen</code></td>
+<td><code>ButtonRoutesBack</code> — «На главную»</td>
+<td><code>close screen</code></td>
+</tr>
+<tr>
+<td><code>RoutesScreen</code></td>
+<td><code>ButtonRoutesBooking</code> — «Записаться»</td>
+<td><code>open another screen</code> → <code>BookingScreen</code></td>
+</tr>
+<tr>
+<td><code>BookingScreen</code></td>
+<td><code>ButtonBookingBack</code> — «Назад»</td>
+<td><code>close screen</code></td>
+</tr>
+</tbody>
+</table>
+<p>Кнопка <code>ButtonBookingSubmit</code> — «Отправить» остаётся частью визуальной формы; её обработчик в этой работе не создаётся. Передача введённых значений между экранами тоже не требуется.</p>
+<p>Открытие и закрытие экранов сверено с <a href="https://ai2.appinventor.mit.edu/reference/blocks/control.html">официальной документацией MIT App Inventor</a> 13.10.2026.</p>
+<h2 id="практическая-работа-второй-этап">Практическая работа: второй этап</h2>
+<ol>
+<li>Откройте проект <code>VariantNN</code> и проверьте сохранность двух готовых экранов.</li>
+<li>Соберите третий экран по своему варианту: подписи, поля ввода, элементы выбора и кнопки.</li>
+<li>Настройте английские имена, <code>Text</code>, <code>Hint</code>, размеры и выравнивание.</li>
+<li>Согласуйте оформление трёх экранов; добавьте номер варианта на третий экран.</li>
+<li>Подключите пять обработчиков переходов и возврата по общей схеме, подставив имена экранов и кнопок своего варианта.</li>
+<li>Проверьте приложение в доступной среде запуска: из главного экрана откройте каталог и форму; из каталога откройте форму; вернитесь тем же путём. Повторите переходы трижды. Затем сравните внешний вид с макетами.</li>
+<li>Исправьте найденные дефекты. Экспортируйте проект как <code>VariantNN.aia</code> и подготовьте три снимка экранов.</li>
+<li>Покажите проект преподавателю и измените свойство указанного им компонента.</li>
+</ol>
+<p>В образце варианта 01 на <code>BookingScreen</code> размещаются три <code>TextBox</code>: маршрут, количество участников и пожелания; два <code>CheckBox</code>: сопровождающий и остановка для фотографий; один <code>Slider</code>: темп прогулки; две кнопки в одном ряду: «Назад» и «Отправить». Имена: <code>TextBoxRoute</code>, <code>TextBoxCount</code>, <code>TextBoxComment</code>, <code>CheckBoxGuide</code>, <code>CheckBoxPhoto</code>, <code>SliderPace</code> и соответствующие <code>Label</code>. Фамилии и персональные сведения не нужны.</p>
+<h2 id="проверка-качества">Проверка качества</h2>
+<table>
+<thead>
+<tr>
+<th>Что проверяется</th>
+<th>Признак готовности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Состав</td>
+<td>Три экрана; обязательные компоненты присутствуют</td>
+</tr>
+<tr>
+<td>Соответствие варианту</td>
+<td>Правильны номер, тематика, тексты, число позиций и расположение</td>
+</tr>
+<tr>
+<td>Имена</td>
+<td>Компоненты имеют понятные английские имена</td>
+</tr>
+<tr>
+<td>Оформление</td>
+<td>Цвета, размеры и выравнивание отвечают требованиям</td>
+</tr>
+<tr>
+<td>Читаемость</td>
+<td>Нет обрезанных надписей, перекрытий и искажённых изображений</td>
+</tr>
+<tr>
+<td>Структура</td>
+<td>Строки и группы собраны в подходящих контейнерах</td>
+</tr>
+<tr>
+<td>Навигация</td>
+<td>Кнопки открывают нужные экраны; возврат закрывает дополнительный экран</td>
+</tr>
+<tr>
+<td>Сдача</td>
+<td>Есть <code>VariantNN.aia</code> и снимки трёх экранов</td>
+</tr>
+</tbody>
+</table>
+<p>Одинаковая последовательность проверки для каждого варианта: главный экран → информационный экран → форма → назад в информационный экран → назад на главный; затем главный экран → форма → назад на главный. Повторите оба маршрута трижды. Кнопка возврата формы должна правильно работать при обоих способах открытия.</p>
+<p>Проверяйте экранную форму, а не работу предполагаемой функции. У кнопок перехода и возврата действие обязательно. Отсутствие отправки данных кнопкой «Отправить» не является дефектом этой работы.</p>
+<h2 id="вопросы-для-объяснения-работы">Вопросы для объяснения работы</h2>
+<ol>
+<li>Чем имя компонента отличается от <code>Text</code>?</li>
+<li>Какие контейнеры располагают элементы рядом и друг под другом?</li>
+<li>Почему возле поля оставлена отдельная подпись?</li>
+<li>Какие элементы показывают предполагаемые функции приложения?</li>
+<li>Чем <code>open another screen</code> отличается от <code>close screen</code>?</li>
+<li>Куда вернёт кнопка «Назад», если форма открыта из каталога?</li>
+<li>Какой дефект вы обнаружили и исправили?</li>
+</ol></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>

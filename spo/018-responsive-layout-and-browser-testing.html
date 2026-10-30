@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Адаптация интерфейса к узкому экрану и проверка в браузере — shkolar.site</title>
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/quotes.js"></script>
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">Адаптация интерфейса к узкому экрану и проверка в браузере</li></ol></nav><h1 id="адаптация-интерфейса-к-узкому-экрану-и-проверка-в-браузере">Адаптация интерфейса к узкому экрану и проверка в браузере</h1>
+<p><a id="individual-assignments"></a></p>
+<details class="callout" data-callout="example">
+<summary class="callout-title">Индивидуальные задания</summary><ul>
+<li><a href="assets/018-01.html">Вариант 01</a></li>
+<li><a href="assets/018-02.html">Вариант 02</a></li>
+<li><a href="assets/018-03.html">Вариант 03</a></li>
+<li><a href="assets/018-04.html">Вариант 04</a></li>
+<li><a href="assets/018-05.html">Вариант 05</a></li>
+<li><a href="assets/018-06.html">Вариант 06</a></li>
+<li><a href="assets/018-07.html">Вариант 07</a></li>
+<li><a href="assets/018-08.html">Вариант 08</a></li>
+<li><a href="assets/018-09.html">Вариант 09</a></li>
+<li><a href="assets/018-10.html">Вариант 10</a></li>
+<li><a href="assets/018-11.html">Вариант 11</a></li>
+<li><a href="assets/018-12.html">Вариант 12</a></li>
+<li><a href="assets/018-13.html">Вариант 13</a></li>
+<li><a href="assets/018-14.html">Вариант 14</a></li>
+<li><a href="assets/018-15.html">Вариант 15</a></li>
+<li><a href="assets/018-16.html">Вариант 16</a></li>
+<li><a href="assets/018-17.html">Вариант 17</a></li>
+<li><a href="assets/018-18.html">Вариант 18</a></li>
+<li><a href="assets/018-19.html">Вариант 19</a></li>
+<li><a href="assets/018-20.html">Вариант 20</a></li>
+<li><a href="assets/018-21.html">Вариант 21</a></li>
+<li><a href="assets/018-22.html">Вариант 22</a></li>
+<li><a href="assets/018-23.html">Вариант 23</a></li>
+<li><a href="assets/018-24.html">Вариант 24</a></li>
+<li><a href="assets/018-25.html">Вариант 25</a></li>
+<li><a href="assets/018-26.html">Вариант 26</a></li>
+<li><a href="assets/018-27.html">Вариант 27</a></li>
+<li><a href="assets/018-28.html">Вариант 28</a></li>
+<li><a href="assets/018-29.html">Вариант 29</a></li>
+<li><a href="assets/018-30.html">Вариант 30</a></li>
+<li><a href="assets/018-31.html">Вариант 31</a></li>
+<li><a href="assets/018-32.html">Вариант 32</a></li>
+<li><a href="assets/018-33.html">Вариант 33</a></li>
+<li><a href="assets/018-34.html">Вариант 34</a></li>
+<li><a href="assets/018-35.html">Вариант 35</a></li>
+<li><a href="assets/018-36.html">Вариант 36</a></li>
+<li><a href="assets/018-37.html">Вариант 37</a></li>
+<li><a href="assets/018-38.html">Вариант 38</a></li>
+<li><a href="assets/018-39.html">Вариант 39</a></li>
+</ul>
+</details>
+<p>Продолжаем свою папку <code>VariantNN-web</code>: главную, каталог и форму. На этой практике применим Flexbox, добавим настройку мобильного просмотра и проверим страницы при трёх значениях ширины. Тексты, товары, картинки, цвета и ограничения формы сохраняются.</p>
+<p>Текущий набор индивидуальных заданий задаёт содержание вашего проекта. <a href="assets/018-00.html">Вариант 00</a> содержит данные преподавателя и ожидаемый результат.</p>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Что сделать</th>
+<th>Как проверить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Открыть три страницы и проверить основу</td>
+<td>Меню и общий CSS работают</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Добавить viewport</td>
+<td>Строка есть в каждом <code>head</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Расположить карточки и меню через Flexbox</td>
+<td>Карточки переносятся, ссылки помещаются</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Добавить правило узкого экрана</td>
+<td>До 600 px карточки стоят по одной</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Проверить 320, 375 и 768 px</td>
+<td>Все три страницы читаются и работают</td>
+</tr>
+</tbody>
+</table>
+<p>Работайте небольшими изменениями: сохраните файл → обновите страницу → посмотрите результат. Новую папку проекта создавать не нужно.</p>
+<h2 id="какой-результат-должен-получиться">Какой результат должен получиться</h2>
+<p>Ниже — каталог преподавательского варианта 00 после адаптации. На широком экране две карточки стоят рядом, третья занимает следующую строку; на узком — все три идут по одной. Содержимое и порядок товаров одинаковые.</p>
+<h3 id="каталог-ширина-768-px">Каталог — ширина 768 px</h3>
+<p><img alt="Образец каталога варианта 00 на ширине 768 пикселей: две карточки рядом, третья ниже" src="assets/018-00-target-catalog-768.svg"></p>
+<h3 id="тот-же-каталог-ширина-375-px">Тот же каталог — ширина 375 px</h3>
+<p><img alt="Образец того же каталога на ширине 375 пикселей: все три карточки идут по одной" src="assets/018-00-target-catalog-375.svg"></p>
+<p><strong>Свой проект сравнивайте с разделом «Результат» своего индивидуального листа:</strong> там показаны именно ваши тексты, изображения, цвета и поля. <a href="assets/018-00.html">Вариант 00</a> также содержит образцы главной и формы на узком экране.</p>
+<p>Это наглядные учебные образцы, не снимки браузера. Проверяйте расположение, данные, читаемость и отсутствие выхода за край, а не совпадение пикселей. Вид элементов формы может различаться. Картинки не заменяют HTML-страницы и не подтверждают работу переходов и отправки формы.</p>
+<hr>
+<h2 id="1-проверьте-исходный-проект">1. Проверьте исходный проект</h2>
+<p>Откройте <code>index.html</code>, затем по меню перейдите в <code>catalog.html</code> и <code>form.html</code>. На каждой странице в меню должны быть <strong>две ссылки на другие страницы</strong>, без ссылки на открытую страницу.</p>
+<p>Внутри <code>head</code> каждого HTML-файла проверьте:</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+</code></pre>
+<p>У основной части должен быть класс <code>page</code>, у трёх карточек каталога — <code>card</code>. Форма сохраняет класс <code>request-form</code>, а абзацы списка, количества, комментария и ползунка — <code>form-field</code>. Это основа из <a href="016-styling-pages-cards-and-form.html">практики оформления</a>. Если чего-то не хватает, восстановите нужный шаг, затем продолжайте здесь.</p>
+<p>В <code>style.css</code> найдите существующие правила и убедитесь, что в них есть:</p>
+<pre><code class="language-css">* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+</code></pre>
+<p>Не добавляйте вторые копии уже имеющихся правил. Сохраните прежние цвета, рамки, отступы, оформление полей и видимый фокус клавиатуры.</p>
+<p><strong>Самопроверка:</strong> открываются три страницы, в каталоге три товара, в форме все шесть элементов. Пока карточки могут стоять сверху вниз.</p>
+<hr>
+<h2 id="2-настройте-мобильный-просмотр">2. Настройте мобильный просмотр</h2>
+<p>В каждом из трёх HTML-файлов внутри <code>head</code>, сразу после строки <code>meta charset</code>, добавьте:</p>
+<pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+</code></pre>
+<p>Если такая настройка уже есть, второй тег не нужен.</p>
+<p><strong>Viewport</strong> — область просмотра страницы. <code>width=device-width</code> просит мобильный браузер использовать ширину устройства в CSS-пикселях, <code>initial-scale=1</code> задаёт начальный масштаб. Эта строка не меняет расположение карточек и не запрещает человеку увеличивать страницу.</p>
+<p><strong>Самопроверка:</strong> найдите <code>name="viewport"</code> во всех трёх файлах. В каждом должна быть одна такая строка между <code>head</code> и <code>/head</code>.</p>
+<hr>
+<h2 id="3-дайте-карточкам-общего-родителя">3. Дайте карточкам общего родителя</h2>
+<p>В <code>catalog.html</code> найдите три существующих <code>article</code>. Добавьте <strong>перед первым</strong> открывающий тег, а <strong>после закрывающего тега третьего</strong> — закрывающий:</p>
+<pre><code class="language-html">&lt;div class=&quot;products&quot;&gt;
+  &lt;!-- Здесь остаются три ваших article class=&quot;card&quot; целиком --&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Строка с <code>&lt;!-- ... --&gt;</code> показывает место существующего содержимого. Не заменяйте ею товары и не создавайте повторные карточки. Заголовок каталога, пояснение и меню оставьте снаружи <code>products</code>.</p>
+<p><img alt="Контейнер products содержит три карточки; при недостатке места карточка переходит на новую строку" src="assets/018-00-responsive-cards.svg"></p>
+<p>В <code>style.css</code> после обычных правил карточек добавьте:</p>
+<pre><code class="language-css">.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.products &gt; .card {
+  flex: 1 1 16rem;
+  min-width: 0;
+  margin-bottom: 0;
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Запись</th>
+<th>Что происходит</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>display: flex</code></td>
+<td>Родитель управляет расположением непосредственных детей</td>
+</tr>
+<tr>
+<td><code>flex-wrap: wrap</code></td>
+<td>Карточки могут переходить на следующую строку</td>
+</tr>
+<tr>
+<td><code>gap: 1rem</code></td>
+<td>Между карточками появляется промежуток</td>
+</tr>
+<tr>
+<td><code>flex: 1 1 16rem</code></td>
+<td>Начальная ширина — <code>16rem</code>; карточка может расти и сжиматься</td>
+</tr>
+<tr>
+<td><code>min-width: 0</code></td>
+<td>Длинное содержимое не навязывает карточке минимальную ширину</td>
+</tr>
+<tr>
+<td><code>margin-bottom: 0</code></td>
+<td>Старый нижний отступ карточки заменяется общим <code>gap</code></td>
+</tr>
+</tbody>
+</table>
+<p>В обычном направлении текста Flexbox по умолчанию располагает детей в строку. Когда ширины не хватает, <code>wrap</code> переносит карточку ниже. Последняя карточка может занять всю свободную строку — это ожидаемо при разрешённом росте.</p>
+<p><strong>Самопроверка:</strong> сузьте и расширьте окно. Меняется число карточек в строке, но порядок товаров и содержимое остаются прежними.</p>
+<hr>
+<h2 id="4-разрешите-меню-переноситься">4. Разрешите меню переноситься</h2>
+<p>В общий <code>style.css</code> добавьте правило контейнера меню:</p>
+<pre><code class="language-css">nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+</code></pre>
+<p>В существующем правиле <code>nav a</code> замените прежний внешний отступ на <code>margin: 0;</code>: теперь промежутком управляет <code>gap</code>. Цвета и рамки ссылок оставьте.</p>
+<p>Внутрь существующего <code>body { ... }</code> добавьте одну строку:</p>
+<pre><code class="language-css">overflow-wrap: anywhere;
+</code></pre>
+<p>Она разрешает перенос очень длинного слова, когда иначе оно вышло бы за край. Обычные слова продолжают переноситься по пробелам. Для ссылок меню добавьте в существующее <code>nav a</code>:</p>
+<pre><code class="language-css">max-width: 100%;
+</code></pre>
+<p><strong>Самопроверка:</strong> на узком экране длинная подпись ссылки читается целиком; если обе ссылки рядом не помещаются, вторая переходит ниже. По-прежнему в меню только две ссылки.</p>
+<hr>
+<h2 id="5-добавьте-правило-для-узкого-экрана">5. Добавьте правило для узкого экрана</h2>
+<p><strong>Медиазапрос</strong> применяет CSS только при заданном условии. В самом конце <code>style.css</code>, после обычных правил, добавьте:</p>
+<pre><code class="language-css">@media (max-width: 600px) {
+  main.page {
+    padding: 0.75rem;
+  }
+  .products &gt; .card {
+    flex-basis: 100%;
+  }
+}
+</code></pre>
+<p>Здесь <code>max-width: 600px</code> означает «ширина области просмотра не больше 600 CSS-пикселей». При таком условии отступ основной части немного уменьшается, а начальная ширина карточки становится равной ширине контейнера: каждая карточка занимает свою строку. Выше 600 px снова действует начальная ширина <code>16rem</code>.</p>
+<p><img alt="При ширине 768 пикселей карточки могут стоять рядом, при 375 пикселях занимают отдельные строки" src="assets/018-00-media-query.svg"></p>
+<p><code>600px</code> — выбранная граница для этого учебного макета, а не перечень моделей телефонов. Значения 320, 375 и 768 ниже — ширины проверки в CSS-пикселях.</p>
+<p>В существующих правилах формы проверьте ширину списка, числа и комментария. Дополните их:</p>
+<pre><code class="language-css">.request-form select,
+.request-form input[type=&quot;number&quot;],
+.request-form textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+</code></pre>
+<p>Это дополнение к прежнему оформлению: рамки и внутренние отступы сохраняются. Ползунок сохраняет <code>width: 100%</code>, флажки — свой небольшой размер. Не задавайте ширину 100% всем <code>input</code> сразу.</p>
+<p><strong>Самопроверка:</strong> на узком экране карточки идут по одной, подписи формы видны, поля не выходят за рамку. На широкой странице карточки снова могут располагаться рядом.</p>
+<hr>
+<h2 id="6-проверьте-точную-ширину-в-браузере">6. Проверьте точную ширину в браузере</h2>
+<p>Проверяйте <strong>свои HTML-страницы проекта <code>VariantNN-web</code></strong> в Chrome на компьютере. Для этого не нужен настоящий телефон: браузер умеет показывать страницу с заданной шириной.</p>
+<ol>
+<li>Сохраните HTML и CSS. Откройте свой <code>index.html</code> в Chrome.</li>
+<li>Нажмите <strong>F12</strong>, чтобы открыть инструменты разработчика. Если клавиша не срабатывает, используйте <strong>Ctrl + Shift + I</strong>.</li>
+<li>В верхней части панели разработчика нажмите кнопку с изображением <strong>телефона и планшета</strong>. Откроется панель проверки размеров над страницей.</li>
+<li>В списке устройств выберите <strong>Responsive</strong> — режим произвольного размера. Выбирать определённую модель телефона не требуется.</li>
+<li>Найдите два поля размеров, например <strong>375 × 800</strong>. <strong>Первое число — ширина</strong>, второе — высота. Введите в первое поле <strong>320</strong> и нажмите <strong>Enter</strong>. Высоту можно оставить <strong>800</strong>.</li>
+<li>При ширине <strong>320</strong> откройте по меню главную, каталог и форму. Затем замените первое число на <strong>375</strong>, нажмите Enter и снова проверьте три страницы. Повторите с шириной <strong>768</strong>.</li>
+</ol>
+<p>Все три значения — <strong>320, 375 и 768 CSS-пикселей</strong> — вводятся в одно и то же поле ширины. Поле высоты менять между проверками не нужно; прокрутка вниз допустима.</p>
+<p>Меняется область просмотра страницы, а не размер текста. Не уменьшайте масштаб, чтобы скрыть проблему. Если панель не находится, попросите преподавателя показать её один раз на вашем компьютере.</p>
+<p>При каждой ширине <strong>320 → 375 → 768</strong> откройте <strong>все три страницы</strong>, прокрутите каждую до конца и попробуйте переходы.</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Что проверить на каждой из трёх ширин</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Главная</td>
+<td>Заголовок, картинка и текст помещаются; обе ссылки меню и переходы работают</td>
+</tr>
+<tr>
+<td>Каталог</td>
+<td>Все три товара в прежнем порядке; картинки не растянуты; текст внутри рамок</td>
+</tr>
+<tr>
+<td>Форма</td>
+<td>Все шесть элементов видны; подписи читаются; флажки небольшие; кнопка помещается</td>
+</tr>
+</tbody>
+</table>
+<p>У всей страницы не должно быть горизонтальной прокрутки. Вертикальная прокрутка нормальна. При 320 и 375 px каталог показывает одну карточку в строке. При 768 px карточки могут стоять рядом; точное число зависит от оставшихся отступов и размера шрифта.</p>
+<p>После проверки размеров на форме нажмите <code>Tab</code> несколько раз: фокус должен быть заметен. Попробуйте отправить форму без выбора товара; затем выберите товар, укажите допустимое количество и отправьте снова. Сначала браузер должен остановить отправку, затем показать параметры GET в адресе. Это учебная передача параметров: заказ не сохраняется и не обрабатывается.</p>
+<p>Эмуляция помогает проверить вёрстку. Она не подтверждает работу на всех настоящих телефонах.</p>
+<hr>
+<h2 id="если-что-то-выходит-за-край">Если что-то выходит за край</h2>
+<table>
+<thead>
+<tr>
+<th>Наблюдение</th>
+<th>Что проверить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Карточки не реагируют на Flexbox</td>
+<td><code>products</code> оборачивает именно три <code>article</code>; в CSS есть точка перед именем класса</td>
+</tr>
+<tr>
+<td>Карточки не становятся отдельными строками на 375 px</td>
+<td>Медиазапрос в конце CSS; фигурные скобки закрыты; ширина панели действительно 375</td>
+</tr>
+<tr>
+<td>Картинка шире карточки</td>
+<td>Нет ли фиксированной ширины без <code>max-width: 100%</code> или фиксированной высоты</td>
+</tr>
+<tr>
+<td>Форма выходит за рамку</td>
+<td>Сохранены <code>border-box</code>, ширина нужных полей и отсутствие лишней фиксированной ширины</td>
+</tr>
+<tr>
+<td>Длинная подпись меню обрезана</td>
+<td>Сохранены перенос текста, перенос Flexbox и предел ширины ссылки</td>
+</tr>
+<tr>
+<td>Ничего не изменилось</td>
+<td>Файл сохранён; открыт нужный проект; CSS подключён; страницу обновили</td>
+</tr>
+</tbody>
+</table>
+<p>Исправляйте причину. Не добавляйте <code>overflow-x: hidden</code> всей странице: это может просто спрятать часть текста или поля.</p>
+<h2 id="как-сдать-работу">Как сдать работу</h2>
+<p>Если ещё не получается включить проверку размеров, сначала выполните <a href="018-responsive-layout-and-browser-testing.html#6-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8C%D1%82%D0%B5-%D1%82%D0%BE%D1%87%D0%BD%D1%83%D1%8E-%D1%88%D0%B8%D1%80%D0%B8%D0%BD%D1%83-%D0%B2-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B5">шаг 6 — настройку ширины в браузере</a>.</p>
+<p>До показа самостоятельно проверьте <strong>девять сочетаний</strong>: главную, каталог и форму при каждой ширине <strong>320, 375 и 768 px</strong>. Если что-то выходит за край, исправьте это и повторите проверку.</p>
+<p>При сдаче оставьте панель размеров открытой и покажите преподавателю:</p>
+<ol>
+<li><strong>При ширине 375</strong> — главную, каталог и форму своего варианта. Тексты и изображения сохранены, поля доступны, карточки каталога стоят по одной.</li>
+<li><strong>При ширине 768</strong> — каталог: при обычном шрифте две карточки рядом, третья ниже. Покажите, в каком поле меняете ширину; значение <strong>320</strong> тоже должно быть проверено до сдачи.</li>
+<li><strong>Переход по меню</strong> — откройте другую страницу и вернитесь. На каждой странице в меню только две ссылки на остальные страницы.</li>
+<li><strong>Форму</strong> — пройдите поля клавишей <code>Tab</code>, чтобы был виден фокус. Отправьте с пустым выбором: браузер должен остановить отправку. Выберите позицию и укажите допустимые данные: при отправке параметры GET должны появиться в адресе.</li>
+<li><strong>Объяснение своими словами</strong> — какой контейнер управляет карточками и что меняется в медиазапросе.</li>
+</ol>
+<p>Сдаётся работающий проект в вашей папке <code>VariantNN-web</code>. Картинки-образцы служат для сравнения; показывайте свои HTML-страницы. Отдельный письменный отчёт не нужен.</p>
+<p>При сравнении с картинками своего варианта проверьте четыре признака:</p>
+<table>
+<thead>
+<tr>
+<th>Что видно на экране</th>
+<th>Признак готовности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Каталог на 768 px</td>
+<td>При обычном размере шрифта две карточки рядом, третья ниже; порядок прежний</td>
+</tr>
+<tr>
+<td>Каталог на 375 px</td>
+<td>Одна карточка в строке, все три товара доступны прокруткой вниз</td>
+</tr>
+<tr>
+<td>Главная на 375 px</td>
+<td>Заголовок, изображение и обе ссылки читаются целиком</td>
+</tr>
+<tr>
+<td>Форма на 375 px</td>
+<td>Шесть элементов в своём порядке, подписи и кнопка внутри страницы</td>
+</tr>
+</tbody>
+</table>
+<p>На всех страницах нет общей горизонтальной прокрутки. Если шрифт увеличен пользователем, карточек в строке может быть меньше: это допустимо, пока данные доступны и читаемы.</p>
+<p>Сохраните проект в своей папке. Отдельный письменный отчёт не нужен. Если осталось время, исправьте замеченные проблемы и повторите затронутую проверку.</p></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>
