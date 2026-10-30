@@ -347,6 +347,201 @@
       "title": "Учебный вариант 00 — пара 19"
     },
     {
+      "source": "spo/019/01-019.md",
+      "output": "spo/javascript-values-and-input/01-019.html",
+      "title": "Вариант 01 — На тропе, пара 19"
+    },
+    {
+      "source": "spo/019/02-019.md",
+      "output": "spo/javascript-values-and-input/02-019.html",
+      "title": "Вариант 02 — На тропе, пара 19"
+    },
+    {
+      "source": "spo/019/03-019.md",
+      "output": "spo/javascript-values-and-input/03-019.html",
+      "title": "Вариант 03 — На тропе, пара 19"
+    },
+    {
+      "source": "spo/019/04-019.md",
+      "output": "spo/javascript-values-and-input/04-019.html",
+      "title": "Вариант 04 — Книжная полка, пара 19"
+    },
+    {
+      "source": "spo/019/05-019.md",
+      "output": "spo/javascript-values-and-input/05-019.html",
+      "title": "Вариант 05 — Книжная полка, пара 19"
+    },
+    {
+      "source": "spo/019/06-019.md",
+      "output": "spo/javascript-values-and-input/06-019.html",
+      "title": "Вариант 06 — Книжная полка, пара 19"
+    },
+    {
+      "source": "spo/019/07-019.md",
+      "output": "spo/javascript-values-and-input/07-019.html",
+      "title": "Вариант 07 — Тёплая чашка, пара 19"
+    },
+    {
+      "source": "spo/019/08-019.md",
+      "output": "spo/javascript-values-and-input/08-019.html",
+      "title": "Вариант 08 — Тёплая чашка, пара 19"
+    },
+    {
+      "source": "spo/019/09-019.md",
+      "output": "spo/javascript-values-and-input/09-019.html",
+      "title": "Вариант 09 — Тёплая чашка, пара 19"
+    },
+    {
+      "source": "spo/019/10-019.md",
+      "output": "spo/javascript-values-and-input/10-019.html",
+      "title": "Вариант 10 — Музей рядом, пара 19"
+    },
+    {
+      "source": "spo/019/11-019.md",
+      "output": "spo/javascript-values-and-input/11-019.html",
+      "title": "Вариант 11 — Музей рядом, пара 19"
+    },
+    {
+      "source": "spo/019/12-019.md",
+      "output": "spo/javascript-values-and-input/12-019.html",
+      "title": "Вариант 12 — Музей рядом, пара 19"
+    },
+    {
+      "source": "spo/019/13-019.md",
+      "output": "spo/javascript-values-and-input/13-019.html",
+      "title": "Вариант 13 — Спорт после пар, пара 19"
+    },
+    {
+      "source": "spo/019/14-019.md",
+      "output": "spo/javascript-values-and-input/14-019.html",
+      "title": "Вариант 14 — Спорт после пар, пара 19"
+    },
+    {
+      "source": "spo/019/15-019.md",
+      "output": "spo/javascript-values-and-input/15-019.html",
+      "title": "Вариант 15 — Спорт после пар, пара 19"
+    },
+    {
+      "source": "spo/019/16-019.md",
+      "output": "spo/javascript-values-and-input/16-019.html",
+      "title": "Вариант 16 — Зелёный уголок, пара 19"
+    },
+    {
+      "source": "spo/019/17-019.md",
+      "output": "spo/javascript-values-and-input/17-019.html",
+      "title": "Вариант 17 — Зелёный уголок, пара 19"
+    },
+    {
+      "source": "spo/019/18-019.md",
+      "output": "spo/javascript-values-and-input/18-019.html",
+      "title": "Вариант 18 — Зелёный уголок, пара 19"
+    },
+    {
+      "source": "spo/019/19-019.md",
+      "output": "spo/javascript-values-and-input/19-019.html",
+      "title": "Вариант 19 — Мастерская идей, пара 19"
+    },
+    {
+      "source": "spo/019/20-019.md",
+      "output": "spo/javascript-values-and-input/20-019.html",
+      "title": "Вариант 20 — Мастерская идей, пара 19"
+    },
+    {
+      "source": "spo/019/21-019.md",
+      "output": "spo/javascript-values-and-input/21-019.html",
+      "title": "Вариант 21 — Мастерская идей, пара 19"
+    },
+    {
+      "source": "spo/019/22-019.md",
+      "output": "spo/javascript-values-and-input/22-019.html",
+      "title": "Вариант 22 — Друг из приюта, пара 19"
+    },
+    {
+      "source": "spo/019/23-019.md",
+      "output": "spo/javascript-values-and-input/23-019.html",
+      "title": "Вариант 23 — Друг из приюта, пара 19"
+    },
+    {
+      "source": "spo/019/24-019.md",
+      "output": "spo/javascript-values-and-input/24-019.html",
+      "title": "Вариант 24 — Друг из приюта, пара 19"
+    },
+    {
+      "source": "spo/019/25-019.md",
+      "output": "spo/javascript-values-and-input/25-019.html",
+      "title": "Вариант 25 — Экопункт, пара 19"
+    },
+    {
+      "source": "spo/019/26-019.md",
+      "output": "spo/javascript-values-and-input/26-019.html",
+      "title": "Вариант 26 — Экопункт, пара 19"
+    },
+    {
+      "source": "spo/019/27-019.md",
+      "output": "spo/javascript-values-and-input/27-019.html",
+      "title": "Вариант 27 — Экопункт, пара 19"
+    },
+    {
+      "source": "spo/019/28-019.md",
+      "output": "spo/javascript-values-and-input/28-019.html",
+      "title": "Вариант 28 — Афиша вечера, пара 19"
+    },
+    {
+      "source": "spo/019/29-019.md",
+      "output": "spo/javascript-values-and-input/29-019.html",
+      "title": "Вариант 29 — Афиша вечера, пара 19"
+    },
+    {
+      "source": "spo/019/30-019.md",
+      "output": "spo/javascript-values-and-input/30-019.html",
+      "title": "Вариант 30 — Афиша вечера, пара 19"
+    },
+    {
+      "source": "spo/019/31-019.md",
+      "output": "spo/javascript-values-and-input/31-019.html",
+      "title": "Вариант 31 — Учебный клуб, пара 19"
+    },
+    {
+      "source": "spo/019/32-019.md",
+      "output": "spo/javascript-values-and-input/32-019.html",
+      "title": "Вариант 32 — Учебный клуб, пара 19"
+    },
+    {
+      "source": "spo/019/33-019.md",
+      "output": "spo/javascript-values-and-input/33-019.html",
+      "title": "Вариант 33 — Учебный клуб, пара 19"
+    },
+    {
+      "source": "spo/019/34-019.md",
+      "output": "spo/javascript-values-and-input/34-019.html",
+      "title": "Вариант 34 — Снаряжение рядом, пара 19"
+    },
+    {
+      "source": "spo/019/35-019.md",
+      "output": "spo/javascript-values-and-input/35-019.html",
+      "title": "Вариант 35 — Снаряжение рядом, пара 19"
+    },
+    {
+      "source": "spo/019/36-019.md",
+      "output": "spo/javascript-values-and-input/36-019.html",
+      "title": "Вариант 36 — Снаряжение рядом, пара 19"
+    },
+    {
+      "source": "spo/019/37-019.md",
+      "output": "spo/javascript-values-and-input/37-019.html",
+      "title": "Вариант 37 — Космос рядом, пара 19"
+    },
+    {
+      "source": "spo/019/38-019.md",
+      "output": "spo/javascript-values-and-input/38-019.html",
+      "title": "Вариант 38 — Космос рядом, пара 19"
+    },
+    {
+      "source": "spo/019/39-019.md",
+      "output": "spo/javascript-values-and-input/39-019.html",
+      "title": "Вариант 39 — Космос рядом, пара 19"
+    },
+    {
       "source": "spo/019/javascript-values-and-input.md",
       "output": "spo/javascript-values-and-input/index.html",
       "title": "JavaScript — переменные, типы, операции и преобразование пользовательского ввода"
@@ -1543,7 +1738,7 @@
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "913d5195f930ae16e4b5fdb14f6e58de47d75bc80cbaf4d8d4334e433078a782",
+  "source_digest": "31676678914b8c1ac1a193685d71802533193da2159d92c5abbca04a137747fe",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2061,8 +2256,47 @@
     "spo/html-form/00-014.html": "6046f570c87827220230efd791314e09b7612651a3cc887a14708779b105412a",
     "spo/html-form/index.html": "54b6ac4fccdce26cfb3bb172d290818c81f4d2b19a0eff152b4d02ada0797da4",
     "spo/index.html": "d216670233b8e76af1752f97fbc18e318efeeafbcb6cb2dce49ee35f36e75c81",
-    "spo/javascript-values-and-input/00-019.html": "70b7752f228756f2e2c227ff324027d1cf3d236338ba00e6e4d6feff653a230a",
-    "spo/javascript-values-and-input/index.html": "cb34915c1ca55da11abf4a5754deb31e58e47f1fd6eda0a17a88181424a70754",
+    "spo/javascript-values-and-input/00-019.html": "2ad377cbb29635ca163b784060ceb5b7a20b41fb1bc2633e3ec9ea50beb61b39",
+    "spo/javascript-values-and-input/01-019.html": "39a8e8b9eb5dd7a2f4aaf5011a547d2ac776ca5db0b9a987f9ad82177cb090fa",
+    "spo/javascript-values-and-input/02-019.html": "dc763565838e60d64d870fd7127d2e42501839799d0c5d4a4bdd2c85147d8f75",
+    "spo/javascript-values-and-input/03-019.html": "45953b1c76f4868b7d41774338590444d5e723d97c2e1b18d98fcde194eb8f0b",
+    "spo/javascript-values-and-input/04-019.html": "1c49d06531cc70bdc3c8c887bf08f87a24808f6f98fee37f5eb63c1e3762f56f",
+    "spo/javascript-values-and-input/05-019.html": "cd1dcaad28cd40923119e8e869731a8a5542bb4c656d5c11d61416efa55a098e",
+    "spo/javascript-values-and-input/06-019.html": "9d05b2a113cf67642fdad45f5e1381db6a78075fc491e7bb45e1803072fee5ca",
+    "spo/javascript-values-and-input/07-019.html": "b6aa0aed3ab6b7acc6ef3cde593c8378b00d9373292f099e7018df01eeedf727",
+    "spo/javascript-values-and-input/08-019.html": "62da375d8ce1bb0eed8db41e4e412f15fa2bb3570a650d6649c4049449037e1b",
+    "spo/javascript-values-and-input/09-019.html": "b5fa9626a7a2430e65589c383024ae1cb3bd5bcc710ff60e13a386279e580a65",
+    "spo/javascript-values-and-input/10-019.html": "c12f6e28cd43e82973fd236f6ab52525d1b127519378bfb1db76fe5146c7a965",
+    "spo/javascript-values-and-input/11-019.html": "3c8ba21d39eaa293889ba9964875ddc9a4fbfe0fc84b80924e99bfd6f0be0318",
+    "spo/javascript-values-and-input/12-019.html": "03053cb3e4e6d5443507e4db3690163d711b1125a724400648845b8c6ecd0fdd",
+    "spo/javascript-values-and-input/13-019.html": "e22b624ffe18ab6c2a49c0a133fde028c6438b02cf2bad553c7c2f53954cbd2c",
+    "spo/javascript-values-and-input/14-019.html": "ca7c711f961491e49db97f61809eb066cb57bf064d97f1261b2bb5badf2a49b2",
+    "spo/javascript-values-and-input/15-019.html": "a816805f2e5bd59e732efaf37d5d83e77df360a113d5451d55ba51a1445d183b",
+    "spo/javascript-values-and-input/16-019.html": "fad7e575620f0c5324772e1a3e7194dad2cee3eef6a8ac0701d0c398781004de",
+    "spo/javascript-values-and-input/17-019.html": "ba4970adbdab8afc4b52a7772ab479fd4e35e6b04653d2a5c43ae1a1336b6323",
+    "spo/javascript-values-and-input/18-019.html": "0a2f745550b6fb69b6ef56e303e272724289ba2d7d2c8569f3414eaeb96f3499",
+    "spo/javascript-values-and-input/19-019.html": "aa6ab07069628d06b1af03a19b924c55019ffc4b94fc51582941472d918db9a6",
+    "spo/javascript-values-and-input/20-019.html": "fde6af0c4e94bd3af687602a17f150833791acee9c4e87fd8e26b3b9f8dd5d68",
+    "spo/javascript-values-and-input/21-019.html": "6a39d23cd71eb26932739668dbb8491eec44f135727f9020355c72c809bdb2ad",
+    "spo/javascript-values-and-input/22-019.html": "8d48edd1888d92da415f4a482837ce880dd4c5d0e164eac2ca7109dc2b4992ae",
+    "spo/javascript-values-and-input/23-019.html": "a5468d66adeb8f82fcedc73be11553c41783190a273582f297b447cc1296075d",
+    "spo/javascript-values-and-input/24-019.html": "4b8d220428c7e805085ea49531f220c26dfd649b625c085e5104343b758a5a86",
+    "spo/javascript-values-and-input/25-019.html": "ab31e297e15f07ada177a0fc9453956c9725f5441b5759a7f231410eb0b4ae67",
+    "spo/javascript-values-and-input/26-019.html": "cf9b0449c49f1efed42f6736fa9b89b25688af6dfabd3799d7ede2e91d62d169",
+    "spo/javascript-values-and-input/27-019.html": "7daff7b8330c1b8cd7d981adbd185608739e1408711bb4da30e2efc4603ec844",
+    "spo/javascript-values-and-input/28-019.html": "1babdf31249e898a278cb5d49f03d74a469a96fb8bd2db103faae309a4d63d22",
+    "spo/javascript-values-and-input/29-019.html": "9c981079d23f23eca3b06a90b25b3b2e1fbf5b0921bb9f1966031fc2436e29c9",
+    "spo/javascript-values-and-input/30-019.html": "100c8a96f436004a0a88f386e6600840ebd2b28be32922445ead8289d86acb9b",
+    "spo/javascript-values-and-input/31-019.html": "6d3fd7b3ab92e0c45a08496af79ce84ed83613436abf1a300886148e14ff33c4",
+    "spo/javascript-values-and-input/32-019.html": "f06ee042a40b4a6ab1d10d13844e419b3256c04ec013ef99449a22cdd221a01e",
+    "spo/javascript-values-and-input/33-019.html": "b20ceb94f24e53374ce9075363b6543725264174643cd14c8d336065580219c5",
+    "spo/javascript-values-and-input/34-019.html": "826186b50fc2eeaa249374113117eb1c85b0538320410c7beb94f29941391584",
+    "spo/javascript-values-and-input/35-019.html": "06a66867a3fe65fc7ce4c4c46cc6d71fbbba05a77cacf03cef46995e3b00cce2",
+    "spo/javascript-values-and-input/36-019.html": "4cb56478cf450984103a9c5bdd47a27b54c9c914b3aa5e7d5d8b683e23d1a503",
+    "spo/javascript-values-and-input/37-019.html": "1fc36b4c4154b6c57330e80d1cb723229efd54078d22b09e8e50cf726591228a",
+    "spo/javascript-values-and-input/38-019.html": "8ec8985051b43d92a297b66ca1428aa0793bbf182de932464306ea4ae722ede2",
+    "spo/javascript-values-and-input/39-019.html": "3f84293197e2a69eeb9f998457bd4dc8911f703a4f1e465c98a5ae86c8a62841",
+    "spo/javascript-values-and-input/index.html": "dc0e34f156eca50e13b986155131470372a808295950e4d210227acb56a309ca",
     "spo/mit-app-inventor/index.html": "e283e287c81591372cd875a9c894ecc0d17bb9f269345bb1887411082419ce16",
     "spo/mobile-app-types/index.html": "c08b3c87990f82a188380d3c2245662d6486fdc7af7c2b8615665f33d24fb539",
     "spo/mobile-web-page/00-010.html": "4be7719e63630c7f65d8732cdc1c9798bace6d1e9316ddb3bbe5394b847026ac",
@@ -2182,7 +2416,7 @@
     "spo/topics/technology-choice-and-diagnostics/index.html": "1018b4f59ad5014195f74aa0343af8861b56ae34f1373906f15f2a8048b16b67",
     "spo/topics/variables-and-lists.html": "b02b74415a4afb45bc5fe5901ba922f464e86336bc57191a8ddd6085cec49c1e",
     "spo/variables-and-lists/index.html": "a3543cccd655c75f0f02f5b610ae0a1b59dd9ac2a573d6381ca8a2186706531b",
-    "sw.js": "e138ef73f078a1b507b2cacb118e30e2455312b5cde738e8bfd1a34a291ac44f",
+    "sw.js": "743e7e612c50f80b3aff575be191ac118e1d739bcd9909bca5d60ebe3429c1e1",
     "topics/index.html": "f910c2083c1b4e2559537bbf472cc8d81ec0f0923da64a4efd701cd7a7cb7af5",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "b78094386f75e5079aa94e62ac38a50c79ef98a7b943c8bb477db30d0352db48",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "de4c98981762a6a6249f764a237e92fed3171248a1ea71982d49c0b3129aed21",
@@ -2256,5 +2490,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a0cbc9730686ea7bd1450b6b9c610eef1eab22f08ee87fdbcf1f45cc89418b58",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "2ae9d3f4b6e4554d3fdb952bc7c81102efd35331cd569243ee42831fd6d15940"
   },
-  "manifest_digest": "8d86e422a1b47ec0d0f85eb8f39d05e761855b8004c9de47a59f047877ac6033"
+  "manifest_digest": "37f7ba065b3373a404bd3b02479a1fcbe96e415cc60aaba6a29e16d50f7425da"
 }
