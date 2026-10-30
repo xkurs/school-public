@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>CSS: селекторы, каскад, размеры, отступы и блочная модель — shkolar.site</title>
+  <link rel="icon" href="../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script defer src="../../assets/quotes.js"></script>
+  <script defer src="../../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../index.html">Календарь</a></li><li><a href="../index.html">СПО</a></li><li aria-current="page">CSS: селекторы, каскад, размеры, отступы и блочная модель</li></ol></nav><h1 id="css-селекторы-каскад-размеры-отступы-и-блочная-модель">CSS: селекторы, каскад, размеры, отступы и блочная модель</h1>
+<p><a id="individual-assignments"></a></p>
+<details class="callout" data-callout="example">
+<summary class="callout-title">Индивидуальные задания</summary><ul>
+<li><a href="variants/01.html">Вариант 01</a></li>
+<li><a href="variants/02.html">Вариант 02</a></li>
+<li><a href="variants/03.html">Вариант 03</a></li>
+<li><a href="variants/04.html">Вариант 04</a></li>
+<li><a href="variants/05.html">Вариант 05</a></li>
+<li><a href="variants/06.html">Вариант 06</a></li>
+<li><a href="variants/07.html">Вариант 07</a></li>
+<li><a href="variants/08.html">Вариант 08</a></li>
+<li><a href="variants/09.html">Вариант 09</a></li>
+<li><a href="variants/10.html">Вариант 10</a></li>
+<li><a href="variants/11.html">Вариант 11</a></li>
+<li><a href="variants/12.html">Вариант 12</a></li>
+<li><a href="variants/13.html">Вариант 13</a></li>
+<li><a href="variants/14.html">Вариант 14</a></li>
+<li><a href="variants/15.html">Вариант 15</a></li>
+<li><a href="variants/16.html">Вариант 16</a></li>
+<li><a href="variants/17.html">Вариант 17</a></li>
+<li><a href="variants/18.html">Вариант 18</a></li>
+<li><a href="variants/19.html">Вариант 19</a></li>
+<li><a href="variants/20.html">Вариант 20</a></li>
+<li><a href="variants/21.html">Вариант 21</a></li>
+<li><a href="variants/22.html">Вариант 22</a></li>
+<li><a href="variants/23.html">Вариант 23</a></li>
+<li><a href="variants/24.html">Вариант 24</a></li>
+<li><a href="variants/25.html">Вариант 25</a></li>
+<li><a href="variants/26.html">Вариант 26</a></li>
+<li><a href="variants/27.html">Вариант 27</a></li>
+<li><a href="variants/28.html">Вариант 28</a></li>
+<li><a href="variants/29.html">Вариант 29</a></li>
+<li><a href="variants/30.html">Вариант 30</a></li>
+<li><a href="variants/31.html">Вариант 31</a></li>
+<li><a href="variants/32.html">Вариант 32</a></li>
+<li><a href="variants/33.html">Вариант 33</a></li>
+<li><a href="variants/34.html">Вариант 34</a></li>
+<li><a href="variants/35.html">Вариант 35</a></li>
+<li><a href="variants/36.html">Вариант 36</a></li>
+<li><a href="variants/37.html">Вариант 37</a></li>
+<li><a href="variants/38.html">Вариант 38</a></li>
+<li><a href="variants/39.html">Вариант 39</a></li>
+</ul>
+</details>
+<p>Продолжаем свою папку <code>VariantNN-web</code>. Сегодня нужно оформить основную часть трёх страниц и отделить друг от друга карточки каталога. Работайте по шагам ниже: изменили → сохранили → обновили браузер → посмотрели результат.</p>
+<p>Свой вариант задаёт тексты, картинки и цвета. <a href="variants/00.html">Вариант 00</a> хранит полное задание и данные примера преподавателя; студентам он не назначается.</p>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Где работать</th>
+<th>Что получится</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Три HTML-файла</td>
+<td>Все используют один CSS</td>
+</tr>
+<tr>
+<td>2</td>
+<td>HTML</td>
+<td>У основной части и карточек есть классы</td>
+</tr>
+<tr>
+<td>3</td>
+<td>CSS</td>
+<td>Общий шрифт и удобная ширина страницы</td>
+</tr>
+<tr>
+<td>4</td>
+<td>CSS</td>
+<td>У трёх карточек видны рамки и отступы</td>
+</tr>
+</tbody>
+</table>
+<aside class="callout" data-callout="important">
+<p class="callout-title">Подготовьте задание для третьей пары</p><p>Третья пара пройдёт без компьютеров, в аудитории со слабой связью. <strong>Ещё во время практики откройте на телефоне <a href="../flexbox-and-mobile-viewport/index.html">статью пары 17</a> и сохраните объяснение и задания</strong> — например, скриншотами или как страницу для чтения без интернета. Отключите интернет и проверьте: читаются все условия, код и таблицы, ничего не обрезано. Перед уходом из компьютерного класса повторите эту проверку. На третьей паре телефон нужен для чтения, ответы пишем на бумаге.</p>
+</aside>
+<hr>
+<h2 id="1-откройте-прежний-проект">1. Откройте прежний проект</h2>
+<p>В папке должны быть <code>index.html</code>, <code>catalog.html</code>, <code>form.html</code>, <code>style.css</code> и изображения. Пройдите по меню все три страницы. В меню каждой — две ссылки на другие страницы; ссылки на открытую страницу нет.</p>
+<p>Внутри <code>head</code> <strong>каждого</strong> HTML-файла проверьте подключение:</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+</code></pre>
+<p>Если чего-то не хватает, восстановите по <a href="../home-page-and-catalog/index.html">паре 13</a> или <a href="../html-form/index.html">паре 14</a>. Новую папку проекта создавать не нужно.</p>
+<hr>
+<h2 id="2-добавьте-классы-в-html">2. Добавьте классы в HTML</h2>
+<p>Класс — имя группы элементов, которое CSS использует для выбора. У существующего <code>main</code> во всех трёх файлах добавьте <code>page</code>:</p>
+<pre><code class="language-html">&lt;main class=&quot;page&quot;&gt;
+</code></pre>
+<p>В <code>catalog.html</code> найдите три существующих <code>article</code>. У каждого добавьте <code>card</code>. Начало первой позиции примера:</p>
+<pre><code class="language-html">&lt;article class=&quot;card&quot;&gt;
+  &lt;h2&gt;Холодильник&lt;/h2&gt;
+</code></pre>
+<p>Всё содержимое и закрывающие теги оставьте на месте. Если у элемента уже есть класс, допишите новый через пробел в том же атрибуте.</p>
+<table>
+<thead>
+<tr>
+<th>HTML</th>
+<th>CSS-селектор</th>
+<th>Что выбирает</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>class="card"</code></td>
+<td><code>.card</code></td>
+<td>Все три карточки</td>
+</tr>
+<tr>
+<td><code>class="page"</code> у <code>main</code></td>
+<td><code>main.page</code></td>
+<td>Основную часть страницы</td>
+</tr>
+<tr>
+<td>Тег <code>h2</code></td>
+<td><code>h2</code></td>
+<td>Заголовки второго уровня</td>
+</tr>
+</tbody>
+</table>
+<p>В HTML класс пишется без точки; в CSS перед именем класса нужна точка.</p>
+<p><strong>Посмотрите результат:</strong> товары и тексты остались на месте. Пока правил для классов нет, внешний вид может не измениться.</p>
+<hr>
+<h2 id="3-оформите-основную-часть">3. Оформите основную часть</h2>
+<p>Откройте <code>style.css</code>. Если нужное правило уже есть, изменяйте его, не добавляйте вторую копию. Прежние цвета и меню сохраните.</p>
+<pre><code class="language-css">* {
+  box-sizing: border-box;
+}
+</code></pre>
+<p><code>border-box</code> означает: рамка и внутренние отступы входят в заданную ширину блока.</p>
+<p>В существующем <code>body</code> оставьте свои цвета и добавьте:</p>
+<pre><code class="language-css">font-family: Arial, sans-serif;
+font-size: 1rem;
+line-height: 1.5;
+margin: 0;
+</code></pre>
+<p>Это свойства <strong>внутри</strong> <code>body { ... }</code>. Затем добавьте правило основной части:</p>
+<pre><code class="language-css">main.page {
+  width: 92%;
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Запись</th>
+<th>Для чего нужна</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>width: 92%</code></td>
+<td>Оставляет место по бокам</td>
+</tr>
+<tr>
+<td><code>max-width: 56rem</code></td>
+<td>Не даёт содержимому слишком растянуться</td>
+</tr>
+<tr>
+<td><code>margin: 0 auto</code></td>
+<td>Ставит блок посередине по горизонтали</td>
+</tr>
+<tr>
+<td><code>padding: 1rem</code></td>
+<td>Отодвигает содержимое от края блока</td>
+</tr>
+</tbody>
+</table>
+<p><code>%</code> здесь считается от ширины родителя. <code>rem</code> зависит от размера шрифта корневого элемента; обычно <code>1rem</code> соответствует <code>16px</code>, но настройки браузера могут отличаться. Вычислять размеры на этой практике не нужно.</p>
+<p><strong>Посмотрите результат:</strong> основной текст на всех трёх страницах читается одинаково; в широком окне содержимое находится посередине.</p>
+<hr>
+<h2 id="4-оформите-карточки">4. Оформите карточки</h2>
+<p>Добавьте или дополните правило:</p>
+<pre><code class="language-css">.card {
+  border: 1px solid #94A3B8;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+</code></pre>
+<p>В правиле <code>.card</code> — селектор, <code>padding</code> — свойство, <code>1rem</code> — значение. Объявление заканчивается точкой с запятой.</p>
+<p><img alt="Блочная модель: содержимое, внутренний отступ, рамка и внешний отступ" src="../assets/99-015-box-model.svg"></p>
+<table>
+<thead>
+<tr>
+<th>Часть блока</th>
+<th>Что видно в каталоге</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Содержимое</td>
+<td>Название, картинка и текст товара</td>
+</tr>
+<tr>
+<td><code>padding</code></td>
+<td>Пространство между содержимым и рамкой</td>
+</tr>
+<tr>
+<td><code>border</code></td>
+<td>Рамка вокруг одного товара</td>
+</tr>
+<tr>
+<td><code>margin-bottom</code></td>
+<td>Пространство после карточки</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Посмотрите результат:</strong> три отдельные карточки стоят сверху вниз. У каждой есть рамка, текст не прижат к ней, соседние карточки не сливаются. Точную толщину и отступы на глаз измерять не нужно.</p>
+<hr>
+<h2 id="если-стиль-не-применился">Если стиль не применился</h2>
+<table>
+<thead>
+<tr>
+<th>Что произошло</th>
+<th>Что проверить сначала</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Не изменилось ничего</td>
+<td>Сохранили ли CSS; подключён ли он в этой странице</td>
+</tr>
+<tr>
+<td>Изменилась только одна карточка</td>
+<td>Есть ли <code>class="card"</code> у всех трёх <code>article</code></td>
+</tr>
+<tr>
+<td>Одна рамка вокруг всех товаров</td>
+<td>Не добавлен ли класс общему контейнеру вместо отдельных <code>article</code></td>
+</tr>
+<tr>
+<td>Последние правила не работают</td>
+<td>Закрыты ли <code>{ }</code>, есть ли <code>;</code></td>
+</tr>
+<tr>
+<td>Значение меняете, а вид прежний</td>
+<td>Нет ли другого правила, которое перекрывает это свойство</td>
+</tr>
+</tbody>
+</table>
+<p>При одинаковых селекторах более поздняя запись свойства перекрывает раннюю. Поэтому правьте найденное правило, вместо того чтобы дописывать его копии. Цвет текста обычно наследуется от родителя, но правило самого элемента может его изменить. Эти наблюдения помогают найти ошибку; отдельный отчёт и серия опытов не нужны.</p>
+<p>Сохраните папку проекта и переходите к <a href="../styling-pages-cards-and-form/index.html">оформлению карточек и формы</a>. Результат двух практик покажете вместе. Если закончили раньше, проверьте три страницы и сохранённое задание для третьей пары.</p></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>

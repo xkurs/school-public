@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Проверка приложения на телефоне и разбор событий и переходов — shkolar.site</title>
+  <link rel="icon" href="../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script defer src="../../assets/quotes.js"></script>
+  <script defer src="../../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../index.html">Календарь</a></li><li><a href="../index.html">СПО</a></li><li aria-current="page">Проверка приложения на телефоне и разбор событий и переходов</li></ol></nav><h1 id="проверка-приложения-на-телефоне-и-разбор-событий-и-переходов">Проверка приложения на телефоне и разбор событий и переходов</h1>
+<p><a id="individual-assignments"></a></p>
+<details class="callout" data-callout="example">
+<summary class="callout-title">Индивидуальные задания</summary><p>Для этой пары индивидуальные задания не опубликованы</p>
+</details>
+<h2 id="скачать-и-попробовать-образец">Скачать и попробовать образец</h2>
+<p><strong><a href="https://github.com/xkurs/school-public/releases/download/variant01-demo-v1.0.0/Variant01Demo.apk">Скачать APK для Android — «На тропе», вариант 01</a></strong></p>
+<p>Версия 1.0.0 от 16 октября 2026 года; размер 3,63 МиБ. Откройте ссылку на Android-телефоне, скачайте файл и откройте его для установки. Android может запросить разрешение на установку для браузера или приложения, которым открыт файл. APK предназначен для Android; на iPhone он не устанавливается.</p>
+<p>Попробуйте два маршрута: <strong>главная → каталог → форма → назад → на главную</strong> и <strong>главная → форма → назад</strong>. В форме наберите слово, исправьте букву и введите фразу в поле пожеланий. «Отправить» пока не выполняет отправку данных.</p>
+<p>Это учебный образец первого варианта; в собственной работе сохраняйте свой вариант и проект. Проект успешно собран в APK; работа на реальном телефоне на момент выпуска ещё не проверена.</p>
+<h2 id="порядок-работы">Порядок работы</h2>
+<ol>
+<li>Откройте свой <code>VariantNN</code> и лист варианта. Убедитесь, что есть главная, каталог и форма; если третий экран не закончен, дополните его по листу.</li>
+<li>Сразу проверьте подключение телефона доступным способом из <a href="../mit-app-inventor/index.html">инструкции по подключению</a>. Измените небольшую надпись и убедитесь, что на телефоне открыт текущий проект.</li>
+<li>Исправьте обрезанные надписи, ширину кнопок и доступность полей. На это отведите около 10 минут; сохраните тематику и компоновку своего варианта.</li>
+<li>Подключите пять обработчиков по <a href="../multi-screen-app-refinement/index.html">пошаговой инструкции лекции</a>. После каждого нового обработчика нажмите соответствующую кнопку на телефоне.</li>
+<li>Проверьте оба маршрута возврата из формы, ввод и редактирование слов. Исправьте ошибки и повторите проверку.</li>
+<li>Сохраните проект, экспортируйте <code>VariantNN.aia</code>, подготовьте три снимка своего приложения и покажите результат преподавателю на телефоне.</li>
+</ol>
+<p>Если запуск не работает, сообщите преподавателю в начале пары. Проверка только в редакторе не заменяет итоговую демонстрацию на телефоне. APK в качестве обязательного результата этой работы не требуется: работающий проект можно показывать через Companion. <code>.aia</code> — исходник проекта для продолжения работы, а не установочный файл телефона.</p>
+<h2 id="сначала-сопоставьте-свои-кнопки">Сначала сопоставьте свои кнопки</h2>
+<p>В листе варианта найдите таблицу пяти переходов. Запишите свои имена вместо описаний ниже. Смысл и число событий одинаковы для всех вариантов, но названия компонентов могут различаться.</p>
+<table>
+<thead>
+<tr>
+<th>Где редактируем Blocks</th>
+<th>Какую кнопку ищем</th>
+<th>Что помещаем в <code>Click</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Screen1</code></td>
+<td>Открыть каталог</td>
+<td><code>open another screen</code> + точное имя каталога</td>
+</tr>
+<tr>
+<td><code>Screen1</code></td>
+<td>Открыть форму</td>
+<td><code>open another screen</code> + точное имя формы</td>
+</tr>
+<tr>
+<td>Экран каталога</td>
+<td>Перейти к форме</td>
+<td><code>open another screen</code> + точное имя формы</td>
+</tr>
+<tr>
+<td>Экран каталога</td>
+<td>На главную</td>
+<td><code>close screen</code></td>
+</tr>
+<tr>
+<td>Экран формы</td>
+<td>Назад</td>
+<td><code>close screen</code></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Карта навигации для проверки на телефоне" src="../assets/99-999-navigation.svg"></p>
+<p>В варианте 01 это <code>ButtonRoutes</code>, <code>ButtonBooking</code>, <code>ButtonRoutesBooking</code>, <code>ButtonRoutesBack</code>, <code>ButtonBookingBack</code>. Например, в варианте 02 — <code>ButtonCatalog</code>, <code>ButtonForm</code>, <code>ButtonCatalogForm</code>, <code>ButtonCatalogBack</code>, <code>ButtonFormBack</code>. Пользуйтесь своим листом. Переходы не прикрепляются к надписям <code>Label</code> или к похожей по названию кнопке на другом экране.</p>
+<h2 id="сравните-блоки-своего-проекта-с-образцом">Сравните блоки своего проекта с образцом</h2>
+<p>Ниже настоящие снимки первого варианта из MIT App Inventor. Каждый снимок относится к отдельному экрану. В своём проекте сохраняйте имена из своего листа; общая форма соединения остаётся такой же.</p>
+<p><img alt="Screen1: две кнопки открывают каталог и форму" src="../assets/99-999-screen1-blocks-final.jpg"></p>
+<p><em>Главная: два события <code>Click</code>, в каждом открытие своего экрана.</em></p>
+<p><img alt="RoutesScreen: открыть форму и закрыть каталог" src="../assets/99-999-routes-blocks.jpg"></p>
+<p><em>Каталог: кнопка записи открывает форму, кнопка «На главную» закрывает каталог.</em></p>
+<p><img alt="BookingScreen: закрыть форму и вернуться" src="../assets/99-999-booking-back-block.jpg"></p>
+<p><em>Форма: один <code>close screen</code> возвращает к месту открытия. Набор слов в <code>TextBox</code> не требует отдельного блока <code>Click</code>.</em></p>
+<p>Если неясно, откуда брать блоки, откройте <a href="../multi-screen-app-refinement/index.html">инструкцию лекции со снимками панелей Click, Control и Text</a>. Сравнение картинок не заменяет следующий показ на телефоне.</p>
+<h2 id="маршрут-показа-преподавателю">Маршрут показа преподавателю</h2>
+<p>Подготовьте телефон с открытой главной своего проекта. Показывайте кнопки и результат их нажатия. Ниже надписи приведены на примере варианта 01; в другом варианте нажимайте кнопки того же назначения.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Шаг</th>
+<th>Что сделать на телефоне</th>
+<th>Что должен увидеть преподаватель</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Показать главную и номер варианта</td>
+<td>Открыт собственный проект; тексты и кнопки читаются</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Нажать «Посмотреть маршруты»</td>
+<td>Открывается каталог</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>В каталоге нажать «Записаться»</td>
+<td>Открывается форма</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>Коснуться первого текстового поля; набрать «Проба»</td>
+<td>Появляется клавиатура; слово видно в поле</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>Стереть последнюю букву и дописать «Проба ввода»</td>
+<td>Поле действительно редактируется; подпись поля сохранена</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td>В поле пожеланий набрать «Хочу попробовать маршрут» или фразу по своей теме</td>
+<td>Вводятся несколько слов; текст доступен для чтения</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td>Скрыть клавиатуру при необходимости; нажать кнопку формы «Назад»</td>
+<td>Возврат в каталог</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td>В каталоге нажать «На главную»</td>
+<td>Возврат на главную</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td>С главной нажать «Записаться на прогулку»</td>
+<td>Форма открывается напрямую</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td>В форме нажать «Назад»</td>
+<td>Возврат сразу на главную</td>
+</tr>
+</tbody>
+</table>
+<p>Перед сдачей повторите обе цепочки переходов трижды. На показе достаточно одного полного прохода таблицы, если преподаватель не попросит повторить. Ввод проверяется в текущем открытии формы; сохранение введённого после закрытия не требуется.</p>
+<p>Вводите слова в текстовое поле, а число — в поле количества, если оно предусмотрено вариантом. Не меняйте числовое поле на текстовое только ради проверки слова. Для свободного текста <code>NumbersOnly</code> и <code>ReadOnly</code> должны быть выключены, <code>Enabled</code> включено. Подсказка <code>Hint</code> исчезает при вводе; отдельная подпись <code>Label</code> должна оставаться.</p>
+<p>При открытой клавиатуре проверьте доступность полей и возможность прокрутки формы. Затем скройте клавиатуру и проверьте нижние кнопки. Если системное «Назад» только скрыло клавиатуру, это ещё не результат проверки перехода: нажмите кнопку «Назад» внутри приложения.</p>
+<p>Кнопку <strong>«Отправить» не используем как доказательство отправки данных</strong>: обработчика отправки в этом задании нет. Переключатели и ползунок должны реагировать на касания средствами компонентов, но вычисления и сохранение не добавляются.</p>
+<h2 id="если-что-то-не-работает">Если что-то не работает</h2>
+<table>
+<thead>
+<tr>
+<th>Наблюдение</th>
+<th>Что проверить</th>
+<th>Как убедиться в исправлении</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Кнопка видна, нажатие ничего не меняет</td>
+<td>Есть ли её событие <code>Click</code>; вложено ли действие в <code>do</code>; тот ли экран открыт в редакторе</td>
+<td>Нажать эту кнопку на телефоне</td>
+</tr>
+<tr>
+<td>Открывается другой экран или возникает ошибка имени</td>
+<td><code>screenName</code> совпадает с именем существующего экрана; не подставлен заголовок</td>
+<td>Повторить переход из главной и каталога</td>
+</tr>
+<tr>
+<td>После формы всегда открывается главная</td>
+<td>Не стоит ли в «Назад» открытие <code>Screen1</code> вместо <code>close screen</code></td>
+<td>Открыть форму из каталога и вернуться в каталог</td>
+</tr>
+<tr>
+<td>После нескольких повторов возврат ведёт странно</td>
+<td>Кнопки возврата закрывают дополнительные экраны; новые копии <code>Screen1</code> не открываются</td>
+<td>Вернуться к началу проверяемого сеанса и повторить оба маршрута трижды</td>
+</tr>
+<tr>
+<td>В поле нельзя ввести слово</td>
+<td>Выбран <code>TextBox</code>, а не <code>Label</code>; <code>Enabled: true</code>; <code>NumbersOnly: false</code> у поля для слов</td>
+<td>Набрать слово и исправить одну букву</td>
+</tr>
+<tr>
+<td>Видна только подсказка, результат не появляется</td>
+<td>Ввод выполняется на телефоне в открытом поле, а не в свойстве <code>Hint</code> редактора</td>
+<td>Коснуться поля, набрать несколько букв</td>
+</tr>
+<tr>
+<td>Надпись обрезана</td>
+<td>Ширина родителя и компонента, высота кнопки, размер текста</td>
+<td>Прочитать всю надпись на телефоне</td>
+</tr>
+<tr>
+<td>Нижние элементы формы недоступны</td>
+<td>Прокрутка экрана, размеры контейнеров, положение клавиатуры</td>
+<td>Добраться до нижнего поля и кнопки возврата</td>
+</tr>
+<tr>
+<td>Телефон показывает прежнюю версию</td>
+<td>Соединение и текущий проект; до проверки навигации изменить заметную надпись</td>
+<td>Увидеть новое значение на телефоне</td>
+</tr>
+</tbody>
+</table>
+<p>Исправляйте по одной причине. После исправления повторите конкретный неудачный шаг, затем полный маршрут. Случайное изменение нескольких свойств затрудняет объяснение результата.</p>
+<h2 id="что-предъявить-при-сдаче">Что предъявить при сдаче</h2>
+<ul>
+<li>Телефон с работающим приложением и показ по маршруту выше.</li>
+<li>Три экрана своего варианта: обязательные компоненты, читаемые тексты, согласованное оформление.</li>
+<li>Пять обработчиков: три открытия дополнительных экранов и два закрытия.</li>
+<li>Набор слова, исправление текста и ввод нескольких слов в форме.</li>
+<li>Экспортированный исходник <code>VariantNN.aia</code> и три снимка экранов собственного проекта.</li>
+<li>Короткое объяснение одного обработчика и одного исправленного дефекта.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Проверка</th>
+<th>Условие завершения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Интерфейс</td>
+<td>Все три экрана соответствуют своему варианту; текст не обрезан, поля и кнопки доступны</td>
+</tr>
+<tr>
+<td>Навигация</td>
+<td>На телефоне пройдены все пять действий; форма возвращает к экрану, откуда открыта</td>
+</tr>
+<tr>
+<td>Ввод</td>
+<td>На телефоне видно набранное слово и его исправление; поле пожеланий принимает фразу</td>
+</tr>
+<tr>
+<td>Повторение</td>
+<td>Обе цепочки проверены студентом трижды без ошибки</td>
+</tr>
+<tr>
+<td>Самостоятельность</td>
+<td>Студент находит названную кнопку в Blocks и объясняет её действие</td>
+</tr>
+<tr>
+<td>Сохранность</td>
+<td>Исходник экспортирован; снимки относятся к созданному приложению</td>
+</tr>
+</tbody>
+</table>
+<p>Если один обязательный пункт не выполнен, запишите, что именно осталось исправить. Статус «собрано в редакторе, запуск не проверен» сохраняется явно и не равен завершённому заданию. Отправка данных, сервер, расчёты и сохранение текста после закрытия формы не входят в критерии.</p>
+<h2 id="вопросы-к-показу">Вопросы к показу</h2>
+<ol>
+<li>Покажите кнопку, которая открывает форму. Где находится её обработчик?</li>
+<li>Почему форма возвращается в каталог, если её открыли из каталога?</li>
+<li>В каком компоненте вы набирали слово и какое свойство ограничивает ввод числами?</li>
+<li>Какую ошибку вы нашли, что изменили и как проверили исправление?</li>
+</ol></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>

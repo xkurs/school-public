@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>СПО — разработка мобильных приложений — shkolar.site</title>
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/quotes.js"></script>
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li aria-current="page">СПО</li></ol></nav><h1 id="спо-разработка-мобильных-приложений">СПО — разработка мобильных приложений</h1>
+<p>МДК.01.03: App Inventor → веб-разработка и PWA → Kotlin → Android. Материалы занятий открываются по ссылкам в таблице.</p>
+<aside class="callout" data-callout="important">
+<p class="callout-title">Индивидуальные задания</p><p><strong>Индивидуальные задания в статьях <a href="css-selectors-and-box-model/index.html#individual-assignments">пары 15</a>, <a href="styling-pages-cards-and-form/index.html#individual-assignments">пары 16</a> и <a href="responsive-layout-and-browser-testing/index.html#individual-assignments">пары 18</a></strong></p>
+</aside>
+<h2 id="тематическое-планирование">Тематическое планирование</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Пара</th>
+<th style="text-align: left;">Тема</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;"><a href="mobile-app-types/index.html">Какие бывают мобильные приложения</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;"><a href="technology-choice-and-diagnostics/index.html">Сравнение подходов и диагностика группы</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;"><a href="mit-app-inventor/index.html">Интерфейс MIT App Inventor и подключение телефона</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;"><a href="first-screen/index.html">Собираем первый экран</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;"><a href="events-and-state/index.html">Событие, переменная и изменение состояния</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;"><a href="first-working-scenario/index.html">Проектирование визуального интерфейса мобильного приложения</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;"><a href="variables-and-lists/index.html">Реализация навигации и проверка многоэкранного прототипа мобильного приложения</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;"><a href="multi-screen-app-refinement/index.html">Доработка многоэкранного приложения в MIT App Inventor</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;"><a href="phone-testing-and-navigation/index.html">Проверка приложения на телефоне и разбор событий и переходов</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;"><a href="mobile-web-page/index.html">Первая HTML-страница: самостоятельная практическая работа</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;"><a href="first-web-project/index.html">Проверка HTML-страницы, списки и ссылки</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;"><a href="html-content-structure/index.html">Разбор HTML-страницы и первые стили CSS</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;"><a href="home-page-and-catalog/index.html">Разметка главной страницы и каталога своего приложения</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;"><a href="html-form/index.html">HTML-форма: поля, подписи, кнопки и встроенная проверка ввода</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;"><a href="css-selectors-and-box-model/index.html">CSS: селекторы, каскад, размеры, отступы и блочная модель</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;"><a href="styling-pages-cards-and-form/index.html">Оформление страниц, карточек каталога и формы</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;"><a href="flexbox-and-mobile-viewport/index.html">Flexbox, viewport и адаптивный интерфейс мобильной страницы</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;"><a href="responsive-layout-and-browser-testing/index.html">Адаптация интерфейса к узкому экрану и проверка в браузере</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;"><a href="javascript-values-and-input/index.html">JavaScript — переменные, типы, операции и преобразование пользовательского ввода</a></td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Условия и функции: проверка данных и вычисление результата</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">JavaScript — массивы, циклы и простые объекты</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Обработка списка записей и проверка функций в консоли</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">DOM и события: поиск элементов, изменение страницы и обработчики</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Обработка формы и вывод результата с сообщениями об ошибках</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Вывод и фильтрация каталога по данным массива</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">JSON и localStorage: сохранение данных и восстановление после открытия</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">Соединение интерфейса и логики, диагностика ошибок веб-приложения</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">Git на веб-проекте: коммит, история, проверка на телефоне и исправления</td>
+</tr>
+<tr>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">Публикация по HTTPS, манифест PWA, значки и установка</td>
+</tr>
+<tr>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">Service worker, кеширование, автономный режим и обновление приложения</td>
+</tr>
+<tr>
+<td style="text-align: right;">31</td>
+<td style="text-align: left;">Настройка PWA и проверка установки, автономной работы и обновления</td>
+</tr>
+<tr>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">Доработка PWA: проверка ввода, сохранения данных и поведения без сети</td>
+</tr>
+<tr>
+<td style="text-align: right;">33</td>
+<td style="text-align: left;">Защита веб-приложения: самостоятельное изменение функции и объяснение кода</td>
+</tr>
+<tr>
+<td style="text-align: right;">34</td>
+<td style="text-align: left;">Kotlin в браузере: main, вывод, val, var и типы значений</td>
+</tr>
+<tr>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">Первые программы Kotlin: вычисления и строки</td>
+</tr>
+<tr>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">Условия if и when, диапазоны и циклы</td>
+</tr>
+<tr>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">Выбор действия, повторение и проверка граничных случаев</td>
+</tr>
+<tr>
+<td style="text-align: right;">38</td>
+<td style="text-align: left;">Функции, параметры, nullable-типы и проверка данных</td>
+</tr>
+<tr>
+<td style="text-align: right;">39</td>
+<td style="text-align: left;">Разделение задачи на функции и обработка неверных значений</td>
+</tr>
+<tr>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">Классы, data class, списки и изменяемые коллекции</td>
+</tr>
+<tr>
+<td style="text-align: right;">41</td>
+<td style="text-align: left;">Модель данных и операции со списком записей</td>
+</tr>
+<tr>
+<td style="text-align: right;">42</td>
+<td style="text-align: left;">Лямбды, отбор данных и состояние программы</td>
+</tr>
+<tr>
+<td style="text-align: right;">43</td>
+<td style="text-align: left;">Консольный прототип логики будущего приложения</td>
+</tr>
+<tr>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">Проверка функций и работа с ИИ-подсказками при изучении Kotlin</td>
+</tr>
+<tr>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">Исправление ошибок и демонстрация консольного прототипа</td>
+</tr>
+<tr>
+<td style="text-align: right;">46</td>
+<td style="text-align: left;">OpenIDE: проект Kotlin/JVM, JDK, Gradle и зависимости</td>
+</tr>
+<tr>
+<td style="text-align: right;">47</td>
+<td style="text-align: left;">Перенос программы из Playground в OpenIDE, запуск и отладка</td>
+</tr>
+<tr>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">Git в Kotlin-проекте: история изменений, сравнение и возврат к рабочей версии</td>
+</tr>
+<tr>
+<td style="text-align: right;">49</td>
+<td style="text-align: left;">Сохранение Kotlin-проекта в Git и проверка его запуска</td>
+</tr>
+<tr>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">Android-проект: Activity, Manifest, ресурсы и Android SDK</td>
+</tr>
+<tr>
+<td style="text-align: right;">51</td>
+<td style="text-align: left;">Пробная сборка APK и запуск на Android-устройстве</td>
+</tr>
+<tr>
+<td style="text-align: right;">52</td>
+<td style="text-align: left;">Интерфейс Android: элементы, разметка и ресурсы</td>
+</tr>
+<tr>
+<td style="text-align: right;">53</td>
+<td style="text-align: left;">Создание первого экрана Android-приложения</td>
+</tr>
+<tr>
+<td style="text-align: right;">54</td>
+<td style="text-align: left;">События интерфейса и вызов функций Kotlin</td>
+</tr>
+<tr>
+<td style="text-align: right;">55</td>
+<td style="text-align: left;">Обработка нажатия и вывод результата на экране</td>
+</tr>
+<tr>
+<td style="text-align: right;">56</td>
+<td style="text-align: left;">Пользовательский ввод, проверка данных и сообщения об ошибке</td>
+</tr>
+<tr>
+<td style="text-align: right;">57</td>
+<td style="text-align: left;">Форма с проверкой введённых данных</td>
+</tr>
+<tr>
+<td style="text-align: right;">58</td>
+<td style="text-align: left;">Состояние экрана и жизненный цикл Android-приложения</td>
+</tr>
+<tr>
+<td style="text-align: right;">59</td>
+<td style="text-align: left;">Восстановление состояния при пересоздании экрана</td>
+</tr>
+<tr>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">Списки и отображение моделей данных</td>
+</tr>
+<tr>
+<td style="text-align: right;">61</td>
+<td style="text-align: left;">Каталог или список записей с пустым состоянием</td>
+</tr>
+<tr>
+<td style="text-align: right;">62</td>
+<td style="text-align: left;">Навигация, передача данных и возврат</td>
+</tr>
+<tr>
+<td style="text-align: right;">63</td>
+<td style="text-align: left;">Переход из списка к подробностям записи</td>
+</tr>
+<tr>
+<td style="text-align: right;">64</td>
+<td style="text-align: left;">Разделение интерфейса, состояния и логики приложения</td>
+</tr>
+<tr>
+<td style="text-align: right;">65</td>
+<td style="text-align: left;">Переработка структуры проекта без изменения поведения</td>
+</tr>
+<tr>
+<td style="text-align: right;">66</td>
+<td style="text-align: left;">Локальное хранение: настройки и записи</td>
+</tr>
+<tr>
+<td style="text-align: right;">67</td>
+<td style="text-align: left;">Сохранение и восстановление данных после перезапуска</td>
+</tr>
+<tr>
+<td style="text-align: right;">68</td>
+<td style="text-align: left;">Проверка основного сценария и журнал дефектов</td>
+</tr>
+<tr>
+<td style="text-align: right;">69</td>
+<td style="text-align: left;">Демонстрация первого Android-приложения и исправления</td>
+</tr>
+<tr>
+<td style="text-align: right;">70</td>
+<td style="text-align: left;">Асинхронная работа: корутины, состояния ожидания и ошибки</td>
+</tr>
+<tr>
+<td style="text-align: right;">71</td>
+<td style="text-align: left;">Длительное действие без блокировки интерфейса и обработка сбоя</td>
+</tr>
+<tr>
+<td style="text-align: right;">72</td>
+<td style="text-align: left;">HTTP и JSON: сетевые данные, ошибки и повторный запрос</td>
+</tr>
+<tr>
+<td style="text-align: right;">73</td>
+<td style="text-align: left;">Загрузка данных из доступного учебного источника и проверка ошибок сети</td>
+</tr>
+<tr>
+<td style="text-align: right;">74</td>
+<td style="text-align: left;">Локальные данные и проверка поведения Android-приложения без сети</td>
+</tr>
+<tr>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">Функции устройства, разрешения, отказ пользователя и приватность</td>
+</tr>
+<tr>
+<td style="text-align: right;">76</td>
+<td style="text-align: left;">Одна проверенная функция устройства либо доработка локального сценария</td>
+</tr>
+<tr>
+<td style="text-align: right;">77</td>
+<td style="text-align: left;">Постановка задачи, пользовательский сценарий и модель данных проекта</td>
+</tr>
+<tr>
+<td style="text-align: right;">78</td>
+<td style="text-align: left;">Первый работающий сценарий итогового Android-проекта</td>
+</tr>
+<tr>
+<td style="text-align: right;">79</td>
+<td style="text-align: left;">Структура экранов и разделение логики итогового проекта</td>
+</tr>
+<tr>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">Доработка навигации и редактирования данных</td>
+</tr>
+<tr>
+<td style="text-align: right;">81</td>
+<td style="text-align: left;">Выбор хранения и поведения при сетевых ошибках</td>
+</tr>
+<tr>
+<td style="text-align: right;">82</td>
+<td style="text-align: left;">Сохранение данных и обработка сбоев итогового проекта</td>
+</tr>
+<tr>
+<td style="text-align: right;">83</td>
+<td style="text-align: left;">План проверки: тесты функций Kotlin, доступность и приватность приложения</td>
+</tr>
+<tr>
+<td style="text-align: right;">84</td>
+<td style="text-align: left;">Взаимное испытание и исправление дефектов</td>
+</tr>
+<tr>
+<td style="text-align: right;">85</td>
+<td style="text-align: left;">Документация, история изменений и воспроизводимая сборка</td>
+</tr>
+<tr>
+<td style="text-align: right;">86</td>
+<td style="text-align: left;">Подготовка APK и исходников к передаче</td>
+</tr>
+<tr>
+<td style="text-align: right;">87</td>
+<td style="text-align: left;">Объяснение решений и репетиция демонстрации</td>
+</tr>
+<tr>
+<td style="text-align: right;">88</td>
+<td style="text-align: left;">Предзащита Android-проекта и исправления</td>
+</tr>
+</tbody>
+</table>
+<h2 id="учебный-образец">Учебный образец</h2>
+<p><a href="https://github.com/xkurs/school-public/releases/download/variant01-demo-v1.0.0/Variant01Demo.apk">Скачать APK «На тропе», вариант 01</a> · <a href="multi-screen-app-refinement/index.html">Описание и инструкция</a></p></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>

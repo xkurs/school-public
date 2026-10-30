@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Оформление страниц, карточек каталога и формы — shkolar.site</title>
+  <link rel="icon" href="../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script defer src="../../assets/quotes.js"></script>
+  <script defer src="../../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../index.html">Календарь</a></li><li><a href="../index.html">СПО</a></li><li aria-current="page">Оформление страниц, карточек каталога и формы</li></ol></nav><h1 id="оформление-страниц-карточек-каталога-и-формы">Оформление страниц, карточек каталога и формы</h1>
+<p><a id="individual-assignments"></a></p>
+<details class="callout" data-callout="example">
+<summary class="callout-title">Индивидуальные задания</summary><ul>
+<li><a href="variants/01.html">Вариант 01</a></li>
+<li><a href="variants/02.html">Вариант 02</a></li>
+<li><a href="variants/03.html">Вариант 03</a></li>
+<li><a href="variants/04.html">Вариант 04</a></li>
+<li><a href="variants/05.html">Вариант 05</a></li>
+<li><a href="variants/06.html">Вариант 06</a></li>
+<li><a href="variants/07.html">Вариант 07</a></li>
+<li><a href="variants/08.html">Вариант 08</a></li>
+<li><a href="variants/09.html">Вариант 09</a></li>
+<li><a href="variants/10.html">Вариант 10</a></li>
+<li><a href="variants/11.html">Вариант 11</a></li>
+<li><a href="variants/12.html">Вариант 12</a></li>
+<li><a href="variants/13.html">Вариант 13</a></li>
+<li><a href="variants/14.html">Вариант 14</a></li>
+<li><a href="variants/15.html">Вариант 15</a></li>
+<li><a href="variants/16.html">Вариант 16</a></li>
+<li><a href="variants/17.html">Вариант 17</a></li>
+<li><a href="variants/18.html">Вариант 18</a></li>
+<li><a href="variants/19.html">Вариант 19</a></li>
+<li><a href="variants/20.html">Вариант 20</a></li>
+<li><a href="variants/21.html">Вариант 21</a></li>
+<li><a href="variants/22.html">Вариант 22</a></li>
+<li><a href="variants/23.html">Вариант 23</a></li>
+<li><a href="variants/24.html">Вариант 24</a></li>
+<li><a href="variants/25.html">Вариант 25</a></li>
+<li><a href="variants/26.html">Вариант 26</a></li>
+<li><a href="variants/27.html">Вариант 27</a></li>
+<li><a href="variants/28.html">Вариант 28</a></li>
+<li><a href="variants/29.html">Вариант 29</a></li>
+<li><a href="variants/30.html">Вариант 30</a></li>
+<li><a href="variants/31.html">Вариант 31</a></li>
+<li><a href="variants/32.html">Вариант 32</a></li>
+<li><a href="variants/33.html">Вариант 33</a></li>
+<li><a href="variants/34.html">Вариант 34</a></li>
+<li><a href="variants/35.html">Вариант 35</a></li>
+<li><a href="variants/36.html">Вариант 36</a></li>
+<li><a href="variants/37.html">Вариант 37</a></li>
+<li><a href="variants/38.html">Вариант 38</a></li>
+<li><a href="variants/39.html">Вариант 39</a></li>
+</ul>
+</details>
+<p>Продолжаем тот же проект после <a href="../css-selectors-and-box-model/index.html">первой практики</a>. Нужно сделать три страницы похожими по оформлению, карточки — аккуратными, форму — удобной. Карточки и поля пока остаются сверху вниз.</p>
+<p>Текущий набор индивидуальных заданий — используйте свои тексты, изображения и цвета. <a href="variants/00.html">Вариант 00</a> показывает результат картинками и хранит постоянные данные и стили. Индивидуальные листы используют тот же способ оформления со своими текстами и палитрой.</p>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Что меняем</th>
+<th>Что должно быть видно</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Цвета и карточки</td>
+<td>Общее оформление трёх страниц</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Форма</td>
+<td>Подписи над полями, два маленьких флажка</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Фокус</td>
+<td>При <code>Tab</code> видно выбранный элемент</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Проверка и сохранение</td>
+<td>Страницы работают, задание третьей пары доступно без сети</td>
+</tr>
+</tbody>
+</table>
+<p>Перед работой откройте главную, каталог и форму. Во всех файлах подключён общий <code>style.css</code>, у <code>main</code> есть класс <code>page</code>, у трёх <code>article</code> — <code>card</code>. В каждом меню <strong>две ссылки на другие страницы, без ссылки на саму себя</strong>.</p>
+<h2 id="нулевой-пример-преподавателя">Нулевой пример преподавателя</h2>
+<p><a href="variants/00.html">Вариант 00</a>. Файл <code>variant.md</code> принадлежит этой паре и сохраняется при смене студенческих вариантов; изображения статьи и примера находятся в <code>assets/</code> пары либо в общем <code>assets/</code> курса.</p>
+<p>Не заменяйте файлы целиком. Найдите нужное правило CSS и дополните его; после каждого шага сохраните и обновите браузер.</p>
+<hr>
+<h2 id="1-цвета-карточки-и-картинки">1. Цвета, карточки и картинки</h2>
+<p>В <code>body</code> сохраните фон и основной текст своего варианта. Для примера 00:</p>
+<pre><code class="language-css">background-color: #EFF6FF;
+color: #1E293B;
+</code></pre>
+<p>Это две строки внутри существующего <code>body { ... }</code>. Для заголовков и ссылок примера:</p>
+<pre><code class="language-css">h1, h2 {
+  color: #1D4ED8;
+}
+a {
+  color: #1D4ED8;
+}
+</code></pre>
+<p>У себя используйте свой акцент. Подчёркивание обычных ссылок и оформление меню сохраните.</p>
+<p>В <code>.card</code> добавьте белую поверхность и скругление, оставив рамку и отступы первой практики:</p>
+<pre><code class="language-css">background-color: #FFFFFF;
+border-radius: 0.5rem;
+</code></pre>
+<p>В примере 00 заметные рамки и цветные абзацы заданы его таблицей стилей. Для демонстрации преподаватель берёт значения из этой таблицы; она уточняет базовые образцы статьи.</p>
+<p>Для изображений проверьте общую защиту от выхода за край:</p>
+<pre><code class="language-css">img {
+  max-width: 100%;
+  height: auto;
+}
+.card img {
+  display: block;
+  width: 100%;
+  max-width: 18rem;
+}
+</code></pre>
+<p>Пробел в <code>.card img</code> означает «картинки внутри карточек». <code>height: auto</code> сохраняет пропорции; предел ширины не даёт картинкам каталога стать слишком большими.</p>
+<p><strong>Посмотрите результат:</strong> три отдельные белые карточки, читаемые заголовки, картинки не растянуты. Главная, каталог и форма используют общие цвета.</p>
+<hr>
+<h2 id="2-форма-сначала-классы-затем-оформление">2. Форма: сначала классы, затем оформление</h2>
+<p>В <code>form.html</code> добавьте класс существующей форме, сохранив остальные атрибуты:</p>
+<pre><code class="language-html">&lt;form class=&quot;request-form&quot; method=&quot;get&quot;&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>В существующем HTML</th>
+<th>Что добавить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Абзацы со списком, количеством, комментарием и шкалой</td>
+<td><code>class="form-field"</code> — всего четыре абзаца</td>
+</tr>
+<tr>
+<td>Абзацы двух флажков</td>
+<td>Оставить без этого класса</td>
+</tr>
+</tbody>
+</table>
+<p>Пример начала абзаца количества:</p>
+<pre><code class="language-html">&lt;p class=&quot;form-field&quot;&gt;
+  &lt;label for=&quot;quantity&quot;&gt;Количество единиц&lt;/label&gt;
+</code></pre>
+<p>Поле под подписью, его <code>id</code>, <code>name</code>, ограничения ввода и закрывающий <code>&lt;/p&gt;</code> оставьте прежними. Если класс уже есть, допишите новый через пробел.</p>
+<p>Теперь оформите форму в <code>style.css</code>:</p>
+<pre><code class="language-css">.request-form {
+  background-color: #FFFFFF;
+  border: 1px solid #94A3B8;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.form-field {
+  margin: 0 0 1rem;
+}
+.form-field &gt; label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: bold;
+}
+.request-form input,
+.request-form select,
+.request-form textarea,
+.request-form button {
+  font: inherit;
+}
+</code></pre>
+<p><code>&gt; label</code> выбирает подпись непосредственно внутри <code>form-field</code>: она окажется над полем. Подписи флажков остаются рядом с ними. <code>font: inherit</code> даёт полям тот же шрифт, что у формы.</p>
+<p>Ширину задайте <strong>только нужным полям</strong>:</p>
+<pre><code class="language-css">.request-form select,
+.request-form input[type=&quot;number&quot;],
+.request-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #64748B;
+  border-radius: 0.35rem;
+}
+.request-form input[type=&quot;range&quot;] {
+  width: 100%;
+}
+.request-form textarea {
+  resize: vertical;
+}
+</code></pre>
+<p>Не пишите общее <code>input { width: 100%; }</code>: оно растянет флажки. Благодаря <code>border-box</code> из первой практики широкие поля помещаются вместе с рамками и отступами.</p>
+<p>Для кнопки примера 00:</p>
+<pre><code class="language-css">.request-form button {
+  padding: 0.65rem 1rem;
+  border: 2px solid #1D4ED8;
+  border-radius: 0.35rem;
+  background-color: #1D4ED8;
+  color: #FFFFFF;
+}
+</code></pre>
+<p>В своём проекте возьмите акцент варианта и читаемый на нём цвет текста.</p>
+<p><img alt="Карточка и форма: подписи над полями, флажки рядом с подписями" src="../assets/99-016-card-and-form.svg"></p>
+<p><strong>Посмотрите результат:</strong> четыре подписи над полями, два флажка маленькие и с подписями рядом, кнопка заметна. Все шесть прежних элементов формы сохранились.</p>
+<hr>
+<h2 id="3-сделайте-видимым-выбор-с-клавиатуры">3. Сделайте видимым выбор с клавиатуры</h2>
+<p>В CSS добавьте:</p>
+<pre><code class="language-css">a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 3px solid #C2410C;
+  outline-offset: 3px;
+}
+</code></pre>
+<p>Нажмите <code>Tab</code> несколько раз. Контур должен переходить между ссылками, полями и кнопкой. <code>Enter</code> открывает выбранную ссылку, пробел переключает флажок. Контур показывается при работе клавиатурой; не нужно добиваться его постоянного отображения.</p>
+<hr>
+<h2 id="4-проверьте-результат-и-подготовьтесь-к-третьей-паре">4. Проверьте результат и подготовьтесь к третьей паре</h2>
+<p>Сохраните проект. Пройдите три короткие проверки:</p>
+<table>
+<thead>
+<tr>
+<th>Что сделать</th>
+<th>Что увидеть</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Открыть главную → каталог → форму, сузить окно</td>
+<td>Две ссылки меню работают; три карточки и картинки помещаются; оформление общее</td>
+</tr>
+<tr>
+<td>Нажать <code>Tab</code>, затем подписи флажков</td>
+<td>Контур заметен, каждый флажок переключается отдельно</td>
+</tr>
+<tr>
+<td>Отправить форму без выбора товара, затем заполнить её корректно</td>
+<td>Сначала браузер просит выбор; затем в адресе появляются параметры GET</td>
+</tr>
+</tbody>
+</table>
+<p>GET здесь только показывает учебные параметры, приложение не сохраняет заявку. Для повторной проверки начальных значений перейдите на главную и вернитесь в форму.</p>
+<p>Если что-то нарушилось, найдите причину по таблице:</p>
+<table>
+<thead>
+<tr>
+<th>Проблема</th>
+<th>Где искать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Форма выглядит иначе, чем другие страницы</td>
+<td>Подключение CSS в <code>head</code></td>
+</tr>
+<tr>
+<td>Флажки стали широкими</td>
+<td>Слишком общее правило <code>input</code></td>
+</tr>
+<tr>
+<td>Подпись не выбирает поле</td>
+<td>Совпадение <code>for</code> и <code>id</code></td>
+</tr>
+<tr>
+<td>Картинка растянута</td>
+<td>Лишняя фиксированная высота</td>
+</tr>
+<tr>
+<td>Изменение CSS не видно</td>
+<td>Сохранение файла, селектор, повторное правило ниже</td>
+</tr>
+</tbody>
+</table>
+<p>Покажите преподавателю три страницы и форму. Отдельный письменный отчёт по практике не нужен. Если закончили раньше, исправьте замеченные неудобства и подготовьте задание для следующей пары.</p>
+<aside class="callout" data-callout="important">
+<p class="callout-title">До ухода из компьютерного класса</p><p><strong>Сохраните на телефоне <a href="../flexbox-and-mobile-viewport/index.html">объяснение и задания пары 17</a>: скриншотами или страницей для чтения без интернета.</strong> Затем отключите интернет и откройте сохранённое: все условия, код и таблицы должны читаться целиком. В следующей аудитории связь слабая; рассчитывать на загрузку там нельзя. Если сохранить не получилось, сообщите преподавателю сейчас. На третью пару возьмите бумагу и ручку; телефон понадобится только для чтения задания.</p>
+</aside></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>

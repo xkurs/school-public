@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Доработка многоэкранного приложения в MIT App Inventor — shkolar.site</title>
+  <link rel="icon" href="../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script defer src="../../assets/quotes.js"></script>
+  <script defer src="../../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../index.html">Календарь</a></li><li><a href="../index.html">СПО</a></li><li aria-current="page">Доработка многоэкранного приложения в MIT App Inventor</li></ol></nav><h1 id="доработка-многоэкранного-приложения-в-mit-app-inventor">Доработка многоэкранного приложения в MIT App Inventor</h1>
+<p><a id="individual-assignments"></a></p>
+<details class="callout" data-callout="example">
+<summary class="callout-title">Индивидуальные задания</summary><p>Для этой пары индивидуальные задания не опубликованы</p>
+</details>
+<h2 id="скачать-и-попробовать-образец">Скачать и попробовать образец</h2>
+<p><strong><a href="https://github.com/xkurs/school-public/releases/download/variant01-demo-v1.0.0/Variant01Demo.apk">Скачать APK для Android — «На тропе», вариант 01</a></strong></p>
+<p>Версия 1.0.0 от 16 октября 2026 года; размер 3,63 МиБ. Откройте ссылку на Android-телефоне, скачайте файл и откройте его для установки. Android может запросить разрешение на установку для браузера или приложения, которым открыт файл. APK предназначен для Android; на iPhone он не устанавливается.</p>
+<p>Попробуйте два маршрута: <strong>главная → каталог → форма → назад → на главную</strong> и <strong>главная → форма → назад</strong>. В форме наберите слово, исправьте букву и введите фразу в поле пожеланий. «Отправить» пока не выполняет отправку данных.</p>
+<p>Это учебный образец первого варианта; в собственной работе сохраняйте свой вариант и проект. Проект успешно собран в APK; работа на реальном телефоне на момент выпуска ещё не проверена.</p>
+<h2 id="что-превращает-макет-в-приложение">Что превращает макет в приложение</h2>
+<p>В Designer мы задаём, <strong>что видно</strong>: надписи, поля, кнопки и расположение. В Blocks задаём, <strong>что происходит</strong> после действия пользователя. Нажатие кнопки — событие <code>Click</code>; открытие другого экрана — действие внутри обработчика этого события.</p>
+<p>Кнопка с текстом «Открыть каталог» сама не знает, какой экран открыть. Её видимая надпись <code>Text</code> и внутреннее имя компонента — разные вещи. Например, «Посмотреть маршруты» — надпись, <code>ButtonRoutes</code> — имя кнопки, <code>RoutesScreen</code> — имя экрана назначения.</p>
+<p>У всех индивидуальных вариантов одинаковая логика: главная, каталог и форма. Имена и надписи берите из собственного листа. В варианте 01 кнопки называются иначе, чем во многих остальных вариантах: копировать его имена без проверки нельзя.</p>
+<h2 id="кратко-ровные-кнопки-и-читаемые-слова">Кратко: ровные кнопки и читаемые слова</h2>
+<p>На повторение достаточно 10–12 минут. Сначала найдите компонент в дереве Components, затем измените свойство в Properties. Проверяйте результат на телефоне: Viewer в браузере не заменяет проверку реального размера экрана.</p>
+<table>
+<thead>
+<tr>
+<th>Что исправляем</th>
+<th>Что выбрать и настроить</th>
+<th>Что проверить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Кнопки столбиком разной ширины</td>
+<td>Общий <code>VerticalArrangement</code>: <code>Width</code> → <code>Fill parent</code>; обе кнопки: <code>Width</code> → <code>Fill parent</code></td>
+<td>Левые и правые края совпадают</td>
+</tr>
+<tr>
+<td>Кнопки «Назад» и «Отправить» в одном ряду</td>
+<td>Общий <code>HorizontalArrangement</code> на всю ширину; согласованные ширины кнопок, например по 48%</td>
+<td>Кнопки умещаются вместе; место между ними учитывается</td>
+</tr>
+<tr>
+<td>Длинная надпись обрезана</td>
+<td>Увеличить доступную ширину; убрать слишком маленькую фиксированную высоту, начать с <code>Height</code> → <code>Automatic</code></td>
+<td>Все слова видны; при переносе хватает высоты</td>
+</tr>
+<tr>
+<td>Текст внутри кнопки расположен неудачно</td>
+<td>Свойство кнопки <code>TextAlignment</code>; для текста кнопки обычно выбрать центр</td>
+<td>Текст расположен внутри кнопки как задумано</td>
+</tr>
+<tr>
+<td>Элементы группы прижаты к неправильному краю</td>
+<td><code>AlignHorizontal</code> / <code>AlignVertical</code> у контейнера</td>
+<td>Меняется расположение дочерних элементов, а не только текста</td>
+</tr>
+<tr>
+<td>Поле не имеет понятной подписи</td>
+<td>Отдельный <code>Label</code> над <code>TextBox</code>; пример в <code>Hint</code></td>
+<td>После ввода слова назначение поля по-прежнему понятно</td>
+</tr>
+<tr>
+<td>Длинная форма не помещается</td>
+<td><code>Scrollable</code> у экрана формы; достаточная высота многострочного поля</td>
+<td>Можно добраться до нижних элементов на телефоне</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Как выбрать контейнер и исправить размеры кнопок" src="../assets/99-008-alignment.svg"></p>
+<p>Это учебная схема, не снимок редактора. <code>Fill parent</code> означает «заполнить родительский контейнер»: узкий контейнер даст узкую кнопку. Поэтому проверяем сначала родителя. В русском интерфейсе ориентируйтесь также на смысл свойства: ширина, высота, выравнивание.</p>
+<p>Для кнопок рядом не задавайте обеим ширину 100%: каждая запросит всю ширину строки. Число 48% — отправная точка для проверки на телефоне, а не новое требование ко всем макетам. Сохраняйте компоновку своего варианта. Не уменьшайте шрифт настолько, что надпись становится трудно прочитать.</p>
+<h2 id="карта-пяти-переходов">Карта пяти переходов</h2>
+<p><img alt="Пять обработчиков и два пути возврата из формы" src="../assets/99-999-navigation.svg"></p>
+<p>Стрелки показывают действия пользователя в приложении. У формы один обработчик «Назад», но два возможных места возврата: это зависит от того, откуда её открыли.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">№</th>
+<th>Где находится кнопка</th>
+<th>Действие</th>
+<th>Блок</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Главная: открыть каталог</td>
+<td>Открыть второй экран</td>
+<td><code>open another screen</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Главная: открыть форму</td>
+<td>Открыть третий экран</td>
+<td><code>open another screen</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Каталог: открыть форму</td>
+<td>Открыть третий экран</td>
+<td><code>open another screen</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>Каталог: на главную</td>
+<td>Закрыть каталог</td>
+<td><code>close screen</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>Форма: назад</td>
+<td>Закрыть форму, вернуться к предыдущему экрану</td>
+<td><code>close screen</code></td>
+</tr>
+</tbody>
+</table>
+<p>На главной два обработчика, в каталоге два, в форме один. Кнопка «Отправить» пока остаётся визуальным элементом. Ввод слов в <code>TextBox</code> работает средствами самого компонента и не требует обработчика отправки.</p>
+<h2 id="куда-нажимать-в-редакторе">Куда нажимать в редакторе</h2>
+<p>Ниже разобран вариант 01 на реальном проекте <code>Variant01Demo</code>, открытом в MIT App Inventor. JPEG-изображения — снимки редактора от 16 октября 2026 года; SVG выше — учебные схемы. Откройте свой лист и сопоставьте имена перед сборкой блоков. Если нужные экраны уже созданы, повторно добавлять их не надо.</p>
+<p><img alt="Порядок действий: экран, Blocks, кнопка, Click, Control и имя экрана" src="../assets/99-008-editor-steps.svg"></p>
+<p>Схема показывает последовательность действий, а не точное положение панелей в конкретной версии интерфейса. Редактор выбирает экран для редактирования; на телефоне переход выполняется только после нажатия запрограммированной кнопки.</p>
+<h3 id="первый-переход-с-главной-в-каталог">Первый переход: с главной в каталог</h3>
+<p><strong>Шаг 1. Выберите экран и кнопку.</strong> В списке экранов сверху выберите <strong><code>Screen1</code></strong>, затем нажмите <strong>Blocks / Блоки</strong>. Слева найдите <strong><code>ButtonRoutes</code></strong> и нажмите её имя. Для другой кнопки открывается такой же набор, но с её собственным именем.</p>
+<p><img alt="Выбор события Click в наборе блоков кнопки" src="../assets/99-008-button-click-drawer.jpg"></p>
+<p><em>На этом снимке открыт набор кнопки возврата <code>ButtonBookingBack</code>. Нужный блок — самый верхний, <code>when … .Click do</code>. Для перехода в каталог откройте таким же способом <code>ButtonRoutes</code>. Не выбирайте <code>LongClick</code>, <code>TouchDown</code> или зелёные блоки свойств.</em></p>
+<p><strong>Шаг 2. Возьмите событие.</strong> Перетащите <strong><code>when ButtonRoutes.Click do</code></strong> в белую рабочую область справа. Внутрь его пустой области <code>do</code> будем вставлять действие.</p>
+<p><strong>Шаг 3. Найдите действие в Control.</strong> Слева нажмите <strong>Built-in → Control / Встроенные → Управление</strong> и прокрутите открывшийся набор вниз до команд работы с экранами.</p>
+<p><img alt="Где находятся open another screen и close screen в Control" src="../assets/99-008-control-screen-blocks.jpg"></p>
+<p><em>Для открытия нужен <code>open another screen</code> — первая команда открытия на снимке. Для возврата — отдельный короткий <code>close screen</code>. Команды <code>open another screen with start value</code>, <code>close screen with value</code> и <code>close application</code> здесь не используем.</em></p>
+<p>Перетащите <code>open another screen</code> внутрь <code>do</code>. Блок должен присоединиться к событию. Блок, оставленный рядом на белом поле, после нажатия кнопки не выполнится.</p>
+<p><strong>Шаг 4. Задайте экран назначения.</strong> В гнезде <code>screenName</code> должно стоять <strong><code>RoutesScreen</code></strong>. В открытом редакторе блок из Control уже предлагается с розовым блоком выбора имени экрана: раскройте список и выберите нужное имя. Значение по умолчанию на снимке — <code>BookingScreen</code>, его нужно заменить на <code>RoutesScreen</code> для кнопки каталога.</p>
+<p>Если гнездо пустое, используйте <strong>Text → пустую строку</strong> — самый верхний розовый блок в следующем наборе. Присоедините его к <code>screenName</code>, нажмите белое поле между кавычками, введите <code>RoutesScreen</code> и подтвердите Enter. Именно такой способ использован в готовом образце на следующем снимке.</p>
+<p><img alt="Пустая строка в начале набора Text" src="../assets/99-008-text-empty-block.jpg"></p>
+<p><strong>Шаг 5. Сравните собранные блоки.</strong> На <code>Screen1</code> должно получиться два обработчика: первый открывает каталог, второй — форму. Добавьте второй таким же способом для <code>ButtonBooking</code>, подставив <code>BookingScreen</code>.</p>
+<p><img alt="Настоящие блоки Screen1: открытие каталога и формы" src="../assets/99-999-screen1-blocks-final.jpg"></p>
+<p><em>Верхний обработчик: <code>ButtonRoutes.Click</code> → <code>RoutesScreen</code>. Нижний: <code>ButtonBooking.Click</code> → <code>BookingScreen</code>. Розовые блоки соединены с входами <code>screenName</code>, золотые команды открытия вложены в <code>do</code>.</em></p>
+<p><strong>Шаг 6. Проверьте на телефоне.</strong> Нажмите <strong>«Посмотреть маршруты»</strong>. Должен открыться каталог. Переключение экранов в верхнем списке редактора выбирает место редактирования; оно не доказывает работу перехода в приложении.</p>
+<h3 id="второй-и-третий-переходы-открыть-форму">Второй и третий переходы: открыть форму</h3>
+<p>На <code>Screen1</code> добавьте событие кнопки формы: в варианте 01 <code>ButtonBooking.Click</code>. Внутри разместите <code>open another screen</code> с именем <code>BookingScreen</code>.</p>
+<p>Затем <strong>в списке экранов редактора</strong> выберите <code>RoutesScreen</code>, снова откройте Blocks и найдите кнопку <code>ButtonRoutesBooking</code>. Для её события <code>Click</code> задайте открытие <code>BookingScreen</code>. Блоки каждого экрана редактируются отдельно. Событие кнопки каталога не ищут в наборе компонентов <code>Screen1</code>.</p>
+<p><img alt="Настоящие блоки каталога: открытие формы и возврат на главную" src="../assets/99-999-routes-blocks.jpg"></p>
+<p><em>Это весь набор навигации <code>RoutesScreen</code>: верхняя кнопка открывает форму, нижняя закрывает каталог. Для второго обработчика используйте следующий приём возврата.</em></p>
+<h3 id="четвёртый-и-пятый-переходы-вернуться">Четвёртый и пятый переходы: вернуться</h3>
+<p>На <code>RoutesScreen</code> выберите <code>ButtonRoutesBack</code>, добавьте <code>Click</code>, внутри разместите <strong>Control → <code>close screen</code></strong>. На <code>BookingScreen</code> сделайте то же для <code>ButtonBookingBack</code>.</p>
+<p><img alt="Настоящий обработчик возврата с BookingScreen" src="../assets/99-999-booking-back-block.jpg"></p>
+<p><em>Весь код возврата формы: <code>when ButtonBookingBack.Click do</code> и вложенный <code>close screen</code>. У блока закрытия нет входа для имени экрана. Не добавляйте к нему строку <code>Screen1</code>.</em></p>
+<p>Для возврата не открывайте новый <code>Screen1</code>. Представьте стопку карточек: открытие кладёт новую сверху, закрытие снимает верхнюю. Если форма открыта из каталога, под ней каталог. Если с главной — главная. Поэтому один <code>close screen</code> решает обе задачи. Сам <code>Screen1</code> в этой работе не закрываем.</p>
+<h2 id="проверка-ввода-в-форму">Проверка ввода в форму</h2>
+<p><code>Label</code> показывает текст, <code>TextBox</code> позволяет его вводить. Поле должно быть доступно: <code>Enabled: true</code>. Для обычных слов используйте <code>NumbersOnly: false</code> и <code>ReadOnly: false</code>; для количества участников числовое ограничение допустимо по смыслу варианта. <code>Hint</code> — подсказка пустого поля, а не введённое значение.</p>
+<p><img alt="Настройки TextBoxRoute: Enabled включено, NumbersOnly и ReadOnly выключены" src="../assets/99-008-textbox-behavior.jpg"></p>
+<p><em>Настройки настоящего <code>TextBoxRoute</code>: <code>Enabled</code> включено; <code>NumbersOnly</code> и <code>ReadOnly</code> выключены. Снимок свойств подтверждает настройку поля; проверку набора текста выполняем отдельно на телефоне.</em></p>
+<p>На телефоне коснитесь текстового поля, дождитесь клавиатуры и наберите, например, <strong>«Проба»</strong>. Удалите последнюю букву и допишите <strong>«Проба ввода»</strong>. Слово должно появляться внутри поля, а не вместо его отдельной подписи. В поле пожеланий введите несколько слов; если оно многострочное, проверьте перенос. Вводите учебные данные без персональных сведений.</p>
+<p>Если клавиатура закрывает низ формы, сначала проверьте прокрутку; для доступа к кнопкам клавиатуру можно скрыть. Не путайте системную кнопку скрытия клавиатуры с кнопкой «Назад» в самой форме. В приёмке переход проверяем именно кнопкой приложения.</p>
+<p>Сохранение текста после закрытия и повторного открытия формы не является требованием этой работы. Проверяем набор и редактирование, пока форма открыта.</p>
+<h2 id="вопросы-перед-практикой">Вопросы перед практикой</h2>
+<ol>
+<li>Почему кнопка с надписью «Каталог» может ничего не делать?</li>
+<li>На каком экране редактора искать событие кнопки возврата из формы?</li>
+<li>Что поставить в <code>screenName</code>: заголовок экрана или его внутреннее имя?</li>
+<li>Почему после формы можно вернуться в два разных места одним блоком?</li>
+<li>Чем выравнивание контейнера отличается от выравнивания текста кнопки?</li>
+<li>Как на телефоне доказать, что поле допускает ввод и исправление слов?</li>
+</ol>
+<p>Продолжение: <a href="../phone-testing-and-navigation/index.html">практика — завершение и показ на телефоне</a>.</p></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>
