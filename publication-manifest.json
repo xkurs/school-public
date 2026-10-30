@@ -72,209 +72,209 @@
       "title": "Личное расписание на 31.10.2026"
     },
     {
-      "source": "spo/015/css-selectors-and-box-model.md",
-      "output": "spo/css-selectors-and-box-model/index.html",
-      "title": "CSS: селекторы, каскад, размеры, отступы и блочная модель"
-    },
-    {
-      "source": "spo/015/variants/00.md",
-      "output": "spo/css-selectors-and-box-model/variants/00.html",
+      "source": "spo/015/00-015.md",
+      "output": "spo/css-selectors-and-box-model/00-015.html",
       "title": "Учебный вариант 00 — пара 15"
     },
     {
-      "source": "spo/015/variants/01.md",
-      "output": "spo/css-selectors-and-box-model/variants/01.html",
+      "source": "spo/015/01-015.md",
+      "output": "spo/css-selectors-and-box-model/01-015.html",
       "title": "Вариант 01 — На тропе, пара 15"
     },
     {
-      "source": "spo/015/variants/02.md",
-      "output": "spo/css-selectors-and-box-model/variants/02.html",
+      "source": "spo/015/02-015.md",
+      "output": "spo/css-selectors-and-box-model/02-015.html",
       "title": "Вариант 02 — На тропе, пара 15"
     },
     {
-      "source": "spo/015/variants/03.md",
-      "output": "spo/css-selectors-and-box-model/variants/03.html",
+      "source": "spo/015/03-015.md",
+      "output": "spo/css-selectors-and-box-model/03-015.html",
       "title": "Вариант 03 — На тропе, пара 15"
     },
     {
-      "source": "spo/015/variants/04.md",
-      "output": "spo/css-selectors-and-box-model/variants/04.html",
+      "source": "spo/015/04-015.md",
+      "output": "spo/css-selectors-and-box-model/04-015.html",
       "title": "Вариант 04 — Книжная полка, пара 15"
     },
     {
-      "source": "spo/015/variants/05.md",
-      "output": "spo/css-selectors-and-box-model/variants/05.html",
+      "source": "spo/015/05-015.md",
+      "output": "spo/css-selectors-and-box-model/05-015.html",
       "title": "Вариант 05 — Книжная полка, пара 15"
     },
     {
-      "source": "spo/015/variants/06.md",
-      "output": "spo/css-selectors-and-box-model/variants/06.html",
+      "source": "spo/015/06-015.md",
+      "output": "spo/css-selectors-and-box-model/06-015.html",
       "title": "Вариант 06 — Книжная полка, пара 15"
     },
     {
-      "source": "spo/015/variants/07.md",
-      "output": "spo/css-selectors-and-box-model/variants/07.html",
+      "source": "spo/015/07-015.md",
+      "output": "spo/css-selectors-and-box-model/07-015.html",
       "title": "Вариант 07 — Тёплая чашка, пара 15"
     },
     {
-      "source": "spo/015/variants/08.md",
-      "output": "spo/css-selectors-and-box-model/variants/08.html",
+      "source": "spo/015/08-015.md",
+      "output": "spo/css-selectors-and-box-model/08-015.html",
       "title": "Вариант 08 — Тёплая чашка, пара 15"
     },
     {
-      "source": "spo/015/variants/09.md",
-      "output": "spo/css-selectors-and-box-model/variants/09.html",
+      "source": "spo/015/09-015.md",
+      "output": "spo/css-selectors-and-box-model/09-015.html",
       "title": "Вариант 09 — Тёплая чашка, пара 15"
     },
     {
-      "source": "spo/015/variants/10.md",
-      "output": "spo/css-selectors-and-box-model/variants/10.html",
+      "source": "spo/015/10-015.md",
+      "output": "spo/css-selectors-and-box-model/10-015.html",
       "title": "Вариант 10 — Музей рядом, пара 15"
     },
     {
-      "source": "spo/015/variants/11.md",
-      "output": "spo/css-selectors-and-box-model/variants/11.html",
+      "source": "spo/015/11-015.md",
+      "output": "spo/css-selectors-and-box-model/11-015.html",
       "title": "Вариант 11 — Музей рядом, пара 15"
     },
     {
-      "source": "spo/015/variants/12.md",
-      "output": "spo/css-selectors-and-box-model/variants/12.html",
+      "source": "spo/015/12-015.md",
+      "output": "spo/css-selectors-and-box-model/12-015.html",
       "title": "Вариант 12 — Музей рядом, пара 15"
     },
     {
-      "source": "spo/015/variants/13.md",
-      "output": "spo/css-selectors-and-box-model/variants/13.html",
+      "source": "spo/015/13-015.md",
+      "output": "spo/css-selectors-and-box-model/13-015.html",
       "title": "Вариант 13 — Спорт после пар, пара 15"
     },
     {
-      "source": "spo/015/variants/14.md",
-      "output": "spo/css-selectors-and-box-model/variants/14.html",
+      "source": "spo/015/14-015.md",
+      "output": "spo/css-selectors-and-box-model/14-015.html",
       "title": "Вариант 14 — Спорт после пар, пара 15"
     },
     {
-      "source": "spo/015/variants/15.md",
-      "output": "spo/css-selectors-and-box-model/variants/15.html",
+      "source": "spo/015/15-015.md",
+      "output": "spo/css-selectors-and-box-model/15-015.html",
       "title": "Вариант 15 — Спорт после пар, пара 15"
     },
     {
-      "source": "spo/015/variants/16.md",
-      "output": "spo/css-selectors-and-box-model/variants/16.html",
+      "source": "spo/015/16-015.md",
+      "output": "spo/css-selectors-and-box-model/16-015.html",
       "title": "Вариант 16 — Зелёный уголок, пара 15"
     },
     {
-      "source": "spo/015/variants/17.md",
-      "output": "spo/css-selectors-and-box-model/variants/17.html",
+      "source": "spo/015/17-015.md",
+      "output": "spo/css-selectors-and-box-model/17-015.html",
       "title": "Вариант 17 — Зелёный уголок, пара 15"
     },
     {
-      "source": "spo/015/variants/18.md",
-      "output": "spo/css-selectors-and-box-model/variants/18.html",
+      "source": "spo/015/18-015.md",
+      "output": "spo/css-selectors-and-box-model/18-015.html",
       "title": "Вариант 18 — Зелёный уголок, пара 15"
     },
     {
-      "source": "spo/015/variants/19.md",
-      "output": "spo/css-selectors-and-box-model/variants/19.html",
+      "source": "spo/015/19-015.md",
+      "output": "spo/css-selectors-and-box-model/19-015.html",
       "title": "Вариант 19 — Мастерская идей, пара 15"
     },
     {
-      "source": "spo/015/variants/20.md",
-      "output": "spo/css-selectors-and-box-model/variants/20.html",
+      "source": "spo/015/20-015.md",
+      "output": "spo/css-selectors-and-box-model/20-015.html",
       "title": "Вариант 20 — Мастерская идей, пара 15"
     },
     {
-      "source": "spo/015/variants/21.md",
-      "output": "spo/css-selectors-and-box-model/variants/21.html",
+      "source": "spo/015/21-015.md",
+      "output": "spo/css-selectors-and-box-model/21-015.html",
       "title": "Вариант 21 — Мастерская идей, пара 15"
     },
     {
-      "source": "spo/015/variants/22.md",
-      "output": "spo/css-selectors-and-box-model/variants/22.html",
+      "source": "spo/015/22-015.md",
+      "output": "spo/css-selectors-and-box-model/22-015.html",
       "title": "Вариант 22 — Друг из приюта, пара 15"
     },
     {
-      "source": "spo/015/variants/23.md",
-      "output": "spo/css-selectors-and-box-model/variants/23.html",
+      "source": "spo/015/23-015.md",
+      "output": "spo/css-selectors-and-box-model/23-015.html",
       "title": "Вариант 23 — Друг из приюта, пара 15"
     },
     {
-      "source": "spo/015/variants/24.md",
-      "output": "spo/css-selectors-and-box-model/variants/24.html",
+      "source": "spo/015/24-015.md",
+      "output": "spo/css-selectors-and-box-model/24-015.html",
       "title": "Вариант 24 — Друг из приюта, пара 15"
     },
     {
-      "source": "spo/015/variants/25.md",
-      "output": "spo/css-selectors-and-box-model/variants/25.html",
+      "source": "spo/015/25-015.md",
+      "output": "spo/css-selectors-and-box-model/25-015.html",
       "title": "Вариант 25 — Экопункт, пара 15"
     },
     {
-      "source": "spo/015/variants/26.md",
-      "output": "spo/css-selectors-and-box-model/variants/26.html",
+      "source": "spo/015/26-015.md",
+      "output": "spo/css-selectors-and-box-model/26-015.html",
       "title": "Вариант 26 — Экопункт, пара 15"
     },
     {
-      "source": "spo/015/variants/27.md",
-      "output": "spo/css-selectors-and-box-model/variants/27.html",
+      "source": "spo/015/27-015.md",
+      "output": "spo/css-selectors-and-box-model/27-015.html",
       "title": "Вариант 27 — Экопункт, пара 15"
     },
     {
-      "source": "spo/015/variants/28.md",
-      "output": "spo/css-selectors-and-box-model/variants/28.html",
+      "source": "spo/015/28-015.md",
+      "output": "spo/css-selectors-and-box-model/28-015.html",
       "title": "Вариант 28 — Афиша вечера, пара 15"
     },
     {
-      "source": "spo/015/variants/29.md",
-      "output": "spo/css-selectors-and-box-model/variants/29.html",
+      "source": "spo/015/29-015.md",
+      "output": "spo/css-selectors-and-box-model/29-015.html",
       "title": "Вариант 29 — Афиша вечера, пара 15"
     },
     {
-      "source": "spo/015/variants/30.md",
-      "output": "spo/css-selectors-and-box-model/variants/30.html",
+      "source": "spo/015/30-015.md",
+      "output": "spo/css-selectors-and-box-model/30-015.html",
       "title": "Вариант 30 — Афиша вечера, пара 15"
     },
     {
-      "source": "spo/015/variants/31.md",
-      "output": "spo/css-selectors-and-box-model/variants/31.html",
+      "source": "spo/015/31-015.md",
+      "output": "spo/css-selectors-and-box-model/31-015.html",
       "title": "Вариант 31 — Учебный клуб, пара 15"
     },
     {
-      "source": "spo/015/variants/32.md",
-      "output": "spo/css-selectors-and-box-model/variants/32.html",
+      "source": "spo/015/32-015.md",
+      "output": "spo/css-selectors-and-box-model/32-015.html",
       "title": "Вариант 32 — Учебный клуб, пара 15"
     },
     {
-      "source": "spo/015/variants/33.md",
-      "output": "spo/css-selectors-and-box-model/variants/33.html",
+      "source": "spo/015/33-015.md",
+      "output": "spo/css-selectors-and-box-model/33-015.html",
       "title": "Вариант 33 — Учебный клуб, пара 15"
     },
     {
-      "source": "spo/015/variants/34.md",
-      "output": "spo/css-selectors-and-box-model/variants/34.html",
+      "source": "spo/015/34-015.md",
+      "output": "spo/css-selectors-and-box-model/34-015.html",
       "title": "Вариант 34 — Снаряжение рядом, пара 15"
     },
     {
-      "source": "spo/015/variants/35.md",
-      "output": "spo/css-selectors-and-box-model/variants/35.html",
+      "source": "spo/015/35-015.md",
+      "output": "spo/css-selectors-and-box-model/35-015.html",
       "title": "Вариант 35 — Снаряжение рядом, пара 15"
     },
     {
-      "source": "spo/015/variants/36.md",
-      "output": "spo/css-selectors-and-box-model/variants/36.html",
+      "source": "spo/015/36-015.md",
+      "output": "spo/css-selectors-and-box-model/36-015.html",
       "title": "Вариант 36 — Снаряжение рядом, пара 15"
     },
     {
-      "source": "spo/015/variants/37.md",
-      "output": "spo/css-selectors-and-box-model/variants/37.html",
+      "source": "spo/015/37-015.md",
+      "output": "spo/css-selectors-and-box-model/37-015.html",
       "title": "Вариант 37 — Космос рядом, пара 15"
     },
     {
-      "source": "spo/015/variants/38.md",
-      "output": "spo/css-selectors-and-box-model/variants/38.html",
+      "source": "spo/015/38-015.md",
+      "output": "spo/css-selectors-and-box-model/38-015.html",
       "title": "Вариант 38 — Космос рядом, пара 15"
     },
     {
-      "source": "spo/015/variants/39.md",
-      "output": "spo/css-selectors-and-box-model/variants/39.html",
+      "source": "spo/015/39-015.md",
+      "output": "spo/css-selectors-and-box-model/39-015.html",
       "title": "Вариант 39 — Космос рядом, пара 15"
+    },
+    {
+      "source": "spo/015/css-selectors-and-box-model.md",
+      "output": "spo/css-selectors-and-box-model/index.html",
+      "title": "CSS: селекторы, каскад, размеры, отступы и блочная модель"
     },
     {
       "source": "spo/005/events-and-state.md",
@@ -287,14 +287,14 @@
       "title": "Собираем первый экран"
     },
     {
+      "source": "spo/011/00-011.md",
+      "output": "spo/first-web-project/00-011.html",
+      "title": "Учебный вариант 00 — пара 11"
+    },
+    {
       "source": "spo/011/first-web-project.md",
       "output": "spo/first-web-project/index.html",
       "title": "Проверка HTML-страницы, списки и ссылки"
-    },
-    {
-      "source": "spo/011/variants/00.md",
-      "output": "spo/first-web-project/variants/00.html",
-      "title": "Учебный вариант 00 — пара 11"
     },
     {
       "source": "spo/006/visual-interface-design.md",
@@ -307,14 +307,19 @@
       "title": "Flexbox, viewport и адаптивный интерфейс мобильной страницы"
     },
     {
+      "source": "spo/013/00-013.md",
+      "output": "spo/home-page-and-catalog/00-013.html",
+      "title": "Учебный вариант 00 — пара 13"
+    },
+    {
       "source": "spo/013/home-page-and-catalog.md",
       "output": "spo/home-page-and-catalog/index.html",
       "title": "Разметка главной страницы и каталога своего приложения"
     },
     {
-      "source": "spo/013/variants/00.md",
-      "output": "spo/home-page-and-catalog/variants/00.html",
-      "title": "Учебный вариант 00 — пара 13"
+      "source": "spo/012/00-012.md",
+      "output": "spo/html-content-structure/00-012.html",
+      "title": "Учебный вариант 00 — пара 12"
     },
     {
       "source": "spo/012/html-content-structure.md",
@@ -322,9 +327,9 @@
       "title": "Разбор HTML-страницы и первые стили CSS"
     },
     {
-      "source": "spo/012/variants/00.md",
-      "output": "spo/html-content-structure/variants/00.html",
-      "title": "Учебный вариант 00 — пара 12"
+      "source": "spo/014/00-014.md",
+      "output": "spo/html-form/00-014.html",
+      "title": "Учебный вариант 00 — пара 14"
     },
     {
       "source": "spo/014/html-form.md",
@@ -332,24 +337,19 @@
       "title": "HTML-форма: поля, подписи, кнопки и встроенная проверка ввода"
     },
     {
-      "source": "spo/014/variants/00.md",
-      "output": "spo/html-form/variants/00.html",
-      "title": "Учебный вариант 00 — пара 14"
-    },
-    {
       "source": "spo/README.md",
       "output": "spo/index.html",
       "title": "СПО — разработка мобильных приложений"
     },
     {
+      "source": "spo/019/00-019.md",
+      "output": "spo/javascript-values-and-input/00-019.html",
+      "title": "Учебный вариант 00 — пара 19"
+    },
+    {
       "source": "spo/019/javascript-values-and-input.md",
       "output": "spo/javascript-values-and-input/index.html",
       "title": "JavaScript — переменные, типы, операции и преобразование пользовательского ввода"
-    },
-    {
-      "source": "spo/019/variants/00.md",
-      "output": "spo/javascript-values-and-input/variants/00.html",
-      "title": "Учебный вариант 00 — пара 19"
     },
     {
       "source": "spo/003/mit-app-inventor.md",
@@ -362,14 +362,14 @@
       "title": "Какие бывают мобильные приложения"
     },
     {
+      "source": "spo/010/00-010.md",
+      "output": "spo/mobile-web-page/00-010.html",
+      "title": "Учебный вариант 00 — пара 10"
+    },
+    {
       "source": "spo/010/mobile-web-page.md",
       "output": "spo/mobile-web-page/index.html",
       "title": "Первая HTML-страница: самостоятельная практическая работа"
-    },
-    {
-      "source": "spo/010/variants/00.md",
-      "output": "spo/mobile-web-page/variants/00.html",
-      "title": "Учебный вариант 00 — пара 10"
     },
     {
       "source": "spo/008/multi-screen-app-refinement.md",
@@ -382,414 +382,414 @@
       "title": "Проверка приложения на телефоне и разбор событий и переходов"
     },
     {
+      "source": "spo/018/00-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/00-018.html",
+      "title": "Учебный вариант 00 — пара 18"
+    },
+    {
+      "source": "spo/018/01-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/01-018.html",
+      "title": "Вариант 01 — На тропе, пара 18"
+    },
+    {
+      "source": "spo/018/02-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/02-018.html",
+      "title": "Вариант 02 — На тропе, пара 18"
+    },
+    {
+      "source": "spo/018/03-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/03-018.html",
+      "title": "Вариант 03 — На тропе, пара 18"
+    },
+    {
+      "source": "spo/018/04-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/04-018.html",
+      "title": "Вариант 04 — Книжная полка, пара 18"
+    },
+    {
+      "source": "spo/018/05-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/05-018.html",
+      "title": "Вариант 05 — Книжная полка, пара 18"
+    },
+    {
+      "source": "spo/018/06-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/06-018.html",
+      "title": "Вариант 06 — Книжная полка, пара 18"
+    },
+    {
+      "source": "spo/018/07-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/07-018.html",
+      "title": "Вариант 07 — Тёплая чашка, пара 18"
+    },
+    {
+      "source": "spo/018/08-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/08-018.html",
+      "title": "Вариант 08 — Тёплая чашка, пара 18"
+    },
+    {
+      "source": "spo/018/09-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/09-018.html",
+      "title": "Вариант 09 — Тёплая чашка, пара 18"
+    },
+    {
+      "source": "spo/018/10-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/10-018.html",
+      "title": "Вариант 10 — Музей рядом, пара 18"
+    },
+    {
+      "source": "spo/018/11-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/11-018.html",
+      "title": "Вариант 11 — Музей рядом, пара 18"
+    },
+    {
+      "source": "spo/018/12-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/12-018.html",
+      "title": "Вариант 12 — Музей рядом, пара 18"
+    },
+    {
+      "source": "spo/018/13-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/13-018.html",
+      "title": "Вариант 13 — Спорт после пар, пара 18"
+    },
+    {
+      "source": "spo/018/14-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/14-018.html",
+      "title": "Вариант 14 — Спорт после пар, пара 18"
+    },
+    {
+      "source": "spo/018/15-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/15-018.html",
+      "title": "Вариант 15 — Спорт после пар, пара 18"
+    },
+    {
+      "source": "spo/018/16-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/16-018.html",
+      "title": "Вариант 16 — Зелёный уголок, пара 18"
+    },
+    {
+      "source": "spo/018/17-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/17-018.html",
+      "title": "Вариант 17 — Зелёный уголок, пара 18"
+    },
+    {
+      "source": "spo/018/18-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/18-018.html",
+      "title": "Вариант 18 — Зелёный уголок, пара 18"
+    },
+    {
+      "source": "spo/018/19-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/19-018.html",
+      "title": "Вариант 19 — Мастерская идей, пара 18"
+    },
+    {
+      "source": "spo/018/20-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/20-018.html",
+      "title": "Вариант 20 — Мастерская идей, пара 18"
+    },
+    {
+      "source": "spo/018/21-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/21-018.html",
+      "title": "Вариант 21 — Мастерская идей, пара 18"
+    },
+    {
+      "source": "spo/018/22-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/22-018.html",
+      "title": "Вариант 22 — Друг из приюта, пара 18"
+    },
+    {
+      "source": "spo/018/23-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/23-018.html",
+      "title": "Вариант 23 — Друг из приюта, пара 18"
+    },
+    {
+      "source": "spo/018/24-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/24-018.html",
+      "title": "Вариант 24 — Друг из приюта, пара 18"
+    },
+    {
+      "source": "spo/018/25-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/25-018.html",
+      "title": "Вариант 25 — Экопункт, пара 18"
+    },
+    {
+      "source": "spo/018/26-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/26-018.html",
+      "title": "Вариант 26 — Экопункт, пара 18"
+    },
+    {
+      "source": "spo/018/27-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/27-018.html",
+      "title": "Вариант 27 — Экопункт, пара 18"
+    },
+    {
+      "source": "spo/018/28-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/28-018.html",
+      "title": "Вариант 28 — Афиша вечера, пара 18"
+    },
+    {
+      "source": "spo/018/29-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/29-018.html",
+      "title": "Вариант 29 — Афиша вечера, пара 18"
+    },
+    {
+      "source": "spo/018/30-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/30-018.html",
+      "title": "Вариант 30 — Афиша вечера, пара 18"
+    },
+    {
+      "source": "spo/018/31-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/31-018.html",
+      "title": "Вариант 31 — Учебный клуб, пара 18"
+    },
+    {
+      "source": "spo/018/32-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/32-018.html",
+      "title": "Вариант 32 — Учебный клуб, пара 18"
+    },
+    {
+      "source": "spo/018/33-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/33-018.html",
+      "title": "Вариант 33 — Учебный клуб, пара 18"
+    },
+    {
+      "source": "spo/018/34-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/34-018.html",
+      "title": "Вариант 34 — Снаряжение рядом, пара 18"
+    },
+    {
+      "source": "spo/018/35-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/35-018.html",
+      "title": "Вариант 35 — Снаряжение рядом, пара 18"
+    },
+    {
+      "source": "spo/018/36-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/36-018.html",
+      "title": "Вариант 36 — Снаряжение рядом, пара 18"
+    },
+    {
+      "source": "spo/018/37-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/37-018.html",
+      "title": "Вариант 37 — Космос рядом, пара 18"
+    },
+    {
+      "source": "spo/018/38-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/38-018.html",
+      "title": "Вариант 38 — Космос рядом, пара 18"
+    },
+    {
+      "source": "spo/018/39-018.md",
+      "output": "spo/responsive-layout-and-browser-testing/39-018.html",
+      "title": "Вариант 39 — Космос рядом, пара 18"
+    },
+    {
       "source": "spo/018/responsive-layout-and-browser-testing.md",
       "output": "spo/responsive-layout-and-browser-testing/index.html",
       "title": "Адаптация интерфейса к узкому экрану и проверка в браузере"
     },
     {
-      "source": "spo/018/variants/00.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/00.html",
-      "title": "Учебный вариант 00 — пара 18"
+      "source": "spo/016/00-016.md",
+      "output": "spo/styling-pages-cards-and-form/00-016.html",
+      "title": "Учебный вариант 00 — пара 16"
     },
     {
-      "source": "spo/018/variants/01.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/01.html",
-      "title": "Вариант 01 — На тропе, пара 18"
+      "source": "spo/016/01-016.md",
+      "output": "spo/styling-pages-cards-and-form/01-016.html",
+      "title": "Вариант 01 — На тропе, пара 16"
     },
     {
-      "source": "spo/018/variants/02.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/02.html",
-      "title": "Вариант 02 — На тропе, пара 18"
+      "source": "spo/016/02-016.md",
+      "output": "spo/styling-pages-cards-and-form/02-016.html",
+      "title": "Вариант 02 — На тропе, пара 16"
     },
     {
-      "source": "spo/018/variants/03.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/03.html",
-      "title": "Вариант 03 — На тропе, пара 18"
+      "source": "spo/016/03-016.md",
+      "output": "spo/styling-pages-cards-and-form/03-016.html",
+      "title": "Вариант 03 — На тропе, пара 16"
     },
     {
-      "source": "spo/018/variants/04.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/04.html",
-      "title": "Вариант 04 — Книжная полка, пара 18"
+      "source": "spo/016/04-016.md",
+      "output": "spo/styling-pages-cards-and-form/04-016.html",
+      "title": "Вариант 04 — Книжная полка, пара 16"
     },
     {
-      "source": "spo/018/variants/05.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/05.html",
-      "title": "Вариант 05 — Книжная полка, пара 18"
+      "source": "spo/016/05-016.md",
+      "output": "spo/styling-pages-cards-and-form/05-016.html",
+      "title": "Вариант 05 — Книжная полка, пара 16"
     },
     {
-      "source": "spo/018/variants/06.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/06.html",
-      "title": "Вариант 06 — Книжная полка, пара 18"
+      "source": "spo/016/06-016.md",
+      "output": "spo/styling-pages-cards-and-form/06-016.html",
+      "title": "Вариант 06 — Книжная полка, пара 16"
     },
     {
-      "source": "spo/018/variants/07.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/07.html",
-      "title": "Вариант 07 — Тёплая чашка, пара 18"
+      "source": "spo/016/07-016.md",
+      "output": "spo/styling-pages-cards-and-form/07-016.html",
+      "title": "Вариант 07 — Тёплая чашка, пара 16"
     },
     {
-      "source": "spo/018/variants/08.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/08.html",
-      "title": "Вариант 08 — Тёплая чашка, пара 18"
+      "source": "spo/016/08-016.md",
+      "output": "spo/styling-pages-cards-and-form/08-016.html",
+      "title": "Вариант 08 — Тёплая чашка, пара 16"
     },
     {
-      "source": "spo/018/variants/09.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/09.html",
-      "title": "Вариант 09 — Тёплая чашка, пара 18"
+      "source": "spo/016/09-016.md",
+      "output": "spo/styling-pages-cards-and-form/09-016.html",
+      "title": "Вариант 09 — Тёплая чашка, пара 16"
     },
     {
-      "source": "spo/018/variants/10.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/10.html",
-      "title": "Вариант 10 — Музей рядом, пара 18"
+      "source": "spo/016/10-016.md",
+      "output": "spo/styling-pages-cards-and-form/10-016.html",
+      "title": "Вариант 10 — Музей рядом, пара 16"
     },
     {
-      "source": "spo/018/variants/11.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/11.html",
-      "title": "Вариант 11 — Музей рядом, пара 18"
+      "source": "spo/016/11-016.md",
+      "output": "spo/styling-pages-cards-and-form/11-016.html",
+      "title": "Вариант 11 — Музей рядом, пара 16"
     },
     {
-      "source": "spo/018/variants/12.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/12.html",
-      "title": "Вариант 12 — Музей рядом, пара 18"
+      "source": "spo/016/12-016.md",
+      "output": "spo/styling-pages-cards-and-form/12-016.html",
+      "title": "Вариант 12 — Музей рядом, пара 16"
     },
     {
-      "source": "spo/018/variants/13.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/13.html",
-      "title": "Вариант 13 — Спорт после пар, пара 18"
+      "source": "spo/016/13-016.md",
+      "output": "spo/styling-pages-cards-and-form/13-016.html",
+      "title": "Вариант 13 — Спорт после пар, пара 16"
     },
     {
-      "source": "spo/018/variants/14.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/14.html",
-      "title": "Вариант 14 — Спорт после пар, пара 18"
+      "source": "spo/016/14-016.md",
+      "output": "spo/styling-pages-cards-and-form/14-016.html",
+      "title": "Вариант 14 — Спорт после пар, пара 16"
     },
     {
-      "source": "spo/018/variants/15.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/15.html",
-      "title": "Вариант 15 — Спорт после пар, пара 18"
+      "source": "spo/016/15-016.md",
+      "output": "spo/styling-pages-cards-and-form/15-016.html",
+      "title": "Вариант 15 — Спорт после пар, пара 16"
     },
     {
-      "source": "spo/018/variants/16.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/16.html",
-      "title": "Вариант 16 — Зелёный уголок, пара 18"
+      "source": "spo/016/16-016.md",
+      "output": "spo/styling-pages-cards-and-form/16-016.html",
+      "title": "Вариант 16 — Зелёный уголок, пара 16"
     },
     {
-      "source": "spo/018/variants/17.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/17.html",
-      "title": "Вариант 17 — Зелёный уголок, пара 18"
+      "source": "spo/016/17-016.md",
+      "output": "spo/styling-pages-cards-and-form/17-016.html",
+      "title": "Вариант 17 — Зелёный уголок, пара 16"
     },
     {
-      "source": "spo/018/variants/18.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/18.html",
-      "title": "Вариант 18 — Зелёный уголок, пара 18"
+      "source": "spo/016/18-016.md",
+      "output": "spo/styling-pages-cards-and-form/18-016.html",
+      "title": "Вариант 18 — Зелёный уголок, пара 16"
     },
     {
-      "source": "spo/018/variants/19.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/19.html",
-      "title": "Вариант 19 — Мастерская идей, пара 18"
+      "source": "spo/016/19-016.md",
+      "output": "spo/styling-pages-cards-and-form/19-016.html",
+      "title": "Вариант 19 — Мастерская идей, пара 16"
     },
     {
-      "source": "spo/018/variants/20.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/20.html",
-      "title": "Вариант 20 — Мастерская идей, пара 18"
+      "source": "spo/016/20-016.md",
+      "output": "spo/styling-pages-cards-and-form/20-016.html",
+      "title": "Вариант 20 — Мастерская идей, пара 16"
     },
     {
-      "source": "spo/018/variants/21.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/21.html",
-      "title": "Вариант 21 — Мастерская идей, пара 18"
+      "source": "spo/016/21-016.md",
+      "output": "spo/styling-pages-cards-and-form/21-016.html",
+      "title": "Вариант 21 — Мастерская идей, пара 16"
     },
     {
-      "source": "spo/018/variants/22.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/22.html",
-      "title": "Вариант 22 — Друг из приюта, пара 18"
+      "source": "spo/016/22-016.md",
+      "output": "spo/styling-pages-cards-and-form/22-016.html",
+      "title": "Вариант 22 — Друг из приюта, пара 16"
     },
     {
-      "source": "spo/018/variants/23.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/23.html",
-      "title": "Вариант 23 — Друг из приюта, пара 18"
+      "source": "spo/016/23-016.md",
+      "output": "spo/styling-pages-cards-and-form/23-016.html",
+      "title": "Вариант 23 — Друг из приюта, пара 16"
     },
     {
-      "source": "spo/018/variants/24.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/24.html",
-      "title": "Вариант 24 — Друг из приюта, пара 18"
+      "source": "spo/016/24-016.md",
+      "output": "spo/styling-pages-cards-and-form/24-016.html",
+      "title": "Вариант 24 — Друг из приюта, пара 16"
     },
     {
-      "source": "spo/018/variants/25.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/25.html",
-      "title": "Вариант 25 — Экопункт, пара 18"
+      "source": "spo/016/25-016.md",
+      "output": "spo/styling-pages-cards-and-form/25-016.html",
+      "title": "Вариант 25 — Экопункт, пара 16"
     },
     {
-      "source": "spo/018/variants/26.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/26.html",
-      "title": "Вариант 26 — Экопункт, пара 18"
+      "source": "spo/016/26-016.md",
+      "output": "spo/styling-pages-cards-and-form/26-016.html",
+      "title": "Вариант 26 — Экопункт, пара 16"
     },
     {
-      "source": "spo/018/variants/27.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/27.html",
-      "title": "Вариант 27 — Экопункт, пара 18"
+      "source": "spo/016/27-016.md",
+      "output": "spo/styling-pages-cards-and-form/27-016.html",
+      "title": "Вариант 27 — Экопункт, пара 16"
     },
     {
-      "source": "spo/018/variants/28.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/28.html",
-      "title": "Вариант 28 — Афиша вечера, пара 18"
+      "source": "spo/016/28-016.md",
+      "output": "spo/styling-pages-cards-and-form/28-016.html",
+      "title": "Вариант 28 — Афиша вечера, пара 16"
     },
     {
-      "source": "spo/018/variants/29.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/29.html",
-      "title": "Вариант 29 — Афиша вечера, пара 18"
+      "source": "spo/016/29-016.md",
+      "output": "spo/styling-pages-cards-and-form/29-016.html",
+      "title": "Вариант 29 — Афиша вечера, пара 16"
     },
     {
-      "source": "spo/018/variants/30.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/30.html",
-      "title": "Вариант 30 — Афиша вечера, пара 18"
+      "source": "spo/016/30-016.md",
+      "output": "spo/styling-pages-cards-and-form/30-016.html",
+      "title": "Вариант 30 — Афиша вечера, пара 16"
     },
     {
-      "source": "spo/018/variants/31.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/31.html",
-      "title": "Вариант 31 — Учебный клуб, пара 18"
+      "source": "spo/016/31-016.md",
+      "output": "spo/styling-pages-cards-and-form/31-016.html",
+      "title": "Вариант 31 — Учебный клуб, пара 16"
     },
     {
-      "source": "spo/018/variants/32.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/32.html",
-      "title": "Вариант 32 — Учебный клуб, пара 18"
+      "source": "spo/016/32-016.md",
+      "output": "spo/styling-pages-cards-and-form/32-016.html",
+      "title": "Вариант 32 — Учебный клуб, пара 16"
     },
     {
-      "source": "spo/018/variants/33.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/33.html",
-      "title": "Вариант 33 — Учебный клуб, пара 18"
+      "source": "spo/016/33-016.md",
+      "output": "spo/styling-pages-cards-and-form/33-016.html",
+      "title": "Вариант 33 — Учебный клуб, пара 16"
     },
     {
-      "source": "spo/018/variants/34.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/34.html",
-      "title": "Вариант 34 — Снаряжение рядом, пара 18"
+      "source": "spo/016/34-016.md",
+      "output": "spo/styling-pages-cards-and-form/34-016.html",
+      "title": "Вариант 34 — Снаряжение рядом, пара 16"
     },
     {
-      "source": "spo/018/variants/35.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/35.html",
-      "title": "Вариант 35 — Снаряжение рядом, пара 18"
+      "source": "spo/016/35-016.md",
+      "output": "spo/styling-pages-cards-and-form/35-016.html",
+      "title": "Вариант 35 — Снаряжение рядом, пара 16"
     },
     {
-      "source": "spo/018/variants/36.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/36.html",
-      "title": "Вариант 36 — Снаряжение рядом, пара 18"
+      "source": "spo/016/36-016.md",
+      "output": "spo/styling-pages-cards-and-form/36-016.html",
+      "title": "Вариант 36 — Снаряжение рядом, пара 16"
     },
     {
-      "source": "spo/018/variants/37.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/37.html",
-      "title": "Вариант 37 — Космос рядом, пара 18"
+      "source": "spo/016/37-016.md",
+      "output": "spo/styling-pages-cards-and-form/37-016.html",
+      "title": "Вариант 37 — Космос рядом, пара 16"
     },
     {
-      "source": "spo/018/variants/38.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/38.html",
-      "title": "Вариант 38 — Космос рядом, пара 18"
+      "source": "spo/016/38-016.md",
+      "output": "spo/styling-pages-cards-and-form/38-016.html",
+      "title": "Вариант 38 — Космос рядом, пара 16"
     },
     {
-      "source": "spo/018/variants/39.md",
-      "output": "spo/responsive-layout-and-browser-testing/variants/39.html",
-      "title": "Вариант 39 — Космос рядом, пара 18"
+      "source": "spo/016/39-016.md",
+      "output": "spo/styling-pages-cards-and-form/39-016.html",
+      "title": "Вариант 39 — Космос рядом, пара 16"
     },
     {
       "source": "spo/016/styling-pages-cards-and-form.md",
       "output": "spo/styling-pages-cards-and-form/index.html",
       "title": "Оформление страниц, карточек каталога и формы"
-    },
-    {
-      "source": "spo/016/variants/00.md",
-      "output": "spo/styling-pages-cards-and-form/variants/00.html",
-      "title": "Учебный вариант 00 — пара 16"
-    },
-    {
-      "source": "spo/016/variants/01.md",
-      "output": "spo/styling-pages-cards-and-form/variants/01.html",
-      "title": "Вариант 01 — На тропе, пара 16"
-    },
-    {
-      "source": "spo/016/variants/02.md",
-      "output": "spo/styling-pages-cards-and-form/variants/02.html",
-      "title": "Вариант 02 — На тропе, пара 16"
-    },
-    {
-      "source": "spo/016/variants/03.md",
-      "output": "spo/styling-pages-cards-and-form/variants/03.html",
-      "title": "Вариант 03 — На тропе, пара 16"
-    },
-    {
-      "source": "spo/016/variants/04.md",
-      "output": "spo/styling-pages-cards-and-form/variants/04.html",
-      "title": "Вариант 04 — Книжная полка, пара 16"
-    },
-    {
-      "source": "spo/016/variants/05.md",
-      "output": "spo/styling-pages-cards-and-form/variants/05.html",
-      "title": "Вариант 05 — Книжная полка, пара 16"
-    },
-    {
-      "source": "spo/016/variants/06.md",
-      "output": "spo/styling-pages-cards-and-form/variants/06.html",
-      "title": "Вариант 06 — Книжная полка, пара 16"
-    },
-    {
-      "source": "spo/016/variants/07.md",
-      "output": "spo/styling-pages-cards-and-form/variants/07.html",
-      "title": "Вариант 07 — Тёплая чашка, пара 16"
-    },
-    {
-      "source": "spo/016/variants/08.md",
-      "output": "spo/styling-pages-cards-and-form/variants/08.html",
-      "title": "Вариант 08 — Тёплая чашка, пара 16"
-    },
-    {
-      "source": "spo/016/variants/09.md",
-      "output": "spo/styling-pages-cards-and-form/variants/09.html",
-      "title": "Вариант 09 — Тёплая чашка, пара 16"
-    },
-    {
-      "source": "spo/016/variants/10.md",
-      "output": "spo/styling-pages-cards-and-form/variants/10.html",
-      "title": "Вариант 10 — Музей рядом, пара 16"
-    },
-    {
-      "source": "spo/016/variants/11.md",
-      "output": "spo/styling-pages-cards-and-form/variants/11.html",
-      "title": "Вариант 11 — Музей рядом, пара 16"
-    },
-    {
-      "source": "spo/016/variants/12.md",
-      "output": "spo/styling-pages-cards-and-form/variants/12.html",
-      "title": "Вариант 12 — Музей рядом, пара 16"
-    },
-    {
-      "source": "spo/016/variants/13.md",
-      "output": "spo/styling-pages-cards-and-form/variants/13.html",
-      "title": "Вариант 13 — Спорт после пар, пара 16"
-    },
-    {
-      "source": "spo/016/variants/14.md",
-      "output": "spo/styling-pages-cards-and-form/variants/14.html",
-      "title": "Вариант 14 — Спорт после пар, пара 16"
-    },
-    {
-      "source": "spo/016/variants/15.md",
-      "output": "spo/styling-pages-cards-and-form/variants/15.html",
-      "title": "Вариант 15 — Спорт после пар, пара 16"
-    },
-    {
-      "source": "spo/016/variants/16.md",
-      "output": "spo/styling-pages-cards-and-form/variants/16.html",
-      "title": "Вариант 16 — Зелёный уголок, пара 16"
-    },
-    {
-      "source": "spo/016/variants/17.md",
-      "output": "spo/styling-pages-cards-and-form/variants/17.html",
-      "title": "Вариант 17 — Зелёный уголок, пара 16"
-    },
-    {
-      "source": "spo/016/variants/18.md",
-      "output": "spo/styling-pages-cards-and-form/variants/18.html",
-      "title": "Вариант 18 — Зелёный уголок, пара 16"
-    },
-    {
-      "source": "spo/016/variants/19.md",
-      "output": "spo/styling-pages-cards-and-form/variants/19.html",
-      "title": "Вариант 19 — Мастерская идей, пара 16"
-    },
-    {
-      "source": "spo/016/variants/20.md",
-      "output": "spo/styling-pages-cards-and-form/variants/20.html",
-      "title": "Вариант 20 — Мастерская идей, пара 16"
-    },
-    {
-      "source": "spo/016/variants/21.md",
-      "output": "spo/styling-pages-cards-and-form/variants/21.html",
-      "title": "Вариант 21 — Мастерская идей, пара 16"
-    },
-    {
-      "source": "spo/016/variants/22.md",
-      "output": "spo/styling-pages-cards-and-form/variants/22.html",
-      "title": "Вариант 22 — Друг из приюта, пара 16"
-    },
-    {
-      "source": "spo/016/variants/23.md",
-      "output": "spo/styling-pages-cards-and-form/variants/23.html",
-      "title": "Вариант 23 — Друг из приюта, пара 16"
-    },
-    {
-      "source": "spo/016/variants/24.md",
-      "output": "spo/styling-pages-cards-and-form/variants/24.html",
-      "title": "Вариант 24 — Друг из приюта, пара 16"
-    },
-    {
-      "source": "spo/016/variants/25.md",
-      "output": "spo/styling-pages-cards-and-form/variants/25.html",
-      "title": "Вариант 25 — Экопункт, пара 16"
-    },
-    {
-      "source": "spo/016/variants/26.md",
-      "output": "spo/styling-pages-cards-and-form/variants/26.html",
-      "title": "Вариант 26 — Экопункт, пара 16"
-    },
-    {
-      "source": "spo/016/variants/27.md",
-      "output": "spo/styling-pages-cards-and-form/variants/27.html",
-      "title": "Вариант 27 — Экопункт, пара 16"
-    },
-    {
-      "source": "spo/016/variants/28.md",
-      "output": "spo/styling-pages-cards-and-form/variants/28.html",
-      "title": "Вариант 28 — Афиша вечера, пара 16"
-    },
-    {
-      "source": "spo/016/variants/29.md",
-      "output": "spo/styling-pages-cards-and-form/variants/29.html",
-      "title": "Вариант 29 — Афиша вечера, пара 16"
-    },
-    {
-      "source": "spo/016/variants/30.md",
-      "output": "spo/styling-pages-cards-and-form/variants/30.html",
-      "title": "Вариант 30 — Афиша вечера, пара 16"
-    },
-    {
-      "source": "spo/016/variants/31.md",
-      "output": "spo/styling-pages-cards-and-form/variants/31.html",
-      "title": "Вариант 31 — Учебный клуб, пара 16"
-    },
-    {
-      "source": "spo/016/variants/32.md",
-      "output": "spo/styling-pages-cards-and-form/variants/32.html",
-      "title": "Вариант 32 — Учебный клуб, пара 16"
-    },
-    {
-      "source": "spo/016/variants/33.md",
-      "output": "spo/styling-pages-cards-and-form/variants/33.html",
-      "title": "Вариант 33 — Учебный клуб, пара 16"
-    },
-    {
-      "source": "spo/016/variants/34.md",
-      "output": "spo/styling-pages-cards-and-form/variants/34.html",
-      "title": "Вариант 34 — Снаряжение рядом, пара 16"
-    },
-    {
-      "source": "spo/016/variants/35.md",
-      "output": "spo/styling-pages-cards-and-form/variants/35.html",
-      "title": "Вариант 35 — Снаряжение рядом, пара 16"
-    },
-    {
-      "source": "spo/016/variants/36.md",
-      "output": "spo/styling-pages-cards-and-form/variants/36.html",
-      "title": "Вариант 36 — Снаряжение рядом, пара 16"
-    },
-    {
-      "source": "spo/016/variants/37.md",
-      "output": "spo/styling-pages-cards-and-form/variants/37.html",
-      "title": "Вариант 37 — Космос рядом, пара 16"
-    },
-    {
-      "source": "spo/016/variants/38.md",
-      "output": "spo/styling-pages-cards-and-form/variants/38.html",
-      "title": "Вариант 38 — Космос рядом, пара 16"
-    },
-    {
-      "source": "spo/016/variants/39.md",
-      "output": "spo/styling-pages-cards-and-form/variants/39.html",
-      "title": "Вариант 39 — Космос рядом, пара 16"
     },
     {
       "source": "spo/002/technology-choice-and-diagnostics.md",
@@ -1543,7 +1543,7 @@
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "6406810ffe0161ff038365a4a954c3641432558b42e63dae06af5638ee5d15e7",
+  "source_digest": "913d5195f930ae16e4b5fdb14f6e58de47d75bc80cbaf4d8d4334e433078a782",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2007,341 +2007,182 @@
     "spo/assets/99-999-navigation.svg": "16a11c8b1f6368ce9beb6f181c066155967f6373de366bc3551b1e419d01d1b3",
     "spo/assets/99-999-routes-blocks.jpg": "1f5d0e9cd649510cc0c21a070faaa70fd3e80036755d4cf599ab190e744e4fdd",
     "spo/assets/99-999-screen1-blocks-final.jpg": "288a8211df4e60053d657e00ae0da008de7f383a69b0f4339178c3f27c58902f",
-    "spo/css-selectors-and-box-model/index.html": "d661a57e0b5d0547ae559cedad7df8cc2d7f593415af2eebb0eb28ebc8b06d69",
-    "spo/css-selectors-and-box-model/variants/00.html": "fe2e0a84f1211ba4dac5f5e6190c1db6c09ebf92dc66672a349f53ff7a9600d8",
-    "spo/css-selectors-and-box-model/variants/01.html": "63f44ffe33abac245bdeeda7021d71c10aa37ddb16ea49c372438f59086a90a3",
-    "spo/css-selectors-and-box-model/variants/02.html": "48545026e60fff63afb4c0db3aef5b056db382d2ea6922f0dcdafa6142fc4a8e",
-    "spo/css-selectors-and-box-model/variants/03.html": "52d4bd8a799b07c544a1f2a1a74c50021a75ddc1aa4a67f204cc57aa75e2b1a8",
-    "spo/css-selectors-and-box-model/variants/04.html": "e8c62b848ebf1e69e297d6a7d241c343e303ced67a1771a588ceff5810ef405d",
-    "spo/css-selectors-and-box-model/variants/05.html": "9970ba43cd63f9ec68cae547db9601cb33eeb6e3eea95e4c02427a4642a7e291",
-    "spo/css-selectors-and-box-model/variants/06.html": "9cf3758f6a2f44e1b54c2c5cf106b6ca9e21bc92fcbe054be8cf1d40a2a328f2",
-    "spo/css-selectors-and-box-model/variants/07.html": "c5d8127bb8f7474158a99eb38e01d937246714af0ff90d573b5832a425eb27a1",
-    "spo/css-selectors-and-box-model/variants/08.html": "261b56b57029ae412d70114e240fc917037db4643dd5496ac071390c843c947b",
-    "spo/css-selectors-and-box-model/variants/09.html": "00519e96ebe69fe49259241d6cd55ebdb4cf1a700ad7990048098df39a052d04",
-    "spo/css-selectors-and-box-model/variants/10.html": "a9982c89310491e4162f06e061be04033bf649f3ea9f03d1f74b29f42eab5679",
-    "spo/css-selectors-and-box-model/variants/11.html": "1a9652f21d4ec317bc3cbfd81a9c57e6bb163919b25213997f472dde44f6f1ad",
-    "spo/css-selectors-and-box-model/variants/12.html": "80ffe3f2b191a4a146c3a58a7b995530e417f547bccc2aa23aacaa038b33a639",
-    "spo/css-selectors-and-box-model/variants/13.html": "f5eb4e1890c0a81ddf5bdaef71fe3294c74fff0ecb616a29dc628522f6c58a9b",
-    "spo/css-selectors-and-box-model/variants/14.html": "8d0d3753eb6c6129d9e05de03226918e5a2adb5089e158cbc681b74eebd57c7e",
-    "spo/css-selectors-and-box-model/variants/15.html": "1fa2cbf269a70658b939fa6b12397c15ccee1cbb47835e7ecd83de16bbdf8b58",
-    "spo/css-selectors-and-box-model/variants/16.html": "72e5da57d6188a57c388ad427823082c24f195be2bb4ff0ebb8bfcb924c8af7e",
-    "spo/css-selectors-and-box-model/variants/17.html": "f71306627f165184f66ae248cef8007c53067e05441c8aafa64dbd1fa0778104",
-    "spo/css-selectors-and-box-model/variants/18.html": "002621f7e5c787141f7b28f7682057349275a9e24b871035f7a78dcd594261c5",
-    "spo/css-selectors-and-box-model/variants/19.html": "2cab168631fa1fc56dc5dd862ba11d7c8b818b49a9af5c39aaaf505435ee500a",
-    "spo/css-selectors-and-box-model/variants/20.html": "5e1b43f532b74526d13a45eee33e022a2d3e51429b3b706486b7fe37714f4e86",
-    "spo/css-selectors-and-box-model/variants/21.html": "d7b9ff3e77610b8fd1377869e959723e473a40e4080694e1b7a1c793389ad5d0",
-    "spo/css-selectors-and-box-model/variants/22.html": "9d19797c8c67a843fab760dd696da0a800f4af350029726893393fce13744c06",
-    "spo/css-selectors-and-box-model/variants/23.html": "332e089a2d827f7e2e4a7b82748d5ea97e07a53ffab7d43237c3efe32d1f9047",
-    "spo/css-selectors-and-box-model/variants/24.html": "bb5b6c57bf9e4c2517eea4cb12382ecc59dc81420fd28d262751f48f6ac6dfc9",
-    "spo/css-selectors-and-box-model/variants/25.html": "f052291715e1052adeb7146508aad3d775d2fdfb568eb7b414539292ac7baff2",
-    "spo/css-selectors-and-box-model/variants/26.html": "5eabb4200079a8f8d965c1a86c91015a9f00c6bf57b51307998febaa7f19e774",
-    "spo/css-selectors-and-box-model/variants/27.html": "912a7a0a913d565544d2a4afca138afa26968b9c85e648f026e8737ada183865",
-    "spo/css-selectors-and-box-model/variants/28.html": "4b24080e503ff7d39842f402fedbf8c2fe3a318627c4cf522e81b8b75302fdb6",
-    "spo/css-selectors-and-box-model/variants/29.html": "8aa2a96a2fe74b16e9b7d322b02b9ffd372ff1ea8e6c3c003155ade68f5e8c29",
-    "spo/css-selectors-and-box-model/variants/30.html": "b6ca9c83b4ad93cc5873c649007de89898ec5c08dee15c5ae2f6722a69ddd0e1",
-    "spo/css-selectors-and-box-model/variants/31.html": "e6edb62d1603caaf2ef698e67671a5e233b82d062005cd9043c34f7089c47664",
-    "spo/css-selectors-and-box-model/variants/32.html": "4cd143b206f07724fe6c48fc959caed79a7ab2dcb894d58e4fc3c43fabf36504",
-    "spo/css-selectors-and-box-model/variants/33.html": "d55a7a893f0bf522a0cbdc7b898c7724c82c5057a1136f79c421a2d3b0fbe846",
-    "spo/css-selectors-and-box-model/variants/34.html": "523bda6ba2c8f38c12eeb8e58e62e824a5b6ae95a179b84ab58f049f5e9c2435",
-    "spo/css-selectors-and-box-model/variants/35.html": "ee35672e242f5d16caa7ae741e9cab29c120312c8833c1e09217be3cd78e92cc",
-    "spo/css-selectors-and-box-model/variants/36.html": "ac9177ce91fce4c131a4c69b3194af6e93f87448bd67b1f9d6523a71ea5d4c68",
-    "spo/css-selectors-and-box-model/variants/37.html": "932f73130238e9cdfdf74cd0618762dc749e95fb46e1af420034c9e7d649d938",
-    "spo/css-selectors-and-box-model/variants/38.html": "42c36c6a40576a5c3a89c190bf50df401afa35ab11eeeb520204be1443bad8b2",
-    "spo/css-selectors-and-box-model/variants/39.html": "e1ffe688cbcb2b4d9aa13d3587d12fd22201316186b873aca1e7f106d34f3cbb",
+    "spo/css-selectors-and-box-model/00-015.html": "4efd9db546be886931517af597cc70c4b7c29d5dacf22e8aead580ede2e69c0a",
+    "spo/css-selectors-and-box-model/01-015.html": "39fc9e4aea0b87c2ed055f4133dc4964cc3d0216b58b3939bc0518594ddde8ea",
+    "spo/css-selectors-and-box-model/02-015.html": "5970f5c25c3a593b2a0fabcdd91bdfd60c89eb84ffbf5b0d3165d989b37305eb",
+    "spo/css-selectors-and-box-model/03-015.html": "4aec1adeb4fc2a1db5c5ababeac2046eaa6d71535a27fb8dceab5f5aba9c6391",
+    "spo/css-selectors-and-box-model/04-015.html": "7d34f240c668fdc873a811a54b1fc9fc64a7fb93b4d88f1b9e58c8c5344ab973",
+    "spo/css-selectors-and-box-model/05-015.html": "c63f6c5ec57e9948cd2e15fee0b878a15b477084736862a5e741137c6e8f270b",
+    "spo/css-selectors-and-box-model/06-015.html": "ea12d7a345fccb79317b3606e10fa4d5b424340dafe78cae600049be03534db6",
+    "spo/css-selectors-and-box-model/07-015.html": "2eff3c0acd514936e6b74bf3611e16bca039e62e85e229bd3bf31301af052cdb",
+    "spo/css-selectors-and-box-model/08-015.html": "ac82412728194b58728e3432214deef0c62166cd99e9df789041915dbe325f26",
+    "spo/css-selectors-and-box-model/09-015.html": "128547f00f74ec169ab86f7ce761c0335831a0a6d19ee7feadc047c3900a5f41",
+    "spo/css-selectors-and-box-model/10-015.html": "a12a0327a426c9eb34b6c54f916a9d191c594570f54bc6606368c365080c020e",
+    "spo/css-selectors-and-box-model/11-015.html": "2b6cd19e16bbbd78fd8c12c7f0a5ede72801b8a45c20762973cf8a685f4a60ac",
+    "spo/css-selectors-and-box-model/12-015.html": "c326fc0f6e309d85fe048fd7c115a0b6158db43651379aff6dc4a6fce712c50f",
+    "spo/css-selectors-and-box-model/13-015.html": "e8caab6bd781236cf479a060d851735748a4741b051e2c366c0902f706bab3d1",
+    "spo/css-selectors-and-box-model/14-015.html": "640e1e6d3aeca87e7a5d4ec749029e86d0b22537f2cf758ccb8489ec08dbdd28",
+    "spo/css-selectors-and-box-model/15-015.html": "21218ffb77ac7a8ec7daa3b7777d9ce8cf89184450fa11ebd1425e60662e5305",
+    "spo/css-selectors-and-box-model/16-015.html": "e08e298f81fdb22f5fb90963bda3e013afa87d92e6654790e699f8db1f357e00",
+    "spo/css-selectors-and-box-model/17-015.html": "91053c2330a80b68c6b514151077de5514af281c1e1075a3407c22169a6669df",
+    "spo/css-selectors-and-box-model/18-015.html": "20c98f2567307588f32cc57b22249cfa031abbf62fdb3e8ad47047a5a0865c1e",
+    "spo/css-selectors-and-box-model/19-015.html": "b89a46e4c65a1f1ccb0422a6edf2fdb30fda42dfe46a6aae8bb650bac45df3b9",
+    "spo/css-selectors-and-box-model/20-015.html": "15ce4761970e313a79e7baae8b12cf9bc36c18f25cfb70a6050e094575a5ebef",
+    "spo/css-selectors-and-box-model/21-015.html": "2ce9c07cd6aeef81b20db178eeaec3e706acad407459d3013c6939c0364954eb",
+    "spo/css-selectors-and-box-model/22-015.html": "a91b2cf42c9e74bf69e1965ce5180acd91463b7df813a2b2cc027d5558ad6c17",
+    "spo/css-selectors-and-box-model/23-015.html": "4655ad2738c323b14a4cb961516b2959e13e2c7f7c29ee4e38007f3aeffc71f2",
+    "spo/css-selectors-and-box-model/24-015.html": "ee09289934d23cda693447c77cc7e8fbf80d40a3452f4184e9be91a1b567c631",
+    "spo/css-selectors-and-box-model/25-015.html": "f75e54c2006932f19f4be789b3d18b5d7bc08636eb91804409d5eb9f3564ae57",
+    "spo/css-selectors-and-box-model/26-015.html": "9c4d601326a0e178b566cd702f4b67fd990973c47870c9d38fdc2868e0e88874",
+    "spo/css-selectors-and-box-model/27-015.html": "518bb08096173f43b705ec08becbf82ea414081779f366c66a3958c959c512ce",
+    "spo/css-selectors-and-box-model/28-015.html": "00c33f609f29b2852b4463f045a1800c601137bfa1f5dd3aa01b53bb348413c1",
+    "spo/css-selectors-and-box-model/29-015.html": "a8ef9e54e9fb03004af00398bc62cc1fd45962f70dc79c35a92f408eef9f522a",
+    "spo/css-selectors-and-box-model/30-015.html": "0789d2f4fd3af8a095518f626b2c27e2d110dbc936c4ca5904984c405140c4ee",
+    "spo/css-selectors-and-box-model/31-015.html": "66bd4c32049000f583cf720b2b6b56c1fa689ea389208e60c4cd34cf923e30f2",
+    "spo/css-selectors-and-box-model/32-015.html": "76409d39ebcaac720ed1be01fc46c53a244bd4020beb164b2ced9ad33fa69c84",
+    "spo/css-selectors-and-box-model/33-015.html": "eb5482bf21cd3280294ba77772c3d203835bc70686b402d5ca761c67632dc285",
+    "spo/css-selectors-and-box-model/34-015.html": "80b9bfd044b947b06c0a033de549b6b7e226adbbe5f3f6ad8018faf5d06b7e4c",
+    "spo/css-selectors-and-box-model/35-015.html": "526762cbf233e705c05192f312bbdbd93e3759932f8d10c0dc152a68d038fd50",
+    "spo/css-selectors-and-box-model/36-015.html": "5134479e3da6ffdfd54efab50284854b067917397892fe464987a934153926e5",
+    "spo/css-selectors-and-box-model/37-015.html": "b3bae419fb4525e7bbf39744bb6219d1c32e3d431bbb0604497b3197e8be0d50",
+    "spo/css-selectors-and-box-model/38-015.html": "c5e043be1894a5583e7995c274fb06f1f30dd923f3ce029e9175dfbc523e0521",
+    "spo/css-selectors-and-box-model/39-015.html": "28bfe0a6ae1ec4b38eed65fdc919db5dec32aa2805b41cf9bb9ce06e17637a84",
+    "spo/css-selectors-and-box-model/index.html": "9ebc6948c55761bb1effa4b98aee9e5ef73af189afc2c12ad1a91d08f217c6f3",
     "spo/events-and-state/index.html": "79ff46f72bdbb978928eb84f4eaf345976d0a99421ed3ac661271dbc5d905510",
     "spo/first-screen/index.html": "4a5811e64a0e2f6e32fc80855e7ed0f94e0c9695c35273d1fcdb54142632d2cd",
-    "spo/first-web-project/index.html": "618eda6be91b60601e7988df3cec91a1b0729fa21e58fbf78d29e06b1aa9a989",
-    "spo/first-web-project/variants/00.html": "dfce83a349778f482f01df32990a56206336f957712c71bfd516865c0446568d",
+    "spo/first-web-project/00-011.html": "f7d789ef287a2e0c81629594bf0dbe468d91cce8a16be540e3f361f8d2e06333",
+    "spo/first-web-project/index.html": "00046d493df7a27e68e2a677b2ddb71bd99f8e7d9c0600085744cff941399a14",
     "spo/first-working-scenario/index.html": "5ce8c594b81c729ebae5336b6fbd139064e3abaea5ea9667928cdd301799fe07",
     "spo/flexbox-and-mobile-viewport/index.html": "561381a0ff5fad79fa438700b57fffb8e7e362c754af9bb65fa2e2e61401578d",
-    "spo/home-page-and-catalog/index.html": "f1bb3ce32d6984c40423a0b801da047d98501ea37e8854611c9ce10f4d968c3f",
-    "spo/home-page-and-catalog/variants/00.html": "8353f1f2651c70618a857121a1857aa67513646329254d6809b41d4c9a65a57a",
-    "spo/html-content-structure/index.html": "8f9791a56c3d138aa266aa6732f1f45e1d7cd9c2fae0b0950a25814c9856e3f8",
-    "spo/html-content-structure/variants/00.html": "097326da960682bf7b5c100156a513777e84163bd8c93118954525f7a51361ec",
-    "spo/html-form/index.html": "4bcdd30fd3448f2e09c960f2971f82536f167c7d888760884f54e7c2b60a22f0",
-    "spo/html-form/variants/00.html": "bb77ef626b96fe9a87e1517dad4ed459c9de53cfa640b73eeb49189ac6f03007",
+    "spo/home-page-and-catalog/00-013.html": "ff166857947fa85cefac910a46f5b4297946ba0f90799595ed1d12066c8c0065",
+    "spo/home-page-and-catalog/index.html": "593b6d627c9007b027ee02563425bb2b168c7e21d5d22d8f5d73b80fe333b429",
+    "spo/html-content-structure/00-012.html": "8974cd284463797203d8522aab1d38a28dfc81812187dbc1e85af39307c4d234",
+    "spo/html-content-structure/index.html": "c49e3fe0e20e0e37afd932969e15573acb6ef70b25b2078dfcaf347ef71480bf",
+    "spo/html-form/00-014.html": "6046f570c87827220230efd791314e09b7612651a3cc887a14708779b105412a",
+    "spo/html-form/index.html": "54b6ac4fccdce26cfb3bb172d290818c81f4d2b19a0eff152b4d02ada0797da4",
     "spo/index.html": "d216670233b8e76af1752f97fbc18e318efeeafbcb6cb2dce49ee35f36e75c81",
-    "spo/javascript-values-and-input/index.html": "05f6b158cbf7a50a702fb1efcb446178a59aef12c9404fee538ba006ee682069",
-    "spo/javascript-values-and-input/variants/00.html": "147c0e06ec8cb2cc2fab9fd574b57b509bec2f9fdda468dcc71d83d61d9cf3f1",
+    "spo/javascript-values-and-input/00-019.html": "70b7752f228756f2e2c227ff324027d1cf3d236338ba00e6e4d6feff653a230a",
+    "spo/javascript-values-and-input/index.html": "cb34915c1ca55da11abf4a5754deb31e58e47f1fd6eda0a17a88181424a70754",
     "spo/mit-app-inventor/index.html": "e283e287c81591372cd875a9c894ecc0d17bb9f269345bb1887411082419ce16",
     "spo/mobile-app-types/index.html": "c08b3c87990f82a188380d3c2245662d6486fdc7af7c2b8615665f33d24fb539",
-    "spo/mobile-web-page/index.html": "39b37f41a2fb04199502e6d330c1254335082d27f38d546f61f13d8a51ff1d37",
-    "spo/mobile-web-page/variants/00.html": "93090eea08b8804111488a5dda683e8147cb8b01623a6212ea768d191063c2c7",
+    "spo/mobile-web-page/00-010.html": "4be7719e63630c7f65d8732cdc1c9798bace6d1e9316ddb3bbe5394b847026ac",
+    "spo/mobile-web-page/index.html": "4e3fdbb4aeb6e0a04076d8623ef4fb455395426ab759361b49ff39c9a0fb739e",
     "spo/multi-screen-app-refinement/index.html": "cab4154bbffa23de7e23812caa97343b86e9b59512834e4747a8288999ae96e1",
     "spo/phone-testing-and-navigation/index.html": "2de9ec81272f5c88f2f13b16a58897abd0e22626196172e2d4bbab3b47a80af0",
-    "spo/responsive-layout-and-browser-testing/index.html": "5622850526248d04aa60b41aba66f7c6b0c65751cce243342b18fe79414b44f8",
-    "spo/responsive-layout-and-browser-testing/variants/00.html": "200ee5ea6b10a62908489f938c76616a3845dace367433b482ed2ef1ca9af9b5",
-    "spo/responsive-layout-and-browser-testing/variants/01.html": "e71a4ad0bc029a3254a62cbf349d9383bcaa71a928495d88808cae9b257c7f18",
-    "spo/responsive-layout-and-browser-testing/variants/02.html": "5b6ca2620fd6c4e27524842bb0718c6666caec36495f866bf65706acea37ccd1",
-    "spo/responsive-layout-and-browser-testing/variants/03.html": "8c577ccb54dd77095f104c42b912fea6e362bc706231a78e84dd396ef9f95398",
-    "spo/responsive-layout-and-browser-testing/variants/04.html": "122b537a2c5bd1c635209df2dc755fbf074355f49607e5812b48609ca84e054c",
-    "spo/responsive-layout-and-browser-testing/variants/05.html": "27d0a468dcc2ba3408458d667ff0ab12b336a1b4fa31fc89e7d264a9601561ec",
-    "spo/responsive-layout-and-browser-testing/variants/06.html": "a560b0ef041b26560d6cde47b35dc690bc9f1dadc62e752c583d065e5bb44aca",
-    "spo/responsive-layout-and-browser-testing/variants/07.html": "6cbdb7fcea25f2501aeb029f4b2aa90d89a0c25fbcce89111f0bf52c3d9cb606",
-    "spo/responsive-layout-and-browser-testing/variants/08.html": "8ee625db7032057bd3b0331015b422a7bf8d833bf255fbf00c690751df2f9a93",
-    "spo/responsive-layout-and-browser-testing/variants/09.html": "7a01653e763e1910d24fd878ba211bd0273d15a188855aee4d6055bd98d57e49",
-    "spo/responsive-layout-and-browser-testing/variants/10.html": "16bb65a664e4f0fb49c646a21b6f344304e09373a5a9cc16750e296fb53b4d6c",
-    "spo/responsive-layout-and-browser-testing/variants/11.html": "b0e022f5345e1ae2a2eb1011d76c136ff045cfd5cd8fc555775dbfbc3583eaa0",
-    "spo/responsive-layout-and-browser-testing/variants/12.html": "4139508d38c3ff89edc20ad82e978ce334e49a0a0c1f0aec7273ad28ae92a996",
-    "spo/responsive-layout-and-browser-testing/variants/13.html": "4fba0b8406b7b33f763767743c6140178541397709fb315408306aae0a6190d4",
-    "spo/responsive-layout-and-browser-testing/variants/14.html": "cd53d1e6f5c99a5f2f3b501645ffc98286a3a2f0c9cac799ab53f015dbbceec3",
-    "spo/responsive-layout-and-browser-testing/variants/15.html": "80d6fc0c0e8b414140375e06b9933c48592bd1405900021fd6cfbbc2af11b6d6",
-    "spo/responsive-layout-and-browser-testing/variants/16.html": "b262fe7df8a9cb31e98d91a1f06d77675d4fa73c46af6b990a52d1e0d736b675",
-    "spo/responsive-layout-and-browser-testing/variants/17.html": "9cd2bec01e69a241bdb9696fc5d9850d8a23d0f6492a1d6ba8598654a62b193a",
-    "spo/responsive-layout-and-browser-testing/variants/18.html": "a3831994f937de2fb9011e5750e929a2a07907893d7ac15034fcc030748f873b",
-    "spo/responsive-layout-and-browser-testing/variants/19.html": "05c6bb0d80db9941fd4080f5e4730fbe8a41f1256359c6cb98da6237568837dd",
-    "spo/responsive-layout-and-browser-testing/variants/20.html": "68144bd86342443eb6a472b0545dae0f94963ee48cae06cd8e7af44fcd4165d3",
-    "spo/responsive-layout-and-browser-testing/variants/21.html": "0ba20ab17d03b3f530c557d3cb726d8a6543dd91714f2eac06ec01647ffe77e9",
-    "spo/responsive-layout-and-browser-testing/variants/22.html": "fc7f0ca965e12d248aaf1edbbcb09ff7594fd7b4cd5b85d331a656638e7eec1b",
-    "spo/responsive-layout-and-browser-testing/variants/23.html": "aa8947251c3bcd9e4597e896e9eb221c15e915edf20c7b2487ae98dbe0fa7c2f",
-    "spo/responsive-layout-and-browser-testing/variants/24.html": "a439764c69ce7686e688e2c0b735cd7e1661c1cfcb72ffd387a939d8c78c0d4a",
-    "spo/responsive-layout-and-browser-testing/variants/25.html": "a44b831bb4b377ee79dd305816afb26ef7c1cd6a245bb695cf31f56c85572183",
-    "spo/responsive-layout-and-browser-testing/variants/26.html": "6777c3b494094bf13e452bf2643d870891662aeeb4ad1d0fc4a424edcdea8d00",
-    "spo/responsive-layout-and-browser-testing/variants/27.html": "287c8ab36546fde3ce184016999c7d7e2f3759c9a1fb0fedc15fc1afa06adff8",
-    "spo/responsive-layout-and-browser-testing/variants/28.html": "a5e33c216d74d6c03415f35ed9da9391af97783f2331975359dc20ff86e306fb",
-    "spo/responsive-layout-and-browser-testing/variants/29.html": "7f8ce29431c0a090d0ac92c0eda411a4fab9f5413cf81d919712f16cb0380c4b",
-    "spo/responsive-layout-and-browser-testing/variants/30.html": "ccd649d607c5f69d5f5a1a18f2ee1b697416ff2162f9e6ae7c3882ae2fbc2a49",
-    "spo/responsive-layout-and-browser-testing/variants/31.html": "28f050692a44a9dadb447db16cf45381b888c307d055218c1e5888de5b038c2f",
-    "spo/responsive-layout-and-browser-testing/variants/32.html": "2b49b250efc885a6c210d160553d72ec597726206eaa729bed3f192778e94480",
-    "spo/responsive-layout-and-browser-testing/variants/33.html": "5cc664bed95e828a3b58ce7aad4bc48323f965cc4e1dd15a9a5f531682f3fa2e",
-    "spo/responsive-layout-and-browser-testing/variants/34.html": "08b2df8f87d263dcb88d76ee7ac54588732717b6d478843ef91fb2d11d4f4f4b",
-    "spo/responsive-layout-and-browser-testing/variants/35.html": "64af83b37d689d5923891049ac515fc3f6ab37a7b3ac5ffce3d34d4fa1ad4a6a",
-    "spo/responsive-layout-and-browser-testing/variants/36.html": "b3e676a3ab5c99f68363ad0ed7467bfc6d565b07b92199d2b027655fdf6fdff4",
-    "spo/responsive-layout-and-browser-testing/variants/37.html": "d2a5ea185b2a63564f1cbced343683f0432a09ccba6fc09407adbf02ae95aeca",
-    "spo/responsive-layout-and-browser-testing/variants/38.html": "f11874a61d50227e24e61e9192dd4a79af9854ec2e2810926b3a117f292cfc21",
-    "spo/responsive-layout-and-browser-testing/variants/39.html": "a3324697e1f898f7d01159ac126d7c04c2893bdc1f98932ff50029a91a260553",
-    "spo/styling-pages-cards-and-form/index.html": "e1c045127865b09995a62f7bdd416b418f4c3d1537e342fab5d3be4329f09b1f",
-    "spo/styling-pages-cards-and-form/variants/00.html": "f77f346de3441f425ccb808895d1749c98ddadce341db2cee1ebec011a6b42cd",
-    "spo/styling-pages-cards-and-form/variants/01.html": "aa7ff3ddc36211eaa852abc446fddf65c478b0371eadd063c1956da77390ef7d",
-    "spo/styling-pages-cards-and-form/variants/02.html": "8e4e6f114e6ccd9ae59169a98286e94b6ace40a81b40ae6a096f7d6840f40d00",
-    "spo/styling-pages-cards-and-form/variants/03.html": "6b34faf72ecc8f85005257ea562ca134aba124371c6238c84b39c06aa3d512bf",
-    "spo/styling-pages-cards-and-form/variants/04.html": "1b8988e83a447747c465ef6eeee18f48997bedc07688f8d98a58c29cfd3f83eb",
-    "spo/styling-pages-cards-and-form/variants/05.html": "801db8c94e06ec2c18f137872a6aed480b2273a00a748ddff3e7f4aaee7fd34d",
-    "spo/styling-pages-cards-and-form/variants/06.html": "b252db6acee4a85088bea9a581c42977faa4a1cc27988a8c9a9064103440b95b",
-    "spo/styling-pages-cards-and-form/variants/07.html": "e7694da2af3203651a790318d5addb73b2dca18f61d38bf66bf76bc5e993f78f",
-    "spo/styling-pages-cards-and-form/variants/08.html": "ce2acc4675e88f4f6450eea32a6b9d8652ee1c28e283019144ffcc44760b6ce6",
-    "spo/styling-pages-cards-and-form/variants/09.html": "6103f9b129ca374acf2c6530902aa57f26a9d109481ce189e8d56d1fac713ab4",
-    "spo/styling-pages-cards-and-form/variants/10.html": "ec5a5d3d395793e2e7028fd89b93f2484687580dac18990d71ae5b138943af84",
-    "spo/styling-pages-cards-and-form/variants/11.html": "7c4182b18e04c7fa723cec60534acbfe8878c1429cc4be2669991c89f245dbb7",
-    "spo/styling-pages-cards-and-form/variants/12.html": "ee4de47ef21f214506490d8687e9409e002fab89a5b13a1e2be32c5995d28133",
-    "spo/styling-pages-cards-and-form/variants/13.html": "cab322ead7897e7fca0347ab86a505d7307fbbc0499d58c88f032b4879ddaf39",
-    "spo/styling-pages-cards-and-form/variants/14.html": "a5d6cb9e5edeb564f708c0c642b8b3e438d6dd388248412fa4e272874747c0e1",
-    "spo/styling-pages-cards-and-form/variants/15.html": "4eff5c33a3ecd14a8fc48c466280edad2ca64e17db8cf1bc704099579f176bfd",
-    "spo/styling-pages-cards-and-form/variants/16.html": "9ee1a9669205083dfd3cebc862f745d36db1aee0fc6d57739561d51ced729629",
-    "spo/styling-pages-cards-and-form/variants/17.html": "982ae5028ee35272b495f6ba6abe72e75a528ecef79f5160551e9a29fc78847d",
-    "spo/styling-pages-cards-and-form/variants/18.html": "339d59285b21e7583cf1e093f4da602fdbabf6d63bd874e84de5f7b63df2fd72",
-    "spo/styling-pages-cards-and-form/variants/19.html": "4e179b3b0566c10e1d68842694eb1978fad0495dbd0e0279b825de97c56c2902",
-    "spo/styling-pages-cards-and-form/variants/20.html": "666587bd7b0544426b46e813bfeab40654a19a4b614f2f630db4d74137009a27",
-    "spo/styling-pages-cards-and-form/variants/21.html": "9b231e4393223818c5184d4e4e60a82639ac3f61b78a9226791758cf27e5002b",
-    "spo/styling-pages-cards-and-form/variants/22.html": "e216fd7a47ab3b800b89cab96cb351d68926a4046f95b8ba2d685597435f6611",
-    "spo/styling-pages-cards-and-form/variants/23.html": "e3db80abedb12a2edd749eb9e8f91676c75cc3c029a8a09b935cbd6914eaf0c6",
-    "spo/styling-pages-cards-and-form/variants/24.html": "7bb9117c05e8b3a9b550a1c818824867b60738d774974c97a4877d49b31c63b9",
-    "spo/styling-pages-cards-and-form/variants/25.html": "201bfa0535355e2df8efd8f2f7f70b55944322f0cb66096c08ee8546c67f2879",
-    "spo/styling-pages-cards-and-form/variants/26.html": "10f6a4e3f6e8f0eb70ee69013756135676164ba5ae9a243d23922d016a49d1c5",
-    "spo/styling-pages-cards-and-form/variants/27.html": "deacb3519c4c58896635ad518c81ae064c79e719ddf64114d7400e325e3f3ea8",
-    "spo/styling-pages-cards-and-form/variants/28.html": "6234e17636f3ea228a025a01a72770835673ee110e09305a5197c5caa4bbe412",
-    "spo/styling-pages-cards-and-form/variants/29.html": "66a69f8f4fb561a83d16e4b02a4064055b1629f4ff22f1347ad955acfc652944",
-    "spo/styling-pages-cards-and-form/variants/30.html": "078c2955b8bf0de7d4fbe45f390aa18091353dd0b01e9ddc3b1569812946c881",
-    "spo/styling-pages-cards-and-form/variants/31.html": "63d41502eaf2a43462567338f10da96f69b696e9efdf638da94a7c2dc85dcf36",
-    "spo/styling-pages-cards-and-form/variants/32.html": "c860119104e93ae9f8762728dc2fb92eeda1589cd74890d20f3019ab1f6f066f",
-    "spo/styling-pages-cards-and-form/variants/33.html": "d6774980319da8c57e8b2b6b263f6fd13017d59663dcec140fc08939d51435e5",
-    "spo/styling-pages-cards-and-form/variants/34.html": "9c67015b53f8610354b5e53e70ae0c14091bbcbf6be7f836bbad4475ecaee50b",
-    "spo/styling-pages-cards-and-form/variants/35.html": "f8b5c5f53188ab77791389318b7482a73555e1967c20e4dc8a5b7b6a2dedc47f",
-    "spo/styling-pages-cards-and-form/variants/36.html": "67a688bc7345b8306839309f0876fb62b8befde92214668fcf87d481004c2301",
-    "spo/styling-pages-cards-and-form/variants/37.html": "180e3cf073d574a4cb1fd60792a0ccaef5ceffacc78dc47c6f688b90479e044d",
-    "spo/styling-pages-cards-and-form/variants/38.html": "d4cbb3a78cc5539b90d6e2af3b83c07f62dcf5715f1e4691c6019fe3efcb41a4",
-    "spo/styling-pages-cards-and-form/variants/39.html": "4c679df2801e3c297b96ac0f41c6579d3bed91f5aab8f1b0115bf2a833404ffa",
+    "spo/responsive-layout-and-browser-testing/00-018.html": "aaaf9eaccf20f83dcf4e27330c6efc74426c18511db64b15316d3b640d711dec",
+    "spo/responsive-layout-and-browser-testing/01-018.html": "83359217eeb5e48690edacb4794df15524183811e07bc799e45dd9b3735cf065",
+    "spo/responsive-layout-and-browser-testing/02-018.html": "6838557a78c5cdd994080b9bf11203f8326fa4b3c9db1431de471455bbded757",
+    "spo/responsive-layout-and-browser-testing/03-018.html": "945f2a16259ce0c1883fb7ed9d8503e0c4ff5441ae34d033a20d72a4e2c1f301",
+    "spo/responsive-layout-and-browser-testing/04-018.html": "2a712297c067e9030566eb5ec9940c396cad750cc7739cdb624673fd93355350",
+    "spo/responsive-layout-and-browser-testing/05-018.html": "267cf9a70b06b67c83e1bb7badcdf1c90d01b04183a8fbde4185db27f37c81e9",
+    "spo/responsive-layout-and-browser-testing/06-018.html": "63b54f90fc76c76172967d507b5f0cfb9ebcf4c41c75449d173c9e523d342c52",
+    "spo/responsive-layout-and-browser-testing/07-018.html": "a8599be5e7cab7edb16783afe0a2e586c9324034fff98f9d9dc36ff21d86b515",
+    "spo/responsive-layout-and-browser-testing/08-018.html": "da105b8d2c7c6b906515a90c4b439528e1f01ece47a5c0426a4cb05120fd92cf",
+    "spo/responsive-layout-and-browser-testing/09-018.html": "e3ea920365a7cda37f0ca6c49193dd30c32187fffb3cb4d68dd573d7ea17f6db",
+    "spo/responsive-layout-and-browser-testing/10-018.html": "26089e6f4ad1d78c4372fa910b20a5dd54900c18a56477cfc782da8d72680f44",
+    "spo/responsive-layout-and-browser-testing/11-018.html": "58722cabc3215bfc8ee19ba4e9b3dd486cea18542725dd598ca8e67c1884b99a",
+    "spo/responsive-layout-and-browser-testing/12-018.html": "4fdcac4b427d7cce1a94c9d4d5b8f5cf915b3cc6a661c3ab516a8f39b8401b80",
+    "spo/responsive-layout-and-browser-testing/13-018.html": "c8f527d8853f3bad3b2c5cee40cc7b4879edb4a7f547450123a968b0924c4ec2",
+    "spo/responsive-layout-and-browser-testing/14-018.html": "ca715545e43f5a0d58a095fdc81a338308604cb4c87a32944e4d3441c34a2bc3",
+    "spo/responsive-layout-and-browser-testing/15-018.html": "b0e6ac5b87b381d7ea2282974570c9ecb4ef4016c339fe1929e087a6f2f05d31",
+    "spo/responsive-layout-and-browser-testing/16-018.html": "848adf933b4678b38904b9db171a5100cec4403be863ed5f9b2844443ebae437",
+    "spo/responsive-layout-and-browser-testing/17-018.html": "3b02ebda56fcdd948e3bc99b582928a4b1b633d3d129f4d3c7354c3f17ec8869",
+    "spo/responsive-layout-and-browser-testing/18-018.html": "9843dd3df710ae529be11095e5b3ca38cd28b6a6fa994bf45f002ea5bf12c773",
+    "spo/responsive-layout-and-browser-testing/19-018.html": "3d3a8c11c371af3ef550cbc085f6c91ab7a290193cd4342af78ab0e5ff556b91",
+    "spo/responsive-layout-and-browser-testing/20-018.html": "d9a59b278d6e31d3f031651be1f12cccf58f965c24bdaef6be2adb1454e5cbde",
+    "spo/responsive-layout-and-browser-testing/21-018.html": "a0f7cca42b8d7e3ca0381578f4b1066c196631d5b0a703ca1633dd3003492d32",
+    "spo/responsive-layout-and-browser-testing/22-018.html": "b4923ed9cdf46cab152999edfacf4ed8b9a2f0161ca57434cbae745900f425a9",
+    "spo/responsive-layout-and-browser-testing/23-018.html": "24c276324f7995912801a6d6ee850c3f3aa3c9ca3df1bf4ec342fbdf2d3a6800",
+    "spo/responsive-layout-and-browser-testing/24-018.html": "1194938b780e2e8e26eac2f893ac2449b08a90869c9dcf40565734f21f1f302a",
+    "spo/responsive-layout-and-browser-testing/25-018.html": "beec2fa793e0f31dc76751f990bed11c0bab1a5b2711c20aca286653eebd1099",
+    "spo/responsive-layout-and-browser-testing/26-018.html": "71c3526673b516445cb30b5ba6605fbe8ae652463f62991755d0590c02d4a7d5",
+    "spo/responsive-layout-and-browser-testing/27-018.html": "158e5767c750da18452ea4526cb37b342aa2adfb3b2dabf9bea0188aedc6e402",
+    "spo/responsive-layout-and-browser-testing/28-018.html": "daf2d137bba344874bcf096834d2be0ce7998bebbcd9035ae77b1e26913606a4",
+    "spo/responsive-layout-and-browser-testing/29-018.html": "9dc6b6359814b07d9b79f3f0fa99a8132ab3aec39221c25a7c67a69d0d5a42c7",
+    "spo/responsive-layout-and-browser-testing/30-018.html": "2f6070314e47aff470a000c86b59fb5b5b41c37c4278bacaf0f548e0ca24fa9f",
+    "spo/responsive-layout-and-browser-testing/31-018.html": "6f0aff29a470ba608704be3b0dd80c19337ba4047f20afa2b6781986f7525ef3",
+    "spo/responsive-layout-and-browser-testing/32-018.html": "13ae50ed63b941ed7738266e79c0a39f6e002cae9a9ad0d75d51873a5de4fa9c",
+    "spo/responsive-layout-and-browser-testing/33-018.html": "d5cd225b372b7b143af14f293823e6030bb9291a50942a3ed9269730fac63050",
+    "spo/responsive-layout-and-browser-testing/34-018.html": "80a782ca0f8d2cc4eadff8b482f9ccd64f0519cc5f00c2d58290b7a5a192f107",
+    "spo/responsive-layout-and-browser-testing/35-018.html": "c6e3406520ad4e82b597c8c8dcc7bcc426b17432927db330c58bf7eb5c9cec76",
+    "spo/responsive-layout-and-browser-testing/36-018.html": "6351a746bf1932af51c045ecee0f403cf44de29c98e653a2b631b87f9dcdb19c",
+    "spo/responsive-layout-and-browser-testing/37-018.html": "4ef495f3d2f7988eb5372cdb0e019c1669053435a4cffa2856d595e4ef6bf336",
+    "spo/responsive-layout-and-browser-testing/38-018.html": "80e0d0cb4a7fc5ec9615cf811cb28d2285198a14e999e98a8e95407ebca77ccc",
+    "spo/responsive-layout-and-browser-testing/39-018.html": "11cfa5ce5f9e24538133c44b89fe6063b795a5fec5ad913eff936382dd4eb0b3",
+    "spo/responsive-layout-and-browser-testing/index.html": "419b88e5132e053b262f61b291455bd584f6303e2e2b1f8817264b5b08561452",
+    "spo/styling-pages-cards-and-form/00-016.html": "15285e7fc52775006cb198fc4becfcc6b43256cd6348dcd3303ac92c591f1447",
+    "spo/styling-pages-cards-and-form/01-016.html": "a40d7a854ccd602ae0310ebd23fc4413c2f5903db41a50ccd7c281de853b4694",
+    "spo/styling-pages-cards-and-form/02-016.html": "07aad5e324982b6c326350f1dad89e882b7c6398cc4c2057b7c0b24b0a8a4b50",
+    "spo/styling-pages-cards-and-form/03-016.html": "af8681b51368d75ad69ee7871ff8d621b12b8a2e3c72bfefeb753e3a8f7bc26d",
+    "spo/styling-pages-cards-and-form/04-016.html": "133e2bb4a5ca91e697a8978374587ded88ba6c76e6b19c7437abcc107775384d",
+    "spo/styling-pages-cards-and-form/05-016.html": "87a9ce4fe480a4560105c6b43008ea85b811592ae2bc08332f0c3d426e75e205",
+    "spo/styling-pages-cards-and-form/06-016.html": "c6a09c00d6f0b00ba929d8225fbeef18150868ee07a8b3976564354d3f16e8de",
+    "spo/styling-pages-cards-and-form/07-016.html": "11ecf27b8edf5c748203339fe1bc962efbac1f67d8cf1135b45304dfbbf5364d",
+    "spo/styling-pages-cards-and-form/08-016.html": "9cde972cef8e1d702f39ab3797f907a6a97d4f74d7fe82c525d72624901f731a",
+    "spo/styling-pages-cards-and-form/09-016.html": "95d18ecb6d5d6051df58ee05482190936b9e8a8c53c13e43bf1d56a1f98d8917",
+    "spo/styling-pages-cards-and-form/10-016.html": "3b2f741a965196e2e526c75f230f18e528bf6b1c6fa7284d02ad44849abd28cd",
+    "spo/styling-pages-cards-and-form/11-016.html": "c19aafdcb7b0e8fe08e210bbd2c455ba6320117fd262ba58d488d804213d4464",
+    "spo/styling-pages-cards-and-form/12-016.html": "92513c3bdec2a87bf411c310163dbcdc04aa43f7c3dd64961c56c19d301740f7",
+    "spo/styling-pages-cards-and-form/13-016.html": "d9768b83677b4bfae98f8e1c4a1b8ca684f98758c5c0ab8f6a396438e1670240",
+    "spo/styling-pages-cards-and-form/14-016.html": "44e655b99176cb10c59f696ec1d200147150faaeb5b3620edecb91aa590f6841",
+    "spo/styling-pages-cards-and-form/15-016.html": "a243108f533a48cb5cce1fef859fd05f49411e7f7b3e810983e8b7e578fb5f11",
+    "spo/styling-pages-cards-and-form/16-016.html": "1027363505565ec52abe9c77b46f3c45ab85a038dccf032da99bf16a9e1143c9",
+    "spo/styling-pages-cards-and-form/17-016.html": "4f2c463b6d0c2361625de28ee45bd89e931f2f7ea695ca77b1ac26d4f11f1b28",
+    "spo/styling-pages-cards-and-form/18-016.html": "abc897cb5d8f6a4978b1af78a3387375e966cc96490658ee142e89cb5ce93bab",
+    "spo/styling-pages-cards-and-form/19-016.html": "ff47a4e0dfd9727b7e61919ea988c39b4c995b409bf6686dc8aa959c6d16ba1c",
+    "spo/styling-pages-cards-and-form/20-016.html": "3e3e4dde7b64ba481eb33bd00cb2f08650ea6cdde130ddae2c746a3c45d7a875",
+    "spo/styling-pages-cards-and-form/21-016.html": "447f8e0d60ba59076a674684a2bab786c613042f0e560a7733e62823d3d20d6e",
+    "spo/styling-pages-cards-and-form/22-016.html": "af3887844c166115565e0cff3be8ca43c36c824ae188660aec9f4be90295779f",
+    "spo/styling-pages-cards-and-form/23-016.html": "40d56857abb31dce40ffa564b87b195c3717afe3e4396d1ffa12a520aa583d40",
+    "spo/styling-pages-cards-and-form/24-016.html": "f984fdd5b0d603e1b7ca3b89e0fd693aa7c68bdb65df591acced1f7baa84cc43",
+    "spo/styling-pages-cards-and-form/25-016.html": "32f48ad80745730f2f27aefc51452eef7944aa820c49c2211b9459b58bc3a3a9",
+    "spo/styling-pages-cards-and-form/26-016.html": "ae9bae24b13f6b0270e2c20ac255c25c32de3e628a23973253d708b79a077685",
+    "spo/styling-pages-cards-and-form/27-016.html": "315be597e6ab8b7476d8c4d75697a91263e11b9e1bfc14ef489b0058e07d5721",
+    "spo/styling-pages-cards-and-form/28-016.html": "e584fec4aacb022b4ac476a62f95a191dc3534bf782de337343c598513aa5353",
+    "spo/styling-pages-cards-and-form/29-016.html": "1f86819dd603b328ceb35f8038273842b6feadd13ce8595bc74cb6eeeb8dd333",
+    "spo/styling-pages-cards-and-form/30-016.html": "20066ff6e86093b7400c48a3f862fe0a8ea255f5ae4464289510089a92d59a0b",
+    "spo/styling-pages-cards-and-form/31-016.html": "7f34f74ffdb86289d7ba6fd4e15facd4b9b9af56206b3e9df5ce3e4452003609",
+    "spo/styling-pages-cards-and-form/32-016.html": "01f5b347e7c1ea3e35cc6917f6bf4d1141eaaaa4d8c1ab9f6776efcbfb40d763",
+    "spo/styling-pages-cards-and-form/33-016.html": "9034e963f788343fadce38cd8e4edc8f45d680fe1da3ad4e86272e0dfa55d7b6",
+    "spo/styling-pages-cards-and-form/34-016.html": "44b17a4e633b1db649d61dbe910588fbb6c9ff563e69674f0168d53e69cfc549",
+    "spo/styling-pages-cards-and-form/35-016.html": "6f76b32154aac8c7f750995b9787e7f1329f5e08d8501dae1356e5c4a8e1004f",
+    "spo/styling-pages-cards-and-form/36-016.html": "eb9833e80b676deca582cbccbd3a7da2f1cecd59e5c42a12cbf2c9509872b526",
+    "spo/styling-pages-cards-and-form/37-016.html": "91a2cc0b9498b26ad1e574ea0e93937df9004f8b6b3d93065387d4eed544630c",
+    "spo/styling-pages-cards-and-form/38-016.html": "981885c02d8a1db826654d32ba825d0987db8377430d84801d3bf6bd667ff45a",
+    "spo/styling-pages-cards-and-form/39-016.html": "cad90db2811dba6c026379f1d323071909a541e489b14c3afe7c445ed524e562",
+    "spo/styling-pages-cards-and-form/index.html": "c21d62b31e23aac2b691fc35d67d49cf73de4fe479fa3fdaa71a8311be835478",
     "spo/technology-choice-and-diagnostics/index.html": "ba01af0700d01da454a09fc569365ae903ff0d9a1b26cf7334d4769a9b3a6c44",
-    "spo/topics/css-selectors-and-box-model/00.html": "f08b8150e67e01ff8dc9b3050593400f50a33bf19885b888949a39065bd88b88",
+    "spo/topics/css-selectors-and-box-model/00.html": "4b58500e4ad3a01e795c60c4f1dd9371e42756d879a3735fe3522ffd91e1afef",
     "spo/topics/css-selectors-and-box-model/index.html": "be5bd957e1f2d38147ca17e4de9eec346159a8aa4ed860eb40a7911b91c931d1",
     "spo/topics/events-and-state/index.html": "ce71252d0e3613b3d6835a0883dde0559f7b494c062f113f194d5a346750d213",
     "spo/topics/first-screen/index.html": "ea2b440db01f8e8d6cf531c3d3c0a1f9feb1cfce1d75b1556220b835c167ae91",
-    "spo/topics/first-web-project/00.html": "9f934ce4df780ff87a7c6fd0b84eee8b31c48ae4424b3b15ad6f8da46cdde754",
+    "spo/topics/first-web-project/00.html": "302595576331d87367b9ef8a844b1c947af5d50f18a8ea17213ff4b475db8d33",
     "spo/topics/first-web-project/index.html": "3dd964928220deec1ac206ea814ff1b6537d82bfa9d9e0fa2010b1f79cf601dc",
     "spo/topics/first-working-scenario.html": "ae5334c65dbcfeae8b95de63517b52d181c0223eea7803e35e5ba9ff35ce3a14",
     "spo/topics/flexbox-and-mobile-viewport/index.html": "638b9628122eeb84a5076646c7812c32676b11b1e45cacbc744e120864df1c38",
-    "spo/topics/home-page-and-catalog/00.html": "ec664c8c857ad4a3db390f355624d38de10716807d2d72b5fe1434dcb40b26fc",
+    "spo/topics/home-page-and-catalog/00.html": "928a937efc5a94549bf18ba9a8f82fff7b36f66cf339b9ae474f630f3630ea3c",
     "spo/topics/home-page-and-catalog/index.html": "a5a41b80a6a36771a7779d4c029424b3dbd90da0f8a7457eb441b382dd29ac13",
-    "spo/topics/html-content-structure/00.html": "7213893f2348935bb0173302189b52a7dd5f79d677cd5cfa96f9dff92e811ee2",
+    "spo/topics/html-content-structure/00.html": "fbb12640c0f6fa3c53412f7d6b12319a6ed6001655a7625a12d22a4acce551f4",
     "spo/topics/html-content-structure/index.html": "d42bfcdf7f41d078909a6f00cbf1d7bc7b9ebf94d970b2ae657e67fb217e5201",
-    "spo/topics/html-form/00.html": "5120603a2faba24e1add33e86be41197af3ce88f980eb78ff1bbd03f83c4efdb",
+    "spo/topics/html-form/00.html": "08f05398f323d5d93d37de4092498d8ac0bebaf57fc16839cc8ded935230015e",
     "spo/topics/html-form/index.html": "7042f6c58cd1e6d7fa34bd0274f5a9956b058b588b6bef05b2ffd6c71319dc1f",
     "spo/topics/index.html": "6872ef51c861463eee5ecb452499f74660979dc402784831098ac4d92a265318",
-    "spo/topics/javascript-values-and-input/00.html": "247a14320de4c47f9a6ed8392d3cd97bd99ca2731e517025295dd753e750aad9",
+    "spo/topics/javascript-values-and-input/00.html": "972c8ffdef68fd7acf9b7142a4c59a5383446e575e0485993de70973d173fc1f",
     "spo/topics/javascript-values-and-input/index.html": "19f214b5c023941e6cab0f68af08265a482afbdd91d104a45f06a3169ba04800",
     "spo/topics/mit-app-inventor/index.html": "641ffe75d1cf72c2d8f8e8752a3644da6826e565aa784995ab8a06f2d5459ae3",
     "spo/topics/mobile-app-types/index.html": "871db78a4e71ab6c8d3174fc0b5e45b589d0ea2678f21176adf0f6fa34467079",
-    "spo/topics/mobile-web-page/00.html": "78b68bf736a097c0d5ae449837bb806349836a6fe0a439d54526b604641dc453",
+    "spo/topics/mobile-web-page/00.html": "4a8f0f480b3ed2b09d023cc4a3387ab6139a8a99ce97b76e71424498461f3df3",
     "spo/topics/mobile-web-page/index.html": "77f11365347b916ba3ed54b7c8d3240f730bda031350c2db48bc94bdf711c685",
     "spo/topics/multi-screen-app-refinement/index.html": "02ec719dbc03f77de2e97d098f35cb0f2e41d934517ee9ffc8f889089923f8ac",
     "spo/topics/phone-testing-and-navigation/index.html": "0879aebd68aba0bf2ef8a62564916d457bd1d1e0f4a19f231565d37f75e3ae58",
-    "spo/topics/responsive-layout-and-browser-testing/00.html": "5633e4274cd7d80fded2ab4645af76683aa5f1346916abb5339e368b23195935",
+    "spo/topics/responsive-layout-and-browser-testing/00.html": "0f998acdfa95d3589b01892bc9dbaba5575bd2e22191b8789c7ad3639c15f290",
     "spo/topics/responsive-layout-and-browser-testing/index.html": "e7fa402ebe5cf45c73031b6cdbc5f4fd8bfdfdf0ed387aa2670c473c2678adab",
-    "spo/topics/styling-pages-cards-and-form/00.html": "1b9db9999c764b885b2ed74df466941ca3df8a77b81d18c122c46b3adedfef64",
+    "spo/topics/styling-pages-cards-and-form/00.html": "f60ea4424a129bee903bb15858d8f6579b57e6cac62d9649df20ac9bd6d51234",
     "spo/topics/styling-pages-cards-and-form/index.html": "beb156fda9dd7931699e9be8e8876bc7281d40175e706ff29c8ce81e0e43d165",
     "spo/topics/technology-choice-and-diagnostics/index.html": "1018b4f59ad5014195f74aa0343af8861b56ae34f1373906f15f2a8048b16b67",
     "spo/topics/variables-and-lists.html": "b02b74415a4afb45bc5fe5901ba922f464e86336bc57191a8ddd6085cec49c1e",
-    "spo/topics/variants/00.html": "1b9db9999c764b885b2ed74df466941ca3df8a77b81d18c122c46b3adedfef64",
-    "spo/topics/variants/01/015/variant.html": "b9a21a83ea98c5141ecaba60fddd4e3fb696a0ba9831335d1fc933e8503a2acf",
-    "spo/topics/variants/01/016/variant.html": "e13cf828dd1ddb6c3e271aa22f00ddd3b38176511cf4871adcf2e542a03a02f9",
-    "spo/topics/variants/01/018/variant.html": "3a8a50f271d9744f69ba85c945e2c03dd196bb969ed4ded95439515488bf1602",
-    "spo/topics/variants/01.html": "0b411600be0bdf8c39b6e66496beb109483cc34f61ffcf7104289fc2a1473103",
-    "spo/topics/variants/02/015/variant.html": "f7583e62da46c055540c1b2052c8d7b6406001e90a3cb80e7580289fe12cab9d",
-    "spo/topics/variants/02/016/variant.html": "ac3dd71a649f11466c0109d2db996b53ca266d2850a4bac2cc707cc0630da0a4",
-    "spo/topics/variants/02/018/variant.html": "ad41c6216901ac88c84de2544e6bc2c8ae6ba1910506ce9cf7eabfde17cea130",
-    "spo/topics/variants/02.html": "07a9bbfeb44fdd07e72778b3f96d92f51707c50c520431cc1ad0e01f65082214",
-    "spo/topics/variants/03/015/variant.html": "d5558327ac74c9d9aaa1d5a6f35de38cee9cb1462c2487c45f3db5ee4f8ddd16",
-    "spo/topics/variants/03/016/variant.html": "479f41eda78ec72123f3c7ff5a35b4bc57b621fdce33e7dbccf42ae6960334a7",
-    "spo/topics/variants/03/018/variant.html": "ccc4f5896da550fe1af9a51cf27a296c14d156ed82e9613747c5ea533eb015ba",
-    "spo/topics/variants/03.html": "c537f6bdd4e31e83155dc4f230191bc014f266f2154d89c53ff70812f6c4eec4",
-    "spo/topics/variants/04/015/variant.html": "7bd57c8ad5b4d601ab990a3e3cccf7a89b64b82fd6fcae21f3b3e527ab9fe802",
-    "spo/topics/variants/04/016/variant.html": "86710c7f24efc155cb74503664916b75f2c00fd53e724c4fa0b7fee118be98fd",
-    "spo/topics/variants/04/018/variant.html": "6406d156b2229c61cd9df78c5a732e6baa50e38f5e87a546ee03bb78c31f996d",
-    "spo/topics/variants/04.html": "e3ea6483f7774245ea0d02021fd140edddebb240e2a481cba115e9ac03e20b51",
-    "spo/topics/variants/05/015/variant.html": "541675af2b91f9442c21b32553d7a4bcb2bdc335a9fe2f2c7a8c99d8758f85ec",
-    "spo/topics/variants/05/016/variant.html": "edd00be05e595886f1cbeec7b6f63b85274af3eef802d3d72d577c9025331f9f",
-    "spo/topics/variants/05/018/variant.html": "cea65728bf16d7fbd5290009a8ca52da29a30f981cdc20ef108274820623ff60",
-    "spo/topics/variants/05.html": "f7398a5af89dc817840b19a287d3dff61a4d1b4d08f46f3f434ff030318741cd",
-    "spo/topics/variants/06/015/variant.html": "0f19eb6becb60111e75dda11c3b84e75c622dc20f18f2906cecc50d893da7d55",
-    "spo/topics/variants/06/016/variant.html": "20715c0b18e735945bb4ac1069dc822742f69ec60918ad0198d76141ab770b82",
-    "spo/topics/variants/06/018/variant.html": "c28b1604a5d07d7ddedee8b355b0cefa055e663d56d6959b6a4bca879b72839c",
-    "spo/topics/variants/06.html": "4069ac6ca970db834bcab73942d5e3f2bcd4699a49ee75ebafe4a278ad18228f",
-    "spo/topics/variants/07/015/variant.html": "986adb5baa32a99131dc784b761110b96ee63d69d227e1217d668d11bb228d8f",
-    "spo/topics/variants/07/016/variant.html": "00b08b219d88a436c312734313295369fdf4cf6d75891efbd325ca3160461588",
-    "spo/topics/variants/07/018/variant.html": "83c0bf8187a831028e6c86424c552714fe2a7ad5106f85b7b7120c50ec59001c",
-    "spo/topics/variants/07.html": "b925d3a100c9b06a06dd2124facdd93e359e3514abbc673161fad6edee932c66",
-    "spo/topics/variants/08/015/variant.html": "c2144b08aac1436ea86e65ebcef0003f33a4a9879a40a014504fdaf5616f0254",
-    "spo/topics/variants/08/016/variant.html": "079aae45c537e2be1560f08048566a1a835cf09aec17599832303782127a0d3a",
-    "spo/topics/variants/08/018/variant.html": "d42bd6f51aa008b7b59b83de796968de68fbd8d68ea5cfd6767fddbea5e2b96e",
-    "spo/topics/variants/08.html": "9fb4d0d26d37e24148fdab6a26d2e6914a4c5f278b9a43db2619255053b6e6ca",
-    "spo/topics/variants/09/015/variant.html": "3d36f4cf4a3809366b28dbdac00d5ac1e267d4cb6da8e9e52211bf0c088cf07d",
-    "spo/topics/variants/09/016/variant.html": "9a2c565de72d7ac36653300f4c161da96e943d5ed20459ec6bbbc9b06d3e76b0",
-    "spo/topics/variants/09/018/variant.html": "453080fedb97df798481d92ed26e4dad9a5bc0a5d6359911ef66bfc1e772322b",
-    "spo/topics/variants/09.html": "5802d6e635d1a5b84769fffe36f04eadd38761992455b2309d46ee34c9bd3ce6",
-    "spo/topics/variants/10/015/variant.html": "eef80b594466131112a3b73c14ceb25f751aaa26a058f01f3235383a5a85b771",
-    "spo/topics/variants/10/016/variant.html": "6d84d593c725daa9148c2d0a9995914eb3e51993ca4770c5cceff2eccac68adf",
-    "spo/topics/variants/10/018/variant.html": "d6bf7654b49857f2da3d09c89824a5878ba6bb8bf99d066822db89656dfd2d2e",
-    "spo/topics/variants/10.html": "c07f22b5fbe229d6c40937ae7704b9ab77d836744a9f0bcff9ff1ce0dce78a28",
-    "spo/topics/variants/11/015/variant.html": "cbfcff0ba719446230b857ccd8cdb2ad7fe25ef59b84dcff25024cfc0d90a62a",
-    "spo/topics/variants/11/016/variant.html": "b9d602013fb5b6487d4a2e90a20436f350393af5656bfb9f206061e49936674e",
-    "spo/topics/variants/11/018/variant.html": "52853dc9fe3c55b2257b919413984815a5a0695b0d6134e4b60e8c5baee83e5b",
-    "spo/topics/variants/11.html": "536d5e75f90ed370d972abed8220c64eca748cd3b0597fc1d5a83dc0b2a7d63b",
-    "spo/topics/variants/12/015/variant.html": "5deb645d527245f98f41449f776e8b4ed02ef9efdfcbbf4b8e07f2ae77adfa35",
-    "spo/topics/variants/12/016/variant.html": "1b3e8de6613be92a883925efba0b4514b59642cf7eff9d0b579e7467e5a2d455",
-    "spo/topics/variants/12/018/variant.html": "fbf7aa9b72e9d2f57fa80ced88c92f56ca5e15dfcba6c171f7cf3acaf534cfa6",
-    "spo/topics/variants/12/responsive-layout-and-browser-testing.html": "5fdbeda61979571fb277b9a96bece79f194ae1ab4edc16156c122f5975f0eaf7",
-    "spo/topics/variants/12.html": "db324b08e3f5827259f0adb1bf70340d6d01ad2ef45f9eabb91d3e9c192322a6",
-    "spo/topics/variants/13/015/variant.html": "d81b663d278adff677c704292815573913023ef095515ab8368956a985780449",
-    "spo/topics/variants/13/016/variant.html": "3c8a4ce04bf3a79562de0045b848923649983785fb889f4b3145568662f5737c",
-    "spo/topics/variants/13/018/variant.html": "d7af260d406da696a954afc38397ed100a02aff6ab0bff0a71c93414422eebf0",
-    "spo/topics/variants/13.html": "de1ac8edd5afe0bfcba7a3b15839c57a5d068c55b8842089ee1a62fcdd62bd16",
-    "spo/topics/variants/14/015/variant.html": "344dbd082ab00230e5a710f08555f1f95eeee7da01eb50c940d85804baf6667c",
-    "spo/topics/variants/14/016/variant.html": "d80d9ef7a1bde948017aae0cd36559f80d376a3bacbcb7fb2c89f8188167133f",
-    "spo/topics/variants/14/018/variant.html": "b86fcf738c3bd0e356ff52df33c4a4751f7ee20268fd89670c5b8c2dfa99d388",
-    "spo/topics/variants/14.html": "27ccb6b4889ca8be4ac06b2a626b16a54a0cfb6a0cd1642b0d5d628fa8c46195",
-    "spo/topics/variants/15/015/variant.html": "97bb18727aa0d781ebf32ac30859e7ca89da9d6ccdf31353030dedf60401d6ee",
-    "spo/topics/variants/15/016/variant.html": "4905a59a95095f585dd289f2cbf410be1b4f867ad10e7d43d1ff9ba9858090c0",
-    "spo/topics/variants/15/018/variant.html": "27a6fa3d3accd6acf9e0b38b974072175e675cf61cbac50f32519faf4d51305a",
-    "spo/topics/variants/15.html": "6283d751b4b607e0cade067df2f1d1f302674756cf0ae13d74d6caf77feccb67",
-    "spo/topics/variants/16/015/variant.html": "84faf8b3a6c816904b64e1d11968be16013bca661c964be083ded811757c47c0",
-    "spo/topics/variants/16/016/variant.html": "9a066de67bae16cd3516fec03da1ea1ba6827b06b45e4e3c1bd60798266845b2",
-    "spo/topics/variants/16/018/variant.html": "d7e6cfaac71d037f63fa386ab3bcdf6f2834a3e9dbdabc5e0f300acb6c1200ee",
-    "spo/topics/variants/16.html": "4a2405d0d8b098f5d12795cb9af2b2f19545f5084183b1310e6a14545edb2c05",
-    "spo/topics/variants/17/015/variant.html": "8e6c10cc4d16048786372a36263c8b258679924ff02fbd040f819a08ddcdb090",
-    "spo/topics/variants/17/016/variant.html": "5ac595a5ac36dd8516e04ff3d1ad3a3999f6c9cfc9128d4708c74d2374e7ca21",
-    "spo/topics/variants/17/018/variant.html": "526e499bfbff08be34a1e8d22bb86000b6cf6c736f53f09c06fd948cc26072d7",
-    "spo/topics/variants/17.html": "8c8f295f06edb96f257e3609aa1219b7d9ab77e41efc936e0b7221d901288ee4",
-    "spo/topics/variants/18/015/variant.html": "b3203cf38d4bc3b9abc1eeda0b96ada9840d413b38cbdf9e0a668ca4eaec5b5a",
-    "spo/topics/variants/18/016/variant.html": "a980bc0b73417f9c129b01ba1d8ca7862ac1537d7b432c911d82bfad64311a87",
-    "spo/topics/variants/18/018/variant.html": "77f60ae69eb414dda8fe9edc9487126c8ce720d94beafa091527e6d7d4c2fadb",
-    "spo/topics/variants/18.html": "259cee6db1bfd1db57bad29db4b318106ceba96f5968ddac673e008caee71f24",
-    "spo/topics/variants/19/015/variant.html": "4eb21e48f38fd4384c6db678c2fcee15db29ab22fd6e4beb8d59ebb1fb06e0d5",
-    "spo/topics/variants/19/016/variant.html": "a3129e5d3478fdd35f254fe9ba26aad9a81ddb983ec0007f9be2bc0617fd0675",
-    "spo/topics/variants/19/018/variant.html": "deeb279658316d2832bca17a70f7e9037dcdae535e9756f1b38ee3de22ef822d",
-    "spo/topics/variants/19.html": "262c2f8b5e83871c44ed4d6a8d44b3905ebe0083561202406011640adf2cda8d",
-    "spo/topics/variants/20/015/variant.html": "2ea780e0182b326602d5af6431302cc7c40354d7b9422adde8ad5e339bd651bb",
-    "spo/topics/variants/20/016/variant.html": "211312de31d4dd1d2fd7e624cbc47bf2885011e0f32ccfb70c760c6f4e7b3266",
-    "spo/topics/variants/20/018/variant.html": "1a3b9e3ee183f0bb2da877d2324de4b0e1bd2341ce0daaecd7a0f75cd439992b",
-    "spo/topics/variants/20.html": "21ceb5a3def5b626d2e67eba6667a0810eb883e1d6c7180101cd3b5ba799047a",
-    "spo/topics/variants/21/015/variant.html": "7dc0b8584f8f3d261a510d18690f17cdf74c293654244cab0b5ec39e91a979fc",
-    "spo/topics/variants/21/016/variant.html": "c4061c7f0638779ef48b2cd07cd887e4ebccda545e7de9dd79453c74362808f8",
-    "spo/topics/variants/21/018/variant.html": "1d9ed67a92817af60ea835ab7a704515521cb80757d822ec700f5ea0f5a9955c",
-    "spo/topics/variants/21.html": "5d3732757c716fb8af3fbf93bb7bedf55206e68d19a8f3f75ce48092a08e8163",
-    "spo/topics/variants/22/015/variant.html": "71fdfcbc4013bdf88b5ae26eff023ab1c2d13ad716e2a5a38b5ffb3415cdb387",
-    "spo/topics/variants/22/016/variant.html": "cc0afc6321496655cfe3b2f1a613ffad016cdc1853d971c93577caa0bfa3dbcb",
-    "spo/topics/variants/22/018/variant.html": "cb7ebe04f7bdd5d11edad50427175c16a1d660372c9a99d85aa467d0a3f26096",
-    "spo/topics/variants/22.html": "fa4485629b79df86405b16e27d40f16718680ff985a972d113abeb298b577208",
-    "spo/topics/variants/23/015/variant.html": "2a1352fc75b80827c2745430078bab93fd04958e67a9ca389c286e7f39d39b48",
-    "spo/topics/variants/23/016/variant.html": "d51d89775b4334c1bdb5f2e4b3bee7e45ff5fc2ed1cdc79380a7ffbdf1819869",
-    "spo/topics/variants/23/018/variant.html": "0054b3b806f21f5d87c15b6f4d53cc5423be95aa28335af47258b4f4f545ec0e",
-    "spo/topics/variants/23.html": "d0550fddfb81dbd353c0e086f893b9a2ffffa1290bcf6d3fd48b554470380b5a",
-    "spo/topics/variants/24/015/variant.html": "6e31f5302d785efbdad31eda8939c8af76e77301533fba37bf1e3d18b19cb759",
-    "spo/topics/variants/24/016/variant.html": "60f0efde3cfb1aeac9d5a500d6dcf81dc438a197084c5fb851092b594dd6be37",
-    "spo/topics/variants/24/018/variant.html": "c89e5eaac34053d4c78b41ca993089364d6b6267e77244928e64407ecd6808df",
-    "spo/topics/variants/24.html": "1998783d1d90cb0bc41e3893a233e06db9852e024c0539b5619fd6a66dc47c79",
-    "spo/topics/variants/25/015/variant.html": "4cd7a9c27ffcca605f31c2e3f7def0a7b12eb58ab94a7bced09ae655cd1390f9",
-    "spo/topics/variants/25/016/variant.html": "4ff63f0111d864f0574633f2018b8afd685fca1cb53aa77d857755057bfacbfa",
-    "spo/topics/variants/25/018/variant.html": "3383888f9a93de26a017a32ee5e0ce6dca287330ed3b1247a8c6afb2db2ef863",
-    "spo/topics/variants/25.html": "67ca102c312b599f2bf1d841b7d70d754a3a0cb736a1485256f47f18d3d1d5f8",
-    "spo/topics/variants/26/015/variant.html": "a93dec2de9443b0fbe3f903e679358a6ab6b6ae168a01dff1ddb29ecd7926770",
-    "spo/topics/variants/26/016/variant.html": "a898fd1e32d37db505306763108da1232529f0f36f017089be8e29c755d5f915",
-    "spo/topics/variants/26/018/variant.html": "d54db62b6340067050f04d5ec837d4ae72960423a52e6ce85aeb4be09f9d4444",
-    "spo/topics/variants/26.html": "e43cb29535b983ddbb98b11c8957dc7c69279794047bedf1f0a45b6e01f2a4a9",
-    "spo/topics/variants/27/015/variant.html": "b0f363f7f2b347b727627c9dfdf959ef95e6042848e7b8302a64aab95ab9fbee",
-    "spo/topics/variants/27/016/variant.html": "30cd655f968961e8f3f5c8bbd2e17cd2afca6709daabbba72f364a0c311ebb13",
-    "spo/topics/variants/27/018/variant.html": "c3bdd84ce4c91eb0d80b427e28cf880e26a2efef791b18dfc9898c9014c020f6",
-    "spo/topics/variants/27.html": "5af94168a469e5a677150fd4e2ef7e5b177f9357042dc40a8dae846b273fadfe",
-    "spo/topics/variants/28/015/variant.html": "f6661df6ef1861181d393b752cab165fb21a2348015b60f7cc84f8bada8fa19f",
-    "spo/topics/variants/28/016/variant.html": "acdb45057757da956a72f3d2f7d82f5246fe7068d7f2d36c1467b5ec56555eda",
-    "spo/topics/variants/28/018/variant.html": "b85ea28f8bad15230bab85f7236eeeb7b1faf7a0295a995e7360bf281dfc8d17",
-    "spo/topics/variants/28.html": "d13ed401baaed31dfd475339f5d89a26015785960c989e2062fadac18fd97a93",
-    "spo/topics/variants/29/015/variant.html": "2808af49cf09b34c5de2b32ef21f86bae005a843631b5bae705af4ee03c87534",
-    "spo/topics/variants/29/016/variant.html": "8c52aae162fbe723c70d1af51d0c337fd473ac101eaaa748a95a6d5dee453c71",
-    "spo/topics/variants/29/018/variant.html": "2b8ea6d5d0aedecb95bff84b4d2a4289167c683af361e6ba500f675101fd103a",
-    "spo/topics/variants/29.html": "6a1f0d0aac3e679243fe8e8ca64cd9baf4aa98c83f4b44dac7ece7790ae81c43",
-    "spo/topics/variants/30/015/variant.html": "9f89920e9bf807a57eb99edac584d9ec5c0ab4a38b12d6f5571fa56ed67b630b",
-    "spo/topics/variants/30/016/variant.html": "83fe00fa34d5c4d52b02001abe927316afa62efc32bd0d0ecc4d87e15f191297",
-    "spo/topics/variants/30/018/variant.html": "796ad639c75279324eacfcb9bf8cb7e4c658db68005a6c30ed4b91b64af9e2e7",
-    "spo/topics/variants/30.html": "c105af2c40a0fc5b1310ec3bcb600555ff5b69e45d60ee44fa7fd029817b3a04",
-    "spo/topics/variants/31/015/variant.html": "26b8cef29d82312d96caccf87e0fd5191156461377553d328601e23fd658992d",
-    "spo/topics/variants/31/016/variant.html": "14be419f05ee0b3fd0c0e29a577735712f31d1b8b7a16b82e28e0f877d5477cd",
-    "spo/topics/variants/31/018/variant.html": "1e5b6ce840346a1daf24fec9631909129749ca9f5e691754edd40a3435d902d7",
-    "spo/topics/variants/31.html": "cdcc53109aa32dad3326cc04c727c1ac0699159e0b11a4b7391ab46ca6d89c27",
-    "spo/topics/variants/32/015/variant.html": "b049719649943a33be5009ff09e8cf51bc4c272f921f3ba1b0ba451abfdfffae",
-    "spo/topics/variants/32/016/variant.html": "c1a9fbec26d579a708c6a35a7f621bbb6ff310962c65d3c4ed15cd19c1e01ad5",
-    "spo/topics/variants/32/018/variant.html": "36db4e798eae55fa1d14824fc99740da0941a92479cafd8e26116c242881f94d",
-    "spo/topics/variants/32.html": "dd6b6ffd8b8e525115af07fced2404fc69c03694aeb7dac1f37fe317445cf8e8",
-    "spo/topics/variants/33/015/variant.html": "0a57e9c1919b38854f6fa735022fdbb17c79455472fee0cebf6d0d50b808c14d",
-    "spo/topics/variants/33/016/variant.html": "e5bb22c69564e096f352c5c2aa0a1bd178204ecdccfb6bd01e6cf6aff56b0cac",
-    "spo/topics/variants/33/018/variant.html": "795bc4badb16081a537e312756f95e849809d604ddd3cca1fc5c88a297d5121a",
-    "spo/topics/variants/33.html": "f98ece6937296af336ccd247e5830e27b9002a2d15dc50c7fb3ca87fe9f1d5ed",
-    "spo/topics/variants/34/015/variant.html": "ea6a31c4649bc4a66359f0359f38ef36f3516f106f120a2fea8ff71dd7d55726",
-    "spo/topics/variants/34/016/variant.html": "40af778f839be50b0729b32ed2393ba825abfeffe8423a4701a739c3b71b480d",
-    "spo/topics/variants/34/018/variant.html": "023a1324848ceeb550a004ba59e9aabb737c20632381f42b25d49fefab9a9152",
-    "spo/topics/variants/34.html": "ecdfb2057111e2d8640205dedfbbe41fc155784f32c725432eedfe9110a3cdd5",
-    "spo/topics/variants/35/015/variant.html": "7f39c8720168b49f9452a002889f5ab4a4d2b1307d5ccec47614917a89f87b7a",
-    "spo/topics/variants/35/016/variant.html": "d216e7b39a764253b904ec2d4a1906d07598c755f27923ea10f588e98e977d45",
-    "spo/topics/variants/35/018/variant.html": "1d4d280fafa6734cce78fa662c6d59454ff5b68342e52c0d8b237a1f353599bd",
-    "spo/topics/variants/35.html": "9defc52e53f52aca2212667d811d8e01c7b6f84a5f9fe9cd63cbde90d31261bb",
-    "spo/topics/variants/36/015/variant.html": "1f2e9553e1cbe8c8e746e8b3f1fb5e01a9b83fa5da3a77b3d19ca81484ffd580",
-    "spo/topics/variants/36/016/variant.html": "739552f04bfb8a2c7dd1bca4da69fa71fda5aee74022a959ba72bd46823f6958",
-    "spo/topics/variants/36/018/variant.html": "427a891024196841adf3f5cafad60a2e3ee7b267e42d31a94c812ccbf145a47e",
-    "spo/topics/variants/36.html": "33c678a7407d7788ea6fd423478c34238adabdb32cca4be06f9df6b6f00ba1d9",
-    "spo/topics/variants/37/015/variant.html": "4076e51c0b3da3a9097385fe4fb4d58ed950853edc32a6a08c2596d2ac7f765b",
-    "spo/topics/variants/37/016/variant.html": "da79f59329ee29ced30df0e4e2e36f056cb94246566669b6c0c09ada33d658bb",
-    "spo/topics/variants/37/018/variant.html": "303efc2befee075023f2b5aa842d1466b628df4aa6421f46c89a93aece61cfbe",
-    "spo/topics/variants/37.html": "1bd49191a5fdc71450616f459a0acd642440b647c6b847b543dfdfca19cae563",
-    "spo/topics/variants/38/015/variant.html": "f280567ce3c263f6ec63abf80a6e9b6eb126adeba5e0461e3397b21c10b3b5a8",
-    "spo/topics/variants/38/016/variant.html": "a3c5a7d1b6e500074feadf843d54b8f6528570aeeae8b10ce04fb4c99427cca7",
-    "spo/topics/variants/38/018/variant.html": "cb1d8638121e7d1b1b9d00d68d136fb78da2022c0abe05f76be6e3df98a81a61",
-    "spo/topics/variants/38.html": "dc50c0b9c5670ca5ebe68f314b37999edbd9a4d0b5ba4c8c353f8a9aa30612bc",
-    "spo/topics/variants/39/015/variant.html": "abcb4a690e5293123c6f567d11eb7a81c47f481c3d61f238ace343b444cea3cd",
-    "spo/topics/variants/39/016/variant.html": "0ee3697c5f44a013fb29cf78686421aa4074ad548275ed42d726721fb5b0d103",
-    "spo/topics/variants/39/018/variant.html": "c80d0fbb373a6e7eee2df72baa0a0fd0b91c7174b26019b4cd4a259544842598",
-    "spo/topics/variants/39.html": "58c9ddc3b150ac35bc055da9a551173377ece8f7d88e788a645c8175cd4a3f1c",
-    "spo/topics/variants/index.html": "f67eb08e16e5cdde8fce794527dc9ad55a247dc3c7ccfbbe4420357b82be3bc1",
     "spo/variables-and-lists/index.html": "a3543cccd655c75f0f02f5b610ae0a1b59dd9ac2a573d6381ca8a2186706531b",
-    "sw.js": "7738eed7ab20bc8972985f9d2c4fd9edb7f5b3b6a54cefe20adce36815ede5e2",
+    "sw.js": "e138ef73f078a1b507b2cacb118e30e2455312b5cde738e8bfd1a34a291ac44f",
     "topics/index.html": "f910c2083c1b4e2559537bbf472cc8d81ec0f0923da64a4efd701cd7a7cb7af5",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "b78094386f75e5079aa94e62ac38a50c79ef98a7b943c8bb477db30d0352db48",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "de4c98981762a6a6249f764a237e92fed3171248a1ea71982d49c0b3129aed21",
@@ -2415,5 +2256,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a0cbc9730686ea7bd1450b6b9c610eef1eab22f08ee87fdbcf1f45cc89418b58",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "2ae9d3f4b6e4554d3fdb952bc7c81102efd35331cd569243ee42831fd6d15940"
   },
-  "manifest_digest": "e745044019f664255e8545cad29e446ef19787e3df64f110b1d6930c52178284"
+  "manifest_digest": "8d86e422a1b47ec0d0f85eb8f39d05e761855b8004c9de47a59f047877ac6033"
 }
