@@ -10,8 +10,8 @@
   color-scheme: light;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   line-height: 1.6;
-  color: #172033;
-  background: #f5f7fb;
+  color: #172c46;
+  background: #f2f8ff;
 }
 
 * {
@@ -28,7 +28,7 @@
 .calendar-controls {
   margin-block: 1rem;
   padding: .75rem 1rem;
-  border: 1px solid #cfd7e3;
+  border: 1px solid #d5e5f6;
   border-radius: .5rem;
 }
 .calendar-controls[hidden], .calendar-static-nav[hidden] { display: none; }
@@ -37,7 +37,15 @@
   font: inherit;
   max-width: 100%;
   min-height: 2.5rem;
+  padding: .25rem .875rem;
+  background: #fff;
+  color: #075db8;
+  border: 1px solid #bdd4ee;
+  border-radius: .375rem;
+  cursor: pointer;
 }
+.calendar-controls button:hover { background: #edf6ff; border-color: #075db8; }
+.calendar-controls button:focus-visible { outline: 3px solid #075db8; outline-offset: 3px; }
 .calendar-weekdays, .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -45,10 +53,11 @@
 }
 .calendar-weekdays { text-align: center; font-weight: 600; }
 ol.calendar-grid { list-style: none; margin: .5rem 0; padding: 0; }
-.calendar-day { display: flex; min-height: 2.75rem; border: 1px solid #c7d2e1; border-radius: .45rem; background: #fff; }
+.calendar-day { display: flex; min-height: 2.75rem; border: 1px solid #d4e2f0; border-radius: .45rem; background: #fff; }
 .calendar-day > time, .calendar-day > a { display: flex; align-items: center; flex: 1; padding: .5rem; }
-.calendar-day > a { border-radius: inherit; background: #e8f1ff; font-weight: 600; text-decoration: none; }
-.calendar-today { outline: 3px solid #2456a6; outline-offset: 0; }
+.calendar-day > a { border-radius: inherit; background: #e5f2ff; font-weight: 600; text-decoration: none; }
+.calendar-day > a:hover { background: #cfe7ff; }
+.calendar-today { outline: 3px solid #075db8; outline-offset: 0; }
 .calendar-today time { font-weight: 800; }
 .calendar-archive { margin-top: 1rem; }
 @media (max-width: 480px) {
@@ -61,15 +70,19 @@ body {
 }
 
 .site-header {
+  --site-title-size: clamp(2rem, 6vw, 4rem);
   position: relative;
-  min-height: 21.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-  background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),
-    url("header.jpg") center / cover;
-  background-color: #206d8e;
+  gap: 1.25rem;
+  background: radial-gradient(ellipse at 50% -20%, #168bff 0%, transparent 54%),
+    linear-gradient(180deg, #061b36 0,
+      #07346b calc(2rem + var(--site-title-size) * 1.15 - 3rem),
+      #168bff calc(2rem + var(--site-title-size) * 1.15 - 1rem),
+      #c7e5ff calc(2rem + var(--site-title-size) * 1.15 + 1.25rem),
+      #f2f8ff calc(2rem + var(--site-title-size) * 1.15 + 5rem));
+  background-color: #f2f8ff;
   color: white;
   padding: 2rem 1.5rem;
 }
@@ -79,18 +92,18 @@ body {
   color: #fff;
   margin: 0;
   max-width: 100%;
-  font-size: clamp(2rem, 6vw, 4rem);
+  font-size: var(--site-title-size);
   font-weight: 600;
   line-height: 1.15;
   text-align: center;
-  text-shadow: 0 2px 12px rgb(0 0 0 / 45%);
+  text-shadow: 0 2px 12px rgb(6 27 54 / 25%);
 }
 
 .site-quote {
-  margin: auto 0 0;
+  margin: 0;
   max-width: 48rem;
   text-align: center;
-  text-shadow: 0 2px 8px rgb(0 0 0 / 60%);
+  color: #102f51;
 }
 
 .site-quote blockquote {
@@ -126,7 +139,7 @@ body {
 }
 
 .quote-disclosure > summary:focus-visible {
-  outline: 2px solid white;
+  outline: 2px solid #075db8;
   outline-offset: 5px;
 }
 
@@ -140,7 +153,7 @@ body {
   max-width: min(36rem, calc(100vw - 3rem));
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
-  background: #172033;
+  background: #172c46;
   color: #fff;
   font-family: system-ui, sans-serif;
   font-style: normal;
@@ -157,13 +170,13 @@ body {
 }
 
 .site-quote a {
-  color: #fff;
-  text-decoration-color: rgb(255 255 255 / 55%);
+  color: #102f51;
+  text-decoration-color: rgb(16 47 81 / 55%);
   text-underline-offset: 0.2em;
 }
 
 .site-quote a:focus-visible {
-  outline: 2px solid white;
+  outline: 2px solid #075db8;
   outline-offset: 4px;
 }
 
@@ -188,9 +201,9 @@ body {
 
 main {
   background: white;
-  border: 1px solid #dce2ec;
+  border: 1px solid #d5e5f6;
   border-radius: 0.75rem;
-  box-shadow: 0 0.2rem 0.8rem rgb(23 32 51 / 8%);
+  box-shadow: 0 0.25rem 1.25rem rgb(23 60 101 / 6%);
 }
 
 main img {
@@ -291,7 +304,7 @@ h1,
 h2,
 h3 {
   line-height: 1.25;
-  color: #12365a;
+  color: #172c46;
 }
 
 h1,
@@ -304,7 +317,7 @@ h6 {
 }
 
 a {
-  color: #075da8;
+  color: #075db8;
 }
 
 table {
@@ -406,10 +419,6 @@ aside.callout {
 .site-updates[hidden], .site-updates button[hidden] { display: none; }
 
 @media (max-width: 48rem) {
-  .site-header {
-    min-height: 16rem;
-  }
-
   .section-cards {
     grid-template-columns: 1fr;
   }
