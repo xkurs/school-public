@@ -1738,7 +1738,7 @@
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "ccd9d98c5265f17d26565236fdad44d88ad143d0673350dfe25eb0a475cd8e94",
+  "source_digest": "3eb38aa85dfa5297e3622bf1d68508b2970a9f9480e73ae479326f9851e2aa49",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1810,7 +1810,7 @@
     "assets/media/topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg": "a3207eca1319a11fd5c55fc7a19cff7157d03704aadd9f0087a059c981e95f75",
     "assets/offline.js": "191c8acba0600022a0f65591a9dfbd1d793a7e285cfee8408af1c57017bc8f58",
     "assets/quotes.js": "78bf53c83e493fb4db0ce005a8c35962e03e406d696f3db36e8394f8ae44f5e3",
-    "assets/style.css": "bdfbfa7d2d14892bb147398d28fa94f04493a7972447906f11ed118122ae9794",
+    "assets/style.css": "a3fd616fb0c4be9b4fae2ccdda7ae2a3a49f5182b887334743a546c3363b3c37",
     "calendar/2026-10.html": "d41504d80b415a5a1fb0d1960e0e4e323c434be2b4eb0200b3208a1dd201aee6",
     "CNAME": "a88e58d2742981a3f92b2ca125fdde4b4072ab55106487f4973ceb23b7e66a12",
     "favicon.ico": "db28c1f3a1477b9fe964d09306431d787457f1e95d61dd0effcc461d20837f4c",
@@ -2387,7 +2387,7 @@
     "spo/assets/019-38.html": "93c8e40d9de50bac8ea6fa6000ad4c267bf91c9170ef482457089470098fb845",
     "spo/assets/019-39.html": "10f9a5f9377c4e49da9b9183c8cea6696ec0affb5d27c098cea17164a96ead8d",
     "spo/index.html": "1da506ef388c726effaaced5d34976da3de048fe6cb3088e9933b445c4a1735f",
-    "sw.js": "7dfdedfdefe39824b8afc6bf9b59ac10968e8495d5ce01b14c7432df7998f826",
+    "sw.js": "96258d1daea635035fbb6e8c391854f1a7f6132cc399ab415760612597ea5fe2",
     "topics/index.html": "f910c2083c1b4e2559537bbf472cc8d81ec0f0923da64a4efd701cd7a7cb7af5",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "b78094386f75e5079aa94e62ac38a50c79ef98a7b943c8bb477db30d0352db48",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "de4c98981762a6a6249f764a237e92fed3171248a1ea71982d49c0b3129aed21",
@@ -2461,5 +2461,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a0cbc9730686ea7bd1450b6b9c610eef1eab22f08ee87fdbcf1f45cc89418b58",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "2ae9d3f4b6e4554d3fdb952bc7c81102efd35331cd569243ee42831fd6d15940"
   },
-  "manifest_digest": "d4f9fc6327ad6652c4c86f7b5bcf0f19ae4345f9efbef3ad1e30d2435d1b7ff7"
+  "manifest_digest": "96c693eeb48cbd1c806a0b3cbe3996474d5e6ceb056626ede18721355e8ef3a3"
 }

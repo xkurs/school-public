@@ -84,7 +84,7 @@ body {
       #f2f8ff calc(2rem + var(--site-title-size) * 1.15 + 5rem));
   background-color: #f2f8ff;
   color: white;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem .75rem;
 }
 
 .site-title {
