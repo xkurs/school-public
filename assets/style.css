@@ -69,7 +69,13 @@ ol.calendar-grid { list-style: none; margin: .5rem 0; padding: 0; }
 .calendar-day > a:hover { background: #cfe7ff; }
 .calendar-today { outline: 3px solid #075db8; outline-offset: 0; }
 .calendar-today time { font-weight: 800; }
-.calendar-archive { margin-top: 1rem; }
+.calendar-archive { margin-top: 1rem; margin-bottom: 0; padding: 0; }
+.calendar-archive > summary {
+  min-height: calc(2.75rem - 2px);
+  padding: calc((2.75rem - 2px - 1lh) / 2) 1rem;
+  cursor: pointer;
+}
+.calendar-archive > :not(summary) { margin-inline: 1rem; }
 @media (max-width: 480px) {
   .calendar-controls, .calendar-weekdays, .calendar-grid { gap: .2rem; }
   .calendar-day > time, .calendar-day > a { padding: .3rem .15rem; justify-content: center; }
