@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Условия и функции: проверка данных и вычисление результата — shkolar.site</title>
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/quotes.js"></script>
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">Условия и функции: проверка данных и вычисление результата</li></ol></nav><h1 id="условия-и-функции-проверка-данных-и-вычисление-результата">Условия и функции: проверка данных и вычисление результата</h1>
+<p>На предыдущей паре программа переводила строковое количество в число и вычисляла результат. При <code>"2"</code> это работало, но пустой текст превращался в ноль, а слово — в <code>NaN</code>. Теперь программа сначала проверит данные и только после этого выполнит расчёт.</p>
+<p><strong>Результат:</strong> в прежнем веб-проекте появится файл <code>conditions.js</code> с функцией проверки и расчёта. Она получит исходные данные, вернёт понятное сообщение и будет проверена в консоли. Поле формы пока не читаем; ввод изображаем строкой в программе.</p>
+<p>Полное отдельное задание и рабочий преподавательский образец — <a href="assets/020-00.html">пример 00 пары 20</a>. Для самостоятельной работы используйте данные своего <a href="019-javascript-values-and-input.html#individual-assignments">листа пары 19</a>: название, цену, строковое количество и добавочную величину. Номер и тема проекта сохраняются; нового комплекта вариантов для этой пары нет.</p>
+<hr>
+<h2 id="1-подготовьте-отдельный-файл">1. Подготовьте отдельный файл</h2>
+<p>Откройте свою папку <code>VariantNN-web</code>. Сохраните <code>script.js</code> пары 19 как есть. Рядом создайте <strong><code>conditions.js</code></strong>. В <code>index.html</code> найдите подключение:</p>
+<pre><code class="language-html">&lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+</code></pre>
+<p>Замените только имя файла:</p>
+<pre><code class="language-html">&lt;script src=&quot;conditions.js&quot; defer&gt;&lt;/script&gt;
+</code></pre>
+<p>Старый файл остаётся в папке, но больше не запускается на этой странице. Содержимое и оформление трёх HTML-страниц сохраняются.</p>
+<p>В <code>conditions.js</code> напишите <code>console.log("Проверка запущена");</code>, сохраните оба файла, откройте главную страницу и <code>F12</code> → <strong>Console / Консоль</strong>. Обновите страницу. Если <code>F12</code> не работает, откройте инструменты разработчика через меню браузера. Должна появиться строка «Проверка запущена».</p>
+<hr>
+<h2 id="2-сравнение-даёт-ответ-да-или-нет">2. Сравнение даёт ответ «да» или «нет»</h2>
+<p>В строке консоли по одному выполните выражения:</p>
+<pre><code class="language-javascript">2 &gt; 0
+</code></pre>
+<pre><code class="language-javascript">0 &gt; 0
+</code></pre>
+<p>Первое возвращает <code>true</code>, второе — <code>false</code>. Это логические значения, знакомые по признаку учебных данных.</p>
+<table>
+<thead>
+<tr>
+<th>Запись</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>quantity &gt; 0</code></td>
+<td>Количество больше нуля</td>
+</tr>
+<tr>
+<td><code>quantity &lt;= 0</code></td>
+<td>Количество меньше либо равно нулю</td>
+</tr>
+<tr>
+<td><code>quantity === 2</code></td>
+<td>Количество равно числу 2, с проверкой типа</td>
+</tr>
+<tr>
+<td><code>quantity !== 2</code></td>
+<td>Количество не равно числу 2, с проверкой типа</td>
+</tr>
+</tbody>
+</table>
+<p><code>=</code> присваивает значение, а <code>===</code> сравнивает. Например, <code>"2" === 2</code> даёт <code>false</code>: строка и число имеют разные типы. В наших проверках используем <code>===</code> и <code>!==</code>, чтобы не полагаться на неявные преобразования.</p>
+<hr>
+<h2 id="3-условие-выбирает-действие">3. Условие выбирает действие</h2>
+<p>Замените пробную строку в <code>conditions.js</code> этим небольшим опытом:</p>
+<pre><code class="language-javascript">const quantity = 2;
+
+if (quantity &gt; 0) {
+  console.log(&quot;Можно продолжить&quot;);
+} else {
+  console.log(&quot;Нужно положительное количество&quot;);
+}
+</code></pre>
+<p><code>if</code> означает «если». В круглых скобках записывается проверка. Если она дала <code>true</code>, выполняется блок между первыми фигурными скобками. Иначе выполняется блок после <code>else</code> — «иначе». В этом примере за один запуск выполняется только одна ветвь.</p>
+<pre><code class="language-text">Количество &gt; 0?
+  да  → Можно продолжить
+  нет → Нужно положительное количество
+</code></pre>
+<p>Сохраните и обновите страницу: ожидается «Можно продолжить». Поменяйте <code>2</code> на <code>0</code>: ожидается второе сообщение. Верните <code>2</code>. Отступы показывают, какие команды принадлежат ветви; фигурные скобки задают её границы.</p>
+<hr>
+<h2 id="4-проверьте-строку-до-вычисления">4. Проверьте строку до вычисления</h2>
+<p>Количество в нашем расчёте — число целых единиц: 1, 2, 3 и так далее. Для него недостаточно одного <code>Number(...)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Исходная строка</th>
+<th>Преобразование</th>
+<th>Почему нельзя сразу считать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>""</code> или <code>"   "</code></td>
+<td>0</td>
+<td>Человек не указал количество</td>
+</tr>
+<tr>
+<td><code>"два"</code></td>
+<td><code>NaN</code></td>
+<td>Нет корректного числового значения</td>
+</tr>
+<tr>
+<td><code>"Infinity"</code></td>
+<td><code>Infinity</code></td>
+<td>Бесконечность не является допустимым количеством</td>
+</tr>
+<tr>
+<td><code>"0"</code>, <code>"-1"</code></td>
+<td>0, −1</td>
+<td>Нужно положительное количество</td>
+</tr>
+<tr>
+<td><code>"1.5"</code></td>
+<td>1.5</td>
+<td>Для этого задания нужны целые единицы</td>
+</tr>
+<tr>
+<td><code>"2"</code></td>
+<td>2</td>
+<td>Можно вычислять</td>
+</tr>
+</tbody>
+</table>
+<p>Строковый метод <strong><code>trim()</code></strong> возвращает строку без пробелов по краям. Например, <code>" 2 ".trim()</code> даёт <code>"2"</code>, а <code>"   ".trim()</code> — <code>""</code>. Исходная строка при этом сама не изменяется. Проверка <code>quantityText.trim() === ""</code> обнаружит пустой ввод до преобразования.</p>
+<p><strong><code>Number.isFinite(quantity)</code></strong> возвращает <code>true</code>, если передано конечное число. Для <code>NaN</code> и <code>Infinity</code> результат — <code>false</code>. <strong><code>Number.isInteger(quantity)</code></strong> проверяет, что число целое: для 2 — <code>true</code>, для 1.5 — <code>false</code>.</p>
+<p>Знак <strong><code>!</code></strong> меняет логический ответ на противоположный: <code>!true</code> — <code>false</code>. Поэтому <code>!Number.isFinite(quantity)</code> читается как «количество не является конечным числом».</p>
+<p>Знак <strong><code>||</code></strong> означает «или». В выражении <code>quantity &lt;= 0 || !Number.isInteger(quantity)</code> достаточно хотя бы одной причины: количество неположительное <strong>или</strong> нецелое.</p>
+<p>Это правила именно нашего учебного количества. Дробная продолжительность или другая величина в иной задаче может требовать других правил. Цену и добавочную величину здесь берём как известные числовые константы из своего листа; проверяем только строковое количество.</p>
+<hr>
+<h2 id="5-функция-получает-данные-и-возвращает-результат">5. Функция получает данные и возвращает результат</h2>
+<p><strong>Функция</strong> — именованный фрагмент программы, который можно вызвать с разными данными. Посмотрите короткий отдельный пример:</p>
+<pre><code class="language-javascript">function doubleNumber(value) {
+  return value * 2;
+}
+
+console.log(doubleNumber(3));
+console.log(doubleNumber(5));
+</code></pre>
+<p>Ожидается 6 и 10, каждое число с новой строки. <code>function</code> объявляет функцию, <code>doubleNumber</code> — её имя. <code>value</code> — <strong>параметр</strong>, имя для полученного значения. При вызове <code>doubleNumber(3)</code> число 3 — <strong>аргумент</strong>, конкретные данные этого вызова.</p>
+<p><code>return</code> возвращает значение в место вызова и завершает текущий вызов функции. Команды ниже выполненного <code>return</code> в нём уже не исполняются. Одно объявление функции ещё ничего не выводит: нужен вызов, а для показа возвращённого значения — <code>console.log(...)</code>.</p>
+<p>Параметры и переменные внутри функции используются в её теле. Например, <code>value</code> из этого примера не нужно выводить снаружи: снаружи мы получаем результат вызова.</p>
+<hr>
+<h2 id="6-соберите-одну-функцию-проверки-и-расчёта">6. Соберите одну функцию проверки и расчёта</h2>
+<p>Теперь <strong>целиком замените опыт шага 3 в <code>conditions.js</code></strong> следующим учебным кодом. Короткую функцию <code>doubleNumber</code> переносить в этот файл не требуется.</p>
+<pre><code class="language-javascript">function getResult(quantityText, unitPrice, extraPrice) {
+  if (quantityText.trim() === &quot;&quot;) {
+    return &quot;Ошибка: укажите количество&quot;;
+  }
+
+  const quantity = Number(quantityText);
+
+  if (!Number.isFinite(quantity)) {
+    return &quot;Ошибка: введите число&quot;;
+  }
+
+  if (quantity &lt;= 0 || !Number.isInteger(quantity)) {
+    return &quot;Ошибка: нужно положительное целое количество&quot;;
+  }
+
+  const totalPrice = unitPrice * quantity + extraPrice;
+  return &quot;Итого: &quot; + totalPrice;
+}
+
+console.log(getResult(&quot;2&quot;, 150, 50));
+</code></pre>
+<p>Ожидаемый вывод — <strong><code>Итого: 350</code></strong>. Данные вымышлены: один набор стоит 150, одна доставка всего заказа — 50.</p>
+<p>Функция всегда возвращает <strong>строку сообщения</strong>. При допустимых данных строка содержит вычисленный итог, при ошибке — объяснение. Это удобно для сегодняшнего показа в консоли. Позже способ представления результата можно будет изменить при подключении интерфейса.</p>
+<p>Порядок действий существенен:</p>
+<ol>
+<li>Проверить пустой текст, пока он ещё не превратился в ноль.</li>
+<li>Преобразовать строку в число.</li>
+<li>Отсеять нечисловой и бесконечный результат.</li>
+<li>Проверить положительное целое количество.</li>
+<li>Вычислить цену × количество + одну добавочную величину и вернуть сообщение.</li>
+</ol>
+<p>Здесь после каждого обнаруженного нарушения срабатывает <code>return</code>, поэтому до вычисления программа с неверными данными не доходит. <code>else</code> после таких проверок не нужен: выполнение уже завершено. Если нарушение не найдено, программа продолжает следующую строку.</p>
+<hr>
+<h2 id="7-выполните-свою-задачу">7. Выполните свою задачу</h2>
+<p>Это единое задание продолжает расчёт пары 19. Функцию проверки можно взять из разбора; <strong>вызов и данные подготовьте для своего проекта</strong>. Полный самостоятельный преподавательский пример отделён: <a href="assets/020-00.html">задание и код варианта 00</a>.</p>
+<p>Внизу <code>conditions.js</code>, после объявления функции, вместо учебного вызова объявите название, цену и добавочную величину своего варианта. Возьмите их из прежнего листа пары 19, не изменяя смысл формулы. Последняя величина может называться доставкой, подготовкой или иначе; в функции нейтральное имя <code>extraPrice</code> означает одно слагаемое на весь расчёт.</p>
+<p>Выведите название отдельной командой. Вызовите <code>getResult</code> со строковым количеством своего листа и двумя своими числовыми значениями. Аргументы передавайте в порядке параметров: <strong>строка количества, цена единицы, добавочная величина</strong>. Цена без кавычек — число. Ожидаемый итог допустимого запуска должен совпасть с вашим листом пары 19.</p>
+<p>Затем добавьте ещё три вызова той же функции с теми же ценами: с <code>""</code>, с <code>"два"</code> и с <code>"0"</code>. Объявление функции не копируйте четыре раза: меняются только аргументы её вызова.</p>
+<p>После сохранения и обновления страницы проверьте:</p>
+<table>
+<thead>
+<tr>
+<th>Вход</th>
+<th>Что должно быть в консоли</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Количество своего листа</td>
+<td>Тот же вычисленный итог, что на паре 19</td>
+</tr>
+<tr>
+<td><code>""</code></td>
+<td><code>Ошибка: укажите количество</code></td>
+</tr>
+<tr>
+<td><code>"два"</code></td>
+<td><code>Ошибка: введите число</code></td>
+</tr>
+<tr>
+<td><code>"0"</code></td>
+<td><code>Ошибка: нужно положительное целое количество</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Самопроверка:</strong> при ошибочном количестве нет строки с рассчитанной суммой для этого вызова. При правильном — итог вычислен из данных, а не вписан готовым числом. В HTML ничего нового не появляется, потому что результат направлен в консоль.</p>
+<hr>
+<h2 id="покажите-результат">Покажите результат</h2>
+<p>Покажите преподавателю сохранённый <code>conditions.js</code>, его подключение и четыре результата в консоли. Объясните один правильный и один ошибочный вызов: какие аргументы переданы, какая проверка сработала и где завершилась функция. Покажите строку преобразования и формулу. Сохраните проект; отдельный письменный отчёт не требуется.</p>
+<table>
+<thead>
+<tr>
+<th>Затруднение</th>
+<th>Что проверить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Старый расчёт вместо нового</td>
+<td>Имя файла в <code>src</code>, сохранение <code>index.html</code> и обновление страницы</td>
+</tr>
+<tr>
+<td>Функция есть, вывода нет</td>
+<td>После объявления есть вызов внутри <code>console.log(...)</code></td>
+</tr>
+<tr>
+<td><code>trim is not a function</code></td>
+<td>Первый аргумент должен быть строкой, например <code>"2"</code>, а не числом 2</td>
+</tr>
+<tr>
+<td><code>ReferenceError</code></td>
+<td>Имена и регистр совпадают; внутреннее имя не используется за пределами функции</td>
+</tr>
+<tr>
+<td>Допустимый итог неверен</td>
+<td>Порядок аргументов; свои числа; добавочная величина прибавлена один раз</td>
+</tr>
+<tr>
+<td><code>SyntaxError</code></td>
+<td>Закрыты скобки и кавычки, параметры разделены запятыми</td>
+</tr>
+</tbody>
+</table></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>

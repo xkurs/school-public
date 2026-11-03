@@ -12,6 +12,11 @@
       "title": "Октябрь 2026"
     },
     {
+      "source": "calendar/2026-11.md",
+      "output": "calendar/2026-11.html",
+      "title": "Ноябрь 2026"
+    },
+    {
       "source": "calendar/README.md",
       "output": "index.html",
       "title": "Календарь"
@@ -70,6 +75,11 @@
       "source": "schedules/personal/2026-10-31.md",
       "output": "schedules/personal/2026-10-31.html",
       "title": "Личное расписание на 31.10.2026"
+    },
+    {
+      "source": "schedules/personal/2026-11-07.md",
+      "output": "schedules/personal/2026-11-07.html",
+      "title": "Личное расписание на 07.11.2026"
     },
     {
       "source": "spo/001-mobile-app-types.md",
@@ -165,6 +175,16 @@
       "source": "spo/019-javascript-values-and-input.md",
       "output": "spo/019-javascript-values-and-input.html",
       "title": "JavaScript — переменные, типы, операции и преобразование пользовательского ввода"
+    },
+    {
+      "source": "spo/020-conditions-and-functions.md",
+      "output": "spo/020-conditions-and-functions.html",
+      "title": "Условия и функции: проверка данных и вычисление результата"
+    },
+    {
+      "source": "spo/021-arrays-loops-and-objects.md",
+      "output": "spo/021-arrays-loops-and-objects.html",
+      "title": "JavaScript — массивы, циклы и простые объекты"
     },
     {
       "source": "spo/assets/010-00.md",
@@ -992,6 +1012,16 @@
       "title": "Вариант 39 — Космос рядом, пара 19"
     },
     {
+      "source": "spo/assets/020-00.md",
+      "output": "spo/assets/020-00.html",
+      "title": "Учебный вариант 00 — пара 20"
+    },
+    {
+      "source": "spo/assets/021-00.md",
+      "output": "spo/assets/021-00.html",
+      "title": "Учебный вариант 00 — пара 21"
+    },
+    {
       "source": "spo/README.md",
       "output": "spo/index.html",
       "title": "СПО — разработка мобильных приложений"
@@ -1738,7 +1768,7 @@
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "9c6344e5be08ea5fa3d9d41d580fc1dc55ba5dc7a07c1c49c594e57a4ef3566a",
+  "source_digest": "d8ce9077fe422024b9e062b380a0a1e66f34a6e62debbc3c8132318df7000f7d",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1811,10 +1841,11 @@
     "assets/offline.js": "191c8acba0600022a0f65591a9dfbd1d793a7e285cfee8408af1c57017bc8f58",
     "assets/quotes.js": "78bf53c83e493fb4db0ce005a8c35962e03e406d696f3db36e8394f8ae44f5e3",
     "assets/style.css": "f72d1b5498b3826f0973a40e08139083dc99d7d7e35fe9c7262ab26f380d021d",
-    "calendar/2026-10.html": "5f2611166678580b12fb9bee19205e01dd14e37da75475d0226a91ac7844241d",
+    "calendar/2026-10.html": "c55d5e837e8719a3234b7278a0cae34df32d25e8c69fa6cf7108ff0fa6815eb1",
+    "calendar/2026-11.html": "d0962c54210a1d9df9145d082563c50226a66c978ff5f4ccddb17e59efb1fe8d",
     "CNAME": "a88e58d2742981a3f92b2ca125fdde4b4072ab55106487f4973ceb23b7e66a12",
     "favicon.ico": "db28c1f3a1477b9fe964d09306431d787457f1e95d61dd0effcc461d20837f4c",
-    "index.html": "7e7136df993f95a7a2181af7c92f0d93e45d78360b9251cc9346774df134e8e2",
+    "index.html": "9fa12b70336cbb60fb0958b0b8688b724030d393e849a098e04d482d2421a715",
     "schedules/personal/2026-10-14.html": "7039d135182d050b806e9e66ca0a9426487409007efea4a207c1f13e7572c3ed",
     "schedules/personal/2026-10-15.html": "98d6c9add76367979a64fe7105622887bf50ae60682d94ea0390f7292a6d6cff",
     "schedules/personal/2026-10-16.html": "c10bbea79918ff634431002a80f9361946760d0d0b3336fa13b49f2186d824d3",
@@ -1826,6 +1857,7 @@
     "schedules/personal/2026-10-24.html": "96ef35b708a085f267025d98a744d81c8faffe4b9e1a7583cb17222434560c81",
     "schedules/personal/2026-10-28.html": "eee5c90817d41aa83840c4af698052ca29229367ddd344e771eb393222088197",
     "schedules/personal/2026-10-31.html": "79e0f1662cdcdbc665a9e2a504a106ac510704eca9e8812318a42cab20d80f84",
+    "schedules/personal/2026-11-07.html": "f3e5c34bd70112439c139f0fa286f991bb3b28a4db75f15c54b056ff256965ae",
     "spo/001-mobile-app-types.html": "188daf3dd1c90c7ecb28d165cd867f71651e7ea963c161a9fb15b0539b1d6b09",
     "spo/002-technology-choice-and-diagnostics.html": "62314093d566396010daad9561ded3ae553ea2832215367f2e42a3f00d2eb414",
     "spo/003-mit-app-inventor.html": "ef3f2fe7dfc7dd8e7f00be90eca405c3857892bb2dac77b0b363384e87eab1f9",
@@ -1845,6 +1877,8 @@
     "spo/017-flexbox-and-mobile-viewport.html": "30a0e7ffa0ca99f6f81c53fa238bfac3be88b62f8be31ddb6f2b6d569bceb055",
     "spo/018-responsive-layout-and-browser-testing.html": "d55ebbde4558b017a05c0da6d580373fe0ed8fe1490a3d83244522716438d4b6",
     "spo/019-javascript-values-and-input.html": "088328ddc2d8ba7e3c2d74ee9a420af12d74e64d53f2645d7b3a658c1b2eadbe",
+    "spo/020-conditions-and-functions.html": "f91d3152278c0900e0dd7d134d7216790cd860d2745d5a011ecc60ac59fab71c",
+    "spo/021-arrays-loops-and-objects.html": "1818be5e967054ded086704a316afd12027abe49b490900858229cf75c5e3a35",
     "spo/assets/003-00-blocks-screenshot.jpg": "574a062ab7e8ccf9fe731c5ec545ac4bf6c88cd8a02551d752be2597b264e1bf",
     "spo/assets/003-00-button-properties-screenshot.jpg": "6d15427fc17d8f758bc6add4f5320d0050e9204ce096a12e27a96a4f702ddcb2",
     "spo/assets/003-00-connect-usb-screenshot.jpg": "c8f30aa965893f3c8442b0589a66bf0e29738ff93109b0bdcad33fbadc88fafa",
@@ -2386,8 +2420,10 @@
     "spo/assets/019-37.html": "952f8891c891a31f4c87a2717317f35332bdb1a962ef723ec925b2598f77776f",
     "spo/assets/019-38.html": "93c8e40d9de50bac8ea6fa6000ad4c267bf91c9170ef482457089470098fb845",
     "spo/assets/019-39.html": "10f9a5f9377c4e49da9b9183c8cea6696ec0affb5d27c098cea17164a96ead8d",
-    "spo/index.html": "1da506ef388c726effaaced5d34976da3de048fe6cb3088e9933b445c4a1735f",
-    "sw.js": "a59884990a1270c551b6dd5006538c25e82e096953aa472023e1cbf0e7823a61",
+    "spo/assets/020-00.html": "c9d29b6959f1f4e862c1101a085af2c88df70d7628f30e964db75f147955f038",
+    "spo/assets/021-00.html": "b9298d22bf027ed4a3f7de439cd839d0bd22ef54f8217f0efad5e28dacc5dae7",
+    "spo/index.html": "aa40fb98c799634f4ebedb5e289f0d3a0096fa88ccf483bf1bc1ac46be5bf41e",
+    "sw.js": "8d13cbd8fb6bbe84831e6f9cee930099fc3534758261fe80da2d3aa2e747a9f6",
     "topics/index.html": "f910c2083c1b4e2559537bbf472cc8d81ec0f0923da64a4efd701cd7a7cb7af5",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "b78094386f75e5079aa94e62ac38a50c79ef98a7b943c8bb477db30d0352db48",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "de4c98981762a6a6249f764a237e92fed3171248a1ea71982d49c0b3129aed21",
@@ -2461,5 +2497,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a0cbc9730686ea7bd1450b6b9c610eef1eab22f08ee87fdbcf1f45cc89418b58",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "2ae9d3f4b6e4554d3fdb952bc7c81102efd35331cd569243ee42831fd6d15940"
   },
-  "manifest_digest": "a696c6c177e17646987c5128d8e6570e5d3b7e4b9f42c5eb6dd3c5d99e18b32d"
+  "manifest_digest": "c1ffe79e00553979352d91a559017a7f9f1d88cc56a62ef7c98c0bf075ee83e3"
 }

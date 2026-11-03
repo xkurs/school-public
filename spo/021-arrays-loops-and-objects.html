@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>JavaScript — массивы, циклы и простые объекты — shkolar.site</title>
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/quotes.js"></script>
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">JavaScript — массивы, циклы и простые объекты</li></ol></nav><h1 id="javascript-массивы-циклы-и-простые-объекты">JavaScript — массивы, циклы и простые объекты</h1>
+<p>На HTML-странице уже есть три карточки каталога. JavaScript пока ничего о них не знает: программа не получает сведения из HTML автоматически. На этой паре отдельно опишем три записи данными и выведем их в консоли. Тема, порядок и названия берутся из прежнего проекта.</p>
+<p><strong>Результат:</strong> файл <code>catalog.js</code>, в котором массив хранит три простых объекта, а цикл выводит каждую запись. Массив, цикл и объект — три разных инструмента: <strong>список записей → повторение действий → свойства одной записи</strong>.</p>
+<p>Отдельное полное задание и рабочий пример преподавателя — <a href="assets/021-00.html">пример 00 пары 21</a>. Новый студенческий комплект не создаётся: продолжайте свои три карточки и номер варианта. Цены ниже синтетические; для собственного каталога достаточно названий и порядковых номеров, поэтому неизвестные цены придумывать не требуется.</p>
+<hr>
+<h2 id="1-подготовьте-файл-для-новой-задачи">1. Подготовьте файл для новой задачи</h2>
+<p>В своей папке <code>VariantNN-web</code> сохраните <code>script.js</code> пары 19 и <code>conditions.js</code> пары 20. Создайте рядом <strong><code>catalog.js</code></strong>. В <code>index.html</code> замените подключение предыдущего расчёта:</p>
+<pre><code class="language-html">&lt;script src=&quot;conditions.js&quot; defer&gt;&lt;/script&gt;
+</code></pre>
+<p>на:</p>
+<pre><code class="language-html">&lt;script src=&quot;catalog.js&quot; defer&gt;&lt;/script&gt;
+</code></pre>
+<p>Если осталось имя <code>script.js</code>, замените его тем же способом. На главной должно быть одно подключение текущей программы; старые файлы сохраняются. Страницы и CSS переделывать не нужно.</p>
+<p>В новом файле напишите <code>console.log("Каталог запущен");</code>, сохраните файлы и откройте главную страницу в браузере. <code>F12</code> → <strong>Console / Консоль</strong>, затем обновление страницы. При недоступности клавиши откройте инструменты разработчика через меню браузера. Самопроверка — строка «Каталог запущен».</p>
+<hr>
+<h2 id="2-массив-хранит-несколько-значений-по-порядку">2. Массив хранит несколько значений по порядку</h2>
+<p>Замените пробную строку в <code>catalog.js</code> таким опытом:</p>
+<pre><code class="language-javascript">const names = [&quot;Базовый набор&quot;, &quot;Расширенный набор&quot;, &quot;Набор для команды&quot;];
+
+console.log(names[0]);
+console.log(names[2]);
+console.log(names.length);
+</code></pre>
+<p><strong>Массив</strong> — упорядоченный список. Квадратные скобки создают его, запятые разделяют элементы. Здесь каждый элемент — строка с названием.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Индекс</th>
+<th>Элемент</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td><code>"Базовый набор"</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>"Расширенный набор"</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>"Набор для команды"</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Индекс</strong> — номер позиции, который начинается с нуля. <code>names[0]</code> получает первый элемент. <code>names.length</code> — количество элементов, здесь 3. Последний допустимый индекс — 2, а не 3.</p>
+<p>Ожидаемый вывод:</p>
+<pre><code class="language-text">Базовый набор
+Набор для команды
+3
+</code></pre>
+<p>Если обратиться к <code>names[3]</code>, получится <code>undefined</code> — значения по такой позиции нет. Это не строка с названием и не четвёртая карточка. Запишите правильный индекс, вместо того чтобы скрывать отсутствие данных.</p>
+<hr>
+<h2 id="3-цикл-повторяет-действие-для-каждого-элемента">3. Цикл повторяет действие для каждого элемента</h2>
+<p>Оставьте объявление <code>names</code>, а три строки вывода под ним замените:</p>
+<pre><code class="language-javascript">for (const name of names) {
+  console.log(name);
+}
+</code></pre>
+<p><strong>Цикл</strong> повторяет блок команд. Запись <code>for...of</code> здесь означает «для каждого значения из массива». На каждом проходе имя <code>name</code> обозначает очередной элемент. Сначала это <code>"Базовый набор"</code>, затем <code>"Расширенный набор"</code>, затем <code>"Набор для команды"</code>.</p>
+<pre><code class="language-text">names[0] → name → вывод
+names[1] → name → вывод
+names[2] → name → вывод
+элементы закончились → выход из цикла
+</code></pre>
+<p>Сохраните и обновите страницу: должны появиться все три названия в прежнем порядке. Команда <code>console.log</code> написана один раз, но выполняется три раза. Для пустого массива <code>[]</code> тело такого цикла не выполнится ни разу.</p>
+<p><code>name</code> доступно внутри фигурных скобок цикла. <code>const</code> здесь создаёт новое имя для очередного прохода; присваивать ему следующий элемент вручную не нужно. <code>for...of</code> перебирает <strong>значения</strong>, а не выдаёт их индексы.</p>
+<hr>
+<h2 id="4-объект-объединяет-свойства-одной-записи">4. Объект объединяет свойства одной записи</h2>
+<p>Одного названия иногда мало. У карточки могут быть порядковый номер, название и другие характеристики. <strong>Объект</strong> хранит связанные значения под именами свойств.</p>
+<p>Рассмотрите отдельный короткий пример:</p>
+<pre><code class="language-javascript">const item = {
+  name: &quot;Базовый набор&quot;,
+  unitPrice: 150
+};
+
+console.log(item.name);
+console.log(item.unitPrice);
+</code></pre>
+<p>Ожидается <code>Базовый набор</code> и затем 150. Фигурные скобки справа от <code>=</code> создают объект. В записи <code>name: "Базовый набор"</code> слева — имя свойства, справа — его значение, между ними двоеточие. Свойства разделены запятыми.</p>
+<p>Точка читает свойство по имени: <code>item.name</code> — название именно этого объекта. <code>item.unitPrice</code> — число, с ним можно выполнять вычисления. Если написать несуществующее <code>item.price</code>, получится <code>undefined</code>: оно не заменяет объявленное имя <code>unitPrice</code>.</p>
+<p>Внешнее имя переменной и имена свойств выполняют разные роли. <code>item</code> обозначает объект целиком; <code>name</code> обозначает одно из его свойств. Запись <code>item.name</code> не ищет произвольную переменную <code>name</code> в программе.</p>
+<hr>
+<h2 id="5-массив-объектов-описывает-каталог">5. Массив объектов описывает каталог</h2>
+<p>Теперь <strong>целиком замените опыт с <code>names</code> в <code>catalog.js</code></strong> следующим общим примером:</p>
+<pre><code class="language-javascript">const catalog = [
+  { position: 1, name: &quot;Базовый набор&quot; },
+  { position: 2, name: &quot;Расширенный набор&quot; },
+  { position: 3, name: &quot;Набор для команды&quot; }
+];
+
+console.log(&quot;Записей:&quot;, catalog.length);
+
+for (const item of catalog) {
+  console.log(item.position + &quot;. &quot; + item.name);
+}
+</code></pre>
+<p>Квадратные скобки охватывают <strong>список</strong>, каждая пара фигурных — <strong>одну запись</strong>. У всех трёх объектов одинаковые имена свойств <code>position</code> и <code>name</code>, но разные значения. Запятая между объектами отделяет одну запись от другой.</p>
+<pre><code class="language-text">catalog — массив
+  [0] — объект → position: 1, name: &quot;Базовый набор&quot;
+  [1] — объект → position: 2, name: &quot;Расширенный набор&quot;
+  [2] — объект → position: 3, name: &quot;Набор для команды&quot;
+</code></pre>
+<p><code>position</code> — обычное свойство для видимого номера карточки. Оно начинается с 1 по нашему выбору и <strong>не меняет</strong> индексы массива: первая запись по-прежнему <code>catalog[0]</code>.</p>
+<p>В цикле <code>item</code> получает не строку, а очередной объект. Поэтому выводим <code>item.position</code> и <code>item.name</code>. Выражение с <code>+</code> собирает строку: номер, точка с пробелом и название. Объявлять три разных цикла для трёх записей не нужно.</p>
+<p>Ожидаемый вывод:</p>
+<pre><code class="language-text">Записей: 3
+1. Базовый набор
+2. Расширенный набор
+3. Набор для команды
+</code></pre>
+<p><code>catalog.length</code> считает записи массива, а не свойства внутри объектов. Для первой карточки <code>catalog[0].name</code> читается в два шага: получить объект по индексу 0, затем его свойство <code>name</code>.</p>
+<hr>
+<h2 id="6-подготовьте-собственный-каталог">6. Подготовьте собственный каталог</h2>
+<p>Это единое задание продолжает ваш веб-проект. Откройте рядом свою HTML-страницу каталога и <strong>перенесите три фактических названия карточек</strong> в массив <code>catalog</code> файла <code>catalog.js</code>. Сохраните их порядок, орфографию и тему. Каждая запись имеет только <code>position</code> и <code>name</code>, как в разобранном примере. Значения <code>position</code> — 1, 2 и 3. Из HTML программа пока не читает: перенос выполняете вы.</p>
+<p>Оставьте один вывод длины массива и один цикл <code>for...of</code>, выводящий номер и название каждой записи. Готовые три строки результата вручную не печатайте: их должен сформировать цикл из данных.</p>
+<p>В конце, <strong>после закрывающей скобки цикла</strong>, добавьте отдельную проверку доступа к свойству:</p>
+<pre><code class="language-javascript">console.log(&quot;Первая запись:&quot;, catalog[0].name);
+</code></pre>
+<p>Сохраните <code>catalog.js</code>, обновите главную страницу и сверьте консоль с открытым HTML-каталогом. Ожидаются строка «Записей: 3», три названия с номерами в том же порядке и строка «Первая запись:» с названием первой карточки. Сумму, отбор записей и изменение HTML на этом занятии не добавляем.</p>
+<hr>
+<h2 id="самопроверка-и-итоговый-показ">Самопроверка и итоговый показ</h2>
+<p>Перед показом проверьте три связи:</p>
+<table>
+<thead>
+<tr>
+<th>Что проверяем</th>
+<th>Как увидеть результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Состав и порядок данных</td>
+<td>Три строки цикла совпадают с тремя карточками вашего каталога</td>
+</tr>
+<tr>
+<td>Доступ по индексу</td>
+<td><code>catalog[0].name</code> совпадает с первой строкой цикла</td>
+</tr>
+<tr>
+<td>Цикл зависит от данных</td>
+<td>При временном изменении названия в одном объекте меняется именно соответствующая строка</td>
+</tr>
+</tbody>
+</table>
+<p>Для последней проверки временно добавьте к одному названию слово <code>тест</code>, сохраните и обновите страницу. Убедитесь, что изменился нужный вывод; затем восстановите исходное название, снова сохраните и обновите. HTML-каталог от этого опыта сам не меняется: пока это две отдельные записи данных.</p>
+<p>Покажите преподавателю сохранённый файл, подключение и вывод трёх записей. Укажите в коде массив, один объект, одно свойство и тело цикла. Объясните, почему первый индекс — 0, а <code>length</code> — 3, и почему одна строка <code>console.log</code> в цикле напечатала три записи. Отдельный письменный отчёт не требуется.</p>
+<table>
+<thead>
+<tr>
+<th>Затруднение</th>
+<th>Что проверить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>undefined</code> вместо названия</td>
+<td>Индекс 0–2, точное имя <code>name</code> и наличие этого свойства у каждой записи</td>
+</tr>
+<tr>
+<td>Выводится объект вместо текста</td>
+<td>Используются <code>item.position</code> и <code>item.name</code>, а не только <code>item</code></td>
+</tr>
+<tr>
+<td>Повторяется первая карточка</td>
+<td>Внутри цикла обращение к <code>item</code>, а не каждый раз к <code>catalog[0]</code></td>
+</tr>
+<tr>
+<td>В консоли остался расчёт</td>
+<td>В HTML подключён <code>catalog.js</code>; оба файла сохранены; страница обновлена</td>
+</tr>
+<tr>
+<td><code>SyntaxError</code></td>
+<td>Между свойствами двоеточие и запятые, между объектами запятые, все скобки закрыты</td>
+</tr>
+</tbody>
+</table></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить обновления</button>
+      <button type="button" id="site-update-reload" hidden>Обновить страницу</button>
+    </footer>
+  </div>
+</body>
+</html>
