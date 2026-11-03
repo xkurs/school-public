@@ -26,11 +26,13 @@
   gap: .5rem;
 }
 .calendar-controls {
-  justify-content: center;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: .35rem;
   margin-block: 0 1.25rem;
 }
 .calendar-controls h2 {
+  grid-column: 2 / 7;
   margin: 0;
   min-width: 0;
   font-size: clamp(1.125rem, 3.5vw, 1.5rem);
@@ -39,15 +41,19 @@
 .calendar-controls button {
   font: inherit;
   max-width: 100%;
-  min-height: 2.5rem;
-  padding: .25rem .875rem;
+  width: 100%;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding: .25rem 0;
   background: #fff;
   color: #075db8;
-  border: 1px solid #bdd4ee;
-  border-radius: .375rem;
+  border: 1px solid #d4e2f0;
+  border-radius: .45rem;
   cursor: pointer;
   flex-shrink: 0;
 }
+#calendar-prev { grid-column: 1; }
+#calendar-next { grid-column: 7; }
 .calendar-controls button:hover { background: #edf6ff; border-color: #075db8; }
 .calendar-controls button:focus-visible { outline: 3px solid #075db8; outline-offset: 3px; }
 .calendar-weekdays, .calendar-grid {
@@ -65,7 +71,7 @@ ol.calendar-grid { list-style: none; margin: .5rem 0; padding: 0; }
 .calendar-today time { font-weight: 800; }
 .calendar-archive { margin-top: 1rem; }
 @media (max-width: 480px) {
-  .calendar-weekdays, .calendar-grid { gap: .2rem; }
+  .calendar-controls, .calendar-weekdays, .calendar-grid { gap: .2rem; }
   .calendar-day > time, .calendar-day > a { padding: .3rem .15rem; justify-content: center; }
 }
 
