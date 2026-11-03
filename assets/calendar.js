@@ -88,7 +88,6 @@
   }
   previous.addEventListener('click', () => step(-1));
   next.addEventListener('click', () => step(1));
-  document.getElementById('calendar-today').addEventListener('click', () => show(moscowDate().slice(0, 7)));
   window.addEventListener('hashchange', () => {
     const month = hashMonth();
     followsToday = !month && !data.initialMonth;
@@ -100,6 +99,7 @@
   document.addEventListener('visibilitychange', refresh);
   window.setInterval(refresh, 60000);
   render();
-  document.getElementById('calendar-controls').hidden = false;
+  previous.hidden = false;
+  next.hidden = false;
   document.getElementById('calendar-static-nav').hidden = true;
 })();

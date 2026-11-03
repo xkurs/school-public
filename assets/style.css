@@ -26,13 +26,16 @@
   gap: .5rem;
 }
 .calendar-controls {
-  margin-block: 1rem;
-  padding: .75rem 1rem;
-  border: 1px solid #d5e5f6;
-  border-radius: .5rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-block: 0 1.25rem;
 }
-.calendar-controls[hidden], .calendar-static-nav[hidden] { display: none; }
-#calendar-today { margin-inline-start: auto; }
+.calendar-controls h2 {
+  margin: 0;
+  min-width: 0;
+  font-size: clamp(1.125rem, 3.5vw, 1.5rem);
+}
+.calendar-controls button[hidden], .calendar-static-nav[hidden] { display: none; }
 .calendar-controls button {
   font: inherit;
   max-width: 100%;
@@ -43,6 +46,7 @@
   border: 1px solid #bdd4ee;
   border-radius: .375rem;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .calendar-controls button:hover { background: #edf6ff; border-color: #075db8; }
 .calendar-controls button:focus-visible { outline: 3px solid #075db8; outline-offset: 3px; }
