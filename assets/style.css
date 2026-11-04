@@ -62,20 +62,15 @@
   gap: .35rem;
 }
 .calendar-weekdays { text-align: center; font-weight: 600; }
-ol.calendar-grid { list-style: none; margin: .5rem 0; padding: 0; }
+ol.calendar-grid { list-style: none; margin: .5rem 0 0; padding: 0; }
 .calendar-day { display: flex; min-height: 2.75rem; border: 1px solid #d4e2f0; border-radius: .45rem; background: #fff; }
 .calendar-day > time, .calendar-day > a { display: flex; align-items: center; flex: 1; padding: .5rem; }
 .calendar-day > a { border-radius: inherit; background: #e5f2ff; font-weight: 600; text-decoration: none; }
 .calendar-day > a:hover { background: #cfe7ff; }
 .calendar-today { outline: 3px solid #075db8; outline-offset: 0; }
 .calendar-today time { font-weight: 800; }
-.calendar-archive { margin-top: 1rem; margin-bottom: 0; padding: 0; }
-.calendar-archive > summary {
-  min-height: calc(2.75rem - 2px);
-  padding: calc((2.75rem - 2px - 1lh) / 2) 1rem;
-  cursor: pointer;
-}
-.calendar-archive > :not(summary) { margin-inline: 1rem; }
+#calendar-empty, .calendar > noscript > p { margin-bottom: 0; }
+#calendar-empty:empty { display: none; }
 @media (max-width: 480px) {
   .calendar-controls, .calendar-weekdays, .calendar-grid { gap: .2rem; }
   .calendar-day > time, .calendar-day > a { padding: .3rem .15rem; justify-content: center; }
@@ -421,7 +416,8 @@ aside.callout {
 }
 .site-updates p { margin: 0 0 0.75rem; }
 .site-updates button {
-  padding: 0.65rem 0.85rem;
+  min-height: 2.75rem;
+  padding: .25rem .85rem;
   margin: 0.2rem;
   border: 1px solid #607386;
   border-radius: 0.3rem;
