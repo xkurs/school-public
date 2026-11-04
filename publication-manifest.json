@@ -1764,11 +1764,12 @@
     "spo/assets/018-39-target-catalog-768.svg",
     "spo/assets/018-39-target-form-375.svg",
     "spo/assets/018-39-target-home-375.svg",
+    "spo/assets/020-00-calculation-flow.svg",
     "topics/physics-10-2h/005/uniformly-accelerated-rectilinear-motion.svg",
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "b840da57438518c79c9a4d0be7d98ef4f1e6bb13c7f8de35f09e6a7aef671c94",
+  "source_digest": "e3f1955499e6664f0dcb18c242e18608e499ca41fa8e41e1a52d9a1242653629",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1877,7 +1878,7 @@
     "spo/017-flexbox-and-mobile-viewport.html": "abbb703d6543213af5ce6c8a3f6b3c55c64da7237beafa13db38cd9cad8d8e54",
     "spo/018-responsive-layout-and-browser-testing.html": "52c5bc217d37b1e90cc36ec626b33483efc947b07cf8e155912f19e6c43b53ff",
     "spo/019-javascript-values-and-input.html": "dd33de0e4ce9c9e9a792fb31487ec7395f9394b3e45697939134731f3b0953e6",
-    "spo/020-conditions-and-functions.html": "0120b50b1b5f94766177169ed384bb6d4dbdf24ae045c90c27a80e52621c0934",
+    "spo/020-conditions-and-functions.html": "1d2ea342ffc1f5d07b3b9b2f7e6739b3cf7f1fb44b7ec62991d85e7708f97f3b",
     "spo/021-arrays-loops-and-objects.html": "714796ac0ddbcd8d5b05f1d5ae7bf49b35714da1d9d501d96f952fd4ca546309",
     "spo/assets/003-00-blocks-screenshot.jpg": "574a062ab7e8ccf9fe731c5ec545ac4bf6c88cd8a02551d752be2597b264e1bf",
     "spo/assets/003-00-button-properties-screenshot.jpg": "6d15427fc17d8f758bc6add4f5320d0050e9204ce096a12e27a96a4f702ddcb2",
@@ -2420,10 +2421,11 @@
     "spo/assets/019-37.html": "b4d75f834671101408d4b066eaa10f1ee0cf381105c220c27fe99b4db98279dd",
     "spo/assets/019-38.html": "58a30f014de93bacf6869eee5d2023456c1dc26ca33c13ca42b9868af69d879a",
     "spo/assets/019-39.html": "b0b8be7a1b992339f498a2b1e2ed2dc67b16f3b8137ba76420d1fd63d6ab907f",
+    "spo/assets/020-00-calculation-flow.svg": "6327df4a8d381282ce6efa2f2669765bd273d83ca4a929b9294c8ace16805008",
     "spo/assets/020-00.html": "ef76fb855ec0d5a8046ada7896f780e9a07097bc6e0b7aedc8a56ff35e696dc3",
     "spo/assets/021-00.html": "ba22a038d598c552d9d0dae8f6565759d041d15629e3cf4036e47e173b0049b1",
     "spo/index.html": "5869631c28327a47bf2e9341a508224509a6d592250926b8c9d0a4e37ccee81a",
-    "sw.js": "dd3b03062d33f54298b2e04db9e208e3db090ef3658025fd0f957f1c85118cd2",
+    "sw.js": "c371771d882750c51e6aa5da4b37a716aff631782cda90184f7c390e38a50de7",
     "topics/index.html": "c61fec56b95e0de2e5443e514d2314ac8cb039a2328a862263fbb3f242b3304c",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "de07e3590fbed98780d6b6e6894a0695319260f4e511016c1a633bb19e5517b6",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "a298a4059ce08d36232b21324e57f694e752db7b275480effd855cc708b57131",
@@ -2497,5 +2499,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "aeabc7a7eb7a0dcdf8d5abe2ade9ae2fa1acc0da253ccebbd3fc8835bfc3e392",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "57878678e494250847ebc85bb632ba654fc366e0049d92e48cad4b65046d8cad"
   },
-  "manifest_digest": "377c47949acbe193d29caee653d7c15ab9e9e6b7d9f38107c83ea0f84cab8e32"
+  "manifest_digest": "e9c2b4b10293e455ae8900398022762058f0c4768fd806db2bdf7a3e18bccc48"
 }
