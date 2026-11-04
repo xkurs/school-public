@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="610" viewBox="0 0 760 610" role="img" aria-labelledby="title desc">
+  <title id="title">От карточки к объекту и массиву</title>
+  <desc id="desc">Одна HTML-карточка вручную переносится в объект с четырьмя свойствами. Массив catalog хранит три таких объекта. Индекс первой записи 0, последней 2. Цикл получает очередной объект как item.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#2563eb"/></marker>
+  <style>text{font-family:Arial,'DejaVu Sans',sans-serif;font-size:23px;fill:#172b4d}.h{font-size:27px;font-weight:700}.s{font-size:21px;fill:#475569}.c{font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:22px}.a{fill:none;stroke:#2563eb;stroke-width:3;marker-end:url(#arrow)}</style></defs>
+  <rect width="760" height="610" rx="20" fill="#f8fafc"/>
+  <text x="28" y="43" class="h">Одна карточка → один объект</text>
+  <rect x="28" y="70" width="230" height="235" rx="12" fill="#fff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="46" y="109" class="h">catalog.html</text>
+  <text x="46" y="157">Название</text><text x="46" y="201">Характеристика</text><text x="46" y="245">Описание</text>
+  <path d="M259 182H337" class="a"/><text x="305" y="160" style="font-size:18px;text-anchor:middle">вручную</text>
+  <rect x="352" y="70" width="380" height="235" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="374" y="109" class="h">Объект в catalog.js</text>
+  <text x="374" y="150" class="c">position: 1</text><text x="374" y="190" class="c">name: «название»</text>
+  <text x="374" y="230" class="c">specs: «характеристика»</text><text x="374" y="270" class="c">description: «описание»</text>
+  <text x="28" y="352" class="h">Массив catalog — три объекта по порядку</text>
+  <rect x="28" y="380" width="704" height="116" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <path d="M259 381V495M493 381V495" stroke="#93c5fd" stroke-width="2"/>
+  <text x="52" y="418" class="c">catalog[0]</text><text x="52" y="464">position: 1</text>
+  <text x="284" y="418" class="c">catalog[1]</text><text x="284" y="464">position: 2</text>
+  <text x="518" y="418" class="c">catalog[2]</text><text x="518" y="464">position: 3</text>
+  <text x="28" y="540">Цикл: item ← очередной объект массива</text>
+  <text x="28" y="579" class="s">item.name — название именно текущей карточки</text>
+</svg>
