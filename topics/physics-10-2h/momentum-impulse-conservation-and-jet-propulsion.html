@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Импульс тела. Импульс силы. Закон сохранения импульса. Реактивное движение — shkolar.site</title>
+  <link rel="icon" href="../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script defer src="../../assets/quotes.js"></script>
+  <script defer src="../../assets/offline.js"></script>
+  
+  <script src="../../assets/math.js"></script>
+<script defer src="../../assets/mathjax/es5/tex-svg.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../index.html">Календарь</a></li><li><a href="../index.html">Школа</a></li><li><a href="index.html">Физика 10</a></li><li aria-current="page">Импульс тела. Импульс силы. Закон сохранения импульса. Реактивное движение</li></ol></nav><h1 id="импульс-тела-импульс-силы-закон-сохранения-импульса-реактивное-движение">Импульс тела. Импульс силы. Закон сохранения импульса. Реактивное движение</h1>
+<p>Остановить медленно катящийся мяч легче, чем движущуюся с той же скоростью тяжёлую тележку. Но и один мяч при большей скорости остановить труднее. Для описания взаимодействий нужна величина, которая учитывает массу, скорость и направление движения.</p>
+<h2 id="импульс-материальной-точки">Импульс материальной точки</h2>
+<p><strong>Импульс материальной точки</strong> — векторная величина, равная произведению массы на скорость:</p>
+<div class="arithmatex">\[
+\vec p=m\vec v.
+\]</div>
+<p>Импульс направлен так же, как скорость; его модуль <span class="arithmatex">\(p=mv\)</span>. Единица импульса в СИ — <span class="arithmatex">\(\text{кг}\cdot\text{м/с}\)</span>. Для тела, которое рассматривается как материальная точка, используем ту же формулу.</p>
+<p>Вдоль выбранной оси:</p>
+<div class="arithmatex">\[
+p_x=mv_x.
+\]</div>
+<p>Проекция может быть положительной, отрицательной или нулевой. Если ось направлена вправо, у движущегося влево тела <span class="arithmatex">\(v_x&lt;0\)</span> и <span class="arithmatex">\(p_x&lt;0\)</span>. Отрицательная проекция не означает отрицательной массы или отрицательного модуля импульса.</p>
+<p><strong>Пример.</strong> Мяч массой <span class="arithmatex">\(0{,}4\ \text{кг}\)</span> движется влево со скоростью <span class="arithmatex">\(5\ \text{м/с}\)</span>. Ось направим вправо. Тогда:</p>
+<div class="arithmatex">\[
+p_x=0{,}4\cdot(-5)=-2\ \text{кг}\cdot\text{м/с},
+\qquad p=2\ \text{кг}\cdot\text{м/с}.
+\]</div>
+<p>Импульс зависит от системы отсчёта: относительно вагона лежащая на полке сумка неподвижна, а относительно платформы движется вместе с поездом.</p>
+<h2 id="импульс-силы-и-изменение-импульса">Импульс силы и изменение импульса</h2>
+<p>Одна и та же сила сильнее изменяет движение тела, если действует дольше. <strong>Импульс постоянной силы</strong> за промежуток времени <span class="arithmatex">\(\Delta t\)</span>:</p>
+<div class="arithmatex">\[
+\vec I=\vec F\Delta t.
+\]</div>
+<p>Единица импульса силы — <span class="arithmatex">\(\text{Н}\cdot\text{с}\)</span>. Поскольку <span class="arithmatex">\(1\ \text{Н}=1\ \text{кг}\cdot\text{м/с}^2\)</span>, получаем:</p>
+<div class="arithmatex">\[
+1\ \text{Н}\cdot\text{с}=1\ \text{кг}\cdot\text{м/с}.
+\]</div>
+<p>Для тела постоянной массы из второго закона Ньютона следует:</p>
+<div class="arithmatex">\[
+\vec F_{\text{рез}}\Delta t
+=m(\vec v_2-\vec v_1)
+=\vec p_2-\vec p_1
+=\Delta\vec p.
+\]</div>
+<p><strong>Импульс равнодействующей сил равен изменению импульса тела.</strong> Если сила меняется, в произведении используют её среднюю за рассматриваемый промежуток величину как вектор: <span class="arithmatex">\(\vec F_{\text{ср}}\Delta t=\Delta\vec p\)</span>.</p>
+<p>Импульс тела характеризует его движение в данный момент, а импульс силы — действие силы за промежуток времени. Эти величины связаны через <strong>изменение</strong> импульса тела. Равенство <span class="arithmatex">\(F\Delta t=mv\)</span> нельзя применять ко всем задачам без учёта начальной скорости и направлений.</p>
+<h3 id="пример-мяч-изменил-направление">Пример: мяч изменил направление</h3>
+<p>Мяч массой <span class="arithmatex">\(0{,}2\ \text{кг}\)</span> двигался вправо со скоростью <span class="arithmatex">\(6\ \text{м/с}\)</span>. После удара его скорость направлена влево и равна по модулю <span class="arithmatex">\(4\ \text{м/с}\)</span>. Удар длится <span class="arithmatex">\(0{,}02\ \text{с}\)</span>. Найдём среднюю горизонтальную силу, действовавшую на мяч.</p>
+<p>Ось направим вправо. Тогда <span class="arithmatex">\(v_{1x}=6\ \text{м/с}\)</span>, <span class="arithmatex">\(v_{2x}=-4\ \text{м/с}\)</span>:</p>
+<div class="arithmatex">\[
+\Delta p_x=m(v_{2x}-v_{1x})
+=0{,}2\cdot(-4-6)
+=-2\ \text{кг}\cdot\text{м/с}.
+\]</div>
+<div class="arithmatex">\[
+F_{\text{ср},x}=\frac{\Delta p_x}{\Delta t}
+=\frac{-2}{0{,}02}=-100\ \text{Н}.
+\]</div>
+<p>Средняя горизонтальная сила равна по модулю <span class="arithmatex">\(100\ \text{Н}\)</span> и направлена влево. Здесь учтён разворот скорости: вычитание только модулей <span class="arithmatex">\(6-4\)</span> дало бы неверное изменение импульса.</p>
+<p>При одинаковом изменении импульса увеличение времени торможения уменьшает среднюю силу. Поэтому при приземлении сгибают ноги, а при ловле мяча отводят руки по его движению.</p>
+<h2 id="импульс-системы-тел">Импульс системы тел</h2>
+<p><strong>Система тел</strong> — выбранные для рассмотрения тела. Её полный импульс равен векторной сумме импульсов:</p>
+<div class="arithmatex">\[
+\vec P=\vec p_1+\vec p_2+\ldots.
+\]</div>
+<p>Например, две одинаковые тележки массами по <span class="arithmatex">\(2\ \text{кг}\)</span> движутся навстречу друг другу со скоростями по <span class="arithmatex">\(3\ \text{м/с}\)</span>. При оси вправо:</p>
+<div class="arithmatex">\[
+P_x=2\cdot3+2\cdot(-3)=0.
+\]</div>
+<p>Полный импульс системы равен нулю, хотя обе тележки движутся. Складывать модули вместо векторов в таком случае нельзя.</p>
+<p>Силы между выбранными телами называют <strong>внутренними</strong>, а силы со стороны тел, не включённых в систему, — <strong>внешними</strong>. Для системы «две тележки» сила удара одной тележки о другую внутренняя, а сила трения со стороны пола — внешняя.</p>
+<h2 id="закон-сохранения-импульса">Закон сохранения импульса</h2>
+<p>По третьему закону Ньютона внутренние силы взаимодействия образуют равные и противоположно направленные пары. В классической механике их вклады в изменение полного импульса системы взаимно компенсируются. Полный импульс меняется за счёт внешнего воздействия:</p>
+<div class="arithmatex">\[
+\Delta\vec P=\vec F_{\text{внеш,ср}}\Delta t.
+\]</div>
+<p>Если равнодействующая внешних сил равна нулю на рассматриваемом промежутке, то:</p>
+<div class="arithmatex">\[
+\vec P_{\text{до}}=\vec P_{\text{после}}.
+\]</div>
+<p>Это <strong>закон сохранения импульса</strong>. Внешние силы могут действовать, но взаимно уравновешиваться. Иногда достаточно сохранения одной проекции: если внешняя сила вдоль горизонтальной оси равна нулю, сохраняется <span class="arithmatex">\(P_x\)</span>, даже когда вертикальные силы не уравновешены.</p>
+<p>При коротком столкновении внешним импульсом часто можно пренебречь по сравнению с импульсами сил взаимодействия. Тогда закон применяют приближённо. Это допущение нужно проверять, а не автоматически распространять на любое движение.</p>
+<p>Для двух тел вдоль одной оси:</p>
+<div class="arithmatex">\[
+m_1v_{1x}+m_2v_{2x}=m_1u_{1x}+m_2u_{2x},
+\]</div>
+<p>где <span class="arithmatex">\(v_{1x}\)</span> и <span class="arithmatex">\(v_{2x}\)</span> — проекции скоростей до взаимодействия, <span class="arithmatex">\(u_{1x}\)</span> и <span class="arithmatex">\(u_{2x}\)</span> — после него. Массы тел здесь не меняются.</p>
+<h3 id="пример-тележки-сцепились">Пример: тележки сцепились</h3>
+<p>Тележка массой <span class="arithmatex">\(2\ \text{кг}\)</span> движется вправо со скоростью <span class="arithmatex">\(3\ \text{м/с}\)</span> и сталкивается с неподвижной тележкой массой <span class="arithmatex">\(1\ \text{кг}\)</span>. После удара они сцепляются. Внешним горизонтальным импульсом за время столкновения пренебрегаем.</p>
+<p>Выберем систему из обеих тележек и ось вправо. После сцепления скорость у них общая:</p>
+<div class="arithmatex">\[
+m_1v_{1x}+m_2v_{2x}=(m_1+m_2)u_x.
+\]</div>
+<div class="arithmatex">\[
+u_x=\frac{2\cdot3+1\cdot0}{2+1}
+=2\ \text{м/с}.
+\]</div>
+<p>Обе тележки движутся вправо. Проверка: до удара полный импульс <span class="arithmatex">\(6\ \text{кг}\cdot\text{м/с}\)</span>, после — <span class="arithmatex">\(3\cdot2=6\ \text{кг}\cdot\text{м/с}\)</span>.</p>
+<p>Сохранение импульса не означает сохранения кинетической энергии. При таком сцеплении часть кинетической энергии переходит во внутреннюю энергию и энергию деформации тел.</p>
+<h2 id="реактивное-движение">Реактивное движение</h2>
+<p><strong>Реактивное движение</strong> возникает при отделении от тела части его массы с некоторой скоростью относительно оставшейся части. Например, воздух выходит назад из надутого шарика, а шарик движется вперёд. В ракете назад выбрасываются газы, и ракета получает импульс в противоположную сторону.</p>
+<p>Рассмотрим короткий выброс газа из первоначально покоящейся системы «ракета и топливо». В выбранной инерциальной системе отсчёта её начальный импульс равен нулю. Внешним импульсом за этот короткий промежуток пренебрежём:</p>
+<div class="arithmatex">\[
+0=m_{\text{р}}v_{\text{р},x}+m_{\text{г}}v_{\text{г},x}.
+\]</div>
+<p>Здесь массы относятся к оставшейся ракете и отделившемуся газу, а <strong>обе скорости измерены в одной системе отсчёта</strong>. При выбросе газа назад его проекция скорости отрицательна, и импульс ракеты направлен вперёд. Это модель одного выброса; у настоящей работающей ракеты масса меняется непрерывно.</p>
+<p>Ракета может двигаться в вакууме: для возникновения тяги ей не требуется окружающий воздух. Существенно взаимодействие ракеты с выбрасываемым газом. При этом импульс одной ракеты меняется; сохраняться в принятом приближении может полный импульс ракеты вместе с газом.</p>
+<h2 id="как-решать-задачи">Как решать задачи</h2>
+<ol>
+<li>Выберите тела системы и промежуток времени. Укажите систему отсчёта.</li>
+<li>Определите внешние силы и объясните, можно ли пренебречь их импульсом либо сохранить нужную проекцию.</li>
+<li>Выберите ось, нарисуйте направления скоростей до и после взаимодействия.</li>
+<li>Запишите изменение импульса под действием силы или закон сохранения импульса. Подставляйте проекции со знаками.</li>
+<li>Найдите неизвестное, проверьте единицы и объясните направление полученной скорости или силы.</li>
+</ol>
+<h2 id="вопросы-и-упражнения">Вопросы и упражнения</h2>
+<p>В расчётных задачах считайте выбранную систему отсчёта инерциальной. Там, где применяется закон сохранения импульса, используйте указанное в условии допущение о внешнем импульсе.</p>
+<ol>
+<li>Грузовик и легковой автомобиль движутся с одинаковой скоростью. От чего зависит отношение модулей их импульсов? Может ли покоящееся тело иметь ненулевой импульс в другой системе отсчёта?</li>
+<li>Мяч массой <span class="arithmatex">\(150\ \text{г}\)</span> движется влево со скоростью <span class="arithmatex">\(12\ \text{м/с}\)</span>. Ось направлена вправо. Найдите модуль импульса и его проекцию на ось.</li>
+<li>Тележка массой <span class="arithmatex">\(4\ \text{кг}\)</span> движется вправо со скоростью <span class="arithmatex">\(2\ \text{м/с}\)</span>. На неё <span class="arithmatex">\(0{,}5\ \text{с}\)</span> действует постоянная равнодействующая <span class="arithmatex">\(8\ \text{Н}\)</span> вправо. Найдите импульс силы и конечную скорость тележки.</li>
+<li>Мяч массой <span class="arithmatex">\(0{,}1\ \text{кг}\)</span> двигался вправо со скоростью <span class="arithmatex">\(10\ \text{м/с}\)</span> и после удара отскочил влево со скоростью <span class="arithmatex">\(8\ \text{м/с}\)</span>. Длительность удара <span class="arithmatex">\(0{,}03\ \text{с}\)</span>. Найдите изменение горизонтальной проекции импульса и среднюю горизонтальную силу удара.</li>
+<li>Тележка массой <span class="arithmatex">\(3\ \text{кг}\)</span> со скоростью <span class="arithmatex">\(4\ \text{м/с}\)</span> вправо догоняет тележку массой <span class="arithmatex">\(1\ \text{кг}\)</span>, движущуюся вправо со скоростью <span class="arithmatex">\(2\ \text{м/с}\)</span>. После удара они сцепляются. Найдите общую скорость, пренебрегая внешним горизонтальным импульсом во время удара.</li>
+<li>Две тележки массами <span class="arithmatex">\(2\ \text{кг}\)</span> и <span class="arithmatex">\(3\ \text{кг}\)</span> движутся навстречу друг другу: первая вправо со скоростью <span class="arithmatex">\(3\ \text{м/с}\)</span>, вторая влево со скоростью <span class="arithmatex">\(2\ \text{м/с}\)</span>. После столкновения они сцепляются. Найдите их общую скорость при пренебрежимо малом внешнем горизонтальном импульсе. Объясните, означает ли результат, что до удара тележки не двигались.</li>
+<li>Две первоначально неподвижные тележки разъехались после освобождения сжатой между ними пружины. Масса первой <span class="arithmatex">\(1\ \text{кг}\)</span>, второй <span class="arithmatex">\(2\ \text{кг}\)</span>. Первая поехала влево со скоростью <span class="arithmatex">\(0{,}6\ \text{м/с}\)</span>. Найдите скорость второй. Массу пружины и внешний горизонтальный импульс считайте пренебрежимо малыми.</li>
+<li>Почему при одинаковой скорости перед остановкой мягкий мат уменьшает среднюю силу торможения по сравнению с жёсткой поверхностью? Свяжите объяснение с изменением импульса и временем остановки.</li>
+<li>В модели одного короткого выброса первоначально неподвижное устройство выбросило назад <span class="arithmatex">\(0{,}02\ \text{кг}\)</span> газа. Скорость газа относительно выбранной неподвижной инерциальной системы отсчёта равна <span class="arithmatex">\(100\ \text{м/с}\)</span> и направлена влево. Масса оставшегося устройства <span class="arithmatex">\(2\ \text{кг}\)</span>. Найдите его скорость после выброса; внешним импульсом пренебрегите.</li>
+<li>Почему для объяснения реактивного движения нельзя ограничиться законом сохранения импульса одной ракеты? Какие тела нужно включить в систему и какие внешние воздействия учитывать при длительном полёте?</li>
+</ol>
+<p>Масса и скорость определяют импульс тела; импульс равнодействующей определяет его изменение. Для системы тел внутренние взаимодействия перераспределяют импульс, а полный импульс меняется из-за внешнего воздействия. Эти связи позволяют описывать удары, разлёт тел и реактивное движение.</p>
+<p><strong>Домашнее задание: §38–39.</strong></p></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить</button>
+      <button type="button" id="site-update-reload" hidden>Обновить</button>
+    </footer>
+  </div>
+</body>
+</html>

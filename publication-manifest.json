@@ -77,6 +77,11 @@
       "title": "Личное расписание на 31.10.2026"
     },
     {
+      "source": "schedules/personal/2026-11-05.md",
+      "output": "schedules/personal/2026-11-05.html",
+      "title": "Личное расписание на 05.11.2026"
+    },
+    {
       "source": "schedules/personal/2026-11-07.md",
       "output": "schedules/personal/2026-11-07.html",
       "title": "Личное расписание на 07.11.2026"
@@ -1107,6 +1112,11 @@
       "title": "Механическое движение. Относительность движения. Перемещение, скорость, ускорение"
     },
     {
+      "source": "topics/physics-10-2h/015-momentum-impulse-conservation-and-jet-propulsion.md",
+      "output": "topics/physics-10-2h/momentum-impulse-conservation-and-jet-propulsion.html",
+      "title": "Импульс тела. Импульс силы. Закон сохранения импульса. Реактивное движение"
+    },
+    {
       "source": "topics/physics-10-2h/014-rigid-body-motion-and-equilibrium.md",
       "output": "topics/physics-10-2h/rigid-body-motion-and-equilibrium.html",
       "title": "Поступательное и вращательное движение абсолютно твёрдого тела. Условия равновесия"
@@ -1190,6 +1200,11 @@
       "source": "topics/physics-11-2h/001-permanent-magnets-and-magnetic-field.md",
       "output": "topics/physics-11-2h/permanent-magnets-and-magnetic-field.html",
       "title": "Постоянные магниты. Магнитное поле. Вектор магнитной индукции"
+    },
+    {
+      "source": "topics/physics-11-2h/015-thomson-formula-and-lc-circuit-energy.md",
+      "output": "topics/physics-11-2h/thomson-formula-and-lc-circuit-energy.html",
+      "title": "Формула Томсона. Закон сохранения энергии в идеальном колебательном контуре"
     },
     {
       "source": "topics/physics-7-2h/014-distance-and-travel-time.md",
@@ -1325,6 +1340,11 @@
       "source": "topics/physics-9-3h/018-friction-force.md",
       "output": "topics/physics-9-3h/friction-force.html",
       "title": "Физика 9. Сила трения"
+    },
+    {
+      "source": "topics/physics-9-3h/024-gravity-and-universal-gravitation-problems.md",
+      "output": "topics/physics-9-3h/gravity-and-universal-gravitation-problems.html",
+      "title": "Решение задач по теме «Сила тяжести и закон всемирного тяготения»"
     },
     {
       "source": "topics/physics-9-3h/022-gravity-and-universal-gravitation.md",
@@ -1774,7 +1794,7 @@
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "f3928596f3ffc6d4a200bf29f6670aa6f5cc37567dbca7b077b188912d6cedb8",
+  "source_digest": "c3aad017826ddf4a86384583d61626b207ed04de765a0a402a9445d1481991de",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1846,12 +1866,12 @@
     "assets/media/topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg": "a3207eca1319a11fd5c55fc7a19cff7157d03704aadd9f0087a059c981e95f75",
     "assets/offline.js": "c02988fd8d8a06ec89e36bd0a62fbd3049f17f38ebfc06c6eac81a50710a1384",
     "assets/quotes.js": "78bf53c83e493fb4db0ce005a8c35962e03e406d696f3db36e8394f8ae44f5e3",
-    "assets/style.css": "015137c867e244bca20be6443df3d874591eecd63b2b2d35ca92e44866ab2fb2",
-    "calendar/2026-10.html": "6db3c3599e35675bbbaf42a78b7cdc27e0c24a2778a99749be1797c28acacefb",
-    "calendar/2026-11.html": "aea22b4432492378f2e42a8fc81fdc9be560b3cb661447899984d1cccdaa2790",
+    "assets/style.css": "466e89f1e2b1401fe461c209a38a623020ff39cbbdeba79c498dd68726d93143",
+    "calendar/2026-10.html": "0066e1c0fc2f1f48070f789aceb7fa9ac9dc38152a964a11948016857a4d685b",
+    "calendar/2026-11.html": "5ade37ab85bf862a9c6300452ed73bb59b01dcd92b450a184ca5651373aba03a",
     "CNAME": "a88e58d2742981a3f92b2ca125fdde4b4072ab55106487f4973ceb23b7e66a12",
     "favicon.ico": "db28c1f3a1477b9fe964d09306431d787457f1e95d61dd0effcc461d20837f4c",
-    "index.html": "b93645383f05fd85acf75b6533368ed6e9f2ed314d5151db5e686a24f2a8ed5c",
+    "index.html": "0cc09ce69a165dbc79927ea3f56ba0a78b0b886b338a14d9e69dfea5fce40ba2",
     "schedules/personal/2026-10-14.html": "647daf63ca4c9da874255726a8ec8e24d1b0f73fd91ae7defc16cef813026925",
     "schedules/personal/2026-10-15.html": "65fb32b9bde3d9582590516a8320bf10ccb7d5f19b6f6a859fe2444744907016",
     "schedules/personal/2026-10-16.html": "83f23ab8cc44c32646563b4937be306329abd88f60116c95c3ae851b1b1d8890",
@@ -1863,6 +1883,7 @@
     "schedules/personal/2026-10-24.html": "2bd5251a6cc6a520de4a015a7b7ea72bc2e5d0ae5427c2fe29d33cff442e90d8",
     "schedules/personal/2026-10-28.html": "2fa9e364a25dd31296641c46dd9b0240ea9e21a96715072da557598008deddde",
     "schedules/personal/2026-10-31.html": "c4e125098793d99d35c0f261aa88bdc9130aeffc72befe7b8064443e3fc9b0ef",
+    "schedules/personal/2026-11-05.html": "5e3bae4b43d73e601493afe16477b3ca765a62719b6295146adb63c6d0ee8df7",
     "schedules/personal/2026-11-07.html": "788d247bfeda510d354ae9616f20b6656f5f653c0cd15075e284adc67f7772cd",
     "spo/001-mobile-app-types.html": "f6a83696d38086b443b3f11be7c70e479b5870c880414577878dbcb540856d6d",
     "spo/002-technology-choice-and-diagnostics.html": "e968b2346b1a5762f2db5797659f7acff7cc7013aca6af316a385a0bd5993ffc",
@@ -1883,8 +1904,8 @@
     "spo/017-flexbox-and-mobile-viewport.html": "98aefb43ba8e4d81349a56585f811bc60351b371e0e4e62ead5ca349c95771a0",
     "spo/018-responsive-layout-and-browser-testing.html": "72586d6aa601d88f33472a0478e6767591ae460546e41faeaaea50a71cd032ec",
     "spo/019-javascript-values-and-input.html": "b36cb8f6463f4d2b9cf4b46281a5fb040c457e00008c1a2898d9ee033d56070d",
-    "spo/020-conditions-and-functions.html": "da437887d8cbf972a7cba5d0a45f47f2dd682773d447338539cd798e5b8e8fd6",
-    "spo/021-arrays-loops-and-objects.html": "193cf33dc8929cd00795baefbee28910e9a55f7f3b296d140efe0eb762017d5b",
+    "spo/020-conditions-and-functions.html": "6c3873509abfeb657096044f92a330030a5ffe002c358e8d29609d7bd5cd0ede",
+    "spo/021-arrays-loops-and-objects.html": "40e89ca6b159469c307aa0331f3b04ba272b3e35d6c98612ae7632d2b9cd1f3d",
     "spo/assets/003-00-blocks-screenshot.jpg": "574a062ab7e8ccf9fe731c5ec545ac4bf6c88cd8a02551d752be2597b264e1bf",
     "spo/assets/003-00-button-properties-screenshot.jpg": "6d15427fc17d8f758bc6add4f5320d0050e9204ce096a12e27a96a4f702ddcb2",
     "spo/assets/003-00-connect-usb-screenshot.jpg": "c8f30aa965893f3c8442b0589a66bf0e29738ff93109b0bdcad33fbadc88fafa",
@@ -2435,7 +2456,7 @@
     "spo/assets/021-00-catalog-result.svg": "8ec36675d5f2950284a42c70257bfb128f8e27bb4d9efe5310405141b7f10655",
     "spo/assets/021-00.html": "2b89430ce288e67f8d933fe924f88a9ab6585f85947d19c016ce5fc9f842b1dc",
     "spo/index.html": "5869631c28327a47bf2e9341a508224509a6d592250926b8c9d0a4e37ccee81a",
-    "sw.js": "43b2be62e0c6e7b8c38f9ce4dab159793c0626c213c5c5d53e3f9a75f26c741c",
+    "sw.js": "5c31007854c3ba915ddff719d47d7927244ee5fe01dbb9b9848b1a9ed444e12c",
     "topics/index.html": "c61fec56b95e0de2e5443e514d2314ac8cb039a2328a862263fbb3f242b3304c",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "de07e3590fbed98780d6b6e6894a0695319260f4e511016c1a633bb19e5517b6",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "a298a4059ce08d36232b21324e57f694e752db7b275480effd855cc708b57131",
@@ -2450,8 +2471,9 @@
     "topics/physics-10-2h/elastic-force-hookes-law-and-weight.html": "10322a5b471057b211c73ff9c3dab375db4b319570f580fdf3c5d6d93db7376b",
     "topics/physics-10-2h/friction-coefficient-and-fluid-resistance.html": "8439f483f1269e44cdf001a41c5180e82cf9ae7e527eae5094947a92f643f6dd",
     "topics/physics-10-2h/galilean-relativity-inertial-frames-and-newtons-first-law.html": "8b8c18d69d85669a6989e58180f305681511b3c40a21cd44e07db35cb97f97b6",
-    "topics/physics-10-2h/index.html": "22ba32dbd0b7457c9341704d2584bbbaa529705a4a6459e2e1e7c9bd7eaed54a",
+    "topics/physics-10-2h/index.html": "58fa0e18a1a316660b39b45916e484a462743f6482807d4544b47b146defa889",
     "topics/physics-10-2h/mechanical-motion-relativity-displacement-velocity-and-acceleration.html": "1c12aeb89affaafa688792af42194bacb40bd8177c544c27f7846a83d10dcc9d",
+    "topics/physics-10-2h/momentum-impulse-conservation-and-jet-propulsion.html": "88e9258d51171b62546b0d8f0bfdcc9d2147c70ffb71b33c97322a05f3e59a60",
     "topics/physics-10-2h/rigid-body-motion-and-equilibrium.html": "026c278478b591a043c55a9d3ba4099f3f3caf92140d96c4dd49d705276b68c3",
     "topics/physics-10-2h/uniform-rectilinear-motion.html": "bbb2c14aa4840bbb4d60315c86510a7865dbd5b702409384d8f5646100a2d766",
     "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.html": "d5281d2231c3ebc05ddac16e2bb041d47b12e71a09d81cee58429c4cc402e142",
@@ -2461,7 +2483,7 @@
     "topics/physics-11-2h/electromagnetic-induction-magnetic-flux-and-faradays-law.html": "734cfcbc9f884448eb1eca6a9a5d3b3e8ee6fe18e5c9f79c4c04dc06a0ca3fdf",
     "topics/physics-11-2h/free-mechanical-and-harmonic-oscillations.html": "f5e4d08136236c4ec4dbdbaa418e45ce75906080051baf0078525c5fd814f93f",
     "topics/physics-11-2h/ideal-lc-circuit-and-oscillation-analogy.html": "77cdd8fbaf6828303faf3dbd5ba2d9def289b71e7c3ae0d401cdb86e40bf1fee",
-    "topics/physics-11-2h/index.html": "73a68e833cd498007f7d8d63446a3df908d15c73e26738ddd0f537a79bd850c2",
+    "topics/physics-11-2h/index.html": "fad0707aaa90958c9ca11fd17a15b2528159aece6f53e589b3545e5a6d1d3110",
     "topics/physics-11-2h/inductance-self-induction-and-magnetic-field-energy.html": "44cb7a7514779406906b422174eafd5fad28bf11fe451f25d7c154ccc257df58",
     "topics/physics-11-2h/lorentz-force-and-its-work.html": "8623550dc9d1a52b9db96d275f9eb833221aac493ce0c4a33996e09827fc5a38",
     "topics/physics-11-2h/magnetic-field-and-electromagnetic-induction-test.html": "b5d72def40d528a6b0faa89b55e2fea743756fd8837dbe341bc43c461c315204",
@@ -2469,6 +2491,7 @@
     "topics/physics-11-2h/magnetic-field-of-current-carrying-conductor-and-ersted-experiment.html": "bf6323d3b49b0f92fd62f0d670df812975152631d03283b0d580e55087701440",
     "topics/physics-11-2h/pendulum-period-length-and-mass-lab.html": "f69825c67d32cc081e0c5b51756ec5f9e8a2df638b8e90c1dee78b98aa13f101",
     "topics/physics-11-2h/permanent-magnets-and-magnetic-field.html": "584546710aee5b54125ff951bf888501298238f706b0e0a23455a8c02e41e719",
+    "topics/physics-11-2h/thomson-formula-and-lc-circuit-energy.html": "f2fdc950690a970f4bc1911946890de6076f216ff95438a9d1c8f822edcad8f3",
     "topics/physics-7-2h/distance-and-travel-time.html": "a13e395691eaf2dc6dabc8b41dd1e15d5126b9e410193dfe2f45db68ba63f654",
     "topics/physics-7-2h/horizontal-launch-height-and-range.html": "787c8957156fc08ed33ead6c90f39700589803a5bf86e1be374e37cc379170e3",
     "topics/physics-7-2h/index.html": "9b340593686592657353768de309130e8768013cf321bc5246b1093a8e5a8e00",
@@ -2486,7 +2509,7 @@
     "topics/physics-8-2h/heat-exchange-when-mixing-water-lab.html": "65a6ba47b8d0f054289efbc0ad716cec0715e3ff478b8e67942e08a46edeec2d",
     "topics/physics-8-2h/heat-quantity-and-specific-heat-capacity.html": "6b30291580a336bf73038128b3560ca4c3000a824f1b8f6e254c4af5edf10de0",
     "topics/physics-8-2h/heating-and-cooling-heat-calculations.html": "df5fbd3acf1028a495d78138ef49432558020a20f813d1acd7137eb463af26df",
-    "topics/physics-8-2h/index.html": "1c74cf9c5ad5c68dc9e184ce7a64cff050804c34fe959c7bbd4a29b87966c207",
+    "topics/physics-8-2h/index.html": "aaabc6af8ccc4ed483af547d00889582a91ba99a583fae1b24b5a475bc82dcfa",
     "topics/physics-8-2h/internal-energy-and-ways-of-changing-it.html": "24bfd191fb98fee3e8a873430c9fc05f2c689084e746ea34f8f1e2484028bcd6",
     "topics/physics-8-2h/mass-and-size-of-atoms-and-molecules.html": "5d37218eb929d20613204acd23ff44b4ce2fb0dd046fe42d457354159b0b56ff",
     "topics/physics-8-2h/properties-of-states-of-matter-from-molecular-kinetic-theory.html": "cdab5bca9c90012253702a7e261b70e12202183fc9932af788d24d3b3894ee03",
@@ -2496,8 +2519,9 @@
     "topics/physics-9-3h/elastic-force-and-hookes-law.html": "bf46ce870cbc6eda6628c3f4616ea295e86937df72bad5a3487718371c67d989",
     "topics/physics-9-3h/free-fall-and-galileos-experiments.html": "c38e4822208869fd575ed979516fc71b6643efa4adad0c039f824c251aa45b12",
     "topics/physics-9-3h/friction-force.html": "f406ea7b002433504031883be2447a13d780141ece490dff9adcb7a31c6243de",
+    "topics/physics-9-3h/gravity-and-universal-gravitation-problems.html": "8de1fb358fc6f8bfd122f4cd8ad9e1ed1221bda5c3fa27ce2ab92d17f9cda1fb",
     "topics/physics-9-3h/gravity-and-universal-gravitation.html": "40f6b52713edfb08ce64918767f225b17733d4d12c082b375f8ce28968cc5b07",
-    "topics/physics-9-3h/index.html": "a6b94cf650c02b39b6db653792476a76acaf309e38f4ccc3475dc40bd6c297b8",
+    "topics/physics-9-3h/index.html": "8e7ef59274a85be583519ea2205b56b9bfcb17268dcf217716b9bb885bbdb519",
     "topics/physics-9-3h/mechanical-motion-and-material-point.html": "0876973f48f74b1bdb77e4a14d1a609f2b81a9f7fdb5ca8f1552445b31b1f819",
     "topics/physics-9-3h/newtons-first-law-and-force-vector.html": "7db799b1f8938aa6b9e9fe33da18ede1c823d821f7d7ac97818d78a37f3d8f97",
     "topics/physics-9-3h/newtons-laws-elasticity-and-friction-problems.html": "7ef1cc07525a305c9a8f2208bcc4250d7b3870c68d9a9effada52e09efebe592",
@@ -2509,5 +2533,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "aeabc7a7eb7a0dcdf8d5abe2ade9ae2fa1acc0da253ccebbd3fc8835bfc3e392",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "57878678e494250847ebc85bb632ba654fc366e0049d92e48cad4b65046d8cad"
   },
-  "manifest_digest": "46ce24ffd3ad06494f102ff3f6a84740e86d715eb289f871603447745f3b593e"
+  "manifest_digest": "3e1686713f61287d87d04ae0bcb1e0b1c7a9aee494dc69d9ac4d9fe9d041cfc7"
 }

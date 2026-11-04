@@ -421,6 +421,50 @@ pre {
 .code-block :is(.gh, .gu, .gs) { font-weight: 700; }
 .code-block .ge { font-style: italic; }
 
+/* A quieter, shared palette for code in the latest programming lessons. */
+.lesson-code-style .code-block {
+  border: 0;
+  border-radius: .3rem;
+  background: #f8f8f8;
+}
+.lesson-code-style .code-block-header {
+  min-height: 1.3rem;
+  padding: .25rem .8rem 0;
+  border: 0;
+  background: transparent;
+  line-height: 1;
+}
+.lesson-code-style .code-language {
+  color: #687078;
+  font-family: system-ui, sans-serif;
+  font-size: .65rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.lesson-code-style .code-block pre {
+  padding: .35rem 1.1rem 1rem;
+  color: #383a42;
+  line-height: 1.6;
+}
+.lesson-code-style :not(pre) > code {
+  padding: .08em .25em;
+  border-radius: .2rem;
+  background: #f5f5f5;
+  color: #383a42;
+  font: .9em/1.6 ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  overflow-wrap: anywhere;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.lesson-code-style .code-inline { white-space: pre-wrap; }
+.lesson-code-style :is(.code-block, .code-inline) :is(.k, .kc, .kd, .kn, .kp, .kr, .kt, .ow) { color: #b02069; }
+.lesson-code-style :is(.code-block, .code-inline) :is(.nx, .n, .nb, .bp, .nv) { color: #006c75; }
+.lesson-code-style :is(.code-block, .code-inline) :is(.nf, .fm, .na) { color: #8a6500; }
+.lesson-code-style :is(.code-block, .code-inline) :is(.s, .sa, .sb, .sc, .sd, .s1, .s2, .sh, .si, .ss, .sx) { color: #167d37; }
+.lesson-code-style :is(.code-block, .code-inline) :is(.m, .mb, .mf, .mh, .mi, .mo, .il) { color: #a05a00; }
+.lesson-code-style :is(.code-block, .code-inline) :is(.o, .se, .sr, .nt) { color: #b62b46; }
+.lesson-code-style :is(.code-block, .code-inline) :is(.c, .ch, .cm, .c1, .cp, .cpf, .cs) { color: #636a73; }
+
 blockquote {
   margin-inline: 0;
   padding: 0.75rem 1rem;

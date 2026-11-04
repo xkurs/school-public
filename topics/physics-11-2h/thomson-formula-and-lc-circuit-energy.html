@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Формула Томсона. Закон сохранения энергии в идеальном колебательном контуре — shkolar.site</title>
+  <link rel="icon" href="../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script defer src="../../assets/quotes.js"></script>
+  <script defer src="../../assets/offline.js"></script>
+  
+  <script src="../../assets/math.js"></script>
+<script defer src="../../assets/mathjax/es5/tex-svg.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../index.html">Календарь</a></li><li><a href="../index.html">Школа</a></li><li><a href="index.html">Физика 11</a></li><li aria-current="page">Формула Томсона. Закон сохранения энергии в идеальном колебательном контуре</li></ol></nav><h1 id="формула-томсона-закон-сохранения-энергии-в-идеальном-колебательном-контуре">Формула Томсона. Закон сохранения энергии в идеальном колебательном контуре</h1>
+<p>В колебательном контуре заряженный конденсатор разряжается через катушку, а затем заряжается с противоположной полярностью. Заряд, напряжение и ток периодически меняются. Чтобы описать этот процесс количественно, нужно узнать длительность одного колебания и проследить, как энергия распределяется между конденсатором и катушкой.</p>
+<h2 id="идеальный-контур-и-его-энергия">Идеальный контур и его энергия</h2>
+<p>Простейший контур состоит из конденсатора ёмкостью <span class="arithmatex">\(C\)</span> и катушки индуктивностью <span class="arithmatex">\(L\)</span>. В <strong>идеальном контуре</strong> сопротивлением, излучением и другими потерями энергии пренебрегают. Источник после начального заряжания отключён, параметры <span class="arithmatex">\(L\)</span> и <span class="arithmatex">\(C\)</span> постоянны. Колебания свободные и незатухающие.</p>
+<p>Пусть <span class="arithmatex">\(q\)</span> — заряд выбранной обкладки конденсатора, <span class="arithmatex">\(U\)</span> — напряжение этой обкладки относительно другой, <span class="arithmatex">\(i\)</span> — мгновенная сила тока. Тогда <span class="arithmatex">\(q=CU\)</span>.</p>
+<p>Энергия электрического поля конденсатора:</p>
+<div class="arithmatex">\[
+W_{\text{э}}=\frac{q^2}{2C}=\frac{CU^2}{2}.
+\]</div>
+<p>Энергия магнитного поля катушки:</p>
+<div class="arithmatex">\[
+W_{\text{м}}=\frac{Li^2}{2}.
+\]</div>
+<p>Энергии не зависят от знака заряда, напряжения или тока: эти величины входят в квадрате. Полная энергия идеального контура сохраняется:</p>
+<div class="arithmatex">\[
+W=W_{\text{э}}+W_{\text{м}}
+=\frac{q^2}{2C}+\frac{Li^2}{2}
+=\text{const}.
+\]</div>
+<p>Сохраняется сумма, а каждая из двух энергий по отдельности меняется.</p>
+<h2 id="как-энергия-переходит-из-одного-поля-в-другое">Как энергия переходит из одного поля в другое</h2>
+<p>Пусть в начальный момент конденсатор заряжен максимально, а ток равен нулю. Обозначим амплитуду заряда <span class="arithmatex">\(q_{\max}\)</span>, амплитуду тока <span class="arithmatex">\(I_{\max}\)</span>, период <span class="arithmatex">\(T\)</span>.</p>
+<table>
+<thead>
+<tr>
+<th>Момент</th>
+<th>Заряд выбранной обкладки</th>
+<th>Модуль тока</th>
+<th>Электрическая энергия</th>
+<th>Магнитная энергия</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(+q_{\max}\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(W\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(T/4\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(I_{\max}\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(W\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(T/2\)</span></td>
+<td><span class="arithmatex">\(-q_{\max}\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(W\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(3T/4\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(I_{\max}\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(W\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(T\)</span></td>
+<td><span class="arithmatex">\(+q_{\max}\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(W\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>В моменты <span class="arithmatex">\(T/4\)</span> и <span class="arithmatex">\(3T/4\)</span> ток направлен противоположно, хотя его модуль одинаков. Через половину периода энергия распределена так же, как в начале, но полярность конденсатора противоположна. Полное состояние контура повторяется через <span class="arithmatex">\(T\)</span>, а распределение энергий — через <span class="arithmatex">\(T/2\)</span>.</p>
+<p>Когда конденсатор полностью разряжен, ток максимален и вся энергия находится в магнитном поле. Ток не прекращается сразу: самоиндукция поддерживает его прежнее направление, поэтому конденсатор перезаряжается.</p>
+<h2 id="период-и-формула-томсона">Период и формула Томсона</h2>
+<p><strong>Период</strong> — время одного полного колебания. <strong>Частота</strong> — число колебаний за единицу времени:</p>
+<div class="arithmatex">\[
+\nu=\frac{1}{T}.
+\]</div>
+<p>Период свободных колебаний идеального контура определяет <strong>формула Томсона</strong>:</p>
+<div class="arithmatex">\[
+\boxed{T=2\pi\sqrt{LC}}.
+\]</div>
+<p>Отсюда:</p>
+<div class="arithmatex">\[
+\nu=\frac{1}{2\pi\sqrt{LC}},\qquad
+\omega=2\pi\nu=\frac{1}{\sqrt{LC}},
+\]</div>
+<p>где <span class="arithmatex">\(\omega\)</span> — циклическая частота в радианах в секунду. Период измеряют в секундах, частоту <span class="arithmatex">\(\nu\)</span> — в герцах. Частота и циклическая частота различаются множителем <span class="arithmatex">\(2\pi\)</span>.</p>
+<p>Формула согласуется с <a href="ideal-lc-circuit-and-oscillation-analogy.html">механической аналогией контура</a>: индуктивность <span class="arithmatex">\(L\)</span> соответствует массе груза <span class="arithmatex">\(m\)</span>, а <span class="arithmatex">\(1/C\)</span> — жёсткости пружины <span class="arithmatex">\(k\)</span>. В формуле пружинного маятника <span class="arithmatex">\(T=2\pi\sqrt{m/k}\)</span> соответствующая замена даёт <span class="arithmatex">\(T=2\pi\sqrt{LC}\)</span>.</p>
+<p>При увеличении <span class="arithmatex">\(L\)</span> или <span class="arithmatex">\(C\)</span> период растёт, а частота уменьшается. Например, увеличение ёмкости в четыре раза при прежней индуктивности увеличивает период вдвое. В идеальной линейной модели период не зависит от первоначального заряда и напряжения конденсатора: они определяют запас энергии и амплитуды.</p>
+<h3 id="пример-период-и-частота">Пример: период и частота</h3>
+<p>Индуктивность катушки <span class="arithmatex">\(10\ \text{мГн}\)</span>, ёмкость конденсатора <span class="arithmatex">\(1\ \text{мкФ}\)</span>. Найдём период и частоту.</p>
+<p>Переводим в СИ:</p>
+<div class="arithmatex">\[
+L=10^{-2}\ \text{Гн},\qquad C=10^{-6}\ \text{Ф}.
+\]</div>
+<div class="arithmatex">\[
+T=2\pi\sqrt{10^{-2}\cdot10^{-6}}\ \text{с}
+=2\pi\cdot10^{-4}\ \text{с}
+\approx6{,}28\cdot10^{-4}\ \text{с}
+=0{,}628\ \text{мс}.
+\]</div>
+<div class="arithmatex">\[
+\nu=\frac{1}{T}\approx1{,}59\cdot10^3\ \text{Гц}=1{,}59\ \text{кГц}.
+\]</div>
+<p>В вычислении <span class="arithmatex">\(\sqrt{10^{-8}}=10^{-4}\)</span>. Перевод единиц выполняется до подстановки: <span class="arithmatex">\(1\ \text{мГн}=10^{-3}\ \text{Гн}\)</span>, <span class="arithmatex">\(1\ \text{мкФ}=10^{-6}\ \text{Ф}\)</span>, <span class="arithmatex">\(1\ \text{нФ}=10^{-9}\ \text{Ф}\)</span>.</p>
+<h2 id="амплитуды-и-закон-сохранения-энергии">Амплитуды и закон сохранения энергии</h2>
+<p>В момент максимального модуля заряда ток равен нулю, а в момент максимального модуля тока заряд равен нулю. Поэтому:</p>
+<div class="arithmatex">\[
+\boxed{W=\frac{q_{\max}^2}{2C}
+=\frac{CU_{\max}^2}{2}
+=\frac{LI_{\max}^2}{2}}.
+\]</div>
+<p>Из равенства крайних состояний:</p>
+<div class="arithmatex">\[
+I_{\max}=U_{\max}\sqrt{\frac{C}{L}}
+=\frac{q_{\max}}{\sqrt{LC}}
+=\omega q_{\max}.
+\]</div>
+<p>Максимальная электрическая энергия и максимальная магнитная энергия равны полной энергии, но достигаются <strong>в разные моменты</strong>. Складывать их максимальные значения для нахождения <span class="arithmatex">\(W\)</span> нельзя.</p>
+<h3 id="пример-максимальный-ток">Пример: максимальный ток</h3>
+<p>Конденсатор ёмкостью <span class="arithmatex">\(8\ \text{мкФ}\)</span> заряжен до <span class="arithmatex">\(10\ \text{В}\)</span> и соединён с катушкой индуктивностью <span class="arithmatex">\(20\ \text{мГн}\)</span>. Начальный ток равен нулю. Найдём полную энергию и максимальный ток.</p>
+<div class="arithmatex">\[
+W=\frac{CU_{\max}^2}{2}
+=\frac{8\cdot10^{-6}\cdot10^2}{2}\ \text{Дж}
+=4\cdot10^{-4}\ \text{Дж}.
+\]</div>
+<p>При полном разряде конденсатора вся энергия магнитная:</p>
+<div class="arithmatex">\[
+\frac{LI_{\max}^2}{2}=W,\qquad
+I_{\max}=\sqrt{\frac{2W}{L}}
+=\sqrt{\frac{8\cdot10^{-4}}{2\cdot10^{-2}}}\ \text{А}
+=0{,}20\ \text{А}.
+\]</div>
+<p>Это амплитуда тока; ток в произвольный момент может иметь меньший модуль и любое из двух направлений.</p>
+<h2 id="промежуточное-состояние-контура">Промежуточное состояние контура</h2>
+<p>Закон сохранения энергии позволяет найти модуль тока при известном напряжении без определения времени:</p>
+<div class="arithmatex">\[
+\frac{CU_{\max}^2}{2}
+=\frac{CU^2}{2}+\frac{Li^2}{2}.
+\]</div>
+<p>Например, если модуль напряжения равен половине амплитуды, то:</p>
+<div class="arithmatex">\[
+\frac{W_{\text{э}}}{W}
+=\frac{U^2}{U_{\max}^2}=\frac14,
+\qquad
+\frac{W_{\text{м}}}{W}=1-\frac14=\frac34.
+\]</div>
+<p>Следовательно:</p>
+<div class="arithmatex">\[
+\frac{|i|}{I_{\max}}=\sqrt{\frac34}=\frac{\sqrt3}{2}.
+\]</div>
+<p>По энергии определяется модуль тока, но не его направление. Для направления нужно знать, как меняется заряд: конденсатор в этот момент заряжается или разряжается.</p>
+<h2 id="что-меняется-в-реальном-контуре">Что меняется в реальном контуре</h2>
+<p>В реальном контуре проводники имеют сопротивление, энергия расходуется на нагревание, возможны и другие потери. Свободные колебания затухают: амплитуды и энергия электромагнитных полей уменьшаются. Закон сохранения энергии при этом не нарушается — часть энергии переходит в другие формы или передаётся окружению.</p>
+<p>Формула Томсона точно относится к идеальной модели. При малых потерях она приближённо описывает период реальных свободных колебаний. Рассматривать затухание и внешнее поддержание колебаний будем в следующей теме.</p>
+<h2 id="вопросы-и-упражнения">Вопросы и упражнения</h2>
+<p>Во всех расчётных заданиях контур идеален, <span class="arithmatex">\(L\)</span> и <span class="arithmatex">\(C\)</span> постоянны. Если сказано, что конденсатор первоначально заряжен, начальный ток равен нулю. Для вычислений можно принимать <span class="arithmatex">\(\pi\approx3{,}14\)</span>.</p>
+<ol>
+<li>Почему через <span class="arithmatex">\(T/2\)</span> состояние контура ещё не совпадает с первоначальным, хотя энергия снова целиком электрическая? Что повторяется через <span class="arithmatex">\(T/2\)</span>, а что — через <span class="arithmatex">\(T\)</span>?</li>
+<li>Объясните, как изменятся период и частота, если увеличить только индуктивность в девять раз. Как они изменятся при увеличении только ёмкости в четыре раза?</li>
+<li>Найдите период и частоту колебаний при <span class="arithmatex">\(L=40\ \text{мГн}\)</span> и <span class="arithmatex">\(C=1\ \text{мкФ}\)</span>. Результаты выразите в секундах и герцах, затем в миллисекундах и килогерцах.</li>
+<li>Частота колебаний <span class="arithmatex">\(5{,}0\ \text{кГц}\)</span>, индуктивность катушки <span class="arithmatex">\(10\ \text{мГн}\)</span>. Выразите ёмкость через <span class="arithmatex">\(L\)</span> и <span class="arithmatex">\(\nu\)</span>, затем вычислите её в фарадах и нанофарадах.</li>
+<li>Конденсатор ёмкостью <span class="arithmatex">\(2\ \text{мкФ}\)</span> первоначально заряжен до <span class="arithmatex">\(30\ \text{В}\)</span>. Индуктивность катушки <span class="arithmatex">\(50\ \text{мГн}\)</span>. Найдите начальный модуль заряда, полную энергию контура и максимальный ток.</li>
+<li>В некоторый момент модуль заряда обкладки равен <span class="arithmatex">\(q_{\max}/3\)</span>. Какая доля полной энергии находится в электрическом поле и какая — в магнитном? Найдите отношение <span class="arithmatex">\(|i|/I_{\max}\)</span>.</li>
+<li>В контуре с <span class="arithmatex">\(C=4\ \text{мкФ}\)</span> и <span class="arithmatex">\(L=40\ \text{мГн}\)</span> амплитуда напряжения равна <span class="arithmatex">\(20\ \text{В}\)</span>. Найдите энергию каждого поля и модуль тока в момент, когда напряжение на конденсаторе равно <span class="arithmatex">\(12\ \text{В}\)</span>. Можно ли по этим данным однозначно установить направление тока?</li>
+<li>В одном и том же контуре первоначальное напряжение увеличили вдвое. Как изменятся полная энергия, амплитуда заряда, амплитуда тока, период и частота? Обоснуйте каждое сравнение формулой.</li>
+<li>Найдите ошибку в рассуждении: «Когда ток максимален, магнитная энергия максимальна; когда напряжение максимально, электрическая энергия максимальна. Значит, полная энергия равна сумме этих двух максимумов».</li>
+</ol>
+<p>Для расчёта времени колебаний используйте <span class="arithmatex">\(T=2\pi\sqrt{LC}\)</span>. Для связи заряда, напряжения и тока в разных состояниях используйте постоянство суммы <span class="arithmatex">\(q^2/(2C)+Li^2/2\)</span>. Перед вычислениями различайте мгновенные и амплитудные значения и переводите единицы в СИ.</p>
+<p><strong>Домашнее задание: §30.</strong></p></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить</button>
+      <button type="button" id="site-update-reload" hidden>Обновить</button>
+    </footer>
+  </div>
+</body>
+</html>
