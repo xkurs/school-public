@@ -78,10 +78,10 @@
 <p><strong>Проверьте:</strong> <code>typeof quantityText</code> даёт <code>string</code>, <code>typeof unitValue</code> — <code>number</code>. Числа записаны без единиц измерения и кавычек.</p>
 <h2 id="3-функция-получает-данные-и-отдаёт-сообщение">3. Функция получает данные и отдаёт сообщение</h2>
 <p>Добавьте после исходных данных каркас:</p>
-<pre><code class="language-javascript">function getResult(quantityText, unitAmount, extraAmount) {
-  return &quot;Расчёт пока не собран&quot;;
-}
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">function</span><span class="w"> </span><span class="nx">getResult</span><span class="p">(</span><span class="nx">quantityText</span><span class="p">,</span><span class="w"> </span><span class="nx">unitAmount</span><span class="p">,</span><span class="w"> </span><span class="nx">extraAmount</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;Расчёт пока не собран&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>Три имени в скобках — <strong>параметры</strong>, то есть полученные значения внутри функции. При вызове передайте по порядку: свою строку количества, <code>unitValue</code>, <code>extraValue</code>. Конкретные переданные значения называются <strong>аргументами</strong>.</p>
 <p><strong>Сделайте:</strong> ниже функции вызовите её, сохраните возвращённое значение в <code>const resultMessage</code>, затем выведите эту переменную. Ожидается текст заглушки. <code>return</code> отдаёт значение и завершает вызов; для вывода нужен отдельный <code>console.log(...)</code>.</p>
 <p>Замените заглушку тремя действиями:</p>
@@ -116,10 +116,10 @@
 <ol>
 <li><strong>До <code>Number(...)</code></strong> добавьте проверку пустого текста:</li>
 </ol>
-<pre><code class="language-javascript">if (quantityText.trim() === &quot;&quot;) {
-  return &quot;Ошибка: укажите количество&quot;;
-}
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">quantityText</span><span class="p">.</span><span class="nx">trim</span><span class="p">()</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;Ошибка: укажите количество&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <p><code>trim()</code> убирает крайние пробелы; <code>===</code> сравнивает, а <code>=</code> присваивает. Если условие <code>if</code> верно, выполняется блок в фигурных скобках. После <code>return</code> этот вызов дальше не идёт.</p>
 <ol start="2">
 <li><strong>После <code>Number(...)</code></strong> самостоятельно добавьте отказ, если результат не является конечным числом. Опоры:</li>

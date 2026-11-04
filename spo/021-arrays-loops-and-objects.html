@@ -38,8 +38,8 @@
 <p><strong>Проверьте:</strong> откройте главную и консоль (<code>F12</code> → <strong>Console / Консоль</strong>). В <code>conditions.js</code> должны работать свой расчёт и ошибка пустого количества.</p>
 <p><strong>Сделайте:</strong> создайте рядом <code>catalog.js</code>, перенесите своё работающее объявление <code>getResult</code> без старых проверочных вызовов. Она принимает три аргумента и возвращает строку ошибки или <code>Итого:</code> с суммой.</p>
 <p>В <code>index.html</code> замените имя подключённого файла на:</p>
-<pre><code class="language-html">&lt;script src=&quot;catalog.js&quot; defer&gt;&lt;/script&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;catalog.js&quot;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Оставьте одно подключение программы, старые файлы сохраните. Временно выведите «Данные каталога запущены», сохраните файлы и обновите страницу. Увидев строку, уберите её. Дальнейшие шаги пишите <strong>после закрывающей скобки функции</strong>.</p>
 <h2 id="2-найдите-данные-одной-настоящей-карточки">2. Найдите данные одной настоящей карточки</h2>
 <p>На схемах используются имена из программы: <code>catalog</code>, <code>item</code>, <code>selectedName</code>, <code>foundCount</code>, <code>message</code>. <code>←</code> означает присваивание (<code>=</code> в JavaScript), ромб — проверку условия. Русские подписи поясняют действия.</p>
@@ -47,12 +47,12 @@
 <p><strong>Где:</strong> свой <code>catalog.html</code> рядом с редактором. Найдите у первой карточки заголовок, характеристику и описание.</p>
 <p>Вариант 01: «Лесная тропа», «3 км · лёгкий маршрут», «Тень деревьев и тихая прогулка». Числа 450 и 100 берутся отдельно из пары 19, а не из этой карточки.</p>
 <p>Для одного синтетического набора запись могла бы начинаться так:</p>
-<pre><code class="language-javascript">const sample = {
-  name: &quot;Базовый набор&quot;,
-  specs: &quot;Для одного участника&quot;
-};
-console.log(sample.name);
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">sample</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Базовый набор&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">specs</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Для одного участника&quot;</span>
+<span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</code></pre></div>
 <p><strong>Объект</strong> объединяет свойства записи: <code>sample</code> — весь объект, <code>sample.name</code> — одно свойство через точку. Двоеточие отделяет имя от значения, запятая — свойства друг от друга.</p>
 <p><strong>Сделайте после функции:</strong> объект <code>firstItem</code> со своими данными:</p>
 <table>
@@ -85,10 +85,10 @@ console.log(sample.name);
 <p>Добавьте к описанию в JavaScript слово «тест» и обновите страницу: изменится консоль, HTML останется прежним. Верните текст.</p>
 <h2 id="3-объедините-карточки-в-массив">3. Объедините карточки в массив</h2>
 <p><strong>Массив</strong> хранит значения по порядку. Опыт в консоли:</p>
-<pre><code class="language-javascript">const labels = [&quot;Первый&quot;, &quot;Второй&quot;];
-console.log(labels[0]);
-console.log(labels.length);
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">labels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Первый&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Второй&quot;</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">labels</span><span class="p">[</span><span class="mf">0</span><span class="p">]);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">labels</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+</code></pre></div>
 <p><code>[]</code> создают массив, запятые разделяют элементы. Индексы начинаются с 0: <code>labels[1]</code> — второй, <code>labels[2]</code> отсутствует (<code>undefined</code>). <code>length</code> — число элементов; здесь выводятся «Первый» и 2.</p>
 <p><strong>Сделайте в <code>catalog.js</code>:</strong> замените <code>firstItem</code> массивом <code>catalog</code>:</p>
 <ol>
@@ -99,15 +99,15 @@ console.log(labels.length);
 <li>Обращения к <code>firstItem</code> замените обращениями к элементам <code>catalog</code>.</li>
 </ol>
 <p>Пример обращения к одному полю:</p>
-<pre><code class="language-javascript">console.log(catalog[0].name);
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">catalog</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">name</span><span class="p">);</span>
+</code></pre></div>
 <p><code>[0]</code> получает первый объект, <code>.name</code> — его название. <code>position</code> хранит исходный номер и не управляет индексом (см. схему). <strong>Проверьте:</strong> все три названия по индексам и <code>catalog.length</code> — должно быть 3. Уберите временные выводы.</p>
 <h2 id="4-получите-весь-каталог-одним-циклом">4. Получите весь каталог одним циклом</h2>
 <p><strong>Цикл</strong> повторяет команды. Опыт с другим массивом:</p>
-<pre><code class="language-javascript">for (const label of [&quot;Первый&quot;, &quot;Второй&quot;]) {
-  console.log(label);
-}
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Первый&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Второй&quot;</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">label</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
 <p><code>for...of</code> получает элементы по порядку: <code>label</code> сначала «Первый», затем «Второй». Тело в <code>{}</code> выполняется для каждого; для пустого массива — ни разу.</p>
 <p><strong>Сделайте после массива:</strong> свой цикл по <code>catalog</code>, текущий объект назовите <code>item</code>; его название — <code>item.name</code>.</p>
 <p>Соберите внутри цикла три строки для каждой карточки:</p>
@@ -117,8 +117,8 @@ console.log(labels.length);
 <li>Подпись «Описание:» и соответствующее свойство.</li>
 </ol>
 <p>Образец соединения частей текста, не готовый цикл:</p>
-<pre><code class="language-javascript">console.log(sample.name + &quot; — &quot; + sample.specs);
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; — &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">sample</span><span class="p">.</span><span class="nx">specs</span><span class="p">);</span>
+</code></pre></div>
 <p>Перед циклом выведите «Записей:» и длину массива. <strong>Проверьте:</strong> один цикл даёт три блока, девять строк сведений.</p>
 <p>Сверьте блоки с HTML: порядок, название, характеристика, описание. Трижды первая карточка — проверьте <code>item</code> вместо <code>catalog[0]</code>; <code>[object Object]</code> — выведите свойство вместо целого объекта.</p>
 <h2 id="5-соедините-выбранную-карточку-с-расчётом-пары-20">5. Соедините выбранную карточку с расчётом пары 20</h2>
@@ -153,8 +153,8 @@ console.log(labels.length);
 </table>
 <p>Название и количество — строки; нормы и добавка — числа. <code>unitValue</code> передаётся в параметр <code>unitAmount</code>, <code>extraValue</code> — в <code>extraAmount</code>. Сохраняйте единицы варианта: например, «Всего грунта, литры». Нормы известны только для выбранной записи; цены остальным карточкам не добавляйте.</p>
 <p><strong>В конце тела цикла:</strong> условие совпадения названия с <code>selectedName</code>. Форма сравнения из пары 20:</p>
-<pre><code class="language-javascript">sample.name === selectedName
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">sample</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">selectedName</span>
+</code></pre></div>
 <p>Замените учебное имя своим именем текущего объекта. Внутри ветви:</p>
 <ol>
 <li>Выведите подпись «Выбрано для расчёта:» и название текущей записи.</li>
@@ -164,10 +164,10 @@ console.log(labels.length);
 <p><strong>Проверьте:</strong> предскажите проход с расчётом, запустите и сверьте итог с парой 19. Все карточки видны, расчёт относится к совпавшей записи.</p>
 <h2 id="6-проверьте-действительно-ли-запись-найдена">6. Проверьте, действительно ли запись найдена</h2>
 <p>Счётчик считает совпадения названия. Опыт:</p>
-<pre><code class="language-javascript">let attempts = 0;
-attempts = attempts + 1;
-console.log(attempts);
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">let</span><span class="w"> </span><span class="nx">attempts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+<span class="nx">attempts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">attempts</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">attempts</span><span class="p">);</span>
+</code></pre></div>
 <p>Получится 1. Нужен <code>let</code>: значение изменяется.</p>
 <p><img alt="После обхода выводим счётчик и проверяем отсутствие записи и повтор названия" src="assets/021-00-catalog-result.svg"></p>
 <p><strong>Сделайте по двум схемам:</strong></p>

@@ -128,10 +128,10 @@
 <li>Перед заголовком главной добавьте <code>&lt;main&gt;</code>, после <code>&lt;/ul&gt;</code> — <code>&lt;/main&gt;</code>.</li>
 <li>Перед <code>&lt;/body&gt;</code> добавьте подпись своего варианта (ниже показан общий пример 00):</li>
 </ol>
-<pre><code class="language-html">&lt;footer&gt;
-  &lt;p&gt;Учебный прототип · Вариант 00&lt;/p&gt;
-&lt;/footer&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Учебный прототип · Вариант 00<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Существующие тексты, изображение и список остаются внутри своих групп. Каркас и <code>head</code> сохраняются. Обновите страницу и проверьте ссылку: её цель <code>catalog</code> должна остаться.</p>
 <hr>
 <h2 id="вот-что-сделает-css">Вот что сделает CSS</h2>
@@ -141,22 +141,22 @@
 <hr>
 <h2 id="создайте-и-подключите-stylecss">Создайте и подключите style.css</h2>
 <p>Создайте файл <strong><code>style.css</code> рядом с <code>index.html</code></strong>. В Блокноте при сохранении: «Все файлы», UTF-8; проверьте, что нет расширения <code>.txt</code>.</p>
-<pre><code class="language-text">VariantNN-web/
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">VariantNN-web/
   index.html
   style.css
   images/
-</code></pre>
+</code></pre></div>
 <p>В HTML <strong>перед существующей строкой <code>&lt;/head&gt;</code></strong> добавьте:</p>
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><code>rel="stylesheet"</code> обозначает таблицу стилей, <code>href</code> — путь к ней. У <code>link</code> нет закрывающего тега. Пока файл CSS пуст, внешне ничего не изменится.</p>
 <hr>
 <h2 id="измените-цвет-главного-заголовка">Измените цвет главного заголовка</h2>
 <p>В <code>style.css</code> запишите:</p>
-<pre><code class="language-css">h1 {
-  color: navy;
-}
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">CSS</span></div><pre><code class="language-css"><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">navy</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -187,13 +187,13 @@
 <hr>
 <h2 id="добавьте-фон-шрифт-и-отступы">Добавьте фон, шрифт и отступы</h2>
 <p>Ниже правила <code>h1</code> в том же CSS добавьте:</p>
-<pre><code class="language-css">body {
-  font-family: sans-serif;
-  color: #1E293B;
-  background-color: #EFF6FF;
-  margin: 24px;
-}
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">CSS</span></div><pre><code class="language-css"><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#1E293B</span><span class="p">;</span>
+<span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#EFF6FF</span><span class="p">;</span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>Это цвета общего примера 00. После проверки замените <code>color</code> и <code>background-color</code> значениями «Основной текст» и «Фон» из своего листа.</p>
 <ul>
 <li><code>font-family</code> — семейство шрифта; <code>sans-serif</code> — без засечек.</li>

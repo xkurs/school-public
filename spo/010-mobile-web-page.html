@@ -88,18 +88,18 @@
 <hr>
 <h2 id="вставьте-каркас-документа">Вставьте каркас документа</h2>
 <p>Скопируйте в пустой файл весь каркас. В строке <code>title</code> замените название на своё:</p>
-<pre><code class="language-html">&lt;!doctype html&gt;
-&lt;html lang=&quot;ru&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;Техника дома · V00&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;ru&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Техника дома · V00<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Пока <code>body</code> пуст. В следующих шагах будем добавлять содержимое <strong>между <code>&lt;body&gt;</code> и <code>&lt;/body&gt;</code></strong>, не создавая второй каркас.</p>
 <hr>
 <h2 id="сохраните-именно-html-файл">Сохраните именно HTML-файл</h2>
@@ -111,9 +111,9 @@
 <h2 id="откройте-файл-в-браузере">Откройте файл в браузере</h2>
 <p>В Проводнике: правая кнопка на <code>index.html</code> → «Открыть с помощью → Google Chrome». Редактор оставьте открытым.</p>
 <p><strong>Пока результат — пустая белая страница с вашим названием во вкладке.</strong> Это нормально.</p>
-<pre><code class="language-text">Редактор: изменить → Ctrl+S
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Редактор: изменить → Ctrl+S
 Chrome: обновить → Ctrl+R
-</code></pre>
+</code></pre></div>
 <p>Повторяйте эти два действия после каждого изменения. Файл на диске — ваш документ; браузер показывает прочитанный из него результат. Интернет для открытия не нужен.</p>
 <hr>
 <h2 id="вкладка-и-страница-разные-места">Вкладка и страница — разные места</h2>
@@ -159,20 +159,20 @@ Chrome: обновить → Ctrl+R
 <p><code>title</code> уже заполнен. <code>h1</code> сейчас добавим. Подписи и стрелки на схемах — пояснения, их создавать не нужно.</p>
 <hr>
 <h2 id="как-читать-тег">Как читать тег</h2>
-<pre><code class="language-html">&lt;p&gt;Выберите технику для повседневных дел&lt;/p&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Выберите технику для повседневных дел<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><code>&lt;p&gt;</code> открывает абзац, <code>&lt;/p&gt;</code> закрывает его. Между ними — текст, который вы заменяете своим. Вместе это элемент HTML.</p>
-<pre><code class="language-html">&lt;html lang=&quot;ru&quot;&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;ru&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><code>lang</code> — <strong>атрибут</strong>, уточнение в открывающем теге. После <code>=</code> в прямых кавычках записано значение <code>ru</code>.</p>
 <p>Вложенность закрывается изнутри наружу: содержимое <code>body</code> — перед <code>&lt;/body&gt;</code>, затем закрывается <code>html</code>. Пробелы в начале строк помогают видеть вложенность.</p>
 <hr>
 <h2 id="сделайте-заголовок-и-пояснение">Сделайте заголовок и пояснение</h2>
 <p><img alt="Крупный заголовок h1 и обычный абзац p под ним" src="assets/010-00-heading-paragraph.svg"></p>
 <p>На пустой строке <strong>между <code>&lt;body&gt;</code> и <code>&lt;/body&gt;</code></strong> добавьте:</p>
-<pre><code class="language-html">&lt;h1&gt;Техника дома · V00&lt;/h1&gt;
-&lt;p&gt;Выберите технику для повседневных дел&lt;/p&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Техника дома · V00<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Выберите технику для повседневных дел<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><strong>Замените:</strong> в <code>h1</code> — название приложения, в <code>p</code> — короткое пояснение из своего листа.</p>
 <p><code>h1</code> — главный заголовок, <code>p</code> — абзац. Сохраните файл и обновите Chrome.</p>
 <p><strong>Проверка:</strong> появились две части, как на схеме. Название нужно поменять и в <code>title</code>, и в <code>h1</code>: одно не меняет другое.</p>
@@ -180,9 +180,9 @@ Chrome: обновить → Ctrl+R
 <h2 id="добавьте-заголовок-содержания-и-описание">Добавьте заголовок содержания и описание</h2>
 <p><img alt="Заголовок второго уровня и абзац описания" src="assets/010-00-section-text.svg"></p>
 <p><strong>После первого <code>&lt;/p&gt;</code>, перед <code>&lt;/body&gt;</code></strong> добавьте:</p>
-<pre><code class="language-html">&lt;h2&gt;Бытовая техника для дома&lt;/h2&gt;
-&lt;p&gt;Три прибора для кухни и дома. Сравните характеристики и выберите нужный товар.&lt;/p&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Бытовая техника для дома<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Три прибора для кухни и дома. Сравните характеристики и выберите нужный товар.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><strong>Замените:</strong> в <code>h2</code> — «Заголовок главной», в новом <code>p</code> — «Описание» своего варианта. Короткое пояснение в первом абзаце сохраните.</p>
 <p><code>h2</code> — заголовок следующего уровня после <code>h1</code>. Сохраните и обновите.</p>
 <p><strong>Проверка:</strong> сверху вниз видны название, пояснение, заголовок содержания и описание.</p>
@@ -194,19 +194,19 @@ Chrome: обновить → Ctrl+R
 <li>Скопируйте туда нужное изображение из набора варианта: <code>Ctrl+C</code> → открыть свою <code>images</code> → <code>Ctrl+V</code>.</li>
 <li>Если читаете лист на сайте, найдите <strong>отдельную иллюстрацию</strong> внизу листа: правая кнопка → «Сохранить изображение как» → своя <code>images</code>. Сохраните под именем из задания: например, скачанный <code>010-00-fridge.svg</code> назовите <code>fridge.svg</code>. Расширение сохраняется.</li>
 </ol>
-<pre><code class="language-text">Variant00-web/
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Variant00-web/
   index.html
   images/
     fridge.svg
-</code></pre>
+</code></pre></div>
 <p><strong>Копируем готовый файл. Рисовать его самостоятельно не требуется.</strong> Берите отдельную тематическую иллюстрацию, а не снимок всей страницы.</p>
 <p>Если файл недоступен, завершите текстовую часть и запишите имя нужного изображения для второй пары.</p>
 <hr>
 <h2 id="выведите-картинку-через-img">Выведите картинку через img</h2>
 <p><img alt="Готовое изображение на странице: элемент img с шириной 240" src="assets/010-00-image-element.svg"></p>
 <p><strong>После абзаца с описанием, перед <code>&lt;/body&gt;</code></strong> добавьте:</p>
-<pre><code class="language-html">&lt;img src=&quot;images/fridge.svg&quot; alt=&quot;Холодильник&quot; width=&quot;240&quot;&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/fridge.svg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Холодильник&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;240&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -240,22 +240,22 @@ Chrome: обновить → Ctrl+R
 <hr>
 <h2 id="сверьте-итоговый-код">Сверьте итоговый код</h2>
 <p>Это полный код <strong>общего учебного примера 00</strong>, который студентам не назначается. В своей работе оставьте свои тексты, имя изображения и описание <code>alt</code>.</p>
-<pre><code class="language-html">&lt;!doctype html&gt;
-&lt;html lang=&quot;ru&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;Техника дома · V00&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;Техника дома · V00&lt;/h1&gt;
-  &lt;p&gt;Выберите технику для повседневных дел&lt;/p&gt;
-  &lt;h2&gt;Бытовая техника для дома&lt;/h2&gt;
-  &lt;p&gt;Три прибора для кухни и дома. Сравните характеристики и выберите нужный товар.&lt;/p&gt;
-  &lt;img src=&quot;images/fridge.svg&quot; alt=&quot;Холодильник&quot; width=&quot;240&quot;&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;ru&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Техника дома · V00<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Техника дома · V00<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Выберите технику для повседневных дел<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Бытовая техника для дома<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Три прибора для кухни и дома. Сравните характеристики и выберите нужный товар.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/fridge.svg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Холодильник&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;240&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><strong>Результат первой пары соответствует первой схеме статьи:</strong> одна вертикальная страница без цветного оформления и сложной раскладки.</p>
 <hr>
 <h2 id="если-не-получилось">Если не получилось</h2>

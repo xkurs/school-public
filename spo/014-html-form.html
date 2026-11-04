@@ -76,12 +76,12 @@
 </tbody>
 </table>
 <p><strong>Внутри <code>main</code>, после поясняющего абзаца</strong>, добавьте оболочку формы:</p>
-<pre><code class="language-html">&lt;form method=&quot;get&quot;&gt;
-&lt;/form&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;get&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Поля следующих этапов будут находиться между этими тегами. <strong>После <code>&lt;/form&gt;</code>, до <code>&lt;/main&gt;</code></strong> добавьте ссылку возврата:</p>
-<pre><code class="language-html">&lt;p&gt;&lt;a href=&quot;index.html&quot;&gt;Назад&lt;/a&gt;&lt;/p&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;index.html&quot;</span><span class="p">&gt;</span>Назад<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Обновите существующий <code>nav</code> на каждой странице: теперь в меню <strong>две ссылки на другие страницы</strong>, без ссылки на саму открытую страницу.</p>
 <table>
 <thead>
@@ -119,16 +119,16 @@
 <hr>
 <h2 id="этап-2-выберите-позицию-каталога">Этап 2. Выберите позицию каталога</h2>
 <p>В <strong><code>form.html</code>, между <code>&lt;form method="get"&gt;</code> и <code>&lt;/form&gt;</code></strong>, добавьте:</p>
-<pre><code class="language-html">&lt;p&gt;
-  &lt;label for=&quot;item&quot;&gt;Товар&lt;/label&gt;
-  &lt;select id=&quot;item&quot; name=&quot;item&quot; required&gt;
-    &lt;option value=&quot;&quot;&gt;Выберите из списка&lt;/option&gt;
-    &lt;option value=&quot;fridge&quot;&gt;Холодильник&lt;/option&gt;
-    &lt;option value=&quot;washer&quot;&gt;Стиральная машина&lt;/option&gt;
-    &lt;option value=&quot;kettle&quot;&gt;Электрочайник&lt;/option&gt;
-  &lt;/select&gt;
-&lt;/p&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;item&quot;</span><span class="p">&gt;</span>Товар<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">select</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;item&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;item&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Выберите из списка<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;fridge&quot;</span><span class="p">&gt;</span>Холодильник<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;washer&quot;</span><span class="p">&gt;</span>Стиральная машина<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;kettle&quot;</span><span class="p">&gt;</span>Электрочайник<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><code>select</code> — список выбора, <code>option</code> — его пункт. Подпись «Товар» замените подписью выбора позиции из своего листа. Видимые названия замените <strong>тремя названиями из каталога своего варианта</strong>. Значения <code>value</code> сделайте разными; можно использовать <code>item1</code>, <code>item2</code>, <code>item3</code>.</p>
 <p>Первая строка имеет пустое <code>value=""</code>: это приглашение сделать выбор. <code>required</code> требует непустого выбора. Без пустого первого пункта браузер сразу выбрал бы первую позицию, и студент мог бы не заметить необходимость выбора.</p>
 <p><strong>Ожидаемый результат и самопроверка:</strong> сохраните и обновите <code>form.html</code>: список открывается, видны приглашение и три ваши позиции. Нажмите на подпись — фокус переходит к списку. Сверьте три названия с <code>catalog.html</code>.</p>
@@ -136,12 +136,12 @@
 <hr>
 <h2 id="этап-3-введите-целое-количество">Этап 3. Введите целое количество</h2>
 <p>Внутри той же формы <strong>после блока со списком</strong> добавьте:</p>
-<pre><code class="language-html">&lt;p&gt;
-  &lt;label for=&quot;quantity&quot;&gt;Количество единиц&lt;/label&gt;
-  &lt;input id=&quot;quantity&quot; name=&quot;quantity&quot; type=&quot;number&quot;
-         min=&quot;1&quot; step=&quot;1&quot; value=&quot;1&quot; required&gt;
-&lt;/p&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;quantity&quot;</span><span class="p">&gt;</span>Количество единиц<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;quantity&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;quantity&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span>
+         <span class="na">min</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">step</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Вместо «Количество единиц» возьмите подпись числового поля из своего листа (строка «Целое количество от 1»). Начальное число своего варианта укажите только в <code>value</code>; <code>min="1"</code> и <code>step="1"</code> оставьте. Порядок строк формы в разных вариантах может отличаться: после знакомства с элементами расположите блоки по порядку своего листа.</p>
 <table>
 <thead>
@@ -179,12 +179,12 @@
 <hr>
 <h2 id="этап-4-добавьте-несколько-строк-текста">Этап 4. Добавьте несколько строк текста</h2>
 <p>После числового поля, <strong>внутри формы</strong>, добавьте:</p>
-<pre><code class="language-html">&lt;p&gt;
-  &lt;label for=&quot;notes&quot;&gt;Комментарий к заказу&lt;/label&gt;
-  &lt;textarea id=&quot;notes&quot; name=&quot;notes&quot; rows=&quot;4&quot;
-            placeholder=&quot;Например, удобный день доставки&quot;&gt;&lt;/textarea&gt;
-&lt;/p&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;notes&quot;</span><span class="p">&gt;</span>Комментарий к заказу<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;notes&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;notes&quot;</span> <span class="na">rows</span><span class="o">=</span><span class="s">&quot;4&quot;</span>
+            <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Например, удобный день доставки&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Замените подпись и подсказку данными своего варианта. <code>rows="4"</code> задаёт исходную высоту в строках. У <code>textarea</code> есть закрывающий тег; текст между тегами был бы начальным содержимым.</p>
 <p>Это необязательное поле: <code>required</code> здесь не добавляем.</p>
 <p><strong>Ожидаемый результат и самопроверка:</strong> сохраните <code>form.html</code>, напишите две строки вымышленного текста и убедитесь, что перенос работает. Очистите текст: снова появилась подсказка, а видимая подпись осталась.</p>
@@ -192,11 +192,11 @@
 <hr>
 <h2 id="этап-5-добавьте-два-независимых-флажка">Этап 5. Добавьте два независимых флажка</h2>
 <p>В <code>form.html</code> следом, <strong>внутри формы</strong>, добавьте первый флажок по образцу:</p>
-<pre><code class="language-html">&lt;p&gt;
-  &lt;input id=&quot;extra1&quot; name=&quot;extra1&quot; type=&quot;checkbox&quot; value=&quot;yes&quot; checked&gt;
-  &lt;label for=&quot;extra1&quot;&gt;Нужна доставка&lt;/label&gt;
-&lt;/p&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;extra1&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;extra1&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;yes&quot;</span> <span class="na">checked</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;extra1&quot;</span><span class="p">&gt;</span>Нужна доставка<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Создайте второй такой блок сами: используйте <code>id="extra2"</code>, <code>name="extra2"</code> и совпадающий <code>for</code> у его подписи. Замените обе подписи возможностями своего варианта. Атрибут <code>checked</code> ставьте только у тех, которые по листу выбраны в начале. Для отключённого флажка <strong>уберите атрибут полностью</strong>: <code>checked="false"</code> всё равно означает его присутствие и начальный выбор.</p>
 <p>У этих флажков разные <code>id</code> и <code>name</code>. Можно включить оба, один или ни одного.</p>
 <p><strong>Ожидаемый результат и самопроверка:</strong> нажмите на текст каждой подписи — переключается только соответствующий флажок. Включите оба, затем снимите оба: выборы независимы. Перейдите по меню на главную, вернитесь в форму и сверьте исходные состояния со своим листом.</p>
@@ -204,9 +204,9 @@
 <hr>
 <h2 id="этап-6-добавьте-шкалу">Этап 6. Добавьте шкалу</h2>
 <p>Теперь примените связь подписи и поля самостоятельно. В <code>form.html</code> внутри формы после флажков добавьте абзац с <code>label</code> и <code>input</code>. Для поля используйте фрагмент:</p>
-<pre><code class="language-html">&lt;input id=&quot;level&quot; name=&quot;level&quot; type=&quot;range&quot;
-       min=&quot;1&quot; max=&quot;5&quot; step=&quot;1&quot; value=&quot;3&quot;&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;level&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;level&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;range&quot;</span>
+       <span class="na">min</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;5&quot;</span> <span class="na">step</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Свяжите подпись со шкалой через <code>for</code>. В примере 00 подпись — «Срочность заказа», края — «1 — Не срочно; 5 — Срочно». Рядом с полем поместите текст краёв в <code>span</code>. Подпись, начальное <code>value</code> и названия краёв возьмите из своего листа. Диапазон остаётся от 1 до 5.</p>
 <p><code>range</code> показывает ползунок. Точное текущее число рядом автоматически не появляется: для такого индикатора позднее понадобится программный обработчик. Сейчас достаточно подписи, границ и работающего ползунка.</p>
 <p><strong>Ожидаемый результат и самопроверка:</strong> ползунок движется, текст обоих краёв виден. Переведите фокус к шкале через <code>Tab</code>, нажмите стрелки. В исходнике сверьте <code>min</code>, <code>max</code>, <code>step</code> и начальное <code>value</code> со своим листом; само значение дополнительно увидим в GET.</p>
@@ -214,8 +214,8 @@
 <hr>
 <h2 id="этап-7-добавьте-кнопку-и-соберите-порядок-своего-варианта">Этап 7. Добавьте кнопку и соберите порядок своего варианта</h2>
 <p><strong>После всех полей, перед <code>&lt;/form&gt;</code></strong>, добавьте:</p>
-<pre><code class="language-html">&lt;button type=&quot;submit&quot;&gt;Проверить заказ&lt;/button&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Проверить заказ<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Работайте в <code>form.html</code>. Надпись возьмите из строки «Текст кнопки отправки» своего варианта. <code>submit</code> запускает штатную отправку формы, а перед ней браузер проверяет ограничения полей. Ссылка «Назад» остаётся <strong>за пределами формы</strong> и просто открывает главную.</p>
 <p>Теперь расположите все шесть смысловых блоков <strong>в порядке своего листа</strong>. Переносите целый абзац с подписью и полем, а не отдельные строки. Не переименовывайте <code>id</code> и <code>for</code> при перемещении. Кнопка остаётся после полей внутри формы. Порядок объяснения в статье — порядок примера 00, он не заменяет индивидуальный порядок задания.</p>
 <p>В примере у <code>form</code> задан <code>method="get"</code>, адрес <code>action</code> не указан. После успешной проверки браузер открывает текущую страницу с параметрами из полей в адресе. Например, выбранная позиция передаётся под именем <code>item</code>. В локальном учебном проекте серверного обработчика нет: страница может перезагрузиться, значения вернуться к начальным. <strong>Это не подтверждение сохранения заявки.</strong></p>
@@ -325,11 +325,11 @@
 <h3 id="1-объедините-связанные-поля-в-группы">1. Объедините связанные поля в группы</h3>
 <p><strong>Файл и место:</strong> <code>form.html</code>, внутри существующего <code>form</code>. Найдите соседние поля, которым подходит общее смысловое название, например две дополнительные возможности. Оберните их блоки в <code>fieldset</code>, первым дочерним элементом поставьте <code>legend</code> с названием группы. Создайте хотя бы одну осмысленную группу, не переставляя поля ради группировки.</p>
 <p>Подсказка по оболочке, внутрь которой помещаются уже работающие блоки:</p>
-<pre><code class="language-html">&lt;fieldset&gt;
-  &lt;legend&gt;Дополнительные возможности&lt;/legend&gt;
-  &lt;!-- Здесь расположите существующие соседние поля группы --&gt;
-&lt;/fieldset&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Дополнительные возможности<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+  <span class="cm">&lt;!-- Здесь расположите существующие соседние поля группы --&gt;</span>
+<span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><strong>Критерии и самопроверка:</strong> название группы видно; внутри находятся связанные поля; подписи продолжают переключать именно свои флажки; GET и ограничения работают как прежде. Если появилась лишняя форма, удалите её: <code>fieldset</code> находится внутри единственного <code>form</code>, вложенный <code>form</code> не нужен.</p>
 <h3 id="2-добавьте-полезное-дополнительное-поле">2. Добавьте полезное дополнительное поле</h3>
 <p><strong>Файл и место:</strong> <code>form.html</code>, после шести обязательных элементов, перед кнопкой. Придумайте полезное для своего приложения необязательное поле электронной почты для учебной обратной связи. Добавьте видимый <code>label</code>, поле с <code>type="email"</code>, новые уникальные <code>id</code> и <code>name</code>, короткое объяснение назначения. Используйте только вымышленный адрес, например <code>student@example.com</code>.</p>

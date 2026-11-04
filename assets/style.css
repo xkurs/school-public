@@ -358,6 +358,69 @@ pre {
   background: #eef2f7;
 }
 
+.code-block {
+  max-width: 100%;
+  min-width: 0;
+  margin-block: 1.25rem;
+  overflow: hidden;
+  border: 1px solid #d5dfed;
+  border-radius: .7rem;
+  background: #f6f8fc;
+}
+
+.code-block-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 2.15rem;
+  padding: .3rem .9rem;
+  border-bottom: 1px solid #dce4ef;
+  background: #eaf0f8;
+}
+
+.code-language {
+  color: #465a76;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: .75rem;
+  font-weight: 650;
+  letter-spacing: .025em;
+  overflow-wrap: anywhere;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border-radius: 0;
+  background: transparent;
+  color: #213047;
+  font: .9rem/1.65 ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  tab-size: 4;
+}
+
+.code-block pre code {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  white-space: pre;
+}
+
+/* Pygments token classes; rendered during the build, including for offline use. */
+.code-block :is(.k, .kc, .kd, .kn, .kp, .kr, .kt, .ow) { color: #7535b1; }
+.code-block :is(.s, .sa, .sb, .sc, .sd, .s1, .s2, .sh, .si, .ss, .sx) { color: #176635; }
+.code-block :is(.m, .mb, .mf, .mh, .mi, .mo, .il) { color: #925100; }
+.code-block :is(.c, .ch, .cm, .c1, .cp, .cpf, .cs) { color: #58697f; font-style: italic; }
+.code-block :is(.nb, .bp, .nc, .nf, .fm, .nn, .nd) { color: #145da7; }
+.code-block .nt { color: #a1255d; }
+.code-block .na { color: #865000; }
+.code-block :is(.o, .se, .sr) { color: #9b3754; }
+.code-block :is(.ne, .err, .gd) { color: #a51d2d; }
+.code-block .gi { color: #176635; }
+.code-block :is(.gh, .gu, .gs) { font-weight: 700; }
+.code-block .ge { font-style: italic; }
+
 blockquote {
   margin-inline: 0;
   padding: 0.75rem 1rem;

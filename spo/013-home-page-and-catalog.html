@@ -53,12 +53,12 @@
 <hr>
 <h2 id="подготовьте-файлы">Подготовьте файлы</h2>
 <p>В прежней папке создайте <strong>новый</strong> файл <code>catalog.html</code>. Существующие <code>index.html</code>, <code>style.css</code> и изображения сохраните.</p>
-<pre><code class="language-text">VariantNN-web/
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">VariantNN-web/
   index.html
   catalog.html
   style.css
   images/
-</code></pre>
+</code></pre></div>
 <p>Все HTML-файлы лежат рядом, поэтому ссылка на каталог будет <code>catalog.html</code>, а на картинку — <code>images/имя-файла.png</code> или <code>images/имя-файла.svg</code> — с настоящим расширением файла.</p>
 <p><strong>Проверка:</strong> редактор показывает расширение <code>.html</code>, а не <code>.html.txt</code>. Если расширения скрыты, включите их показ в проводнике. При сохранении через Блокнот выберите «Все файлы» и кодировку UTF-8.</p>
 <hr>
@@ -108,19 +108,19 @@
 <h2 id="свяжите-две-страницы">Свяжите две страницы</h2>
 <p>В <strong>обоих файлах, <code>index.html</code> и <code>catalog.html</code>, внутри <code>header</code></strong>, после названия приложения добавьте меню. Если <code>nav</code> уже есть, измените его, не создавайте дубликат. На открытую страницу ссылка не нужна: на главной нет пункта «Главная», в каталоге нет пункта «Каталог».</p>
 <p>В <code>index.html</code> оставьте только переход в каталог:</p>
-<pre><code class="language-html">&lt;nav&gt;
-  &lt;a href=&quot;catalog.html&quot;&gt;Каталог&lt;/a&gt;
-&lt;/nav&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;catalog.html&quot;</span><span class="p">&gt;</span>Каталог<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>В <code>catalog.html</code> оставьте только возврат на главную:</p>
-<pre><code class="language-html">&lt;nav&gt;
-  &lt;a href=&quot;index.html&quot;&gt;Главная&lt;/a&gt;
-&lt;/nav&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;index.html&quot;</span><span class="p">&gt;</span>Главная<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><code>nav</code> объединяет ссылки для переходов; <code>href</code> задаёт файл назначения. Горизонтальное расположение появится после добавления CSS ниже.</p>
 <p>На главной найдите прежнюю ссылку к миникаталогу <code>href="#catalog"</code>. Замените <strong>только адрес</strong> на <code>href="catalog.html"</code>, сохранив свою надпись. Старый список из двух пунктов можно оставить как краткий обзор; полный каталог будет на отдельной странице.</p>
-<pre><code class="language-html">&lt;a href=&quot;catalog.html&quot;&gt;Посмотреть технику&lt;/a&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;catalog.html&quot;</span><span class="p">&gt;</span>Посмотреть технику<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><img alt="Две страницы: переход к каталогу и возврат на главную" src="assets/013-00-pages.svg"></p>
 <p><code>#catalog</code> ищет место внутри текущей страницы. <code>catalog.html</code> открывает соседний файл. Регистр букв и написание имени должны совпадать.</p>
 <p><strong>Проверка:</strong> нажмите ссылку на каталог, затем «Главная». В адресе браузера меняется имя файла, обе страницы открываются без ошибки.</p>
@@ -128,13 +128,13 @@
 <hr>
 <h2 id="добавьте-первую-позицию">Добавьте первую позицию</h2>
 <p>В <strong><code>catalog.html</code>, внутри <code>main</code>, после поясняющего абзаца</strong> вставьте:</p>
-<pre><code class="language-html">&lt;article&gt;
-  &lt;h2&gt;Холодильник&lt;/h2&gt;
-  &lt;img src=&quot;images/fridge.svg&quot; alt=&quot;Холодильник с двумя камерами&quot; width=&quot;280&quot;&gt;
-  &lt;p&gt;300 л · 2 камеры&lt;/p&gt;
-  &lt;p&gt;Для хранения свежих и замороженных продуктов&lt;/p&gt;
-&lt;/article&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Холодильник<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/fridge.svg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Холодильник с двумя камерами&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;280&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>300 л · 2 камеры<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Для хранения свежих и замороженных продуктов<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</code></pre></div>
 <p><img alt="Позиция каталога: заголовок, изображение, характеристика и описание" src="assets/013-00-catalog-item.svg"></p>
 <p><code>article</code> объединяет отдельную законченную позицию. Внутри неё <code>h2</code> называет позицию, первый абзац содержит характеристику, второй — описание. Рамка на схеме показывает группу элементов; тег <code>article</code> сам её не рисует.</p>
 <p>Возьмите <strong>первую строку своего каталога</strong>. Файл из последней колонки сохраните в <code>images/</code> с указанным именем. В <code>alt</code> коротко опишите изображение; не оставляйте описание холодильника, если у вас другая тематика.</p>
@@ -194,14 +194,14 @@
 <hr>
 <h2 id="используйте-общий-css">Используйте общий CSS</h2>
 <p>В обеих страницах внутри <code>head</code> должно быть одно подключение:</p>
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>В конец существующего <strong><code>style.css</code></strong> добавьте:</p>
-<pre><code class="language-css">img {
-  max-width: 100%;
-  height: auto;
-}
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">CSS</span></div><pre><code class="language-css"><span class="nt">img</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="w">  </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <p><code>max-width: 100%</code> ограничивает изображение шириной содержащего его блока; <code>height: auto</code> сохраняет пропорции. Атрибут <code>width="280"</code> в примере задаёт исходную ширину показа, а правило помогает картинке поместиться в узком окне.</p>
 <p>Сохраните файл. Обновите обе страницы: прежние цвета текста и фона должны применяться к обеим. Уменьшите окно — картинки не должны растягиваться или выходить за границы содержимого.</p>
 <p><strong>Если не получилось:</strong> правило должно находиться в <code>style.css</code>, вне других фигурных скобок. В обеих страницах проверьте путь <code>href="style.css"</code>. Сначала сохраните CSS, затем обновите браузер.</p>
@@ -209,36 +209,36 @@
 <h2 id="оформите-горизонтальное-меню">Оформите горизонтальное меню</h2>
 <p>Меню оформляется тремя отдельными правилами в <strong><code>style.css</code></strong>, после уже существующих правил. Добавляйте их последовательно и после каждого смотрите результат. Если правило с таким селектором уже есть, дополните его вместо создания второй копии.</p>
 <p><strong>Сначала расположите ссылки в ряд:</strong></p>
-<pre><code class="language-css">nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">CSS</span></div><pre><code class="language-css"><span class="nt">nav</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<span class="w">  </span><span class="k">flex-wrap</span><span class="p">:</span><span class="w"> </span><span class="kc">wrap</span><span class="p">;</span>
+<span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <p><code>display: flex</code> располагает ссылки внутри <code>nav</code> в ряд. <code>gap</code> задаёт расстояние между ними, а <code>flex-wrap: wrap</code> разрешает перенос, когда места мало. <code>margin-bottom</code> отделяет меню от следующего блока. <strong>Проверьте:</strong> на каждой странице сохранилась одна ссылка на другую страницу. При одном элементе промежуток <code>gap</code> пока не виден; он понадобится, когда на следующей паре в меню появится вторая ссылка.</p>
 <p><strong>Затем оформите сами ссылки:</strong></p>
-<pre><code class="language-css">nav a {
-  display: block;
-  padding: 8px 12px;
-  color: inherit;
-  border: 1px solid currentColor;
-  border-radius: 6px;
-  text-decoration: none;
-}
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">CSS</span></div><pre><code class="language-css"><span class="nt">nav</span><span class="w"> </span><span class="nt">a</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">inherit</span><span class="p">;</span>
+<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">currentColor</span><span class="p">;</span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="k">text-decoration</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>Селектор <code>nav a</code> выбирает только ссылки внутри меню. <code>padding</code> увеличивает область нажатия, <code>border</code> рисует рамку, <code>border-radius</code> скругляет углы. <code>color: inherit</code> берёт цвет текста у родителя, а <code>currentColor</code> использует его для рамки. <strong>Проверьте:</strong> у ссылок меню появились рамки и внутренние отступы; обычная ссылка в тексте не получила такую рамку.</p>
 <p><strong>Наконец добавьте видимую реакцию на мышь и клавиатуру:</strong></p>
-<pre><code class="language-css">nav a:hover,
-nav a:focus-visible {
-  text-decoration: underline;
-}
-</code></pre>
+<div class="code-block"><div class="code-block-header"><span class="code-language">CSS</span></div><pre><code class="language-css"><span class="nt">nav</span><span class="w"> </span><span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="o">,</span>
+<span class="nt">nav</span><span class="w"> </span><span class="nt">a</span><span class="p">:</span><span class="nd">focus-visible</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">text-decoration</span><span class="p">:</span><span class="w"> </span><span class="kc">underline</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>При наведении мыши (<code>:hover</code>) и фокусе с клавиатуры (<code>:focus-visible</code>) появляется подчёркивание. Стандартную рамку фокуса браузера оставьте: она помогает видеть, какая ссылка выбрана клавишей <code>Tab</code>.</p>
 <p>Ожидаемый состав меню:</p>
-<pre><code class="language-text">index.html:    Каталог
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">index.html:    Каталог
 catalog.html:  Главная
-</code></pre>
+</code></pre></div>
 <p><strong>Проверка:</strong> обновите обе страницы. Сейчас в каждом меню одна ссылка, поэтому перенос между пунктами ещё не наблюдается. Проверьте, что сама ссылка доступна в узком окне; после добавления второй ссылки на следующей паре проверим и перенос. Нажмите <code>Tab</code>, затем <code>Enter</code>: выделенная ссылка должна открыть нужную страницу. Обе страницы используют одни правила из общего CSS, копировать стили в HTML не требуется.</p>
 <p><strong>Если не получилось:</strong> найдите <code>nav</code> в HTML и соответствующий селектор в CSS. Правило <code>nav</code> действует на контейнер меню, а <code>nav a</code> — на ссылки внутри него. Если рамки появились у всех ссылок страницы, проверьте, не написали ли вы только <code>a</code> вместо <code>nav a</code>.</p>
 <hr>

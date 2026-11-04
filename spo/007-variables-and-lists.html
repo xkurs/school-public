@@ -56,14 +56,14 @@
 <p>Имена второго и третьего экранов, кнопок и их надписи берутся из своего варианта. Различие этих имён не меняет общую схему. Завершение третьего экрана и проверка оформления тоже выполняются по единым критериям.</p>
 <p>В Designer создаётся внешний вид кнопки; в Blocks задаётся её действие при нажатии. Для перехода достаточно события <code>when ButtonName.Click do</code> и блока <code>open another screen</code> из Built-in → Control. Укажите существующий экран в присоединённом блоке выбора имени экрана. Регистр и написание должны совпадать с Designer.</p>
 <p>Пример для кнопки каталога на <code>Screen1</code>:</p>
-<pre><code class="language-text">when ButtonRoutes.Click do
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">when ButtonRoutes.Click do
     open another screen screenName RoutesScreen
-</code></pre>
+</code></pre></div>
 <p>Это схема соединения блоков, а не текст программы для вставки. В Blocks выберите компонент <code>ButtonRoutes</code>, перетащите его событие <code>Click</code>, вложите в область <code>do</code> блок <code>open another screen</code>, а в его вход <code>screenName</code> присоедините блок имени экрана и выберите <code>RoutesScreen</code>.</p>
 <p>Кнопка возврата закрывает дополнительный экран блоком <code>close screen</code>:</p>
-<pre><code class="language-text">when ButtonBookingBack.Click do
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">when ButtonBookingBack.Click do
     close screen
-</code></pre>
+</code></pre></div>
 <p>Найдите <code>ButtonBookingBack</code> на <code>BookingScreen</code>, добавьте событие <code>Click</code> и вложите <code>close screen</code> из Control. Приложение вернётся на экран, из которого открывалась форма. Если форма открыта из каталога, возврат ведёт в каталог; если с главного экрана — на главный.</p>
 <p>Не открывайте заново <code>Screen1</code> для возврата и не закрывайте сам <code>Screen1</code>. Дополнительный экран закрывается, а предыдущий остаётся доступен. Такая схема не накапливает новые экземпляры экранов при повторных переходах.</p>
 <h3 id="переходы-в-варианте-01">Переходы в варианте 01</h3>
