@@ -1774,7 +1774,7 @@
     "topics/physics-9-3h/006/speed-of-uniformly-accelerated-motion-and-velocity-graph.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "4ee32165783ffd7834f57c99a0d88361f33f88a327ecdbb99ffc3d0a37245d58",
+  "source_digest": "d8fb65c1afa8fe6e425ca73f45a0a9bfb84b7317b96c8f3803d8284e77a9628f",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1883,8 +1883,8 @@
     "spo/017-flexbox-and-mobile-viewport.html": "abbb703d6543213af5ce6c8a3f6b3c55c64da7237beafa13db38cd9cad8d8e54",
     "spo/018-responsive-layout-and-browser-testing.html": "52c5bc217d37b1e90cc36ec626b33483efc947b07cf8e155912f19e6c43b53ff",
     "spo/019-javascript-values-and-input.html": "dd33de0e4ce9c9e9a792fb31487ec7395f9394b3e45697939134731f3b0953e6",
-    "spo/020-conditions-and-functions.html": "842b8ac576c079dd795eac82a6ca49a3f328cfe17404c73e5aeb7cd3048aa829",
-    "spo/021-arrays-loops-and-objects.html": "efb07cdad3564b24d5011690b7028f3ee54c7f390ee537ef8b1b310c5c8c249e",
+    "spo/020-conditions-and-functions.html": "e78b16a6b58193d18cb3555ef060e7465b06c1ea66cd70f0f9aafab0c6a95a47",
+    "spo/021-arrays-loops-and-objects.html": "0b56be2311740c7e802aace401d838f3cbca57dc28bae5e06ae07c644040ce56",
     "spo/assets/003-00-blocks-screenshot.jpg": "574a062ab7e8ccf9fe731c5ec545ac4bf6c88cd8a02551d752be2597b264e1bf",
     "spo/assets/003-00-button-properties-screenshot.jpg": "6d15427fc17d8f758bc6add4f5320d0050e9204ce096a12e27a96a4f702ddcb2",
     "spo/assets/003-00-connect-usb-screenshot.jpg": "c8f30aa965893f3c8442b0589a66bf0e29738ff93109b0bdcad33fbadc88fafa",
@@ -2427,15 +2427,15 @@
     "spo/assets/019-38.html": "58a30f014de93bacf6869eee5d2023456c1dc26ca33c13ca42b9868af69d879a",
     "spo/assets/019-39.html": "b0b8be7a1b992339f498a2b1e2ed2dc67b16f3b8137ba76420d1fd63d6ab907f",
     "spo/assets/020-00-calculation-flow.svg": "6327df4a8d381282ce6efa2f2669765bd273d83ca4a929b9294c8ace16805008",
-    "spo/assets/020-00-input-checks.svg": "8930ccf7379ab25d305729f5738743d7b598fb5dc021b5591d135163b2b5f981",
-    "spo/assets/020-00-result-checks.svg": "914b86d1eebe43c3ffe0ae8fdfb4804edab9bd33142cafc2d706462466c899c0",
+    "spo/assets/020-00-input-checks.svg": "d5c2e88852d2d9695f1a8603cb1585a5996b3c4f7e130a83c2391011a3681ae9",
+    "spo/assets/020-00-result-checks.svg": "deb37f2c9da65d4c00ab3bf5227ee54bf3f2945615bddf8053a26976f3b831f9",
     "spo/assets/020-00.html": "ef76fb855ec0d5a8046ada7896f780e9a07097bc6e0b7aedc8a56ff35e696dc3",
     "spo/assets/021-00-catalog-data.svg": "d621f9e192a4fa41c25769de933610264a68403b09c24cdf83df008dcb46678b",
-    "spo/assets/021-00-catalog-loop.svg": "01dc0438aa289c9a60345b3ab53b65aeaa9aaa6718064239f98ff36be7aa98cd",
-    "spo/assets/021-00-catalog-result.svg": "e19f5e1963866bac13faff397d3a0996f093530b133ebce21b9178df893fc27a",
+    "spo/assets/021-00-catalog-loop.svg": "0b0cf71c699a4d6a73fd3fa3f821d41f00eb0f7af379a52c1b89690c807d2bc7",
+    "spo/assets/021-00-catalog-result.svg": "8ec36675d5f2950284a42c70257bfb128f8e27bb4d9efe5310405141b7f10655",
     "spo/assets/021-00.html": "ba22a038d598c552d9d0dae8f6565759d041d15629e3cf4036e47e173b0049b1",
     "spo/index.html": "5869631c28327a47bf2e9341a508224509a6d592250926b8c9d0a4e37ccee81a",
-    "sw.js": "6e3a903cecbfef5dae1e37fa4f844f00f34540159824f1b53803767c7a6fe793",
+    "sw.js": "79a43b4d5e7c6e95582f3d7516602604702e29bd47c54d64b642eb4a319ff237",
     "topics/index.html": "c61fec56b95e0de2e5443e514d2314ac8cb039a2328a862263fbb3f242b3304c",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "de07e3590fbed98780d6b6e6894a0695319260f4e511016c1a633bb19e5517b6",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "a298a4059ce08d36232b21324e57f694e752db7b275480effd855cc708b57131",
@@ -2509,5 +2509,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "aeabc7a7eb7a0dcdf8d5abe2ade9ae2fa1acc0da253ccebbd3fc8835bfc3e392",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "57878678e494250847ebc85bb632ba654fc366e0049d92e48cad4b65046d8cad"
   },
-  "manifest_digest": "1f55169dfb27a85600688bc873101356f9947f0ef5dd1b393696ddab3afd4a97"
+  "manifest_digest": "5b6864f319f2aa6bcce4fb5fb3a57e058ad8d20520181166956c4896de44a358"
 }

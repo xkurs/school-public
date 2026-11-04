@@ -7,28 +7,28 @@
   <text x="410" y="43" class="h">Цикл: все карточки, расчёт — по совпадению</text>
   <rect x="210" y="70" width="400" height="60" rx="30" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="2"/><text x="410" y="109">Начало обхода</text>
   <path d="M410 130V160" class="a"/>
-  <rect x="160" y="160" width="500" height="65" class="p"/><text x="410" y="201">счётчик найденных ← 0</text>
+  <rect x="160" y="160" width="500" height="65" class="p"/><text x="410" y="201">foundCount ← 0</text>
   <path d="M410 225V255" class="a"/>
-  <path d="M180 255H662L640 325H158Z" class="io"/><text x="410" y="284" class="s">Вывести «Записей:»</text><text x="410" y="311" class="s">и число карточек каталога</text>
+  <path d="M180 255H662L640 325H158Z" class="io"/><text x="410" y="284" class="s">Вывести «Записей:»</text><text x="410" y="311" class="s">и catalog.length</text>
   <path d="M410 325V375" class="a"/>
   <path d="M410 375 630 455 410 535 190 455Z" class="d"/><text x="410" y="448">Есть следующая</text><text x="410" y="478">карточка?</text>
   <path d="M410 535V580" class="a"/><text x="442" y="562" class="label">да</text>
   <path d="M630 455H730V1280" class="a"/><text x="675" y="443" class="label">нет</text>
-  <rect x="160" y="580" width="500" height="80" class="p"/><text x="410" y="612">текущая карточка ←</text><text x="410" y="641">следующий объект каталога</text>
+  <rect x="160" y="580" width="500" height="80" class="p"/><text x="410" y="612">item ←</text><text x="410" y="641">следующий объект catalog</text>
   <path d="M410 660V690" class="a"/>
-  <path d="M180 690H662L640 785H158Z" class="io"/><text x="410" y="721">Вывести номер и название,</text><text x="410" y="750">характеристику и описание</text><text x="410" y="775" class="s">текущей карточки</text>
+  <path d="M180 690H662L640 785H158Z" class="io"/><text x="410" y="721">Вывести item.position, item.name,</text><text x="410" y="750">item.specs, item.description</text><text x="410" y="775" class="s">текущей карточки</text>
   <path d="M410 785V815" class="a"/>
-  <path d="M410 815 650 895 410 975 170 895Z" class="d"/><text x="410" y="886" class="s">Название текущей карточки</text><text x="410" y="916" class="s">равно выбранному названию?</text>
+  <path d="M410 815 650 895 410 975 170 895Z" class="d"/><text x="410" y="886" class="s">item.name</text><text x="410" y="916" class="s">равно selectedName?</text>
   <path d="M410 975V1015" class="a"/><text x="444" y="1003" class="label">да</text>
   <path d="M170 895H90V355H410" class="a"/><text x="129" y="882" class="label">нет</text>
-  <rect x="160" y="1015" width="500" height="70" class="p"/><text x="410" y="1043">счётчик найденных ←</text><text x="410" y="1073">счётчик найденных + 1</text>
+  <rect x="160" y="1015" width="500" height="70" class="p"/><text x="410" y="1043">foundCount ←</text><text x="410" y="1073">foundCount + 1</text>
   <path d="M410 1085V1110" class="a"/>
-  <path d="M180 1110H662L640 1165H158Z" class="io"/><text x="410" y="1144" class="s">Вывести «Выбрано для расчёта:» и название</text>
+  <path d="M180 1110H662L640 1165H158Z" class="io"/><text x="410" y="1144" class="s">Вывести «Выбрано для расчёта:» и item.name</text>
   <path d="M410 1165V1190" class="a"/>
   <rect x="160" y="1190" width="500" height="100" class="p"/><path d="M174 1190V1290M646 1190V1290" stroke="#93c5fd" stroke-width="2"/>
-  <text x="410" y="1219">сообщение ← функция пары 20</text><text x="410" y="1248" class="s">(текст количества, значение на единицу,</text><text x="410" y="1276" class="s">общая добавка)</text>
+  <text x="410" y="1219">message ← getResult</text><text x="410" y="1248" class="s">(quantityText, unitValue,</text><text x="410" y="1276" class="s">extraValue)</text>
   <path d="M410 1290V1320" class="a"/>
-  <path d="M180 1320H662L640 1390H158Z" class="io"/><text x="410" y="1348" class="s">Вывести сообщение и единицу расчёта</text><text x="410" y="1377" class="s">(при ошибке — причина без итога)</text>
+  <path d="M180 1320H662L640 1390H158Z" class="io"/><text x="410" y="1348" class="s">Вывести message и единицу расчёта</text><text x="410" y="1377" class="s">(при ошибке — причина без итога)</text>
   <path d="M169 1355H45V355H408" class="a"/>
   <rect x="674" y="810" width="44" height="240" rx="8" fill="#f8fafc"/><text transform="translate(704 930) rotate(-90)" class="s">после всех карточек</text>
   <rect x="680" y="1280" width="100" height="60" rx="30" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="2"/><text x="730" y="1318" class="s">Итоги</text>

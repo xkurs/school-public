@@ -7,14 +7,14 @@
   <text x="380" y="43" class="h">Итоги — только после всех карточек</text>
   <rect x="145" y="70" width="470" height="60" rx="30" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="2"/><text x="380" y="109">Обход завершён</text>
   <path d="M380 130V160" class="a"/>
-  <path d="M170 160H612L590 240H148Z" class="io"/><text x="380" y="192">Вывести «Найдено записей:»</text><text x="380" y="223">и счётчик найденных</text>
+  <path d="M170 160H612L590 240H148Z" class="io"/><text x="380" y="192">Вывести «Найдено записей:»</text><text x="380" y="223">и foundCount</text>
   <path d="M380 240V275" class="a"/>
-  <path d="M380 275 600 345 380 415 160 345Z" class="d"/><text x="380" y="340">счётчик найденных</text><text x="380" y="369">равен 0?</text>
+  <path d="M380 275 600 345 380 415 160 345Z" class="d"/><text x="380" y="340">foundCount</text><text x="380" y="369">равен 0?</text>
   <path d="M380 415V455" class="a"/><text x="412" y="443" class="label">да</text>
   <path d="M600 345H680V565H380" class="a"/><text x="643" y="334" class="label">нет</text>
-  <path d="M170 455H612L590 535H148Z" class="io"/><text x="380" y="487">Вывести «Запись не найдена:»</text><text x="380" y="517">и выбранное название</text>
+  <path d="M170 455H612L590 535H148Z" class="io"/><text x="380" y="487">Вывести «Запись не найдена:»</text><text x="380" y="517">и selectedName</text>
   <path d="M380 535V595" class="a"/>
-  <path d="M380 595 600 665 380 735 160 665Z" class="d"/><text x="380" y="660">счётчик найденных</text><text x="380" y="689">больше 1?</text>
+  <path d="M380 595 600 665 380 735 160 665Z" class="d"/><text x="380" y="660">foundCount</text><text x="380" y="689">больше 1?</text>
   <path d="M380 735V775" class="a"/><text x="412" y="763" class="label">да</text>
   <path d="M600 665H680V875H555" class="a"/><text x="643" y="653" class="label">нет</text>
   <path d="M170 775H612L590 835H148Z" class="io"/><text x="380" y="800" class="s">Вывести «Проверьте повторяющиеся</text><text x="380" y="826" class="s">названия»</text>
