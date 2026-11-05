@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Переменный ток. Действующие значения и мощность — shkolar.site</title>
+  <link rel="icon" href="../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script defer src="../../assets/quotes.js"></script>
+  <script defer src="../../assets/offline.js"></script>
+  
+  <script src="../../assets/math.js"></script>
+<script defer src="../../assets/mathjax/es5/tex-svg.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../index.html">Календарь</a></li><li><a href="../index.html">Школа</a></li><li><a href="index.html">Физика 11</a></li><li aria-current="page">Переменный ток. Действующие значения и мощность</li></ol></nav><h1 id="переменный-ток-действующие-значения-и-мощность">Переменный ток. Действующие значения и мощность</h1>
+<p>В колебательном контуре ток может периодически менять направление. Но свободные колебания в реальном контуре затухают: энергия расходуется, в частности, на нагрев проводников. Чтобы поддерживать электрические колебания, источник должен восполнять потери энергии. В цепи с переменным напряжением возникают вынужденные электрические колебания.</p>
+<p>При изучении такой цепи нужно различать значение тока в данный момент, его наибольшее значение и величину, характеризующую тепловое действие за длительное время.</p>
+<h2 id="что-называют-переменным-током">Что называют переменным током</h2>
+<p><strong>Переменный электрический ток</strong> — ток, сила и направление которого меняются со временем. В этой теме рассматривается периодический ток, у которого изменения повторяются через одинаковые промежутки времени.</p>
+<p>Для описания выберем в проводнике условное положительное направление. Если <span class="arithmatex">\(i&gt;0\)</span>, ток направлен по нему, если <span class="arithmatex">\(i&lt;0\)</span> — против него. Отрицательное значение не означает отсутствие тока: оно показывает его направление.</p>
+<p><strong>Период <span class="arithmatex">\(T\)</span></strong> — наименьший положительный промежуток времени, через который повторяется зависимость тока от времени. <strong>Частота <span class="arithmatex">\(f\)</span></strong> — число полных колебаний за единицу времени:</p>
+<div class="arithmatex">\[
+f=\frac{1}{T},
+\qquad T=\frac{1}{f}.
+\]</div>
+<p>Период измеряется в секундах, частота — в герцах: <span class="arithmatex">\(1\ \text{Гц}=1\ \text{с}^{-1}\)</span>.</p>
+<p>Не всякая меняющаяся сила тока означает переменный ток в принятом здесь смысле. Если ток то увеличивается, то уменьшается, но остаётся направленным в одну сторону, это пульсирующий однонаправленный ток.</p>
+<h2 id="синусоидальные-ток-и-напряжение">Синусоидальные ток и напряжение</h2>
+<p>При гармонических электрических колебаниях мгновенная сила тока меняется по закону:</p>
+<div class="arithmatex">\[
+i(t)=I_m\sin(\omega t+\varphi_i).
+\]</div>
+<p>Аналогично для напряжения:</p>
+<div class="arithmatex">\[
+u(t)=U_m\sin(\omega t+\varphi_u).
+\]</div>
+<p>Здесь <span class="arithmatex">\(i\)</span> и <span class="arithmatex">\(u\)</span> — <strong>мгновенные значения</strong>, <span class="arithmatex">\(I_m\)</span> и <span class="arithmatex">\(U_m\)</span> — <strong>амплитуды</strong>, то есть наибольшие значения модулей тока и напряжения. Величины <span class="arithmatex">\(\varphi_i\)</span> и <span class="arithmatex">\(\varphi_u\)</span> — начальные фазы: они определяют состояние колебания при выбранном начале отсчёта времени.</p>
+<p><strong>Циклическая частота</strong> связана с обычной частотой:</p>
+<div class="arithmatex">\[
+\omega=2\pi f=\frac{2\pi}{T}.
+\]</div>
+<p>Её единица — радиан в секунду. Аргумент синуса записывается в радианах. Частота <span class="arithmatex">\(f\)</span> и циклическая частота <span class="arithmatex">\(\omega\)</span> — разные величины: при <span class="arithmatex">\(f=50\ \text{Гц}\)</span> циклическая частота равна <span class="arithmatex">\(100\pi\ \text{рад/с}\)</span>.</p>
+<p>Синус и косинус описывают одну и ту же форму колебаний при разном выборе начальной фазы. Важно последовательно использовать выбранное начало отсчёта времени.</p>
+<h3 id="как-читать-график-тока">Как читать график тока</h3>
+<p>Пусть <span class="arithmatex">\(i=I_m\sin\omega t\)</span>, начальная фаза равна нулю. За один период получаем:</p>
+<table>
+<thead>
+<tr>
+<th>Момент</th>
+<th>Сила тока</th>
+<th>Что происходит</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td>Ток начинает возрастать в положительном направлении</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(T/4\)</span></td>
+<td><span class="arithmatex">\(I_m\)</span></td>
+<td>Положительный максимум</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(T/2\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td>Ток меняет направление</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(3T/4\)</span></td>
+<td><span class="arithmatex">\(-I_m\)</span></td>
+<td>Максимум модуля в отрицательном направлении</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(T\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td>Состояние повторяется</td>
+</tr>
+</tbody>
+</table>
+<p>Промежуток между соседними нулями равен <span class="arithmatex">\(T/2\)</span>, а между соседними положительными максимумами — <span class="arithmatex">\(T\)</span>. За один полный период направление тока меняется два раза. Нельзя путать число смен направления с числом полных колебаний.</p>
+<h3 id="пример-параметры-по-уравнению">Пример: параметры по уравнению</h3>
+<p>Ток задан уравнением:</p>
+<div class="arithmatex">\[
+i(t)=4\sin(100\pi t)\ \text{А},
+\]</div>
+<p>где время <span class="arithmatex">\(t\)</span> выражено в секундах. Амплитуда <span class="arithmatex">\(I_m=4\ \text{А}\)</span>, циклическая частота <span class="arithmatex">\(\omega=100\pi\ \text{рад/с}\)</span>. Следовательно:</p>
+<div class="arithmatex">\[
+f=\frac{100\pi}{2\pi}=50\ \text{Гц},
+\qquad T=\frac{1}{50}=0{,}02\ \text{с}.
+\]</div>
+<p>Через четверть периода, при <span class="arithmatex">\(t=0{,}005\ \text{с}\)</span>:</p>
+<div class="arithmatex">\[
+i=4\sin\frac{\pi}{2}=4\ \text{А}.
+\]</div>
+<p>Через три четверти периода ток равен <span class="arithmatex">\(-4\ \text{А}\)</span>. Его модуль тот же, но направление противоположное.</p>
+<h2 id="цепь-с-активным-сопротивлением">Цепь с активным сопротивлением</h2>
+<p>Сначала рассмотрим простую модель: идеальный резистор постоянного сопротивления <span class="arithmatex">\(R\)</span>. Влиянием индуктивности и ёмкости пренебрегаем. В резисторе электрическая энергия необратимо переходит во внутреннюю энергию. Такое сопротивление называют <strong>активным</strong>.</p>
+<p>Для резистора закон Ома выполняется в каждый момент:</p>
+<div class="arithmatex">\[
+i(t)=\frac{u(t)}{R}.
+\]</div>
+<p>Если <span class="arithmatex">\(u=U_m\sin\omega t\)</span>, то:</p>
+<div class="arithmatex">\[
+i=\frac{U_m}{R}\sin\omega t
+=I_m\sin\omega t,
+\qquad I_m=\frac{U_m}{R}.
+\]</div>
+<p>Ток и напряжение <strong>совпадают по фазе</strong>: одновременно проходят через ноль и достигают максимумов соответствующего знака. Это свойство именно идеального активного сопротивления; переносить его на любую цепь нельзя.</p>
+<h2 id="почему-средний-ток-равен-нулю-а-нагрев-есть">Почему средний ток равен нулю, а нагрев есть</h2>
+<p>За полный период среднее значение синусоидальной силы тока равно нулю: положительная и отрицательная части графика компенсируются. Но это не означает отсутствия теплового действия.</p>
+<p>Для резистора количество теплоты за малый промежуток времени определяется законом Джоуля — Ленца:</p>
+<div class="arithmatex">\[
+\Delta Q\approx i^2R\Delta t.
+\]</div>
+<p>Квадрат силы тока неотрицателен. При смене направления тока нагрев продолжается.</p>
+<p>Поэтому тепловое действие характеризуют через <strong>среднее значение квадрата тока</strong>, а не через квадрат среднего тока. Эти величины различаются: средний ток может быть нулевым при ненулевом среднем квадрате.</p>
+<h2 id="действующие-значения">Действующие значения</h2>
+<p><strong>Действующее значение силы переменного тока</strong> равно силе такого постоянного тока, который за то же время выделяет в том же резисторе такое же количество теплоты. Для периодического тока сравнение проводят за целое число периодов.</p>
+<p>Обозначим усреднение за период угловыми скобками. Тогда:</p>
+<div class="arithmatex">\[
+I=\sqrt{\langle i^2\rangle}.
+\]</div>
+<p>Такую величину также называют среднеквадратичным значением, или RMS. Для синусоиды среднее значение <span class="arithmatex">\(\sin^2\)</span> за период равно <span class="arithmatex">\(1/2\)</span>. Это следует из равенства <span class="arithmatex">\(\sin^2 x=(1-\cos2x)/2\)</span>: среднее значение косинуса за полный период равно нулю. Поэтому:</p>
+<div class="arithmatex">\[
+\langle i^2\rangle=\frac{I_m^2}{2},
+\qquad \boxed{I=\frac{I_m}{\sqrt2}}.
+\]</div>
+<p>Аналогично определяется действующее напряжение:</p>
+<div class="arithmatex">\[
+\boxed{U=\frac{U_m}{\sqrt2}}.
+\]</div>
+<p>Обратные соотношения:</p>
+<div class="arithmatex">\[
+I_m=\sqrt2\,I,
+\qquad U_m=\sqrt2\,U.
+\]</div>
+<p><strong>Действующее значение не является мгновенным и не равно амплитуде.</strong> Оно характеризует колебание за период. Формулы с делением на <span class="arithmatex">\(\sqrt2\)</span> справедливы для синусоидальной формы; для другой формы сигнала нужно снова находить средний квадрат.</p>
+<p>Для идеального резистора закон Ома связывает и действующие значения:</p>
+<div class="arithmatex">\[
+I=\frac{U}{R}.
+\]</div>
+<h3 id="пример-амплитуда-напряжения">Пример: амплитуда напряжения</h3>
+<p>Если действующее значение синусоидального напряжения равно <span class="arithmatex">\(220\ \text{В}\)</span>, то:</p>
+<div class="arithmatex">\[
+U_m=220\sqrt2\approx311\ \text{В}.
+\]</div>
+<p>Мгновенное напряжение меняется от примерно <span class="arithmatex">\(-311\)</span> до <span class="arithmatex">\(+311\ \text{В}\)</span>. Число <span class="arithmatex">\(220\ \text{В}\)</span> характеризует действующее значение, а не верхнюю границу колебаний. Разность между максимальным и минимальным напряжениями равна <span class="arithmatex">\(2U_m\)</span>; её не следует называть амплитудой.</p>
+<h2 id="мгновенная-и-средняя-мощность">Мгновенная и средняя мощность</h2>
+<p>Мгновенная электрическая мощность, поступающая в рассматриваемый участок цепи, при согласованном выборе направлений тока и напряжения:</p>
+<div class="arithmatex">\[
+p(t)=u(t)i(t).
+\]</div>
+<p>Для идеального резистора ток и напряжение совпадают по фазе. Тогда:</p>
+<div class="arithmatex">\[
+p(t)=U_mI_m\sin^2\omega t
+=I_m^2R\sin^2\omega t.
+\]</div>
+<p>Мгновенная мощность неотрицательна. В первом полупериоде положительны и ток, и напряжение, во втором — оба отрицательны, но произведение снова положительно.</p>
+<p>Мощность обращается в ноль при нулевом токе и достигает максимума при максимальном модуле тока. Она пульсирует с <strong>удвоенной частотой</strong>: за период тока происходят два максимума мощности.</p>
+<p>Средняя за период мощность:</p>
+<div class="arithmatex">\[
+P=\langle p\rangle=\frac{U_mI_m}{2}.
+\]</div>
+<p>После перехода к действующим значениям получаем:</p>
+<div class="arithmatex">\[
+\boxed{P=UI=I^2R=\frac{U^2}{R}}.
+\]</div>
+<p>Эти три равенства относятся к цепи с <strong>идеальным активным сопротивлением</strong>. Максимальная мгновенная мощность в ней:</p>
+<div class="arithmatex">\[
+p_{\max}=U_mI_m=2P.
+\]</div>
+<p>Если ток установился, параметры постоянны, а время <span class="arithmatex">\(t\)</span> содержит целое число периодов, электрическая энергия, превращённая в теплоту, равна:</p>
+<div class="arithmatex">\[
+W=Q=Pt.
+\]</div>
+<p>При времени, намного большем периода, эту формулу обычно используют и без проверки целого числа периодов: вклад неполного периода мал. Для произвольного короткого интервала нужно учитывать изменение мгновенной мощности.</p>
+<h3 id="пример-резистор-в-цепи-переменного-тока">Пример: резистор в цепи переменного тока</h3>
+<p>Резистор сопротивлением <span class="arithmatex">\(100\ \text{Ом}\)</span> подключён к синусоидальному напряжению с действующим значением <span class="arithmatex">\(100\ \text{В}\)</span> и частотой <span class="arithmatex">\(50\ \text{Гц}\)</span>. Сопротивление считаем постоянным.</p>
+<p>Действующая сила тока:</p>
+<div class="arithmatex">\[
+I=\frac{100}{100}=1\ \text{А}.
+\]</div>
+<p>Амплитуды:</p>
+<div class="arithmatex">\[
+I_m=\sqrt2\approx1{,}41\ \text{А},
+\qquad U_m=100\sqrt2\approx141\ \text{В}.
+\]</div>
+<p>Средняя мощность и её максимальное мгновенное значение:</p>
+<div class="arithmatex">\[
+P=UI=100\cdot1=100\ \text{Вт},
+\qquad p_{\max}=2P=200\ \text{Вт}.
+\]</div>
+<p>За <span class="arithmatex">\(60\ \text{с}\)</span> выделится:</p>
+<div class="arithmatex">\[
+Q=Pt=100\cdot60=6000\ \text{Дж}.
+\]</div>
+<p>Частота пульсаций мощности равна <span class="arithmatex">\(100\ \text{Гц}\)</span>, а период этих пульсаций — <span class="arithmatex">\(0{,}01\ \text{с}\)</span>. Период тока при этом остаётся <span class="arithmatex">\(0{,}02\ \text{с}\)</span>.</p>
+<h2 id="если-ток-и-напряжение-сдвинуты-по-фазе">Если ток и напряжение сдвинуты по фазе</h2>
+<p>В цепях с заметной индуктивностью или ёмкостью ток и напряжение могут не совпадать по фазе. Часть энергии временно запасается в магнитном или электрическом поле, а затем возвращается источнику.</p>
+<p>Для синусоидальных тока и напряжения одной частоты средняя мощность определяется формулой:</p>
+<div class="arithmatex">\[
+P=UI\cos\varphi,
+\]</div>
+<p>где <span class="arithmatex">\(\varphi\)</span> — разность фаз напряжения и тока, а <span class="arithmatex">\(U\)</span> и <span class="arithmatex">\(I\)</span> — действующие значения. Величину <span class="arithmatex">\(\cos\varphi\)</span> называют коэффициентом мощности. Для идеального резистора <span class="arithmatex">\(\varphi=0\)</span>, поэтому получаем уже знакомое <span class="arithmatex">\(P=UI\)</span>.</p>
+<p>Подробный расчёт цепей с катушками и конденсаторами требует отдельного рассмотрения. Здесь достаточно помнить: произведение действующих напряжения и тока <strong>не всегда</strong> равно средней мощности. Область применимости формулы нужно проверять по модели цепи.</p>
+<h2 id="как-выбирать-формулу">Как выбирать формулу</h2>
+<table>
+<thead>
+<tr>
+<th>Что дано или требуется</th>
+<th>Что использовать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Значение тока в определённый момент</td>
+<td><span class="arithmatex">\(i=I_m\sin(\omega t+\varphi_i)\)</span></td>
+</tr>
+<tr>
+<td>Период и частота</td>
+<td><span class="arithmatex">\(T=1/f\)</span>, <span class="arithmatex">\(\omega=2\pi f\)</span></td>
+</tr>
+<tr>
+<td>Переход между амплитудой и действующим значением синусоиды</td>
+<td><span class="arithmatex">\(I=I_m/\sqrt2\)</span>, <span class="arithmatex">\(U=U_m/\sqrt2\)</span></td>
+</tr>
+<tr>
+<td>Мгновенная мощность</td>
+<td><span class="arithmatex">\(p=ui\)</span></td>
+</tr>
+<tr>
+<td>Средняя мощность идеального резистора</td>
+<td><span class="arithmatex">\(P=UI=I^2R=U^2/R\)</span></td>
+</tr>
+<tr>
+<td>Теплота за целое число периодов при постоянных параметрах</td>
+<td><span class="arithmatex">\(Q=Pt\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Не подставляйте амплитудные значения в <span class="arithmatex">\(P=UI\)</span>: для них у идеального резистора нужно использовать <span class="arithmatex">\(P=U_mI_m/2\)</span>.</p>
+<h2 id="главное">Главное</h2>
+<p>Синусоидальный ток периодически меняет силу и направление. Мгновенные значения описывают состояние в конкретный момент, амплитуды — наибольшие модули, действующие значения — эквивалентное тепловое действие. Для синусоиды <span class="arithmatex">\(I=I_m/\sqrt2\)</span> и <span class="arithmatex">\(U=U_m/\sqrt2\)</span>. В идеальном резисторе средняя мощность <span class="arithmatex">\(P=UI\)</span>, а мгновенная мощность пульсирует с удвоенной частотой и имеет максимум <span class="arithmatex">\(2P\)</span>.</p>
+<h2 id="вопросы-для-самопроверки">Вопросы для самопроверки</h2>
+<ol>
+<li>Чем отличается период тока от промежутка между соседними прохождениями через ноль?</li>
+<li>Что означает отрицательное мгновенное значение силы тока?</li>
+<li>Почему средняя за период сила синусоидального тока равна нулю, но резистор нагревается?</li>
+<li>Какой постоянный ток эквивалентен переменному по тепловому действию?</li>
+<li>Чем отличаются амплитуда, действующее значение и размах напряжения?</li>
+<li>Почему мощность идеального резистора не становится отрицательной при смене направления тока?</li>
+<li>При каком условии средняя мощность равна произведению действующих тока и напряжения?</li>
+<li>Почему формулу <span class="arithmatex">\(I=I_m/\sqrt2\)</span> нельзя применять к сигналу любой формы?</li>
+</ol>
+<h2 id="задачи-для-самостоятельной-работы">Задачи для самостоятельной работы</h2>
+<p>Во всех задачах с резистором считайте его идеальным, сопротивление постоянным. Ток и напряжение синусоидальны, если прямо не указано иное. В уравнениях время выражено в секундах.</p>
+<ol>
+<li>Ток меняется по закону <span class="arithmatex">\(i(t)=6\sin(200\pi t)\ \text{А}\)</span>. Определите амплитуду, частоту, период и действующее значение силы тока.</li>
+<li>Для тока <span class="arithmatex">\(i(t)=2\sin(100\pi t)\ \text{А}\)</span> найдите мгновенные значения при <span class="arithmatex">\(t=0\)</span>, <span class="arithmatex">\(0{,}005\)</span>, <span class="arithmatex">\(0{,}010\)</span> и <span class="arithmatex">\(0{,}015\ \text{с}\)</span>. Укажите направление тока относительно выбранного положительного направления.</li>
+<li>Период тока равен <span class="arithmatex">\(0{,}04\ \text{с}\)</span>. Найдите частоту, циклическую частоту и число полных колебаний за <span class="arithmatex">\(2\ \text{с}\)</span>.</li>
+<li>Амплитуда силы тока равна <span class="arithmatex">\(5\sqrt2\ \text{А}\)</span>. Определите действующее значение. Какой постоянный ток выделяет столько же теплоты в том же резисторе за одинаковое время, содержащее целое число периодов?</li>
+<li>Действующее напряжение равно <span class="arithmatex">\(120\ \text{В}\)</span>. Найдите амплитуду и разность между максимальным и минимальным мгновенными напряжениями.</li>
+<li>Резистор сопротивлением <span class="arithmatex">\(40\ \text{Ом}\)</span> подключён к напряжению с действующим значением <span class="arithmatex">\(80\ \text{В}\)</span>. Найдите действующий ток, его амплитуду и среднюю мощность.</li>
+<li>Через резистор сопротивлением <span class="arithmatex">\(20\ \text{Ом}\)</span> проходит ток с амплитудой <span class="arithmatex">\(3\ \text{А}\)</span>. Найдите среднюю и максимальную мгновенную мощность. Сколько теплоты выделится за <span class="arithmatex">\(10\ \text{с}\)</span> при частоте <span class="arithmatex">\(50\ \text{Гц}\)</span>?</li>
+<li>Действующее напряжение на одном и том же резисторе увеличили вдвое. Как изменились действующий ток и средняя мощность?</li>
+<li>Частота тока в резисторе равна <span class="arithmatex">\(60\ \text{Гц}\)</span>. Найдите период тока, частоту и период пульсаций мгновенной мощности.</li>
+<li>Ученик вычислил среднюю мощность резистора как <span class="arithmatex">\(U_mI_m\)</span>. Объясните ошибку и запишите правильное соотношение. Другой ученик считает мощность нулевой, поскольку средний ток равен нулю. Почему это рассуждение неверно?</li>
+</ol>
+<h2 id="домашнее-задание">Домашнее задание</h2>
+<p>§31–32. Повторите различие мгновенных, амплитудных и действующих значений; подготовьте объяснение теплового действия переменного тока и условий применения формулы <span class="arithmatex">\(P=UI\)</span>.</p></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить</button>
+      <button type="button" id="site-update-reload" hidden>Обновить</button>
+    </footer>
+  </div>
+</body>
+</html>

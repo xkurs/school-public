@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Плотность вещества. Расчёт массы и объёма тела — shkolar.site</title>
+  <link rel="icon" href="../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script defer src="../../assets/quotes.js"></script>
+  <script defer src="../../assets/offline.js"></script>
+  
+  <script src="../../assets/math.js"></script>
+<script defer src="../../assets/mathjax/es5/tex-svg.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../index.html">Календарь</a></li><li><a href="../index.html">Школа</a></li><li><a href="index.html">Физика 7</a></li><li aria-current="page">Плотность вещества. Расчёт массы и объёма тела</li></ol></nav><h1 id="плотность-вещества-расчёт-массы-и-объёма-тела">Плотность вещества. Расчёт массы и объёма тела</h1>
+<p>Два кубика одинакового размера могут иметь разные массы: алюминиевый кубик легче железного. И наоборот, большой кусок пенопласта может оказаться легче маленькой металлической детали. Поэтому по размеру тела нельзя однозначно определить его массу. Нужно знать, из какого вещества оно состоит.</p>
+<p>Сравнивать вещества удобно по массе <strong>одинакового объёма</strong>. Для такого сравнения используют плотность.</p>
+<h2 id="масса-объём-и-плотность">Масса, объём и плотность</h2>
+<p><strong>Масса</strong> обозначается буквой <span class="arithmatex">\(m\)</span> и измеряется в килограммах. Она характеризует инертные свойства тела: при взаимодействии более массивного тела труднее добиться такого же изменения скорости. Массу измеряют с помощью весов.</p>
+<p><strong>Объём</strong> обозначается буквой <span class="arithmatex">\(V\)</span> и показывает, какую часть пространства занимает тело. В СИ объём измеряют в кубических метрах.</p>
+<p><strong>Плотность вещества</strong> — физическая величина, равная отношению массы однородного тела к его объёму:</p>
+<div class="arithmatex">\[
+\boxed{\rho=\frac{m}{V}}.
+\]</div>
+<p>Буква <span class="arithmatex">\(\rho\)</span> читается «ро». Плотность показывает, какая масса приходится на единицу объёма вещества.</p>
+<p>Если плотность вещества равна <span class="arithmatex">\(2700\ \text{кг/м}^3\)</span>, то каждый кубический метр этого вещества имеет массу <span class="arithmatex">\(2700\ \text{кг}\)</span>. Это не означает, что любой предмет из него имеет такую массу: маленький предмет содержит меньший объём вещества.</p>
+<p>Здесь <strong>однородное тело</strong> означает тело, у которого плотность одинакова во всех частях. Для тела из нескольких материалов или тела с полостью отношение полной массы к внешнему объёму даёт <strong>среднюю плотность тела</strong>. Её нельзя автоматически принимать за плотность одного из материалов.</p>
+<h3 id="что-можно-сравнивать-по-плотности">Что можно сравнивать по плотности</h3>
+<ul>
+<li>При одинаковом объёме больше масса у вещества с большей плотностью.</li>
+<li>При одинаковой массе больше объём у вещества с меньшей плотностью.</li>
+<li>Для одного и того же однородного вещества при одинаковых условиях увеличение объёма вдвое означает увеличение массы вдвое. Их отношение, то есть плотность, не меняется.</li>
+</ul>
+<p>Плотность зависит от вещества и условий, в том числе температуры и агрегатного состояния. Поэтому табличные значения относятся к определённым условиям, а в школьных задачах часто используются округлённые значения. Нельзя считать, что плотность любого вещества остаётся неизменной при нагревании или переходе в другое состояние.</p>
+<h2 id="единицы-плотности">Единицы плотности</h2>
+<p>В СИ массу выражают в килограммах, объём — в кубических метрах. Поэтому единица плотности:</p>
+<div class="arithmatex">\[
+[\rho]=\frac{\text{кг}}{\text{м}^3}.
+\]</div>
+<p>Для небольших предметов удобно использовать граммы и кубические сантиметры. Тогда плотность выражают в <span class="arithmatex">\(\text{г/см}^3\)</span>.</p>
+<p>Чтобы переводить единицы, вспомним:</p>
+<div class="arithmatex">\[
+1\ \text{м}=100\ \text{см},
+\qquad 1\ \text{м}^3=100^3\ \text{см}^3
+=1\,000\,000\ \text{см}^3.
+\]</div>
+<p>Следовательно:</p>
+<div class="arithmatex">\[
+1\ \text{см}^3=0{,}000001\ \text{м}^3.
+\]</div>
+<p>Из соотношений <span class="arithmatex">\(1\ \text{г}=0{,}001\ \text{кг}\)</span> и <span class="arithmatex">\(1\ \text{см}^3=0{,}000001\ \text{м}^3\)</span> получаем:</p>
+<div class="arithmatex">\[
+\boxed{1\ \text{г/см}^3=1000\ \text{кг/м}^3}.
+\]</div>
+<p>Например:</p>
+<div class="arithmatex">\[
+2{,}7\ \text{г/см}^3=2700\ \text{кг/м}^3,
+\qquad 800\ \text{кг/м}^3=0{,}8\ \text{г/см}^3.
+\]</div>
+<p>Полезные соотношения для объёма:</p>
+<div class="arithmatex">\[
+1\ \text{л}=1\ \text{дм}^3=0{,}001\ \text{м}^3,
+\qquad 1\ \text{мл}=1\ \text{см}^3.
+\]</div>
+<p>Нельзя переводить кубические сантиметры в кубические метры так же, как сантиметры в метры: коэффициент перевода длины нужно возвести в куб.</p>
+<h2 id="как-найти-плотность">Как найти плотность</h2>
+<p>Нужно измерить массу и объём одного и того же тела, а затем разделить массу на объём.</p>
+<h3 id="пример-плотность-металлического-бруска">Пример: плотность металлического бруска</h3>
+<p>Масса однородного бруска <span class="arithmatex">\(156\ \text{г}\)</span>, объём <span class="arithmatex">\(20\ \text{см}^3\)</span>. Найдём плотность:</p>
+<div class="arithmatex">\[
+\rho=\frac{156}{20}=7{,}8\ \text{г/см}^3.
+\]</div>
+<p>В единицах СИ:</p>
+<div class="arithmatex">\[
+\rho=7800\ \text{кг/м}^3.
+\]</div>
+<p>Проверка смысла: в каждом кубическом сантиметре вещества содержится <span class="arithmatex">\(7{,}8\ \text{г}\)</span>, поэтому в двадцати — <span class="arithmatex">\(7{,}8\cdot20=156\ \text{г}\)</span>.</p>
+<p>По найденной плотности можно сравнить вещество с таблицей. Но совпадение одного значения само по себе не всегда позволяет точно определить материал: у разных материалов плотности могут быть близкими, а измерения имеют погрешность.</p>
+<h2 id="как-найти-массу-по-плотности-и-объёму">Как найти массу по плотности и объёму</h2>
+<p>Из равенства <span class="arithmatex">\(\rho=m/V\)</span> следует:</p>
+<div class="arithmatex">\[
+\boxed{m=\rho V}.
+\]</div>
+<p>Если плотность дана в <span class="arithmatex">\(\text{кг/м}^3\)</span>, а объём в <span class="arithmatex">\(\text{м}^3\)</span>, масса получится в килограммах. Если плотность дана в <span class="arithmatex">\(\text{г/см}^3\)</span>, а объём в <span class="arithmatex">\(\text{см}^3\)</span>, масса получится в граммах. Оба способа допустимы; важно согласовать единицы.</p>
+<h3 id="пример-масса-алюминиевой-детали">Пример: масса алюминиевой детали</h3>
+<p>Сплошная алюминиевая деталь имеет объём <span class="arithmatex">\(200\ \text{см}^3\)</span>. Для задачи примем плотность алюминия <span class="arithmatex">\(2{,}7\ \text{г/см}^3\)</span>.</p>
+<div class="arithmatex">\[
+m=\rho V=2{,}7\cdot200=540\ \text{г}.
+\]</div>
+<p>Тот же расчёт в СИ: <span class="arithmatex">\(V=0{,}0002\ \text{м}^3\)</span>, <span class="arithmatex">\(\rho=2700\ \text{кг/м}^3\)</span>:</p>
+<div class="arithmatex">\[
+m=2700\cdot0{,}0002=0{,}54\ \text{кг}.
+\]</div>
+<p>Получены одинаковые результаты: <span class="arithmatex">\(540\ \text{г}=0{,}54\ \text{кг}\)</span>.</p>
+<h2 id="как-найти-объём-по-массе-и-плотности">Как найти объём по массе и плотности</h2>
+<p>Если известны масса и плотность, то:</p>
+<div class="arithmatex">\[
+\boxed{V=\frac{m}{\rho}}.
+\]</div>
+<p>Чем больше плотность при одной и той же массе, тем меньший объём занимает вещество.</p>
+<h3 id="пример-объём-жидкости">Пример: объём жидкости</h3>
+<p>Масса жидкости <span class="arithmatex">\(1{,}6\ \text{кг}\)</span>, её плотность по условию <span class="arithmatex">\(800\ \text{кг/м}^3\)</span>. Найдём объём:</p>
+<div class="arithmatex">\[
+V=\frac{1{,}6}{800}=0{,}002\ \text{м}^3=2\ \text{л}.
+\]</div>
+<p>Проверка: один литр этой жидкости имеет массу <span class="arithmatex">\(0{,}8\ \text{кг}\)</span>, поэтому два литра имеют массу <span class="arithmatex">\(1{,}6\ \text{кг}\)</span>. Масса сосуда в условии не входит в массу жидкости.</p>
+<h2 id="как-измеряют-объём-тела">Как измеряют объём тела</h2>
+<h3 id="тело-правильной-формы">Тело правильной формы</h3>
+<p>Объём прямоугольного бруска можно найти по длине <span class="arithmatex">\(a\)</span>, ширине <span class="arithmatex">\(b\)</span> и высоте <span class="arithmatex">\(c\)</span>:</p>
+<div class="arithmatex">\[
+V=abc.
+\]</div>
+<p>Например, брусок размером <span class="arithmatex">\(2\ \text{см}\times3\ \text{см}\times5\ \text{см}\)</span> имеет объём <span class="arithmatex">\(30\ \text{см}^3\)</span>. Все три размера перед умножением нужно выразить в одной единице длины.</p>
+<h3 id="тело-неправильной-формы">Тело неправильной формы</h3>
+<p>Если тело полностью погружается в воду, не растворяется и не впитывает её, объём можно определить по изменению показаний мензурки:</p>
+<div class="arithmatex">\[
+V_{\text{тела}}=V_2-V_1,
+\]</div>
+<p>где <span class="arithmatex">\(V_1\)</span> — начальный объём воды, а <span class="arithmatex">\(V_2\)</span> — показание после погружения тела. Под водой не должно оставаться прилипших пузырьков воздуха. Мензурку ставят вертикально; показания снимают на уровне глаз по нижнему краю мениска воды.</p>
+<p><strong>Пример.</strong> В мензурке было <span class="arithmatex">\(50\ \text{мл}\)</span> воды. После полного погружения тела показание стало <span class="arithmatex">\(80\ \text{мл}\)</span>. Масса тела <span class="arithmatex">\(81\ \text{г}\)</span>.</p>
+<div class="arithmatex">\[
+V=80-50=30\ \text{мл}=30\ \text{см}^3,
+\]</div>
+<div class="arithmatex">\[
+\rho=\frac{81}{30}=2{,}7\ \text{г/см}^3.
+\]</div>
+<p>Нельзя делить массу на <span class="arithmatex">\(80\ \text{мл}\)</span>: это показание мензурки после погружения, а не объём самого тела. Если тело погружено лишь частично, увеличение показания соответствует только объёму погружённой части.</p>
+<h2 id="плотность-и-строение-вещества">Плотность и строение вещества</h2>
+<p>Вещества состоят из частиц, между которыми есть промежутки. Различие плотностей связано и с массами частиц, и с тем, сколько частиц приходится на данный объём. Поэтому объяснение «вещество плотнее только потому, что его частицы тяжелее» неполно.</p>
+<p>Если разрезать однородный брусок пополам, масса каждой половины уменьшится вдвое, как и её объём. Плотность вещества останется прежней. Плотность характеризует вещество при данных условиях, а масса и объём — конкретный образец.</p>
+<p>Отдельно нужно учитывать пустоты. У пустотелой металлической детали внешние размеры включают полость. Для расчёта массы металла в формуле <span class="arithmatex">\(m=\rho V\)</span> нужен именно <strong>объём металла</strong>, без полости. Для пористых и составных тел средняя плотность зависит от того, какой объём выбран для расчёта.</p>
+<h2 id="порядок-решения-задач">Порядок решения задач</h2>
+<ol>
+<li>Запишите, что известно: массу, объём или плотность, вместе с единицами.</li>
+<li>Уточните, к какому телу или веществу относятся данные. Если взвешивали сосуд с жидкостью, для массы жидкости вычтите массу пустого сосуда.</li>
+<li>Выберите формулу: <span class="arithmatex">\(\rho=m/V\)</span>, <span class="arithmatex">\(m=\rho V\)</span> или <span class="arithmatex">\(V=m/\rho\)</span>.</li>
+<li>Согласуйте единицы: килограммы и кубические метры либо граммы и кубические сантиметры.</li>
+<li>Подставьте числа и запишите результат с единицей.</li>
+<li>Проверьте смысл результата: при том же веществе большему объёму должна соответствовать большая масса.</li>
+</ol>
+<p>Не сравнивайте плотности только по числам: <span class="arithmatex">\(2{,}7\ \text{г/см}^3\)</span> больше, чем <span class="arithmatex">\(1000\ \text{кг/м}^3\)</span>, поскольку первое значение равно <span class="arithmatex">\(2700\ \text{кг/м}^3\)</span>.</p>
+<h2 id="главное">Главное</h2>
+<p>Плотность показывает массу единицы объёма вещества: <span class="arithmatex">\(\rho=m/V\)</span>. По плотности и объёму находят массу <span class="arithmatex">\(m=\rho V\)</span>, а по массе и плотности — объём <span class="arithmatex">\(V=m/\rho\)</span>. Уменьшение размера однородного образца само по себе не меняет плотность его вещества. Во всех расчётах нужно согласовать единицы и отличать объём вещества от объёма вместе с пустотами.</p>
+<h2 id="вопросы-для-самопроверки">Вопросы для самопроверки</h2>
+<ol>
+<li>Почему два тела одинакового объёма могут иметь разные массы?</li>
+<li>Что означает запись «плотность вещества равна <span class="arithmatex">\(900\ \text{кг/м}^3\)</span>»?</li>
+<li>Изменится ли плотность однородного бруска, если от него отрезать треть? Какие величины изменятся?</li>
+<li>Почему формула <span class="arithmatex">\(m=\rho V\)</span> требует согласования единиц?</li>
+<li>Как определить объём твёрдого тела неправильной формы с помощью мензурки? При каких условиях подходит этот способ?</li>
+<li>Почему массу жидкости нельзя всегда считать равной показанию весов с заполненным сосудом?</li>
+<li>Чем средняя плотность пустотелого предмета отличается от плотности материала его стенок?</li>
+</ol>
+<h2 id="задачи-для-самостоятельной-работы">Задачи для самостоятельной работы</h2>
+<ol>
+<li>Переведите в <span class="arithmatex">\(\text{кг/м}^3\)</span>: <span class="arithmatex">\(0{,}8\ \text{г/см}^3\)</span> и <span class="arithmatex">\(7{,}8\ \text{г/см}^3\)</span>. Переведите в <span class="arithmatex">\(\text{г/см}^3\)</span>: <span class="arithmatex">\(2700\ \text{кг/м}^3\)</span> и <span class="arithmatex">\(1200\ \text{кг/м}^3\)</span>.</li>
+<li>Масса однородного тела <span class="arithmatex">\(180\ \text{г}\)</span>, объём <span class="arithmatex">\(60\ \text{см}^3\)</span>. Найдите плотность в <span class="arithmatex">\(\text{г/см}^3\)</span> и <span class="arithmatex">\(\text{кг/м}^3\)</span>.</li>
+<li>Сплошная деталь имеет объём <span class="arithmatex">\(50\ \text{см}^3\)</span>. Плотность её вещества <span class="arithmatex">\(2{,}7\ \text{г/см}^3\)</span>. Определите массу детали.</li>
+<li>Масса жидкости <span class="arithmatex">\(2{,}4\ \text{кг}\)</span>, плотность <span class="arithmatex">\(800\ \text{кг/м}^3\)</span>. Определите объём в кубических метрах и литрах.</li>
+<li>Однородный брусок имеет размеры <span class="arithmatex">\(2\ \text{см}\times4\ \text{см}\times5\ \text{см}\)</span> и массу <span class="arithmatex">\(320\ \text{г}\)</span>. Найдите его объём и плотность.</li>
+<li>В мензурке было <span class="arithmatex">\(40\ \text{мл}\)</span> воды. После полного погружения нерастворимого тела показание стало <span class="arithmatex">\(65\ \text{мл}\)</span>. Масса тела <span class="arithmatex">\(200\ \text{г}\)</span>. Определите плотность.</li>
+<li>Масса пустого сосуда <span class="arithmatex">\(120\ \text{г}\)</span>, а сосуда с жидкостью — <span class="arithmatex">\(360\ \text{г}\)</span>. Объём жидкости <span class="arithmatex">\(300\ \text{см}^3\)</span>. Найдите её плотность.</li>
+<li>Два сплошных кубика имеют одинаковый объём. Плотность вещества первого <span class="arithmatex">\(2700\ \text{кг/м}^3\)</span>, второго — <span class="arithmatex">\(7800\ \text{кг/м}^3\)</span>. У какого кубика масса больше и во сколько раз? Ответ округлите до десятых.</li>
+<li>У двух однородных тел одинаковая масса. Плотность первого <span class="arithmatex">\(2\ \text{г/см}^3\)</span>, второго — <span class="arithmatex">\(5\ \text{г/см}^3\)</span>. Сравните их объёмы: у какого тела объём больше и во сколько раз?</li>
+<li>У металлической детали внешний объём <span class="arithmatex">\(100\ \text{см}^3\)</span>, объём внутренней полости <span class="arithmatex">\(20\ \text{см}^3\)</span>. Плотность металла <span class="arithmatex">\(7{,}8\ \text{г/см}^3\)</span>. Определите массу детали, массой воздуха в полости пренебрегите.</li>
+</ol>
+<h2 id="домашнее-задание">Домашнее задание</h2>
+<p>§23–24. Повторите смысл плотности и три расчётные формулы. Научитесь согласовывать единицы массы, объёма и плотности и объяснять, почему плотность однородного вещества не зависит от размера образца.</p></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить</button>
+      <button type="button" id="site-update-reload" hidden>Обновить</button>
+    </footer>
+  </div>
+</body>
+</html>
