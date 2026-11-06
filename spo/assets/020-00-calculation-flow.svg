@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="1120" viewBox="0 0 680 1120" role="img" aria-labelledby="title desc">
   <title id="title">От данных приложения к сообщению о результате</title>
-  <desc id="desc">Пример маршрута «Лесная тропа». В файле заданы строка количества 2, цена участия 450 и общий сбор 100. Функция проверяет количество. При ошибке возвращает причину без расчёта; при правильном вводе вычисляет 450 на 2 плюс 100 и возвращает «Итого: 1000». Сегодня сообщение выводится в консоль, позднее — рядом с формой.</desc>
+  <desc id="desc">Постоянный вариант 00 «Учебный набор». В файле заданы строка количества 2, цена одного набора 150 и одна доставка всего заказа 50. Функция проверяет количество. При ошибке возвращает причину без расчёта; при правильном вводе вычисляет 150 на 2 плюс 50 и возвращает «Итого: 350». Сегодня сообщение выводится в консоль, позднее — рядом с формой.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#2563eb"/></marker>
     <style>
@@ -14,17 +14,17 @@
   </defs>
   <rect width="680" height="1120" rx="20" fill="#f8fafc"/>
   <text x="32" y="43" class="heading">Что происходит с нашими данными</text>
-  <text x="32" y="77" class="small muted">Пример: маршрут «Лесная тропа», вариант 01</text>
+  <text x="32" y="77" class="small muted">Вариант 00: «Учебный набор»</text>
 
   <rect x="24" y="101" width="632" height="235" rx="16" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
   <text x="46" y="141" class="heading">1. Задаём данные в файле</text>
-  <text x="46" y="181">Выбрано: «Лесная тропа»</text>
+  <text x="46" y="181">Выбрано: «Учебный набор»</text>
   <text x="46" y="219" class="code">quantityText = "2"</text>
   <text x="376" y="219" class="small muted">строка количества</text>
-  <text x="46" y="257" class="code">unitValue = 450</text>
-  <text x="376" y="257" class="small muted">за одного участника</text>
-  <text x="46" y="295" class="code">extraValue = 100</text>
-  <text x="376" y="295" class="small muted">один общий сбор</text>
+  <text x="46" y="257" class="code">unitValue = 150</text>
+  <text x="376" y="257" class="small muted">за один набор</text>
+  <text x="46" y="295" class="code">extraValue = 50</text>
+  <text x="376" y="295" class="small muted">одна доставка</text>
 
   <path d="M340 337V376" class="arrow"/>
   <rect x="24" y="389" width="632" height="202" rx="16" fill="#ffffff" stroke="#93c5fd" stroke-width="2"/>
@@ -39,13 +39,13 @@
   <rect x="24" y="658" width="632" height="153" rx="16" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
   <text x="46" y="699" class="heading">3. Вычисляем по формуле</text>
   <text x="46" y="739" class="small">Величина на единицу × количество + добавка</text>
-  <text x="46" y="784" style="font-size:30px;font-weight:700">450 × 2 + 100 = 1000</text>
+  <text x="46" y="784" style="font-size:30px;font-weight:700">150 × 2 + 50 = 350</text>
   <text x="410" y="784" class="small muted">условных рублей</text>
 
   <path d="M340 812V852" class="arrow"/>
   <rect x="24" y="865" width="632" height="124" rx="16" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="2"/>
   <text x="46" y="906" class="heading">4. Возвращаем и показываем сообщение</text>
-  <text x="46" y="952" class="code">«Итого: 1000» → консоль браузера</text>
+  <text x="46" y="952" class="code">«Итого: 350» → консоль браузера</text>
 
   <text x="32" y="1034" class="small muted">Сегодня: данные в файле, сообщение в консоли.</text>
   <text x="32" y="1070" class="small muted">Позже: ввод из формы, сообщение рядом с ней.</text>
