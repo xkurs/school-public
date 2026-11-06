@@ -1227,6 +1227,201 @@
       "title": "Учебный вариант 00 — пара 21"
     },
     {
+      "source": "spo/assets/021-01.md",
+      "output": "spo/assets/021-01.html",
+      "title": "Вариант 01 — На тропе, пара 21"
+    },
+    {
+      "source": "spo/assets/021-02.md",
+      "output": "spo/assets/021-02.html",
+      "title": "Вариант 02 — На тропе, пара 21"
+    },
+    {
+      "source": "spo/assets/021-03.md",
+      "output": "spo/assets/021-03.html",
+      "title": "Вариант 03 — На тропе, пара 21"
+    },
+    {
+      "source": "spo/assets/021-04.md",
+      "output": "spo/assets/021-04.html",
+      "title": "Вариант 04 — Книжная полка, пара 21"
+    },
+    {
+      "source": "spo/assets/021-05.md",
+      "output": "spo/assets/021-05.html",
+      "title": "Вариант 05 — Книжная полка, пара 21"
+    },
+    {
+      "source": "spo/assets/021-06.md",
+      "output": "spo/assets/021-06.html",
+      "title": "Вариант 06 — Книжная полка, пара 21"
+    },
+    {
+      "source": "spo/assets/021-07.md",
+      "output": "spo/assets/021-07.html",
+      "title": "Вариант 07 — Тёплая чашка, пара 21"
+    },
+    {
+      "source": "spo/assets/021-08.md",
+      "output": "spo/assets/021-08.html",
+      "title": "Вариант 08 — Тёплая чашка, пара 21"
+    },
+    {
+      "source": "spo/assets/021-09.md",
+      "output": "spo/assets/021-09.html",
+      "title": "Вариант 09 — Тёплая чашка, пара 21"
+    },
+    {
+      "source": "spo/assets/021-10.md",
+      "output": "spo/assets/021-10.html",
+      "title": "Вариант 10 — Музей рядом, пара 21"
+    },
+    {
+      "source": "spo/assets/021-11.md",
+      "output": "spo/assets/021-11.html",
+      "title": "Вариант 11 — Музей рядом, пара 21"
+    },
+    {
+      "source": "spo/assets/021-12.md",
+      "output": "spo/assets/021-12.html",
+      "title": "Вариант 12 — Музей рядом, пара 21"
+    },
+    {
+      "source": "spo/assets/021-13.md",
+      "output": "spo/assets/021-13.html",
+      "title": "Вариант 13 — Спорт после пар, пара 21"
+    },
+    {
+      "source": "spo/assets/021-14.md",
+      "output": "spo/assets/021-14.html",
+      "title": "Вариант 14 — Спорт после пар, пара 21"
+    },
+    {
+      "source": "spo/assets/021-15.md",
+      "output": "spo/assets/021-15.html",
+      "title": "Вариант 15 — Спорт после пар, пара 21"
+    },
+    {
+      "source": "spo/assets/021-16.md",
+      "output": "spo/assets/021-16.html",
+      "title": "Вариант 16 — Зелёный уголок, пара 21"
+    },
+    {
+      "source": "spo/assets/021-17.md",
+      "output": "spo/assets/021-17.html",
+      "title": "Вариант 17 — Зелёный уголок, пара 21"
+    },
+    {
+      "source": "spo/assets/021-18.md",
+      "output": "spo/assets/021-18.html",
+      "title": "Вариант 18 — Зелёный уголок, пара 21"
+    },
+    {
+      "source": "spo/assets/021-19.md",
+      "output": "spo/assets/021-19.html",
+      "title": "Вариант 19 — Мастерская идей, пара 21"
+    },
+    {
+      "source": "spo/assets/021-20.md",
+      "output": "spo/assets/021-20.html",
+      "title": "Вариант 20 — Мастерская идей, пара 21"
+    },
+    {
+      "source": "spo/assets/021-21.md",
+      "output": "spo/assets/021-21.html",
+      "title": "Вариант 21 — Мастерская идей, пара 21"
+    },
+    {
+      "source": "spo/assets/021-22.md",
+      "output": "spo/assets/021-22.html",
+      "title": "Вариант 22 — Друг из приюта, пара 21"
+    },
+    {
+      "source": "spo/assets/021-23.md",
+      "output": "spo/assets/021-23.html",
+      "title": "Вариант 23 — Друг из приюта, пара 21"
+    },
+    {
+      "source": "spo/assets/021-24.md",
+      "output": "spo/assets/021-24.html",
+      "title": "Вариант 24 — Друг из приюта, пара 21"
+    },
+    {
+      "source": "spo/assets/021-25.md",
+      "output": "spo/assets/021-25.html",
+      "title": "Вариант 25 — Экопункт, пара 21"
+    },
+    {
+      "source": "spo/assets/021-26.md",
+      "output": "spo/assets/021-26.html",
+      "title": "Вариант 26 — Экопункт, пара 21"
+    },
+    {
+      "source": "spo/assets/021-27.md",
+      "output": "spo/assets/021-27.html",
+      "title": "Вариант 27 — Экопункт, пара 21"
+    },
+    {
+      "source": "spo/assets/021-28.md",
+      "output": "spo/assets/021-28.html",
+      "title": "Вариант 28 — Афиша вечера, пара 21"
+    },
+    {
+      "source": "spo/assets/021-29.md",
+      "output": "spo/assets/021-29.html",
+      "title": "Вариант 29 — Афиша вечера, пара 21"
+    },
+    {
+      "source": "spo/assets/021-30.md",
+      "output": "spo/assets/021-30.html",
+      "title": "Вариант 30 — Афиша вечера, пара 21"
+    },
+    {
+      "source": "spo/assets/021-31.md",
+      "output": "spo/assets/021-31.html",
+      "title": "Вариант 31 — Учебный клуб, пара 21"
+    },
+    {
+      "source": "spo/assets/021-32.md",
+      "output": "spo/assets/021-32.html",
+      "title": "Вариант 32 — Учебный клуб, пара 21"
+    },
+    {
+      "source": "spo/assets/021-33.md",
+      "output": "spo/assets/021-33.html",
+      "title": "Вариант 33 — Учебный клуб, пара 21"
+    },
+    {
+      "source": "spo/assets/021-34.md",
+      "output": "spo/assets/021-34.html",
+      "title": "Вариант 34 — Снаряжение рядом, пара 21"
+    },
+    {
+      "source": "spo/assets/021-35.md",
+      "output": "spo/assets/021-35.html",
+      "title": "Вариант 35 — Снаряжение рядом, пара 21"
+    },
+    {
+      "source": "spo/assets/021-36.md",
+      "output": "spo/assets/021-36.html",
+      "title": "Вариант 36 — Снаряжение рядом, пара 21"
+    },
+    {
+      "source": "spo/assets/021-37.md",
+      "output": "spo/assets/021-37.html",
+      "title": "Вариант 37 — Космос рядом, пара 21"
+    },
+    {
+      "source": "spo/assets/021-38.md",
+      "output": "spo/assets/021-38.html",
+      "title": "Вариант 38 — Космос рядом, пара 21"
+    },
+    {
+      "source": "spo/assets/021-39.md",
+      "output": "spo/assets/021-39.html",
+      "title": "Вариант 39 — Космос рядом, пара 21"
+    },
+    {
       "source": "spo/README.md",
       "output": "spo/index.html",
       "title": "СПО — разработка мобильных приложений"
@@ -2029,7 +2224,7 @@
     "topics/physics-9-3h/assets/024-radius-and-height.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "497839fcbac8be51532245d89e084bb6588854aefe5364902abb1012918cf30b",
+  "source_digest": "f4e285f5c01c15e2628256faf070a9f54b28082fb6ed99776a4b0c3a7ddd916b",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2153,7 +2348,7 @@
     "spo/018-responsive-layout-and-browser-testing.html": "72586d6aa601d88f33472a0478e6767591ae460546e41faeaaea50a71cd032ec",
     "spo/019-javascript-values-and-input.html": "b36cb8f6463f4d2b9cf4b46281a5fb040c457e00008c1a2898d9ee033d56070d",
     "spo/020-conditions-and-functions.html": "34cfc17647c6af83102494f3752dc389c1726c3f386523cbd2c883bb9ed65246",
-    "spo/021-arrays-loops-and-objects.html": "816e3373a6eb38bf6cddba8e74d7abdd5cde823369e57f7ab3dd453901294ea4",
+    "spo/021-arrays-loops-and-objects.html": "de256d0bc4769e0b09c1f60202bf59f147c67253caefee05d5459f0acdbad6a5",
     "spo/assets/003-00-blocks-screenshot.jpg": "574a062ab7e8ccf9fe731c5ec545ac4bf6c88cd8a02551d752be2597b264e1bf",
     "spo/assets/003-00-button-properties-screenshot.jpg": "6d15427fc17d8f758bc6add4f5320d0050e9204ce096a12e27a96a4f702ddcb2",
     "spo/assets/003-00-connect-usb-screenshot.jpg": "c8f30aa965893f3c8442b0589a66bf0e29738ff93109b0bdcad33fbadc88fafa",
@@ -2749,9 +2944,48 @@
     "spo/assets/021-00-code-js-01-b57beaf3261a7af8915ec6a91719b9dd4aea685e53fce3520dc05a6ffcb12839.png": "b57beaf3261a7af8915ec6a91719b9dd4aea685e53fce3520dc05a6ffcb12839",
     "spo/assets/021-00-code-js-02-a94ff3b0442ae0da9400b04f24fefb30d21789948ffda1bb6f90a49a24731791.png": "a94ff3b0442ae0da9400b04f24fefb30d21789948ffda1bb6f90a49a24731791",
     "spo/assets/021-00-code-js-03-f3148a083a8a54fc1db79863da787a010c4274f366df70862db344451b746370.png": "f3148a083a8a54fc1db79863da787a010c4274f366df70862db344451b746370",
-    "spo/assets/021-00.html": "628af02955a90a26c5881bf93b581479973f6d8f93b289bb7e73cbbe5a4de850",
+    "spo/assets/021-00.html": "fb27eaf408a94386fc4ffea1ac18b59d2198bb754fbe5f7df71ec4ac683768fa",
+    "spo/assets/021-01.html": "a7065b789d1e360f119113525e56cb4296614b20d3adbfa0248f49e2b68c8eef",
+    "spo/assets/021-02.html": "eabb8e2c681327d18583c1048365c56caca0d8caefb2f5f563aee176aefc8330",
+    "spo/assets/021-03.html": "027256d3edf36a5bad544646aee1061553cc1a6a4badbe465828ea4885e924e3",
+    "spo/assets/021-04.html": "b108faa65e7e6fc0c00108cd2c9b57ce0c9bd21e648c8fe045093dd970f52f2d",
+    "spo/assets/021-05.html": "6bf5f05597fb4c1c55ca5e9ffbd57552383ddb2f6da9ffd5db8d1ac80e6d6c21",
+    "spo/assets/021-06.html": "e6ad26d8a202330f8adeee9fc96a50e1d4c5fc6383695428af43bb432be27449",
+    "spo/assets/021-07.html": "dd651eb59119e32a21b487d2bbc2bb901e54e532bed5aa15fb530af1ca52f88b",
+    "spo/assets/021-08.html": "0323ffe4c39a4a169e2e608a1f8c42bda770890d08036190c9d28fdfbd603e78",
+    "spo/assets/021-09.html": "c60232ccf636cbc148a336f140855fb92cfdca51774331718c3cb6b3e56f81e8",
+    "spo/assets/021-10.html": "3ccca0a639e4a23ef134e270b60ca16cf3cb66e483ac198d53b28270a4e17dd8",
+    "spo/assets/021-11.html": "65409e8a577992d7f168f78f4c42e047129217e243b41a184c20c091e43491e3",
+    "spo/assets/021-12.html": "cc4f5643f55e92a495980456c7049d77eac2503a9782cabb099b8335d8873207",
+    "spo/assets/021-13.html": "56a4d261a1ef4f4efed4fc86eed78e5006ba0eadb9ff9649e406e11ad502b7f2",
+    "spo/assets/021-14.html": "9467d9b42402ff97a08fac1e2b5c24ce0f0003f515b8b3533542c6f35df0dfd4",
+    "spo/assets/021-15.html": "cf37162080af85c3256d8b4968b8ca47a7d46f46655da0b15a732f200f39e795",
+    "spo/assets/021-16.html": "102ba8876571ea9d7b97fc1fe443ec64d70a056ae2b24aca7dfdbdf9c7a4b6ed",
+    "spo/assets/021-17.html": "d618814ff47c6c54be5890b8ab78f83da86b4e0c709cd88e48bc1605e8714126",
+    "spo/assets/021-18.html": "0a92581565c3ee52c9fd5ded5ce0b192dc08fa883f7ec878fcbf278e74cef3aa",
+    "spo/assets/021-19.html": "6f7b80d138f983ed0ca783aca5e79d92e85ff7b5b9dac9633d4c890cfde866d4",
+    "spo/assets/021-20.html": "4b019bc91e80389661d4255ee3d5d6cc8cb3785e9bc3ed7f0b0fc9ab42f96b61",
+    "spo/assets/021-21.html": "3cf954d66d3629ff644d82ddc2caea1b2d5c0ba19610432db949e167fb8d0ca3",
+    "spo/assets/021-22.html": "3fd73d7b0f9ea98bbc0d8abb05e0be1330dbf4ec128cac4cdb844a0938d749f3",
+    "spo/assets/021-23.html": "f8971f1efa6af8411d28d37678f984b06a6c75f9c7bafe9a91d1b5421a6dc6c7",
+    "spo/assets/021-24.html": "cb079ab71b3e982452ef73e50cbac13f0f12bda82346df893706d5a6763419db",
+    "spo/assets/021-25.html": "94e48b6cc044ac08360af67e4c46e86d51d9354ff51ff1265a84dd08a263f1a2",
+    "spo/assets/021-26.html": "5c79652b51e755c75ff71c7f5cf1264bc800ff9d96e11996b842ac2a6bbcaeb9",
+    "spo/assets/021-27.html": "497c16293d674d4c43750a99832d650e45dfa08b5fb2e7ef1b3224e176923946",
+    "spo/assets/021-28.html": "27a9375298f3d6965b71b2d2a51daa49a809775625067d6831edf21170faee8e",
+    "spo/assets/021-29.html": "2dcd507b118898a796fcd1242c786de410819948e34cc4d790fc1a1e8c6163e8",
+    "spo/assets/021-30.html": "c0fdd666947888df70515430f7451392511a26314dc2c716e32be68a6d319a9e",
+    "spo/assets/021-31.html": "7472940652d3eb423919e49a6165fe6008935102d5aa12595bcef334f01b70d4",
+    "spo/assets/021-32.html": "c1a7b0471506d7a9c5344ebb842d743acc31e5f2b1148596fe7d5b7c057e2e26",
+    "spo/assets/021-33.html": "f025d35b0ec305fa19e4a6b126422d5c70413d836a812c80ccbe9123b2e23005",
+    "spo/assets/021-34.html": "d5091159f3243b1327d92465d83d9cbd34082332532c1d8944c172346aab46c4",
+    "spo/assets/021-35.html": "827015078eee2ec009f08717c67ae27a9802ca9661f5efac727e2b840e97807f",
+    "spo/assets/021-36.html": "5623713105d3e584bf9be623973420a9c838390d9a7dfd8725f287ac1c308443",
+    "spo/assets/021-37.html": "d1c9f5a36a283006bde4089af319d7f1d78c6024297082149d6dd07db89233a5",
+    "spo/assets/021-38.html": "a497dd3a0fe954eec06591ce47bd693285fa9c43b0f720fc107df685a4700052",
+    "spo/assets/021-39.html": "e9b5b33b99b482538871f76f5bbf07e6fce16f2df975af43372b30318d174c70",
     "spo/index.html": "5869631c28327a47bf2e9341a508224509a6d592250926b8c9d0a4e37ccee81a",
-    "sw.js": "df945fce1b234991a26197d461b7414b037ab68cc9788260bef98cf952e0f5c2",
+    "sw.js": "2f27d330396848286cfb400f92d1a6def69e93ec02546d25c60872f6295a3448",
     "topics/index.html": "c61fec56b95e0de2e5443e514d2314ac8cb039a2328a862263fbb3f242b3304c",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "de07e3590fbed98780d6b6e6894a0695319260f4e511016c1a633bb19e5517b6",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "a298a4059ce08d36232b21324e57f694e752db7b275480effd855cc708b57131",
@@ -2831,5 +3065,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "aeabc7a7eb7a0dcdf8d5abe2ade9ae2fa1acc0da253ccebbd3fc8835bfc3e392",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "57878678e494250847ebc85bb632ba654fc366e0049d92e48cad4b65046d8cad"
   },
-  "manifest_digest": "e0487cc54702102e04de8532a6e49ce0fa04a60e1aaab9901403b88f34c3b209"
+  "manifest_digest": "cfaf232f67805c5134d3dce812d9433bc140e00bbf581f9116b1c0cdba170dec"
 }
