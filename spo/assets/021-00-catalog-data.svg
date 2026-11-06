@@ -19,6 +19,6 @@
   <text x="52" y="418" class="c">catalog[0]</text><text x="52" y="464">position: 1</text>
   <text x="284" y="418" class="c">catalog[1]</text><text x="284" y="464">position: 2</text>
   <text x="518" y="418" class="c">catalog[2]</text><text x="518" y="464">position: 3</text>
-  <text x="28" y="540">Цикл: item ← очередной объект массива</text>
+  <text x="28" y="540">Цикл: item = очередной объект массива</text>
   <text x="28" y="579" class="s">item.name — название именно текущей карточки</text>
 </svg>

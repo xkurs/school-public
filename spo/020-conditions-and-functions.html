@@ -94,11 +94,11 @@
 </thead>
 <tbody>
 <tr>
-<td>quantity ← Number(quantityText)</td>
+<td>quantity = Number(quantityText)</td>
 <td><code class="code-inline language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">quantity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">Number</span><span class="p">(</span><span class="nx">quantityText</span><span class="p">);</span></code></td>
 </tr>
 <tr>
-<td>totalAmount ← unitAmount × quantity + extraAmount</td>
+<td>totalAmount = unitAmount × quantity + extraAmount</td>
 <td>Соберите формулу из <strong>параметров</strong> и сохраните в <code class="code-inline language-javascript"><span class="nx">totalAmount</span></code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@
 <p><strong>Проверьте:</strong> исходное количество даёт итог пары 19. Увеличьте количество на 1, предскажите и проверьте новый итог, верните исходное. Выведите рядом смысл результата и единицу своего варианта. Внутреннюю <code class="code-inline language-javascript"><span class="nx">totalAmount</span></code> снаружи не используйте — там есть возвращённое сообщение.</p>
 <p>Теперь передайте пустую строку: сумма всё равно вычисляется. Исправим этот дефект.</p>
 <h2 id="4-по-блок-схеме-проверяем-исходный-текст">4. По блок-схеме проверяем исходный текст</h2>
-<p><strong>Как читать схемы:</strong> овал — начало, продолжение или выход; прямоугольник — действие; ромб — вопрос с ветвями «да/нет». <code>quantity ← Number(quantityText)</code> означает «сохранить результат преобразования в <code class="code-inline language-javascript"><span class="nx">quantity</span></code>». На схемах используются те же имена переменных и параметров, что в коде; <code>←</code> обозначает присваивание и в JavaScript записывается знаком <code class="code-inline language-javascript"><span class="o">=</span></code>.</p>
+<p><strong>Как читать схемы:</strong> овал — начало, продолжение или выход; прямоугольник — действие; ромб — вопрос с ветвями «да/нет». <code class="code-inline language-javascript"><span class="nx">quantity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">Number</span><span class="p">(</span><span class="nx">quantityText</span><span class="p">)</span></code> означает «сохранить результат преобразования в <code class="code-inline language-javascript"><span class="nx">quantity</span></code>». На схемах используются те же имена переменных и параметров, что в коде; <code class="code-inline language-javascript"><span class="o">=</span></code> обозначает присваивание, как в JavaScript, а <code class="code-inline language-javascript"><span class="o">===</span></code> — сравнение. Стрелки между блоками показывают порядок выполнения.</p>
 <p><img alt="Первая часть алгоритма: пустая строка завершает вызов с ошибкой; непустая преобразуется в число; неконечное число тоже приводит к выходу." src="assets/020-00-input-checks.svg"></p>
 <p><strong>Где:</strong> внутри <code class="code-inline language-javascript"><span class="nx">getResult</span></code>, перед формулой.</p>
 <ol>
