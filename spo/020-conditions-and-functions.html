@@ -284,7 +284,36 @@
 <td>Скобки, кавычки, запятые между параметрами</td>
 </tr>
 </tbody>
-</table></div></main>
+</table>
+<h2 id="подсказки-для-разбора">Подсказки для разбора</h2>
+<p>На изображениях разобран постоянный вариант 00 «Учебный набор». Сначала соберите функцию по шагам выше и проверьте её. Затем раскройте нужную подсказку: код показан изображениями, а пояснения помогают найти причину расхождения. Изображения JavaScript идут подряд и составляют один файл <code>conditions.js</code>; номера строк продолжаются от части к части. Для чтения с телефона откройте изображение отдельно и увеличьте его.</p>
+<details class="callout" data-callout="tip">
+<summary class="callout-title">Подключение программы: <code>index.html</code></summary><p>Для отдельного показа создайте папку <code class="code-inline language-javascript"><span class="nx">Variant00</span><span class="o">-</span><span class="nx">conditions</span></code>. Сохраните в ней HTML-страницу и <code>conditions.js</code> рядом. При работе со своим проектом достаточно заменить подключение программы в существующем <code>index.html</code>.</p>
+<p><img alt="Подключение conditions.js в HTML-странице варианта 00." src="assets/020-00-code-html-7768d7641f8c44950314d2788a063f384cd4ffdac7e73da12b2292aa3e0e208b.png"></p>
+<p><a href="assets/020-00-code-html-7768d7641f8c44950314d2788a063f384cd4ffdac7e73da12b2292aa3e0e208b.png">Открыть код HTML крупно</a></p>
+</details>
+<!-- hint-separator -->
+
+<details class="callout" data-callout="tip">
+<summary class="callout-title"><code>conditions.js</code>, часть 1: исходные данные</summary><p>Количество пока задано строкой в файле. Цена одного набора — 150, одна доставка всего заказа — 50. Признак учебных данных выводится отдельно и в формулу не входит.</p>
+<p><img alt="Исходные данные расчёта учебных наборов, первая часть conditions.js." src="assets/020-00-code-js-01-a9eca9be34a0367728a1896a6d3ae931cf59fc42ae353b4ecc8d3c9324204eb4.png"></p>
+<p><a href="assets/020-00-code-js-01-a9eca9be34a0367728a1896a6d3ae931cf59fc42ae353b4ecc8d3c9324204eb4.png">Открыть исходные данные крупно</a></p>
+</details>
+<!-- hint-separator -->
+
+<details class="callout" data-callout="tip">
+<summary class="callout-title"><code>conditions.js</code>, часть 2: проверка и возврат результата</summary><p>Проследите путь одного значения до первого выполненного <code class="code-inline language-javascript"><span class="k">return</span></code>. Пустую строку проверяют до преобразования в число; остальные отказы тоже стоят перед формулой. Возврат и вывод — разные действия: функция отдаёт сообщение, а вызывающая программа показывает его. Значения передаются параметрам по порядку аргументов.</p>
+<p><img alt="Функция проверки количества и вычисления результата, вторая часть conditions.js." src="assets/020-00-code-js-02-09a129d0e44a9af34ef918eac976fd86337ed5c0377c78d6d76c51fa918cdc60.png"></p>
+<p><a href="assets/020-00-code-js-02-09a129d0e44a9af34ef918eac976fd86337ed5c0377c78d6d76c51fa918cdc60.png">Открыть функцию крупно</a></p>
+</details>
+<!-- hint-separator -->
+
+<details class="callout" data-callout="tip">
+<summary class="callout-title"><code>conditions.js</code>, часть 3: вызовы и испытания</summary><p>Сохраните файлы в UTF-8, откройте HTML, затем <code>F12</code> → <strong>Console / Консоль</strong> и обновите страницу. Последние два результата — «Итого: 370» и «Итого: 360». Для ошибочных входов функция возвращает причину без рассчитанной суммы. Числовые аргументы меняются в отдельных вызовах; исходные константы сохраняются.</p>
+<p><img alt="Вызовы функции и проверочные случаи, третья часть conditions.js." src="assets/020-00-code-js-03-f005414a7a074586c438219c4b851f5dc413525cfe1232fce00f2031729437b8.png"></p>
+<p><a href="assets/020-00-code-js-03-f005414a7a074586c438219c4b851f5dc413525cfe1232fce00f2031729437b8.png">Открыть испытания крупно</a></p>
+</details>
+<p>Пример считает стоимость наборов, а в своём варианте вы сохраняете собственные величины и единицы. Сверяйте смысл действий и результаты; одного совпадения текста программы недостаточно, чтобы объяснить её работу.</p></div></main>
     <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
       <p id="site-update-status" role="status" aria-live="polite"></p>
       <button type="button" id="site-update-check">Проверить</button>
