@@ -465,6 +465,45 @@ pre {
 .lesson-code-style :is(.code-block, .code-inline) :is(.o, .se, .sr, .nt) { color: #b62b46; }
 .lesson-code-style :is(.code-block, .code-inline) :is(.c, .ch, .cm, .c1, .cp, .cpf, .cs) { color: #636a73; }
 
+/* Visual physics explanations; colours match the associated SVG legends. */
+.visual-lesson .term-teal { color: #006c75; font-weight: 700; }
+.visual-lesson .term-rose { color: #b02069; font-weight: 700; }
+.visual-lesson .term-ochre { color: #8a6500; font-weight: 700; }
+.visual-lesson .term-green { color: #167d37; font-weight: 700; }
+.visual-lesson h1 {
+  font-size: clamp(1.5rem, 4.5vw, 2rem);
+  line-height: 1.25;
+}
+.visual-lesson h2 { font-size: clamp(1.25rem, 3.5vw, 1.5rem); }
+.visual-lesson .formula-panel {
+  margin-block: 1rem;
+  padding: .25rem .8rem;
+  border-radius: .5rem;
+  background: #f8f8f8;
+}
+.visual-lesson img {
+  display: block;
+  width: min(100%, 640px);
+  height: auto;
+  margin: 1rem auto;
+}
+.visual-lesson .callout {
+  border-radius: .3rem;
+  color: #172c46;
+}
+.visual-lesson .callout[data-callout="example"] {
+  border-color: #006c75;
+  background: #eff8f9;
+}
+.visual-lesson .callout[data-callout="important"] {
+  border-color: #167d37;
+  background: #eff8f1;
+}
+.visual-lesson .callout[data-callout="warning"] {
+  border-color: #8a6500;
+  background: #fff8e8;
+}
+
 blockquote {
   margin-inline: 0;
   padding: 0.75rem 1rem;
