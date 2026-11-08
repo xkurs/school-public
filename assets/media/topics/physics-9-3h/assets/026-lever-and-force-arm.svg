@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="650" viewBox="0 0 440 650" role="img" aria-labelledby="title desc">
+  <title id="title">Плечо силы и направление поворота рычага</title>
+  <desc id="desc">Вверху силы вниз по разные стороны оси O вращают рычаг в противоположных направлениях. Внизу наклонная сила приложена в A, плечо d проведено из O перпендикулярно пунктирной линии действия силы.</desc>
+  <defs>
+    <marker id="force" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#b91c1c"/></marker>
+    <marker id="dim" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse"><path d="M6 0L0 3L6 6" fill="none" stroke="#2563eb"/></marker>
+  </defs>
+  <rect width="440" height="650" rx="16" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif" font-size="19" fill="#172554">
+    <text x="220" y="30" text-anchor="middle" font-size="21">Ось и противоположные моменты</text>
+    <path d="M65 105H375" stroke="#475569" stroke-width="12"/>
+    <path d="M220 112L200 143H240Z" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+    <circle cx="220" cy="105" r="6" fill="#172554"/>
+    <text x="225" y="88">O</text>
+    <path d="M80 63V219M360 63V219" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 5"/>
+    <path d="M80 105V185" stroke="#b91c1c" stroke-width="3" marker-end="url(#force)"/>
+    <path d="M360 105V185" stroke="#b91c1c" stroke-width="3" marker-end="url(#force)"/>
+    <text x="93" y="174" fill="#b91c1c">F₁</text><text x="373" y="174" fill="#b91c1c">F₂</text>
+    <path d="M80 230H220" stroke="#2563eb" stroke-width="2" marker-start="url(#dim)" marker-end="url(#dim)"/>
+    <path d="M220 230H360" stroke="#2563eb" stroke-width="2" marker-start="url(#dim)" marker-end="url(#dim)"/>
+    <path d="M220 150V240" stroke="#94a3b8" stroke-dasharray="4 4"/>
+    <text x="150" y="220" text-anchor="middle" fill="#2563eb">d₁</text><text x="290" y="220" text-anchor="middle" fill="#2563eb">d₂</text>
+    <text x="105" y="274" text-anchor="middle">F₁: против часовой</text>
+    <text x="325" y="274" text-anchor="middle">F₂: по часовой</text>
+    <path d="M25 301H415" stroke="#cbd5e1"/>
+    <text x="220" y="337" text-anchor="middle" font-size="21">Наклонная сила: d ≠ OA</text>
+    <path d="M90 440H270" stroke="#475569" stroke-width="9"/>
+    <circle cx="90" cy="440" r="6" fill="#172554"/>
+    <circle cx="270" cy="440" r="5" fill="#172554"/>
+    <text x="65" y="428">O</text><text x="273" y="465">A</text>
+    <path d="M180 530L365 345" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/>
+    <path d="M270 440L330 380" stroke="#b91c1c" stroke-width="3" marker-end="url(#force)"/>
+    <text x="339" y="390" fill="#b91c1c">F</text>
+    <path d="M90 440L180 530" stroke="#2563eb" stroke-width="3"/>
+    <text x="122" y="503" fill="#2563eb" font-size="22">d</text>
+    <path d="M169 519L180 508L191 519" fill="none" stroke="#2563eb" stroke-width="2"/>
+    <text x="220" y="579" text-anchor="middle">Пунктир — линия действия F.</text>
+    <text x="220" y="610" text-anchor="middle">Синий отрезок d ей перпендикулярен.</text>
+  </g>
+</svg>

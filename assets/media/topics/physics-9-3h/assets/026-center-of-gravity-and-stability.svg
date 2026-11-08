@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="650" viewBox="0 0 440 650" role="img" aria-labelledby="title desc">
+  <title id="title">Вертикаль центра тяжести и границы опоры</title>
+  <desc id="desc">Боковой вид. Вверху центр тяжести G находится над опорой. Внизу тело сдвинуто к краю стола так, что вертикаль центра тяжести проходит правее фактического участка опоры. Сила тяжести вращает тело по часовой стрелке вокруг края K.</desc>
+  <defs>
+    <marker id="force" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#b91c1c"/></marker>
+  </defs>
+  <rect width="440" height="650" rx="16" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif" font-size="19" fill="#172554">
+    <text x="220" y="31" text-anchor="middle" font-size="21">Вертикаль внутри опоры</text>
+    <path d="M45 231H395" stroke="#64748b" stroke-width="5"/>
+    <rect x="115" y="70" width="210" height="158" rx="2" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <path d="M115 232H325" stroke="#15803d" stroke-width="7"/>
+    <circle cx="220" cy="149" r="5" fill="#172554"/>
+    <text x="233" y="143">G</text>
+    <path d="M220 149V262" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 5"/>
+    <path d="M220 149V213" stroke="#b91c1c" stroke-width="3" marker-end="url(#force)"/>
+    <text x="236" y="200" fill="#b91c1c">mg</text>
+    <text x="220" y="285" text-anchor="middle" fill="#15803d">Зелёный отрезок — опора.</text>
+    <path d="M25 314H415" stroke="#cbd5e1"/>
+    <text x="220" y="348" text-anchor="middle" font-size="21">Вертикаль за краем опоры</text>
+    <path d="M45 530H240V579" fill="none" stroke="#64748b" stroke-width="5"/>
+    <rect x="170" y="390" width="180" height="137" rx="2" fill="#ffedd5" stroke="#c2410c" stroke-width="2"/>
+    <path d="M170 531H240" stroke="#15803d" stroke-width="7"/>
+    <circle cx="260" cy="459" r="5" fill="#172554"/>
+    <text x="273" y="453">G</text>
+    <path d="M260 459V581" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 5"/>
+    <path d="M260 459V516" stroke="#b91c1c" stroke-width="3" marker-end="url(#force)"/>
+    <text x="277" y="507" fill="#b91c1c">mg</text>
+    <circle cx="240" cy="530" r="5" fill="#172554"/>
+    <text x="213" y="563">K</text>
+    <text x="220" y="608" text-anchor="middle">Поворот вокруг края K</text>
+    <text x="220" y="635" text-anchor="middle">по часовой стрелке.</text>
+  </g>
+</svg>
