@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Вывод и фильтрация каталога по данным массива — shkolar.site</title>
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/quotes.js"></script>
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">Вывод и фильтрация каталога по данным массива</li></ol></nav><h1 id="вывод-и-фильтрация-каталога-по-данным-массива">Вывод и фильтрация каталога по данным массива</h1>
+<p>Продолжаем <code>VariantNN-web</code>. На паре 21 вы собрали массив <code>catalog</code>, на паре 22 — функцию <code>filterByText</code>, на паре 23 научились находить элементы страницы, создавать новые блоки и обрабатывать события. Сегодня каталог перестанет быть статической разметкой: карточки будет строить программа, а поле поиска — отбирать нужные записи.</p>
+<p><strong>Результат:</strong> в <code>catalog.html</code> три карточки выводятся из массива, работают поиск по названию и счётчик «Показано: N из 3», при пустом результате появляется «Ничего не найдено». Меню, переходы и оформление карточек сохраняются.</p>
+<p>Рабочий ритм: <strong>изменить → сохранить → обновить страницу → проверить</strong>.</p>
+<h2 id="1-проверьте-исходные-данные">1. Проверьте исходные данные</h2>
+<p>Откройте свою папку и <code>catalog.js</code>. В нём должны остаться массив <code>catalog</code> из трёх объектов с полями <code>position</code>, <code>name</code>, <code>specs</code>, <code>description</code> и функция <code>filterByText</code> из пары 22. На главной странице подключён именно <code>catalog.js</code>.</p>
+<p>В консоли (<code>F12</code> → <strong>Console / Консоль</strong>) проверьте:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">catalog</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterByText</span><span class="p">(</span><span class="nx">catalog</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">).</span><span class="nx">length</span><span class="p">);</span>
+</code></pre></div>
+<p>Оба числа совпадают с числом ваших карточек; в проекте их три. Если <code>filterByText</code> не найдена, восстановите её по паре 22; без неё поиск на этой паре не собрать. Затем откройте <code>catalog.html</code>: в нём пока три готовых <code>article</code>. Их тексты должны совпадать с объектами массива. Если расходятся, сначала сверьте их: после замены разметки данные станут единственным источником карточек.</p>
+<h2 id="2-замените-карточки-контейнером-и-добавьте-поиск">2. Замените карточки контейнером и добавьте поиск</h2>
+<p><strong>Файл:</strong> <code>catalog.html</code>, внутри <code>main</code>, вместо трёх <code>article</code>. Если они были обёрнуты в <code>&lt;div class="products"&gt;</code>, заменяйте весь этот блок, а не вставляйте новый контейнер внутрь него.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;search&quot;</span><span class="p">&gt;</span>Поиск по названию<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;search&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;search&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Введите часть названия&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;catalog-list&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;products&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;status&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;status&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><code>label for="search"</code> связывает подпись с полем, у которого <code>id="search"</code>: щелчок по подписи ставит курсор в поле. <code>type="search"</code> даёт браузеру подсказку, что это поиск. Контейнер с <code>id="catalog-list"</code> остаётся пустым — его заполнит программа. Класс <code>products</code> сохраняет прежний ряд карточек из пары 18; если ваши карточки оформлены иначе, используйте свой класс или уберите его. <code>role="status"</code> сообщает браузеру и программам чтения с экрана, что текст обновляется программно; пока абзац пуст.</p>
+<p><strong>Проверьте:</strong> откройте каталог. Три прежние карточки исчезли, появились подпись, поле поиска и пустое место под них. Тексты карточек не потеряны: они остались в массиве.</p>
+<h2 id="3-создайте-отдельный-файл-для-страницы-каталога">3. Создайте отдельный файл для страницы каталога</h2>
+<p>Рядом с <code>catalog.html</code> создайте <code>catalog-page.js</code>. Перенесите в него из <code>catalog.js</code> массив <code>catalog</code> и функцию <code>filterByText</code>. Старый <code>catalog.js</code> не удаляйте: на главной он продолжает работать с расчётом и опытами пары 22.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">catalog</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="c1">// три ваших объекта из catalog.js</span>
+<span class="p">];</span>
+</code></pre></div>
+<p>Подключите новый файл в <code>catalog.html</code> перед закрывающим <code>&lt;/body&gt;</code>:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;catalog-page.js&quot;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><code>defer</code> разрешает браузеру сначала разобрать HTML, а затем выполнить программу. Поэтому к моменту поиска элементов контейнер и поле уже существуют. Скрипт стоит в конце <code>body</code>; если перенести его в <code>head</code> без <code>defer</code>, поиск элементов может выполниться раньше разметки.</p>
+<p><strong>Проверьте:</strong> обновите каталог, откройте консоль. <code>catalog.length</code> даёт 3, <code>filterByText(catalog, "").length</code> — тоже 3. Ошибок нет.</p>
+<h2 id="4-соберите-карточки-функцией">4. Соберите карточки функцией</h2>
+<p>Сначала найдите элементы страницы и подготовьте функцию. Пишите после массива и <code>filterByText</code>.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">catalogList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#catalog-list&quot;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">statusText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#status&quot;</span><span class="p">);</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">renderCatalog</span><span class="p">(</span><span class="nx">items</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">catalogList</span><span class="p">.</span><span class="nx">replaceChildren</span><span class="p">();</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">items</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">card</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;article&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">card</span><span class="p">.</span><span class="nx">className</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;card&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;h2&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">title</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">specs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">specs</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">specs</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// 1. Создайте description и заполните его item.description.</span>
+<span class="w">    </span><span class="c1">// 2. Соберите card и добавьте её в catalogList.</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><code>replaceChildren()</code> без аргументов очищает контейнер перед новым выводом. Без очистки каждый вызов добавлял бы ещё три карточки к уже существующим.</p>
+<p>Вместо двух комментариев допишите:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">);</span>
+<span class="nx">description</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">description</span><span class="p">;</span>
+<span class="nx">card</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">specs</span><span class="p">,</span><span class="w"> </span><span class="nx">description</span><span class="p">);</span>
+<span class="nx">catalogList</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">card</span><span class="p">);</span>
+</code></pre></div>
+<p><code>append</code> принимает несколько элементов сразу и вставляет их по порядку. Класс <code>card</code> в примере — тот же, что у прежних карточек; если у ваших <code>article</code> другой класс, подставьте своё имя, иначе оформление не применится.</p>
+<p>В конце функции, <strong>после цикла</strong>, добавьте счётчик:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">statusText</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Ничего не найдено&quot;</span><span class="p">;</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">statusText</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Показано: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; из &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Число 3 здесь не записано вручную: <code>catalog.length</code> берётся из массива, поэтому подпись останется верной и при другом количестве карточек. При пустом результате вместо «Показано: 0 из 3» выводится «Ничего не найдено»: так понятно, что записей нет, а не что сломался счётчик.</p>
+<p>Вызовите функцию после её закрывающей скобки: <code>renderCatalog(catalog);</code>. На странице должны появиться три карточки с заголовком, характеристикой и описанием, под ними «Показано: 3 из 3». В консоли ошибок нет.</p>
+<p>В массиве пока нет адреса изображения, поэтому карточки выводятся без картинок. Это не ошибка: тексты сохранены, файлы лежат в <code>images/</code>, а для вывода изображений понадобится новое свойство в данных.</p>
+<h2 id="5-почему-textcontent-а-не-innerhtml">5. Почему <code>textContent</code>, а не <code>innerHTML</code></h2>
+<p><code>textContent</code> записывает в элемент именно текст. Если в названии карточки встретятся символы <code>&lt;b&gt;</code> или <code>&amp;</code>, они останутся видимыми символами и не станут разметкой.</p>
+<p><code>innerHTML</code> разбирает строку как HTML. Данные при этом превращаются в разметку: случайная угловая скобка ломает карточку, а посторонний текст может добавить ссылку или другой элемент. Данные должны оставаться данными, поэтому название, характеристика и описание заполняются через <code>textContent</code>, а элементы создаются через <code>createElement</code>.</p>
+<p><strong>Проверьте:</strong> временно замените название первой карточки на <code>&lt;b&gt;Проверка&lt;/b&gt;</code>, сохраните и обновите страницу. Символы <code>&lt;b&gt;</code> видны как текст, жирного начертания нет. Верните настоящее название и не исправляйте это через <code>innerHTML</code>.</p>
+<h2 id="6-свяжите-поле-поиска-с-фильтром">6. Свяжите поле поиска с фильтром</h2>
+<p>Добавьте после вызова <code>renderCatalog(catalog);</code>:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">searchInput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#search&quot;</span><span class="p">);</span>
+
+<span class="nx">searchInput</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">found</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">filterByText</span><span class="p">(</span><span class="nx">catalog</span><span class="p">,</span><span class="w"> </span><span class="nx">searchInput</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">renderCatalog</span><span class="p">(</span><span class="nx">found</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>Событие <code>input</code> наступает при каждом изменении поля: при наборе, вставке и очистке. Обработчик получает текущий текст, передаёт его в <code>filterByText</code> вместе с массивом и выводит найденное.</p>
+<p>Функция пары 22 приводит запрос к нижнему регистру, убирает пробелы по краям и отбирает записи условием <code>item.name.toLowerCase().includes(normalized)</code>. Для непустого запроса <code>filter</code> возвращает <strong>новый</strong> массив; пустой запрос возвращает весь <code>catalog</code>. В обоих случаях исходный массив не меняется: <code>renderCatalog</code> только читает его.</p>
+<p>Поиск идёт <strong>только по названию</strong>. Характеристика в условие не входит: подпись поля остаётся правдивой, а результат предсказуемым. Если нужно искать и по характеристике, это отдельное изменение — оно описано в разделе «Если закончили раньше».</p>
+<p><strong>Проверьте:</strong> введите часть названия — остаются подходящие карточки, счётчик уменьшается. Смените регистр — результат тот же. Очистите поле — снова три карточки и «Показано: 3 из 3».</p>
+<h2 id="7-проверьте-оформление-и-переходы">7. Проверьте оформление и переходы</h2>
+<p>У каждой созданной карточки должен быть тот же класс, что у прежних <code>article</code>. Контейнер <code>#catalog-list</code> с классом <code>products</code> сохраняет ряд и перенос карточек из пары 18; на узком окне карточки по-прежнему идут по одной. В меню каталога остаются переходы на главную и форму: проверьте оба, а также возврат в каталог. Новый скрипт не должен влиять на эти страницы.</p>
+<p><strong>Проверьте:</strong> сузьте окно до ширины телефона. Карточки не выходят за край, текст читается, оформление рамок и отступов сохранилось.</p>
+<h2 id="8-испытайте-поиск">8. Испытайте поиск</h2>
+<p>Для вашего количества карточек замените 3 на своё число; ниже — для трёх записей. После каждого опыта возвращайте поле в исходное состояние.</p>
+<table>
+<thead>
+<tr>
+<th>Испытание</th>
+<th>Что сделать</th>
+<th>Ожидаемый результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Полный каталог</td>
+<td>Не вводить запрос или очистить поле</td>
+<td>Три карточки, «Показано: 3 из 3»</td>
+</tr>
+<tr>
+<td>Часть названия</td>
+<td>Ввести 2–4 буквы из названия одной карточки</td>
+<td>Только подходящие записи; число карточек совпадает с числом в статусе</td>
+</tr>
+<tr>
+<td>Другой регистр</td>
+<td>Ввести тот же текст заглавными буквами</td>
+<td>Результат как в предыдущем опыте</td>
+</tr>
+<tr>
+<td>Характеристика не участвует</td>
+<td>Ввести слово, которое есть в <code>specs</code>, но которого нет ни в одном названии</td>
+<td>«Ничего не найдено»: поиск идёт только по названию</td>
+</tr>
+<tr>
+<td>Нет совпадений</td>
+<td>Ввести текст, которого нет ни в одном названии</td>
+<td>Пустой контейнер и «Ничего не найдено»</td>
+</tr>
+<tr>
+<td>Очистка поля</td>
+<td>Стереть текст или нажать кнопку очистки в поле</td>
+<td>Снова три карточки и «Показано: 3 из 3»</td>
+</tr>
+<tr>
+<td>Сверка счётчика</td>
+<td>Сравнить число карточек на странице с числом в статусе</td>
+<td>Совпадает; при пустом результате статус не «0 из 3», а «Ничего не найдено»</td>
+</tr>
+</tbody>
+</table>
+<h2 id="покажите-результат">Покажите результат</h2>
+<ol>
+<li>Откройте главную, перейдите в каталог по меню. Покажите три карточки и счётчик.</li>
+<li>Введите часть названия, затем тот же текст в другом регистре, затем очистите поле.</li>
+<li>Введите слово из характеристики, которого нет в названии, и объясните, почему результат пуст.</li>
+<li>Откройте элементы страницы (<code>F12</code> → <strong>Elements / Элементы</strong>) и покажите, что карточки находятся внутри <code>#catalog-list</code> и имеют ваш класс карточки (<code>card</code> в примере).</li>
+<li>Перейдите на форму и вернитесь в каталог.</li>
+</ol>
+<p>Объясните, почему для текста выбрано <code>textContent</code>, почему исходный <code>catalog</code> не меняется и где создаётся отобранный массив. Отдельный отчёт не нужен.</p>
+<h2 id="если-закончили-раньше">Если закончили раньше</h2>
+<p><strong>Поиск по двум полям.</strong> Создайте копию <code>filterByText</code> под именем <code>filterByTextAndSpecs</code>. В её <code>return</code> замените условие на такое:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="k">return</span><span class="w"> </span><span class="nx">items</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">item</span><span class="w"> </span><span class="p">=&gt;</span>
+<span class="w">  </span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">().</span><span class="nx">includes</span><span class="p">(</span><span class="nx">normalized</span><span class="p">)</span><span class="w"> </span><span class="o">||</span>
+<span class="w">  </span><span class="nx">item</span><span class="p">.</span><span class="nx">specs</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">().</span><span class="nx">includes</span><span class="p">(</span><span class="nx">normalized</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div>
+<p>Остальные строки функции не меняются. В обработчике замените вызов <code>filterByText</code> на новую функцию, а подпись поля — на «Поиск по названию и характеристике». Проверьте слово, которое есть только в характеристике: теперь карточка находится. Затем проверьте пустой запрос и отсутствие совпадений.</p>
+<p>Выделение найденного фрагмента потребует собирать заголовок из нескольких текстовых узлов. Это отдельная задача, не обязательная сегодня.</p>
+<h2 id="если-что-то-не-получилось">Если что-то не получилось</h2>
+<table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Где искать причину</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cannot read properties of null</code></td>
+<td><code>#catalog-list</code> или <code>#status</code> отсутствует в HTML, переименован или скрипт выполнился раньше разметки</td>
+</tr>
+<tr>
+<td><code>filterByText is not defined</code></td>
+<td>Функция не перенесена в <code>catalog-page.js</code></td>
+</tr>
+<tr>
+<td>Карточки дублируются при каждом вводе</td>
+<td>В <code>renderCatalog</code> нет <code>catalogList.replaceChildren()</code></td>
+</tr>
+<tr>
+<td>При любом запросе видны все карточки</td>
+<td>В обработчике вызывается <code>renderCatalog(catalog)</code>, а не <code>renderCatalog(found)</code></td>
+</tr>
+<tr>
+<td>Регистр влияет на результат</td>
+<td>В <code>filterByText</code> нет <code>toLowerCase</code> хотя бы с одной стороны</td>
+</tr>
+<tr>
+<td>В заголовке <code>[object Object]</code></td>
+<td>В <code>textContent</code> передан <code>item</code>, а не <code>item.name</code></td>
+</tr>
+<tr>
+<td>Счётчик не меняется</td>
+<td><code>#status</code> не найден, обновление стоит вне функции или вне ветвей <code>if</code></td>
+</tr>
+<tr>
+<td>Пропало оформление карточек</td>
+<td>Не задан класс <code>card</code> (или ваш прежний класс), контейнер потерял класс <code>products</code></td>
+</tr>
+<tr>
+<td>В консоли ошибка со страницы главной</td>
+<td><code>catalog-page.js</code> подключён не к той странице; на главной остаётся <code>catalog.js</code></td>
+</tr>
+</tbody>
+</table></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить</button>
+      <button type="button" id="site-update-reload" hidden>Обновить</button>
+    </footer>
+  </div>
+</body>
+</html>

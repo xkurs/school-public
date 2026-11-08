@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Обработка формы и вывод результата с сообщениями об ошибках — shkolar.site</title>
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/quotes.js"></script>
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">Обработка формы и вывод результата с сообщениями об ошибках</li></ol></nav><h1 id="обработка-формы-и-вывод-результата-с-сообщениями-об-ошибках">Обработка формы и вывод результата с сообщениями об ошибках</h1>
+<p><strong>Сегодня форма начнёт отвечать на нажатие кнопки.</strong> Продолжайте свою папку проекта и свой <code>form.html</code> после пары 14. Функция <code>getResult</code> и две числовые величины уже написаны на паре 20; перенесём их в новый файл без изменений.</p>
+<p><strong>Результат:</strong> при отправке формы страница не перезагружается, а под кнопкой появляется сообщение с названием выбранной позиции и итогом или причиной отказа. Рабочий ритм: <strong>изменить → сохранить → обновить страницу → проверить</strong>. Новый файл один — <code>form.js</code> рядом с <code>form.html</code>. Прежние <code>conditions.js</code>, <code>catalog.js</code> и <code>script.js</code> сохраните.</p>
+<h2 id="1-место-для-сообщения">1. Место для сообщения</h2>
+<p>Если на паре 23 вы добавляли на страницу формы временный абзац <code>#status</code> и относящийся к нему код, удалите их: сегодня сообщение выводится в <code>#result</code>, а обработчик будет в <code>form.js</code>.</p>
+<p>В <code>form.html</code> найдите кнопку отправки. Сразу после неё, внутри формы, добавьте пустой абзац:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;result&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;status&quot;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&quot;polite&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><code>id="result"</code> — имя для поиска из JavaScript. <code>role="status"</code> и <code>aria-live="polite"</code> сообщают вспомогательным технологиям, что текст в этом абзаце обновляется и его нужно прочитать, не прерывая пользователя. Пока абзац пуст, на странице ничего не видно.</p>
+<p><strong>Проверьте:</strong> сохраните <code>form.html</code> и обновите форму. Внешний вид не изменился; в инструментах разработчика (<code>F12</code> → Elements / Элементы) абзац находится после кнопки и внутри <code>form</code>.</p>
+<h2 id="2-подключите-новый-файл">2. Подключите новый файл</h2>
+<p>Создайте рядом с <code>form.html</code> файл <code>form.js</code>. В <code>form.html</code> перед закрывающим <code>&lt;/body&gt;</code> добавьте:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;form.js&quot;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><code>src</code> указывает путь к файлу, <code>defer</code> откладывает выполнение до окончания разбора HTML. К этому моменту абзац и поля уже существуют. Подключение нужно на странице формы, а не на главной. Постоянные файлы проекта и их подключения не удаляйте.</p>
+<p>В <code>form.js</code> временно напишите:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Форма запущена&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>Сохраните оба файла, откройте <code>form.html</code>, нажмите <code>F12</code> и выберите <strong>Console / Консоль</strong>. Обновите страницу: строка появилась — файл подключён. Уберите временный вывод.</p>
+<h2 id="3-перехватите-отправку">3. Перехватите отправку</h2>
+<p>В <code>form.js</code> добавьте:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">form</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;form&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p><code>document.querySelector("form")</code> находит первый элемент <code>form</code> на странице. Подпишитесь на событие отправки:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;submit&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>addEventListener</code> связывает событие с функцией-обработчиком: она выполнится при отправке. <code>event.preventDefault()</code> отменяет действие браузера по умолчанию.</p>
+<p><strong>Что будет без этой строки.</strong> У формы <code>method="get"</code>. Браузер соберёт значения полей, добавит их в адрес после <code>?</code> и перезагрузит страницу. Абзац результата снова станет пустым, а введённые значения вернутся к начальным. <code>preventDefault()</code> оставляет нас на странице: дальше сообщение показываем сами.</p>
+<p><strong>Проверьте:</strong> заполните обязательные поля корректно. Внутри обработчика временно добавьте <code>console.log("Отправка перехвачена");</code>, сохраните и нажмите кнопку. В консоли появилась строка, адресная строка не изменилась, страница не перезагрузилась. Уберите временный вывод.</p>
+<h2 id="4-прочитайте-количество">4. Прочитайте количество</h2>
+<p>Внутри обработчика, после <code>event.preventDefault();</code>, добавьте:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">quantityText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#quantity&quot;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span>
+</code></pre></div>
+<p><code>#quantity</code> — селектор по <code>id</code>. Свойство <code>.value</code> возвращает <strong>строку</strong> — то, что сейчас введено в поле. Даже у <code>type="number"</code> это строка; преобразование в число делает <code>getResult</code>. Если поле пустое, <code>.value</code> даёт пустую строку <code>""</code>.</p>
+<p><strong>Проверьте:</strong> временно выведите <code>console.log(quantityText);</code> и <code>console.log(typeof quantityText);</code>. Введите <code>3</code> — увидите <code>3</code> и <code>string</code>. Уберите временные выводы.</p>
+<h2 id="5-получите-название-выбранной-позиции">5. Получите название выбранной позиции</h2>
+<p>Там же добавьте:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#item&quot;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">itemName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">select</span><span class="p">.</span><span class="nx">options</span><span class="p">[</span><span class="nx">select</span><span class="p">.</span><span class="nx">selectedIndex</span><span class="p">].</span><span class="nx">text</span><span class="p">;</span>
+</code></pre></div>
+<p><code>select.options</code> — все пункты <code>option</code> по порядку, индексы начинаются с 0. <code>select.selectedIndex</code> — номер выбранного пункта, а <code>select.options[select.selectedIndex]</code> — сам пункт. У пункта <code>.text</code> — видимая подпись, а <code>.value</code> — служебное значение из атрибута <code>value</code>. Для сообщения нужно название, поэтому берём <code>.text</code>; <code>select.value</code> даст служебное <code>item2</code>, а не название позиции.</p>
+<p><strong>Проверьте:</strong> временно выведите <code>itemName</code> и выберите вторую и третью позиции по очереди. В консоли меняется название. При пустом выборе браузер не отправит форму, пока позиция не выбрана.</p>
+<h2 id="6-вызовите-готовую-функцию">6. Вызовите готовую функцию</h2>
+<p>Перенесите в начало <code>form.js</code> <strong>своё</strong> объявление <code>getResult</code> из рабочего файла (<code>conditions.js</code> или <code>catalog.js</code>) и две числовые константы <code>unitValue</code> и <code>extraValue</code>. Функцию не переписывайте: она уже возвращает итог или сообщение об ошибке. Массив каталога, цикл и старые проверочные вызовы сюда не переносите. Константы сохраните с теми же значениями и смыслом, что на паре 20.</p>
+<p>Внутри обработчика после чтения полей добавьте:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getResult</span><span class="p">(</span><span class="nx">quantityText</span><span class="p">,</span><span class="w"> </span><span class="nx">unitValue</span><span class="p">,</span><span class="w"> </span><span class="nx">extraValue</span><span class="p">);</span>
+</code></pre></div>
+<p>Аргументы идут по порядку параметров: текст количества, величина на единицу, общая добавка. Первый аргумент теперь приходит из поля, а не задан в файле.</p>
+<p><strong>Проверьте:</strong> временно выведите <code>console.log(message);</code> и отправьте форму с корректным количеством. В консоли появился итог, совпадающий с расчётом пары 20. Случаи с ошибками проверим в разделе 10, когда временно отключим встроенную проверку.</p>
+<h2 id="7-покажите-сообщение-на-странице">7. Покажите сообщение на странице</h2>
+<p>Рядом с <code>const form</code>, до обработчика, объявите ссылку на абзац:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#result&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>В конце обработчика добавьте:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">result</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">message</span><span class="p">;</span>
+</code></pre></div>
+<p><code>textContent</code> заменяет текст внутри абзаца. Это именно текст, а не разметка: угловые скобки и теги в сообщении останутся видимыми символами. <code>innerHTML</code> здесь не нужен — он разбирал бы строку как HTML. <code>alert</code> блокирует страницу, а <code>console.log</code> виден только разработчику: пользователь сообщения не увидит.</p>
+<p><strong>Проверьте:</strong> введите корректное количество и нажмите кнопку. Под кнопкой появился итог. Нажмите ещё раз — абзац заменился, второй копии нет. Измените количество — сообщение обновилось.</p>
+<h2 id="8-добавьте-название-позиции">8. Добавьте название позиции</h2>
+<p>Сейчас сообщение не говорит, для какой позиции сделан расчёт. Замените строку вывода:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">result</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">itemName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;. &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">message</span><span class="p">;</span>
+</code></pre></div>
+<p>Знак <code>+</code> соединяет строки, а точка с пробелом разделяют название и сообщение. Теперь у каждой позиции свой итог, и сообщение об ошибке тоже остаётся привязанным к выбранному названию.</p>
+<p><strong>Проверьте:</strong> выберите другую позицию, не меняя количества. Название в сообщении изменилось. Верните прежнюю позицию.</p>
+<h2 id="9-встроенная-проверка-и-собственная">9. Встроенная проверка и собственная</h2>
+<p>Браузер уже проверяет форму по атрибутам: <code>required</code> у списка и количества, <code>type="number"</code>, <code>min="1"</code>, <code>step="1"</code>. Пустую форму он не отправит, а при нуле или дроби покажет своё сообщение. Поэтому обработчик <code>submit</code> может вообще не выполниться.</p>
+<p>Собственная проверка в <code>getResult</code> всё равно нужна: атрибуты можно обойти или отключить, функцию можно вызвать не только из формы, а встроенная проверка не знает правил вашего расчёта. Сообщение должно быть понятным и одинаковым для всех случаев, а проверку нужно уметь объяснить и перенести в другую программу.</p>
+<p>Чтобы увидеть <strong>свои</strong> сообщения, временно добавьте в существующий тег <code>form</code> атрибут <code>novalidate</code>:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;get&quot;</span> <span class="na">novalidate</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Теперь браузер не блокирует отправку, и обработчик получает даже пустое поле. После испытаний <strong>обязательно верните</strong> <code>form</code> без <code>novalidate</code>: встроенная проверка должна снова работать вместе с собственной. Числовое поле не даёт набрать слово или одни пробелы: браузер оставляет его пустым. Чтобы проверить сообщения «введите число» и «укажите количество», на два опыта временно замените <code>type="number"</code> на <code>type="text"</code>, а затем верните <code>type="number"</code>, <code>min</code> и <code>step</code>.</p>
+<h2 id="10-испытайте-форму">10. Испытайте форму</h2>
+<p>Выполняйте проверки по одной и возвращайте исходные атрибуты после временных изменений. Перед опытами выберите настоящую позицию: приглашение «Выберите из списка» не является названием. Вид и текст сообщений браузера могут отличаться; проверяется поведение, а не совпадение фразы с образцом.</p>
+<table>
+<thead>
+<tr>
+<th>Проверка</th>
+<th>Что временно изменить</th>
+<th>Ожидаемый результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Корректное количество</td>
+<td>Ничего</td>
+<td>Под кнопкой: название позиции, подпись итога и число</td>
+</tr>
+<tr>
+<td>Количество на 1 больше</td>
+<td>Ничего</td>
+<td>Итог вырос ровно на <code>unitValue</code>; добавка осталась одной</td>
+</tr>
+<tr>
+<td>Пустое количество</td>
+<td><code>novalidate</code> у формы</td>
+<td>«Укажите количество»; суммы в сообщении нет</td>
+</tr>
+<tr>
+<td>Только пробелы</td>
+<td><code>novalidate</code>, <code>type="text"</code></td>
+<td>«Укажите количество»; суммы нет</td>
+</tr>
+<tr>
+<td>Слово вместо числа</td>
+<td><code>novalidate</code>, <code>type="text"</code></td>
+<td>«Введите число»; суммы нет</td>
+</tr>
+<tr>
+<td>Ноль</td>
+<td><code>novalidate</code></td>
+<td>«Нужно положительное целое количество»</td>
+</tr>
+<tr>
+<td>Дробное <code>1.5</code></td>
+<td><code>novalidate</code></td>
+<td>«Нужно положительное целое количество»</td>
+</tr>
+<tr>
+<td>Адресная строка</td>
+<td>Любая отправка</td>
+<td>Адрес не меняется, страница не перезагружается</td>
+</tr>
+<tr>
+<td>Ошибка без расчёта</td>
+<td><code>novalidate</code>, любой неверный ввод</td>
+<td>В сообщении нет подписи итога и рассчитанного числа</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Проверьте отдельно:</strong> после нажатия кнопки в адресе нет <code>?item=…&amp;quantity=…</code>, а введённые значения и сообщение остаются на месте. Если страница мигнула и значения сбросились, <code>preventDefault()</code> не выполняется. После опытов уберите <code>novalidate</code> и верните <code>type="number"</code>, <code>min</code> и <code>step</code>. Финальная проверка — с работающей встроенной проверкой: пустое поле и ноль браузер не пропускает, а корректное количество показывает ваше сообщение.</p>
+<h2 id="покажите-результат">Покажите результат</h2>
+<p>Покажите <code>form.html</code> и <code>form.js</code>:</p>
+<ul>
+<li>абзац <code>#result</code> после кнопки, подключение <code>form.js</code> и обработчик с <code>event.preventDefault()</code>;</li>
+<li>чтение <code>#quantity</code> и <code>#item</code>, вызов <code>getResult</code> и вывод через <code>textContent</code>, один корректный расчёт и один отказ по выбору преподавателя.</li>
+</ul>
+<p>Объясните, что произошло бы без <code>preventDefault</code>, чем <code>.value</code> отличается от <code>.text</code> и почему сообщение выводится в абзац, а не в <code>alert</code>. Для показа собственного отказа временно включите <code>novalidate</code>, после показа верните атрибут.</p>
+<h2 id="если-закончили-раньше">Если закончили раньше</h2>
+<p>Добавьте счётчик отправок. Перед обработчиком объявите <code>let submitCount = 0;</code>, а внутри обработчика увеличьте его: <code>submitCount = submitCount + 1;</code>. Затем добавьте номер проверки в начало сообщения:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">result</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Проверка &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">submitCount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;. &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">itemName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;. &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">message</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Проверьте:</strong> первое нажатие даёт «Проверка 1», второе — «Проверка 2» без перезагрузки страницы. После обновления страницы счёт снова начинается с единицы. При испытаниях с <code>novalidate</code> решите, считать ли ошибочные отправки, и объясните выбор.</p>
+<h2 id="если-что-то-не-получилось">Если что-то не получилось</h2>
+<table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Где искать причину</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>В консоли нет «Форма запущена»</td>
+<td>Имя файла в <code>src</code>, сохранение обоих файлов, обновление страницы</td>
+</tr>
+<tr>
+<td><code>querySelector(...) is null</code></td>
+<td>Опечатка в <code>id</code> или <code>form</code>; скрипт подключён без <code>defer</code> и выполнился раньше разметки</td>
+</tr>
+<tr>
+<td>Страница перезагружается, в адресе появились параметры</td>
+<td>Нет <code>event.preventDefault()</code> или обработчик добавлен не тому элементу</td>
+</tr>
+<tr>
+<td>Сообщение не появляется, ошибок в консоли нет</td>
+<td>Вывод остался в <code>console.log</code> вместо <code>textContent</code>; проверьте конец обработчика</td>
+</tr>
+<tr>
+<td><code>ReferenceError: getResult is not defined</code></td>
+<td>Функция не перенесена в <code>form.js</code> или её имя написано иначе</td>
+</tr>
+<tr>
+<td>В сообщении <code>undefined</code></td>
+<td>Не хватает константы <code>unitValue</code> или <code>extraValue</code>; порядок аргументов другой</td>
+</tr>
+<tr>
+<td>В сообщении <code>item2</code> вместо названия</td>
+<td>Взято <code>select.value</code> вместо <code>.text</code></td>
+</tr>
+<tr>
+<td>Браузер показывает своё сообщение, а ваше нет</td>
+<td>Встроенная проверка не пропускает отправку; для опыта нужен <code>novalidate</code></td>
+</tr>
+<tr>
+<td>После опытов пустое поле снова проходит</td>
+<td>Забыли вернуть <code>required</code> или убрать <code>novalidate</code></td>
+</tr>
+</tbody>
+</table></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить</button>
+      <button type="button" id="site-update-reload" hidden>Обновить</button>
+    </footer>
+  </div>
+</body>
+</html>

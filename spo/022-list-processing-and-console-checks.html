@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Обработка списка записей и проверка функций в консоли — shkolar.site</title>
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/quotes.js"></script>
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">Обработка списка записей и проверка функций в консоли</li></ol></nav><h1 id="обработка-списка-записей-и-проверка-функций-в-консоли">Обработка списка записей и проверка функций в консоли</h1>
+<p>Сегодня лекция с демонстрацией: разберём, как программа обрабатывает не одну запись, а весь список карточек. Работаем со своим <code>catalog.js</code> из <a href="021-arrays-loops-and-objects.html">пары 21</a>; результат по-прежнему виден в консоли, страницу пока не меняем.</p>
+<p><strong>Что должно получиться:</strong> на своём массиве <code>catalog</code> вы умеете получать список названий, отбирать записи по условию, находить одну запись и проверять результат отдельной функцией. Данные карточек и расчёт пары 20 сохраняются.</p>
+<p>Рабочий ритм: <strong>изменить → сохранить → обновить страницу → проверить консоль</strong>.</p>
+<h2 id="1-проверьте-исходное-состояние">1. Проверьте исходное состояние</h2>
+<p>Откройте свою папку <code>VariantNN-web</code>. В <code>index.html</code> должно остаться одно подключение программы — <code>catalog.js</code>. В консоли (<code>F12</code> → <strong>Console / Консоль</strong>) после обновления страницы видны три блока карточек и расчёт выбранной записи.</p>
+<p><strong>Сделайте:</strong> убедитесь, что в <code>catalog.js</code> есть массив <code>catalog</code> из трёх объектов и работающая функция <code>getResult</code>. Если расчёт пропал, восстановите его по <a href="020-conditions-and-functions.html">паре 20</a> до продолжения.</p>
+<p><strong>Проверьте:</strong> <code>catalog.length</code> в консоли даёт <code>3</code>, а <code>catalog[0].name</code> — название первой карточки.</p>
+<p>Если в вашем варианте карточек другое число, работайте со своим количеством: все действия ниже не зависят от трёх.</p>
+<h2 id="2-список-записей-это-обычный-массив">2. Список записей — это обычный массив</h2>
+<p>Массив хранит значения по порядку, и каждая его запись — объект с полями <code>position</code>, <code>name</code>, <code>specs</code>, <code>description</code>. Пока массив небольшой, его можно проверить глазами.</p>
+<p>Опыт в консоли:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">table</span><span class="p">(</span><span class="nx">catalog</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">catalog</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+</code></pre></div>
+<p><code>console.table</code> выводит массив объектов таблицей: столбцы — свойства, строки — записи. В консоли браузера таблицу можно развернуть и отсортировать по столбцу.</p>
+<p><strong>Проверьте:</strong> в таблице три строки, столбцы совпадают с именами свойств, а <code>length</code> равно числу записей.</p>
+<p>Таблица помогает заметить пропущенное свойство или лишнюю запись. Это проверка данных, а не вывод для пользователя: пользователь таблицу не увидит.</p>
+<h2 id="3-получите-список-названий-map">3. Получите список названий: <code>map</code></h2>
+<p>Представьте, что из списка записей нужны только названия — например, чтобы заполнить список выбора в форме. Для этого есть метод массива <code>map</code>: он создаёт <strong>новый</strong> массив, где каждому элементу соответствует результат действия.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">item</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">);</span>
+</code></pre></div>
+<p>Запись <code>item =&gt; item.name</code> — короткая функция: «для каждой записи <code>item</code> взять её <code>name</code>». Стрелка <code>=&gt;</code> отделяет параметр от результата. То же действие полной записью (это отдельный пример, не добавляйте его рядом с коротким):</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">namesFull</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">item</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>Оба варианта делают одно и то же. Исходный <code>catalog</code> не меняется: <code>map</code> возвращает новый массив.</p>
+<p><strong>Сделайте:</strong> получите в консоли массив названий своих карточек и его длину.</p>
+<p><strong>Проверьте:</strong> <code>names.length</code> совпадает с <code>catalog.length</code>, а порядок названий совпадает с порядком карточек.</p>
+<p>Ошибка <code>item.name is not a function</code> означает лишние скобки после <code>name</code>; <code>undefined</code> в массиве — опечатку в имени свойства.</p>
+<h2 id="4-отберите-записи-по-условию-filter">4. Отберите записи по условию: <code>filter</code></h2>
+<p><code>filter</code> тоже создаёт новый массив, но оставляет только те элементы, для которых условие истинно.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">longNames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">item</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">8</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">longNames</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+</code></pre></div>
+<p>Условие <code>item.name.length &gt; 8</code> проверяется для каждой записи. Записи, где условие ложно, в результат не попадают. Пустой результат — это пустой массив <code>[]</code>, а не <code>undefined</code>.</p>
+<p><strong>Сделайте:</strong> отберите записи, в названии которых есть слово из вашей предметной области (например, часть названия первой карточки). Выведите число найденных и их названия.</p>
+<p><strong>Проверьте:</strong> при изменении условия число найденных записей меняется; исходный <code>catalog</code> остаётся прежним.</p>
+<h2 id="5-найдите-одну-запись-find">5. Найдите одну запись: <code>find</code></h2>
+<p><code>find</code> возвращает <strong>первую</strong> запись, подходящую под условие, или <code>undefined</code>, если подходящих нет.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">selectedName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Название вашей карточки&quot;</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">found</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">item</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">selectedName</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">found</span><span class="p">);</span>
+</code></pre></div>
+<p><code>===</code> сравнивает значения, <code>=</code> присваивает. Сравнение названий чувствительно к регистру и пробелам: <code>"Набор"</code> и <code>"набор"</code> — разные строки.</p>
+<p><strong>Сделайте:</strong> найдите свою карточку по точному названию, выведите её характеристику и описание. Затем измените <code>selectedName</code> на название с другой буквой и посмотрите результат.</p>
+<p><strong>Проверьте:</strong> при точном совпадении выводится объект, при неточном — <code>undefined</code>. Попытка сразу прочитать <code>found.name</code> у <code>undefined</code> даёт ошибку <code>TypeError</code>: сначала проверяют, что запись найдена.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">found</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">found</span><span class="p">.</span><span class="nx">specs</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Запись не найдена&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="6-оформите-обработку-списка-отдельной-функцией">6. Оформите обработку списка отдельной функцией</h2>
+<p>Теперь соберём знакомые действия в функцию, которая принимает <strong>массив</strong> и <strong>строку запроса</strong>, а возвращает массив подходящих записей.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">function</span><span class="w"> </span><span class="nx">filterByText</span><span class="p">(</span><span class="nx">items</span><span class="p">,</span><span class="w"> </span><span class="nx">query</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">normalized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">query</span><span class="p">.</span><span class="nx">trim</span><span class="p">().</span><span class="nx">toLowerCase</span><span class="p">();</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">normalized</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">items</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">items</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">item</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">().</span><span class="nx">includes</span><span class="p">(</span><span class="nx">normalized</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Разберём по частям:</p>
+<table>
+<thead>
+<tr>
+<th>Запись</th>
+<th>Что делает</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>items</code></td>
+<td>параметр-массив: любая коллекция записей</td>
+</tr>
+<tr>
+<td><code>query</code></td>
+<td>параметр-строка: то, что ввёл пользователь</td>
+</tr>
+<tr>
+<td><code>trim()</code></td>
+<td>убирает пробелы по краям</td>
+</tr>
+<tr>
+<td><code>toLowerCase()</code></td>
+<td>приводит к нижнему регистру, чтобы «Набор» и «набор» совпадали</td>
+</tr>
+<tr>
+<td><code>includes(...)</code></td>
+<td>проверяет, есть ли часть строки внутри названия</td>
+</tr>
+<tr>
+<td><code>return</code></td>
+<td>отдаёт результат и завершает функцию</td>
+</tr>
+</tbody>
+</table>
+<p>Пустой запрос возвращает все записи — это удобно для формы поиска: пользователь ещё ничего не ввёл, а список уже показан.</p>
+<p><strong>Сделайте:</strong> добавьте функцию в <code>catalog.js</code> после массива (до или после <code>getResult</code> — на ваш выбор, но не внутри другой функции). Проверьте её в консоли:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterByText</span><span class="p">(</span><span class="nx">catalog</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">).</span><span class="nx">length</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterByText</span><span class="p">(</span><span class="nx">catalog</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;часть названия&quot;</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterByText</span><span class="p">(</span><span class="nx">catalog</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;  ЧАСТЬ  &quot;</span><span class="p">).</span><span class="nx">length</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterByText</span><span class="p">(</span><span class="nx">catalog</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;нет такой записи&quot;</span><span class="p">));</span>
+</code></pre></div>
+<p><strong>Проверьте:</strong> пустой запрос — все записи; часть названия — нужные; другой регистр и лишние пробелы не мешают; несуществующий текст — <code>0</code>, а не ошибка.</p>
+<p><code>filterByText(...).length</code> считает найденные записи. Если консоль показывает <code>undefined</code>, функция ничего не вернула: проверьте <code>return</code>.</p>
+<h2 id="7-прогоните-свои-испытания">7. Прогоните свои испытания</h2>
+<p>Выполняйте по одному опыту: сохранить файл, обновить страницу, прочитать вывод, вернуть исходные данные.</p>
+<table>
+<thead>
+<tr>
+<th>Опыт</th>
+<th>Что изменить</th>
+<th>Что должно произойти</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Полный список</td>
+<td>Пустой запрос</td>
+<td>Возвращаются все записи, счётчик равен <code>catalog.length</code></td>
+</tr>
+<tr>
+<td>Часть названия</td>
+<td>Взять 3–4 буквы из начала названия</td>
+<td>Найдена хотя бы одна запись, лишних нет</td>
+</tr>
+<tr>
+<td>Другой регистр</td>
+<td>Записать запрос заглавными буквами</td>
+<td>Результат тот же</td>
+</tr>
+<tr>
+<td>Пробелы</td>
+<td>Добавить пробелы до и после запроса</td>
+<td>Результат не меняется</td>
+</tr>
+<tr>
+<td>Нет совпадений</td>
+<td>Ввести текст, которого нет в названиях</td>
+<td>Пустой массив, счётчик <code>0</code>, ошибки нет</td>
+</tr>
+<tr>
+<td>Другое свойство</td>
+<td>Сравнить по <code>specs</code> вместо <code>name</code></td>
+<td>Поиск идёт по характеристике; объясните, где это уместно</td>
+</tr>
+</tbody>
+</table>
+<p>После опыта с <code>specs</code> верните поиск по названию: в следующей паре поиск будет связан с полем ввода.</p>
+<h2 id="покажите-результат">Покажите результат</h2>
+<p>Покажите таблицу <code>catalog</code>, массив названий, результат <code>filterByText</code> для трёх запросов и найденную запись. Объясните, чем <code>map</code>, <code>filter</code> и <code>find</code> отличаются по результату: новый массив, отобранный массив, одна запись или <code>undefined</code>.</p>
+<p>Отдельный отчёт не нужен: достаточно открытого <code>catalog.js</code> и выполненного опыта по выбору преподавателя.</p>
+<h2 id="если-закончили-раньше">Если закончили раньше</h2>
+<ol>
+<li>Получите названия в обратном порядке: <code>catalog.map(item =&gt; item.name).reverse()</code>.</li>
+<li>Посчитайте, сколько записей содержит слово из вашей предметной области: <code>filterByText(catalog, "слово").length</code>.</li>
+<li>Напишите <code>findByPosition(items, position)</code>, которая находит запись по исходному номеру <code>position</code>. Проверьте номер, которого нет.</li>
+</ol>
+<p>Объясните, почему для поиска по номеру удобнее <code>find</code>, а не <code>filter</code>.</p>
+<h2 id="если-что-то-не-получилось">Если что-то не получилось</h2>
+<table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Где искать причину</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>catalog.map is not a function</code></td>
+<td><code>catalog</code> объявлен массивом <code>[]</code>, а не объектом <code>{}</code></td>
+</tr>
+<tr>
+<td><code>undefined</code> в массиве названий</td>
+<td>Опечатка в имени свойства: <code>item.nam</code></td>
+</tr>
+<tr>
+<td><code>filter</code> возвращает пустой массив</td>
+<td>Условие слишком строгое: проверьте регистр и лишние пробелы</td>
+</tr>
+<tr>
+<td><code>TypeError</code> при чтении найденной записи</td>
+<td><code>find</code> вернул <code>undefined</code>: сначала проверка <code>if (found)</code></td>
+</tr>
+<tr>
+<td><code>query.trim is not a function</code></td>
+<td>В функцию передан не текст, а число</td>
+</tr>
+<tr>
+<td>Функция ничего не вернула</td>
+<td>Нет <code>return</code> перед <code>items.filter(...)</code></td>
+</tr>
+</tbody>
+</table></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить</button>
+      <button type="button" id="site-update-reload" hidden>Обновить</button>
+    </footer>
+  </div>
+</body>
+</html>

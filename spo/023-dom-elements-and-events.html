@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>DOM и события: поиск элементов, изменение страницы и обработчики — shkolar.site</title>
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/quotes.js"></script>
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <figure class="site-quote" id="daily-quote">
+      <blockquote>
+        <details class="quote-disclosure" data-quote-disclosure>
+          <summary lang="la" data-quote-latin>Sapere aude.</summary>
+          <p class="quote-translation" data-quote-translation lang="ru">Решись быть мудрым.</p>
+        </details>
+      </blockquote>
+      <figcaption>
+        <cite><a data-quote-source href="https://www.thelatinlibrary.com/horace/epist1.shtml" title="Послания, I.2.40 (фрагмент)">Гораций</a></cite>
+      </figcaption>
+    </figure>
+  </header>
+  <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">DOM и события: поиск элементов, изменение страницы и обработчики</li></ol></nav><h1 id="dom-и-события-поиск-элементов-изменение-страницы-и-обработчики">DOM и события: поиск элементов, изменение страницы и обработчики</h1>
+<p>Сегодня лекция с демонстрацией: программа впервые меняет саму страницу, а не только консоль. Разберём, как найти элемент, заменить его текст, создать новый блок и отреагировать на действие пользователя.</p>
+<p><strong>Что должно получиться:</strong> на своей главной странице вы выводите число записей каталога, показываете список названий по нажатию кнопки и понимаете, как перехватывается отправка формы. Следующие две пары — практика на форме и каталоге.</p>
+<p>Рабочий ритм: <strong>изменить → сохранить → обновить страницу → проверить</strong>.</p>
+<h2 id="1-проверьте-исходное-состояние">1. Проверьте исходное состояние</h2>
+<p>Откройте свою папку <code>VariantNN-web</code>. В <code>index.html</code> подключён <code>catalog.js</code>; в консоли видны три блока карточек и расчёт выбранной записи; в <code>catalog.html</code> лежат три готовые карточки.</p>
+<p><strong>Сделайте:</strong> обновите главную страницу и убедитесь, что каталог и расчёт работают. Если что-то пропало, восстановите по <a href="021-arrays-loops-and-objects.html">паре 21</a>: сегодняшняя работа опирается на массив <code>catalog</code>.</p>
+<p><strong>Проверьте:</strong> в <code>index.html</code> есть заголовок первого уровня и текст о приложении, которые вы будете дополнять, а не заменять.</p>
+<h2 id="2-страница-это-дерево-элементов">2. Страница — это дерево элементов</h2>
+<p>Браузер читает HTML и строит из него <strong>DOM</strong> — объектную модель документа. Каждый тег становится элементом: у страницы есть корень <code>document</code>, внутри — <code>html</code>, <code>head</code>, <code>body</code>, а в <code>body</code> — ваши заголовки, абзацы, списки и карточки.</p>
+<p>JavaScript видит эту структуру и может её менять. Важно: изменения в DOM видны сразу на экране, но <strong>исходный файл HTML не меняется</strong>. После обновления страницы браузер снова строит DOM из файла, поэтому все изменения пропадают. Это нормально: программа создаёт их заново при каждом запуске.</p>
+<p><strong>Проверьте:</strong> откройте <code>index.html</code>, нажмите <code>F12</code>, выберите вкладку <strong>Elements / Элементы</strong>. Наведите курсор на строку с заголовком — браузер подсветит его на странице.</p>
+<h2 id="3-найдите-элемент-queryselector">3. Найдите элемент: <code>querySelector</code></h2>
+<p>Чтобы изменить элемент, его нужно сначала найти. Самый простой способ — <code>document.querySelector</code> с CSS-селектором в кавычках; тот же синтаксис вы уже использовали в стилях: <code>#status</code> — элемент с <code>id="status"</code>, <code>.card</code> — элемент с классом <code>card</code>.</p>
+<p>Добавьте в <code>index.html</code> после заголовка пустой абзац:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;status&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;status&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><code>id</code> должен быть уникальным на странице. <code>role="status"</code> подсказывает вспомогательным технологиям, что текст обновляется программно.</p>
+<p>Теперь в конце <code>catalog.js</code>:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#status&quot;</span><span class="p">);</span>
+<span class="nx">status</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Записей в каталоге: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Что произошло:</strong> <code>querySelector</code> вернул элемент, <code>textContent</code> заменил его текст. Строка собирается из подписи и числа — так же, как в консольных опытах прошлой пары.</p>
+<p><strong>Проверьте:</strong> обновите страницу — под заголовком появилось «Записей в каталоге: 3» (или ваше число). В консоли ошибки нет.</p>
+<p>Если браузер пишет <code>Cannot set properties of null</code>, элемент не найден: проверьте <code>id</code> в HTML и в селекторе, регистр букв и то, что скрипт подключён с <code>defer</code> и выполняется после построения страницы.</p>
+<h2 id="4-меняйте-текст-а-не-разметку">4. Меняйте текст, а не разметку</h2>
+<p><code>textContent</code> записывает <strong>текст</strong>: любые угловые скобки в нём останутся видимыми символами, а не превратятся в теги. Это безопасно, когда текст приходит из данных.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">catalog</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">name</span><span class="p">;</span>
+<span class="nx">status</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">first</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; — &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; записей&quot;</span><span class="p">;</span>
+</code></pre></div>
+<p>Свойство <code>innerHTML</code> вставляет разметку и выполняет её как HTML. Для названий карточек, введённых пользователем строк и любых данных используйте <code>textContent</code>: тогда случайные символы не сломают страницу. <code>innerHTML</code> допустим только для разметки, которую написали вы сами.</p>
+<p><strong>Сделайте:</strong> выведите в <code>#status</code> название первой карточки и число записей, соединив части строки.</p>
+<p><strong>Проверьте:</strong> название отображается точно так же, как в <code>catalog.html</code>, без лишних кавычек.</p>
+<h2 id="5-создайте-элементы-createelement-и-append">5. Создайте элементы: <code>createElement</code> и <code>append</code></h2>
+<p>Текст в готовый абзац — просто. Но список названий заранее в HTML не написан: его составляет программа. Элемент создают отдельно, заполняют и вставляют в нужное место.</p>
+<p>Добавьте в <code>index.html</code> кнопку и пустой список:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;show-names&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>Показать названия<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;names&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><code>type="button"</code> обязателен: без него кнопка внутри формы вела бы себя как кнопка отправки. Здесь формы нет, но привычку сохраняйте.</p>
+<p>Теперь в <code>catalog.js</code>:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">namesList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#names&quot;</span><span class="p">);</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">renderNames</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">namesList</span><span class="p">.</span><span class="nx">replaceChildren</span><span class="p">();</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">catalog</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;li&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">line</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">namesList</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">line</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Порядок действий:</p>
+<table>
+<thead>
+<tr>
+<th>Действие</th>
+<th>Запись</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Создать элемент списка</td>
+<td><code>document.createElement("li")</code></td>
+</tr>
+<tr>
+<td>Заполнить текстом</td>
+<td><code>line.textContent = item.name</code></td>
+</tr>
+<tr>
+<td>Вставить в конец списка</td>
+<td><code>namesList.append(line)</code></td>
+</tr>
+<tr>
+<td>Очистить список перед новым выводом</td>
+<td><code>namesList.replaceChildren()</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>replaceChildren()</code> без аргументов удаляет всё содержимое. Без очистки каждый вызов добавлял бы новые пункты к прежним.</p>
+<p><strong>Проверьте:</strong> вызовите <code>renderNames()</code> в консоли — в списке три пункта с вашими названиями. Вызовите ещё раз: пунктов по-прежнему три, а не шесть.</p>
+<h2 id="6-реагируйте-на-действие-addeventlistener">6. Реагируйте на действие: <code>addEventListener</code></h2>
+<p>Пока функция вызывается вручную из консоли. Пользователь так работать не будет: ему нужна кнопка. <strong>Событие</strong> — действие в браузере: клик, ввод, отправка формы, нажатие клавиши.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">showButton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#show-names&quot;</span><span class="p">);</span>
+<span class="nx">showButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">renderNames</span><span class="p">);</span>
+</code></pre></div>
+<p><code>addEventListener</code> принимает имя события строкой и функцию, которая выполнится при событии. Обратите внимание: <code>renderNames</code> передаётся <strong>без скобок</strong>. <code>renderNames()</code> вызвал бы функцию сразу, а нам нужна ссылка на неё.</p>
+<p><strong>Сделайте:</strong> нажмите кнопку. Список заполнится. Нажмите ещё раз — список обновится, дублей не будет.</p>
+<p><strong>Проверьте:</strong> до нажатия список пуст; после первого нажатия в нём три пункта; после второго — снова три.</p>
+<p>Функция-обработчик может быть и безымянной. Замените прежнюю строку <code>addEventListener</code> этой записью, иначе на клик будут реагировать два обработчика:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">showButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">status</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Список показан&quot;</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>Такой обработчик удобен для одного-двух действий. Если логика больше, выносите её в отдельную функцию с именем.</p>
+<h2 id="7-отправка-формы-submit-и-preventdefault">7. Отправка формы: <code>submit</code> и <code>preventDefault</code></h2>
+<p>Форма ведёт себя особо: по нажатию кнопки браузер собирает значения полей и переходит на адрес из <code>action</code> или перезагружает страницу с параметрами в адресной строке (у вашей формы <code>method="get"</code>). Программе это мешает: страница обновится, и сообщение исчезнет.</p>
+<p>Событие отправки перехватывают так. На странице с формой (<code>form.html</code>) создайте временный абзац <code>&lt;p id="status" role="status"&gt;&lt;/p&gt;</code> перед кнопкой отправки, подключите скрипт и добавьте обработчик:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#status&quot;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">form</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;form&quot;</span><span class="p">);</span>
+<span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;submit&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="w">  </span><span class="nx">status</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Форма отправлена&quot;</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>event.preventDefault()</code> отменяет стандартное поведение браузера: перехода и перезагрузки не будет. Дальше в обработчике можно прочитать поля и показать результат на странице — этим займёмся на практике; там временный абзац заменяется отдельным местом для сообщения.</p>
+<p><strong>Проверьте:</strong> добавьте обработчик на страницу с формой, заполните поля и нажмите кнопку. Адресная строка не меняется, страница не перезагружается, появляется сообщение.</p>
+<p>Осторожно: браузер сначала выполняет встроенную проверку (<code>required</code>, <code>type="number"</code>). Если поле пустое или заполнено неверно, событие <code>submit</code> не наступит и обработчик не выполнится.</p>
+<h2 id="8-прогоните-свои-опыты">8. Прогоните свои опыты</h2>
+<table>
+<thead>
+<tr>
+<th>Опыт</th>
+<th>Что изменить</th>
+<th>Что должно произойти</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Текст в абзаце</td>
+<td>Изменить подпись в <code>status.textContent</code></td>
+<td>Новый текст на странице, консоль без ошибок</td>
+</tr>
+<tr>
+<td>Число записей</td>
+<td>Добавить в массив четвёртую запись</td>
+<td>В абзаце новое число, список обновляется по кнопке</td>
+</tr>
+<tr>
+<td>Пустой список</td>
+<td>Вызвать <code>renderNames</code> дважды</td>
+<td>Три пункта, без дублей</td>
+</tr>
+<tr>
+<td>Неверный селектор</td>
+<td>Написать <code>"#statuss"</code></td>
+<td><code>null</code> в консоли и ошибка при <code>textContent</code>; вернуть правильный <code>id</code></td>
+</tr>
+<tr>
+<td>Клик до заполнения</td>
+<td>Нажать кнопку сразу после загрузки</td>
+<td>Список заполняется, ошибки нет</td>
+</tr>
+<tr>
+<td>Отправка формы</td>
+<td>Нажать кнопку формы</td>
+<td>Страница не перезагружается, сообщение появляется</td>
+</tr>
+</tbody>
+</table>
+<p>После каждого опыта возвращайте рабочий вариант: следующая пара начнётся с этого состояния.</p>
+<h2 id="покажите-результат">Покажите результат</h2>
+<p>Покажите число записей в абзаце, список названий по кнопке и перехват отправки формы. Объясните, где в DOM находится ваш абзац, чем <code>textContent</code> отличается от <code>innerHTML</code> и почему обработчик передаётся без скобок.</p>
+<p>Отдельный отчёт не нужен.</p>
+<h2 id="если-закончили-раньше">Если закончили раньше</h2>
+<ol>
+<li>Добавьте кнопку «Скрыть названия», которая очищает список через <code>replaceChildren()</code>.</li>
+<li>Сделайте счётчик нажатий: объявите <code>let clicks = 0;</code> и увеличивайте его в обработчике, выводя число в <code>#status</code>.</li>
+<li>Найдите все абзацы страницы через <code>document.querySelectorAll("p")</code> и выведите их количество в консоль.</li>
+</ol>
+<p>Объясните, почему <code>querySelectorAll</code> возвращает все совпадения, а <code>querySelector</code> — только первое.</p>
+<h2 id="если-что-то-не-получилось">Если что-то не получилось</h2>
+<table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Где искать причину</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cannot set properties of null</code></td>
+<td>Селектор не совпал с <code>id</code> или элемента ещё нет в HTML</td>
+</tr>
+<tr>
+<td>Обработчик не срабатывает</td>
+<td>Кнопка вне формы? <code>type="button"</code>? Скрипт подключён с <code>defer</code>?</td>
+</tr>
+<tr>
+<td>Функция выполнилась сразу</td>
+<td>В <code>addEventListener</code> переданы скобки: <code>renderNames()</code></td>
+</tr>
+<tr>
+<td>Каждый клик добавляет пункты</td>
+<td>Нет <code>replaceChildren()</code> перед выводом</td>
+</tr>
+<tr>
+<td>Страница перезагружается</td>
+<td>Забыт <code>event.preventDefault()</code> или ошибка в обработчике</td>
+</tr>
+<tr>
+<td>Текст виден как теги</td>
+<td>Использован <code>textContent</code> там, где нужна разметка, или наоборот</td>
+</tr>
+</tbody>
+</table></main>
+    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-check">Проверить</button>
+      <button type="button" id="site-update-reload" hidden>Обновить</button>
+    </footer>
+  </div>
+</body>
+</html>
