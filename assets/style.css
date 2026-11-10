@@ -36,6 +36,7 @@
   margin: 0;
   min-width: 0;
   font-size: clamp(1.125rem, 3.5vw, 1.5rem);
+  text-align: center;
 }
 .calendar-controls button[hidden], .calendar-static-nav[hidden] { display: none; }
 .calendar-controls button {
@@ -316,15 +317,6 @@ h2,
 h3 {
   line-height: 1.25;
   color: #172c46;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
 }
 
 a {
