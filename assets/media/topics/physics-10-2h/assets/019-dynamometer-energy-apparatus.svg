@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+<title id="title">Опыт с пружиной динамометра</title>
+<desc id="desc">Один прибор показан в два момента. Слева груз поддерживают выше равновесия при небольшом растяжении пружины. Справа первый нижний разворот. Координаты одной метки на грузе y1 и y2 измеряют по неподвижной линейке; h равно их разности. Скорости в обоих положениях равны нулю.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#176587"/></marker><pattern id="ruler" width="38" height="20" patternUnits="userSpaceOnUse"><path d="M0 0H17" stroke="#17324a" stroke-width="2"/></pattern></defs>
+<rect width="760" height="560" rx="18" fill="#f5f9fc"/>
+<g font-family="Arial, sans-serif" fill="#17324a" font-size="23" text-anchor="middle">
+<text x="202" y="34">Начальное положение</text><text x="554" y="34">Первый нижний разворот</text>
+<path d="M80 75H665" stroke="#17324a" stroke-width="10"/>
+<g fill="none" stroke="#087d71" stroke-width="4"><path d="M200 77V103L181 113L219 125L181 137L219 149L181 161L219 173L200 185V270"/><path d="M552 77V103L533 124L571 147L533 170L571 193L533 216L571 239L552 261V350"/></g>
+<g fill="#e4a04e" stroke="#81541f" stroke-width="3"><rect x="165" y="270" width="70" height="70" rx="7"/><rect x="517" y="350" width="70" height="70" rx="7"/></g>
+<g stroke="#17324a" stroke-width="3"><path d="M169 305H231M521 385H583"/></g>
+<g fill="#fff" stroke="#466579" stroke-width="2"><rect x="290" y="115" width="38" height="320"/><rect x="642" y="115" width="38" height="320"/></g>
+<rect x="290" y="115" width="38" height="320" fill="url(#ruler)"/><rect x="642" y="115" width="38" height="320" fill="url(#ruler)"/>
+<g stroke="#176587" stroke-width="2" stroke-dasharray="6 4"><path d="M236 305H410M585 385H680M410 305H680"/></g>
+<path d="M440 313V377" stroke="#176587" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="468" y="353">h</text>
+<text x="355" y="312">y₁</text><text x="707" y="392">y₂</text>
+<text x="200" y="372">Поддержать снизу</text><text x="200" y="403">F₁ &lt; P, v = 0</text><text x="552" y="452">F₂ &gt; P, v = 0</text>
+<text x="380" y="477" font-size="18">Схема: корпус динамометра не показан</text><text x="380" y="505">Высоту измеряют по метке на грузе</text><text x="380" y="538" font-size="20">Силы F₁ и F₂ считывают при удержании в этих положениях</text>
+</g></svg>
