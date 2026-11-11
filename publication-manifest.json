@@ -1572,6 +1572,11 @@
       "title": "Поступательное и вращательное движение абсолютно твёрдого тела. Условия равновесия"
     },
     {
+      "source": "topics/physics-10-2h/019-rubber-cord-work-and-mechanical-energy-lab.md",
+      "output": "topics/physics-10-2h/rubber-cord-work-and-mechanical-energy-lab.html",
+      "title": "Лабораторная работа «Работа силы и изменение механической энергии»"
+    },
+    {
       "source": "topics/physics-10-2h/004-uniform-rectilinear-motion.md",
       "output": "topics/physics-10-2h/uniform-rectilinear-motion.html",
       "title": "Равномерное прямолинейное движение"
@@ -2278,6 +2283,8 @@
     "topics/physics-10-2h/assets/015-momentum-reversal.svg",
     "topics/physics-10-2h/assets/016-energy-and-stopping-distance.svg",
     "topics/physics-10-2h/assets/016-work-angle-and-sign.svg",
+    "topics/physics-10-2h/assets/019-rubber-cord-apparatus.svg",
+    "topics/physics-10-2h/assets/019-unloading-work-graph.svg",
     "topics/physics-11-2h/assets/017-current-and-power.svg",
     "topics/physics-11-2h/assets/017-current-cycle.svg",
     "topics/physics-11-2h/assets/017-rms-comparison.svg",
@@ -2292,7 +2299,7 @@
     "topics/physics-9-3h/assets/026-lever-and-force-arm.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "30d1ace76ed5333a223b7858b4a5f1ba00e5c133ebad882266acd40d30264c20",
+  "source_digest": "92a39305f72132f31b0119a824834e17e9b6ecf8841c1dbfe7be3dc49d0be504",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2365,6 +2372,8 @@
     "assets/media/topics/physics-10-2h/assets/015-momentum-reversal.svg": "cf8e13653d41a27c77c31271ed588296b646101c1e2103715850a7a7014d5064",
     "assets/media/topics/physics-10-2h/assets/016-energy-and-stopping-distance.svg": "f2e6ef3ce1966e3bd54100e0766064d5ecaa05134dd738f5460615a39df1bf4f",
     "assets/media/topics/physics-10-2h/assets/016-work-angle-and-sign.svg": "1cca3afae4dd566d16fe08556db6eba5ff8908e5146b699dc086e351860b7c75",
+    "assets/media/topics/physics-10-2h/assets/019-rubber-cord-apparatus.svg": "3aa6d429bab1b468583c40b511840dece95e52f54bf70972cb61c023b336d44b",
+    "assets/media/topics/physics-10-2h/assets/019-unloading-work-graph.svg": "3a4d6c56b4e84a0385323798cd0a5c2c7c6205a570ded42142f3d2b7116e60a1",
     "assets/media/topics/physics-11-2h/assets/017-current-and-power.svg": "fc8afae33eece98aaf2b897769290f9b3ba4e537e91cb2aa9a2823a4b5ac97df",
     "assets/media/topics/physics-11-2h/assets/017-current-cycle.svg": "526e031b525e39a2ceb35ad8c1adf467cf70fa1056a825aa574038711dcdfc7d",
     "assets/media/topics/physics-11-2h/assets/017-rms-comparison.svg": "58974c7e9c7cec5dc1c4ecc179b71b240965a7db951089c39886e3a0134516df",
@@ -2402,7 +2411,7 @@
     "schedules/personal/2026-11-09.html": "00da8846979aba31f75a9c244b49dbdbaccf3e333d2d4a32774aca25ce25ecd9",
     "schedules/personal/2026-11-10.html": "430ae9e47d6f3805e0a3a7d74001a7eb1b0d7b6b20f7292a3a26febed75c3d9e",
     "schedules/personal/2026-11-11.html": "40e375471f79aace6a4d70eb91cb2d42719d88fa9ff4c17e46d054711963b459",
-    "schedules/personal/2026-11-12.html": "812cf179039e2b2cdf959dcacbf0f43dfcd0784bb83beedea52edb0bf87c1f3a",
+    "schedules/personal/2026-11-12.html": "55fbf5ba15d9837a88d6f2811809b6d7efd5fc4e02501f081c8fb35ecbf8451e",
     "schedules/personal/2026-11-14.html": "cd94fe4ef24bcaf974c4396353ddcbefc736a42c4d9fcaae7184f648c9233916",
     "spo/001-mobile-app-types.html": "ed7361c0d4bcb38b174ffd82d55dffad69a6bb5c00b8586f7a21ae4378bba4c2",
     "spo/002-technology-choice-and-diagnostics.html": "37376422f02a5da0d5f726e194858df17decb222f3cd27b70ae3f2d277702307",
@@ -3067,7 +3076,7 @@
     "spo/assets/021-38.html": "d7d0447f670997aee971108433ff45978a170ad815898fe6fc37ee56bd881126",
     "spo/assets/021-39.html": "489360fe94c4e6522be0ee78b7af46a4bf3841d0119d3af1738970eb5c3b35b4",
     "spo/index.html": "e75f7057ad18118fe3becfc35fb0642f0bf78c1344af9f5e1369d28907522655",
-    "sw.js": "2007a1f165ec9951cc4d7d05202cb2be5aac7f02633f2782e2641275b96d194d",
+    "sw.js": "fc13bdf227030e9a9798f7bb51331ab61fba491db421ce643fdf62d7fe8c840f",
     "topics/index.html": "e058ea20dd33036c1b527de67ed0125aa4da298b3ba6b4079dc3b1b7aae04652",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "bd441d3daa6d42809fb2d976d7aa44bae4de5fd300a67efbefec6098fdb76c22",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "75eb6a6fc251c559cf62d97b6e3b24e86eac463cf1747a0491e827f11783b57e",
@@ -3082,10 +3091,11 @@
     "topics/physics-10-2h/elastic-force-hookes-law-and-weight.html": "ec1dcc9cdec37e9b4ecbe2f488d1d04430053af5fb83262f0d3de9173bd03045",
     "topics/physics-10-2h/friction-coefficient-and-fluid-resistance.html": "90060958909f331861ad5a74772516e4ba3b474daa749b00bdfca1dd2a019320",
     "topics/physics-10-2h/galilean-relativity-inertial-frames-and-newtons-first-law.html": "0b05b4150813d5160b27314ed37efd2dbebf7acc27b755abb151ba4a935a75ab",
-    "topics/physics-10-2h/index.html": "da7c57a9ec9b63699e0b4bbb87822a53ef09c22e0c06a46ac11d4476889a85a6",
+    "topics/physics-10-2h/index.html": "0877b2a75a205ea1661f40ffd4487ea1e2de1878c7cadf83176fbf252f5a518a",
     "topics/physics-10-2h/mechanical-motion-relativity-displacement-velocity-and-acceleration.html": "a82a0b652859cf673f0c91d6de7647c0e388335d67e10a09eb83b0b1eb981017",
     "topics/physics-10-2h/momentum-impulse-conservation-and-jet-propulsion.html": "889c23c355f8352c462811ca0edd84f8046f8fb454de8a4063c909b1b90d0587",
     "topics/physics-10-2h/rigid-body-motion-and-equilibrium.html": "cc99640c4f208e81264d1505eb01d15bf5b1a45bb55c0627fd2f17b6277264c5",
+    "topics/physics-10-2h/rubber-cord-work-and-mechanical-energy-lab.html": "73608d1841bd1554e20c2e1015053f8a9224d21a762d96eca0cd241083631b8b",
     "topics/physics-10-2h/uniform-rectilinear-motion.html": "914f3e4c58a594226dfcb486af8f43c48c4eae4a02b9ffc883e3a782611aea9f",
     "topics/physics-10-2h/uniformly-accelerated-rectilinear-motion.html": "565f8b3f5440c1a9f089e9e1ea40875fd31e103c8ab1e39be562b83a62e11d5b",
     "topics/physics-10-2h/universal-gravitation-and-first-cosmic-speed.html": "98214767d7c1d4f2800d836411eb80fb9283fee2c110cea73d587ee020863d05",
@@ -3149,5 +3159,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "1514e5ee254339d56738cbf4b2786a335a6f90d9a2e646e06908bf4ee0dd65f2",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "6382bfeeb7f37399522053bbc178198f0ad13de96b5a085edec737cc52bbfd18"
   },
-  "manifest_digest": "d40beee99ab2a29374df3e7fad328049dffe1a0ffde4bae1664825828393d03b"
+  "manifest_digest": "5016764976ec65cd9723dbc7d5b00ecc89521e989d68d3ec3ac6d79337a337e9"
 }

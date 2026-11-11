@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="570" viewBox="0 0 780 570" role="img" aria-labelledby="title desc">
+<title id="title">Груз на резиновом жгуте</title><desc id="desc">Три состояния: без груза, перед отпусканием и первый верхний разворот. Жгут остаётся натянутым, высота подъёма равна разности длин.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#15678a"/></marker></defs>
+<rect width="780" height="570" rx="18" fill="#f5f9fc"/>
+<g font-family="Arial, sans-serif" font-size="23" fill="#17324a" text-anchor="middle">
+<text x="132" y="38">Без груза</text><text x="385" y="38">Перед отпусканием</text><text x="645" y="38">Первый верхний</text><text x="645" y="66">разворот</text>
+<path d="M65 92H735" stroke="#17324a" stroke-width="10"/>
+<g fill="none" stroke="#258c82" stroke-width="9" stroke-linecap="round">
+<path d="M132 96 Q120 119 132 142 Q144 165 132 188 Q120 211 132 234"/>
+<path d="M385 96 Q373 139 385 182 Q397 225 385 268 Q373 311 385 354 Q397 385 385 416"/>
+<path d="M645 96 Q633 130 645 164 Q657 198 645 232 Q633 266 645 300"/>
+</g>
+<g stroke="#87a3b7" stroke-width="2" stroke-dasharray="6 6"><path d="M90 234H185"/><path d="M340 416H575"/><path d="M600 300H735"/><path d="M465 300H600"/></g>
+<g fill="#d5e7f6" stroke="#15678a" stroke-width="3"><rect x="349" y="416" width="72" height="60" rx="8"/><rect x="609" y="300" width="72" height="60" rx="8"/></g>
+<text x="385" y="454">m</text><text x="645" y="338">m</text>
+<g fill="none" stroke="#15678a" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)"><path d="M185 107V223"/><path d="M448 107V405"/><path d="M719 107V289"/><path d="M518 311V405"/></g>
+<g fill="#15678a"><text x="212" y="175">L₀</text><text x="478" y="220">Lн</text><text x="746" y="200">Lв</text><text x="546" y="366">h</text></g>
+<text x="385" y="508">v = 0</text><text x="645" y="394">v = 0</text>
+<text x="390" y="547" font-size="25">h = Lн − Lв; жгут натянут в обоих положениях</text>
+</g></svg>
