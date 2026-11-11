@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="580" viewBox="0 0 840 580" role="img" aria-labelledby="title desc">
+<title id="title">Нагревание и плавление одного килограмма льда</title>
+<desc id="desc">По вертикали температура, по горизонтали накопленная полученная теплота. От A до B лёд нагревается от минус 20 до нуля градусов, получая 42 килоджоуля. От B до C плавится при нуле, получая ещё 340 килоджоулей. От C до D вода нагревается до 20 градусов, получая ещё 84 килоджоуля. Координаты по теплоте: 0, 42, 382, 466 килоджоулей.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#17324a"/></marker></defs>
+<rect width="840" height="580" rx="18" fill="#f5f9fc"/>
+<g font-family="Arial, sans-serif" fill="#17324a" font-size="23">
+<text x="420" y="37" text-anchor="middle">1 кг льда: от −20 °C до воды при +20 °C</text>
+<g stroke="#d4e0e8" stroke-width="1"><path d="M100 200H740M100 300H740M100 400H740"/></g>
+<path d="M100 430V100M100 430H755" fill="none" stroke="#17324a" stroke-width="3" marker-end="url(#arrow)"/><path d="M100 430V100" fill="none" stroke="#17324a" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="29" y="112">t, °C</text><text x="65" y="208" text-anchor="end">20</text><text x="65" y="308" text-anchor="end">0</text><text x="65" y="408" text-anchor="end">−20</text>
+<g stroke="#7b94a6" stroke-width="2" stroke-dasharray="5 5"><path d="M150.4 300V430M558.4 300V430M659.2 200V430"/></g>
+<path d="M100 400L150.4 300" stroke="#2877c0" stroke-width="5" fill="none"/><path d="M150.4 300H558.4" stroke="#087d71" stroke-width="6"/><path d="M558.4 300L659.2 200" stroke="#d77722" stroke-width="5" fill="none"/>
+<g fill="#17324a"><circle cx="100" cy="400" r="6"/><circle cx="150.4" cy="300" r="6"/><circle cx="558.4" cy="300" r="6"/><circle cx="659.2" cy="200" r="6"/></g>
+<text x="116" y="397">A</text><text x="144" y="279">B</text><text x="551" y="279">C</text><text x="668" y="195">D</text>
+<text x="354" y="257" text-anchor="middle" fill="#087d71">Плавление при 0 °C</text>
+<g font-size="20" text-anchor="middle"><text x="100" y="457">0</text><text x="150.4" y="457">42</text><text x="558.4" y="457">382</text><text x="659.2" y="457">466</text></g>
+<text x="420" y="491" text-anchor="middle">Полученная теплота Q, кДж</text>
+<text x="420" y="529" text-anchor="middle" font-size="21">AB — лёд · BC — лёд и вода · CD — вода</text>
+<text x="420" y="560" text-anchor="middle" font-size="19">На оси Q отложена теплота, а не время</text>
+</g></svg>
