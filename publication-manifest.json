@@ -2298,7 +2298,7 @@
     "topics/physics-9-3h/assets/026-lever-and-force-arm.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "8a6c491860eded8d5a3ecd47711b1cfa4ecbf6843f0c6b289457e617a3b6e1da",
+  "source_digest": "ac25f220af4c1702b07aa5edcd6aaf71c15c08f22afc2b8833bf6828572b11f3",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2409,7 +2409,7 @@
     "schedules/personal/2026-11-09.html": "00da8846979aba31f75a9c244b49dbdbaccf3e333d2d4a32774aca25ce25ecd9",
     "schedules/personal/2026-11-10.html": "430ae9e47d6f3805e0a3a7d74001a7eb1b0d7b6b20f7292a3a26febed75c3d9e",
     "schedules/personal/2026-11-11.html": "40e375471f79aace6a4d70eb91cb2d42719d88fa9ff4c17e46d054711963b459",
-    "schedules/personal/2026-11-12.html": "93d207f6a4b2368c336440e4526441d912d63d4610b3bfddf16d61a676b1d243",
+    "schedules/personal/2026-11-12.html": "5ee584136997cf921ad38bf0a486b0b97cb2e9438de3d1eeb169e91648c11957",
     "schedules/personal/2026-11-14.html": "cd94fe4ef24bcaf974c4396353ddcbefc736a42c4d9fcaae7184f648c9233916",
     "spo/001-mobile-app-types.html": "ed7361c0d4bcb38b174ffd82d55dffad69a6bb5c00b8586f7a21ae4378bba4c2",
     "spo/002-technology-choice-and-diagnostics.html": "37376422f02a5da0d5f726e194858df17decb222f3cd27b70ae3f2d277702307",
@@ -3074,7 +3074,7 @@
     "spo/assets/021-38.html": "d7d0447f670997aee971108433ff45978a170ad815898fe6fc37ee56bd881126",
     "spo/assets/021-39.html": "489360fe94c4e6522be0ee78b7af46a4bf3841d0119d3af1738970eb5c3b35b4",
     "spo/index.html": "e75f7057ad18118fe3becfc35fb0642f0bf78c1344af9f5e1369d28907522655",
-    "sw.js": "ccc124006a494e12ef9aae6232c722191c2ccf738bf593f7066b0c60d3e8578b",
+    "sw.js": "4e6961dff923d1d1472ac682d271e06e5117e8e905bebbe95f33cb1bfc844842",
     "topics/index.html": "e058ea20dd33036c1b527de67ed0125aa4da298b3ba6b4079dc3b1b7aae04652",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "bd441d3daa6d42809fb2d976d7aa44bae4de5fd300a67efbefec6098fdb76c22",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "75eb6a6fc251c559cf62d97b6e3b24e86eac463cf1747a0491e827f11783b57e",
@@ -3132,7 +3132,7 @@
     "topics/physics-8-2h/heat-exchange-when-mixing-water-lab.html": "35abc61be764c481f82f0b1aaedb7d4d05cf2bc4d6ae5099f8eeefe6aad00068",
     "topics/physics-8-2h/heat-quantity-and-specific-heat-capacity.html": "011a7921206d43892f6cb24a8863ebf3581d9e0d397c7b87c07dc5562803b53c",
     "topics/physics-8-2h/heating-and-cooling-heat-calculations.html": "b51a4789cd548bcd3baf901358988daf2ad74396cee13a74e3627a1aa3273369",
-    "topics/physics-8-2h/index.html": "89620fb0fb339f87f8243bf359788a570c731bfaa8f31057a1d0d8f332fe111a",
+    "topics/physics-8-2h/index.html": "72ebce9584170b5539a5ed76d6cd660e9d977632d2854d6ccec82d0d227ca40d",
     "topics/physics-8-2h/internal-energy-and-ways-of-changing-it.html": "4d22296a77e2fc86fe0225cb344b089ebd6cb22777443267f2be2e27117c1506",
     "topics/physics-8-2h/mass-and-size-of-atoms-and-molecules.html": "7a9ad4591dfd355439447d3b5cb94cda594e67023d27d2cf6ee6f3856a1f5c70",
     "topics/physics-8-2h/properties-of-states-of-matter-from-molecular-kinetic-theory.html": "65b51f517f87f33f7a2bdcea04c7479238c4aa79255618ffc5ddf8aaa36985a8",
@@ -3157,5 +3157,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "1514e5ee254339d56738cbf4b2786a335a6f90d9a2e646e06908bf4ee0dd65f2",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "6382bfeeb7f37399522053bbc178198f0ad13de96b5a085edec737cc52bbfd18"
   },
-  "manifest_digest": "a270a06bfea9da9b45b8030f15187540cd0a2adc377a167f806849e616cfc2af"
+  "manifest_digest": "704dc9905043421ce27607b8013cbbf8b2a12fd66103dfc621cbbeb0d184948e"
 }
