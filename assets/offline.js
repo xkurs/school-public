@@ -11,7 +11,6 @@
   if (root.origin !== page.origin) return;
   const panel = document.getElementById?.("site-updates");
   const status = document.getElementById?.("site-update-status");
-  const check = document.getElementById?.("site-update-check");
   const reload = document.getElementById?.("site-update-reload");
   const savedPage = Boolean(document.querySelector?.('meta[name="school-offline"]'));
   let registration;
@@ -38,7 +37,7 @@
       catch { finish(null); }
     });
   }
-  async function showState(prefix = "") {
+  async function showState() {
     const epoch = ++statusEpoch;
     if (registration?.installing) {
       say("Сохраняем обновление для чтения без интернета. Предыдущая копия остаётся доступной.");
@@ -46,7 +45,7 @@
     }
     if (registration?.waiting) {
       if (reload) reload.hidden = false;
-      say("Обновление загружено и ожидает включения. Нажмите «Обновить». Пока используется прежняя офлайн-копия.");
+      say("Обновление загружено и ожидает включения. Нажмите «Обновить версию». Пока используется прежняя офлайн-копия.");
       return;
     }
     const state = await ask(registration?.active);
@@ -56,7 +55,7 @@
       : "Готовность офлайн-копии пока не подтверждена.";
     const network = navigator.onLine === false || savedPage
       ? "Открыта сохранённая страница; она может быть устаревшей. Для свежих материалов нужны связь и обновление страницы. " : "";
-    say(network + prefix + saved + (changed ? " Доступна новая копия — обновите страницу, когда удобно." : ""));
+    say(network + saved + (changed ? " Доступна новая копия — обновите страницу, когда удобно." : ""));
   }
   function watch(worker) {
     if (!worker || watched.has(worker)) return;
@@ -64,7 +63,7 @@
     worker.addEventListener("statechange", () => {
       if (worker.state === "redundant") {
         ++statusEpoch;
-        say("Не удалось сохранить обновление. Прежняя копия сохранена; повторите проверку при устойчивой связи.");
+        say("Не удалось сохранить обновление. Прежняя копия сохранена; проверка повторится автоматически при устойчивой связи.");
       } else {
         activateWaiting();
         showState();
@@ -76,7 +75,7 @@
     // a previous failed attempt. The worker checks readiness before accepting.
     registration?.waiting?.postMessage({ type: "SKIP_WAITING" });
   }
-  async function update(manual = false) {
+  async function update(force = false) {
     if (!registration || checking) return;
     // Registration already checks on page load. Avoid overlapping that install
     // with another update, especially when several tabs regain connectivity.
@@ -85,28 +84,24 @@
       await showState();
       return;
     }
-    if (!manual && Date.now() - lastCheck < 60000) return;
+    if (!force && Date.now() - lastCheck < 60000) return;
     lastCheck = Date.now();
     if (navigator.onLine === false) { await showState(); return; }
     checking = true;
-    if (check) check.disabled = true;
     ++statusEpoch;
     say("Проверяем обновления…");
     try {
       await registration.update();
       watch(registration.installing);
       activateWaiting();
-      if (manual && reload) reload.hidden = false;
-      await showState(manual ? "Проверка выполнена. " : "");
+      await showState();
     } catch {
       ++statusEpoch;
-      say("Не удалось проверить обновления. Сохранённая копия может быть устаревшей; повторите проверку при устойчивой связи.");
+      say("Не удалось проверить обновления. Сохранённая копия может быть устаревшей; проверка повторится автоматически при устойчивой связи.");
     } finally {
       checking = false;
-      if (check) check.disabled = false;
     }
   }
-  check?.addEventListener("click", () => update(true));
   reload?.addEventListener("click", () => {
     activateWaiting();
     location.reload();
