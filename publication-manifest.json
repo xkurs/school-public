@@ -2314,7 +2314,7 @@
     "topics/physics-9-3h/assets/026-lever-and-force-arm.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "ab474f770806412e097d21ba3e6519153ec8aa121b5a70fcad2a6941c45e543e",
+  "source_digest": "b5bba9840945a14a0e34301e959240a078c96fe69b2a6a9336f5fe87dda4e54b",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -3177,5 +3177,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "0aa5cb8986e9e96b5ba21efa340a4a51100a070f317e1cff16e0a0a4ec9833a7",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "5151c0fb3c7f71dc677db5fda560c389a687553b8efc8359e6ababeb1760ecca"
   },
-  "manifest_digest": "ea3987b0f0756a212f3488efbfdf338e8c638dad662412e14a99bff9537df601"
+  "manifest_digest": "1586d862068f5ad914051fa18ade4e7e8926f5d58940db800c8718f7e770111c"
 }
