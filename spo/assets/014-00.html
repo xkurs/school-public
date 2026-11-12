@@ -163,11 +163,11 @@
 <p>После формы ссылка «Назад» ведёт на <code>index.html</code>. На главной добавьте ссылку «Открыть форму заказа» → <code>form.html</code>. Меню на всех трёх страницах содержит по две ссылки только на другие страницы; состав указан в этапе 1 ниже.</p>
 <p>Проверьте отказ при пустом товаре, пустом количестве, нуле и дроби. Затем выберите электрочайник, количество 3, оставьте комментарий пустым, доставку включённой, установку выключенной, срочность 3. После отправки ожидаются параметры <code>item=kettle&amp;quantity=3&amp;notes=&amp;extra1=yes&amp;level=3</code>; снятый <code>extra2</code> не передаётся. GET показывает введённое в адресе, но не сохраняет и не обрабатывает заказ. Ниже — поэтапная сборка и самостоятельные испытания.</p>
 <p>Вернуться к <a href="../014-html-form.html">объяснению пары 14</a>.</p></main>
-    <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
-      <p id="site-update-status" role="status" aria-live="polite"></p>
-      <button type="button" id="site-update-check">Проверить</button>
-      <button type="button" id="site-update-reload" hidden>Обновить</button>
-    </footer>
   </div>
+  <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+    <p id="site-update-status" role="status" aria-live="polite"></p>
+    <button type="button" id="site-update-check">Проверить</button>
+    <button type="button" id="site-update-reload" hidden>Обновить</button>
+  </footer>
 </body>
 </html>
