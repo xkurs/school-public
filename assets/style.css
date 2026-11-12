@@ -546,15 +546,10 @@ aside.callout {
 
 .site-updates {
   text-align: center;
-  padding: 5rem 1rem 2rem;
-  background: radial-gradient(ellipse at 50% 120%, #168bff 0%, transparent 54%),
-    linear-gradient(0deg, #061b36 0,
-      #07346b calc(100% - 5rem),
-      #168bff calc(100% - 3rem),
-      #c7e5ff calc(100% - 1rem),
-      #f2f8ff 100%);
-  background-color: #061b36;
-  color: #fff;
+  width: min(72rem, calc(100% - 2rem));
+  margin: .5rem auto 1.5rem;
+  padding: .5rem 1rem;
+  color: #34475a;
   font-size: 0.9rem;
   overflow-wrap: anywhere;
 }
