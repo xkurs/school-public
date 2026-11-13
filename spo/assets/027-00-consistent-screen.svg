@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc"><title id="title">Поле, карточки и подпись должны соответствовать запросу</title><desc id="desc">Слева мини и одна карточка: правильно. Справа мини и все три карточки: поле восстановлено, вывод не обновлён.</desc><rect width="1000" height="600" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:25px} .small{font-size:22px}.code{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:23px}.heading{font-size:31px;font-weight:600}</style>
+<text x="35" y="50" class="heading">Одного текста в поле недостаточно</text>
+<path d="M 43 87 Q 245.0 83 450 88 Q 457 295.0 453 502 Q 245.0 507 38 504 Q 33 295.0 43 87 Z" fill="#fff" stroke="#327651" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="55" y="128" class="heading" style="fill:#327651">Всё согласовано</text>
+<path d="M 63 154 Q 245.0 150 430 155 Q 437 178.5 433 202 Q 245.0 207 58 204 Q 53 178.5 63 154 Z" fill="#f5f8fc" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="70" y="187">Поиск: мини</text>
+<path d="M 63 230 Q 245.0 226 430 231 Q 437 254.0 433 277 Q 245.0 282 58 279 Q 53 254.0 63 230 Z" fill="#fff4db" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="70" y="263">Набор Мини</text>
+<text x="55" y="475">Показано: 1 из 3</text>
+<path d="M 553 87 Q 755.0 83 960 88 Q 967 295.0 963 502 Q 755.0 507 548 504 Q 543 295.0 553 87 Z" fill="#fff" stroke="#b04c41" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="565" y="128" class="heading" style="fill:#b04c41">Есть противоречие</text>
+<path d="M 573 154 Q 755.0 150 940 155 Q 947 178.5 943 202 Q 755.0 207 568 204 Q 563 178.5 573 154 Z" fill="#f5f8fc" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="580" y="187">Поиск: мини</text>
+<path d="M 573 230 Q 755.0 226 940 231 Q 947 254.0 943 277 Q 755.0 282 568 279 Q 563 254.0 573 230 Z" fill="#fff4db" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="580" y="263">Набор Старт</text>
+<path d="M 573 295 Q 755.0 291 940 296 Q 947 319.0 943 342 Q 755.0 347 568 344 Q 563 319.0 573 295 Z" fill="#fff4db" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="580" y="328">Набор Мини</text>
+<path d="M 573 360 Q 755.0 356 940 361 Q 947 384.0 943 407 Q 755.0 412 568 409 Q 563 384.0 573 360 Z" fill="#fff4db" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="580" y="393">Набор Про</text>
+<text x="565" y="475">Показано: 3 из 3</text>
+<text x="35" y="555">Проверьте вместе: поле + карточки + счётчик.</text>
+</svg>

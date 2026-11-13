@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 665" role="img" aria-labelledby="title desc"><title id="title">Как запрос проходит через хранилище</title><desc id="desc">Сохранение: объект, stringify, строка, setItem, localStorage. Загрузка: localStorage, getItem, строка, parse, объект.</desc><rect width="1000" height="665" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:25px} .small{font-size:22px}.code{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:23px}.heading{font-size:31px;font-weight:600}</style>
+<text x="35" y="48" class="heading">Сохраняем сейчас — читаем при открытии</text>
+<path d="M 43 102 Q 160.0 98 280 103 Q 287 175.0 283 247 Q 160.0 252 38 249 Q 33 175.0 43 102 Z" fill="#eef5ff" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="50" y="142">Настройки</text>
+<text x="48" y="202" class="code">{ query: &quot;мини&quot; }</text>
+<path d="M 383 102 Q 500.0 98 620 103 Q 627 175.0 623 247 Q 500.0 252 378 249 Q 373 175.0 383 102 Z" fill="#eef5ff" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="390" y="142">Строка JSON</text>
+<text x="388" y="202" class="code">{&quot;query&quot;:&quot;мини&quot;}</text>
+<path d="M 723 102 Q 840.0 98 960 103 Q 967 175.0 963 247 Q 840.0 252 718 249 Q 713 175.0 723 102 Z" fill="#eef5ff" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="730" y="142">localStorage</text>
+<text x="728" y="202" class="code">catalog-search-v1</text>
+<path d="M295 170 Q332.0 167.0 365 170 M353.5 176.0 L365 170 L353.5 164.0" fill="none" stroke="#196a93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="285" y="88" class="small" style="fill:#196a93">stringify</text>
+<path d="M635 170 Q672.0 167.0 705 170 M693.5 176.0 L705 170 L693.5 164.0" fill="none" stroke="#196a93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="630" y="88" class="small" style="fill:#196a93">setItem</text>
+<text x="35" y="308">После закрытия переменные исчезнут. Строка может остаться.</text>
+<path d="M 43 387 Q 160.0 383 280 388 Q 287 460.0 283 532 Q 160.0 537 38 534 Q 33 460.0 43 387 Z" fill="#edf7ec" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="50" y="427">Снова объект</text>
+<text x="48" y="487" class="code">{ query: &quot;мини&quot; }</text>
+<path d="M 383 387 Q 500.0 383 620 388 Q 627 460.0 623 532 Q 500.0 537 378 534 Q 373 460.0 383 387 Z" fill="#edf7ec" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="390" y="427">Строка JSON</text>
+<text x="388" y="487" class="code">{&quot;query&quot;:&quot;мини&quot;}</text>
+<path d="M 723 387 Q 840.0 383 960 388 Q 967 460.0 963 532 Q 840.0 537 718 534 Q 713 460.0 723 387 Z" fill="#edf7ec" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="730" y="427">localStorage</text>
+<text x="728" y="487" class="code">catalog-search-v1</text>
+<path d="M365 455 Q332.0 452.0 295 455 M306.5 449.0 L295 455 L306.5 461.0" fill="none" stroke="#327651" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="302" y="371" class="small" style="fill:#327651">parse</text>
+<path d="M705 455 Q672.0 452.0 635 455 M646.5 449.0 L635 455 L646.5 461.0" fill="none" stroke="#327651" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="628" y="371" class="small" style="fill:#327651">getItem</text>
+<text x="35" y="596">JSON упаковывает данные. Хранилище удерживает строку.</text>
+<text x="35" y="632" class="small">Нет записи → пустой запрос. Не удалось прочитать → пустой запрос.</text>
+</svg>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Расписания, физика и информатика">
-  <title>Соединение интерфейса и логики, диагностика ошибок веб-приложения — shkolar.site</title>
+  <title>Соединение интерфейса и логики: поиск, экран и поиск ошибок — shkolar.site</title>
   <link rel="canonical" href="https://shkolar.site/spo/027-interface-logic-and-diagnostics.html">
   <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
   <link rel="stylesheet" href="../assets/style.css">
@@ -31,139 +31,117 @@
   </header>
   <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
   <div class="layout">
-    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">Соединение интерфейса и логики, диагностика ошибок веб-приложения</li></ol></nav><h1 id="соединение-интерфейса-и-логики-диагностика-ошибок-веб-приложения">Соединение интерфейса и логики, диагностика ошибок веб-приложения</h1>
-<p>Пара лекционная, компьютеров нет: статью читаем с телефона, главное преподаватель показывает на экране. Код в статье — образец для разбора, а не обязательное действие на паре.</p>
-<p>Каталог из <a href="025-catalog-rendering-and-filtering.html">пары 25</a> уже строится из массива и фильтруется, форма из <a href="024-form-submit-and-error-messages.html">пары 24</a> показывает сообщение, <a href="026-json-and-localstorage.html">пара 26</a> добавила сохранение. По отдельности части работают; слабое место — стык: правила отбора и вывода разошлись по обработчикам, и правка в одном месте незаметно ломает другое.</p>
-<p><strong>Результат:</strong> вы объясняете, где хранится состояние каталога, почему у страницы должно быть одно место для данных и одно для перерисовки, и находите причину ошибки по тексту стека. <strong>Ритм пары:</strong> объяснение → демонстрация → карточка → обсуждение.</p>
-<h2 id="где-расходятся-интерфейс-и-логика">Где расходятся интерфейс и логика</h2>
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">Соединение интерфейса и логики: поиск, экран и поиск ошибок</li></ol></nav><div class="lesson-code-style"><h1 id="соединение-интерфейса-и-логики-поиск-экран-и-поиск-ошибок">Соединение интерфейса и логики: поиск, экран и поиск ошибок</h1>
+<p>Приложение запомнило запрос <code>мини</code>. После открытия слово появилось в поле, но на экране остались все три карточки. Пользователь видит противоречие: <strong>поле обещает поиск, а каталог его не выполняет</strong>.</p>
+<p>В <a href="026-json-and-localstorage.html">предыдущей части</a> вы разобрали сохранение запроса. Теперь свяжем данные с экраном и научимся проверять всю цепочку действий.</p>
+<aside class="callout" data-callout="note">
+<p class="callout-title">Работа в тетради</p><p>Для каждого задания запишите его номер и результат: таблицу, исправленный фрагмент или объяснение проверки. Условие остаётся на экране. Полную программу переписывать не нужно; статью можно открыть на телефоне.</p>
+</aside>
+<h2 id="1-один-запрос-три-согласованных-результата">1. Один запрос — три согласованных результата</h2>
+<p>Продолжаем общий пример: <strong>«Набор Старт», «Набор Мини», «Набор Про»</strong>. Слово <code>мини</code> должно дать:</p>
 <ul>
-<li><strong>Записи.</strong> Массив <code>catalog</code>; после запуска его никто не меняет.</li>
-<li><strong>Текст запроса.</strong> Свойство <code>value</code> поля поиска; его меняет браузер при вводе.</li>
-<li><strong>Отобранные записи.</strong> Локальная переменная <code>found</code> внутри обработчика.</li>
-<li><strong>Число показанных.</strong> Текст элемента <code>statusText</code>; его пишет <code>renderCatalog</code>.</li>
+<li>в поле — <code>мини</code>;</li>
+<li>в каталоге — только «Набор Мини»;</li>
+<li>в подписи — «Показано: 1 из 3».</li>
 </ul>
-<p>Четыре места, и ни одно не главное. Добавим кнопку «Сбросить»: нужно очистить поле, заново отобрать записи, перерисовать карточки и не забыть счётчик. Забудете одну строку — карточки вернутся, а подпись останется прежней.</p>
-<p>На форме та же картина: текст количества, название и сообщение живут внутри обработчика, а результат — в абзаце. Поправили поиск — перестал обновляться счётчик; поправили счётчик — сломалась очистка поля. Это не невнимательность, а следствие устройства: у программы нет одного места, где хранится её состояние.</p>
-<h2 id="одна-модель-состояния">Одна модель состояния</h2>
-<p>Соберём всё, что меняется во время работы, в один объект:</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="nx">catalog</span><span class="p">,</span><span class="w"> </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="p">};</span>
+<p>Если изменилось только поле, работа не закончена. Программное присваивание <code class="code-inline language-javascript"><span class="nx">searchInput</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;мини&quot;</span></code> само не вызывает обработчик <code class="code-inline language-javascript"><span class="nx">input</span></code>. Нужно явно запустить отбор и вывод.</p>
+<p><img alt="Согласованный поиск и ошибка: одинаковый запрос в поле, но разные карточки и счётчик" src="assets/027-00-consistent-screen.svg"></p>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 1. Зафиксируйте дефект</p><p>В тетради запишите три строки: «Действие», «Ожидалось», «Получилось».</p>
+<p>Действие: открыли приложение с сохранённым запросом <code>мини</code>. Получилось: в поле <code>мини</code>, видны все три карточки, подпись «Показано: 3 из 3».</p>
+<p>Допишите ожидаемый результат и назовите, какие две части экрана не соответствуют запросу. Предложите одно действие для повторной проверки после исправления.</p>
+</aside>
+<h2 id="2-данные-из-которых-получается-экран">2. Данные, из которых получается экран</h2>
+<p><strong>Состояние</strong> — данные о том, что сейчас выбрано в приложении. Для нашей задачи достаточно одного изменяемого значения:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="p">};</span>
 </code></pre></div>
-<p><code>items</code> — записи, <code>query</code> — текст запроса. <code>const</code> не мешает: объект остаётся тем же, меняются его свойства. <code>state.items</code> ссылается на массив <code>catalog</code>, поэтому <code>saveCatalog</code> и <code>loadCatalog</code> с ключом <code>STORAGE_KEY</code> из пары 26 менять не нужно: восстановление наполняет тот же массив до первого <code>render</code>.</p>
+<p><code class="code-inline language-javascript"><span class="nx">query</span></code> — запрос. Полный список <code class="code-inline language-javascript"><span class="nx">catalog</span></code> остаётся прежним массивом из пары 25. Видимые карточки мы вычисляем из него и запроса. Их количество тоже вычисляем, а не храним отдельно.</p>
+<p>Например, состояние <code class="code-inline language-javascript"><span class="p">{</span><span class="w"> </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;про&quot;</span><span class="w"> </span><span class="p">}</span></code> означает: в поле нужен текст <code>про</code>, из каталога подходит «Набор Про», подпись сообщает об одной карточке из трёх.</p>
 <aside class="callout" data-callout="important">
-<p class="callout-title">Правило пары</p><p>Сначала меняем состояние, потом перерисовываем страницу. Страница — не хранилище, а изображение состояния.</p>
+<p class="callout-title">Объект помогает договориться</p><p>Само появление <code class="code-inline language-javascript"><span class="nx">state</span></code> ошибок не исправляет. Договорённость такая: сначала меняем <code class="code-inline language-javascript"><span class="nx">state</span><span class="p">.</span><span class="nx">query</span></code>, затем из этого значения обновляем весь результат. Для маленькой страницы можно организовать данные иначе; здесь один объект делает цепочку удобной для разбора.</p>
 </aside>
-<p>Почему не отдельные <code>let query</code>, <code>let visible</code> и <code>let total</code>? Такие переменные легко расходятся: одна обновилась, другая нет, и неизвестно, какая верна. Объект можно целиком передать функции и разобрать на бумаге. Складывать состояние в <code>window</code> не стоит: любая часть программы сможет изменить его незаметно.</p>
-<h2 id="путь-от-события-до-экрана">Путь от события до экрана</h2>
-<p>Порядок одинаков для поиска, сброса и любого будущего действия.</p>
+<h2 id="3-один-вызов-обновляет-весь-экран">3. Один вызов обновляет весь экран</h2>
+<p>Функцию общего обновления назовём <code class="code-inline language-javascript"><span class="nx">render</span></code>. Она использует знакомые <code class="code-inline language-javascript"><span class="nx">filterByText</span></code> и <code class="code-inline language-javascript"><span class="nx">renderCatalog</span></code> из пары 25:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">function</span><span class="w"> </span><span class="nf">render</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">searchInput</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">query</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">visible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">filterByText</span><span class="p">(</span><span class="nx">catalog</span><span class="p">,</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">query</span><span class="p">);</span>
+<span class="w">  </span><span class="nf">renderCatalog</span><span class="p">(</span><span class="nx">visible</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Первая строка обновляет поле. Вторая получает подходящие записи. Третья показывает карточки <strong>и их счётчик</strong>: это уже умеет <code class="code-inline language-javascript"><span class="nx">renderCatalog</span></code>.</p>
+<p>Новый обработчик ввода записывает запрос, сохраняет его и запускает общее обновление:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">state</span><span class="p">.</span><span class="nx">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">searchInput</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="nf">saveSearch</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">query</span><span class="p">);</span>
+<span class="nf">render</span><span class="p">();</span>
+</code></pre></div>
+<p><code class="code-inline language-javascript"><span class="nx">saveSearch</span></code> — сохранение настройки из предыдущей части. Если оно не удалось, поиск на текущей странице всё равно должен работать. <code class="code-inline language-javascript"><span class="nx">render</span></code> меняет экран, а сохранение записывает данные для следующего открытия — это разные задачи.</p>
+<p><img alt="Путь запроса: действие, состояние и обновление экрана; отдельная ветка сохраняет запрос для следующего запуска" src="assets/027-00-search-cycle.svg"></p>
+<p>При открытии страницы сначала возвращаем запрос, затем рисуем экран:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">state</span><span class="p">.</span><span class="nx">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">loadSearch</span><span class="p">();</span>
+<span class="nf">render</span><span class="p">();</span>
+</code></pre></div>
+<p><code class="code-inline language-javascript"><span class="nx">loadSearch</span></code> возвращает строку запроса либо пустую строку при отсутствии подходящей настройки. Поэтому первый показ сразу соответствует восстановленным данным.</p>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 2. Выполните программу на бумаге</p><p>Начните с пустого запроса и трёх карточек. Сделайте таблицу «Действие / state.query / названия видимых карточек / подпись» из пяти строк.</p>
 <ol>
-<li><strong>Событие.</strong> Пользователь вводит текст, браузер вызывает обработчик <code>input</code>.</li>
-<li><strong>Изменение состояния.</strong> Обработчик записывает <code>state.query = searchInput.value</code>.</li>
-<li><strong>Перерисовка.</strong> Программа вызывает <code>render(state)</code>.</li>
-<li><strong>Отбор и вывод.</strong> <code>render</code> берёт видимые записи из состояния и заполняет контейнер и подпись. Это видимый результат.</li>
+<li>Ввели <code>мини</code>.</li>
+<li>Заменили запрос на <code>НАБОР</code>.</li>
+<li>Ввели <code>чайник</code>.</li>
+<li>Нажали «Сбросить»: обработчик установил пустой запрос и вызвал <code class="code-inline language-javascript"><span class="nf">render</span><span class="p">()</span></code>.</li>
+<li>Обновили страницу после сохранения пустого запроса.</li>
 </ol>
-<p>Обратный порядок — сначала менять страницу, потом состояние — кажется быстрее, но оставляет страницу и состояние в разных версиях: следующая перерисовка вернёт старое, и ошибка будет выглядеть случайной. Схема для карточек: <strong>событие → состояние → render → экран</strong>.</p>
-<h2 id="чистые-функции-и-функции-страницы">Чистые функции и функции страницы</h2>
-<ul>
-<li><code>filterByText(items, query)</code> — массив и строка на входе, новый массив на выходе; страницу не трогает.</li>
-<li><code>getVisibleItems(state)</code> — состояние на входе, видимые записи на выходе; страницу не трогает.</li>
-<li><code>getStatusText(visibleCount, totalCount)</code> — два числа на входе, строка подписи на выходе; страницу не трогает.</li>
-<li><code>render(state)</code> — состояние на входе, ничего не возвращает; меняет контейнер и подпись.</li>
-</ul>
-<p>Первые три — <strong>чистые</strong>: при одинаковых аргументах всегда дают одинаковый результат и ничего не меняют вокруг. Поэтому <code>getVisibleItems({ items: catalog, query: "набор" })</code> даёт отобранный массив, а <code>getStatusText(0, 3)</code> — строку «Ничего не найдено»; обе работают без страницы.</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">function</span><span class="w"> </span><span class="nx">getVisibleItems</span><span class="p">(</span><span class="nx">current</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">filterByText</span><span class="p">(</span><span class="nx">current</span><span class="p">.</span><span class="nx">items</span><span class="p">,</span><span class="w"> </span><span class="nx">current</span><span class="p">.</span><span class="nx">query</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kd">function</span><span class="w"> </span><span class="nx">getStatusText</span><span class="p">(</span><span class="nx">visibleCount</span><span class="p">,</span><span class="w"> </span><span class="nx">totalCount</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">visibleCount</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;Ничего не найдено&quot;</span><span class="p">;</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;Показано: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">visibleCount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; из &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">totalCount</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<h2 id="сборка-один-renderstate">Сборка: один <code>render(state)</code></h2>
-<p>Заменим частичные обновления одной функцией. Она получает состояние целиком, сама отбирает записи и сама обновляет карточки и подпись:</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">function</span><span class="w"> </span><span class="nx">render</span><span class="p">(</span><span class="nx">current</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">visible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getVisibleItems</span><span class="p">(</span><span class="nx">current</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">catalogList</span><span class="p">.</span><span class="nx">replaceChildren</span><span class="p">();</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">visible</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">card</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;article&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">card</span><span class="p">.</span><span class="nx">className</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;card&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="c1">// заголовок, характеристика и описание из item</span>
-<span class="w">    </span><span class="nx">catalogList</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">card</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="nx">statusText</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getStatusText</span><span class="p">(</span><span class="nx">visible</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nx">current</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Фрагмент сокращён: заголовок и два абзаца создаются так же, как в паре 25. <code>render</code> — единственное место, которое меняет контейнер и подпись: карточки и счётчик считаются из одного массива <code>visible</code>, поэтому разойтись не могут.</p>
-<p>Обработчик сокращается до изменения состояния и не ищет записи, не очищает контейнер и не собирает счётчик:</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">searchInput</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">state</span><span class="p">.</span><span class="nx">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">searchInput</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">render</span><span class="p">(</span><span class="nx">state</span><span class="p">);</span>
-<span class="p">});</span>
-</code></pre></div>
-<p>Прежний <code>renderCatalog</code> заменяется на <code>render</code>, а в конце файла остаётся один начальный вызов <code>render(state)</code>. Порядок в файле: данные и <code>state</code>, затем <code>filterByText</code> и сохранение из пары 26, чистые функции, ссылки на элементы, <code>render</code>, обработчики, начальный вызов.</p>
-<h2 id="как-читать-ошибку-по-тексту-стека">Как читать ошибку по тексту стека</h2>
-<p>Сообщение читают по частям. Пример:</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Uncaught TypeError: Cannot read properties of null (reading &#39;append&#39;)
-    at render (catalog-page.js:45:15)
-    at HTMLInputElement.&lt;anonymous&gt; (catalog-page.js:59:3)
-</code></pre></div>
-<p><code>Uncaught TypeError</code> — тип: программа остановилась на невозможной операции. Текст после двоеточия объясняет, что не получилось. <code>catalog-page.js:45:15</code> — файл, строка и столбец, где выполнение прервалось. Строки ниже — <strong>стек</strong>: кто вызвал это место; верхняя показывает, где прервалось, нижние — из какого обработчика пришёл вызов.</p>
-<p>Начинайте с верхней строки, но проверяйте, что в неё передали: неверное значение часто приходит из вызывающей строки. <code>Cannot read properties of null</code> означает, что <code>querySelector</code> ничего не нашёл: проверяют <code>id</code>, селектор, регистр букв, подключение скрипта и <code>defer</code>.</p>
-<p><code>is not a function</code> означает, что вызывают не функцию: опечатка в имени, неверный тип или функция не объявлена. <code>undefined</code> ошибкой не является: свойства нет из-за опечатки или функция ничего не вернула; причина всегда раньше места, где виден <code>undefined</code>.</p>
-<aside class="callout" data-callout="tip">
-<p class="callout-title">Сначала воспроизведи, потом правь</p><p>Пока ошибка не повторяется по известным шагам, нельзя проверить, помогла ли правка. Меняйте одну строку за раз.</p>
+<p>Поиск из пары 25 не различает регистр букв, пустой запрос показывает всё. Если совпадений нет, подпись — «Ничего не найдено». Сам каталог по-прежнему содержит три записи.</p>
 </aside>
-<h2 id="что-показывает-преподаватель">Что показывает преподаватель</h2>
-<p>Четыре демонстрации с экрана; студенты смотрят и записывают, что меняется на каждом шаге.</p>
-<p><strong>Демонстрация 1. Работающий каталог.</strong> На экране страница каталога; преподаватель вводит часть названия. Карточки и подпись меняются вместе — смотреть, совпадает ли число карточек с числом в подписи.</p>
-<p><strong>Демонстрация 2. Ошибка при вводе.</strong> В обработчике аргументы <code>filterByText</code> перепутаны: первым идёт запрос, вторым массив. До ввода страница выглядит правильно, при первом символе появляется <code>query.trim is not a function</code> и стек. На экране консоль и текст стека: смотреть на верхнюю строку — где прервалось, и на нижнюю — кто вызвал.</p>
-<p><strong>Демонстрация 3. Код целиком.</strong> На экране <code>catalog-page.js</code> с <code>state</code>, <code>render</code> и обработчиком. Смотреть, что обработчик короткий: он только записывает <code>state.query</code> и вызывает <code>render</code>, а карточки собирает одна функция.</p>
-<p><strong>Демонстрация 4. Пустой результат и сброс.</strong> Преподаватель стирает поле — возвращаются все карточки. Вводит текст без совпадений — контейнер пуст, подпись «Ничего не найдено». Смотреть, что при пустом результате нет «Показано: 0 из 3»: подпись говорит о запросе, а не о поломке счётчика.</p>
-<h2 id="работа-на-паре">Работа на паре</h2>
-<p><strong>Карточка 1. Стек (письменно).</strong> Перед вами сообщение об ошибке.</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Uncaught TypeError: Cannot read properties of undefined (reading &#39;items&#39;)
-    at getVisibleItems (catalog-page.js:24:17)
-    at render (catalog-page.js:47:19)
-    at HTMLInputElement.&lt;anonymous&gt; (catalog-page.js:61:3)
+<h2 id="4-исправьте-три-поломки">4. Исправьте три поломки</h2>
+<p>Для каждого случая используйте порядок: <strong>воспроизвести → найти причину → изменить → проверить</strong>. Сначала запишите прогноз, затем сравните его с результатом общего разбора.</p>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 3. Счётчик не согласен с карточками</p><p>Фильтр нашёл одну карточку. Внутри <code class="code-inline language-javascript"><span class="nf">renderCatalog</span><span class="p">(</span><span class="nx">items</span><span class="p">)</span></code> подпись собирают строкой:</p>
+<p><code class="code-inline language-javascript"><span class="nx">statusText</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Показано: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; из &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span></code></p>
+<p>Какую подпись увидит пользователь? Какое из двух выражений длины нужно заменить и на что? Запишите исправленную строку. Назовите ещё два запроса для проверки, кроме <code>мини</code>.</p>
+</aside>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 4. Кнопка очистила только поле</p><p>Запрос был <code>мини</code>, видна одна карточка. Обработчик кнопки выполнил только:</p>
+<p><code class="code-inline language-javascript"><span class="nx">searchInput</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span></code></p>
+<p>Запишите, что стало с полем, <code class="code-inline language-javascript"><span class="nx">state</span><span class="p">.</span><span class="nx">query</span></code> и карточками. Замените эту строку тремя действиями: изменить состояние, сохранить пустой запрос, обновить экран. Объясните, как проверить результат сразу и после перезагрузки.</p>
+</aside>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 5. Экран отстаёт на один шаг</p><p>Обработчик выполняет команды в таком порядке:</p>
+<p><code class="code-inline language-javascript"><span class="nf">render</span><span class="p">();</span></code></p>
+<p><code class="code-inline language-javascript"><span class="nx">state</span><span class="p">.</span><span class="nx">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">searchInput</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span></code></p>
+<p>До ввода состояние было пустым, пользователь ввёл <code>мини</code>. В этой версии <code class="code-inline language-javascript"><span class="nf">render</span><span class="p">()</span></code> также заполняет поле из состояния.</p>
+<p>Проследите обе команды: какой текст окажется в поле после первой и какое значение прочитает вторая? Исправьте порядок, добавьте сохранение. Почему важно получить новое значение <strong>до</strong> обновления экрана?</p>
+</aside>
+<h2 id="5-если-программа-остановилась">5. Если программа остановилась</h2>
+<p>Ошибка выполнения отличается от неверного счётчика: часть команд вообще перестаёт выполняться. Сообщение подсказывает место остановки, но причина может находиться раньше.</p>
+<p>Для чтения примера <strong>слева условно пронумерованы строки</strong>:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">1  const searchInput = document.querySelector(&quot;#serch&quot;);
+2  function render() {
+3    searchInput.value = state.query;
+4  }
 </code></pre></div>
-<p>В файле намеренно испортили один вызов <code>render</code>. Найдите по стеку строку, где прервалось выполнение, объясните, какое значение пришло неверным, и назовите строку, которую нужно исправить.</p>
-<p><strong>Карточка 2. Схема (устно).</strong> Студент стёр текст в поле поиска. Разложите действие по схеме «событие → состояние → render → экран»: что происходит на каждом шаге и что видно на экране.</p>
-<p><strong>Карточка 3. Четыре места (письменно).</strong> В проекте информация лежит в массиве <code>catalog</code>, в поле поиска, в локальной переменной обработчика и в подписи. Предложите один объект <code>state</code>: какие у него будут поля и что произойдёт с каждым из четырёх мест.</p>
-<p><strong>Карточка 4. Лишний <code>render</code> (письменно).</strong> Прочитайте обработчик.</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">searchInput</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">state</span><span class="p">.</span><span class="nx">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">searchInput</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">render</span><span class="p">(</span><span class="nx">state</span><span class="p">);</span>
-<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">items</span><span class="p">)</span><span class="w"> </span><span class="nx">render</span><span class="p">(</span><span class="nx">state</span><span class="p">);</span>
-<span class="p">});</span>
+<p>В HTML поле имеет <code class="code-inline language-javascript"><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;search&quot;</span></code>. Консоль сообщает:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">TypeError: Cannot set properties of null (setting &#39;value&#39;)
+    at render (catalog-page.js:3:21)
 </code></pre></div>
-<p>Найдите лишние вызовы <code>render</code> и объясните, чем они плохи, если страница внешне остаётся правильной.</p>
-<p><strong>Карточка 5. Счётчик (письменно).</strong> Прочитайте функцию.</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">function</span><span class="w"> </span><span class="nx">render</span><span class="p">(</span><span class="nx">current</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">visible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getVisibleItems</span><span class="p">(</span><span class="nx">current</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">catalogList</span><span class="p">.</span><span class="nx">replaceChildren</span><span class="p">();</span>
-<span class="w">  </span><span class="c1">// создание карточек из visible</span>
-<span class="w">  </span><span class="nx">statusText</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Показано: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">current</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; из &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">current</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Объясните, почему счётчик расходится с карточками и какую строку исправить.</p>
-<h2 id="самопроверка">Самопроверка</h2>
-<p>Ответьте письменно, не заглядывая в служебный раздел.</p>
-<ol>
-<li>Почему текст запроса хранят в <code>state</code>, а не только в поле ввода?</li>
-<li>Что произойдёт, если обработчик сначала перерисует страницу, а потом запишет <code>state.query</code>?</li>
-<li>Чем <code>undefined</code> отличается от <code>is not a function</code> по смыслу ошибки?</li>
-<li>Почему <code>render</code> вызывают один раз на действие, а не для каждой карточки?</li>
-<li>Где искать причину, если стек указывает на <code>getVisibleItems</code>, а сообщение говорит об <code>undefined</code>?</li>
-</ol>
-<h2 id="если-есть-компьютер">Если есть компьютер</h2>
-<p>Эти шаги — для дома или следующей пары. На лекции они не обязательны.</p>
-<ol>
-<li>Открыть папку <code>VariantNN-web</code> и <code>catalog.html</code>. В <code>catalog-page.js</code> должны остаться <code>catalog</code>, <code>filterByText</code>, <code>saveCatalog</code>, <code>loadCatalog</code> и <code>STORAGE_KEY</code>, а также <code>renderCatalog</code> и обработчик поля <code>#search</code>.</li>
-<li>В консоли сверить <code>catalog.length</code> и <code>filterByText(catalog, "").length</code>: числа совпадают. Если поиск сломан, вернуться к паре 25.</li>
-<li>Перестроить файл: добавить <code>state</code>, <code>getVisibleItems</code>, <code>getStatusText</code> и <code>render</code>; заменить обработчик и начальный вызов. Обновить страницу и проверить полный каталог, часть названия, другой регистр, пустой результат и очистку поля.</li>
-<li>Внести ошибку нарочно — вызвать <code>render()</code> без аргумента — и найти её по стеку. Затем открыть панель источников, поставить точку останова и посмотреть значения в области видимости. Точку останова снять.</li>
-<li>Сравнить <code>getStatusText(0, 3)</code> и <code>getVisibleItems({ items: catalog, query: "набор" })</code>: обе функции работают без страницы.</li>
-</ol></main>
+<p><code class="code-inline language-javascript"><span class="kc">null</span></code> здесь означает, что поиск элемента ничего не нашёл. <code class="code-inline language-javascript"><span class="nx">catalog</span><span class="o">-</span><span class="nx">page</span><span class="p">.</span><span class="nx">js</span><span class="o">:</span><span class="mf">3</span><span class="o">:</span><span class="mf">21</span></code> — имя файла, строка и столбец, где выполнение остановилось. В строке 3 уже используют результат поиска; причину нужно проверить в строке 1.</p>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 6. Короткий отчёт об исправлении</p><p>Запишите четыре пункта: место остановки; причина; исправленная строка; проверка после исправления. Затем объясните, почему замена <code class="code-inline language-javascript"><span class="nx">state</span><span class="p">.</span><span class="nx">query</span></code> на другое слово не поможет найти элемент.</p>
+</aside>
+<h2 id="7-проверка-собственного-приложения">7. Проверка собственного приложения</h2>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 7. Составьте приёмку поиска</p><p>Для каталога своей темы составьте четыре испытания: часть настоящего названия; слово без совпадений; сброс; перезагрузка с сохранённым запросом.</p>
+<p>Для каждого запишите действие, ожидаемый текст поля, названия видимых карточек и подпись. Запишите вывод: какой результат доказывает, что сохранение и вывод работают вместе?</p>
+</aside>
+<p>Поменяйтесь тетрадями. Попробуйте выполнить чужую проверку мысленно. Если непонятно, что вводить или что должно получиться, уточните условие проверки.</p>
+<h2 id="что-вы-теперь-умеете-объяснять">Что вы теперь умеете объяснять</h2>
+<p>По одной пользовательской задаче вы прошли весь путь: запрос → сохранение → восстановление → отбор → карточки и счётчик. На бумаге можно проверить порядок и ожидаемые значения. За компьютером затем нужно подтвердить, что настоящая программа делает именно это.</p></div></main>
   </div>
   <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
     <p id="site-update-status" role="status" aria-live="polite"></p>

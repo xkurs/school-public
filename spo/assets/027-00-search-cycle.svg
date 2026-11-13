@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc"><title id="title">Как действие меняет состояние и экран</title><desc id="desc">Ввод записывает query в state. saveSearch сохраняет запрос отдельно. render обновляет поле, отбирает карточки и вызывает renderCatalog. При открытии loadSearch восстанавливает state перед render.</desc><rect width="1000" height="720" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:25px} .small{font-size:22px}.code{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:23px}.heading{font-size:31px;font-weight:600}</style>
+<text x="35" y="48" class="heading">От действия пользователя до результата</text>
+<path d="M 43 97 Q 205.0 93 370 98 Q 377 160.0 373 222 Q 205.0 227 38 224 Q 33 160.0 43 97 Z" fill="#fff4db" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="55" y="138">1. Ввод в поле</text>
+<text x="55" y="188" class="code">searchInput.value</text>
+<path d="M 543 97 Q 745.0 93 950 98 Q 957 160.0 953 222 Q 745.0 227 538 224 Q 533 160.0 543 97 Z" fill="#eef5ff" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="555" y="138">2. Запрос в состоянии</text>
+<text x="555" y="188" class="code">state.query = &quot;мини&quot;</text>
+<path d="M 543 362 Q 745.0 358 950 363 Q 957 432.5 953 502 Q 745.0 507 538 504 Q 533 432.5 543 362 Z" fill="#edf7ec" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="555" y="403">3. Обновление экрана</text>
+<text x="555" y="453" class="code">render()</text>
+<path d="M390 160 Q457.0 157.0 520 160 M508.5 166.0 L520 160 L508.5 154.0" fill="none" stroke="#196a93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="392" y="130" class="small" style="fill:#196a93">записать</text>
+<path d="M745 238 Q747.0 288.5 745 345 M739.0 333.5 L745 345 L751.0 333.5" fill="none" stroke="#196a93" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="765" y="300" class="small" style="fill:#196a93">вызвать</text>
+<path d="M 43 342 Q 205.0 338 370 343 Q 377 422.5 373 502 Q 205.0 507 38 504 Q 33 422.5 43 342 Z" fill="#f3effa" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="55" y="382">Запомнить запрос</text>
+<text x="55" y="429" class="code">saveSearch(state.query)</text>
+<text x="55" y="475" class="code">localStorage</text>
+<path d="M575 240 Q490 295 390 370" fill="none" stroke="#82669c" stroke-width="2.5" stroke-dasharray="7 6"/>
+<path d="M404 360 Q397.0 363.5 386 373 M391.8 361.4 L386 373 L398.9 371.1" fill="none" stroke="#82669c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="295" y="285" class="small">сохранить отдельно</text>
+<text x="555" y="478" style="font-size:20px">поле + карточки + счётчик</text>
+<path d="M 43 564 Q 495.0 560 950 565 Q 957 617.0 953 669 Q 495.0 674 38 671 Q 33 617.0 43 564 Z" fill="#fff" stroke="#233848" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="55" y="602" class="small">При открытии:</text>
+<text x="55" y="646" class="code">loadSearch() → state.query → render()</text>
+</svg>

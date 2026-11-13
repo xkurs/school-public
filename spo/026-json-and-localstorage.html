@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Расписания, физика и информатика">
-  <title>JSON и localStorage: сохранение данных и восстановление после открытия — shkolar.site</title>
+  <title>JSON и localStorage: как приложению запомнить поиск — shkolar.site</title>
   <link rel="canonical" href="https://shkolar.site/spo/026-json-and-localstorage.html">
   <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
   <link rel="stylesheet" href="../assets/style.css">
@@ -31,162 +31,121 @@
   </header>
   <script type="application/json" id="daily-quotes">[{"latin": "Sapere aude.", "translation": "Решись быть мудрым.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Homines dum docent discunt.", "translation": "Обучая других, люди учатся сами.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.8 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Felix qui potuit rerum cognoscere causas.", "translation": "Счастлив тот, кто сумел познать причины вещей.", "author": "Вергилий", "source": "Георгики, II.490 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/vergil/geo2.shtml"}, {"latin": "Nihil in studiis parvum est.", "translation": "В учении нет мелочей.", "author": "Квинтилиан", "source": "Об образовании оратора, X.3.31 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Inprimisque hominis est propria veri inquisitio atque investigatio.", "translation": "Человеку особенно свойственны поиск и исследование истины.", "author": "Цицерон", "source": "Об обязанностях, I.13", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Tamdiu discendum est quamdiu nescias.", "translation": "Нужно учиться, пока чего-то не знаешь.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 76.3 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep9.shtml"}, {"latin": "Dimidium facti, qui coepit, habet.", "translation": "Кто начал, тот уже сделал половину дела.", "author": "Гораций", "source": "Послания, I.2.40 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Nullum esse librum tam malum ut non aliqua parte prodesset.", "translation": "Нет такой плохой книги, в которой не нашлось бы чего-нибудь полезного.", "author": "Плиний Старший, в передаче Плиния Младшего", "source": "Плиний Младший. Письма, III.5.10 (фрагмент косвенной речи)", "source_url": "https://www.thelatinlibrary.com/pliny.ep3.html"}, {"latin": "Longum iter est per praecepta, breve et efficax per exempla.", "translation": "Путь через наставления долог, через примеры — краток и действенен.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.5 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Ipsa denique utilissima est exercitationi difficultas.", "translation": "Сама трудность чрезвычайно полезна для упражнения.", "author": "Квинтилиан", "source": "Об образовании оратора, X.5.7", "source_url": "https://www.thelatinlibrary.com/quintilian/quintilian.institutio10.shtml"}, {"latin": "Nullam rem e nihilo gigni divinitus umquam.", "translation": "Ничто никогда не возникает из ничего по воле богов.", "author": "Лукреций", "source": "О природе вещей, I.150 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"}, {"latin": "In hoc aliquid gaudeo discere, ut doceam.", "translation": "Я радуюсь, узнавая что-то, чтобы научить других.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 6.4 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}, {"latin": "Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem.", "translation": "Всех нас влечёт стремление к познанию и знанию.", "author": "Цицерон", "source": "Об обязанностях, I.18 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/cicero/off1.shtml"}, {"latin": "Est quadam prodire tenus, si non datur ultra.", "translation": "Можно продвинуться хотя бы немного, если дальше пока не дано.", "author": "Гораций", "source": "Послания, I.1.32", "source_url": "https://www.thelatinlibrary.com/horace/epist1.shtml"}, {"latin": "Non est quod timeas ne operam perdideris, si tibi didicisti.", "translation": "Не бойся, что потрудился зря, если учился для себя.", "author": "Сенека", "source": "Нравственные письма к Луцилию, 7.9 (фрагмент)", "source_url": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml"}]</script>
   <div class="layout">
-    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">JSON и localStorage: сохранение данных и восстановление после открытия</li></ol></nav><h1 id="json-и-localstorage-сохранение-данных-и-восстановление-после-открытия">JSON и localStorage: сохранение данных и восстановление после открытия</h1>
-<p>Сегодня лекция без компьютеров: статью вы читаете с телефона, преподаватель показывает главное на экране, а задания выполняются письменно или устно по карточкам. Каталог из <a href="025-catalog-rendering-and-filtering.html">пары 25</a> остаётся основой примеров; код ниже — образец для чтения и разбора, а не обязательные действия на паре.</p>
-<p><strong>Результат:</strong> вы объясняете, зачем данные превращают в JSON, что именно лежит в <code>localStorage</code>, как каталог сохраняется и восстанавливается и почему после перезагрузки он остаётся таким, каким вы его оставили.</p>
-<p>Рабочий ритм: <strong>прочитать → разобрать пример → объяснить → проверить себя</strong>.</p>
-<h2 id="1-данные-в-памяти-исчезают">1. Данные в памяти исчезают</h2>
-<p>Массив <code>catalog</code> существует, пока открыта страница. При перезагрузке браузер заново читает файлы, и массив создаётся заново из того, что записано в коде.</p>
-<p>Добавленная карточка живёт только в памяти вкладки. Закрыли вкладку или обновили страницу — её нет: в файлах проекта ничего не изменилось.</p>
-<p>Память страницы не подходит для хранения. Нужно место, которое переживает закрытие вкладки, — тогда программа сможет прочитать оттуда прежние данные.</p>
-<h2 id="2-json-данные-в-виде-строки">2. JSON: данные в виде строки</h2>
-<p>Хранилище браузера принимает только строки. Массив объектов строкой не является, поэтому данные <strong>сериализуют</strong> — превращают в текст по общему правилу JSON.</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">catalog</span><span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">text</span><span class="p">);</span>
-</code></pre></div>
-<p>В <code>text</code> — <code>string</code>: одна длинная строка. Она начинается с <code>[</code>, заканчивается <code>]</code>, записи разделены запятыми, а у каждой записи те же свойства, что были у объекта.</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JSON</span></div><pre><code class="language-json"><span class="p">[{</span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Набор \&quot;Старт\&quot;&quot;</span><span class="p">,</span><span class="nt">&quot;specs&quot;</span><span class="p">:</span><span class="s2">&quot;6 предметов&quot;</span><span class="p">,</span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="kc">null</span><span class="p">}]</span>
-</code></pre></div>
-<p>Квадратные скобки обозначают массив, фигурные — объект, <code>null</code> — отсутствие значения. Строки всегда в двойных кавычках, поэтому кавычки внутри значения экранируются: <code>\"</code>. Перевод строки записывается как <code>\n</code>; это служебные символы, а не потеря текста. Русский текст остаётся читаемым: <code>JSON.stringify</code> не превращает буквы в наборы вида <code>\u041d</code>.</p>
-<p>Обратное действие — <code>JSON.parse</code>:</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">items</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">name</span><span class="p">);</span>
-</code></pre></div>
-<p>Получается обычный массив объектов: с ним работают <code>filterByText</code>, <code>renderCatalog</code> и циклы из прошлых пар.</p>
-<aside class="callout" data-callout="important">
-<p class="callout-title">В хранилище кладут строку, а не объект</p><p>Запись <code>localStorage.setItem("catalog-v1", catalog)</code> массив не сохранит: значение приводится к строке, и получится <code>[object Object]</code>. Сохраняйте результат <code>JSON.stringify(...)</code>, а прочитанное пропускайте через <code>JSON.parse(...)</code>. В JSON строки всегда в двойных кавычках, поэтому одинарные кавычки и лишняя запятая перед <code>]</code> делают текст неразбираемым.</p>
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">JSON и localStorage: как приложению запомнить поиск</li></ol></nav><div class="lesson-code-style"><h1 id="json-и-localstorage-как-приложению-запомнить-поиск">JSON и localStorage: как приложению запомнить поиск</h1>
+<p>Вы нашли нужную карточку в своём каталоге. Обновили страницу — поиск сбросился, и снова видны все карточки. Сделаем так, чтобы приложение помнило ваш запрос.</p>
+<p>В <a href="025-catalog-rendering-and-filtering.html">предыдущей работе</a> поиск уже отбирал карточки. Теперь выясним, <strong>что сохранить между открытиями страницы и как это прочитать обратно</strong>.</p>
+<aside class="callout" data-callout="note">
+<p class="callout-title">Как работать</p><p>Смотрите примеры на экране, а ответы записывайте в тетради: номер задания, таблицу или короткое объяснение. Условия и всю программу переписывать не нужно. Эту же статью можно открыть на телефоне.</p>
 </aside>
-<h2 id="3-localstorage-ключ-и-строка">3. localStorage: ключ и строка</h2>
-<p><code>localStorage</code> — встроенное в браузер хранилище пар «ключ → строка». Оно не входит в файлы проекта и живёт отдельно от страницы.</p>
+<h2 id="1-что-именно-приложение-забывает">1. Что именно приложение забывает</h2>
+<p>В общем примере три карточки: <strong>«Набор Старт», «Набор Мини», «Набор Про»</strong>. Это учебные названия для разбора; в вашем проекте остаются собственные данные.</p>
+<p>При запросе <code>мини</code> видна одна карточка. После обычного запуска исходного скрипта запрос снова пустой и показаны три карточки.</p>
+<p><img alt="Поиск до обновления и после него: запрос исчезает, полный каталог остаётся" src="assets/026-00-search-reload.svg"></p>
+<p>Каталог записан в файле <code>catalog-page.js</code>, поэтому браузер создаёт его заново. А введённого пользователем запроса в файле нет. Если программа его не запомнит, при новом запуске ей неоткуда его взять.</p>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 1. Что запоминать?</p><p>В тетради сделайте два столбца: «Есть в файлах проекта» и «Появилось при работе пользователя». Распределите: названия трёх карточек, запрос <code>мини</code>, CSS-цвет карточки. Подчеркните значение, которое нужно сохранить для восстановления поиска.</p>
+<p>Запишите прогноз: какой запрос и сколько карточек вы ожидаете увидеть после обновления страницы, когда сохранение заработает?</p>
+</aside>
+<h2 id="2-место-для-сохранённого-запроса">2. Место для сохранённого запроса</h2>
+<p><code class="code-inline language-javascript"><span class="nx">localStorage</span></code> — хранилище браузера. Данные лежат отдельно от переменных работающей страницы и могут пережить её закрытие.</p>
+<p>У каждой записи есть <strong>ключ</strong> — имя, по которому её находят, — и <strong>значение в виде строки</strong>. Наш ключ: <code class="code-inline language-javascript"><span class="nx">catalog</span><span class="o">-</span><span class="nx">search</span><span class="o">-</span><span class="nx">v1</span></code>. Он хранит настройки поиска, а не весь каталог.</p>
 <table>
 <thead>
 <tr>
-<th>Запись</th>
 <th>Действие</th>
+<th>Запись JavaScript</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>setItem("catalog-v1", text)</code></td>
-<td>записать строку по ключу; прежнее значение заменится</td>
+<td>Положить строку</td>
+<td><code class="code-inline language-javascript"><span class="nx">localStorage</span><span class="p">.</span><span class="nf">setItem</span><span class="p">(</span><span class="s2">&quot;catalog-search-v1&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">)</span></code></td>
 </tr>
 <tr>
-<td><code>getItem("catalog-v1")</code></td>
-<td>прочитать строку или <code>null</code>, если ключа нет</td>
+<td>Прочитать строку</td>
+<td><code class="code-inline language-javascript"><span class="nx">localStorage</span><span class="p">.</span><span class="nf">getItem</span><span class="p">(</span><span class="s2">&quot;catalog-search-v1&quot;</span><span class="p">)</span></code></td>
 </tr>
 <tr>
-<td><code>removeItem("catalog-v1")</code></td>
-<td>удалить одну запись</td>
-</tr>
-<tr>
-<td><code>clear()</code></td>
-<td>удалить <strong>все</strong> записи этого источника</td>
+<td>Удалить только эту запись</td>
+<td><code class="code-inline language-javascript"><span class="nx">localStorage</span><span class="p">.</span><span class="nf">removeItem</span><span class="p">(</span><span class="s2">&quot;catalog-search-v1&quot;</span><span class="p">)</span></code></td>
 </tr>
 </tbody>
 </table>
-<p>Значения хранятся только строками. <code>setItem("count", 3)</code> сохранит текст <code>"3"</code>, и <code>getItem</code> вернёт строку, а не число. Ключи лучше называть с запасом: <code>catalog-v1</code>, а не <code>data</code>.</p>
-<p>Хранилище привязано к <strong>источнику</strong> (origin): схеме, имени хоста и порту. Поэтому:</p>
-<ul>
-<li><code>file://</code> и <code>http://localhost:8000</code> — разные хранилища;</li>
-<li><code>http://localhost:8000</code> и <code>http://localhost:5500</code> — разные из-за порта;</li>
-<li><code>localhost</code> и <code>127.0.0.1</code> — разные имена хоста.</li>
-</ul>
-<p>Данные одного источника не появятся в другом, и это не ошибка. Объём ограничен, обычно около 5 МБ на источник: при превышении <code>setItem</code> выбрасывает ошибку. В приватном окне хранилище обычно работает, но очищается при закрытии; в некоторых настройках браузера запись запрещена, поэтому её защищают <code>try/catch</code>.</p>
-<h2 id="4-сохранение-и-восстановление-каталога">4. Сохранение и восстановление каталога</h2>
-<p>Ключ назовём <code>catalog-v1</code>; <code>v1</code> — версия формата. Если структура записи изменится, новая версия получит ключ <code>catalog-v2</code> и не станет читать старые данные, а не сломается на них.</p>
-<p>Образец функций для разбора:</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">STORAGE_KEY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;catalog-v1&quot;</span><span class="p">;</span>
-
-<span class="kd">function</span><span class="w"> </span><span class="nx">saveCatalog</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="nx">STORAGE_KEY</span><span class="p">,</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">catalog</span><span class="p">));</span>
-<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="s2">&quot;Не удалось сохранить каталог&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kd">function</span><span class="w"> </span><span class="nx">loadCatalog</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">raw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="nx">STORAGE_KEY</span><span class="p">);</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">raw</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
-<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">raw</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="s2">&quot;Сохранённые данные повреждены&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<p>Если записи нет, <code class="code-inline language-javascript"><span class="nx">getItem</span></code> возвращает <code class="code-inline language-javascript"><span class="kc">null</span></code>. Это нормальный случай первого открытия, а не поломка.</p>
+<p>Обычную строку <code>мини</code> можно сохранить прямо. Мы выберем объект настроек <code class="code-inline language-javascript"><span class="p">{</span><span class="w"> </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;мини&quot;</span><span class="w"> </span><span class="p">}</span></code>: так видно имя настройки, а позже к ней можно добавить другие. Для хранения этого объекта понадобится JSON.</p>
+<h2 id="3-json-текстовая-упаковка-данных">3. JSON — текстовая упаковка данных</h2>
+<p>В работающей программе настройки — объект:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">settings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;мини&quot;</span><span class="w"> </span><span class="p">};</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nf">stringify</span><span class="p">(</span><span class="nx">settings</span><span class="p">);</span>
 </code></pre></div>
-<p><code>saveCatalog</code> превращает массив в строку и записывает её. <code>loadCatalog</code> возвращает <code>null</code>, если ключа нет: тогда программа работает с массивом из кода. Разбор обёрнут в <code>try/catch</code>, потому что в хранилище может лежать что угодно — обрезанная строка после сбоя или прежний формат. Ошибка разбора не должна ломать страницу: возвращается <code>null</code>, а в консоль выводится предупреждение.</p>
-<p>Восстановление при запуске — до первого вывода каталога:</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">savedItems</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">loadCatalog</span><span class="p">();</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">savedItems</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">catalog</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">savedItems</span><span class="p">);</span>
-<span class="p">}</span>
+<p><code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span></code> превращает объект в строку. <strong>Содержимое строки</strong> будет таким:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JSON</span></div><pre><code class="language-json"><span class="p">{</span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="s2">&quot;мини&quot;</span><span class="p">}</span>
 </code></pre></div>
-<p><code>Array.isArray</code> отсекает всё, что не является массивом: <code>JSON.parse</code> мог вернуть число, строку или объект. <code>catalog.length = 0</code> очищает массив, не заменяя переменную: <code>const</code> запрещает присваивать новое значение, но менять содержимое массива можно. <code>push(...savedItems)</code> добавляет все прочитанные записи по порядку. После этого каталог в памяти совпадает с сохранённым, и дальше работает обычный вывод.</p>
-<aside class="callout" data-callout="note">
-<p class="callout-title">Сохранённое — недоверенные данные</p><p>Ключ мог изменить другой скрипт или сам пользователь через инструменты браузера. После <code>JSON.parse</code> проверяйте, что получился массив, и только потом показывайте его. Молча подставлять прочитанное в разметку нельзя.</p>
+<p>Фигурные скобки обозначают объект, <code class="code-inline language-javascript"><span class="nx">query</span></code> — имя свойства, <code>мини</code> — его значение. В JSON имена свойств и строковые значения пишут в двойных кавычках.</p>
+<p>Запись в хранилище:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">localStorage</span><span class="p">.</span><span class="nf">setItem</span><span class="p">(</span><span class="s2">&quot;catalog-search-v1&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">text</span><span class="p">);</span>
+</code></pre></div>
+<p>При открытии читаем строку и восстанавливаем объект:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">raw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nf">getItem</span><span class="p">(</span><span class="s2">&quot;catalog-search-v1&quot;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">restored</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="nx">raw</span><span class="p">);</span>
+</code></pre></div>
+<p>Здесь предполагается, что запись есть и содержит правильный JSON. Ниже разберём, что делать иначе. После успешного разбора <code class="code-inline language-javascript"><span class="nx">restored</span><span class="p">.</span><span class="nx">query</span></code> — снова строка <code>мини</code>.</p>
+<p><img alt="Два пути: объект настроек превращается в строку и сохраняется; прочитанная строка превращается обратно в объект" src="assets/026-00-search-storage.svg"></p>
+<aside class="callout" data-callout="important">
+<p class="callout-title">Упаковать — не значит сохранить</p><p><code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span></code> создаёт строку, но не записывает её в хранилище. <code class="code-inline language-javascript"><span class="nx">setItem</span></code> записывает. <code class="code-inline language-javascript"><span class="nx">getItem</span></code> читает строку. <code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span></code> разбирает прочитанный текст. Это четыре разных действия.</p>
 </aside>
-<p>Правило: <code>saveCatalog()</code> вызывают сразу после того, как данные изменились, — а не при открытии страницы. Когда появится единое состояние <code>state</code> и функция <code>render</code>, вызов останется тем же, изменится только место: сохранение после изменения состояния, загрузка до первого <code>render</code>.</p>
-<h2 id="5-что-в-localstorage-хранить-нельзя">5. Что в localStorage хранить нельзя</h2>
-<ul>
-<li><strong>Секреты и чужие персональные данные.</strong> Пароли, ключи и токены видны в инструментах браузера и доступны любому скрипту этой страницы.</li>
-<li><strong>Большие файлы.</strong> Изображения и видео не помещаются в отведённый объём, а запись тормозит страницу.</li>
-<li><strong>Данные для другого устройства.</strong> <code>localStorage</code> живёт только в одном браузере одного устройства; общий каталог для всех посетителей требует сервера и базы данных.</li>
-</ul>
-<p><strong><code>sessionStorage</code></strong> устроен так же, но у каждой вкладки своя копия, и данные исчезают при её закрытии. Он годится для черновика текущего сеанса; всё, что должно пережить закрытие страницы, остаётся в <code>localStorage</code>.</p>
-<h2 id="6-что-показывает-преподаватель">6. Что показывает преподаватель</h2>
-<p>Смотрите на экран и сверяйте. Записывать код не нужно: важно понять, что происходит с данными.</p>
-<p><strong>Демонстрация 1. Строка вместо массива.</strong> Преподаватель открывает подготовленную страницу каталога, выполняет в консоли <code>JSON.stringify(catalog)</code> и <code>typeof JSON.stringify(catalog)</code> и показывает результат рядом с карточками. На экране — одна длинная строка и слово <code>string</code>.</p>
-<p><strong>Демонстрация 2. Сохранение переживает перезагрузку.</strong> Преподаватель добавляет четвёртую запись, вызывает <code>saveCatalog()</code>, перерисовывает каталог и перезагружает страницу. Должно быть видно четыре карточки и «Показано: 4 из 4». Затем он удаляет ключ и перезагружает страницу: снова три карточки.</p>
-<p><strong>Демонстрация 3. Что лежит в хранилище.</strong> Преподаватель открывает панель хранилища браузера и показывает ключ <code>catalog-v1</code> и строку JSON в значении. Потом заменяет значение на <code>не json</code> и перезагружает страницу. Должно быть видно: страница не упала, показаны три карточки из кода, в консоли предупреждение о повреждённых данных.</p>
-<h2 id="7-работа-на-паре">7. Работа на паре</h2>
-<p>Карточки выполняются без компьютера: письменно в тетради или устно в паре. На карточку достаточно 2–3 минут; ответы проверяет преподаватель.</p>
-<p><strong>Карточка 1. Расшифруйте строку.</strong> Сколько здесь записей, какие поля и какого они типа, что означает <code>null</code>, что вернёт <code>JSON.parse</code> для этой строки?</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JSON</span></div><pre><code class="language-json"><span class="p">[{</span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Набор \&quot;Мини\&quot;&quot;</span><span class="p">,</span><span class="nt">&quot;specs&quot;</span><span class="p">:</span><span class="s2">&quot;4 предмета&quot;</span><span class="p">,</span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Для поездки&quot;</span><span class="p">},{</span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Набор \&quot;Про\&quot;&quot;</span><span class="p">,</span><span class="nt">&quot;specs&quot;</span><span class="p">:</span><span class="s2">&quot;8 предметов&quot;</span><span class="p">,</span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="kc">null</span><span class="p">}]</span>
-</code></pre></div>
-<p><strong>Карточка 2. Что вернёт <code>getItem</code>.</strong> В хранилище одного источника ключа <code>catalog-v1</code> нет; ключ <code>count</code> содержит <code>3</code>; ключ <code>old</code> содержит <code>[object Object]</code>. Что вернёт <code>getItem</code> для каждого ключа и почему? В каких случаях <code>loadCatalog</code> вернёт <code>null</code>?</p>
-<p><strong>Карточка 3. Найдите ошибку в сохранении.</strong> В проекте функцию переписали так, чтобы она принимала список:</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">function</span><span class="w"> </span><span class="nx">saveCatalog</span><span class="p">(</span><span class="nx">items</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="nx">STORAGE_KEY</span><span class="p">,</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">items</span><span class="p">));</span>
-<span class="p">}</span>
-
-<span class="nx">saveCatalog</span><span class="p">(</span><span class="nx">filterByText</span><span class="p">(</span><span class="nx">catalog</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;набор&quot;</span><span class="p">));</span>
-</code></pre></div>
-<p>Что окажется в хранилище после этого вызова, что будет после перезагрузки и в какой момент надо сохранять каталог?</p>
-<p><strong>Карточка 4. Объясните разницу хранилищ.</strong> Студент сохранил каталог в браузере телефона, а затем открыл ту же страницу на ноутбуке: данных нет. Назовите причину и два случая, когда данные не появятся даже в двух окнах одного устройства.</p>
-<p><strong>Карточка 5. Спроектируйте ключи и запись.</strong> Для каталога, текста поиска и признака сортировки придумайте ключи и структуру хранения. Запишите один объект каталога в JSON. Объясните, почему ключей несколько и зачем в имени ключа версия.</p>
-<p><strong>Карточка 6. Почему данные сохранились.</strong> Вы добавили карточку, вызвали <code>saveCatalog()</code>, закрыли вкладку и открыли страницу снова. Объясните по шагам, где данные были между закрытием и открытием, что вернул <code>getItem</code>, что сделал <code>JSON.parse</code> и почему карточек снова четыре.</p>
-<h2 id="8-самопроверка">8. Самопроверка</h2>
-<p>Ответьте письменно или устно, не подглядывая в объяснение выше.</p>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 2. Соберите два маршрута</p><p>Используйте действия: <code class="code-inline language-javascript"><span class="nx">getItem</span></code>, <code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span></code>, <code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span></code>, <code class="code-inline language-javascript"><span class="nx">setItem</span></code>.</p>
 <ol>
-<li>Чем <code>JSON.stringify(catalog)</code> отличается от самого массива и почему в хранилище кладут первое?</li>
-<li>Что вернёт <code>getItem</code>, если ключа нет, и почему <code>loadCatalog</code> в этом случае возвращает <code>null</code>?</li>
-<li>Зачем <code>JSON.parse</code> обёрнут в <code>try/catch</code> и что получит программа при повреждённой строке?</li>
-<li>Почему массив очищают через <code>catalog.length = 0</code>, а не присваивают <code>catalog = savedItems</code>?</li>
-<li>Почему данные сохраняются после перезагрузки и при каких условиях они всё-таки пропадут?</li>
+<li>Расположите нужные действия между «объект настроек» и «хранилище».</li>
+<li>Расположите оставшиеся между «хранилище» и «восстановленный объект».</li>
+<li>Над каждой стрелкой подпишите, что передаётся: объект или строка.</li>
+<li>Объясните, достаточно ли одного <code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span></code>, чтобы запрос пережил закрытие страницы.</li>
 </ol>
-<h2 id="9-если-есть-компьютер">9. Если есть компьютер</h2>
-<p>Дома или на следующей паре за компьютером выполните короткую практику, чтобы закрепить разбор.</p>
+</aside>
+<h2 id="4-пройдите-через-обновление-страницы">4. Пройдите через обновление страницы</h2>
+<p>Пусть сохранение вызывается <strong>после изменения запроса</strong>, а загрузка — <strong>при открытии страницы до вывода карточек</strong>. При загрузке приложение читает настройку, заполняет поле и показывает результат поиска.</p>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 3. Вы — браузер</p><p>Начните без сохранённой записи. Перенесите в тетрадь только заголовки: «Шаг / поле поиска / строка в хранилище / видимые карточки». Заполните шесть строк.</p>
 <ol>
-<li>В <code>catalog-page.js</code> добавьте <code>STORAGE_KEY</code>, <code>saveCatalog</code>, <code>loadCatalog</code> и блок восстановления до первого вывода.</li>
-<li>Добавьте запись в <code>catalog</code> (например, в консоли), вызовите <code>saveCatalog()</code>, перезагрузите страницу: карточек четыре, счётчик «Показано: 4 из 4».</li>
-<li>Откройте DevTools → <strong>Application → Local Storage</strong>: проверьте ключ <code>catalog-v1</code> и строку JSON.</li>
-<li>Замените значение на <code>не json</code> и перезагрузите страницу: она работает, в консоли предупреждение.</li>
-<li>Удалите ключ через <code>removeItem</code>, перезагрузите: снова три карточки. Сравните <code>file://</code> и <code>http://localhost</code> — это разные хранилища.</li>
+<li>Открыли приложение впервые.</li>
+<li>Ввели <code>мини</code>; приложение сохранило настройку.</li>
+<li>Обновили страницу; приложение восстановило настройку.</li>
+<li>Заменили запрос на <code>про</code>; приложение сохранило настройку.</li>
+<li>Очистили поле; приложение сохранило пустой запрос.</li>
+<li>Закрыли и снова открыли страницу в том же браузере.</li>
 </ol>
-<p>Проверка в браузере — это практика; разбор на паре её не заменяет.</p>
-<h2 id="10-если-что-то-не-получилось">10. Если что-то не получилось</h2>
-<ul>
-<li><strong>После перезагрузки снова три карточки.</strong> <code>saveCatalog()</code> не вызван после изменения, ключи записи и чтения разные или страница открыта из другого источника.</li>
-<li><strong>В значении <code>[object Object]</code>.</strong> В <code>setItem</code> передан массив, а не результат <code>JSON.stringify(catalog)</code>.</li>
-<li><strong><code>SyntaxError</code> при разборе.</strong> В хранилище не JSON: <code>[object Object]</code>, одинарные кавычки, лишняя запятая, обрезанная строка.</li>
-<li><strong><code>JSON.parse</code> вернул не массив.</strong> Сохранён один объект или число; нужна проверка <code>Array.isArray</code>.</li>
-<li><strong>Данные есть в одной вкладке и нет в другой.</strong> Разные источники, другой браузер или приватное окно.</li>
-<li><strong>Пропали записи других страниц.</strong> Вызван <code>clear()</code> вместо <code>removeItem("catalog-v1")</code>.</li>
-</ul></main>
+<p>Для отсутствующей записи пишите «нет записи», для пустого запроса — <code class="code-inline language-javascript"><span class="s2">&quot;&quot;</span></code>. В последнем столбце перечисляйте названия, а не только их количество. Сам массив <code class="code-inline language-javascript"><span class="nx">catalog</span></code> ни на одном шаге не меняется.</p>
+</aside>
+<p>Сначала заполните самостоятельно. Затем сравните с соседом <strong>строку 5</strong>: пустой запрос и отсутствие записи — разные случаи, хотя оба могут давать полный каталог.</p>
+<h2 id="5-если-сохранённого-значения-нет-или-оно-испорчено">5. Если сохранённого значения нет или оно испорчено</h2>
+<p>При первом открытии возвращаем пустой запрос. Если вместо JSON лежит <code>не json</code>, разбор вызовет ошибку. Приложение должно сообщить о проблеме и показать полный каталог, чтобы поиск оставался доступен.</p>
+<p>Даже правильный JSON не гарантирует нужную настройку: <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="mf">25</span><span class="p">}</span></code> содержит число, а поиску нужна строка. Поэтому после разбора проверяют структуру и тип значения.</p>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 4. Что восстановить?</p><p>Для каждого случая запишите: «можно использовать» или «нужен пустой запрос», а затем причину.</p>
+<p>А. Ключа нет, <code class="code-inline language-javascript"><span class="nx">getItem</span></code> вернул <code class="code-inline language-javascript"><span class="kc">null</span></code>.</p>
+<p>Б. Прочитана строка <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="s2">&quot;мини&quot;</span><span class="p">}</span></code>.</p>
+<p>В. Прочитана строка <code>не json</code>.</p>
+<p>Г. Прочитана строка <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="mf">25</span><span class="p">}</span></code>.</p>
+<p>Д. Прочитана строка <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">}</span></code>.</p>
+<p>Отдельно укажите, где текст вообще не разбирается как JSON, а где JSON правильный, но значение не подходит поиску.</p>
+</aside>
+<h2 id="6-где-заканчивается-память-браузера">6. Где заканчивается память браузера</h2>
+<p>Сохранение относится к одному браузеру и источнику сайта: протоколу, имени хоста и порту. На другом телефоне или в другом браузере эта настройка сама не появится. В приватном режиме данные обычно удаляются после завершения приватного сеанса; пользователь также может очистить данные сайта.</p>
+<p>Для локальных файлов <code class="code-inline language-javascript"><span class="nx">file</span><span class="o">:</span><span class="c1">//</span></code> поведение хранения может различаться. Будущую компьютерную проверку проводите по одному HTTP-адресу; изменение порта создаёт другой источник.</p>
+<p>В нашем ключе хранятся учебные настройки поиска. Пароли и секретные ключи сюда не помещают. <code class="code-inline language-javascript"><span class="nx">localStorage</span></code> не заменяет сервер и не отправляет данные преподавателю.</p>
+<hr>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Задание 5. Примените к своему приложению</p><p>Выберите слово из названия карточки своего проекта. Запишите объект настройки в JSON, объясните, какие карточки должны остаться при таком поиске, и придумайте проверку после перезагрузки.</p>
+<p>Затем объясните одногруппнику, почему на его телефоне ваш запрос может не восстановиться, даже если вы открыли одну ссылку.</p>
+</aside>
+<h2 id="перед-следующей-частью">Перед следующей частью</h2>
+<p>Завершите две фразы: <strong>«JSON нужен, чтобы…»</strong> и <strong>«localStorage нужен, чтобы…»</strong>.</p>
+<p>Мы определили, что сохранить. В <a href="027-interface-logic-and-diagnostics.html">следующей части</a> проверим, как восстановить весь экран: недостаточно вернуть текст только в поле ввода.</p></div></main>
   </div>
   <footer class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
     <p id="site-update-status" role="status" aria-live="polite"></p>
