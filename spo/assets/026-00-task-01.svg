@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" role="img" aria-labelledby="title desc"><title id="title">Карточка 26.1. Что запоминать?</title><desc id="desc">Пустые поля для самостоятельного заполнения в тетради. Перенесите номер карточки и обозначения полей.</desc><rect width="1000" height="660" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.head{font-size:31px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px}</style>
 <text x="30" y="46" class="head">26.1  Что запоминать?</text>
 <text x="30" y="636" class="">В тетрадь: номер, буквы полей и сетка. Условие не переписывайте.</text>
-<text x="30" y="95" class="">Распределите: названия карточек, запрос мини, CSS-цвет.</text>
-<text x="30" y="132" class="">Впишите ответы словами. Подчеркните то, что надо сохранить.</text>
+<text x="30" y="95" class="">Распределите: 1 — названия карточек; 2 — запрос мини;</text>
+<text x="30" y="132" class="">3 — CSS-цвет карточки. Пишите номер и название; нужное подчеркните.</text>
 <path d="M33 168 Q257.5 165 483 169 L485 344 Q257.5 348 31 346 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
 <text x="42" y="197" class="">А. Есть в файлах</text>
 <path d="M518 168 Q742.5 165 968 169 L970 344 Q742.5 348 516 346 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
