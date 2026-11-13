@@ -8,8 +8,8 @@
 <path d="M518 168 Q742.5 165 968 169 L970 344 Q742.5 348 516 346 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
 <text x="527" y="197" class="">Б. Ввёл пользователь</text>
 <text x="30" y="391" class="">Прогноз: сохранение уже работает, запрос мини, перезагрузка.</text>
-<path d="M33 418 Q500.0 415 968 419 L970 479 Q500.0 483 31 481 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 418 Q500.0 415 968 419 L970 494 Q500.0 498 31 496 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
 <text x="42" y="447" class="">В. Запрос после открытия:</text>
-<path d="M33 504 Q500.0 501 968 505 L970 565 Q500.0 569 31 567 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
-<text x="42" y="533" class="">Г. Число видимых карточек:</text>
+<path d="M33 514 Q500.0 511 968 515 L970 590 Q500.0 594 31 592 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="543" class="">Г. Число видимых карточек:</text>
 </svg>
