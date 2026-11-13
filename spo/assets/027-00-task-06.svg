@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" role="img" aria-labelledby="title desc"><title id="title">Карточка 27.6. Короткий отчёт об ошибке</title><desc id="desc">Условие и пустые поля для работы в тетради. Перенесите номер карточки, буквы полей и сетку; условие остаётся на экране.</desc><rect width="1000" height="850" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.heading{font-size:32px;font-weight:600}.code{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:22px}.small{font-size:22px}</style>
+<text x="35" y="48" class="heading">27.6 · Короткий отчёт об ошибке</text>
+<text x="35" y="91" class="small">HTML: id=&quot;search&quot;. Ниже строки файла catalog-page.js.</text>
+<path d="M37 110 Q500.0 107 964 109 L966 265 Q500.0 268 35 266 Z" fill="#eef5ff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="140" class="code">1  const searchInput =</text>
+<text x="50" y="171" class="code">     document.querySelector(&quot;#serch&quot;);</text>
+<text x="50" y="204" class="code">2  function render() {</text>
+<text x="50" y="235" class="code">3    searchInput.value = state.query;</text>
+<text x="50" y="258" class="code">4  }</text>
+<text x="35" y="304" class="code">TypeError: Cannot set properties of null</text>
+<text x="35" y="337" class="code">(setting &#x27;value&#x27;) at render (catalog-page.js:3:21)</text>
+<text x="35" y="377" class="small">Заполните отчёт и объясните, поможет ли замена текста запроса.</text>
+<path d="M37 398 Q500.0 395 964 397 L966 456 Q500.0 459 35 457 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="425">А · Место остановки (файл, строка, столбец)</text>
+<path d="M37 471 Q500.0 468 964 470 L966 529 Q500.0 532 35 530 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="498">Б · Причина и строка с причиной</text>
+<path d="M37 544 Q500.0 541 964 543 L966 628 Q500.0 631 35 629 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="571">В · Исправленная строка</text>
+<path d="M37 643 Q500.0 640 964 642 L966 710 Q500.0 713 35 711 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="670">Г · Проверка после исправления</text>
+<path d="M37 725 Q500.0 722 964 724 L966 794 Q500.0 797 35 795 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="752">Д · Почему другое значение state.query не исправит ошибку?</text>
+<text x="35" y="830" class="small">В тетрадь: номер карточки, буквы и сетку. Условие не переписывайте.</text>
+</svg>

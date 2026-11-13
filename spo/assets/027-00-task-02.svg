@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 790" role="img" aria-labelledby="title desc"><title id="title">Карточка 27.2. Трассировка поиска</title><desc id="desc">Условие и пустые поля для работы в тетради. Перенесите номер карточки, буквы полей и сетку; условие остаётся на экране.</desc><rect width="1000" height="790" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.heading{font-size:32px;font-weight:600}.code{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:22px}.small{font-size:22px}</style>
+<text x="35" y="48" class="heading">27.2 · Трассировка поиска</text>
+<text x="35" y="91" class="small">Каталог: «Набор Старт», «Набор Мини», «Набор Про».</text>
+<text x="35" y="126" class="small">Старт: запрос пустой, видны все 3. После ввода: сохранить → render().</text>
+<text x="35" y="161" class="small">1 — ввести «мини»; 2 — заменить на «НАБОР»; 3 — ввести «чайник».</text>
+<text x="35" y="196" class="small">4 — сброс: пустой запрос → сохранить → render(); 5 — перезагрузка.</text>
+<text x="35" y="231" class="small">Регистр не важен; пустой запрос — всё; нет совпадений —</text>
+<text x="35" y="266" class="small">подпись «Ничего не найдено». Иначе — «Показано: … из 3».</text>
+<text x="35" y="301" class="small">Запишите результат ПОСЛЕ каждого шага. Каталог не изменяется.</text>
+<path d="M37 328 Q500.0 325 964 327 L966 701 Q500.0 704 35 702 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<path d="M85 326 Q86.0 513.0 85 702" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M325 326 Q326.0 513.0 325 702" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M645 326 Q646.0 513.0 645 702" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 372 Q501.0 371.0 965 372" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 438 Q501.0 437.0 965 438" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 504 Q501.0 503.0 965 504" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 570 Q501.0 569.0 965 570" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 636 Q501.0 635.0 965 636" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<text x="48" y="357" class="small">№</text>
+<text x="95" y="357" class="small">А · state.query</text>
+<text x="335" y="357" class="small">Б · Видимые карточки</text>
+<text x="655" y="357" class="small">В · Подпись</text>
+<text x="50" y="407" class="small">1</text>
+<text x="50" y="473" class="small">2</text>
+<text x="50" y="539" class="small">3</text>
+<text x="50" y="605" class="small">4</text>
+<text x="50" y="671" class="small">5</text>
+<text x="35" y="735" class="small">Можно кратко: Старт, Мини, Про; пустая строка — «пусто».</text>
+<text x="35" y="770" class="small">В тетрадь: номер карточки, буквы и сетку. Условие не переписывайте.</text>
+</svg>

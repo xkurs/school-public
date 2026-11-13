@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" role="img" aria-labelledby="title desc"><title id="title">Карточка 26.3. Вы — браузер</title><desc id="desc">Пустые поля для самостоятельного заполнения в тетради. Перенесите номер карточки и обозначения полей.</desc><rect width="1000" height="850" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.head{font-size:31px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px}</style>
+<text x="30" y="46" class="head">26.3  Вы — браузер</text>
+<text x="30" y="826" class="">В тетрадь: номер, буквы полей и сетка. Условие не переписывайте.</text>
+<text x="30" y="92" class="">1 — первое открытие; 2 — ввели мини и сохранили;</text>
+<text x="30" y="128" class="">3 — обновили; 4 — ввели про и сохранили;</text>
+<text x="30" y="164" class="">5 — очистили и сохранили; 6 — закрыли и снова открыли.</text>
+<text x="30" y="200" class="">Карточки: Старт, Мини, Про. Пустой запрос: &quot;&quot;.</text>
+<text x="30" y="238" class="">Б: впишите строку JSON целиком; если записи нет — «нет записи».</text>
+<path d="M33 270 Q75.0 267 118 271 L120 328 Q75.0 332 31 330 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="299" class="">Шаг</text>
+<path d="M123 270 Q220.0 267 318 271 L320 328 Q220.0 332 121 330 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="132" y="299" class="">А. Поле</text>
+<path d="M323 270 Q505.0 267 688 271 L690 328 Q505.0 332 321 330 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="332" y="299" class="">Б. Хранилище</text>
+<path d="M693 270 Q830.0 267 968 271 L970 328 Q830.0 332 691 330 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="702" y="299" class="">В. Карточки</text>
+<path d="M33 332 Q75.0 329 118 333 L120 390 Q75.0 394 31 392 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="361" class="">1</text>
+<path d="M123 332 Q220.0 329 318 333 L320 390 Q220.0 394 121 392 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M323 332 Q505.0 329 688 333 L690 390 Q505.0 394 321 392 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M693 332 Q830.0 329 968 333 L970 390 Q830.0 394 691 392 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 394 Q75.0 391 118 395 L120 452 Q75.0 456 31 454 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="423" class="">2</text>
+<path d="M123 394 Q220.0 391 318 395 L320 452 Q220.0 456 121 454 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M323 394 Q505.0 391 688 395 L690 452 Q505.0 456 321 454 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M693 394 Q830.0 391 968 395 L970 452 Q830.0 456 691 454 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 456 Q75.0 453 118 457 L120 514 Q75.0 518 31 516 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="485" class="">3</text>
+<path d="M123 456 Q220.0 453 318 457 L320 514 Q220.0 518 121 516 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M323 456 Q505.0 453 688 457 L690 514 Q505.0 518 321 516 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M693 456 Q830.0 453 968 457 L970 514 Q830.0 518 691 516 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 518 Q75.0 515 118 519 L120 576 Q75.0 580 31 578 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="547" class="">4</text>
+<path d="M123 518 Q220.0 515 318 519 L320 576 Q220.0 580 121 578 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M323 518 Q505.0 515 688 519 L690 576 Q505.0 580 321 578 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M693 518 Q830.0 515 968 519 L970 576 Q830.0 580 691 578 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 580 Q75.0 577 118 581 L120 638 Q75.0 642 31 640 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="609" class="">5</text>
+<path d="M123 580 Q220.0 577 318 581 L320 638 Q220.0 642 121 640 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M323 580 Q505.0 577 688 581 L690 638 Q505.0 642 321 640 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M693 580 Q830.0 577 968 581 L970 638 Q830.0 642 691 640 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 642 Q75.0 639 118 643 L120 700 Q75.0 704 31 702 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="671" class="">6</text>
+<path d="M123 642 Q220.0 639 318 643 L320 700 Q220.0 704 121 702 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M323 642 Q505.0 639 688 643 L690 700 Q505.0 704 321 702 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M693 642 Q830.0 639 968 643 L970 700 Q830.0 704 691 702 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 725 Q500.0 722 968 726 L970 806 Q500.0 810 31 808 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="754" class="">Г. Чем строка 5 отличается от строки 1?</text>
+</svg>

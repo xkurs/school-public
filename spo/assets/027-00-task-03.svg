@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780" role="img" aria-labelledby="title desc"><title id="title">Карточка 27.3. Счётчик и карточки</title><desc id="desc">Условие и пустые поля для работы в тетради. Перенесите номер карточки, буквы полей и сетку; условие остаётся на экране.</desc><rect width="1000" height="780" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.heading{font-size:32px;font-weight:600}.code{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:22px}.small{font-size:22px}</style>
+<text x="35" y="48" class="heading">27.3 · Счётчик и карточки</text>
+<text x="35" y="91" class="small">Каталог содержит 3 записи. Фильтр нашёл 1: «Набор Мини».</text>
+<text x="35" y="129" class="small">В renderCatalog(items) подпись собирают так:</text>
+<path d="M37 150 Q500.0 147 964 149 L966 265 Q500.0 268 35 266 Z" fill="#eef5ff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="53" y="181" class="code">statusText.textContent = &quot;Показано: &quot; +</text>
+<text x="53" y="214" class="code">  catalog.length + &quot; из &quot; + catalog.length;</text>
+<text x="35" y="305" class="small">Предскажите подпись. Исправьте строку. Дайте 2 других запроса.</text>
+<path d="M37 332 Q500.0 329 964 331 L966 394 Q500.0 397 35 395 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="359">А · Подпись до исправления</text>
+<path d="M37 410 Q500.0 407 964 409 L966 482 Q500.0 485 35 483 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="437">Б · Какое выражение заменить и на что</text>
+<path d="M37 498 Q500.0 495 964 497 L966 605 Q500.0 608 35 606 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="525">В · Исправленная строка (можно в две строки)</text>
+<path d="M37 621 Q500.0 618 964 620 L966 672 Q500.0 675 35 673 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="648">Г · Проверочный запрос 1</text>
+<path d="M37 687 Q500.0 684 964 686 L966 738 Q500.0 741 35 739 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="714">Д · Проверочный запрос 2</text>
+<text x="35" y="760" class="small">В тетрадь: номер карточки, буквы и сетку. Условие не переписывайте.</text>
+</svg>

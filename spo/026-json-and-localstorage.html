@@ -35,7 +35,7 @@
 <p>Вы нашли нужную карточку в своём каталоге. Обновили страницу — поиск сбросился, и снова видны все карточки. Сделаем так, чтобы приложение помнило ваш запрос.</p>
 <p>В <a href="025-catalog-rendering-and-filtering.html">предыдущей работе</a> поиск уже отбирал карточки. Теперь выясним, <strong>что сохранить между открытиями страницы и как это прочитать обратно</strong>.</p>
 <aside class="callout" data-callout="note">
-<p class="callout-title">Как работать</p><p>Смотрите примеры на экране, а ответы записывайте в тетради: номер задания, таблицу или короткое объяснение. Условия и всю программу переписывать не нужно. Эту же статью можно открыть на телефоне.</p>
+<p class="callout-title">Как работать</p><p>Откройте карточку задания на экране. В тетрадь перенесите её номер (например, <strong>26.3</strong>), буквы полей и простую сетку. Заголовки и условия дословно не переписывайте. Ответы ставьте в тех же местах: так удобно сверять строку и столбец. Рамки рисуйте обычными линиями; цвет и оформление повторять не нужно. Эту же статью можно открыть на телефоне.</p>
 </aside>
 <h2 id="1-что-именно-приложение-забывает">1. Что именно приложение забывает</h2>
 <p>В общем примере три карточки: <strong>«Набор Старт», «Набор Мини», «Набор Про»</strong>. Это учебные названия для разбора; в вашем проекте остаются собственные данные.</p>
@@ -44,9 +44,11 @@
 <p>Каталог записан в файле <code>catalog-page.js</code>, поэтому браузер создаёт его заново. А введённого пользователем запроса в файле нет. Если программа его не запомнит, при новом запуске ей неоткуда его взять.</p>
 <hr>
 <aside class="callout" data-callout="question">
-<p class="callout-title">Задание 1. Что запоминать?</p><p>В тетради сделайте два столбца: «Есть в файлах проекта» и «Появилось при работе пользователя». Распределите: названия трёх карточек, запрос <code>мини</code>, CSS-цвет карточки. Подчеркните значение, которое нужно сохранить для восстановления поиска.</p>
-<p>Запишите прогноз: какой запрос и сколько карточек вы ожидаете увидеть после обновления страницы, когда сохранение заработает?</p>
+<p class="callout-title">Карточка 26.1. Что запоминать?</p><p>В поля А и Б впишите словами: названия карточек, запрос <code>мини</code>, CSS-цвет карточки. Подчеркните значение, которое нужно сохранить для восстановления поиска.</p>
+<p>В поля В и Г запишите прогноз: какой запрос и сколько карточек вы ожидаете увидеть после обновления страницы, когда сохранение заработает?</p>
 </aside>
+<p><img alt="Карточка 26.1: пустые поля для заполнения в тетради" src="assets/026-00-task-01.svg"></p>
+<p><a href="assets/026-00-task-01.svg">Открыть карточку 26.1 на весь экран</a></p>
 <h2 id="2-место-для-сохранённого-запроса">2. Место для сохранённого запроса</h2>
 <p><code class="code-inline language-javascript"><span class="nx">localStorage</span></code> — хранилище браузера. Данные лежат отдельно от переменных работающей страницы и могут пережить её закрытие.</p>
 <p>У каждой записи есть <strong>ключ</strong> — имя, по которому её находят, — и <strong>значение в виде строки</strong>. Наш ключ: <code class="code-inline language-javascript"><span class="nx">catalog</span><span class="o">-</span><span class="nx">search</span><span class="o">-</span><span class="nx">v1</span></code>. Он хранит настройки поиска, а не весь каталог.</p>
@@ -97,19 +99,15 @@
 </aside>
 <hr>
 <aside class="callout" data-callout="question">
-<p class="callout-title">Задание 2. Соберите два маршрута</p><p>Используйте действия: <code class="code-inline language-javascript"><span class="nx">getItem</span></code>, <code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span></code>, <code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span></code>, <code class="code-inline language-javascript"><span class="nx">setItem</span></code>.</p>
-<ol>
-<li>Расположите нужные действия между «объект настроек» и «хранилище».</li>
-<li>Расположите оставшиеся между «хранилище» и «восстановленный объект».</li>
-<li>Над каждой стрелкой подпишите, что передаётся: объект или строка.</li>
-<li>Объясните, достаточно ли одного <code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span></code>, чтобы запрос пережил закрытие страницы.</li>
-</ol>
+<p class="callout-title">Карточка 26.2. Соберите два маршрута</p><p>В карточке впишите действия <code class="code-inline language-javascript"><span class="nx">getItem</span></code>, <code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span></code>, <code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span></code>, <code class="code-inline language-javascript"><span class="nx">setItem</span></code> в поля А1, А2, Б1, Б2. В и Г — тип промежуточных данных (объект или строка). Начало и конец маршрутов уже указаны на экране. В поле Д объясните, достаточно ли одного <code class="code-inline language-javascript"><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span></code>, чтобы запрос пережил закрытие страницы.</p>
 </aside>
+<p><img alt="Карточка 26.2: пустые поля для заполнения в тетради" src="assets/026-00-task-02.svg"></p>
+<p><a href="assets/026-00-task-02.svg">Открыть карточку 26.2 на весь экран</a></p>
 <h2 id="4-пройдите-через-обновление-страницы">4. Пройдите через обновление страницы</h2>
 <p>Пусть сохранение вызывается <strong>после изменения запроса</strong>, а загрузка — <strong>при открытии страницы до вывода карточек</strong>. При загрузке приложение читает настройку, заполняет поле и показывает результат поиска.</p>
 <hr>
 <aside class="callout" data-callout="question">
-<p class="callout-title">Задание 3. Вы — браузер</p><p>Начните без сохранённой записи. Перенесите в тетрадь только заголовки: «Шаг / поле поиска / строка в хранилище / видимые карточки». Заполните шесть строк.</p>
+<p class="callout-title">Карточка 26.3. Вы — браузер</p><p>Начните без сохранённой записи. Перенесите сетку карточки: шесть строк и три столбца А–В. Условия шагов остаются на экране.</p>
 <ol>
 <li>Открыли приложение впервые.</li>
 <li>Ввели <code>мини</code>; приложение сохранило настройку.</li>
@@ -118,31 +116,49 @@
 <li>Очистили поле; приложение сохранило пустой запрос.</li>
 <li>Закрыли и снова открыли страницу в том же браузере.</li>
 </ol>
-<p>Для отсутствующей записи пишите «нет записи», для пустого запроса — <code class="code-inline language-javascript"><span class="s2">&quot;&quot;</span></code>. В последнем столбце перечисляйте названия, а не только их количество. Сам массив <code class="code-inline language-javascript"><span class="nx">catalog</span></code> ни на одном шаге не меняется.</p>
+<p>Для отсутствующей записи пишите «нет записи», для пустого запроса — <code class="code-inline language-javascript"><span class="s2">&quot;&quot;</span></code>. В столбце В вписывайте названия Старт, Мини, Про; в Б записывайте полную строку JSON. В поле Г сравните строки 1 и 5. Сам массив <code class="code-inline language-javascript"><span class="nx">catalog</span></code> ни на одном шаге не меняется.</p>
 </aside>
+<p><img alt="Карточка 26.3: пустые поля для заполнения в тетради" src="assets/026-00-task-03.svg"></p>
+<p><a href="assets/026-00-task-03.svg">Открыть карточку 26.3 на весь экран</a></p>
 <p>Сначала заполните самостоятельно. Затем сравните с соседом <strong>строку 5</strong>: пустой запрос и отсутствие записи — разные случаи, хотя оба могут давать полный каталог.</p>
 <h2 id="5-если-сохранённого-значения-нет-или-оно-испорчено">5. Если сохранённого значения нет или оно испорчено</h2>
 <p>При первом открытии возвращаем пустой запрос. Если вместо JSON лежит <code>не json</code>, разбор вызовет ошибку. Приложение должно сообщить о проблеме и показать полный каталог, чтобы поиск оставался доступен.</p>
 <p>Даже правильный JSON не гарантирует нужную настройку: <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="mf">25</span><span class="p">}</span></code> содержит число, а поиску нужна строка. Поэтому после разбора проверяют структуру и тип значения.</p>
 <hr>
 <aside class="callout" data-callout="question">
-<p class="callout-title">Задание 4. Что восстановить?</p><p>Для каждого случая запишите: «можно использовать» или «нужен пустой запрос», а затем причину.</p>
-<p>А. Ключа нет, <code class="code-inline language-javascript"><span class="nx">getItem</span></code> вернул <code class="code-inline language-javascript"><span class="kc">null</span></code>.</p>
-<p>Б. Прочитана строка <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="s2">&quot;мини&quot;</span><span class="p">}</span></code>.</p>
-<p>В. Прочитана строка <code>не json</code>.</p>
-<p>Г. Прочитана строка <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="mf">25</span><span class="p">}</span></code>.</p>
-<p>Д. Прочитана строка <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">}</span></code>.</p>
-<p>Отдельно укажите, где текст вообще не разбирается как JSON, а где JSON правильный, но значение не подходит поиску.</p>
+<p class="callout-title">Карточка 26.4. Что восстановить?</p><p>В каждой строке карточки в А запишите: «можно использовать» или «нужен пустой запрос», а в Б — короткую причину.</p>
+<ol>
+<li>
+<p>Ключа нет, <code class="code-inline language-javascript"><span class="nx">getItem</span></code> вернул <code class="code-inline language-javascript"><span class="kc">null</span></code>.</p>
+</li>
+<li>
+<p>Прочитана строка <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="s2">&quot;мини&quot;</span><span class="p">}</span></code>.</p>
+</li>
+<li>
+<p>Прочитана строка <code>не json</code>.</p>
+</li>
+<li>
+<p>Прочитана строка <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="mf">25</span><span class="p">}</span></code>.</p>
+</li>
+<li>
+<p>Прочитана строка <code class="code-inline language-javascript"><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">}</span></code>.</p>
+</li>
+</ol>
+<p>В поля В и Г впишите само содержимое неподходящей записи: текст не разбирается как JSON; JSON правильный, но тип значения не подходит поиску.</p>
 </aside>
+<p><img alt="Карточка 26.4: пустые поля для заполнения в тетради" src="assets/026-00-task-04.svg"></p>
+<p><a href="assets/026-00-task-04.svg">Открыть карточку 26.4 на весь экран</a></p>
 <h2 id="6-где-заканчивается-память-браузера">6. Где заканчивается память браузера</h2>
 <p>Сохранение относится к одному браузеру и источнику сайта: протоколу, имени хоста и порту. На другом телефоне или в другом браузере эта настройка сама не появится. В приватном режиме данные обычно удаляются после завершения приватного сеанса; пользователь также может очистить данные сайта.</p>
 <p>Для локальных файлов <code class="code-inline language-javascript"><span class="nx">file</span><span class="o">:</span><span class="c1">//</span></code> поведение хранения может различаться. Будущую компьютерную проверку проводите по одному HTTP-адресу; изменение порта создаёт другой источник.</p>
 <p>В нашем ключе хранятся учебные настройки поиска. Пароли и секретные ключи сюда не помещают. <code class="code-inline language-javascript"><span class="nx">localStorage</span></code> не заменяет сервер и не отправляет данные преподавателю.</p>
 <hr>
 <aside class="callout" data-callout="question">
-<p class="callout-title">Задание 5. Примените к своему приложению</p><p>Выберите слово из названия карточки своего проекта. Запишите объект настройки в JSON, объясните, какие карточки должны остаться при таком поиске, и придумайте проверку после перезагрузки.</p>
+<p class="callout-title">Карточка 26.5. Примените к своему приложению</p><p>Заполните поля А–Д карточки. Выберите слово из названия карточки своего проекта. Запишите объект настройки в JSON, объясните, какие карточки должны остаться при таком поиске, и придумайте проверку после перезагрузки.</p>
 <p>Затем объясните одногруппнику, почему на его телефоне ваш запрос может не восстановиться, даже если вы открыли одну ссылку.</p>
 </aside>
+<p><img alt="Карточка 26.5: пустые поля для заполнения в тетради" src="assets/026-00-task-05.svg"></p>
+<p><a href="assets/026-00-task-05.svg">Открыть карточку 26.5 на весь экран</a></p>
 <h2 id="перед-следующей-частью">Перед следующей частью</h2>
 <p>Завершите две фразы: <strong>«JSON нужен, чтобы…»</strong> и <strong>«localStorage нужен, чтобы…»</strong>.</p>
 <p>Мы определили, что сохранить. В <a href="027-interface-logic-and-diagnostics.html">следующей части</a> проверим, как восстановить весь экран: недостаточно вернуть текст только в поле ввода.</p></div></main>

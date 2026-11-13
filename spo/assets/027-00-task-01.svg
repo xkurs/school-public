@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 740" role="img" aria-labelledby="title desc"><title id="title">Карточка 27.1. Зафиксируйте дефект</title><desc id="desc">Условие и пустые поля для работы в тетради. Перенесите номер карточки, буквы полей и сетку; условие остаётся на экране.</desc><rect width="1000" height="740" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.heading{font-size:32px;font-weight:600}.code{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:22px}.small{font-size:22px}</style>
+<text x="35" y="48" class="heading">27.1 · Зафиксируйте дефект</text>
+<text x="35" y="92" class="small">Каталог: «Набор Старт», «Набор Мини», «Набор Про».</text>
+<text x="35" y="130" class="small">Открыли приложение. Сохранён запрос «мини».</text>
+<text x="35" y="168" class="small">На экране: поле «мини», все 3 карточки, «Показано: 3 из 3».</text>
+<text x="35" y="208" class="small">Заполните ожидание, назовите 2 несоответствия и повторную проверку.</text>
+<path d="M37 234 Q500.0 231 964 233 L966 296 Q500.0 299 35 297 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="261">А · Ожидаемый текст поля</text>
+<path d="M37 311 Q500.0 308 964 310 L966 373 Q500.0 376 35 374 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="338">Б · Ожидаемые карточки</text>
+<path d="M37 388 Q500.0 385 964 387 L966 450 Q500.0 453 35 451 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="415">В · Ожидаемая подпись</text>
+<path d="M37 465 Q500.0 462 964 464 L966 547 Q500.0 550 35 548 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="492">Г · Две части экрана с ошибкой</text>
+<path d="M37 562 Q500.0 559 964 561 L966 669 Q500.0 672 35 670 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="589">Д · Действие для повторной проверки</text>
+<text x="35" y="720" class="small">В тетрадь: номер карточки, буквы и сетку. Условие не переписывайте.</text>
+</svg>

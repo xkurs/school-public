@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 820" role="img" aria-labelledby="title desc"><title id="title">Карточка 27.4. Кнопка очистила только поле</title><desc id="desc">Условие и пустые поля для работы в тетради. Перенесите номер карточки, буквы полей и сетку; условие остаётся на экране.</desc><rect width="1000" height="820" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.heading{font-size:32px;font-weight:600}.code{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:22px}.small{font-size:22px}</style>
+<text x="35" y="48" class="heading">27.4 · Кнопка очистила только поле</text>
+<text x="35" y="91" class="small">До нажатия: поле «мини», state.query = &quot;мини&quot;, карточка «Набор Мини».</text>
+<text x="35" y="130" class="small">Кнопка выполнила только:</text>
+<text x="35" y="173" class="code">searchInput.value = &quot;&quot;;</text>
+<text x="35" y="212" class="small">Заполните А–В после этой команды. Затем предложите исправление.</text>
+<path d="M37 237 Q500.0 234 964 236 L966 292 Q500.0 295 35 293 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="264">А · Текст поля после команды</text>
+<path d="M37 307 Q500.0 304 964 306 L966 362 Q500.0 365 35 363 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="334">Б · state.query после команды</text>
+<path d="M37 377 Q500.0 374 964 376 L966 432 Q500.0 435 35 433 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="404">В · Видимые карточки после команды</text>
+<path d="M37 447 Q500.0 444 964 446 L966 584 Q500.0 587 35 585 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="474">Г · Исправление: 3 команды по порядку</text>
+<path d="M37 600 Q500.0 597 964 599 L966 674 Q500.0 677 35 675 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="627">Д · Что проверить сразу после сброса</text>
+<path d="M37 690 Q500.0 687 964 689 L966 764 Q500.0 767 35 765 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="717">Е · Что проверить после перезагрузки</text>
+<text x="35" y="800" class="small">В тетрадь: номер карточки, буквы и сетку. Условие не переписывайте.</text>
+</svg>

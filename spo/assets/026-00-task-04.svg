@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" role="img" aria-labelledby="title desc"><title id="title">Карточка 26.4. Что восстановить?</title><desc id="desc">Пустые поля для самостоятельного заполнения в тетради. Перенесите номер карточки и обозначения полей.</desc><rect width="1000" height="800" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.head{font-size:31px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px}</style>
+<text x="30" y="46" class="head">26.4  Что восстановить?</text>
+<text x="30" y="776" class="">В тетрадь: номер, буквы полей и сетка. Условие не переписывайте.</text>
+<text x="30" y="94" class="">1 — ключа нет: null; 2 — строка {&quot;query&quot;:&quot;мини&quot;};</text>
+<text x="30" y="131" class="">3 — строка не json; 4 — строка {&quot;query&quot;:25};</text>
+<text x="30" y="168" class="">5 — строка {&quot;query&quot;:&quot;&quot;}.</text>
+<text x="30" y="205" class="">А: использовать / пустой запрос. Б: причина в двух-трёх словах.</text>
+<text x="30" y="242" class="">В и Г: впишите само неподходящее содержимое записи.</text>
+<path d="M33 277 Q90.0 274 148 278 L150 335 Q90.0 339 31 337 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="306" class="">Случай</text>
+<path d="M153 277 Q325.0 274 498 278 L500 335 Q325.0 339 151 337 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="162" y="306" class="">А. Решение</text>
+<path d="M503 277 Q735.0 274 968 278 L970 335 Q735.0 339 501 337 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="512" y="306" class="">Б. Причина</text>
+<path d="M33 339 Q90.0 336 148 340 L150 393 Q90.0 397 31 395 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="368" class="">1</text>
+<path d="M153 339 Q325.0 336 498 340 L500 393 Q325.0 397 151 395 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M503 339 Q735.0 336 968 340 L970 393 Q735.0 397 501 395 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 397 Q90.0 394 148 398 L150 451 Q90.0 455 31 453 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="426" class="">2</text>
+<path d="M153 397 Q325.0 394 498 398 L500 451 Q325.0 455 151 453 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M503 397 Q735.0 394 968 398 L970 451 Q735.0 455 501 453 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 455 Q90.0 452 148 456 L150 509 Q90.0 513 31 511 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="484" class="">3</text>
+<path d="M153 455 Q325.0 452 498 456 L500 509 Q325.0 513 151 511 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M503 455 Q735.0 452 968 456 L970 509 Q735.0 513 501 511 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 513 Q90.0 510 148 514 L150 567 Q90.0 571 31 569 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="542" class="">4</text>
+<path d="M153 513 Q325.0 510 498 514 L500 567 Q325.0 571 151 569 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M503 513 Q735.0 510 968 514 L970 567 Q735.0 571 501 569 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 571 Q90.0 568 148 572 L150 625 Q90.0 629 31 627 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="600" class="">5</text>
+<path d="M153 571 Q325.0 568 498 572 L500 625 Q325.0 629 151 627 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M503 571 Q735.0 568 968 572 L970 625 Q735.0 629 501 627 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<path d="M33 649 Q500.0 646 968 650 L970 689 Q500.0 693 31 691 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="678" class="">В. Текст, который не разбирается как JSON:</text>
+<path d="M33 706 Q500.0 703 968 707 L970 746 Q500.0 750 31 748 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="735" class="">Г. JSON с неподходящим типом query:</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 810" role="img" aria-labelledby="title desc"><title id="title">Карточка 27.7. Приёмка собственного поиска</title><desc id="desc">Условие и пустые поля для работы в тетради. Перенесите номер карточки, буквы полей и сетку; условие остаётся на экране.</desc><rect width="1000" height="810" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.heading{font-size:32px;font-weight:600}.code{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:22px}.small{font-size:22px}</style>
+<text x="35" y="48" class="heading">27.7 · Приёмка собственного поиска</text>
+<text x="35" y="91" class="small">Используйте реальные названия карточек своего каталога.</text>
+<text x="35" y="126" class="small">Заполните 4 испытания: конкретное действие и ожидаемый экран.</text>
+<text x="35" y="165" class="small">1 — поиск части названия; 2 — поиск слова без совпадений;</text>
+<text x="35" y="200" class="small">3 — сброс после поиска; 4 — перезагрузка с сохранённым запросом.</text>
+<text x="35" y="239" class="small">В А укажите ввод и подготовку (в т. ч. сохранение перед шагом 4).</text>
+<text x="35" y="274" class="small">В Б–Г — результат после действия. Это прогноз, запуск не требуется.</text>
+<path d="M37 302 Q500.0 299 964 301 L966 625 Q500.0 628 35 626 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<path d="M85 300 Q86.0 462.0 85 626" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M315 300 Q316.0 462.0 315 626" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M485 300 Q486.0 462.0 485 626" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M735 300 Q736.0 462.0 735 626" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 346 Q501.0 345.0 965 346" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 416 Q501.0 415.0 965 416" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 486 Q501.0 485.0 965 486" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 556 Q501.0 555.0 965 556" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<text x="48" y="331" class="small">№</text>
+<text x="95" y="331" class="small">А · Действие</text>
+<text x="325" y="331" class="small">Б · Поле</text>
+<text x="495" y="331" class="small">В · Карточки</text>
+<text x="745" y="331" class="small">Г · Подпись</text>
+<text x="50" y="381" class="small">1</text>
+<text x="50" y="451" class="small">2</text>
+<text x="50" y="521" class="small">3</text>
+<text x="50" y="591" class="small">4</text>
+<path d="M37 646 Q500.0 643 964 645 L966 746 Q500.0 749 35 747 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="673">Д · Что доказывает совместную работу сохранения и вывода?</text>
+<text x="35" y="790" class="small">В тетрадь: номер карточки, буквы и сетку. Условие не переписывайте.</text>
+</svg>

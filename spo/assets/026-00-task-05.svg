@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 730" role="img" aria-labelledby="title desc"><title id="title">Карточка 26.5. Проверка своего каталога</title><desc id="desc">Пустые поля для самостоятельного заполнения в тетради. Перенесите номер карточки и обозначения полей.</desc><rect width="1000" height="730" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.head{font-size:31px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px}</style>
+<text x="30" y="46" class="head">26.5  Проверка своего каталога</text>
+<text x="30" y="706" class="">В тетрадь: номер, буквы полей и сетка. Условие не переписывайте.</text>
+<text x="30" y="95" class="">Возьмите слово из настоящего названия карточки своего проекта.</text>
+<text x="30" y="132" class="">Заполните А–Д; конкретные названия у каждого свои.</text>
+<path d="M33 165 Q500.0 162 968 166 L970 226 Q500.0 230 31 228 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="194" class="">А. Мой запрос:</text>
+<path d="M33 246 Q500.0 243 968 247 L970 307 Q500.0 311 31 309 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="275" class="">Б. Объект настройки в JSON:</text>
+<path d="M33 327 Q500.0 324 968 328 L970 398 Q500.0 402 31 400 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="356" class="">В. Какие карточки останутся:</text>
+<path d="M33 418 Q500.0 415 968 419 L970 509 Q500.0 513 31 511 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="447" class="">Г. Перезагрузка: действие → ожидаемый результат:</text>
+<path d="M33 529 Q500.0 526 968 530 L970 635 Q500.0 639 31 637 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="558" class="">Д. Почему на другом телефоне запрос может не появиться?</text>
+</svg>

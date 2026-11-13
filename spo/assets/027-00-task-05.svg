@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 840" role="img" aria-labelledby="title desc"><title id="title">Карточка 27.5. Экран отстаёт на шаг</title><desc id="desc">Условие и пустые поля для работы в тетради. Перенесите номер карточки, буквы полей и сетку; условие остаётся на экране.</desc><rect width="1000" height="840" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.heading{font-size:32px;font-weight:600}.code{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:22px}.small{font-size:22px}</style>
+<text x="35" y="48" class="heading">27.5 · Экран отстаёт на шаг</text>
+<text x="35" y="91" class="small">До ввода: state.query = &quot;&quot;. Пользователь ввёл в поле «мини».</text>
+<text x="35" y="126" class="small">render() переносит state.query в поле, фильтрует и выводит каталог.</text>
+<text x="35" y="165" class="code">1  render();</text>
+<text x="35" y="201" class="code">2  state.query = searchInput.value;</text>
+<text x="35" y="240" class="small">Проследите результат ПОСЛЕ каждой команды. Затем исправьте порядок.</text>
+<path d="M37 267 Q500.0 264 964 266 L966 426 Q500.0 429 35 427 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<path d="M85 265 Q86.0 345.0 85 427" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M525 265 Q526.0 345.0 525 427" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 311 Q501.0 310.0 965 311" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<path d="M35 369 Q501.0 368.0 965 369" fill="none" stroke="#233848" stroke-width="2" stroke-linecap="round"/>
+<text x="48" y="296" class="small">№</text>
+<text x="95" y="296" class="small">А · Текст поля</text>
+<text x="535" y="296" class="small">Б · state.query</text>
+<text x="50" y="346" class="small">1</text>
+<text x="50" y="404" class="small">2</text>
+<path d="M37 449 Q500.0 446 964 448 L966 596 Q500.0 599 35 597 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="476">В · Верный порядок: 3 команды, включая сохранение</text>
+<path d="M37 616 Q500.0 613 964 615 L966 763 Q500.0 766 35 764 Z" fill="#ffffff" stroke="#233848" stroke-width="2.3" stroke-linejoin="round"/>
+<text x="50" y="643">Г · Почему новое значение нужно прочитать до render()?</text>
+<text x="35" y="820" class="small">В тетрадь: номер карточки, буквы и сетку. Условие не переписывайте.</text>
+</svg>

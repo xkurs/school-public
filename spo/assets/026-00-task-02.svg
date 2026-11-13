@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 740" role="img" aria-labelledby="title desc"><title id="title">Карточка 26.2. Соберите два маршрута</title><desc id="desc">Пустые поля для самостоятельного заполнения в тетради. Перенесите номер карточки и обозначения полей.</desc><rect width="1000" height="740" fill="#fffdf6"/><style>text{font-family:"Segoe Print","Comic Sans MS","DejaVu Sans",sans-serif;fill:#233848;font-size:24px}.head{font-size:31px;font-weight:600}.code{font-family:Consolas,monospace;font-size:24px}</style>
+<text x="30" y="46" class="head">26.2  Соберите два маршрута</text>
+<text x="30" y="716" class="">В тетрадь: номер, буквы полей и сетка. Условие не переписывайте.</text>
+<text x="30" y="94" class="code">Действия: getItem, JSON.stringify, JSON.parse, setItem.</text>
+<text x="30" y="130" class="">А и Б: впишите по два действия по порядку. В и Г: тип данных.</text>
+<text x="30" y="184" class="">Объект → [ А1 ] → [ В: тип ] → [ А2 ] → хранилище</text>
+<path d="M33 206 Q257.5 203 483 207 L485 282 Q257.5 286 31 284 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="235" class="">А1.</text>
+<path d="M518 206 Q742.5 203 968 207 L970 282 Q742.5 286 516 284 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="527" y="235" class="">А2.</text>
+<path d="M33 301 Q500.0 298 968 302 L970 362 Q500.0 366 31 364 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="330" class="">В. Тип между А1 и А2:</text>
+<text x="30" y="407" class="">Хранилище → [ Б1 ] → [ Г: тип ] → [ Б2 ] → объект</text>
+<path d="M33 429 Q257.5 426 483 430 L485 505 Q257.5 509 31 507 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="458" class="">Б1.</text>
+<path d="M518 429 Q742.5 426 968 430 L970 505 Q742.5 509 516 507 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="527" y="458" class="">Б2.</text>
+<path d="M33 524 Q500.0 521 968 525 L970 585 Q500.0 589 31 587 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="553" class="">Г. Тип между Б1 и Б2:</text>
+<path d="M33 603 Q500.0 600 968 604 L970 689 Q500.0 693 31 691 Z" fill="#fff" stroke="#477185" stroke-width="2"/>
+<text x="42" y="632" class="">Д. Хватит ли одного stringify для сохранения? Почему?</text>
+</svg>
