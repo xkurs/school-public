@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 415" role="img" aria-labelledby="title desc">
+  <title id="title">Удлинение пружины и направление силы упругости</title>
+  <desc id="desc">Слева неподвижное крепление. Сверху пружина без деформации, снизу растянутая. Её конец смещён вправо на x. Сила пружины на прикреплённое тело направлена влево.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#075db8"/></marker></defs>
+  <rect width="520" height="415" rx="14" fill="#f2f8ff"/>
+  <g font-family="system-ui, sans-serif" font-size="24" fill="#172c46">
+    <text x="22" y="40">Без деформации</text>
+    <text x="22" y="205">После растяжения</text>
+    <text x="130" y="155">Исходная длина</text>
+    <text x="365" y="390" text-anchor="middle">x — удлинение</text>
+    <text x="365" y="237" text-anchor="middle">Сила пружины</text>
+  </g>
+  <path d="M65 70V120M65 240V290" stroke="#607386" stroke-width="12"/>
+  <g fill="none" stroke="#34475a" stroke-width="4" stroke-linejoin="round">
+    <path d="M70 95H90L100 75L115 115L130 75L145 115L160 75L175 115L190 75L205 115L220 75L235 115L250 75L265 115L275 95H300"/>
+    <path d="M70 265H90L105 245L130 285L155 245L180 285L205 245L230 285L255 245L280 285L305 245L330 285L355 245L380 285L395 265H430"/>
+  </g>
+  <rect x="300" y="72" width="62" height="46" rx="5" fill="#c7e5ff" stroke="#075db8" stroke-width="3"/>
+  <rect x="430" y="242" width="62" height="46" rx="5" fill="#c7e5ff" stroke="#075db8" stroke-width="3"/>
+  <g stroke="#607386" stroke-width="2" stroke-dasharray="6 6"><path d="M300 123V352"/><path d="M430 294V352"/></g>
+  <path d="M70 165H300" stroke="#607386" stroke-width="2"/>
+  <path d="M300 348H430" stroke="#075db8" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path d="M430 265H340" stroke="#075db8" stroke-width="5" marker-end="url(#arrow)"/>
+  <circle cx="430" cy="265" r="5" fill="#075db8"/>
+</svg>
