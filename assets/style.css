@@ -111,87 +111,6 @@ body {
   text-shadow: 0 2px 12px rgb(6 27 54 / 25%);
 }
 
-.site-quote {
-  margin: 0;
-  max-width: 48rem;
-  text-align: center;
-  color: #102f51;
-}
-
-.site-quote blockquote {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.35rem, 3vw, 2rem);
-  font-style: italic;
-  line-height: 1.35;
-}
-
-.site-quote p {
-  margin: 0;
-}
-
-.site-quote .quote-disclosure {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: transparent;
-}
-
-.quote-disclosure > summary {
-  cursor: pointer;
-  list-style: none;
-}
-
-.quote-disclosure > summary::-webkit-details-marker {
-  display: none;
-}
-
-.quote-disclosure > summary:focus-visible {
-  outline: 2px solid #075db8;
-  outline-offset: 5px;
-}
-
-.site-quote .quote-translation {
-  position: absolute;
-  z-index: 2;
-  bottom: calc(100% + 0.5rem);
-  left: 50%;
-  transform: translateX(-50%);
-  width: max-content;
-  max-width: min(36rem, calc(100vw - 3rem));
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  background: #172c46;
-  color: #fff;
-  font-family: system-ui, sans-serif;
-  font-style: normal;
-  text-shadow: none;
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
-  line-height: 1.45;
-}
-
-.site-quote cite {
-  display: block;
-  margin-top: 0.45rem;
-  font-size: 0.8rem;
-  font-style: normal;
-}
-
-.site-quote a {
-  color: #102f51;
-  text-decoration-color: rgb(16 47 81 / 55%);
-  text-underline-offset: 0.2em;
-}
-
-.site-quote a:focus-visible {
-  outline: 2px solid #075db8;
-  outline-offset: 4px;
-}
-
 .skip-link {
   position: absolute;
   top: 0.5rem;
@@ -548,15 +467,14 @@ aside.callout {
   text-align: center;
   width: min(72rem, 100%);
   margin: 0;
-  padding: .85rem 1rem;
-  border: 1px solid #b7ccdf;
-  border-radius: .4rem;
-  background: #eef5fc;
+  padding: .25rem 0;
+  border: 0;
+  background: transparent;
   color: #34475a;
   font-size: 1rem;
   overflow-wrap: anywhere;
 }
-.site-updates p { max-width: 72rem; margin: 0 auto 0.75rem; }
+.site-updates p { max-width: 72rem; margin: 0 auto; }
 .site-updates button {
   min-height: 2.75rem;
   padding: .25rem .85rem;
