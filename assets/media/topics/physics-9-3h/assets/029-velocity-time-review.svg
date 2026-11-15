@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 350" role="img" aria-labelledby="title desc">
+  <title id="title">График проекции скорости для разобранного примера</title>
+  <desc id="desc">Проекция скорости равномерно возрастает с 2 до 6 метров в секунду за 4 секунды, затем остаётся равной 6 ещё 2 секунды. Площадь под графиком равна пути, так как скорость положительна.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#34475a"/></marker></defs>
+  <rect width="520" height="350" rx="12" fill="#f2f8ff"/>
+  <g stroke="#c6d8e8" stroke-width="1.5"><path d="M70 70H430M70 140H430M70 210H430M190 70V280M310 70V280M430 70V280"/></g>
+  <path d="M70 280V210L310 70H430V280Z" fill="#c7e5ff"/>
+  <path d="M70 280H475M70 280V30" fill="none" stroke="#34475a" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M70 280H475" stroke="#34475a" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M70 210L310 70H430" fill="none" stroke="#075db8" stroke-width="5" stroke-linejoin="round"/>
+  <g fill="#172c46" font-family="system-ui, sans-serif" font-size="23" text-anchor="middle">
+    <text x="54" y="310">0</text><text x="190" y="310">2</text><text x="310" y="310">4</text><text x="430" y="310">6</text>
+    <text x="44" y="218">2</text><text x="44" y="148">4</text><text x="44" y="78">6</text>
+    <text x="466" y="337">t, с</text><text x="94" y="23">vₓ, м/с</text>
+  </g>
+</svg>

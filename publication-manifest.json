@@ -1872,6 +1872,11 @@
       "title": "Механическое движение. Материальная точка"
     },
     {
+      "source": "topics/physics-9-3h/029-motion-and-interaction-review.md",
+      "output": "topics/physics-9-3h/motion-and-interaction-review.html",
+      "title": "Подготовка к контрольной работе по теме «Механическое движение. Взаимодействие тел»"
+    },
+    {
       "source": "topics/physics-9-3h/011-newtons-first-law-and-force-vector.md",
       "output": "topics/physics-9-3h/newtons-first-law-and-force-vector.html",
       "title": "Первый закон Ньютона. Вектор силы"
@@ -2339,15 +2344,15 @@
     "topics/physics-7-2h/assets/019-spring-extension-and-force.svg",
     "topics/physics-8-2h/assets/017-fuel-energy-transfer.svg",
     "topics/physics-8-2h/assets/018-ice-melting-heating-graph.svg",
-    "topics/physics-8-2h/assets/019-ice-melting-heat-balance.svg",
     "topics/physics-9-3h/assets/006-speed-of-uniformly-accelerated-motion-and-velocity-graph.svg",
     "topics/physics-9-3h/assets/024-centres-and-attraction.svg",
     "topics/physics-9-3h/assets/024-radius-and-height.svg",
     "topics/physics-9-3h/assets/026-center-of-gravity-and-stability.svg",
-    "topics/physics-9-3h/assets/026-lever-and-force-arm.svg"
+    "topics/physics-9-3h/assets/026-lever-and-force-arm.svg",
+    "topics/physics-9-3h/assets/029-velocity-time-review.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "b1dc412b11bf1320e000abe25a8077c6319269e82dabd79f5b611f41f99da6a9",
+  "source_digest": "80653179c8c3af1d9cf08028acaf87c096c508ece16137ad3b74dbd277c0e8cc",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2430,12 +2435,12 @@
     "assets/media/topics/physics-7-2h/assets/019-spring-extension-and-force.svg": "d99956ade52fd2fcfc5db5f8da60c8934c2cc55f184a42bd378337381f74cf1d",
     "assets/media/topics/physics-8-2h/assets/017-fuel-energy-transfer.svg": "ffbfc0012f3c5eb79797d16198fa6fc9c5d7aefa81d2d84ff854510825f1e1d7",
     "assets/media/topics/physics-8-2h/assets/018-ice-melting-heating-graph.svg": "0a8c69338d22702d511e8c50edf80b83a97158fb29914fdc187d28a787fdd5c3",
-    "assets/media/topics/physics-8-2h/assets/019-ice-melting-heat-balance.svg": "94410e5f67ef052e380cb9755903011506a7101848bb716e5c2dfb4dcdd25771",
     "assets/media/topics/physics-9-3h/assets/006-speed-of-uniformly-accelerated-motion-and-velocity-graph.svg": "a3207eca1319a11fd5c55fc7a19cff7157d03704aadd9f0087a059c981e95f75",
     "assets/media/topics/physics-9-3h/assets/024-centres-and-attraction.svg": "8891d780958ad171d897a7f9332517cb88829ae649204523616f73974b7b74a0",
     "assets/media/topics/physics-9-3h/assets/024-radius-and-height.svg": "3d4ba30832fea3346dad87b07e475985a718caaa398153d4877b489c372e99af",
     "assets/media/topics/physics-9-3h/assets/026-center-of-gravity-and-stability.svg": "e2603a55956a55dc4dd3920bcd4fa0f48b58d48ffda14ca988b2ec98dd5b805a",
     "assets/media/topics/physics-9-3h/assets/026-lever-and-force-arm.svg": "04ce3d635777a4a08a70afaef5ed751302ee17421746e67808f6df417de54e5a",
+    "assets/media/topics/physics-9-3h/assets/029-velocity-time-review.svg": "9ca2ec6ac51591f4907ac5139bc0cbbd1c1058ccbf907a23a111558c04e82d58",
     "assets/offline.js": "3058fdeab7be3eb89e130fd0ebd005472ff47b84f5ce5f8ab0979071c6b1fc57",
     "assets/style.css": "5af980e89362d31e24c08bd06be6e3704157278031aae0907594158684c560b8",
     "calendar/2026-10.html": "81ab73247c11da4ad3b4409b3dfff8c8cfbe38546847145e608974f2ed17b6e8",
@@ -2463,7 +2468,7 @@
     "schedules/personal/2026-11-12.html": "a2b72760ce6489b2c75afa71daeb6320f15da789b674468213fd9b6ac574b4ea",
     "schedules/personal/2026-11-13.html": "8b633bf3d2e2d8d840d0d0c26a8df59dcb6a4cd379615f7bd3b00643afa5eaf3",
     "schedules/personal/2026-11-14.html": "de6130b76082d8ec150c631024e79cc4aaf4619baefd2f9e58dfdee09f1d1ebe",
-    "schedules/personal/2026-11-16.html": "a2caf3ad6cfcf7d2efdf5bebec8ed589dd1dba2abefd219e4c1f200775940005",
+    "schedules/personal/2026-11-16.html": "9801c3e64f2c8e9104867d448a17af80bffc819da9f8802a7aaa719175ecbb4b",
     "spo/001-mobile-app-types.html": "dfffc1d1a53a3452387877a5ef1e5e35b327d8dc6b0b9a1c663d34642bdd5ac8",
     "spo/002-technology-choice-and-diagnostics.html": "28c09cf45f68780866e7006d46b4b501bbaa12b4c6c378ece0099d50a109600b",
     "spo/003-mit-app-inventor.html": "6b96c498aab44303d7fe27e2ae818f68d44eb0b3451e0bd016a99fae1d0d58cf",
@@ -3143,7 +3148,7 @@
     "spo/assets/027-00-task-06.svg": "a3ed170d711c59bdefdbde62365bc9de14ee228e22dd31653d043021ff3e3c26",
     "spo/assets/027-00-task-07.svg": "60946b115efcf071f4b4ffb371d6733162eec7631818ea30116b69969db1b389",
     "spo/index.html": "1abd13576e590bdcd3d671a0b827cf87c12eb2f4617b3091820d378a2e413cfc",
-    "sw.js": "77bae9c97850fc51155005e67a2f6ae3b29202f494ea0da653e2a8f75d6a129d",
+    "sw.js": "e11b31a3a7243eb9e30387c1c31b2baff01768677d9babfe8d69bc728fa9c1d8",
     "topics/index.html": "6b882b8cd7b2346f0f91513b1309c0ca526049229c8d0172c310c60ca4c839c3",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "a7053b0e8d427dea83002d00f156762a42a5b26fdd1b0661deb7b49bdfd2fb9f",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "c774e548186a49a857b3737e5c7f7a2ca5204f22202c7f058aee75eda8e0176f",
@@ -3203,7 +3208,7 @@
     "topics/physics-8-2h/heat-exchange-when-mixing-water-lab.html": "793139c79425fb093771b4d282beacea1bfd1224500abc8fdb80432db2324ad6",
     "topics/physics-8-2h/heat-quantity-and-specific-heat-capacity.html": "67eeb16811c9a07d7b383203934cac84ad32964f341bc901bb6de1ed5eb56178",
     "topics/physics-8-2h/heating-and-cooling-heat-calculations.html": "adf180747cc6541d7849c9ee69f31b19079372a322858f3bfb27d007eb241f94",
-    "topics/physics-8-2h/ice-specific-latent-heat-lab.html": "316e40955d9ad0cb9d3d3373816f19abf14c4eb1db7c86122a6dbce8e83a43fa",
+    "topics/physics-8-2h/ice-specific-latent-heat-lab.html": "b0fbe1ad8c9b73c0240514f81c7b33565a8ece2b0feeb75b0b0ff588dd264f4d",
     "topics/physics-8-2h/index.html": "69801b1229e4016d41e664b814061eb0cc0eb4e680fc6a43a9a49b8710c21f1f",
     "topics/physics-8-2h/internal-energy-and-ways-of-changing-it.html": "06126ead3692c9bec9678357b61bba4a3f13a6e3dd3961a16125efa81ca1b358",
     "topics/physics-8-2h/mass-and-size-of-atoms-and-molecules.html": "9b43b1ec8bbfd62c2f0953fae5dc5feacb2877ed26b42ba7a3400e0403c340b2",
@@ -3218,8 +3223,9 @@
     "topics/physics-9-3h/friction-force.html": "27110683b3cd41dc0363899a8e85baee17ab59b6368b5c1544e0c8d89060d0f3",
     "topics/physics-9-3h/gravity-and-universal-gravitation-problems.html": "9afd854bd68cde30c6d7a107862cf9c0507556082d710d315aa0e0bc4ecc2dcd",
     "topics/physics-9-3h/gravity-and-universal-gravitation.html": "636a95132c0a0dae6a682a5d1ed0ae1763a57629345e74ad399f0b9cbccb23a5",
-    "topics/physics-9-3h/index.html": "9a8a8b09df4685ed68cbe2091f7f7ea68cb6b0fc7f70be03dbf6af8019d11479",
+    "topics/physics-9-3h/index.html": "12b25130a44676dc4aa66daad901f1e4cd4005cf6a99ca5491fca98014d627a2",
     "topics/physics-9-3h/mechanical-motion-and-material-point.html": "c83e9dc40555fceb473d639abe35c95433f4426ce5887e66a081b906ae330efd",
+    "topics/physics-9-3h/motion-and-interaction-review.html": "239592826ab54029510864f1c1329a5f64ef82c904af9b4f1a2081e6966a8fed",
     "topics/physics-9-3h/newtons-first-law-and-force-vector.html": "cf78c61e3ff0a1862351d0e52ac00e06f773d986125c180c8c048ac20c2e4973",
     "topics/physics-9-3h/newtons-laws-elasticity-and-friction-problems.html": "dcaf7baabce597dff612fbdf41d621f8448a9edbb3a677054815d681fcade344",
     "topics/physics-9-3h/nonuniform-linear-motion-average-and-instantaneous-speed.html": "b1121bff54b859bba677dd26d936cdf88109bc86516d6cb69cf4085be492a4e9",
@@ -3230,5 +3236,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a10f50b90f2ba35a95310aa39baa13306099d2b430e3d6ea6041c3b2438e5438",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "e98abad664221e26f316ec669a646039b72b3a04e2e21eac152e320a24553d9b"
   },
-  "manifest_digest": "8726b3154eedca1554df4f3578f800e46ae277881b89795513fdba7c85b57b81"
+  "manifest_digest": "d1dd8248240ccd0d426a2e42b3d8a1c8cea703d8cabd167868ce45976c41c83a"
 }
