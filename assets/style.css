@@ -546,11 +546,14 @@ aside.callout {
 
 .site-updates {
   text-align: center;
-  width: min(72rem, calc(100% - 2rem));
-  margin: .5rem auto 1.5rem;
-  padding: .5rem 1rem;
+  width: min(72rem, 100%);
+  margin: 0;
+  padding: .85rem 1rem;
+  border: 1px solid #b7ccdf;
+  border-radius: .4rem;
+  background: #eef5fc;
   color: #34475a;
-  font-size: 0.9rem;
+  font-size: 1rem;
   overflow-wrap: anywhere;
 }
 .site-updates p { max-width: 72rem; margin: 0 auto 0.75rem; }
