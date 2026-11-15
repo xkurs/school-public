@@ -122,6 +122,11 @@
       "title": "Личное расписание на 14.11.2026"
     },
     {
+      "source": "schedules/personal/2026-11-16.md",
+      "output": "schedules/personal/2026-11-16.html",
+      "title": "Личное расписание на 16.11.2026"
+    },
+    {
       "source": "spo/001-mobile-app-types.md",
       "output": "spo/001-mobile-app-types.html",
       "title": "Какие бывают мобильные приложения"
@@ -2330,7 +2335,7 @@
     "topics/physics-9-3h/assets/026-lever-and-force-arm.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "c59e1fced317c625e1a67b8245078dfd324e09eba21c6db1f7468585351cfcce",
+  "source_digest": "71c7de2544febba72a2f25f012f300765a4697bf800a44ad5f073a14cdacdd87",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2420,11 +2425,11 @@
     "assets/offline.js": "3058fdeab7be3eb89e130fd0ebd005472ff47b84f5ce5f8ab0979071c6b1fc57",
     "assets/quotes.js": "78bf53c83e493fb4db0ce005a8c35962e03e406d696f3db36e8394f8ae44f5e3",
     "assets/style.css": "2caa0593a500a498aae6878791781bf0b431e00dcddd20f3a5c0c8d6048a2bc1",
-    "calendar/2026-10.html": "9e26812cf672e6c96aac1ff965de83f2ee07bbc1ebfb1d8a8dfcee8051aa8c2c",
-    "calendar/2026-11.html": "4435832ac20ac90dd78ba54eaf75585b0521ce068b7868715e916a6a203d7161",
+    "calendar/2026-10.html": "9c581487645ff9a66ec90f1702eecec1e49598d8b4a6fe85e4222c44a3b934a4",
+    "calendar/2026-11.html": "d102c1ec996f61f64f02aff527d6cf6bfdc000fdc9760c6774e0b16b7cc60975",
     "CNAME": "a88e58d2742981a3f92b2ca125fdde4b4072ab55106487f4973ceb23b7e66a12",
     "favicon.ico": "db28c1f3a1477b9fe964d09306431d787457f1e95d61dd0effcc461d20837f4c",
-    "index.html": "3474be0252e3b686e954974b3b325ba40d8b82d8259438f83b659d5eb506511b",
+    "index.html": "e0567530b45de49700b89e83da086fa377e4dd21250a200698eaf822f8672196",
     "schedules/personal/2026-10-14.html": "bd416558f30e0e993093caf973b7e790a081d41a923acf3db346d5d56dd7ac44",
     "schedules/personal/2026-10-15.html": "3e5615fb4a1264fec495f08274d23b2b5ee6c0c8c9e2412ce7b81980777d8213",
     "schedules/personal/2026-10-16.html": "f48b25004d937943a2e48b18f5bc9ed38b8b8e105d79889ad0a48d8fdbbf4a04",
@@ -2445,6 +2450,7 @@
     "schedules/personal/2026-11-12.html": "e0933918076f61e6b9bcd54ecbbd51fd7e2b4f2c86823edd05bf59df3d5436bf",
     "schedules/personal/2026-11-13.html": "fbd835e9945d50e474e9550277263941e8c947fed26969928728e19568210655",
     "schedules/personal/2026-11-14.html": "e0441a61641811fbf09faf6f4e57254eb2ebd30bec5b7a744ddd1e22d1de7014",
+    "schedules/personal/2026-11-16.html": "bf767bff2726307ec1a0cb3039af117f7869961f0b6b57fea7681d5d33a396b3",
     "spo/001-mobile-app-types.html": "1f74ebf0b0fb7286fd5480b09ee731e5bc0eeea0139d0bed2805f3ede6dbbb45",
     "spo/002-technology-choice-and-diagnostics.html": "5dffca4b7e1ad14ced37369407def9054f843e0077539d55155777fcf0739e41",
     "spo/003-mit-app-inventor.html": "9c43cc9a47651e8e612271c0127a53f80e50ba13e95795c6e81de04fd4ce1d16",
@@ -3124,7 +3130,7 @@
     "spo/assets/027-00-task-06.svg": "a3ed170d711c59bdefdbde62365bc9de14ee228e22dd31653d043021ff3e3c26",
     "spo/assets/027-00-task-07.svg": "60946b115efcf071f4b4ffb371d6733162eec7631818ea30116b69969db1b389",
     "spo/index.html": "23734f50a45621d318dcabbbb5fbb6d22a17d967c96024f2aa3f0fe3ca0b77bc",
-    "sw.js": "8edd8c9729dfcbc354a7c554ecb9a53e785be623a41681c4eb67e6e20d7bbc06",
+    "sw.js": "eed1e1c678f3c4017bb494318d04199458307d660930838435d928ee8a34605c",
     "topics/index.html": "0258c03f728614aaa832959b2e5c50d1405cfe98f35369961d7d2bf8e9b4cad6",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "39ed4b601a513bcedbf11acccf2ec251f8b4ab52ee58ec434ef3b15335b0841d",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "d4106f00182cbab9c244610b34737c0b62d826dd69410938d42dc6fb58dbcae6",
@@ -3209,5 +3215,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "ea033736ff541514e66aee706dd5a7692418ab13d02ae1870c6c585508560403",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "fdb268276a605a74f57cebcfd4680fb0f2864fb38618998a460231326164402e"
   },
-  "manifest_digest": "496f47bf5491167b855c32444e7f14ac872b424622ffb627e1eeac7a41e73f21"
+  "manifest_digest": "5d930cb674f53a77f914492761d3aec5a041bdf1241e1d7600dbd977aa74a916"
 }
