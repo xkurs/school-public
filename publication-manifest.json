@@ -2385,7 +2385,7 @@
     "topics/physics-9-3h/assets/030-variant-2-velocity.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "4b1f0c8031ea0c871ce500074a140f5701b6c8a8a3fa4ac7f40029a48de4fb46",
+  "source_digest": "c8dbb45251ddb4194c0f96cc79e33c89563d78a3d8fe3c2ad0f7277747fe5f03",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2483,12 +2483,12 @@
     "assets/media/topics/physics-9-3h/assets/030-variant-2-coordinate.svg": "64c33545666dba535f5a495dcb86dc71cfa2cd4707336f43b0c912321ac801b5",
     "assets/media/topics/physics-9-3h/assets/030-variant-2-velocity.svg": "1e794132bb4ad2bfadeb62fdd8b5660310c4dee399659790fc68c3437791990c",
     "assets/offline.js": "032a1d98ff91bb1793d9c79fe1ec30587208609440453156c532c22ed28a3a29",
-    "assets/style.css": "351224e069ac46eece1a367579cad636aaec9d73f5a3bf6b9ef2c5dce15ee10f",
+    "assets/style.css": "dbab1d0b802062e723570c89b97cd8f81532737891dc5febbced11cfa3e7af0b",
     "calendar/2026-10.html": "1f5e200cfe5e526e23e1d1b5923e410dce2d68a084e3ffbc5673278014144f33",
     "calendar/2026-11.html": "afe5d3fdbc10379b5ceda817337a3b70465e5dbdadb426a14d48a107e1e697c4",
     "CNAME": "a88e58d2742981a3f92b2ca125fdde4b4072ab55106487f4973ceb23b7e66a12",
     "favicon.ico": "db28c1f3a1477b9fe964d09306431d787457f1e95d61dd0effcc461d20837f4c",
-    "index.html": "f4e27e06009f45bdfcf009d242885d245818c2793cb30ea81662dd0a22ae320e",
+    "index.html": "5582fca336900ae38e2197060054a720982c272384aaad94aae9c182b20a5f54",
     "schedules/personal/2026-10-14.html": "94886271599cd66f8e5ffdd7a1f59684c25b4357a7d7267384f4c5ceb8482774",
     "schedules/personal/2026-10-15.html": "8241565c167203248515e946e3d12637212ec83dcc32bcae3a8be3930678ae5a",
     "schedules/personal/2026-10-16.html": "cf71b6321e4e68d0fedd85c763d795728321f4b4dbf0cddaa24e50715011808d",
@@ -3192,7 +3192,7 @@
     "spo/assets/027-00-task-06.svg": "a3ed170d711c59bdefdbde62365bc9de14ee228e22dd31653d043021ff3e3c26",
     "spo/assets/027-00-task-07.svg": "60946b115efcf071f4b4ffb371d6733162eec7631818ea30116b69969db1b389",
     "spo/index.html": "3feaf1961338569b797eb90467b9bb92022d68dff3ea901eb374ecf13657b51a",
-    "sw.js": "0e5cb7e8faeccdacf54e499e092b2b9fd2d1ccfc7fc45e049fbc1fafbc331408",
+    "sw.js": "3bd78ff215410a2a3738d2c698a3bdffa91782dff4f47f53aadafcdfdbcf475d",
     "topics/index.html": "6b882b8cd7b2346f0f91513b1309c0ca526049229c8d0172c310c60ca4c839c3",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "a7053b0e8d427dea83002d00f156762a42a5b26fdd1b0661deb7b49bdfd2fb9f",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "c774e548186a49a857b3737e5c7f7a2ca5204f22202c7f058aee75eda8e0176f",
@@ -3282,5 +3282,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a10f50b90f2ba35a95310aa39baa13306099d2b430e3d6ea6041c3b2438e5438",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "e98abad664221e26f316ec669a646039b72b3a04e2e21eac152e320a24553d9b"
   },
-  "manifest_digest": "0216566395ad97c7c253df3fd20e931d3519038940b5e24aae983b97c39092a6"
+  "manifest_digest": "6e4d9d0730d1667ab3159a54dfd84952d159e48a1b509f548dd0ac45635905fa"
 }

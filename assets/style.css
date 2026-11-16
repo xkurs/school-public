@@ -495,9 +495,6 @@ aside.callout {
 @keyframes update-pulse {
   50% { opacity: .4; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .site-updates .is-updating { animation: none; }
-}
 .site-updates button {
   min-height: 2.75rem;
   padding: .25rem .85rem;
@@ -508,6 +505,16 @@ aside.callout {
   color: #243647;
   font: inherit;
   cursor: pointer;
+}
+.site-updates #site-update-reload {
+  background: #b91c1c;
+  border-color: #b91c1c;
+  color: #fff;
+  animation: update-pulse 1.5s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-updates .is-updating,
+  .site-updates #site-update-reload { animation: none; }
 }
 .site-updates button:focus-visible { outline: 3px solid #3182ce; outline-offset: 3px; }
 .site-updates button:disabled { opacity: 0.65; cursor: wait; }
