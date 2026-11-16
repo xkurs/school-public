@@ -12,15 +12,23 @@
   const panel = document.getElementById?.("site-updates");
   const status = document.getElementById?.("site-update-status");
   const reload = document.getElementById?.("site-update-reload");
-  const savedPage = Boolean(document.querySelector?.('meta[name="school-offline"]'));
   let registration;
   let checking = false;
   let lastCheck = 0;
   let changed = false;
   let statusEpoch = 0;
+  let version = "";
   const watched = new WeakSet();
-  function say(message) {
-    if (status) status.textContent = message;
+  function show(message = "", updating = false, offerReload = false) {
+    if (panel) panel.hidden = !message && !offerReload;
+    if (status) {
+      status.textContent = message;
+      status.hidden = !message;
+      status.className = updating ? "is-updating" : "";
+    }
+    if (reload) {
+      reload.hidden = !offerReload;
+    }
   }
   function ask(worker) {
     return new Promise(resolve => {
@@ -39,31 +47,26 @@
   }
   async function showState() {
     const epoch = ++statusEpoch;
-    if (registration?.installing) {
-      say("Сохраняем обновление для чтения без интернета. Предыдущая копия остаётся доступной.");
+    if (registration?.installing && registration.installing.state !== "redundant") {
+      show("Идёт обновление", true);
       return;
     }
     if (registration?.waiting) {
-      if (reload) reload.hidden = false;
-      say("Обновление загружено и ожидает включения. Нажмите «Обновить версию». Пока используется прежняя офлайн-копия.");
+      show("", false, true);
       return;
     }
-    const state = await ask(registration?.active);
+    if (changed) { show("", false, true); return; }
+    const state = await ask(registration?.active || navigator.serviceWorker.controller);
     if (epoch !== statusEpoch) return;
-    const saved = state?.ready && /^[a-f0-9]{64}$/.test(state.version)
-      ? "Офлайн-копия готова · версия " + state.version.slice(0, 12) + "."
-      : "Готовность офлайн-копии пока не подтверждена.";
-    const network = navigator.onLine === false || savedPage
-      ? "Открыта сохранённая страница; она может быть устаревшей. Для свежих материалов нужны связь и обновление страницы. " : "";
-    say(network + saved + (changed ? " Доступна новая копия — обновите страницу, когда удобно." : ""));
+    if (state?.ready && /^[a-f0-9]{64}$/.test(state.version)) version = state.version.slice(0, 12);
+    show(version ? "Версия " + version : "");
   }
   function watch(worker) {
     if (!worker || watched.has(worker)) return;
     watched.add(worker);
     worker.addEventListener("statechange", () => {
       if (worker.state === "redundant") {
-        ++statusEpoch;
-        say("Не удалось сохранить обновление. Прежняя копия сохранена; проверка повторится автоматически при устойчивой связи.");
+        showState();
       } else {
         activateWaiting();
         showState();
@@ -79,7 +82,7 @@
     if (!registration || checking) return;
     // Registration already checks on page load. Avoid overlapping that install
     // with another update, especially when several tabs regain connectivity.
-    if (registration.installing || registration.waiting) {
+    if ((registration.installing && registration.installing.state !== "redundant") || registration.waiting) {
       activateWaiting();
       await showState();
       return;
@@ -88,16 +91,13 @@
     lastCheck = Date.now();
     if (navigator.onLine === false) { await showState(); return; }
     checking = true;
-    ++statusEpoch;
-    say("Проверяем обновления…");
     try {
       await registration.update();
       watch(registration.installing);
       activateWaiting();
       await showState();
     } catch {
-      ++statusEpoch;
-      say("Не удалось проверить обновления. Сохранённая копия может быть устаревшей; проверка повторится автоматически при устойчивой связи.");
+      await showState();
     } finally {
       checking = false;
     }
@@ -108,14 +108,12 @@
   });
   navigator.serviceWorker.addEventListener?.("controllerchange", () => {
     changed = true;
-    if (reload) reload.hidden = false;
     showState(); // Never interrupt a lesson by reloading automatically.
   });
   navigator.serviceWorker.register(new URL("sw.js", root).href, {
     scope: root.href, updateViaCache: "none"
   }).then(result => {
     registration = result;
-    if (panel) panel.hidden = false;
     watch(result.installing);
     activateWaiting();
     result.addEventListener?.("updatefound", () => {
@@ -136,7 +134,6 @@
       }, 5 * 60 * 1000);
     }
   }).catch(() => {
-    if (panel) panel.hidden = false;
-    say("Не удалось проверить офлайн-копию. Для актуальных материалов нужна связь с сайтом.");
+    showState();
   });
 })();
