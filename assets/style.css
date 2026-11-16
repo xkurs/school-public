@@ -507,9 +507,9 @@ aside.callout {
   cursor: pointer;
 }
 .site-updates #site-update-reload {
-  background: #b91c1c;
+  background: transparent;
   border-color: #b91c1c;
-  color: #fff;
+  color: #b91c1c;
   animation: update-pulse 1.5s ease-in-out infinite;
 }
 @media (prefers-reduced-motion: reduce) {
