@@ -277,6 +277,16 @@
       "title": "Соединение интерфейса и логики: поиск, экран и поиск ошибок"
     },
     {
+      "source": "spo/028-git-history-and-phone-testing.md",
+      "output": "spo/028-git-history-and-phone-testing.html",
+      "title": "Установка Git и первые коммиты своего веб-проекта"
+    },
+    {
+      "source": "spo/029-https-manifest-and-installation.md",
+      "output": "spo/029-https-manifest-and-installation.html",
+      "title": "Подключение проекта к GitHub, публикация сайта и первые шаги PWA"
+    },
+    {
       "source": "spo/assets/010-00.md",
       "output": "spo/assets/010-00.html",
       "title": "Учебный вариант 00 — пара 10"
@@ -2354,6 +2364,7 @@
     "spo/assets/027-00-task-05.svg",
     "spo/assets/027-00-task-06.svg",
     "spo/assets/027-00-task-07.svg",
+    "spo/assets/029-00-manifest-and-launch.svg",
     "topics/physics-10-2h/assets/005-uniformly-accelerated-rectilinear-motion.svg",
     "topics/physics-10-2h/assets/015-collision-and-recoil.svg",
     "topics/physics-10-2h/assets/015-momentum-reversal.svg",
@@ -2385,7 +2396,7 @@
     "topics/physics-9-3h/assets/030-variant-2-velocity.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "b4ec3d74d2e158bae9711406a8c855995249f0939b84653c2b7623a308b79e0d",
+  "source_digest": "81d745161da7106e386d227c20936f19ac5638b485b724bfad187a9a80fdbf20",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2511,7 +2522,7 @@
     "schedules/personal/2026-11-14.html": "de6130b76082d8ec150c631024e79cc4aaf4619baefd2f9e58dfdee09f1d1ebe",
     "schedules/personal/2026-11-16.html": "9801c3e64f2c8e9104867d448a17af80bffc819da9f8802a7aaa719175ecbb4b",
     "schedules/personal/2026-11-17.html": "7b92d37832713db877af3ef9e6399b6d3cf2e540857411d30ee455186afe3bcc",
-    "schedules/personal/2026-11-18.html": "5c302d6cb71e1c2ddd8334d84764700c854194035087ed8fe2a8371ac36dc023",
+    "schedules/personal/2026-11-18.html": "1d41bf276a46c77571f2516c90990c5cdd3893c66171518a3bc4690b8384431e",
     "schedules/personal/2026-11-21.html": "c3ede4b0a41486948105bd75459cf1fc0c7668b3ba637301c6cb33111dec20b6",
     "spo/001-mobile-app-types.html": "dfffc1d1a53a3452387877a5ef1e5e35b327d8dc6b0b9a1c663d34642bdd5ac8",
     "spo/002-technology-choice-and-diagnostics.html": "28c09cf45f68780866e7006d46b4b501bbaa12b4c6c378ece0099d50a109600b",
@@ -2540,6 +2551,8 @@
     "spo/025-catalog-rendering-and-filtering.html": "b0c4953ecb607b62c1de5c4e22371da4814508122bc89d1910cc3f972876a73d",
     "spo/026-json-and-localstorage.html": "4200a6f648aa2337cbc18fd87d64ef18fade990b8e1d12275ae123a01354a032",
     "spo/027-interface-logic-and-diagnostics.html": "c57b767ab4bbecd7dd7df11efde9dd347a4a8cd300d64425e5cca5a8c9674efb",
+    "spo/028-git-history-and-phone-testing.html": "8127556fe65ad7a76b4cc0bc438e40b1f9dc66bee65dd43f3296d4ce81b089f0",
+    "spo/029-https-manifest-and-installation.html": "fc9915a47b5b25ed8bbe7f96846d9d2a8c95b14f64e5e7deb904bba902ce984d",
     "spo/assets/003-00-blocks-screenshot.jpg": "574a062ab7e8ccf9fe731c5ec545ac4bf6c88cd8a02551d752be2597b264e1bf",
     "spo/assets/003-00-button-properties-screenshot.jpg": "6d15427fc17d8f758bc6add4f5320d0050e9204ce096a12e27a96a4f702ddcb2",
     "spo/assets/003-00-connect-usb-screenshot.jpg": "c8f30aa965893f3c8442b0589a66bf0e29738ff93109b0bdcad33fbadc88fafa",
@@ -3191,8 +3204,9 @@
     "spo/assets/027-00-task-05.svg": "eabfd18b6b1d64553e519618a7d06cda9233a1b46a63cf62f6da34e2a238f1df",
     "spo/assets/027-00-task-06.svg": "a3ed170d711c59bdefdbde62365bc9de14ee228e22dd31653d043021ff3e3c26",
     "spo/assets/027-00-task-07.svg": "60946b115efcf071f4b4ffb371d6733162eec7631818ea30116b69969db1b389",
-    "spo/index.html": "3feaf1961338569b797eb90467b9bb92022d68dff3ea901eb374ecf13657b51a",
-    "sw.js": "b87d50b35bb3dff3419a9a69d9ed267e5ed44372a393d5514affc8d8c6e2e31b",
+    "spo/assets/029-00-manifest-and-launch.svg": "35db14f71eba9bedaa5e436c56819a96a6bff3ad8f15558551f5e2f9f30351a7",
+    "spo/index.html": "a307d408a12617fa4e1da21f9522f7d33a644ce0ca4351c4f64fab75f506a133",
+    "sw.js": "91c2f6f6c2e10fd4a90d519f560d7276a90a770818ba98efb3d3361fdc9c9b78",
     "topics/index.html": "6b882b8cd7b2346f0f91513b1309c0ca526049229c8d0172c310c60ca4c839c3",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "a7053b0e8d427dea83002d00f156762a42a5b26fdd1b0661deb7b49bdfd2fb9f",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "c774e548186a49a857b3737e5c7f7a2ca5204f22202c7f058aee75eda8e0176f",
@@ -3282,5 +3296,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "a10f50b90f2ba35a95310aa39baa13306099d2b430e3d6ea6041c3b2438e5438",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "e98abad664221e26f316ec669a646039b72b3a04e2e21eac152e320a24553d9b"
   },
-  "manifest_digest": "27a309a755ac8082e32e7d858c9d38418fba0159ede21b98c1a2196cac6dc8b3"
+  "manifest_digest": "3d2ed017eac35e2f46eaec786f084b28781aaf9dc5553e5189d3ed8703ba5ebe"
 }

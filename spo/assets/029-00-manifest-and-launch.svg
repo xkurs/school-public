@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Как файлы проекта участвуют в запуске веб-приложения</title>
+  <desc id="desc">HTML ссылается на манифест. В манифесте описаны название, значки, начальная страница и область приложения. После доступной установки браузер запускает index.html, из которого открываются каталог и форма. Автономность проверяется отдельно.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 10 5 0 10" fill="none" stroke="#24547a" stroke-width="2"/></marker></defs>
+  <rect width="800" height="560" rx="18" fill="#f7fafc"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#183247">
+    <text x="32" y="39" font-size="23" font-weight="700">Ваш проект по HTTPS: описание → запуск</text>
+    <rect x="32" y="65" width="735" height="65" rx="12" fill="#e6eff8" stroke="#24547a" stroke-width="2"/>
+    <text x="50" y="91" font-size="18" font-weight="700">index.html · catalog.html · form.html</text>
+    <text x="50" y="116" font-size="17">В head: link rel="manifest" href="manifest.webmanifest"</text>
+    <path d="M400 131V173" stroke="#24547a" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="32" y="178" width="735" height="135" rx="12" fill="#fff" stroke="#24547a" stroke-width="2"/>
+    <text x="50" y="206" font-size="20" font-weight="700">manifest.webmanifest</text>
+    <text x="50" y="237" font-size="17">name + icons → как приложение названо и выглядит</text>
+    <text x="50" y="265" font-size="17">start_url: ./index.html → откуда начинается запуск</text>
+    <text x="50" y="293" font-size="17">scope: ./ → страницы внутри папки вашего проекта</text>
+    <path d="M400 314V367" stroke="#24547a" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="418" y="347" font-size="16">браузер читает описание</text>
+    <rect x="32" y="373" width="735" height="87" rx="12" fill="#e5f3ec" stroke="#347456" stroke-width="2"/>
+    <text x="50" y="402" font-size="19" font-weight="700">Если установка доступна: значок → index.html</text>
+    <text x="50" y="433" font-size="17">Из главной — в catalog.html и form.html по вашим ссылкам</text>
+    <rect x="32" y="486" width="735" height="49" rx="10" fill="#fff2dc"/>
+    <text x="50" y="517" font-size="18">Манифест описывает приложение. Кеширование — следующий этап.</text>
+  </g>
+</svg>

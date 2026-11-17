@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Установка Git и первые коммиты своего веб-проекта — shkolar.site</title>
+  <link rel="canonical" href="https://shkolar.site/spo/028-git-history-and-phone-testing.html">
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body id="page-top">
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <section class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-reload" hidden>Обновить версию</button>
+    </section>
+  </header>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">028</li></ol></nav><h1 id="установка-git-и-первые-коммиты-своего-веб-проекта">Установка Git и первые коммиты своего веб-проекта</h1>
+<p>Сегодня работаем за компьютером с уже созданным <code>VariantNN-web</code>. Научимся сохранять историю файлов: сначала зафиксируем имеющийся проект, затем уточним его заголовок и сохраним отдельное изменение. Новый вариант и новый веб-проект создавать не нужно.</p>
+<p><strong>Результат:</strong> вы находите свою папку, запускаете в ней Git Bash, видите версию Git, создаёте локальный репозиторий и можете показать два коммита и различие между ними. Если история уже есть, сохраняйте её: первый коммит заново не создают.</p>
+<aside class="callout" data-callout="important">
+<p class="callout-title">Git и GitHub — разные вещи</p><p><strong>Git</strong> — программа, которая сохраняет историю выбранных файлов на вашем компьютере. <strong>Репозиторий</strong> — проект с такой историей. <strong>Коммит</strong> — сохранённый снимок выбранных изменений с сообщением. <strong>GitHub</strong> — интернет-сервис для размещения репозиториев. Команда <code>git commit</code> ничего не отправляет на GitHub. На <a href="029-https-manifest-and-installation.html">следующей паре</a>, тоже за компьютерами, подключим готовый репозиторий к GitHub через GitHub Desktop, а при готовности продолжим размещением сайта и подготовкой PWA без собственного сервера.</p>
+</aside>
+<h2 id="1-найдите-свою-папку-проекта">1. Найдите свою папку проекта</h2>
+<p>Нажмите <code>Win + E</code>: откроется Проводник Windows. Найдите папку своего прежнего проекта <code>VariantNN-web</code>, где <code>NN</code> — ваш номер, например <code>Variant07-web</code>. Откройте её двойным щелчком. Внутри должны быть собственные HTML-файлы, CSS и JavaScript. Не выбирайте папку всей группы или папку с несколькими вариантами.</p>
+<p>Откройте <code>index.html</code> в привычном редакторе и убедитесь, что это ваш проект. Сохраните открытые файлы сочетанием <code>Ctrl + S</code>. Git читает содержимое с диска; несохранённый текст редактора он не увидит.</p>
+<p>Пример знакомого состава проекта:</p>
+<table>
+<thead>
+<tr>
+<th>Файл</th>
+<th>Что в нём находится</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>index.html</code></td>
+<td>Главная страница</td>
+</tr>
+<tr>
+<td><code>catalog.html</code></td>
+<td>Страница каталога</td>
+</tr>
+<tr>
+<td><code>form.html</code></td>
+<td>Страница формы</td>
+</tr>
+<tr>
+<td><code>style.css</code></td>
+<td>Оформление</td>
+</tr>
+<tr>
+<td><code>catalog.js</code></td>
+<td>Прежние данные и упражнения JavaScript</td>
+</tr>
+<tr>
+<td><code>catalog-page.js</code></td>
+<td>Вывод и поиск на странице каталога</td>
+</tr>
+<tr>
+<td><code>form.js</code></td>
+<td>Обработка формы</td>
+</tr>
+</tbody>
+</table>
+<p>Это ориентир, а не требование создать отсутствующие файлы. <code>catalog.js</code> и <code>catalog-page.js</code> могут выполнять разные задачи: не заменяйте один другим. Сохраняйте свои изображения и остальные реальные файлы. Сегодня не требуется достраивать функции из предыдущих занятий: первый снимок может честно фиксировать промежуточный результат.</p>
+<h2 id="2-установите-git-если-его-ещё-нет">2. Установите Git, если его ещё нет</h2>
+<p>Откройте меню «Пуск» и введите <code>Git Bash</code>. Если приложение находится, переходите к следующему разделу: сначала проверим его работу командой <code>git --version</code>.</p>
+<p>Если Git Bash отсутствует, сообщите преподавателю. Установку на учебном компьютере выполняют только при разрешении, действующем в аудитории; если нужны права администратора, их предоставляет ответственный сотрудник.</p>
+<ol>
+<li>Откройте <a href="https://git-scm.com/install/win">официальную страницу установки Git для Windows</a>.</li>
+<li>Выберите установщик для архитектуры компьютера. На обычном компьютере Windows x64 нужен вариант x64; если тип системы неизвестен, уточните у преподавателя.</li>
+<li>Запустите скачанный установщик Git for Windows. Он устанавливает <strong>Git и Git Bash</strong> — отдельно искать Bash не нужно.</li>
+<li>На шаге выбора редактора Git можно выбрать знакомый редактор из списка, например Visual Studio Code, <strong>если он установлен</strong>. Если знакомого варианта нет, оставьте предложенный: в этой статье сообщение коммита задаётся прямо командой <code>commit -m</code>, поэтому отдельный редактор не откроется. Устанавливать ещё один редактор для первого упражнения не требуется.</li>
+<li>На остальных шагах оставляйте предложенные установщиком рекомендуемые значения. Не меняйте сетевые, системные и экспериментальные параметры ради этого задания.</li>
+<li>Завершите установку. Закройте ранее открытые терминалы и откройте Git Bash заново: старое окно может не увидеть установленную программу. При необходимости закройте и снова откройте Проводник.</li>
+</ol>
+<p>Если установка запрещена или не завершилась, переходите к резерву вместе с преподавателем. Наличие работающего Git проверяется командой, а не только появлением значка.</p>
+<h2 id="3-откройте-именно-git-bash-в-папке-проекта">3. Откройте именно Git Bash в папке проекта</h2>
+<p>В Проводнике откройте <code>VariantNN-web</code>. Щёлкните правой кнопкой по <strong>свободному месту внутри папки</strong>, а не по HTML-файлу. Выберите <code>Open Git Bash here</code> / <code>Git Bash Here</code>. В Windows 11 сначала может потребоваться пункт <strong>«Показать дополнительные параметры»</strong>.</p>
+<p>Если пункта нет, найдите Git Bash через «Пуск» и откройте его. В Проводнике щёлкните по адресной строке и скопируйте полный путь своей папки. В Git Bash перейдите туда командой <code>cd</code>, заключив путь в кавычки. Для условного пути <code>D:\Study\Variant07-web</code> команда выглядит так:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash"><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;D:/Study/Variant07-web&quot;</span>
+</code></pre></div>
+<p>Замените пример своим реальным путём; буква диска и папки могут отличаться. В этой записи используйте прямые косые черты <code>/</code>. Кавычки нужны в том числе для пути с пробелами. Команда при успехе обычно ничего не печатает.</p>
+<aside class="callout" data-callout="tip">
+<p class="callout-title">Как читать терминал</p><p>Окно показывает приглашение, например <code>student@PC MINGW64 /d/Study/Variant07-web</code>, а ниже знак <code>$</code>. Это приглашение программы к вводу. <strong>Не копируйте приглашение, знак <code>$</code>, слово <code>bash</code> и рамку блока.</strong> Вводите только строку команды. Выполняйте по одной команде, нажимайте Enter и читайте ответ. Вставить скопированную строку в Git Bash обычно можно через <code>Shift + Insert</code> или пункт <code>Paste</code> контекстного меню.</p>
+</aside>
+<p>Все команды статьи предназначены для <strong>Git Bash</strong>. Не переключайтесь между ним, PowerShell и командной строкой Windows.</p>
+<h2 id="4-проверьте-git-и-текущую-папку">4. Проверьте Git и текущую папку</h2>
+<p>Введите:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>--version
+</code></pre></div>
+<p>Ожидаемый ответ начинается с <code>git version</code>, например <code>git version 2.x.y.windows.1</code>. Числа могут быть другими. Если получено <code>command not found</code>, не вводите остальные команды Git до устранения ошибки по таблице в конце статьи.</p>
+<p>Теперь узнайте текущую папку:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash"><span class="nb">pwd</span>
+</code></pre></div>
+<p>Ожидается путь к <strong>вашему</strong> <code>VariantNN-web</code>. В Git Bash диск <code>D:</code> может отображаться как <code>/d/</code>, а <code>C:</code> — как <code>/c/</code>. Это нормальная запись пути.</p>
+<p>Посмотрите файлы:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">ls
+</code></pre></div>
+<p>В ответе должны быть знакомые имена: например, <code>index.html</code>, <code>style.css</code> и остальные файлы проекта. Если вы видите рабочий стол, чужие варианты или другую папку, вернитесь в Проводник и откройте Git Bash в правильном месте. Не создавайте репозиторий, пока путь не проверен.</p>
+<h2 id="5-проверьте-есть-ли-история-и-создайте-её-при-необходимости">5. Проверьте, есть ли история, и создайте её при необходимости</h2>
+<p>Введите:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>rev-parse<span class="w"> </span>--show-toplevel
+</code></pre></div>
+<p>Эта команда показывает корневую папку существующего репозитория. Прочитайте ответ <strong>до</strong> следующего действия:</p>
+<table>
+<thead>
+<tr>
+<th>Ответ</th>
+<th>Что делать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Путь заканчивается именно вашим <code>VariantNN-web</code></td>
+<td>Репозиторий уже есть. Пропустите <code>git init</code>, сохраните прежнюю историю и переходите к настройке автора</td>
+</tr>
+<tr>
+<td><code>fatal: not a git repository (or any of the parent directories): .git</code></td>
+<td>До создания истории это <strong>ожидаемый ответ</strong>: Git пока не нашёл репозиторий. Если <code>pwd</code> и <code>ls</code> подтвердили свою папку, выполните <code>git init</code> ниже</td>
+</tr>
+<tr>
+<td>Выведена родительская или другая папка</td>
+<td>Остановитесь и покажите путь преподавателю. Ваша папка оказалась внутри другого репозитория; добавление файлов сейчас может затронуть чужой проект</td>
+</tr>
+</tbody>
+</table>
+<p>Только для проверенной папки <strong>без существующей истории</strong> выполните:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>init
+</code></pre></div>
+<p>Ожидается сообщение <code>Initialized empty Git repository in .../VariantNN-web/.git/</code>. Git создал внутри проекта служебную папку <code>.git</code>; реальные HTML, CSS, JavaScript и изображения остались на месте. Не открывайте и не редактируйте внутренние файлы <code>.git</code>.</p>
+<p>Снова проверьте корень:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>rev-parse<span class="w"> </span>--show-toplevel
+</code></pre></div>
+<p>Теперь ожидается путь именно к <code>VariantNN-web</code>. Если ответ отличается, остановитесь и покажите его преподавателю.</p>
+<aside class="callout" data-callout="note">
+<p class="callout-title">Имя ветки</p><p>В выводе может появиться <code>main</code> или <code>master</code>. Сейчас это имя текущей ветки истории. Для первых локальных коммитов подойдут оба варианта; переименовывать ветку ради совпадения со скриншотом не требуется.</p>
+</aside>
+<h2 id="6-задайте-учебную-подпись-автора-только-для-этого-проекта">6. Задайте учебную подпись автора только для этого проекта</h2>
+<p>Коммит содержит имя и электронный адрес автора. Это <strong>подпись в истории</strong>, а не вход в GitHub: пароль и код подтверждения здесь не вводят.</p>
+<p>Для первого локального упражнения используйте согласованное учебное обозначение без настоящих персональных данных. Например, для варианта 07:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Student-07&quot;</span>
+</code></pre></div>
+<p>При успехе ответ обычно пустой. Впишите свой номер вместо <code>07</code>.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;student-07@example.invalid&quot;</span>
+</code></pre></div>
+<p>Это намеренно учебный, недействующий адрес, а не почтовый ящик. Подставьте тот же номер. Параметр <code>--local</code> ограничивает настройку этим репозиторием и не меняет подпись остальных пользователей компьютера.</p>
+<p>Проверьте имя:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.name
+</code></pre></div>
+<p>Ожидается введённое обозначение, например <code>Student-07</code>.</p>
+<p>Проверьте адрес:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.email
+</code></pre></div>
+<p>Ожидается введённый учебный адрес.</p>
+<aside class="callout" data-callout="important">
+<p class="callout-title">Подпись для будущего GitHub</p><p>Перед отправкой репозитория на следующей паре проверьте подпись. При наличии GitHub можно использовать личный адрес <code>noreply</code>, скопированный из настроек электронной почты <strong>своей</strong> учётной записи. Не придумывайте его по чужому примеру. Новая настройка влияет на будущие коммиты: подписи уже созданных коммитов автоматически не меняются. Поэтому настоящую личную почту в учебный пример не вводим.</p>
+</aside>
+<h2 id="7-посмотрите-состояние-и-выберите-файлы-первого-коммита">7. Посмотрите состояние и выберите файлы первого коммита</h2>
+<p>Введите:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>status
+</code></pre></div>
+<p>В новом репозитории ожидаются <code>No commits yet</code> и список <code>Untracked files</code>. Это означает: история пока пустая, файлы есть, но Git ещё не включил их в отслеживание.</p>
+<table>
+<thead>
+<tr>
+<th>Сообщение <code>status</code></th>
+<th>Простыми словами</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Untracked files</code></td>
+<td>Новый файл ещё не выбран для истории</td>
+</tr>
+<tr>
+<td><code>Changes not staged for commit</code></td>
+<td>Отслеживаемый файл изменён, но новая правка ещё не выбрана</td>
+</tr>
+<tr>
+<td><code>Changes to be committed</code></td>
+<td>Эти изменения выбраны для ближайшего коммита</td>
+</tr>
+<tr>
+<td><code>nothing to commit, working tree clean</code></td>
+<td>Среди отслеживаемых файлов нет новых изменений для коммита</td>
+</tr>
+</tbody>
+</table>
+<p>Между файлом на диске и коммитом есть <strong>область подготовки</strong>. Команда <code>git add</code> помещает туда текущее содержимое выбранного файла. Она ничего не отправляет в интернет.</p>
+<p>Добавляйте файлы по известным именам. Например, если <code>index.html</code> действительно есть:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>add<span class="w"> </span>index.html
+</code></pre></div>
+<p>Ожидаемый ответ при успехе пустой. Так же добавьте каждый существующий файл своего приложения. Следующие команды выполняйте <strong>только для файлов, которые есть у вас</strong>:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>add<span class="w"> </span>catalog.html
+</code></pre></div>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>add<span class="w"> </span>form.html
+</code></pre></div>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>add<span class="w"> </span>style.css
+</code></pre></div>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>add<span class="w"> </span>catalog.js
+</code></pre></div>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>add<span class="w"> </span>catalog-page.js
+</code></pre></div>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>add<span class="w"> </span>form.js
+</code></pre></div>
+<p>Успешное добавление обычно не печатает сообщений. Если какого-то файла нет, пропустите соответствующую команду; не создавайте пустой файл ради списка.</p>
+<p>Изображения тоже нужны проекту. Посмотрите их реальные имена в Проводнике. Например, <strong>только если у вас действительно существует</strong> файл <code>images/logo.png</code>, добавьте его так:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>add<span class="w"> </span><span class="s2">&quot;images/logo.png&quot;</span>
+</code></pre></div>
+<p>Для другого изображения подставьте его фактический путь, например своё имя JPG или SVG. Кавычки обязательны, если есть пробелы. Повторите для используемых изображений и других нужных файлов проекта. Не добавляйте личные документы, пароли, токены и чужие работы. Не применяйте <code>git add .</code> наугад: сначала надо понимать состав выбранных файлов.</p>
+<p>Посмотрите результат:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>status
+</code></pre></div>
+<p>Теперь выбранные файлы должны быть в разделе <code>Changes to be committed</code>. Проверьте, что в списке именно ваша работа.</p>
+<p>Посмотрите содержимое будущего коммита:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>diff<span class="w"> </span>--cached
+</code></pre></div>
+<p>Для новых текстовых файлов видны строки с <code>+</code>: это добавляемое содержимое. Для изображения Git обычно сообщает о различии двоичных файлов, а не показывает картинку. Если открылся просмотрщик на весь экран, листайте стрелками; для выхода нажмите латинскую <code>q</code>.</p>
+<aside class="callout" data-callout="tip">
+<p class="callout-title">Сохранить → выбрать → зафиксировать</p><p><code>Ctrl + S</code> сохраняет файл на диск. <code>git add имя-файла</code> выбирает его текущее содержимое. <code>git commit</code> создаёт снимок выбранного. Если после <code>add</code> вы снова изменили файл, сохраните его и повторите <code>add</code>, чтобы новая правка тоже вошла в коммит.</p>
+</aside>
+<p>Если выбран непонятный или чужой файл, покажите список преподавателю <strong>до коммита</strong>. Для точного удаления ошибочно выбранного нового файла из подготовки преподаватель может применить <code>git rm --cached -- "имя-файла"</code>: файл остаётся на диске. Не заменяйте эту команду обычным <code>git rm</code>, который удаляет рабочий файл.</p>
+<h2 id="8-создайте-первый-коммит-и-прочитайте-историю">8. Создайте первый коммит и прочитайте историю</h2>
+<p>После проверки подготовленного содержимого выполните:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Сохранено текущее состояние веб-проекта&quot;</span>
+</code></pre></div>
+<p>Ожидается сообщение с именем ветки, коротким идентификатором и текстом коммита; для первого снимка может быть пометка <code>root-commit</code>. Ниже Git перечислит количество изменённых файлов. Значения зависят от вашего проекта. Параметр <code>-m</code> задаёт сообщение сразу, поэтому отдельный редактор для сообщения не открывается.</p>
+<p>Проверьте состояние:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>status
+</code></pre></div>
+<p>Если все нужные файлы включены и после этого не менялись, ожидается <code>nothing to commit, working tree clean</code>. Если остались файлы в списке, прочитайте их имена: возможно, нужное изображение ещё не добавлено. Не скрывайте остаток и не удаляйте его ради чистого вывода.</p>
+<p>Посмотрите историю:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>-5
+</code></pre></div>
+<p>Пример строки: <code>a1b2c3d Сохранено текущее состояние веб-проекта</code>. У вас будет свой идентификатор. Это короткий <strong>хеш</strong>, по которому можно найти конкретный коммит. Самый свежий коммит находится сверху.</p>
+<p>Если репозиторий существовал раньше и <code>status</code> сразу показывает чистое состояние, пустой первый коммит не нужен. Найдите имеющееся сохранённое состояние через <code>log</code>, запишите его хеш и продолжайте маленькой правкой ниже. Если есть прежние незавершённые изменения, сначала разберите их с преподавателем; не добавляйте всё разом ради выполнения команды.</p>
+<h2 id="9-уточните-заголовок-и-сохраните-второй-коммит">9. Уточните заголовок и сохраните второй коммит</h2>
+<p>Сделайте одну полезную и понятную правку в своём проекте. Откройте <code>index.html</code> в редакторе и найдите видимый заголовок <code>&lt;h1&gt;</code>. Уточните его так, чтобы он лучше объяснял назначение именно вашего приложения. Например, вместо общего «Мой сайт» напишите осмысленное название своего каталога. Не копируйте чужую тематику. Если название уже хорошее, согласуйте небольшое уточнение пояснения рядом с ним.</p>
+<p>Сохраните файл (<code>Ctrl + S</code>). Откройте главную страницу привычным способом в браузере и обновите её. Убедитесь, что виден новый текст. Для этой проверки достаточно своего компьютера и существующего проекта.</p>
+<p>Вернитесь в Git Bash:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>status
+</code></pre></div>
+<p>Ожидается <code>modified: index.html</code> в разделе <code>Changes not staged for commit</code>.</p>
+<p>Посмотрите, что поменялось после первого коммита:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>diff<span class="w"> </span>--<span class="w"> </span>index.html
+</code></pre></div>
+<p>Строка с <code>-</code> — прежний текст, строка с <code>+</code> — новый. Заголовки сравнения <code>---</code> и <code>+++</code> обозначают файлы. Проверьте, что кроме задуманного текста ничего случайно не изменено.</p>
+<p>Выберите сохранённую правку:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>add<span class="w"> </span>index.html
+</code></pre></div>
+<p>При успехе ответ пустой. Прочитайте подготовленное сравнение:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>diff<span class="w"> </span>--cached<span class="w"> </span>--<span class="w"> </span>index.html
+</code></pre></div>
+<p>Ожидается та самая правка заголовка. Обычный <code>git diff</code> показывает ещё не подготовленные изменения, а <code>git diff --cached</code> — выбранные для следующего коммита.</p>
+<p>Создайте второй коммит:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Уточнён заголовок главной страницы&quot;</span>
+</code></pre></div>
+<p>Ожидается новый хеш и сообщение об изменении <code>index.html</code>. Если вы уточняли пояснение, напишите соответствующее сообщение вместо сообщения о заголовке.</p>
+<p>Прочитайте историю:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>-5
+</code></pre></div>
+<p>В новом репозитории теперь две строки: новая правка сверху и исходное состояние ниже. Для просмотра последнего коммита выполните:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>show<span class="w"> </span>HEAD<span class="w"> </span>--<span class="w"> </span>index.html
+</code></pre></div>
+<p><code>HEAD</code> здесь обозначает текущий коммит. Ожидается его сообщение и сравнение старого и нового текста. Для выхода из просмотрщика нажмите <code>q</code>.</p>
+<p>В конце проверьте:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Bash</span></div><pre><code class="language-bash">git<span class="w"> </span>status
+</code></pre></div>
+<p>Ожидается чистое состояние, если других изменений нет. <strong>История остаётся только на этом компьютере.</strong> Коммит не создаёт сетевую копию и не защищает от потери всей папки или диска. Сохраните проект привычным разрешённым способом вместе со скрытой папкой <code>.git</code>; не удаляйте её и не переносите только HTML без истории.</p>
+<h2 id="если-команда-не-сработала">Если команда не сработала</h2>
+<p>Не вводите весь набор команд повторно. Прочитайте последнюю ошибку и найдите соответствующий случай.</p>
+<table>
+<thead>
+<tr>
+<th>Что видно</th>
+<th>Причина и точное следующее действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git: command not found</code></td>
+<td>В этом окне Git не найден. Закройте терминал, откройте <strong>Git Bash</strong> заново и выполните <code>git --version</code>. Если Git Bash отсутствует или ошибка остаётся, вернитесь к разрешённой установке с преподавателем; остальные команды пока не вводите</td>
+</tr>
+<tr>
+<td><code>not a git repository</code> до <code>init</code></td>
+<td>Нормальный ответ при первом запуске. Проверьте <code>pwd</code> и <code>ls</code>; только в своём <code>VariantNN-web</code> выполните <code>git init</code></td>
+</tr>
+<tr>
+<td><code>not a git repository</code> при <code>status</code> или <code>add</code> после успешного <code>init</code></td>
+<td>Скорее всего, открыта другая папка или другое окно. Откройте Git Bash Here в прежнем <code>VariantNN-web</code>, проверьте <code>pwd</code> и <code>git rev-parse --show-toplevel</code>. Не выполняйте новый <code>init</code> в случайной папке</td>
+</tr>
+<tr>
+<td><code>pathspec ... did not match any files</code></td>
+<td>Git не нашёл написанное имя. Выполните <code>ls</code>, проверьте расширение, путь и регистр; для файла в подпапке укажите весь относительный путь в кавычках. В Проводнике включите отображение расширений, если файл мог называться <code>index.html.txt</code>. Повторите <code>git add</code> только с существующим именем</td>
+</tr>
+<tr>
+<td><code>Author identity unknown</code> или <code>Please tell me who you are</code></td>
+<td>В своём репозитории выполните две команды <code>git config --local</code> из раздела 6, проверьте их выводом и повторите <code>git commit -m ...</code>. Подготовленные изменения обычно сохраняются: создавать проект заново не надо</td>
+</tr>
+<tr>
+<td><code>nothing to commit, working tree clean</code></td>
+<td>Нового снимка пока не из чего создать. Для второго коммита сохраните реальную правку в редакторе, проверьте <code>git diff -- index.html</code>, затем <code>git add index.html</code> и <code>git diff --cached</code>. Для первого посмотрите существующий <code>git log --oneline -5</code>: история могла уже быть</td>
+</tr>
+<tr>
+<td><code>no changes added to commit</code></td>
+<td>Правка есть, но не подготовлена. Выполните <code>git status</code>, затем <code>git add</code> с именем нужного изменённого файла, проверьте <code>git diff --cached</code> и повторите коммит</td>
+</tr>
+<tr>
+<td>Вместо приглашения полный экран текста и <code>(END)</code></td>
+<td>Открыт просмотрщик истории или сравнения. Переключите раскладку на английскую и нажмите <code>q</code>; после выхода можно вводить следующую команду</td>
+</tr>
+<tr>
+<td>Ошибка у <code>pwd</code>/<code>ls</code>, приглашение начинается с <code>PS</code> или имеет вид <code>C:\...&gt;</code></td>
+<td>Открыта другая оболочка. Закройте это окно и запустите <strong>Git Bash Here</strong> в папке проекта; выполните проверки раздела 4. Не заменяйте команды на PowerShell на ходу</td>
+</tr>
+<tr>
+<td>После ввода виден знак <code>&gt;</code> и команда не выполняется</td>
+<td>Возможно, не закрыта кавычка. Нажмите <code>Ctrl + C</code>, затем заново введите одну полную команду с парными прямыми кавычками <code>"</code></td>
+</tr>
+</tbody>
+</table>
+<p>Предупреждение о замене <code>LF</code> на <code>CRLF</code> относится к окончаниям строк Windows и само по себе не означает неудачу <code>add</code>. Проверьте <code>git status</code>; глобальные настройки из-за этого предупреждения не меняйте. При другом непонятном сообщении оставьте окно открытым и покажите преподавателю полный текст.</p>
+<h2 id="минимум-для-завершения-пары">Минимум для завершения пары</h2>
+<p>Покажите преподавателю свой проект и команды, а не только переписанный текст статьи:</p>
+<ol>
+<li><code>git --version</code> отвечает версией; <code>pwd</code> и <code>git rev-parse --show-toplevel</code> указывают на свой проект.</li>
+<li>В истории есть исходное состояние и отдельная небольшая правка с понятными сообщениями; если история уже была, она сохранена.</li>
+<li><code>git show HEAD -- index.html</code> показывает именно вашу правку. Вы можете найти её в редакторе и браузере.</li>
+<li><code>git status</code> соответствует вашему объяснению: нужные изменения закоммичены, оставшиеся файлы названы отдельно.</li>
+<li>Вы объясняете разницу между сохранением файла, <code>add</code>, коммитом и отправкой на GitHub.</li>
+</ol>
+<p>Запишите в тетрадь путь к проекту и два коротких хеша с сообщениями. Рабочую папку с <code>.git</code> сохраните для следующей пары.</p>
+<aside class="callout" data-callout="question">
+<p class="callout-title">Проверьте понимание</p><p>- Почему до <code>git init</code> сообщение <code>not a git repository</code> может быть ожидаемым?
+- Почему перед <code>init</code> нужно прочитать путь папки?
+- Что произойдёт, если после сохранения HTML забыть выполнить <code>git add</code>?
+- Чем различаются <code>git diff</code> и <code>git diff --cached</code>?
+- Появился ли проект на GitHub после <code>git commit</code>? Где сейчас находится история?</p>
+</aside>
+<h2 id="если-закончили-раньше">Если закончили раньше</h2>
+<p>Прочитайте старый коммит, подставив его настоящий короткий хеш из <code>log</code> в команду <code>git show ХЕШ -- index.html</code>. Она только показывает историю и не меняет рабочие файлы. Сравните её с <code>git show HEAD -- index.html</code> и объясните, какое состояние было сохранено раньше.</p>
+<p>Затем можно осмысленно уточнить одно описание на главной странице и самостоятельно повторить цикл: сохранить → просмотреть <code>diff</code> → выбрать файл → просмотреть <code>diff --cached</code> → сделать коммит → прочитать историю. Не меняйте ради количества коммитов случайные символы и не переходите вперёд к новым инструментам.</p></main>
+  </div>
+  <footer class="site-footer">
+    <a href="../index.html">Главная</a>
+    <a href="#page-top">Наверх</a>
+  </footer>
+</body>
+</html>
