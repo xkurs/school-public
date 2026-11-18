@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620" role="img" aria-labelledby="title desc">
+<title id="title">Поперечная и продольная волны</title>
+<desc id="desc">Две независимые схемы: синусоидальный изгиб верёвки и сжатия пружины. Стрелки различают распространение волны и смещение частицы.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#334155"/></marker></defs>
+<rect width="760" height="620" rx="18" fill="#f8fafc"/>
+<g font-family="Arial, sans-serif" font-size="20" fill="#172554">
+<text x="30" y="38" font-size="25" font-weight="bold">Поперечная волна</text>
+<text x="350" y="75">Распространение волны</text>
+<path d="M350 90H690" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M60 170H700" stroke="#94a3b8" stroke-dasharray="6 5"/>
+<path d="M60 170C96 170 124 110 160 110S224 170 260 170 324 230 360 230 424 170 460 170 524 110 560 110 624 170 660 170" fill="none" stroke="#2563eb" stroke-width="4"/>
+<path d="M160 125V150M560 125V150M160 140H560" stroke="#334155" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="310" y="133">λ</text>
+<circle cx="260" cy="170" r="7" fill="#be123c"/>
+<path d="M280 135V210" stroke="#334155" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="305" y="200">Смещение частицы ↕</text>
+<text x="30" y="275">λ — между соседними гребнями</text>
+<path d="M30 302H730" stroke="#cbd5e1"/>
+<text x="30" y="342" font-size="25" font-weight="bold">Продольная волна</text>
+<text x="350" y="380">Распространение волны</text>
+<path d="M350 395H690" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M100 435V500M110 435V500M120 435V500M130 435V500M140 435V500M170 435V500M210 435V500M250 435V500M290 435V500M310 435V500M320 435V500M330 435V500M340 435V500M350 435V500M380 435V500M420 435V500M460 435V500M500 435V500M520 435V500M530 435V500M540 435V500M550 435V500M560 435V500M590 435V500M630 435V500M670 435V500" stroke="#0f766e" stroke-width="4"/>
+<path d="M120 418H330" stroke="#334155" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="218" y="413">λ</text>
+<text x="70" y="530">Сжатие</text><text x="185" y="530">Разрежение</text>
+<path d="M480 555H570" stroke="#334155" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="390" y="590">Смещение частицы ↔</text>
+<text x="30" y="580">λ — между центрами сжатий</text>
+</g></svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="570" viewBox="0 0 760 570" role="img" aria-labelledby="title desc">
+<title id="title">Длина волны на снимке и период на графике движения</title>
+<desc id="desc">Верхняя синусоида зависит от координаты в один момент, нижняя — от времени для одной частицы. Интервалы между максимумами обозначают соответственно длину волны и период.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#334155"/></marker>
+<path id="wave" d="M70 160C106 160 134 100 170 100S234 160 270 160 334 220 370 220 434 160 470 160 534 100 570 100 634 160 670 160" fill="none" stroke-width="4"/>
+</defs>
+<rect width="760" height="570" rx="18" fill="#f8fafc"/>
+<g font-family="Arial, sans-serif" font-size="21" fill="#172554">
+<text x="30" y="36" font-size="24" font-weight="bold">Снимок среды в один момент</text>
+<path d="M70 240V65M70 160H700" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#a)"/>
+<text x="20" y="80">y, м</text><text x="665" y="195">x, м</text>
+<use href="#wave" stroke="#2563eb"/>
+<path d="M170 100V75M570 100V75M170 80H570" fill="none" stroke="#334155" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="350" y="72">λ</text>
+<text x="115" y="265">Расстояние между максимумами — длина волны</text>
+<path d="M30 285H730" stroke="#cbd5e1"/>
+<text x="30" y="325" font-size="24" font-weight="bold">Движение одной частицы во времени</text>
+<g transform="translate(0 290)">
+<path d="M70 240V65M70 160H700" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#a)"/>
+<text x="20" y="80">y, м</text><text x="665" y="195">t, с</text>
+<use href="#wave" stroke="#0f766e"/>
+<path d="M170 100V75M570 100V75M170 80H570" fill="none" stroke="#334155" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="350" y="72">T</text>
+<text x="115" y="265">Время между максимумами — период колебаний</text>
+</g></g></svg>
