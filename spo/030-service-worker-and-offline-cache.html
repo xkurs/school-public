@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Service worker, кеширование, автономный режим и обновление приложения — shkolar.site</title>
+  <link rel="canonical" href="https://shkolar.site/spo/030-service-worker-and-offline-cache.html">
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" sizes="180x180">
+  <meta name="theme-color" content="#172554">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body id="page-top">
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title">shkolar.site</p>
+    <section class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-reload" hidden>Обновить версию</button>
+    </section>
+  </header>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Календарь</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">030</li></ol></nav><h1 id="service-worker-кеширование-автономный-режим-и-обновление-приложения">Service worker, кеширование, автономный режим и обновление приложения</h1>
+<p>На <a href="029-https-manifest-and-installation.html">предыдущей паре</a> мы начали отправлять <code>VariantNN-web</code> на GitHub, размещать сайт через GitHub Pages и добавлять манифест. Если вы остановились на одном из этих этапов, сегодня продолжите с него. Представьте, что телефон потерял сеть уже после первого открытия приложения. Сможет ли он заново открыть каталог, применить фильтр и показать результат расчёта в форме? Для этого браузеру нужны локальные копии страниц и всех файлов, от которых они зависят.</p>
+<h2 id="что-именно-браузер-сохраняет">Что именно браузер сохраняет</h2>
+<table>
+<thead>
+<tr>
+<th>Механизм</th>
+<th>Что он даёт нашему проекту</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>manifest.webmanifest</code></td>
+<td>Название, значки и начальную страницу для установленного приложения</td>
+</tr>
+<tr>
+<td><code>localStorage</code></td>
+<td>Значение, которое записал код страницы, например последний запрос поиска</td>
+</tr>
+<tr>
+<td>Cache Storage</td>
+<td>Именованные наборы ответов на запросы, например копии <code>catalog.html</code>, <code>style.css</code> и <code>catalog-page.js</code></td>
+</tr>
+<tr>
+<td>Service worker</td>
+<td>Скрипт, который может выбрать для запроса управляемой страницы сохранённый ответ или обратиться к сети</td>
+</tr>
+</tbody>
+</table>
+<p>При открытии <code>catalog.html</code> браузер получает HTML, затем по указанным в нём адресам запрашивает CSS, JavaScript и изображения. Если сохранить только HTML, без сети может появиться текст каталога, но потеряться оформление или поиск. Если сохранить все ресурсы каталога, поиск по локальному массиву выполняется без сети, а прежний запрос можно восстановить из <code>localStorage</code>. Это две отдельные проверки.</p>
+<aside class="callout" data-callout="note">
+<p class="callout-title">Что происходит с формой</p><p>Если <code>form.js</code> рассчитывает результат из введённых значений на самом устройстве, этот расчёт может работать в автономном режиме. Для отправки данных на сервер потребуется сеть. Обновление кеша также не добавляет сохранение полей формы: их восстановление зависит от кода самой формы.</p>
+</aside>
+<h2 id="как-service-worker-получает-управление">Как service worker получает управление</h2>
+<p>Service worker работает в отдельном контексте браузера. Он получает события загрузки и обновления, но у него нет доступа к <code>document</code> страницы и её <code>localStorage</code>. Страница регистрирует скрипт по HTTPS или на <code>http://localhost</code> на том же компьютере. Открытие HTML двойным щелчком по <code>file://</code> для этой работы не подходит.</p>
+<p>Файл <code>sw.js</code> положим рядом с <code>index.html</code>, <code>catalog.html</code> и <code>form.html</code>. Тогда область управления по умолчанию — папка проекта и её вложенные папки. Если Pages разместил проект по адресу <code>https://ваш-логин.github.io/VariantNN-web/</code>, эта область начинается с <code>/VariantNN-web/</code>. Относительный адрес <code>./sw.js</code> сохраняет этот путь. Область из манифеста относится к запуску и навигации установленного приложения, область регистрации service worker определяет, какие страницы он может контролировать.</p>
+<table>
+<thead>
+<tr>
+<th>Событие</th>
+<th>Что делает учебный скрипт</th>
+<th>Что наблюдаем</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>install</code></td>
+<td>Загружает заранее перечисленные ресурсы в кеш версии</td>
+<td>Пропущенный файл или ответ 404 срывает установку этой версии</td>
+</tr>
+<tr>
+<td><code>activate</code></td>
+<td>После перехода на новую версию удаляет прежние кеши этого проекта</td>
+<td>Остаётся кеш текущей версии, кеши соседних проектов сохраняются</td>
+</tr>
+<tr>
+<td><code>fetch</code></td>
+<td>Для GET-запроса ищет точный адрес в кеше текущей версии и при промахе обращается к сети</td>
+<td>При отключённой сети работает то, для чего есть сохранённый ответ</td>
+</tr>
+</tbody>
+</table>
+<p><code>event.waitUntil(...)</code> сообщает браузеру, что событие установки или активации ещё обрабатывается. <code>event.respondWith(...)</code> передаёт браузеру обещание получить ответ на запрос. Сама регистрация подтверждает, что браузер принял регистрацию скрипта. Завершение установки и появление управления проверяем отдельно.</p>
+<h3 id="разбор-запроса-без-сети">Разбор запроса без сети</h3>
+<p>Вкладка каталога находится под управлением service worker. Студент открывает форму по адресу <code>form.html</code>.</p>
+<ol>
+<li>Для <code>form.html</code> есть сохранённый ответ. Браузер получает его из кеша.</li>
+<li>HTML подключает <code>form.js</code>. Если этот адрес тоже в кеше, форма рассчитывает результат локально.</li>
+<li>HTML ссылается на <code>images/banner.png</code>, которого в списке кеша нет. Скрипт обращается к сети, и изображение при отключённой сети не загрузится.</li>
+</ol>
+<p>В нашей стратегии для перечисленных файлов <strong>сначала проверяем кеш</strong>. Остальные запросы идут по сети, а их ответы автоматически в кеш не добавляются. Адреса <code>./</code>, <code>./index.html</code> и <code>./index.html?demo=1</code> различаются. В работе сохраним первые два адреса отдельно, чтобы открывались и ссылка на папку, и стартовая страница из манифеста.</p>
+<aside class="callout" data-callout="example">
+<p class="callout-title">Что проверить на экране</p><p>После обычной перезагрузки откройте <strong>Application → Service Workers</strong> и <strong>Cache Storage</strong>. Найдите <code>sw.js</code>, проверьте управление текущей страницей и конкретные адреса в кеше. Затем включите <strong>Offline</strong> и снова загрузите страницу. Уже видимый экран может оставаться на месте без сети даже при неработающем кеше.</p>
+</aside>
+<h2 id="как-приложение-переходит-на-новую-версию">Как приложение переходит на новую версию</h2>
+<p>Если поменять одну подпись в <code>index.html</code>, текущий service worker по-прежнему может отдавать старую копию из кеша. Поэтому вместе с изменением сохраняемых файлов меняем версию в <code>sw.js</code> с <code>v1</code> на <code>v2</code>. Браузер при проверке обновления получает изменённый скрипт. Новый worker скачивает комплект <code>v2</code>, а уже открытые страницы продолжают работать с <code>v1</code>.</p>
+<ol>
+<li><strong>Загрузка комплекта.</strong> Пока в браузере есть сеть, новый worker заполняет свой кеш. Ошибка получения обязательного файла прерывает установку, прежняя версия остаётся доступной.</li>
+<li><strong>Ожидание.</strong> Успешно установленный worker ждёт, пока завершится работа страниц, которые контролирует старая версия. Сюда входят вкладки проекта и отдельное окно установленного приложения в том же браузере и профиле.</li>
+<li><strong>Активация.</strong> Когда старые страницы закрыты, новая версия активируется и очищает старые кеши этого проекта. При следующем открытии видна новая подпись. В браузере того же профиля и по тому же адресу ранее сохранённый поисковый запрос остаётся в <code>localStorage</code>.</li>
+</ol>
+<aside class="callout" data-callout="important">
+<p class="callout-title">Что считать доказательством обновления</p><p>Покажите новую подпись и присутствие кеша <code>v2</code>, затем заново загрузите обновлённую страницу без сети. Во время проверки оставьте выключенными <strong>Update on reload</strong> и <strong>Bypass for network</strong>, чтобы инструменты разработчика сохраняли обычное поведение браузера.</p>
+</aside>
+<h2 id="вопросы-перед-практикой">Вопросы перед практикой</h2>
+<ol>
+<li>Какие ответы нужны кроме <code>catalog.html</code>, чтобы каталог без сети выглядел и работал как прежде?</li>
+<li>Студент видит значок приложения и открывает его при работающей сети. Как отдельно проверить автономный запуск?</li>
+<li>В списке ресурсов <code>images/logo.png</code>, а на сайте есть только <code>images/Logo.png</code>. В какой момент обнаружится расхождение?</li>
+<li>После отправки новой версии браузер показывает <code>waiting</code>. Что произойдёт, если оставить одну вкладку проекта открытой?</li>
+</ol>
+<h2 id="за-компьютером-подключите-первую-версию">За компьютером. Подключите первую версию</h2>
+<h3 id="стартовая-проверка-github-и-pages">Стартовая проверка GitHub и Pages</h3>
+<p>Откройте в GitHub Desktop свой прежний <code>VariantNN-web</code>. Сверьте папку, пару знакомых коммитов в <strong>History</strong> и владельца репозитория. Найдите последнюю строку, которую можете подтвердить, и выполните следующий шаг.</p>
+<table>
+<thead>
+<tr>
+<th>Что уже получилось</th>
+<th>Как продолжить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Есть рабочая папка и коммиты на компьютере</td>
+<td>Если папки ещё нет в Desktop, выберите <strong>File → Add local repository</strong>. Для первой отправки нажмите <strong>Publish repository</strong> и проверьте свои файлы и коммиты через <strong>Repository → View on GitHub</strong>. Прежняя история остаётся в этой папке</td>
+</tr>
+<tr>
+<td>Репозиторий на GitHub открывается, но сайта ещё нет</td>
+<td>В своём репозитории откройте <strong>Settings → Pages</strong>. Выберите <strong>Deploy from a branch</strong>, ветку, в которую отправляете коммиты, и <strong>/ (root)</strong>, где лежит <code>index.html</code>. Нажмите <strong>Save</strong>, дождитесь успешного запуска в <strong>Actions</strong> и откройте адрес из <strong>Settings → Pages</strong></td>
+</tr>
+<tr>
+<td>Сайт открывается по HTTPS</td>
+<td>Откройте главную, каталог и форму. Сверьте видимую подпись на сайте с последней отправленной версией. Если она старая, проверьте ветку и запуск размещения в <strong>Actions</strong></td>
+</tr>
+</tbody>
+</table>
+<p><code>github.com/логин/репозиторий</code> показывает исходники и историю. Адрес из <strong>Settings → Pages</strong>, обычно <code>https://логин.github.io/репозиторий/</code>, открывает само приложение. Запишите его для второй пары. Если Pages недоступна из-за тарифа или ограничений сети, продолжайте на localhost. Порядок доступа и первой отправки разобран в <a href="029-https-manifest-and-installation.html">статье 29</a>.</p>
+<h3 id="1-откройте-свой-проект-через-браузер">1. Откройте свой проект через браузер</h3>
+<p>Сначала убедитесь, что главная, каталог и форма работают онлайн. Для проверки своих ещё не отправленных изменений откройте папку <code>VariantNN-web</code> через доступный в аудитории локальный сервер и используйте напечатанный им адрес <code>http://localhost:…</code>. Если на компьютере есть Python, можно запустить обычную раздачу файлов из корня проекта в терминале PowerShell:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">PowerShell</span></div><pre><code class="language-powershell"><span class="n">python</span> <span class="n">-m</span> <span class="n">http</span><span class="p">.</span><span class="n">server</span> <span class="n">8000</span> <span class="p">-</span><span class="n">-bind</span> <span class="n">127</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">1</span>
+</code></pre></div>
+<p>Оставьте терминал открытым и перейдите на <code>http://localhost:8000/</code> на том же компьютере. Если команда не найдена, используйте локальный сервер, уже доступный в редакторе, или проверяйте изменения на своём опубликованном после отправки файлов HTTPS-сайте. На протяжении проверки одной версии используйте один и тот же адрес, включая порт.</p>
+<h3 id="2-составьте-список-адресов">2. Составьте список адресов</h3>
+<p>Откройте <strong>F12 → Network / Сеть</strong> и по очереди загрузите три страницы, пока сеть доступна. Посмотрите, какие CSS и JS подключаются, какие изображения нужны каталогу и откуда они загружаются. Допишите к шаблону ниже все реальные локальные зависимости. Проверьте написание имён и регистр букв: на Pages <code>Logo.png</code> и <code>logo.png</code> — разные имена.</p>
+<p>Если проект ещё без манифеста и значков, сначала проверьте кеш основных страниц, а эти файлы добавьте при их готовности. Каждый элемент списка должен открываться с успешным ответом. Для этой работы автономный набор состоит из локальных файлов проекта. Сетевой ресурс, которого нет в этом наборе, может пропасть без сети.</p>
+<h3 id="3-создайте-swjs-рядом-с-indexhtml">3. Создайте <code>sw.js</code> рядом с <code>index.html</code></h3>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="kd">const</span><span class="w"> </span><span class="nx">VERSION</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;v1&quot;</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">SCOPE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">self</span><span class="p">.</span><span class="nx">registration</span><span class="p">.</span><span class="nx">scope</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">CACHE_PREFIX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`variantnn-web:</span><span class="si">${</span><span class="nx">SCOPE</span><span class="si">}</span><span class="sb">:`</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">CACHE_NAME</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">CACHE_PREFIX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">VERSION</span><span class="p">;</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">FILES</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s2">&quot;./&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;./index.html&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;./catalog.html&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;./form.html&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;./style.css&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="c1">// Добавьте реальные JS, CSS, картинки, манифест и значки своего проекта.</span>
+<span class="p">];</span>
+
+<span class="nx">self</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;install&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">requests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">FILES</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">path</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
+<span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">Request</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nx">URL</span><span class="p">(</span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">SCOPE</span><span class="p">),</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">cache</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;reload&quot;</span><span class="w"> </span><span class="p">})</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="w">  </span><span class="nx">event</span><span class="p">.</span><span class="nx">waitUntil</span><span class="p">(</span>
+<span class="w">    </span><span class="nx">caches</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">CACHE_NAME</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">cache</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">cache</span><span class="p">.</span><span class="nx">addAll</span><span class="p">(</span><span class="nx">requests</span><span class="p">))</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">self</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;activate&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">event</span><span class="p">.</span><span class="nx">waitUntil</span><span class="p">(</span>
+<span class="w">    </span><span class="nx">caches</span><span class="p">.</span><span class="nx">keys</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">names</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">oldVersions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">names</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
+<span class="w">        </span><span class="nx">name</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="nx">CACHE_PREFIX</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="nx">CACHE_NAME</span>
+<span class="w">      </span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">oldVersions</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">caches</span><span class="p">.</span><span class="ow">delete</span><span class="p">(</span><span class="nx">name</span><span class="p">)));</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">self</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;fetch&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">request</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">method</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;GET&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">!</span><span class="nx">request</span><span class="p">.</span><span class="nx">url</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="nx">SCOPE</span><span class="p">))</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+
+<span class="w">  </span><span class="nx">event</span><span class="p">.</span><span class="nx">respondWith</span><span class="p">(</span>
+<span class="w">    </span><span class="nx">caches</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">CACHE_NAME</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="k">async</span><span class="w"> </span><span class="p">(</span><span class="nx">cache</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">savedResponse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">cache</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">request</span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">savedResponse</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="nx">request</span><span class="p">);</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>Для учебного <code>VariantNN-web</code> проверьте, нужны ли <code>./catalog.js</code>, <code>./catalog-page.js</code>, <code>./form.js</code> и <code>./script.js</code>. Такой элемент, как <code>"./images/icon-192.png",</code>, добавляйте внутрь массива при наличии файла по этому адресу. Если подключено несколько листов стилей, учитывайте также локальные <code>url(...)</code> в CSS. <code>cache: "reload"</code> просит браузер получить свежие копии при заполнении новой версии, минуя его обычный HTTP-кеш. Строка <code>CACHE_PREFIX</code> включает адрес папки, чтобы у двух проектов на одном домене были разные кеши.</p>
+<h3 id="4-зарегистрируйте-скрипт-на-трёх-страницах">4. Зарегистрируйте скрипт на трёх страницах</h3>
+<p>Перед <code>&lt;/body&gt;</code> в <code>index.html</code>, <code>catalog.html</code> и <code>form.html</code> добавьте один и тот же блок. Код самой страницы, например подключение <code>form.js</code>, сохраняется.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">HTML</span></div><pre><code class="language-html"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="s2">&quot;serviceWorker&quot;</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">navigator</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">navigator</span><span class="p">.</span><span class="nx">serviceWorker</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s2">&quot;./sw.js&quot;</span><span class="p">).</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Не удалось зарегистрировать service worker:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Сохраните файлы. Для проверки по HTTPS выполните шаг 5. Если пока работаете на localhost, переходите к шагу 6.</p>
+<h3 id="5-опубликуйте-первую-версию-через-github-pages">5. Опубликуйте первую версию через GitHub Pages</h3>
+<ol>
+<li>В GitHub Desktop откройте <strong>Changes</strong>. Проверьте три изменённых HTML, новый <code>sw.js</code> и файлы манифеста, значков или других ресурсов, если их добавили сейчас. Убедитесь, что каждый путь из <code>FILES</code> есть в отправляемой версии проекта.</li>
+<li>В <strong>Summary</strong> напишите <code>Подключён service worker v1</code>, нажмите <strong>Commit to …</strong>, затем <strong>Push origin</strong>. Откройте репозиторий в браузере и найдите этот коммит в ветке размещения. Проверьте, что в ней рядом с <code>index.html</code> появился <code>sw.js</code>.</li>
+<li>В <strong>Actions</strong> дождитесь успешного размещения этого коммита. Откройте сайт по HTTPS и добавьте к адресу папки <code>sw.js</code>. Например, <code>https://логин.github.io/репозиторий/sw.js</code> должен отдавать текст JavaScript с вашей версией. Затем откройте главную, каталог и форму по HTTPS.</li>
+</ol>
+<aside class="callout" data-callout="tip">
+<p class="callout-title">Где остановилась отправка</p><p><strong>Commit</strong> сохраняет работу на компьютере. <strong>Push origin</strong> передаёт коммит в репозиторий на GitHub. <strong>Pages</strong> после успешного размещения отдаёт файлы по адресу приложения. Подтвердите свой этап в <strong>History</strong>, на GitHub или на рабочей странице по HTTPS.</p>
+</aside>
+<h3 id="6-покажите-результат-первой-версии">6. Покажите результат первой версии</h3>
+<p>Откройте приложение онлайн. В <strong>Application → Service Workers</strong> найдите активный <code>sw.js</code>, затем выполните обычную перезагрузку (<code>Ctrl + R</code>). В консоли <code>navigator.serviceWorker.controller?.scriptURL</code> должен вывести адрес <code>sw.js</code>. Если результат <code>undefined</code>, проверьте регистрацию, область управления и ошибки установки.</p>
+<ol>
+<li>В <strong>Application → Cache Storage</strong> раскройте кеш <code>…:v1</code> и найдите <code>catalog.html</code>, подключённый скрипт каталога и его картинки. При необходимости обновите список кешей кнопкой панели.</li>
+<li>В <strong>Application → Service Workers</strong> включите <strong>Offline</strong>. Перезагрузите каталог обычным способом и введите запрос с известным результатом. Проверьте карточки и счётчик.</li>
+<li>Перейдите в форму по ссылке приложения. Введите данные для одного известного расчёта и проверьте сообщение под кнопкой. Проверьте переход на главную.</li>
+<li>Верните режим Online. Если сломалось оформление или действие, найдите отсутствующий адрес в <strong>Network</strong>. При изменении списка уже активной версии увеличьте <code>VERSION</code>; для следующей пары используйте два соседних номера, начиная с последнего рабочего.</li>
+</ol>
+<aside class="callout" data-callout="check">
+<p class="callout-title">Что показать в конце первой пары</p><p>Покажите адрес под управлением <code>sw.js</code>, содержимое кеша и каталог или форму после повторной загрузки без сети. Для подготовки к проверке на телефоне покажите также HTTPS-адрес с опубликованным <code>sw.js</code>. Если проверили только localhost, укажите, на каком этапе остановилось размещение.</p>
+</aside>
+<p>На <a href="031-pwa-install-offline-and-update-checks.html">следующей паре</a> проверим установку, запуск на доступном устройстве и обновление результата.</p></main>
+  </div>
+  <footer class="site-footer">
+    <a href="../index.html">Календарь</a>
+    <a href="../topics/index.html">Школа</a>
+    <a href="index.html">СПО</a>
+    <a href="#page-top">Наверх</a>
+  </footer>
+</body>
+</html>

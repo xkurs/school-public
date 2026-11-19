@@ -292,6 +292,16 @@
       "title": "Подключение проекта к GitHub, публикация сайта и первые шаги PWA"
     },
     {
+      "source": "spo/030-service-worker-and-offline-cache.md",
+      "output": "spo/030-service-worker-and-offline-cache.html",
+      "title": "Service worker, кеширование, автономный режим и обновление приложения"
+    },
+    {
+      "source": "spo/031-pwa-install-offline-and-update-checks.md",
+      "output": "spo/031-pwa-install-offline-and-update-checks.html",
+      "title": "Настройка PWA и проверка установки, автономной работы и обновления"
+    },
+    {
       "source": "spo/assets/010-00.md",
       "output": "spo/assets/010-00.html",
       "title": "Учебный вариант 00 — пара 10"
@@ -2415,7 +2425,7 @@
     "topics/physics-9-3h/assets/030-variant-2-velocity.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "7cd32dcfcfa2edeb0de8c0408cc91f98fd95f4569ad4c2598bf8a99dc1d6677f",
+  "source_digest": "10b7b71df93aa9665d63a1f7619dc1a8bf3283cc94c75c38f47483179f064429",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2551,7 +2561,7 @@
     "schedules/personal/2026-11-17.html": "756637b983149fb6626d2a9e7726bd817cf62364c05b82b2e145e689d4eb5651",
     "schedules/personal/2026-11-18.html": "e69a9dbbe25c082ab959de410c00db22978d2cc78fc4cf429083ee4018101bac",
     "schedules/personal/2026-11-19.html": "31995d918812191c10787e47d8c89ab718fb8ed38e6bc25c7d61a2dc4a9b5685",
-    "schedules/personal/2026-11-21.html": "567dc031cde7f0fd83da42a9b301efc2f715363f6c6b4f51c934644e0ef3111e",
+    "schedules/personal/2026-11-21.html": "bc6088a9b1d0a77142852cee281716e03c4f941a68246dbbf563cbaae0ae05de",
     "spo/001-mobile-app-types.html": "51c534ec413f2ae3d80e437e32f6d348541843e6cc35d351ce751e788a2bb2ea",
     "spo/002-technology-choice-and-diagnostics.html": "101e4a688b22e089d14f2cbf313f58c6ea610a4c6cab7efe45e1954c7282e160",
     "spo/003-mit-app-inventor.html": "bc64710162f343d562098beaf9fa21102c45858a2000fadadcddade8c7cb399b",
@@ -2581,6 +2591,8 @@
     "spo/027-interface-logic-and-diagnostics.html": "c60a699473e93354f009133208250686dd9c75d1bfa50fb0717e17fee2d266b9",
     "spo/028-git-history-and-phone-testing.html": "3b77a6644bd30925003ad327a97d5533dbc55e91caf547cdde219f66c2aa66af",
     "spo/029-https-manifest-and-installation.html": "c7eb4268acdb75d10c6277d722459b4bbbaf7f26ac3b189f24d21fa637d2acf9",
+    "spo/030-service-worker-and-offline-cache.html": "3dc3209b0afb594203355e2e91173b609cb7778a71c7d156c28595fe20fd0fb2",
+    "spo/031-pwa-install-offline-and-update-checks.html": "6ad7e06961291015319f818da572a935e7f4068e367c425ff31431e171f1c88e",
     "spo/assets/003-00-blocks-screenshot.jpg": "574a062ab7e8ccf9fe731c5ec545ac4bf6c88cd8a02551d752be2597b264e1bf",
     "spo/assets/003-00-button-properties-screenshot.jpg": "6d15427fc17d8f758bc6add4f5320d0050e9204ce096a12e27a96a4f702ddcb2",
     "spo/assets/003-00-connect-usb-screenshot.jpg": "c8f30aa965893f3c8442b0589a66bf0e29738ff93109b0bdcad33fbadc88fafa",
@@ -3233,8 +3245,8 @@
     "spo/assets/027-00-task-06.svg": "a3ed170d711c59bdefdbde62365bc9de14ee228e22dd31653d043021ff3e3c26",
     "spo/assets/027-00-task-07.svg": "60946b115efcf071f4b4ffb371d6733162eec7631818ea30116b69969db1b389",
     "spo/assets/029-00-manifest-and-launch.svg": "35db14f71eba9bedaa5e436c56819a96a6bff3ad8f15558551f5e2f9f30351a7",
-    "spo/index.html": "e584fdd4be698705f8e8290b89cab412609464be737692b324d2ca5e6e0f81a4",
-    "sw.js": "6d5d04833a52dc00e9295bcf43868ebd348df04c2fdaf4d1e3f3824fda424bec",
+    "spo/index.html": "faa352c94254b3669dfb8b75fc05c5d5bba866d8994ea95f793f32da87179081",
+    "sw.js": "3252f30b25358bfbc40ee54a8a237298249c5fb4144cf8aff42c469f466ad78a",
     "topics/index.html": "a3edd633b20c4b12c2afc8ca49a329ecafcaf7d8860da4164c6ef51e7e0bf4af",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "bb7a237fa719b79c9d11cd102b81c6e2f4073756c507e4c816ae976042b061e6",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "763e892a682f85d1245e7cb160418f7285e3411b1147c8403b68fde3479530cd",
@@ -3326,5 +3338,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "dc2d8bd61ce0417f64316c1dd3df4229e9a5e9c7fc1c5b1a00da3a8dc131a8ed",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "c7f6444392a10ea13dec484ab67e9d306b76efa2540c4a871eed0a37a40066d0"
   },
-  "manifest_digest": "7329bf9da7d83e586ed156965b6a53df8f1c91a37e73f1bdaa7a57a4577fcd41"
+  "manifest_digest": "7790c9a99c987d9e585afb7c22ad8759931a28826fd7d6de33f4612da6a26fed"
 }
