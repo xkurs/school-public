@@ -82,7 +82,7 @@ body {
 }
 
 .site-header {
-  --site-title-size: clamp(2rem, 6vw, 4rem);
+  --site-title-size: clamp(1rem, 7.5vw, 4rem);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -100,6 +100,9 @@ body {
 }
 
 .site-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Orbitron", system-ui, sans-serif;
   color: #fff;
   margin: 0;
@@ -109,6 +112,15 @@ body {
   line-height: 1.15;
   text-align: center;
   text-shadow: 0 2px 12px rgb(6 27 54 / 25%);
+}
+
+.site-wordmark { white-space: nowrap; }
+
+.site-brand-icon {
+  height: .77em;
+  width: auto;
+  margin-inline: .08em;
+  vertical-align: baseline;
 }
 
 .skip-link {
@@ -162,6 +174,7 @@ main {
   margin-bottom: 1.25rem;
   color: #526176;
   font-size: 0.9rem;
+  overflow-wrap: anywhere;
 }
 
 .breadcrumbs ol {
@@ -465,6 +478,7 @@ aside.callout {
 
 .site-footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
