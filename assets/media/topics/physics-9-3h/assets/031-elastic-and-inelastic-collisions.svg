@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 460" role="img" aria-labelledby="title desc">
+  <title id="title">Упругое столкновение и столкновение со сцеплением</title>
+  <desc id="desc">До удара первая тележка движется вправо со скоростью 2 метра в секунду, вторая покоится. После прямого упругого удара первая стоит, а вторая движется вправо со скоростью 2 метра в секунду. При сцеплении обе движутся вправо со скоростью 1 метр в секунду.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#243c5a"/>
+    </marker>
+    <g id="cart">
+      <rect width="80" height="34" rx="6"/>
+      <circle cx="17" cy="38" r="7" fill="#263a55"/>
+      <circle cx="63" cy="38" r="7" fill="#263a55"/>
+    </g>
+  </defs>
+  <rect width="560" height="460" rx="16" fill="#f2f7fc"/>
+  <path d="M28 144H532M28 299H532" stroke="#ccd9e7" stroke-width="2"/>
+  <g font-family="system-ui, sans-serif" fill="#182f4a">
+    <g font-size="24" font-weight="700">
+      <text x="28" y="36">До удара</text>
+      <text x="28" y="180">После упругого удара</text>
+      <text x="28" y="336">После удара со сцеплением</text>
+    </g>
+    <g font-size="21">
+      <text x="88" y="74">2 м/с</text><text x="368" y="74">0 м/с</text>
+      <text x="88" y="224">0 м/с</text><text x="368" y="224">2 м/с</text>
+      <text x="260" y="376">1 м/с</text>
+    </g>
+    <g stroke="#243c5a" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M164 68h52"/><path d="M444 218h52"/><path d="M335 370h34"/>
+    </g>
+    <g fill="#075db8">
+      <use href="#cart" x="88" y="88"/><use href="#cart" x="88" y="242"/><use href="#cart" x="198" y="392"/>
+    </g>
+    <g fill="#a64a13">
+      <use href="#cart" x="368" y="88"/><use href="#cart" x="368" y="242"/><use href="#cart" x="278" y="392"/>
+    </g>
+    <g fill="#fff" font-size="22" font-weight="700" text-anchor="middle">
+      <text x="128" y="112">1</text><text x="408" y="112">2</text>
+      <text x="128" y="266">1</text><text x="408" y="266">2</text>
+      <text x="238" y="416">1</text><text x="318" y="416">2</text>
+    </g>
+  </g>
+</svg>
