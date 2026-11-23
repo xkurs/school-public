@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Условия if и when, диапазоны и циклы — shkolar.site</title>
+  <link rel="canonical" href="https://shkolar.site/spo/036-kotlin-conditions-ranges-and-loops.html">
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" sizes="180x180">
+  <meta name="theme-color" content="#172554">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body id="page-top">
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title"><span class="site-wordmark">shkolar<img class="site-brand-icon" src="../assets/icons/header-tree.png" alt=".">site</span></p>
+    <section class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-reload" hidden>Обновить версию</button>
+    </section>
+  </header>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">036-kotlin-conditions-ranges-and-loops</li></ol></nav><h1 id="условия-if-и-when-диапазоны-и-циклы">Условия if и when, диапазоны и циклы</h1>
+<p>Пусть в группе шесть мест, а занято четыре. Вычитание даёт остаток мест. Теперь программа должна решить, можно ли принять ещё одного человека, что делать по выбранной команде и когда остановить повторение. Каждый пример запускайте отдельно в режиме JVM. Сохраняйте программы, к которым хотите вернуться, в отдельных файлах <code>.kt</code>.</p>
+<nav aria-label="Содержание" class="article-contents">
+<p class="callout-title">Содержание</p><ul>
+<li><a href="036-kotlin-conditions-ranges-and-loops.html#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B9-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-if">Условия if</a></li>
+<li><a href="036-kotlin-conditions-ranges-and-loops.html#%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D1%8F-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-when">Выбор when</a></li>
+<li><a href="036-kotlin-conditions-ranges-and-loops.html#%D0%B4%D0%B8%D0%B0%D0%BF%D0%B0%D0%B7%D0%BE%D0%BD%D1%8B-%D0%B8-%D1%86%D0%B8%D0%BA%D0%BB-for">Диапазоны и for</a></li>
+<li><a href="036-kotlin-conditions-ranges-and-loops.html#%D1%86%D0%B8%D0%BA%D0%BB-while-%D0%B8-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5-%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8">Цикл while</a></li>
+<li><a href="036-kotlin-conditions-ranges-and-loops.html#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8C%D1%82%D0%B5-%D1%81%D0%B5%D0%B1%D1%8F">Проверьте себя</a></li>
+</ul>
+</nav>
+<h2 id="проверка-условий-через-if">Проверка условий через if</h2>
+<p>Сравнение возвращает <code>true</code> или <code>false</code>. Знак <code>=</code> присваивает значение, <code>==</code> сравнивает значения. Символы <code>&lt;</code> и <code>&gt;</code> исключают границу, <code>&lt;=</code> и <code>&gt;=</code> включают её. Оператор <code>||</code> читается как «или».</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">capacity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">6</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">occupied</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">capacity</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">occupied</span><span class="w"> </span><span class="k">!in</span><span class="w"> </span><span class="m">0.</span><span class="p">.</span><span class="na">capacity</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s">&quot;Проверьте исходные данные&quot;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">occupied</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">capacity</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s">&quot;Свободных мест нет&quot;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s">&quot;Свободных мест: </span><span class="si">${</span><span class="n">capacity</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">occupied</span><span class="si">}</span><span class="s">&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Ожидаемый вывод — <code>Свободных мест: 2</code>. Здесь <code>if</code> возвращает строку, которую мы записываем в <code>message</code>. Условие <code>occupied !in 0..capacity</code> означает, что число занятых мест меньше нуля или больше вместимости. Проверка данных стоит первой. Иначе, например, при <code>occupied = 7</code> программа могла бы показать отрицательное число свободных мест.</p>
+<aside class="callout" data-callout="tip">
+<p class="callout-title">Проверяйте точную границу</p><p>При <code>occupied = 5</code> выводится одно свободное место, при <code>6</code> — сообщение об отсутствии мест, при <code>7</code> — сообщение о неверных данных. Эти три запуска позволяют заметить ошибку около границы.</p>
+</aside>
+<h2 id="выбор-действия-через-when">Выбор действия через when</h2>
+<p>Пусть <code>1</code> означает «показать остаток», <code>2</code> — «проверить возможность записи», <code>0</code> — «завершить». <code>when</code> сравнивает значение <code>action</code> с ветками сверху вниз и выполняет первую подходящую. Ветка <code>else</code> обрабатывает остальные значения.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">free</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="n">action</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="m">0</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Работа завершена&quot;</span>
+<span class="w">        </span><span class="m">1</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Свободных мест: </span><span class="si">$</span><span class="n">free</span><span class="s">&quot;</span>
+<span class="w">        </span><span class="m">2</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">free</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="p">)</span><span class="w"> </span><span class="s">&quot;Запись открыта&quot;</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s">&quot;Мест нет&quot;</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s">&quot;Неизвестное действие&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Для действия <code>2</code> и двух свободных мест выводится <code>Запись открыта</code>. При <code>free = 0</code> для той же команды будет <code>Мест нет</code>. <code>when</code> выбирает, <strong>что сделать</strong>, а вложенный <code>if</code> решает, <strong>какой результат вернуть</strong> с учётом числа мест. Данные в этом примере заданы заранее и считаются проверенными.</p>
+<h2 id="диапазоны-и-цикл-for">Диапазоны и цикл for</h2>
+<p>Диапазон <code>1..3</code> содержит числа 1, 2 и 3. Диапазон <code>0 until 3</code> содержит 0, 1 и 2. Это важно при нумерации. Для трёх заявок с номерами от единицы нужен <code>1..3</code>, а для трёх позиций с номерами от нуля — <code>0 until 3</code>.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">requests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">request</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1.</span><span class="p">.</span><span class="na">requests</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Заявка </span><span class="si">$</span><span class="n">request</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Заявка 1
+Заявка 2
+Заявка 3
+</code></pre></div>
+<p>При <code>requests = 0</code> диапазон <code>1..0</code> пустой, поэтому тело цикла не выполнится. Обратите внимание, что <code>in</code> встречается и при проверке принадлежности <code>occupied in 0..capacity</code>, и при переборе <code>for (request in 1..requests)</code>.</p>
+<h2 id="цикл-while-и-условие-остановки">Цикл while и условие остановки</h2>
+<p><code>while</code> проверяет условие <strong>перед</strong> каждым повтором. В этом примере на каждом шаге занимаем одно место. Для переменной, которую меняем, используем <code>var</code>.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">free</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">free</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Занимаем место. До записи свободно: </span><span class="si">$</span><span class="n">free</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="n">free</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="m">1</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Свободных мест: </span><span class="si">$</span><span class="n">free</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Занимаем место. До записи свободно: 2
+Занимаем место. До записи свободно: 1
+Свободных мест: 0
+</code></pre></div>
+<p>Если начать с нуля, останется только последняя строка. Если убрать <code>free -= 1</code> при начальном значении 2, условие продолжит быть истинным. Перед запуском <code>while</code> проверьте, что переменная в условии меняется в нужную сторону. Для заранее известного количества шагов обычно проще использовать <code>for</code>.</p>
+<h2 id="проверьте-себя">Проверьте себя</h2>
+<ol>
+<li>Какое сообщение напечатает первый пример при <code>capacity = 6</code> и <code>occupied = -1</code>? Что будет при <code>occupied = 0</code>?</li>
+<li>Какие строки выведет второй пример с <code>action = 0</code> и с <code>action = 9</code>? Меняется ли результат этих действий от количества мест?</li>
+<li>Сколько повторов будет в <code>1..4</code>, <code>0 until 4</code> и <code>0..4</code>? Сначала посчитайте вручную, потом подставьте диапазоны в цикл.</li>
+<li>Измените пример с <code>while</code>, чтобы программа оставляла одно место в резерве. Сверьте решение с двумя запусками. При двух свободных местах она занимает одно, при одном свободном месте тело цикла пропускает.</li>
+</ol>
+<p>Если среда запуска недоступна, напишите для каждого шага текущее значение переменной, результат проверки условия и строку вывода. Когда появится возможность, сравните свою трассировку с программой.</p></main>
+  </div>
+  <footer class="site-footer">
+    <a href="../qr.html">QR</a>
+    <a href="../topics/index.html">Школа</a>
+    <a href="index.html">СПО</a>
+  </footer>
+</body>
+</html>

@@ -452,6 +452,64 @@ div.arithmatex {
   font-weight: 700;
 }
 
+.article-contents {
+  margin-block: 1.25rem 1.75rem;
+}
+
+.article-contents .callout-title {
+  margin-block: 0 0.5rem;
+}
+
+.article-contents ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.article-contents a {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 2.75rem;
+  height: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d5e5f6;
+  border-radius: 0.4rem;
+  background: #f2f8ff;
+  color: #174d82;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.article-contents a::before {
+  content: "";
+  flex: 0 0 0.6rem;
+  height: 0.85rem;
+  background: currentColor;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 73%, 0 100%);
+}
+
+.article-contents a:hover {
+  border-color: #4a82b8;
+  background: #e5f2ff;
+  text-decoration: underline;
+}
+
+.article-contents a:focus-visible {
+  outline: 2px solid #075db8;
+  outline-offset: 2px;
+}
+
+main:has(.article-contents) :is(h2, h3):target {
+  color: #174d82;
+  scroll-margin-top: 1rem;
+}
+
 summary.callout-title {
   cursor: pointer;
 }

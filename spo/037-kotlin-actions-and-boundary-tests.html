@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Выбор действия, повторение и проверка граничных случаев — shkolar.site</title>
+  <link rel="canonical" href="https://shkolar.site/spo/037-kotlin-actions-and-boundary-tests.html">
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" sizes="180x180">
+  <meta name="theme-color" content="#172554">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body id="page-top">
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title"><span class="site-wordmark">shkolar<img class="site-brand-icon" src="../assets/icons/header-tree.png" alt=".">site</span></p>
+    <section class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-reload" hidden>Обновить версию</button>
+    </section>
+  </header>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">037-kotlin-actions-and-boundary-tests</li></ol></nav><h1 id="выбор-действия-повторение-и-проверка-граничных-случаев">Выбор действия, повторение и проверка граничных случаев</h1>
+<p>Сделайте небольшую программу для записи в учебную группу. Она получает начальное число занятых мест, выбирает одно действие и, если нужно, обрабатывает несколько заявок. Для каждого запуска подставляйте данные прямо в коде. После команды «записать» программа показывает, сколько заявок принято и сколько отклонено.</p>
+<nav aria-label="Содержание" class="article-contents">
+<p class="callout-title">Содержание</p><ul>
+<li><a href="037-kotlin-actions-and-boundary-tests.html#%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D1%8C%D1%82%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Данные и команды</a></li>
+<li><a href="037-kotlin-actions-and-boundary-tests.html#%D1%80%D0%B0%D0%B7%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D1%83-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BE%D0%BA">Обработка заявок</a></li>
+<li><a href="037-kotlin-actions-and-boundary-tests.html#%D1%81%D0%BE%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5-%D1%81%D0%B2%D0%BE%D1%8E-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83">Самостоятельная работа</a></li>
+<li><a href="037-kotlin-actions-and-boundary-tests.html#%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5-%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8">Граничные проверки</a></li>
+<li><a href="037-kotlin-actions-and-boundary-tests.html#%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82">Итоговый показ</a></li>
+</ul>
+</nav>
+<h2 id="подготовьте-данные-и-команды">Подготовьте данные и команды</h2>
+<p>Создайте новую программу в той же среде, где запускали <a href="036-kotlin-conditions-ranges-and-loops.html">примеры с условиями и циклами</a>. Через <code>val</code> задайте четыре исходных числа.</p>
+<table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Что означает</th>
+<th style="text-align: right;">Первый запуск</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>capacity</code></td>
+<td>Вместимость группы</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><code>initialOccupied</code></td>
+<td>Сколько мест занято до выбранной операции</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><code>action</code></td>
+<td>Код действия</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><code>requests</code></td>
+<td>Число новых заявок для команды записи</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p>Сначала проверьте, что вместимость положительна и начальное число занятых мест попадает в диапазон <code>0..capacity</code>. Если число неверное, выведите <code>Ошибка исходных данных</code> и завершите <code>main</code>. Команда <code>return</code> после сообщения завершает текущую функцию.</p>
+<p>Затем через <code>when (action)</code> выберите одну ветку.</p>
+<table>
+<thead>
+<tr>
+<th>Действие</th>
+<th>Что должно произойти</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td>Вывести <code>Работа завершена</code></td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td>Показать, сколько мест свободно</td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td>Проверить число заявок, обработать их и вывести итог</td>
+</tr>
+<tr>
+<td>Иное число</td>
+<td>Вывести <code>Неизвестное действие</code></td>
+</tr>
+</tbody>
+</table>
+<p>Число заявок проверяйте только для команды 2. Нулевое количество заявок допустимо, отрицательное вызывает сообщение <code>Ошибка числа заявок</code>.</p>
+<h2 id="разберите-обработку-заявок">Разберите обработку заявок</h2>
+<p>Рассмотрим один фрагмент для случая, когда остались два места, а пришли три заявки. На каждом шаге либо принимаем заявку и уменьшаем остаток мест, либо оставляем остаток без изменения. По этой таблице можно проверить объявление переменных и обновление счётчиков.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Заявка</th>
+<th style="text-align: right;">Свободно до проверки</th>
+<th>Результат</th>
+<th style="text-align: right;">Свободно после проверки</th>
+<th style="text-align: right;">Принято всего</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td>Принята</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td>Принята</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td>Отклонена</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+<aside class="callout" data-callout="tip">
+<p class="callout-title">Один повтор — одна заявка</p><p>Подходит перебор <code>for (request in 1..requests)</code>. Он выполнится ровно <code>requests</code> раз при положительном числе заявок. При нуле диапазон пустой, а итог всё равно выводится после цикла.</p>
+</aside>
+<p>Достаточно хранить <code>var free</code> и <code>var accepted</code>. Если <code>free &gt; 0</code>, свободных мест становится на одно меньше, а принятых заявок — на одну больше. Количество отклонённых можно найти после цикла как разность <code>requests - accepted</code>.</p>
+<h2 id="соберите-свою-программу">Соберите свою программу</h2>
+<ol>
+<li>Сделайте проверку исходных данных и ветки <code>0</code>, <code>1</code>, <code>else</code>. Запустите программу с кодами <code>0</code>, <code>1</code> и <code>9</code>. При вместимости 6 и четырёх занятых местах команда <code>1</code> показывает два свободных места.</li>
+<li>Допишите ветку <code>2</code> с проверкой <code>requests</code>. После проверки в этой ветке создайте счётчики и обработайте заявки. Внутри цикла выводите одну строку на заявку, в конце — один итог.</li>
+<li>Сверьте первый запуск с образцом вывода. Формулировки можно выбрать свои, если по выводу видны номера заявок, результаты и количества.</li>
+</ol>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Заявка 1: принята
+Заявка 2: принята
+Заявка 3: отклонена
+Принято: 2
+Отклонено: 1
+Свободных мест: 0
+</code></pre></div>
+<aside class="callout" data-callout="note">
+<p class="callout-title">Если результат не совпал</p><p>Лишний повтор часто появляется из-за диапазона <code>0..requests</code>. Отрицательное число свободных мест означает, что остаток уменьшался даже после отказа. Одинаковый итог для разных команд — повод проверить, где находится код обработки заявок и под какой стрелкой <code>-&gt;</code> написана нужная ветка.</p>
+</aside>
+<h2 id="выполните-граничные-проверки">Выполните граничные проверки</h2>
+<p>Сначала предскажите результаты, затем запускайте программу. В каждом запуске меняйте только указанные значения. Когда отрабатывает ошибка или команда завершения, строк о заявках появляться не должно.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Вместимость</th>
+<th style="text-align: right;">Занято до запуска</th>
+<th style="text-align: right;">Команда</th>
+<th style="text-align: right;">Заявок</th>
+<th>Что проверить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>Точное заполнение, две принятые заявки и ноль отклонённых</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td>Одной заявке не хватает места</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td>Первая заявка сразу отклоняется, остаток 0</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td>Строк о заявках нет, остаток 2</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-1</td>
+<td>Ошибка числа заявок до запуска цикла</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td>Ошибка исходных данных до выбора команды</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">-1</td>
+<td>Остаток 2, поскольку команда просмотра не использует число заявок</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td>Неизвестное действие</td>
+</tr>
+</tbody>
+</table>
+<p>Дополнительное задание — изменить команду 2 так, чтобы оставалось одно место в резерве. Проверьте случаи с двумя, одним и нулём свободных мест. Если мест уже нет, резерв не создаётся и число мест остаётся нулевым.</p>
+<h2 id="покажите-результат">Покажите результат</h2>
+<p>Сохраните готовый код в файле <code>Queue.kt</code>. Покажите преподавателю два запуска: точное заполнение и случай, когда одной заявке не хватает места. Объясните, почему число повторов зависит от количества заявок, а число принятых — от числа свободных мест. Затем измените один входной параметр и назовите ожидаемый результат до запуска.</p>
+<p>Если среда запуска недоступна, подготовьте ветки <code>when</code> и трассировку двух запусков по образцу таблицы. Отметьте, какие результаты рассчитаны вручную. Когда среда станет доступна, выполните эти же проверки в программе.</p></main>
+  </div>
+  <footer class="site-footer">
+    <a href="../qr.html">QR</a>
+    <a href="../topics/index.html">Школа</a>
+    <a href="index.html">СПО</a>
+  </footer>
+</body>
+</html>

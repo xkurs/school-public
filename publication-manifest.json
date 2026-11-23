@@ -152,6 +152,21 @@
       "title": "23.11.2026"
     },
     {
+      "source": "schedules/personal/2026-11-24.md",
+      "output": "schedules/personal/2026-11-24.html",
+      "title": "24.11.2026"
+    },
+    {
+      "source": "schedules/personal/2026-11-25.md",
+      "output": "schedules/personal/2026-11-25.html",
+      "title": "25.11.2026"
+    },
+    {
+      "source": "schedules/personal/2026-11-28.md",
+      "output": "schedules/personal/2026-11-28.html",
+      "title": "28.11.2026"
+    },
+    {
       "source": "spo/001-mobile-app-types.md",
       "output": "spo/001-mobile-app-types.html",
       "title": "Какие бывают мобильные приложения"
@@ -305,6 +320,36 @@
       "source": "spo/031-pwa-install-offline-and-update-checks.md",
       "output": "spo/031-pwa-install-offline-and-update-checks.html",
       "title": "Настройка PWA и проверка установки, автономной работы и обновления"
+    },
+    {
+      "source": "spo/032-pwa-validation-and-offline-testing.md",
+      "output": "spo/032-pwa-validation-and-offline-testing.html",
+      "title": "Доработка PWA: проверка ввода, сохранения данных и поведения без сети"
+    },
+    {
+      "source": "spo/033-web-app-defense.md",
+      "output": "spo/033-web-app-defense.html",
+      "title": "Защита веб-приложения: самостоятельное изменение функции и объяснение кода"
+    },
+    {
+      "source": "spo/034-kotlin-playground-basics.md",
+      "output": "spo/034-kotlin-playground-basics.html",
+      "title": "Kotlin в браузере: main, вывод, val, var и типы значений"
+    },
+    {
+      "source": "spo/035-kotlin-calculations-and-strings.md",
+      "output": "spo/035-kotlin-calculations-and-strings.html",
+      "title": "Первые программы Kotlin: вычисления и строки"
+    },
+    {
+      "source": "spo/036-kotlin-conditions-ranges-and-loops.md",
+      "output": "spo/036-kotlin-conditions-ranges-and-loops.html",
+      "title": "Условия if и when, диапазоны и циклы"
+    },
+    {
+      "source": "spo/037-kotlin-actions-and-boundary-tests.md",
+      "output": "spo/037-kotlin-actions-and-boundary-tests.html",
+      "title": "Выбор действия, повторение и проверка граничных случаев"
     },
     {
       "source": "spo/assets/010-00.md",
@@ -1622,6 +1667,11 @@
       "title": "Механическое движение. Относительность движения. Перемещение, скорость, ускорение"
     },
     {
+      "source": "topics/physics-10-2h/023-molecular-mass-and-avogadro-constant.md",
+      "output": "topics/physics-10-2h/molecular-mass-and-avogadro-constant.html",
+      "title": "Масса молекул. Количество вещества. Постоянная Авогадро"
+    },
+    {
       "source": "topics/physics-10-2h/015-momentum-impulse-conservation-and-jet-propulsion.md",
       "output": "topics/physics-10-2h/momentum-impulse-conservation-and-jet-propulsion.html",
       "title": "Импульс тела. Импульс силы. Закон сохранения импульса. Реактивное движение"
@@ -1755,6 +1805,11 @@
       "source": "topics/physics-7-2h/019-force-elasticity-and-hookes-law.md",
       "output": "topics/physics-7-2h/force-elasticity-and-hookes-law.html",
       "title": "Сила как характеристика взаимодействия тел. Сила упругости. Закон Гука"
+    },
+    {
+      "source": "topics/physics-7-2h/021-gravitation-and-gravity.md",
+      "output": "topics/physics-7-2h/gravitation-and-gravity.html",
+      "title": "Явление тяготения. Сила тяжести"
     },
     {
       "source": "topics/physics-7-2h/006-horizontal-launch-height-and-range.md",
@@ -1935,6 +1990,11 @@
       "source": "topics/physics-9-3h/031-momentum-and-collisions.md",
       "output": "topics/physics-9-3h/momentum-and-collisions.html",
       "title": "Импульс тела. Импульс силы. Закон сохранения импульса. Упругое и неупругое взаимодействие"
+    },
+    {
+      "source": "topics/physics-9-3h/032-momentum-conservation-problems.md",
+      "output": "topics/physics-9-3h/momentum-conservation-problems.html",
+      "title": "Решение задач по теме «Закон сохранения импульса»"
     },
     {
       "source": "topics/physics-9-3h/029-motion-and-interaction-review.md",
@@ -2410,6 +2470,7 @@
     "topics/physics-10-2h/assets/020-variant-1-velocity.svg",
     "topics/physics-10-2h/assets/020-variant-2-force.svg",
     "topics/physics-10-2h/assets/020-variant-2-velocity.svg",
+    "topics/physics-10-2h/assets/023-mass-moles-and-particles.svg",
     "topics/physics-11-2h/assets/017-current-and-power.svg",
     "topics/physics-11-2h/assets/017-current-cycle.svg",
     "topics/physics-11-2h/assets/017-rms-comparison.svg",
@@ -2419,6 +2480,7 @@
     "topics/physics-7-2h/assets/016-density-relations.svg",
     "topics/physics-7-2h/assets/016-displacement-volume.svg",
     "topics/physics-7-2h/assets/019-spring-extension-and-force.svg",
+    "topics/physics-7-2h/assets/021-direction-of-gravity.svg",
     "topics/physics-8-2h/assets/017-fuel-energy-transfer.svg",
     "topics/physics-8-2h/assets/018-ice-melting-heating-graph.svg",
     "topics/physics-8-2h/assets/021-boiling-pressure.svg",
@@ -2433,10 +2495,11 @@
     "topics/physics-9-3h/assets/030-variant-1-velocity.svg",
     "topics/physics-9-3h/assets/030-variant-2-coordinate.svg",
     "topics/physics-9-3h/assets/030-variant-2-velocity.svg",
-    "topics/physics-9-3h/assets/031-elastic-and-inelastic-collisions.svg"
+    "topics/physics-9-3h/assets/031-elastic-and-inelastic-collisions.svg",
+    "topics/physics-9-3h/assets/032-opposite-momenta.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "48724772238d4c8a0fc164386a8549d4cd931435342137fa395af92e2cf8a326",
+  "source_digest": "962f7ee9845c8472445d8cf68388312ed6a0f30e96828e4a76c505f8e19c117e",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2518,6 +2581,7 @@
     "assets/media/topics/physics-10-2h/assets/020-variant-1-velocity.svg": "e57e081d89ea2d32fa17b83ea017e258417314fca61203c54d4228b8d783946e",
     "assets/media/topics/physics-10-2h/assets/020-variant-2-force.svg": "c85d667c359375f4d6e8ff643a4f504e4e20571a42522cb1e7e66d1df6d17609",
     "assets/media/topics/physics-10-2h/assets/020-variant-2-velocity.svg": "9bfb177fcc4dd4e24b4d6e7ff455d1173d17d3085e8fbd66ddfe5a39b15771b2",
+    "assets/media/topics/physics-10-2h/assets/023-mass-moles-and-particles.svg": "426db98606b6eeee956ce0ca34f0532c0abcfe53ea82bd07eea2ac44a56fabf6",
     "assets/media/topics/physics-11-2h/assets/017-current-and-power.svg": "fc8afae33eece98aaf2b897769290f9b3ba4e537e91cb2aa9a2823a4b5ac97df",
     "assets/media/topics/physics-11-2h/assets/017-current-cycle.svg": "526e031b525e39a2ceb35ad8c1adf467cf70fa1056a825aa574038711dcdfc7d",
     "assets/media/topics/physics-11-2h/assets/017-rms-comparison.svg": "58974c7e9c7cec5dc1c4ecc179b71b240965a7db951089c39886e3a0134516df",
@@ -2527,6 +2591,7 @@
     "assets/media/topics/physics-7-2h/assets/016-density-relations.svg": "37321f92b2879edec604b27d10d004d4d69004526f853fb37df6e7e69b79a38c",
     "assets/media/topics/physics-7-2h/assets/016-displacement-volume.svg": "a4ec81d812e628252211d1984cbab2e1255c3cb4ad7929a6975b0ff9c1d69c7b",
     "assets/media/topics/physics-7-2h/assets/019-spring-extension-and-force.svg": "d99956ade52fd2fcfc5db5f8da60c8934c2cc55f184a42bd378337381f74cf1d",
+    "assets/media/topics/physics-7-2h/assets/021-direction-of-gravity.svg": "e07c05859c5f182ebff5c65a36815e7a98449b999a7c1ebf90a3f0a592e72f9d",
     "assets/media/topics/physics-8-2h/assets/017-fuel-energy-transfer.svg": "ffbfc0012f3c5eb79797d16198fa6fc9c5d7aefa81d2d84ff854510825f1e1d7",
     "assets/media/topics/physics-8-2h/assets/018-ice-melting-heating-graph.svg": "0a8c69338d22702d511e8c50edf80b83a97158fb29914fdc187d28a787fdd5c3",
     "assets/media/topics/physics-8-2h/assets/021-boiling-pressure.svg": "21424b2c2551d23b77c1309c9a9cd3517fd0fb3d4921c753568b9c00cd168fda",
@@ -2542,42 +2607,46 @@
     "assets/media/topics/physics-9-3h/assets/030-variant-2-coordinate.svg": "64c33545666dba535f5a495dcb86dc71cfa2cd4707336f43b0c912321ac801b5",
     "assets/media/topics/physics-9-3h/assets/030-variant-2-velocity.svg": "1e794132bb4ad2bfadeb62fdd8b5660310c4dee399659790fc68c3437791990c",
     "assets/media/topics/physics-9-3h/assets/031-elastic-and-inelastic-collisions.svg": "d4f9c0b641ab2c615895f640e2a8813aab881ec037ee007db6bf2685daca9ace",
+    "assets/media/topics/physics-9-3h/assets/032-opposite-momenta.svg": "bfcd74b4f3d5da42d8667a452b3f17124996b40f258846c70012750010ca56f5",
     "assets/offline.js": "032a1d98ff91bb1793d9c79fe1ec30587208609440453156c532c22ed28a3a29",
     "assets/site-qr.svg": "16bc79deb9d4a3b2a3335861d0950eeef92de31e7988e96c7eec68fd5bff3b21",
-    "assets/style.css": "fc577b849c80c46e3d3d926c0e9142f2c704a4cb526e1c0454edbcbb1c6bade9",
-    "calendar/2026-10.html": "b0c887ff2f58acf8f52930101ab2691bd026375a7192e4b174374b6e42e3691c",
-    "calendar/2026-11.html": "c11c8abba0f68b8c7e68fd566c637e4cfb4c3e550e9d5b11f384042c625268ed",
+    "assets/style.css": "9f64a71622e15037ec206d9a705f18d1371ad74ae34043c7e7526b20e9211fe4",
+    "calendar/2026-10.html": "f57746f7e64fbc71818d13f25f11eed7a2b48252d420d893871ff8bb755536bb",
+    "calendar/2026-11.html": "220ff14512d12dc741727370ed4f00f16e0e2104b4f4d0a6dc6dee09730aa40a",
     "CNAME": "a88e58d2742981a3f92b2ca125fdde4b4072ab55106487f4973ceb23b7e66a12",
     "favicon.ico": "db28c1f3a1477b9fe964d09306431d787457f1e95d61dd0effcc461d20837f4c",
-    "index.html": "62baca12ffe463cdbf73219914e18ab11fe02639ba7122adb038ccfc719f8bc6",
+    "index.html": "1ebfad7a52dd418978d92bb9d0112ee4770b0b52137932d47d69ee057a6610a4",
     "manifest.webmanifest": "ba674853c58c5a3c0e5e39fead502e046df483b587a4424326be2fb40560a5e0",
     "qr.html": "549fe586e688c0cf7938d5be55f295609bfbf1fe238d507e722c8cd169a8c188",
     "schedules/personal/2026-10-14.html": "ac3bb7b43fc66286dee7dd406af63b67db61b077ccd7aa70722d83fc42622ca6",
-    "schedules/personal/2026-10-15.html": "c39adbf80924ead76784d65edcc07d14034a29bee04289aa661ac4397fe5ee85",
-    "schedules/personal/2026-10-16.html": "c487eff2c303a5848c077b2f429738284226e558d900f5d5b22259aaad1c1868",
+    "schedules/personal/2026-10-15.html": "d6bd741e3c2f9bd5209daff27192bba7453626aced6e0051910cdda212547538",
+    "schedules/personal/2026-10-16.html": "eb7170c4b2350317cc7d8035542fa75fe85f178abc2d83b81c639f073f085fb9",
     "schedules/personal/2026-10-17.html": "e688f65c260f0128399489027ccc808ae3896875ed4d4be08431a5f43626286a",
-    "schedules/personal/2026-10-19.html": "22fb4bcac940acfe07ddf2391bba11c1238bc693d9cee89b269c2f76be69db10",
-    "schedules/personal/2026-10-20.html": "9cffdbb0fae950032acbbbacda0718935bd7a1de8ee43e3a0eaa724589c765bd",
+    "schedules/personal/2026-10-19.html": "5fd5d6f59dbb7c519f4be143942e3fa9df5b1aa24abce2851aed9070d3cb3820",
+    "schedules/personal/2026-10-20.html": "b0a747231b258de94f0cc6c5cf1039cfe032fcd42cb416f92bd3f723652c63e6",
     "schedules/personal/2026-10-21.html": "24937a92819ec4251f03f336963928765fa874b24cf96aeb21b1455ac2d0fbd1",
-    "schedules/personal/2026-10-22.html": "77265a2830aeeb1036129e3eec2920e9574874523df08cccb2bb24601e211d51",
+    "schedules/personal/2026-10-22.html": "d5491eb0aff196506497187b739c5f7ecf8783894f36f46e62df63ee0cc6578d",
     "schedules/personal/2026-10-24.html": "71ac70ce9149c47bde8702de9cabcd43883702077f3016c2fa8536cb6a828a68",
     "schedules/personal/2026-10-28.html": "e0e221565c79d5614aebe8d8dde9dceec792f1638a93b887a951998871e37ac8",
     "schedules/personal/2026-10-31.html": "abf2383c802688aea7e7c82bdeeef47aa766844321c6b10601e6c79d69c93e8d",
-    "schedules/personal/2026-11-05.html": "c3929225a8231daa49c83d9f62c5084fbc505b1ee84282997103d119f8656812",
-    "schedules/personal/2026-11-06.html": "6b2a8d905f0bd35c14f82e1fbb2d2e79139a5583b64e0cfedb1ece409556229f",
+    "schedules/personal/2026-11-05.html": "b4daa9fafe471c8fa56cb7dc8496f3713c195e85dec869d4a5f9540e8fcf219f",
+    "schedules/personal/2026-11-06.html": "07ab03531114002f3809bc2679bfe0ef8ae798c30af3ded42459ce55de2e9516",
     "schedules/personal/2026-11-07.html": "c2c0702a5c62f24c53030632f13db2d1c43f4d39f42f9c5a6b34759fcbe06852",
-    "schedules/personal/2026-11-09.html": "29d6317b3735a7cda0af59cb7ef3a60d4b3776c763173234cc694a55f61d76e8",
-    "schedules/personal/2026-11-10.html": "1b0fee3499c3c38881edd3f521aa92b67066565fc9c9d15b9d42e2b774fc746d",
+    "schedules/personal/2026-11-09.html": "90dfef3c205b36e5fc21d0286613b15151492dcc613ab0f6198d333d1d0fdbde",
+    "schedules/personal/2026-11-10.html": "cd3bf7324c66d6dbf8f07856083cffdb75cbe8b4f7c37ddd473948038bc88d92",
     "schedules/personal/2026-11-11.html": "a05c77004ef8fd5541b1414c19021e2bb3e60f197e276575cb2f9724103d8acf",
-    "schedules/personal/2026-11-12.html": "7cdd16a3b14d69a68cc68ac0bbd6ec221dc02e2d98cdb52d409ca7cf08b6a667",
-    "schedules/personal/2026-11-13.html": "86fedfbb2ba2b893feabfdd3677d6579181575fc7a7018a31291198bc5388f6a",
+    "schedules/personal/2026-11-12.html": "09f17eb2065ae69881457a63a11b9d4f408f63ba77c1ac8ab42f1adbc04728db",
+    "schedules/personal/2026-11-13.html": "14f52112f5bf42a7cc5b8610c19d136f67fc468521f10a08940d6d9848f52d6a",
     "schedules/personal/2026-11-14.html": "bd5e03fe7112e9268fb75cb922ee34effc3d02dd6e6495a66614442483fb29b9",
-    "schedules/personal/2026-11-16.html": "000ebceb105e212668286a4778a50372bf27c39603a5200b4886445bd788a8e8",
-    "schedules/personal/2026-11-17.html": "462976c1b36a78fdf9b9d410f03fe5efdb5a21d09ddb55ea4656554b60f40a05",
+    "schedules/personal/2026-11-16.html": "99ab3a8d6db846bea55d4ae19fc2f1ad33d4a953e608a8df7ac4f5cea1fd0e78",
+    "schedules/personal/2026-11-17.html": "60c59fd1be1e8f8d42e2a605f87dd964d46f0fbd7bd81f85dd8d13c57efbde5c",
     "schedules/personal/2026-11-18.html": "386dbc5ee6232377c3470f93c1e705963d3277fcac9e24d299a9b1ed7529a87d",
-    "schedules/personal/2026-11-19.html": "42189c723480b06adc2cdf604a7355e39aa6d01a3580597c12398d243785d2ba",
+    "schedules/personal/2026-11-19.html": "c1557b02dd5831f0aad498dc4b78214bc04955a6850bb1e04d7801551ecf6bed",
     "schedules/personal/2026-11-21.html": "bd81fe989707679c851f45a5ce75073cd53d2a0bd5cddad0a706b05aa398f98b",
-    "schedules/personal/2026-11-23.html": "425ea3f4126a97c88ca5a78015a71a17ae4ccf44b13ebcc8af956bf8dd0760a0",
+    "schedules/personal/2026-11-23.html": "d0623571c1ad56aede308be67f9a2656cab4d4748afa67abbc7e50e578d9c790",
+    "schedules/personal/2026-11-24.html": "940753a255a9dfbc54287133cb14535ea58527f5f62814f08c596cbf08b3c9f2",
+    "schedules/personal/2026-11-25.html": "46595eb867326db802cdad351c42f07b7ffc45484f81857fe41d3574f58e8e7e",
+    "schedules/personal/2026-11-28.html": "3480f42016dcf87ae534e67fe76913dc6108f7a6ef61d173e5398d09557279c0",
     "spo/001-mobile-app-types.html": "4c8b231f8a3104f28f80e65461a4df79d65dd4abef949f0487c9ba5be767c040",
     "spo/002-technology-choice-and-diagnostics.html": "394a7cdc6291fc7e162eaa99bf664e3034cbdc2aef25d47f22ffb0b77a3a2e06",
     "spo/003-mit-app-inventor.html": "5f125abd82f8127e715673b07f18c22f1ca98448fd1ac60d754b335112b1f926",
@@ -2609,6 +2678,12 @@
     "spo/029-https-manifest-and-installation.html": "597f1c058d19c8123a0f1689ef5e2bbea9d62f7df60e055b6e9f64a386bffd0a",
     "spo/030-service-worker-and-offline-cache.html": "20f587b81ef432ada99b234018a65fd9b89729a4bd158f2079597c0640791f1c",
     "spo/031-pwa-install-offline-and-update-checks.html": "be532bae05c3eb409a404f6372d7cb7039f2f3c33b89faacce422a387c2a06be",
+    "spo/032-pwa-validation-and-offline-testing.html": "212852ce0b5e6ed11e25451cac2c4c57b37c51043189b4ec564701963668ef02",
+    "spo/033-web-app-defense.html": "e9952eba1b49d7ceef2d488d6e6a99f3ccb64981f06d2eb7f86b25f13ce33280",
+    "spo/034-kotlin-playground-basics.html": "d207d358bbc456aea610ab854713c8ac8937eb29c112969eb5242bf5058d3a4a",
+    "spo/035-kotlin-calculations-and-strings.html": "5e4204fa6007f3dc87b4c45c095248fc4934450bafb7054dcb3ce52fa2b62306",
+    "spo/036-kotlin-conditions-ranges-and-loops.html": "ee8e344f382009e4667cf64185eadfab9e46ce239af2c15e43d48a1ca3bf1382",
+    "spo/037-kotlin-actions-and-boundary-tests.html": "310dcd17e01979be6d72a4f239d928a1c4cb82fbffe0af736bc4ed31d3f64256",
     "spo/assets/003-00-blocks-screenshot.jpg": "574a062ab7e8ccf9fe731c5ec545ac4bf6c88cd8a02551d752be2597b264e1bf",
     "spo/assets/003-00-button-properties-screenshot.jpg": "6d15427fc17d8f758bc6add4f5320d0050e9204ce096a12e27a96a4f702ddcb2",
     "spo/assets/003-00-connect-usb-screenshot.jpg": "c8f30aa965893f3c8442b0589a66bf0e29738ff93109b0bdcad33fbadc88fafa",
@@ -3261,8 +3336,8 @@
     "spo/assets/027-00-task-06.svg": "a3ed170d711c59bdefdbde62365bc9de14ee228e22dd31653d043021ff3e3c26",
     "spo/assets/027-00-task-07.svg": "60946b115efcf071f4b4ffb371d6733162eec7631818ea30116b69969db1b389",
     "spo/assets/029-00-manifest-and-launch.svg": "35db14f71eba9bedaa5e436c56819a96a6bff3ad8f15558551f5e2f9f30351a7",
-    "spo/index.html": "54a3560965cfd6cdd026139c585122bbb49c495e57be86043b414a8c1889d13d",
-    "sw.js": "fc6e4cd3cdfdf0de532cfd17955d8c993d402c2ab88e1c9e677badd9c459512a",
+    "spo/index.html": "ffe4890482c95b699cee92af536066df8439ab2a211341cefbe07ecfea9fe5a8",
+    "sw.js": "8cba9b4828369d3f834cf7387e7c7ae30b6a4bf391f65ec5f807e944cc275dee",
     "topics/index.html": "e77b04bb2c4f69a5f6e78d10fab12e996ae17d255c4bf4e3997ba6744e859ea2",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "0bbe42f81771180014583c447a893e6369589c0fcd98298fdc550c2ecbc76cdb",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "ab69b7abfd625f5c3422c61e17df28e27f8a28da47e45385b4312e9853503ada",
@@ -3277,9 +3352,10 @@
     "topics/physics-10-2h/elastic-force-hookes-law-and-weight.html": "2aa55c7be98ee03389bc6930de3cbd59f4fe5b854a9b01b820652e08e4cb2d2a",
     "topics/physics-10-2h/friction-coefficient-and-fluid-resistance.html": "19c71c96cbadadf15a27d2110d911237c703b44381ae8ad708892f059096360b",
     "topics/physics-10-2h/galilean-relativity-inertial-frames-and-newtons-first-law.html": "71dc3b9e32d59f72c8dc5d9e0412fe14b2fa39e6f4b707c301a66f0c63cf3236",
-    "topics/physics-10-2h/index.html": "720674acb4ccff846438197906afcd1ce9fcc4ab0adf92fa72bb2ade30d91fcf",
+    "topics/physics-10-2h/index.html": "44dd852cb1cb9f327aaebf04e1543c0713a67a187bf263a22d100640fddeaf04",
     "topics/physics-10-2h/kinematics-dynamics-conservation-test.html": "f727fac9d98511499eb70accfae81e707d46f6b8c122209d6dd8debdf96f6ad0",
     "topics/physics-10-2h/mechanical-motion-relativity-displacement-velocity-and-acceleration.html": "d0232ea178aaf6ca9ecbbc79b22716ebbc30d69978666e58a7f8973a52dacb64",
+    "topics/physics-10-2h/molecular-mass-and-avogadro-constant.html": "306cd33aabaabcde5e747dc0c2ca2ebf6259b2e2cfd54450dbcc37859e42f709",
     "topics/physics-10-2h/momentum-impulse-conservation-and-jet-propulsion.html": "00da2d454540ade95f35cef262a5116ad62999acaae5ae3ba41fd44cfdb3bf8b",
     "topics/physics-10-2h/rigid-body-motion-and-equilibrium.html": "cd75e1ae04f7df3ba933810a15a1ee0399fcd23ac188296dc264658313471778",
     "topics/physics-10-2h/rubber-cord-work-and-mechanical-energy-lab.html": "a6600ec9ca3a2fdde570e5f3289962a151424945904ce3e34d5ad65627edb2dc",
@@ -3307,8 +3383,9 @@
     "topics/physics-7-2h/density-problems.html": "6a5b22342f8de2f6491dce916f8bd83659741f9c46fb01b6e5f2276976f9b065",
     "topics/physics-7-2h/distance-and-travel-time.html": "ea9e1d71da00c200af4dfbac326ddeba6963c3c5508b3437ee5e6b36f16c1c32",
     "topics/physics-7-2h/force-elasticity-and-hookes-law.html": "be34d5fee9df2afb611bb39e5b0f78ffff8d036e8dfe531d6b57ac8e0f76ebf5",
+    "topics/physics-7-2h/gravitation-and-gravity.html": "74e7a8b6b2abe389f0e65552ed860784cd4ac56000631005e44cb927180d4a57",
     "topics/physics-7-2h/horizontal-launch-height-and-range.html": "34b2375ff6b366c0e75943a7c05345f6c60f93f3b09feb00bf9f82aea6c5d69f",
-    "topics/physics-7-2h/index.html": "da712315f2759b976ef0aff051b04fe499915b77416851a5b1046cf0918c5572",
+    "topics/physics-7-2h/index.html": "777b26a02325ed0bed335c48efe28af2740ecaa5c2b736b32f03512348ff2bab",
     "topics/physics-7-2h/inertia-and-interaction-of-bodies.html": "e09d1ddf573e0d7df778fd3b302a7499dfa1c66e39918138ab335d5f130bf07f",
     "topics/physics-7-2h/mechanical-motion-uniform-and-nonuniform.html": "cbab5bc98384c02e41eb1307363d40bb9a6f134864f08ad62eba84e56e868541",
     "topics/physics-7-2h/motion-of-particles.html": "d77be07a536c6cbd73a662a8c118def1c8ce09cd555d0bb6277822f9df3469a8",
@@ -3326,7 +3403,7 @@
     "topics/physics-8-2h/heat-quantity-and-specific-heat-capacity.html": "f631128921ba9ab525903527902ce1ab610b657024576bf75d418a68bb020f2c",
     "topics/physics-8-2h/heating-and-cooling-heat-calculations.html": "0fffee21575d684ca533411942e21457fdf59d2d9ad699069bdbd7cdb26ab42a",
     "topics/physics-8-2h/ice-specific-latent-heat-lab.html": "1b6b5b71aa40aa3b463800bde7d10baf8cb33b777536f104cfcebcfb69ce085d",
-    "topics/physics-8-2h/index.html": "6eac9368d4bc62248c28a164bccd1e0c7eb4afe1138e0e6386faadffa19af35e",
+    "topics/physics-8-2h/index.html": "ff323f4b32dbb52225cf77aa26854ba3c4ad190be35774461828b22b0b6e42ec",
     "topics/physics-8-2h/internal-energy-and-ways-of-changing-it.html": "8654f3d290f20a2f9f80a7a2fc17bdfa0f2b28d053ee39e73fac38e5874ed9eb",
     "topics/physics-8-2h/mass-and-size-of-atoms-and-molecules.html": "bf99a6c4860196b6f326298844361844980a4f06af15a7f002697922af533037",
     "topics/physics-8-2h/melting-solidification-and-specific-latent-heat.html": "c75b016931e2c7067b6dd75472c70d7ff74b22448495ebdc7c41c218b5cc7979",
@@ -3340,9 +3417,10 @@
     "topics/physics-9-3h/friction-force.html": "708bcdf22870363760014e2a2d9fb7b4cd73de5d3616269fabb170d28a1b8269",
     "topics/physics-9-3h/gravity-and-universal-gravitation-problems.html": "ec981e785ade6a9d1570f8f681d5326e5ffc9a1a010507628aef763ef74761c7",
     "topics/physics-9-3h/gravity-and-universal-gravitation.html": "34497dbdf1a7cb59882e3565caac2a0d28f70239f23b3f24af9bb175e7dc5bfb",
-    "topics/physics-9-3h/index.html": "e9f615ff887cc605384a3086e153f0405ef2c3ef72bc9f85e475ad2116763726",
+    "topics/physics-9-3h/index.html": "804f6cc2224e74b111a6eec9936c8f28a4fbf0830a91da8c19faf284fe8c450b",
     "topics/physics-9-3h/mechanical-motion-and-material-point.html": "e03bbc4b33c685d47be5d7d84f7b3f66d095d015fa83900f3d77488849be2edb",
     "topics/physics-9-3h/momentum-and-collisions.html": "7cada2155ebae17434ad04d141f881d9e1e27c49b641fcaf2f132a3498055f0a",
+    "topics/physics-9-3h/momentum-conservation-problems.html": "39ba94db34c6ca82633b69fb259bfa6dd9d2e9f076e737e7e35ff17cfff7d459",
     "topics/physics-9-3h/motion-and-interaction-review.html": "6d13b3328a35149e1fe2e078c0f7a485882a31fba496a888fbca9a2ceef97867",
     "topics/physics-9-3h/motion-and-interaction-test.html": "b45e914040b56d975123a9166c581d9142c8d22c102f94802ee162144a3f883d",
     "topics/physics-9-3h/newtons-first-law-and-force-vector.html": "35a5b3afbc949528499ca883d5393dfc68a4b31149120d3a808feb8a185d3c05",
@@ -3355,5 +3433,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "08c9f3d77717f91f658b494a96538fdd210eb1ea76afdd29bb1c8911a107103c",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "641ad2b8db03fd19f832c6f9d5267f9bc080dca1afb067edfe2514cbbe793a42"
   },
-  "manifest_digest": "ee01283b284f69ae416bdfde20e249c40f0c5baaa00c50ccf5c727a84511a933"
+  "manifest_digest": "2f36bef6faa5ac7feb4fc6ca58996a911224ce207f44a62c99aec525e3c60d24"
 }

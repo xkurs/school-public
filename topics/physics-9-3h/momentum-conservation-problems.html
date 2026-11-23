@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Решение задач по теме «Закон сохранения импульса» — shkolar.site</title>
+  <link rel="canonical" href="https://shkolar.site/topics/physics-9-3h/momentum-conservation-problems.html">
+  <link rel="icon" href="../../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="manifest" href="../../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png" sizes="180x180">
+  <meta name="theme-color" content="#172554">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script defer src="../../assets/offline.js"></script>
+  
+  <script src="../../assets/math.js"></script>
+<script defer src="../../assets/mathjax/es5/tex-svg.js"></script>
+</head>
+<body id="page-top">
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title"><span class="site-wordmark">shkolar<img class="site-brand-icon" src="../../assets/icons/header-tree.png" alt=".">site</span></p>
+    <section class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-reload" hidden>Обновить версию</button>
+    </section>
+  </header>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../index.html">Старт</a></li><li><a href="../index.html">Школа</a></li><li><a href="index.html">Физика 9</a></li><li aria-current="page">032-momentum-conservation-problems</li></ol></nav><h1 id="решение-задач-по-теме-закон-сохранения-импульса">Решение задач по теме «Закон сохранения импульса»</h1>
+<p>Две тележки едут навстречу и сцепляются при ударе. Куда они поедут? Сравнить только скорости недостаточно: результат зависит и от масс, и от направлений движения. Научимся записывать импульс системы до и после взаимодействия и проверять, что получилось.</p>
+<nav aria-label="Содержание" class="article-contents">
+<p class="callout-title">Содержание</p><ul>
+<li><a href="momentum-conservation-problems.html#%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BE%D1%81%D1%8C-%D0%B8-%D0%B7%D0%BD%D0%B0%D0%BA%D0%B8">Система, ось и знаки</a></li>
+<li><a href="momentum-conservation-problems.html#%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F">Алгоритм решения</a></li>
+<li><a href="momentum-conservation-problems.html#%D1%80%D0%B0%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B">Разобранные примеры</a></li>
+<li><a href="momentum-conservation-problems.html#%D1%87%D1%82%D0%BE-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C-%D0%B8%D0%B7-%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE-%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F">Что можно узнать из одного уравнения</a></li>
+<li><a href="momentum-conservation-problems.html#%D0%BA%D0%BE%D1%80%D0%BE%D1%82%D0%BA%D0%BE-%D0%BE-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%BC">Коротко о главном</a></li>
+<li><a href="momentum-conservation-problems.html#%D1%81%D0%B0%D0%BC%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0">Самопроверка и задачи</a></li>
+</ul>
+</nav>
+<h2 id="система-ось-и-знаки">Система, ось и знаки</h2>
+<p>Выберите тела, импульс которых складываете. Если система состоит из двух тележек, силы их взаимодействия при ударе — внутренние. Трение со стороны дорожки — внешняя сила. За короткое столкновение на горизонтальной дорожке её импульс часто достаточно мал, чтобы им пренебречь.</p>
+<aside class="callout" data-callout="important">
+<p class="callout-title">Когда можно применить закон</p><p>Проекция полного импульса системы на ось <span class="arithmatex">\(x\)</span> одинакова до и после взаимодействия, если суммарный импульс внешних сил вдоль этой оси равен нулю или им можно пренебречь.</p>
+</aside>
+<p>Для двух тел, движущихся вдоль одной прямой, запишем:</p>
+<div class="arithmatex">\[
+m_1v_{1x}+m_2v_{2x}=m_1u_{1x}+m_2u_{2x}.
+\]</div>
+<p>Здесь <span class="arithmatex">\(v_{1x}\)</span> и <span class="arithmatex">\(v_{2x}\)</span> — проекции скоростей до взаимодействия, а <span class="arithmatex">\(u_{1x}\)</span> и <span class="arithmatex">\(u_{2x}\)</span> — после. Если ось направлена вправо, движению влево соответствует знак минус. Саму ось в ходе решения сохраняем.</p>
+<aside class="callout" data-callout="tip">
+<p class="callout-title">Как проверить знаки</p><p>Нарисуйте стрелки скоростей до и после удара. Покоящемуся телу соответствует нулевая проекция. Если направление после удара неизвестно, запишите проекцию как неизвестное число. Отрицательный результат покажет, что тело движется против оси.</p>
+</aside>
+<h2 id="алгоритм-решения">Алгоритм решения</h2>
+<ol>
+<li>Укажите тела системы и объясните, почему на выбранной оси можно пренебречь внешним импульсом за время взаимодействия.</li>
+<li>Выберите положительное направление. Запишите массы в килограммах, скорости в метрах в секунду. Например, <span class="arithmatex">\(250\ \text{г}=0{,}250\ \text{кг}\)</span>.</li>
+<li>Сложите проекции импульсов всех тел до взаимодействия и отдельно после него. При сцеплении подставьте одну общую скорость для обоих тел.</li>
+<li>Решите уравнение. Прочитайте знак ответа и подстановкой проверьте импульс после взаимодействия. Если нужно определить вид столкновения, отдельно сравните суммарную кинетическую энергию.</li>
+</ol>
+<h2 id="разобранные-примеры">Разобранные примеры</h2>
+<h3 id="1-тележки-встретились-и-сцепились">1. Тележки встретились и сцепились</h3>
+<p><img alt="До удара тележка массой 0,60 кг едет вправо со скоростью 2,0 м/с, а тележка массой 0,40 кг едет влево со скоростью 4,0 м/с. После сцепления обе едут влево. Ось направлена вправо." src="../../assets/media/topics/physics-9-3h/assets/032-opposite-momenta.svg"></p>
+<details class="callout" data-callout="example" open>
+<summary class="callout-title">Куда поедут тележки</summary><p>Первая тележка массой <span class="arithmatex">\(0{,}60\ \text{кг}\)</span> движется вправо со скоростью <span class="arithmatex">\(2{,}0\ \text{м/с}\)</span>. Вторая массой <span class="arithmatex">\(0{,}40\ \text{кг}\)</span> движется влево со скоростью <span class="arithmatex">\(4{,}0\ \text{м/с}\)</span>. После удара тележки сцепились. Внешним импульсом вдоль дорожки пренебрежём.</p>
+<p>Направим ось вправо. Проекции скоростей до удара равны <span class="arithmatex">\(+2{,}0\ \text{м/с}\)</span> и <span class="arithmatex">\(-4{,}0\ \text{м/с}\)</span>. У сцепившихся тележек одна проекция скорости <span class="arithmatex">\(u_x\)</span>:</p>
+<div class="arithmatex">\[
+0{,}60\cdot 2{,}0 + 0{,}40\cdot(-4{,}0)=(0{,}60+0{,}40)u_x.
+\]</div>
+<p>Справа налево двигалась более лёгкая тележка, но модуль её импульса больше. Начальная сумма проекций равна <span class="arithmatex">\(1{,}2-1{,}6=-0{,}4\ \text{кг}\cdot\text{м/с}\)</span>. Общая масса равна <span class="arithmatex">\(1{,}0\ \text{кг}\)</span>, поэтому <span class="arithmatex">\(u_x=-0{,}40\ \text{м/с}\)</span>. Обе тележки движутся <strong>влево</strong>. Проверка даёт <span class="arithmatex">\(1{,}0\cdot(-0{,}40)=-0{,}40\ \text{кг}\cdot\text{м/с}\)</span>.</p>
+</details>
+<h3 id="2-первая-тележка-отскочила">2. Первая тележка отскочила</h3>
+<details class="callout" data-callout="example" open>
+<summary class="callout-title">Находим скорость второй тележки и определяем вид удара</summary><p>Тележка массой <span class="arithmatex">\(0{,}50\ \text{кг}\)</span> движется вправо со скоростью <span class="arithmatex">\(4{,}0\ \text{м/с}\)</span>, а тележка массой <span class="arithmatex">\(1{,}50\ \text{кг}\)</span> покоится. После удара первая тележка движется влево со скоростью <span class="arithmatex">\(2{,}0\ \text{м/с}\)</span>. Ось направим вправо, внешним импульсом вдоль дорожки пренебрежём.</p>
+<div class="arithmatex">\[
+0{,}50\cdot4{,}0+1{,}50\cdot0
+=0{,}50\cdot(-2{,}0)+1{,}50u_{2x}.
+\]</div>
+<p>Получаем <span class="arithmatex">\(2{,}0=-1{,}0+1{,}50u_{2x}\)</span> и <span class="arithmatex">\(u_{2x}=+2{,}0\ \text{м/с}\)</span>. Вторая тележка движется <strong>вправо</strong>. Проверка импульса после удара даёт <span class="arithmatex">\(-1{,}0+3{,}0=2{,}0\ \text{кг}\cdot\text{м/с}\)</span>.</p>
+<p>Теперь проверим энергию. При вычислении <span class="arithmatex">\(E_k=mv^2/2\)</span> квадрат скорости одинаков для движения вправо и влево.</p>
+<div class="arithmatex">\[
+E_{k,\text{до}}=\frac{0{,}50\cdot 4{,}0^2}{2}=4{,}0\ \text{Дж},
+\]</div>
+<div class="arithmatex">\[
+E_{k,\text{после}}=\frac{0{,}50\cdot 2{,}0^2}{2}+
+\frac{1{,}50\cdot 2{,}0^2}{2}=4{,}0\ \text{Дж}.
+\]</div>
+<p>В этой модели удар <strong>упругий</strong>: сохранились полный импульс и суммарная кинетическая энергия.</p>
+</details>
+<h3 id="3-конькобежцы-оттолкнулись">3. Конькобежцы оттолкнулись</h3>
+<details class="callout" data-callout="example" open>
+<summary class="callout-title">Как тела движутся при нулевом полном импульсе</summary><p>Два конькобежца массами <span class="arithmatex">\(40\ \text{кг}\)</span> и <span class="arithmatex">\(60\ \text{кг}\)</span> сначала стояли. После толчка первый поехал вправо со скоростью <span class="arithmatex">\(1{,}5\ \text{м/с}\)</span>. Система состоит из обоих конькобежцев. Импульсом внешних сил по горизонтали за время толчка пренебрежём.</p>
+<p>При оси, направленной вправо, начальный полный импульс равен нулю. Поэтому</p>
+<div class="arithmatex">\[
+0=40\cdot1{,}5+60u_{2x},\qquad u_{2x}=-1{,}0\ \text{м/с}.
+\]</div>
+<p>Второй конькобежец поехал <strong>влево</strong>. Их импульсы после толчка равны по модулю и противоположны, поэтому сумма по-прежнему равна нулю. Кинетическая энергия появилась за счёт работы мышц.</p>
+</details>
+<h2 id="что-можно-узнать-из-одного-уравнения">Что можно узнать из одного уравнения</h2>
+<p>Если после удара обе скорости неизвестны и тела движутся отдельно, уравнение сохранения импульса связывает две величины. Для численного ответа нужны дополнительные данные. Например, в задаче 2 проекция скорости одной тележки задана, а в задаче 1 обе тележки движутся вместе. При упругом ударе дополнительное уравнение даёт равенство кинетических энергий до и после столкновения.</p>
+<aside class="callout" data-callout="note">
+<p class="callout-title">Удар о стену</p><p>Если выбрать системой только мяч, удар стены создаёт внешний импульс и меняет импульс мяча. Уравнение сохранения импульса для одного мяча в этом случае неприменимо.</p>
+</aside>
+<h2 id="коротко-о-главном">Коротко о главном</h2>
+<ul>
+<li>Сравнивайте сумму проекций импульсов всей выбранной системы до и после взаимодействия.</li>
+<li>Знак скорости показывает направление. При сцеплении складываются массы тел, а скорость у них общая.</li>
+<li>Для определения вида столкновения сравнивайте суммарную кинетическую энергию. Условие сохранения импульса проверяйте отдельно.</li>
+</ul>
+<h2 id="самопроверка">Самопроверка</h2>
+<details class="callout" data-callout="question">
+<summary class="callout-title">Вопросы</summary><p>1. Как изменятся знаки в уравнении из первого примера, если направить ось влево? Изменится ли направление реального движения?
+2. Почему нулевой полный импульс системы совместим с движением входящих в неё тел?
+3. Когда трение о дорожку существенно для решения задачи о столкновении?</p>
+</details>
+<h3 id="задачи-для-самостоятельной-работы">Задачи для самостоятельной работы</h3>
+<p>Во всех задачах с тележками и шайбами пренебрегайте внешним импульсом вдоль линии движения за время взаимодействия, если в условии не сказано иначе.</p>
+<ol>
+<li>Тележка массой <span class="arithmatex">\(300\ \text{г}\)</span> движется вправо со скоростью <span class="arithmatex">\(4\ \text{м/с}\)</span>, а тележка массой <span class="arithmatex">\(500\ \text{г}\)</span> покоится. После удара они сцепляются. Найдите их общую скорость и направление движения.</li>
+<li>Тележка массой <span class="arithmatex">\(0{,}80\ \text{кг}\)</span> движется вправо со скоростью <span class="arithmatex">\(1{,}5\ \text{м/с}\)</span>, а тележка массой <span class="arithmatex">\(0{,}40\ \text{кг}\)</span> движется влево со скоростью <span class="arithmatex">\(3{,}0\ \text{м/с}\)</span>. Найдите общую скорость после сцепления. Сравните кинетическую энергию системы до и после удара.</li>
+<li>Шайба массой <span class="arithmatex">\(0{,}20\ \text{кг}\)</span> двигалась вправо со скоростью <span class="arithmatex">\(6\ \text{м/с}\)</span>, а шайба массой <span class="arithmatex">\(0{,}30\ \text{кг}\)</span> — влево со скоростью <span class="arithmatex">\(1\ \text{м/с}\)</span>. После соударения первая пошла влево со скоростью <span class="arithmatex">\(1{,}5\ \text{м/с}\)</span>. Найдите скорость второй шайбы после удара и по энергии определите вид столкновения.</li>
+<li>Две тележки массами <span class="arithmatex">\(1{,}5\ \text{кг}\)</span> и <span class="arithmatex">\(2{,}0\ \text{кг}\)</span> первоначально стоят. Пружина между ними разжимается, и более лёгкая тележка движется влево со скоростью <span class="arithmatex">\(0{,}80\ \text{м/с}\)</span>. Найдите скорость и направление движения второй тележки. Объясните, откуда взялась кинетическая энергия системы.</li>
+<li>Мяч массой <span class="arithmatex">\(0{,}40\ \text{кг}\)</span> летит к неподвижной стене вправо со скоростью <span class="arithmatex">\(5\ \text{м/с}\)</span> и отскакивает влево со скоростью <span class="arithmatex">\(3\ \text{м/с}\)</span>. Найдите изменение проекции импульса мяча при оси, направленной вправо. Назовите источник внешнего импульса вдоль этой оси за время удара.</li>
+</ol></main>
+  </div>
+  <footer class="site-footer">
+    <a href="../../qr.html">QR</a>
+    <a href="../index.html">Школа</a>
+    <a href="../../spo/index.html">СПО</a>
+  </footer>
+</body>
+</html>

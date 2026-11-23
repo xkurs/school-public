@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Kotlin в браузере: main, вывод, val, var и типы значений — shkolar.site</title>
+  <link rel="canonical" href="https://shkolar.site/spo/034-kotlin-playground-basics.html">
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" sizes="180x180">
+  <meta name="theme-color" content="#172554">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body id="page-top">
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title"><span class="site-wordmark">shkolar<img class="site-brand-icon" src="../assets/icons/header-tree.png" alt=".">site</span></p>
+    <section class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-reload" hidden>Обновить версию</button>
+    </section>
+  </header>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">034-kotlin-playground-basics</li></ol></nav><h1 id="kotlin-в-браузере-main-вывод-val-var-и-типы-значений">Kotlin в браузере: main, вывод, val, var и типы значений</h1>
+<p>В веб-приложении часть работы выполнял JavaScript. Теперь напишем небольшую программу на Kotlin. Она выведет в консоль сведения о наборе в учебную группу. Данные зададим прямо в коде, чтобы потренироваться читать программу, предсказывать вывод и проверять себя запуском.</p>
+<nav aria-label="Содержание" class="article-contents">
+<p class="callout-title">Содержание</p><ul>
+<li><a href="034-kotlin-playground-basics.html#%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%B2-kotlin-playground">Первый запуск</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D1%87%D1%82%D0%BE-%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D1%82-main-%D0%B8-%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4">main и вывод</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D0%B8%D0%BC%D0%B5%D0%BD%D0%B0-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B8-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">Типы и значения</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-val-%D0%B8-var">val и var</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80-%D1%82%D0%B8%D0%BF%D0%B8%D1%87%D0%BD%D1%8B%D1%85-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA">Типичные ошибки</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0-%D0%B8-%D1%81%D0%B0%D0%BC%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0">Самопроверка</a></li>
+</ul>
+</nav>
+<h2 id="запуск-в-kotlin-playground">Запуск в Kotlin Playground</h2>
+<ol>
+<li>Откройте <a href="https://play.kotlinlang.org/">Kotlin Playground</a>. Выберите <strong>JVM</strong>, если в переключателе среды указано другое значение. JVM — среда выполнения, с которой мы работаем в этих примерах.</li>
+<li>Замените весь код в редакторе примером ниже. В каждом примере статьи есть своя функция <code>main</code>, поэтому вставляйте один пример за раз.</li>
+<li>Нажмите <strong>Run</strong> (кнопка с треугольником) и найдите результат в панели вывода.</li>
+</ol>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Группа «Старт»&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Запись открыта&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Ожидаемый вывод</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Группа «Старт»
+Запись открыта
+</code></pre></div>
+<p>Замените <code>Старт</code> на <code>Практика</code> и запустите код ещё раз. Измениться должна первая строка, вторая должна сохранить прежний текст.</p>
+<h2 id="что-делает-main-и-как-работает-вывод">Что делает main и как работает вывод</h2>
+<p><code>fun</code> объявляет функцию, а <code>main</code> — имя функции, с которой Kotlin начинает выполнение этой программы. Круглые скобки <code>()</code> в объявлении здесь пусты. В фигурных скобках находится тело функции. В наших примерах команды в теле выполняются сверху вниз.</p>
+<p>Вызов <code>println(...)</code> выводит переданное значение и завершает строку. Текст в обычных двойных кавычках <code>"..."</code> — строковое значение. Сами ограничивающие кавычки при выводе исчезают, а кавычки-ёлочки <code>«»</code> внутри текста сохраняются. Если поменять два вызова <code>println</code> местами, изменится порядок строк вывода.</p>
+<h2 id="имена-типы-и-значения">Имена, типы и значения</h2>
+<p>В записи <code>val capacity: Int = 24</code> имя <code>capacity</code> обозначает вместимость, <code>Int</code> задаёт тип, а <code>24</code> — начальное значение. Имена помогают понять, какую роль играет каждое число.</p>
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>Пример значения</th>
+<th>Когда нужен</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Int</code></td>
+<td><code>24</code></td>
+<td>Целое число, например количество мест</td>
+</tr>
+<tr>
+<td><code>Double</code></td>
+<td><code>1.5</code></td>
+<td>Число с дробной частью, например длительность в часах</td>
+</tr>
+<tr>
+<td><code>String</code></td>
+<td><code>"Старт"</code></td>
+<td>Строка, например название группы</td>
+</tr>
+<tr>
+<td><code>Boolean</code></td>
+<td><code>true</code></td>
+<td>Признак с двумя значениями <code>true</code> и <code>false</code></td>
+</tr>
+</tbody>
+</table>
+<p>Выведем каждое значение отдельной строкой.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">groupName</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Старт&quot;</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">capacity</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">24</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">sessionHours</span><span class="p">:</span><span class="w"> </span><span class="kt">Double</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1.5</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">registrationOpen</span><span class="p">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">groupName</span><span class="p">)</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">sessionHours</span><span class="p">)</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">registrationOpen</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Ожидаемый вывод</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Старт
+24
+1.5
+true
+</code></pre></div>
+<p>Kotlin может определить тип по начальному значению. Например, <code>val capacity = 24</code> объявляет <code>capacity</code> с типом <code>Int</code>, а <code>val groupName = "Старт"</code> — с типом <code>String</code>. Тип влияет на допустимые операции. С числом <code>24</code> можно выполнить вычитание, а строка <code>"24"</code> содержит два символа.</p>
+<h2 id="когда-использовать-val-и-var">Когда использовать val и var</h2>
+<p>В течение одного расчёта вместимость группы остаётся прежней, а число занятых мест может измениться. Применим <code>val</code> для вместимости и <code>var</code> для занятых мест.</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">capacity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">24</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">occupiedSeats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span>
+
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">occupiedSeats</span><span class="p">)</span>
+
+<span class="w">    </span><span class="n">occupiedSeats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">occupiedSeats</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">occupiedSeats</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Ожидаемый вывод</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">24
+18
+19
+</code></pre></div>
+<p>В строке <code>occupiedSeats = occupiedSeats + 1</code> сначала вычисляется правая часть. Kotlin берёт прежнее значение <code>18</code>, прибавляет <code>1</code> и записывает результат <code>19</code> в <code>occupiedSeats</code>.</p>
+<aside class="callout" data-callout="important">
+<p class="callout-title">Выбор объявления</p><p>Используйте <code>val</code>, если после объявления присваивать другое значение этому имени не потребуется. Используйте <code>var</code>, когда программа должна присваивать новые значения того же типа.</p>
+</aside>
+<h2 id="разбор-типичных-ошибок">Разбор типичных ошибок</h2>
+<table>
+<thead>
+<tr>
+<th>Что произошло</th>
+<th>Что проверить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>println</code> не распознаёт название группы</td>
+<td>Для текста используйте прямые двойные кавычки, например <code>println("Старт")</code>.</td>
+</tr>
+<tr>
+<td><code>occupiedSeats</code> нельзя изменить после первого присваивания</td>
+<td>Проверьте, объявлено ли оно с <code>var</code>.</td>
+</tr>
+<tr>
+<td><code>var occupiedSeats = 18</code> принимает число, а <code>occupiedSeats = "19"</code> вызывает ошибку</td>
+<td>Из начального значения выведен тип <code>Int</code>. Уберите кавычки у нового целого числа.</td>
+</tr>
+<tr>
+<td>В редактор вставлены два примера, компилятор сообщает о конфликте</td>
+<td>Оставьте одну функцию <code>main</code>.</td>
+</tr>
+<tr>
+<td>Сообщение об ошибке указывает на конец строки или программы</td>
+<td>Проверьте пары кавычек, круглых и фигурных скобок, начиная с выделенной строки и строки перед ней.</td>
+</tr>
+</tbody>
+</table>
+<p>Откройте последний работающий пример, внесите одну ошибку из таблицы и запустите программу. Найдите строку по диагностике, исправьте её и повторите запуск. Такой опыт помогает отличить сообщения компилятора от вывода программы.</p>
+<h2 id="практика-и-самопроверка">Практика и самопроверка</h2>
+<ol>
+<li>В примере с типами задайте группе имя <code>Резерв</code>, вместимость <code>20</code>, длительность <code>2.5</code> часа и признак <code>false</code>. Перед запуском запишите четыре ожидаемые строки. Проверьте порядок и то, что дробное число в коде записано через точку.</li>
+<li>В примере с <code>var</code> задайте вместимость <code>20</code> и начальное число занятых мест <code>17</code>. После записи двух новых участников выведите обновлённое число занятых мест. Ожидаемые строки — <code>20</code>, <code>17</code>, <code>19</code>. Объясните, почему <code>capacity</code> можно оставить <code>val</code>.</li>
+<li>Измените объявление <code>occupiedSeats</code> на <code>val</code>, сохранив строку обновления. Объясните причину ошибки и верните рабочее объявление. Убедитесь, что число занятых мест снова меняется с <code>17</code> на <code>19</code>.</li>
+</ol>
+<aside class="callout" data-callout="check">
+<p class="callout-title">Что должно получиться</p><p>Вы можете показать одну запускаемую функцию <code>main</code>, объяснить типы её значений и найти строку, которая меняет число занятых мест. Для результата упражнения 2 вручную определите, сколько из 20 мест осталось. На следующей паре этот расчёт выполнит программа.</p>
+</aside></main>
+  </div>
+  <footer class="site-footer">
+    <a href="../qr.html">QR</a>
+    <a href="../topics/index.html">Школа</a>
+    <a href="index.html">СПО</a>
+  </footer>
+</body>
+</html>

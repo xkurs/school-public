@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" role="img" aria-labelledby="title desc">
+  <title id="title">Направление силы тяжести в трёх местах Земли</title>
+  <desc id="desc">Три точки обозначают тела у поверхности Земли. От каждой точки стрелка силы тяжести направлена к центру окружности. Пунктир показывает продолжения стрелок.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#9a331c"/>
+    </marker>
+  </defs>
+  <rect width="420" height="300" rx="14" fill="#f1f7ff"/>
+  <circle cx="210" cy="157" r="84" fill="#d2e7fc" stroke="#225483" stroke-width="3"/>
+  <path d="M210 101V157 M154 157H266" fill="none" stroke="#476585" stroke-width="2.5" stroke-dasharray="5 5"/>
+  <g fill="none" stroke="#9a331c" stroke-width="4.5" marker-end="url(#arrow)">
+    <path d="M210 68V101"/>
+    <path d="M121 157H154"/>
+    <path d="M299 157H266"/>
+  </g>
+  <g fill="#172c46">
+    <circle cx="210" cy="68" r="5"/>
+    <circle cx="121" cy="157" r="5"/>
+    <circle cx="299" cy="157" r="5"/>
+    <circle cx="210" cy="157" r="4"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#172c46">
+    <text x="210" y="35">Стрелки силы тяжести</text>
+    <text x="210" y="197">Центр Земли</text>
+    <text x="210" y="273">Земля</text>
+  </g>
+</svg>

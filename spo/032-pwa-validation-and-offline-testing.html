@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписания, физика и информатика">
+  <title>Доработка PWA: проверка ввода, сохранения данных и поведения без сети — shkolar.site</title>
+  <link rel="canonical" href="https://shkolar.site/spo/032-pwa-validation-and-offline-testing.html">
+  <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" sizes="180x180">
+  <meta name="theme-color" content="#172554">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="../assets/offline.js"></script>
+  
+  
+</head>
+<body id="page-top">
+  <a class="skip-link" href="#main-content">К содержанию</a>
+  <header class="site-header">
+    <p class="site-title"><span class="site-wordmark">shkolar<img class="site-brand-icon" src="../assets/icons/header-tree.png" alt=".">site</span></p>
+    <section class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-reload" hidden>Обновить версию</button>
+    </section>
+  </header>
+  <div class="layout">
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">032-pwa-validation-and-offline-testing</li></ol></nav><h1 id="доработка-pwa-проверка-ввода-сохранения-данных-и-поведения-без-сети">Доработка PWA: проверка ввода, сохранения данных и поведения без сети</h1>
+<p>Продолжайте свой <code>VariantNN-web</code> с последней работающей версии. На <a href="031-pwa-install-offline-and-update-checks.html">предыдущей практике</a> вы проверяли, открывается ли приложение после отключения сети и смены версии. Теперь проверьте, можно ли в открывшемся приложении выполнить полезное действие: получить верный итог в форме, найти карточку и вернуться к тому же результату поиска после перезагрузки.</p>
+<nav aria-label="Содержание" class="article-contents">
+<p class="callout-title">Содержание</p><ul>
+<li><a href="032-pwa-validation-and-offline-testing.html#1-%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D1%8C%D1%82%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D1%83%D1%8E-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8E">Рабочая версия</a></li>
+<li><a href="032-pwa-validation-and-offline-testing.html#2-%D0%B8%D1%81%D0%BF%D1%8B%D1%82%D0%B0%D0%B9%D1%82%D0%B5-%D1%84%D0%BE%D1%80%D0%BC%D1%83">Форма</a></li>
+<li><a href="032-pwa-validation-and-offline-testing.html#3-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8C%D1%82%D0%B5-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0">Сохранение поиска</a></li>
+<li><a href="032-pwa-validation-and-offline-testing.html#4-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D1%82%D0%B5-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B9-%D0%B1%D0%B5%D0%B7-%D1%81%D0%B5%D1%82%D0%B8">Автономная проверка</a></li>
+<li><a href="032-pwa-validation-and-offline-testing.html#5-%D0%B7%D0%B0%D1%84%D0%B8%D0%BA%D1%81%D0%B8%D1%80%D1%83%D0%B9%D1%82%D0%B5-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82">Итог работы</a></li>
+</ul>
+</nav>
+<h2 id="1-подготовьте-рабочую-версию">1. Подготовьте рабочую версию</h2>
+<ol>
+<li>В <strong>GitHub Desktop</strong> выберите свой <code>VariantNN-web</code>. Откройте эту же папку в редакторе. Найдите <code>form.html</code>, <code>form.js</code>, скрипт каталога и <code>sw.js</code>. Проверьте имена по подключениям на ваших страницах.</li>
+<li>Для правок используйте локальный сайт. Откройте терминал в корне своего <code>VariantNN-web</code> и запустите <code>python -B -m http.server 8000 --bind 127.0.0.1</code>, если на компьютере доступен Python. Оставьте терминал открытым и перейдите по адресу <code>http://localhost:8000/</code>. Если уже работает локальный сервер редактора, используйте его адрес на <code>localhost</code>. На протяжении проверки сохраняйте прежний адрес, порт и профиль браузера. Если на этом компьютере через тот же адрес уже проверяли чужой проект, используйте другой свободный порт и затем сохраняйте его до конца работы.</li>
+<li>На главной отметьте номер версии, а в <strong>F12 → Application → Service Workers</strong> проверьте, что <code>sw.js</code> имеет состояние <strong>activated</strong>. Для первого запуска после регистрации один раз обновите страницу обычным <code>Ctrl + R</code>. В <strong>Cache Storage</strong> найдите кеш с номером вашей версии. Если использовали GitHub Pages, отдельно откройте опубликованный адрес через <strong>Settings → Pages → Visit site</strong> и запишите его версию.</li>
+</ol>
+<aside class="callout" data-callout="important">
+<p class="callout-title">Начальные условия</p><p>Service worker учебного проекта работает на GitHub Pages по HTTPS и на локальном сайте через <code>localhost</code>. Открытие <code>index.html</code> двойным щелчком даёт адрес <code>file://</code> и для автономной проверки не подходит. Локальный и опубликованный адреса используют разные хранилища. На каждом адресе вводите свой запрос перед проверкой его восстановления.</p>
+</aside>
+<h2 id="2-испытайте-форму">2. Испытайте форму</h2>
+<p>На странице формы выберите позицию своего варианта. Сначала рассчитайте ожидаемый итог для количества <code>2</code> по своим исходным данным. Затем проведите испытания по порядку.</p>
+<table>
+<thead>
+<tr>
+<th>Действие</th>
+<th>Ожидаемый результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Выберите позицию, введите <code>2</code> и нажмите кнопку расчёта</td>
+<td>На странице есть название позиции и верный итог. Адрес прежний</td>
+</tr>
+<tr>
+<td>После удачного расчёта очистите количество и снова нажмите кнопку</td>
+<td>Браузер или приложение сообщает об ошибке. Предыдущий итог исчезает</td>
+</tr>
+<tr>
+<td>Проверьте <code>0</code> и <code>1.5</code> по очереди</td>
+<td>Оба значения отклонены, новый итог не появляется</td>
+</tr>
+<tr>
+<td>Верните <code>2</code> и снова выполните расчёт</td>
+<td>Форма снова показывает верный итог</td>
+</tr>
+</tbody>
+</table>
+<p>Если после очистки поля остался старый итог, браузер мог отклонить ввод ещё до события <code>submit</code>. В таком случае код обработки отправки не успевает обновить сообщение. В <code>form.js</code> после объявления <code>form</code> и <code>result</code> добавьте обработчик изменения полей, если у вас его ещё нет:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">JavaScript</span></div><pre><code class="language-javascript"><span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">result</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>Теперь итог очищается уже при редактировании, а следующий корректный расчёт заново заполнит <code>#result</code>. Повторите проверки после сохранения. Оставьте на месте встроенные ограничения из <a href="024-form-submit-and-error-messages.html">практики по форме</a> и существующий вызов своей расчётной функции.</p>
+<h2 id="3-проверьте-восстановление-поиска">3. Проверьте восстановление поиска</h2>
+<ol>
+<li>Откройте каталог. Введите запрос, по которому остаётся часть карточек. Запишите точный текст запроса и ожидаемое число карточек. Если в каталоге только одна карточка, используйте запрос с одним совпадением и отдельно запрос без совпадений.</li>
+<li>Нажмите <code>Ctrl + R</code>. Сверьте поле, карточки и счётчик, если он предусмотрен. Затем перейдите на главную и вернитесь в каталог по ссылке. Результат должен сохраниться и при таком переходе.</li>
+<li>Введите запрос без совпадений. Обновите страницу. Ожидается тот же запрос и пустая выдача. Очистите поле и ещё раз обновите страницу. Ожидается пустое поле и полный каталог.</li>
+<li>Если проверка не прошла, откройте <strong>F12 → Application → Local Storage</strong> и выберите адрес открытого сайта. Найдите ключ, который использует ваш скрипт. В учебном примере он называется <code>catalog-search-v1</code>. После ввода запроса в записи должен появиться новый текст, например <code>{"query":"мини"}</code>. Если записи нет, проверьте обработчик <code>input</code>, вызов сохранения и <strong>Console</strong>. Если запись верна, а выдача полная, проверьте порядок запуска: сначала прочитайте запрос, затем заполните поле и отрисуйте отфильтрованный список. Сверьте свой код с разбором <a href="027-interface-logic-and-diagnostics.html">восстановления интерфейса</a>.</li>
+</ol>
+<aside class="callout" data-callout="tip">
+<p class="callout-title">Два места хранения</p><p>В <strong>Cache Storage</strong> лежат страницы, скрипты и другие ресурсы. В <strong>Local Storage</strong> лежит значение запроса конкретного пользователя. Наличие <code>catalog.html</code> в кеше подтверждает сохранение файла, а восстановление поиска проверяется непосредственно в каталоге после перезагрузки.</p>
+</aside>
+<h2 id="4-повторите-сценарий-без-сети">4. Повторите сценарий без сети</h2>
+<ol>
+<li>Если изменили файлы, которые входят в кеш, укажите следующий номер в <code>VERSION</code> в <code>sw.js</code> и такой же номер в видимой подписи на главной. Если добавили ресурс, используемый в основном сценарии, внесите его путь в <code>FILES</code>. Ключ поиска оставьте прежним, чтобы проверить сохранение старого запроса. На локальном адресе нажмите <strong>Update</strong> в панели <strong>Service Workers</strong> при выключенном <strong>Offline</strong>. Если новый worker ждёт активации, закройте все вкладки и окна приложения и снова откройте этот адрес. Сверьте видимую подпись с номером в <strong>Cache Storage</strong>.</li>
+<li>Введите в каталоге запрос с известным результатом. Откройте <strong>Application → Service Workers</strong>, выключите <strong>Bypass for network</strong> и <strong>Update on reload</strong>, включите <strong>Offline</strong>. Оставьте инструменты открытыми и нажмите обычное <code>Ctrl + R</code>. Каталог должен открыться заново с тем же полем и выдачей.</li>
+<li>Перейдите по ссылке на форму в этой же вкладке. Проверьте корректное количество и одно ошибочное. Ожидаются те же итог и отказ, что в проверке с доступной сетью. Снимите <strong>Offline</strong> после опыта.</li>
+<li>Если доступен телефон, повторите проверку на уже размещённой версии. Один раз откройте приложение по HTTPS с сетью и пройдите через каталог и форму. Введите запрос на самом телефоне. Затем закройте приложение, выключите Wi‑Fi и мобильные данные, откройте его с экрана телефона и повторите одно действие. В отчёте укажите номер проверенной версии и верните связь. Проверка в инструментах компьютера остаётся обязательной.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Что произошло</th>
+<th>Что проверить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Страница видна, пока она открыта, но пропадает по <code>Ctrl + R</code> в режиме Offline</td>
+<td>Зарегистрирован ли worker на текущем адресе и есть ли страница в кеше</td>
+</tr>
+<tr>
+<td>Страница открывается без оформления или кнопка не работает</td>
+<td>В <strong>Network</strong> найдите не загрузившийся CSS или JS и сверьте имя и путь с <code>FILES</code></td>
+</tr>
+<tr>
+<td>После сохранения изменений видна старая версия</td>
+<td>Сверьте видимую подпись, <code>VERSION</code> и состояние <strong>waiting</strong>. Выполните шаг активации выше</td>
+</tr>
+<tr>
+<td>Запрос пропал при переходе с компьютера на телефон или с <code>localhost</code> на Pages</td>
+<td>Введите запрос и повторите проверку на одном устройстве, адресе и в одном профиле</td>
+</tr>
+</tbody>
+</table>
+<p>Если внешняя сеть недоступна, выполните шаги 1–3 на <code>localhost</code>. Если локальный сервер тоже недоступен, зафиксируйте успешные проверки формы и поиска на имеющемся рабочем адресе, причину остановки и отдельно результат автономной проверки, если его удалось получить на заранее открывавшейся версии.</p>
+<h2 id="5-зафиксируйте-результат">5. Зафиксируйте результат</h2>
+<ul>
+<li>Запишите адрес и номер версии, ввод и ожидаемый итог формы, запрос и ожидаемое число карточек после перезагрузки. Для каждого испытания отметьте фактический результат или причину, по которой оно осталось невыполненным.</li>
+<li>Если нашли дефект, укажите файл, правку и результат повторного испытания. Если исходное поведение прошло все проверки, сохраните свои исходные результаты для сравнения на защите.</li>
+<li>Если меняли код, в <strong>GitHub Desktop → Changes</strong> проверьте состав правки и сделайте локальный коммит с описанием результата. Запишите его название. При наличии сети и размещённого сайта можно повторить опыт для опубликованной версии после её обновления.</li>
+</ul>
+<aside class="callout" data-callout="check">
+<p class="callout-title">Что показать преподавателю</p><p>На своём компьютере покажите восстановление запроса после перезагрузки в режиме Offline, затем проверьте форму на верном и ошибочном вводе. Назовите адрес и версию, на которых это проверили. Если шаг не прошёл, покажите сообщение браузера и последний подтверждённый результат. Эти проверки понадобятся на <a href="033-web-app-defense.html">защите приложения</a>.</p>
+</aside></main>
+  </div>
+  <footer class="site-footer">
+    <a href="../qr.html">QR</a>
+    <a href="../topics/index.html">Школа</a>
+    <a href="index.html">СПО</a>
+  </footer>
+</body>
+</html>
