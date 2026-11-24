@@ -26,209 +26,93 @@
   </header>
   <div class="layout">
     <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">037-kotlin-actions-and-boundary-tests</li></ol></nav><h1 id="выбор-действия-повторение-и-проверка-граничных-случаев">Выбор действия, повторение и проверка граничных случаев</h1>
-<p>Сделайте небольшую программу для записи в учебную группу. Она получает начальное число занятых мест, выбирает одно действие и, если нужно, обрабатывает несколько заявок. Для каждого запуска подставляйте данные прямо в коде. После команды «записать» программа показывает, сколько заявок принято и сколько отклонено.</p>
+<p>Продолжите общий блок математических задач. Примените цикл <code>for</code> и условие <code>if</code> из <a href="036-kotlin-conditions-ranges-and-loops.html">предыдущей статьи</a> к поиску наибольшего общего делителя, а <code>when</code> — к выбору действия в калькуляторе. Работайте в OpenIDE или Kotlin Playground в режиме JVM. Для каждого запуска задавайте данные прямо в коде через <code>val</code> и меняйте их для самопроверки.</p>
 <nav aria-label="Содержание" class="article-contents">
 <p class="callout-title">Содержание</p><ul>
-<li><a href="037-kotlin-actions-and-boundary-tests.html#%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D1%8C%D1%82%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Данные и команды</a></li>
-<li><a href="037-kotlin-actions-and-boundary-tests.html#%D1%80%D0%B0%D0%B7%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D1%83-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BE%D0%BA">Обработка заявок</a></li>
-<li><a href="037-kotlin-actions-and-boundary-tests.html#%D1%81%D0%BE%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5-%D1%81%D0%B2%D0%BE%D1%8E-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83">Самостоятельная работа</a></li>
-<li><a href="037-kotlin-actions-and-boundary-tests.html#%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5-%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8">Граничные проверки</a></li>
-<li><a href="037-kotlin-actions-and-boundary-tests.html#%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82">Итоговый показ</a></li>
+<li><a href="037-kotlin-actions-and-boundary-tests.html#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-5-%D0%BD%D0%B0%D0%B8%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B9-%D0%BE%D0%B1%D1%89%D0%B8%D0%B9-%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C">Задача №5</a></li>
+<li><a href="037-kotlin-actions-and-boundary-tests.html#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-6-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-%D1%87%D0%B5%D1%82%D1%8B%D1%80%D1%91%D1%85-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9">Задача №6</a></li>
+<li><a href="037-kotlin-actions-and-boundary-tests.html#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8C%D1%82%D0%B5-%D0%BE%D0%B1%D1%8B%D1%87%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%BD%D1%8B%D0%B5-%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B8">Проверьте обычные и граничные случаи</a></li>
+<li><a href="037-kotlin-actions-and-boundary-tests.html#%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82">Покажите результат</a></li>
 </ul>
 </nav>
-<h2 id="подготовьте-данные-и-команды">Подготовьте данные и команды</h2>
-<p>Создайте новую программу в той же среде, где запускали <a href="036-kotlin-conditions-ranges-and-loops.html">примеры с условиями и циклами</a>. Через <code>val</code> задайте четыре исходных числа.</p>
+<h2 id="задача-5-наибольший-общий-делитель">Задача №5. Наибольший общий делитель</h2>
+<p>Задайте в <code>Gcd.kt</code> два целых числа <code>a</code> и <code>b</code>. Если хотя бы одно выходит за пределы <code>1..1000</code>, выведите <code>Введите числа от 1 до 1000</code> и пропустите поиск. Для допустимых чисел найдите и выведите их наибольший общий делитель (НОД) перебором.</p>
+<p>Положительное число <code>divisor</code> делит <code>a</code>, если остаток <code>a % divisor</code> равен нулю. Общий делитель должен делить оба числа. Например, общие делители 8 и 12 — это 1, 2 и 4. Самый большой из них — 4. Для своей программы определите, почему достаточно перебирать числа от 1 до меньшего из двух входных значений. Для меньшего значения можно использовать <code>minOf(a, b)</code>.</p>
+<details class="callout" data-callout="tip">
+<summary class="callout-title">Блок-схема-подсказка к задаче №5</summary><p><img alt="Перебор возможных общих делителей. Нужно определить условие, при котором запоминается очередной кандидат" src="assets/037-00-common-divisor-hint.svg"></p>
+</details>
+<h2 id="задача-6-калькулятор-четырёх-операций">Задача №6. Калькулятор четырёх операций</h2>
+<p>В файле <code>Calculator.kt</code> задайте два числа типа <code>Double</code> и символ <code>operation</code> в одинарных кавычках. Дробные числа в коде записывайте с точкой. Через <code>when (operation)</code> выберите действие и выведите один результат.</p>
 <table>
 <thead>
 <tr>
-<th>Имя</th>
-<th>Что означает</th>
-<th style="text-align: right;">Первый запуск</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>capacity</code></td>
-<td>Вместимость группы</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr>
-<td><code>initialOccupied</code></td>
-<td>Сколько мест занято до выбранной операции</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr>
-<td><code>action</code></td>
-<td>Код действия</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr>
-<td><code>requests</code></td>
-<td>Число новых заявок для команды записи</td>
-<td style="text-align: right;">3</td>
-</tr>
-</tbody>
-</table>
-<p>Сначала проверьте, что вместимость положительна и начальное число занятых мест попадает в диапазон <code>0..capacity</code>. Если число неверное, выведите <code>Ошибка исходных данных</code> и завершите <code>main</code>. Команда <code>return</code> после сообщения завершает текущую функцию.</p>
-<p>Затем через <code>when (action)</code> выберите одну ветку.</p>
-<table>
-<thead>
-<tr>
+<th>Значение <code>operation</code></th>
 <th>Действие</th>
-<th>Что должно произойти</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>0</code></td>
-<td>Вывести <code>Работа завершена</code></td>
+<td><code>'+'</code></td>
+<td>Сложите числа.</td>
 </tr>
 <tr>
-<td><code>1</code></td>
-<td>Показать, сколько мест свободно</td>
+<td><code>'-'</code></td>
+<td>Вычтите второе число из первого.</td>
 </tr>
 <tr>
-<td><code>2</code></td>
-<td>Проверить число заявок, обработать их и вывести итог</td>
+<td><code>'*'</code></td>
+<td>Умножьте числа.</td>
 </tr>
 <tr>
-<td>Иное число</td>
-<td>Вывести <code>Неизвестное действие</code></td>
-</tr>
-</tbody>
-</table>
-<p>Число заявок проверяйте только для команды 2. Нулевое количество заявок допустимо, отрицательное вызывает сообщение <code>Ошибка числа заявок</code>.</p>
-<h2 id="разберите-обработку-заявок">Разберите обработку заявок</h2>
-<p>Рассмотрим один фрагмент для случая, когда остались два места, а пришли три заявки. На каждом шаге либо принимаем заявку и уменьшаем остаток мест, либо оставляем остаток без изменения. По этой таблице можно проверить объявление переменных и обновление счётчиков.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: right;">Заявка</th>
-<th style="text-align: right;">Свободно до проверки</th>
-<th>Результат</th>
-<th style="text-align: right;">Свободно после проверки</th>
-<th style="text-align: right;">Принято всего</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2</td>
-<td>Принята</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
+<td><code>'/'</code></td>
+<td>Проверьте второе число через <code>if</code>. Если оно равно <code>0.0</code>, выведите <code>На ноль делить нельзя</code>. Иначе разделите первое число на второе.</td>
 </tr>
 <tr>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td>Принята</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0</td>
-<td>Отклонена</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">2</td>
+<td>Любое другое</td>
+<td>Выведите <code>Неизвестная операция</code>.</td>
 </tr>
 </tbody>
 </table>
-<aside class="callout" data-callout="tip">
-<p class="callout-title">Один повтор — одна заявка</p><p>Подходит перебор <code>for (request in 1..requests)</code>. Он выполнится ровно <code>requests</code> раз при положительном числе заявок. При нуле диапазон пустой, а итог всё равно выводится после цикла.</p>
-</aside>
-<p>Достаточно хранить <code>var free</code> и <code>var accepted</code>. Если <code>free &gt; 0</code>, свободных мест становится на одно меньше, а принятых заявок — на одну больше. Количество отклонённых можно найти после цикла как разность <code>requests - accepted</code>.</p>
-<h2 id="соберите-свою-программу">Соберите свою программу</h2>
-<ol>
-<li>Сделайте проверку исходных данных и ветки <code>0</code>, <code>1</code>, <code>else</code>. Запустите программу с кодами <code>0</code>, <code>1</code> и <code>9</code>. При вместимости 6 и четырёх занятых местах команда <code>1</code> показывает два свободных места.</li>
-<li>Допишите ветку <code>2</code> с проверкой <code>requests</code>. После проверки в этой ветке создайте счётчики и обработайте заявки. Внутри цикла выводите одну строку на заявку, в конце — один итог.</li>
-<li>Сверьте первый запуск с образцом вывода. Формулировки можно выбрать свои, если по выводу видны номера заявок, результаты и количества.</li>
-</ol>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Заявка 1: принята
-Заявка 2: принята
-Заявка 3: отклонена
-Принято: 2
-Отклонено: 1
-Свободных мест: 0
-</code></pre></div>
-<aside class="callout" data-callout="note">
-<p class="callout-title">Если результат не совпал</p><p>Лишний повтор часто появляется из-за диапазона <code>0..requests</code>. Отрицательное число свободных мест означает, что остаток уменьшался даже после отказа. Одинаковый итог для разных команд — повод проверить, где находится код обработки заявок и под какой стрелкой <code>-&gt;</code> написана нужная ветка.</p>
-</aside>
-<h2 id="выполните-граничные-проверки">Выполните граничные проверки</h2>
-<p>Сначала предскажите результаты, затем запускайте программу. В каждом запуске меняйте только указанные значения. Когда отрабатывает ошибка или команда завершения, строк о заявках появляться не должно.</p>
+<h2 id="проверьте-обычные-и-граничные-случаи">Проверьте обычные и граничные случаи</h2>
+<p>Для каждого набора сначала запишите ожидаемый результат. Меняйте значения в начале программы, запускайте её и сверяйте результат с прогнозом.</p>
+<p><img alt="Самопроверка программы: прогноз, запуск, сравнение и повтор на тех же данных при расхождении" src="assets/037-00-test-a-case-flow.svg"></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: right;">Вместимость</th>
-<th style="text-align: right;">Занято до запуска</th>
-<th style="text-align: right;">Команда</th>
-<th style="text-align: right;">Заявок</th>
+<th>Задача</th>
+<th>Данные для запусков</th>
 <th>Что проверить</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2</td>
-<td>Точное заполнение, две принятые заявки и ноль отклонённых</td>
+<td>№5</td>
+<td><code>(48, 18)</code>, <code>(49, 20)</code>, <code>(9, 9)</code>, <code>(1, 25)</code>, <code>(20, 0)</code></td>
+<td>Общий делитель больше 1, взаимно простые числа, равные числа, нижнюю границу допустимых данных и ноль.</td>
 </tr>
 <tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">3</td>
-<td>Одной заявке не хватает места</td>
+<td>№6</td>
+<td><code>7.5</code> и <code>2.0</code> по очереди с <code>'+'</code>, <code>'-'</code>, <code>'*'</code>, <code>'/'</code></td>
+<td>Каждую арифметическую ветку и дробное частное.</td>
 </tr>
 <tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td>Первая заявка сразу отклоняется, остаток 0</td>
+<td>№6</td>
+<td><code>7.5</code> и <code>0.0</code> с <code>'/'</code>, затем с <code>'*'</code></td>
+<td>Ошибку деления на ноль и допустимое умножение на ноль.</td>
 </tr>
 <tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td>Строк о заявках нет, остаток 2</td>
-</tr>
-<tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">-1</td>
-<td>Ошибка числа заявок до запуска цикла</td>
-</tr>
-<tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td>Ошибка исходных данных до выбора команды</td>
-</tr>
-<tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">-1</td>
-<td>Остаток 2, поскольку команда просмотра не использует число заявок</td>
-</tr>
-<tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">3</td>
-<td>Неизвестное действие</td>
+<td>№6</td>
+<td><code>7.5</code> и <code>2.0</code> с <code>'?'</code></td>
+<td>Сообщение для неизвестной операции.</td>
 </tr>
 </tbody>
 </table>
-<p>Дополнительное задание — изменить команду 2 так, чтобы оставалось одно место в резерве. Проверьте случаи с двумя, одним и нулём свободных мест. Если мест уже нет, резерв не создаётся и число мест остаётся нулевым.</p>
+<aside class="callout" data-callout="tip">
+<p class="callout-title">Если результат расходится с прогнозом</p><p>В задаче №5 проверьте, входит ли меньшее из двух чисел в перебор и проверяются ли оба остатка. В задаче №6 убедитесь, что проверку нуля выполняет ветка деления.</p>
+</aside>
 <h2 id="покажите-результат">Покажите результат</h2>
-<p>Сохраните готовый код в файле <code>Queue.kt</code>. Покажите преподавателю два запуска: точное заполнение и случай, когда одной заявке не хватает места. Объясните, почему число повторов зависит от количества заявок, а число принятых — от числа свободных мест. Затем измените один входной параметр и назовите ожидаемый результат до запуска.</p>
-<p>Если среда запуска недоступна, подготовьте ветки <code>when</code> и трассировку двух запусков по образцу таблицы. Отметьте, какие результаты рассчитаны вручную. Когда среда станет доступна, выполните эти же проверки в программе.</p></main>
+<p>Сохраните решения в отдельных файлах <code>.kt</code>. К концу этой пары подготовьте список решённых задач из общего блока №1–6. На общей проверке покажите список, выберите одну решённую задачу и измените в ней исходные данные на обычный или граничный случай. Назовите ожидаемый результат, выполните один запуск и сравните вывод с прогнозом.</p>
+<p>Если обе среды запуска недоступны, покажите список задач, для которых записали алгоритм и ожидаемые результаты. На примере одной задачи объясните, как изменится результат при смене данных. Укажите «без запуска» у этих решений.</p></main>
   </div>
   <footer class="site-footer">
     <a href="../qr.html">QR</a>

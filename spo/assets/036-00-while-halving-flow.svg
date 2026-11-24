@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="397" viewBox="0 0 440 397" role="img" aria-labelledby="title desc">
+  <title id="title">Как работает цикл while</title>
+  <desc id="desc">Начать с 12 и счётчика 0. Пока число больше единицы, делить его на 2 нацело, добавлять 1 к счётчику и повторять проверку. Когда условие ложно, вывести счётчик.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#24627d"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="395" rx="15" fill="#fff" stroke="#c9dce4"/>
+  <g font-family="Arial, sans-serif" fill="#123247" text-anchor="middle">
+    <text x="220" y="31" font-size="21" font-weight="700">Как работает цикл while</text>
+    <rect x="39" y="49" width="214" height="46" rx="24" fill="#e2f3eb" stroke="#287355" stroke-width="1.6"/>
+    <text x="146" y="78" font-size="18" font-weight="600">number = 12, steps = 0</text>
+    <path d="M146 95V119" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <path d="M146 119L265 159L146 199L27 159Z" fill="#fff2d6" stroke="#9a641d" stroke-width="1.6"/>
+    <text x="146" y="165" font-size="18" font-weight="600">number > 1?</text>
+    <path d="M265 159H347V224" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="303" y="148" font-size="17" font-weight="700">Нет</text>
+    <rect x="275" y="224" width="144" height="57" rx="24" fill="#e2f3eb" stroke="#287355" stroke-width="1.6"/>
+    <text x="347" y="258.5" font-size="18" font-weight="600">Вывести steps</text>
+    <path d="M146 199V224" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="169" y="217" font-size="17" font-weight="700">Да</text>
+    <rect x="39" y="224" width="214" height="62" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="146" y="249.5" font-size="18" font-weight="600">number = number / 2<tspan x="146" dy="23">steps = steps + 1</tspan></text>
+    <path d="M39 254H17V159H27" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="220" y="331" font-size="20" font-weight="600">number: 12 → 6 → 3 → 1</text>
+    <text x="220" y="361" font-size="20" font-weight="600">steps:     0 → 1 → 2 → 3</text>
+  </g>
+</svg>

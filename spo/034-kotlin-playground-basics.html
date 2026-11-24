@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Расписания, физика и информатика">
-  <title>Kotlin в браузере: main, вывод, val, var и типы значений — shkolar.site</title>
+  <title>Установка среды для Kotlin и первый запуск — shkolar.site</title>
   <link rel="canonical" href="https://shkolar.site/spo/034-kotlin-playground-basics.html">
   <link rel="icon" href="../favicon.ico?v=db28c1f3a147" type="image/x-icon">
   <link rel="manifest" href="../manifest.webmanifest">
@@ -25,153 +25,106 @@
     </section>
   </header>
   <div class="layout">
-    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">034-kotlin-playground-basics</li></ol></nav><h1 id="kotlin-в-браузере-main-вывод-val-var-и-типы-значений">Kotlin в браузере: main, вывод, val, var и типы значений</h1>
-<p>В веб-приложении часть работы выполнял JavaScript. Теперь напишем небольшую программу на Kotlin. Она выведет в консоль сведения о наборе в учебную группу. Данные зададим прямо в коде, чтобы потренироваться читать программу, предсказывать вывод и проверять себя запуском.</p>
+    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">034-kotlin-playground-basics</li></ol></nav><h1 id="установка-среды-для-kotlin-и-первый-запуск">Установка среды для Kotlin и первый запуск</h1>
+<p>Установите OpenIDE и запустите первую консольную программу на Kotlin. Затем решите два коротких упражнения в той среде, где удалось запустить программу. Если на учебном компьютере установка или запуск проекта остановились, продолжайте в браузере.</p>
 <nav aria-label="Содержание" class="article-contents">
 <p class="callout-title">Содержание</p><ul>
-<li><a href="034-kotlin-playground-basics.html#%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%B2-kotlin-playground">Первый запуск</a></li>
-<li><a href="034-kotlin-playground-basics.html#%D1%87%D1%82%D0%BE-%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D1%82-main-%D0%B8-%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4">main и вывод</a></li>
-<li><a href="034-kotlin-playground-basics.html#%D0%B8%D0%BC%D0%B5%D0%BD%D0%B0-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B8-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F">Типы и значения</a></li>
-<li><a href="034-kotlin-playground-basics.html#%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-val-%D0%B8-var">val и var</a></li>
-<li><a href="034-kotlin-playground-basics.html#%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80-%D1%82%D0%B8%D0%BF%D0%B8%D1%87%D0%BD%D1%8B%D1%85-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA">Типичные ошибки</a></li>
-<li><a href="034-kotlin-playground-basics.html#%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0-%D0%B8-%D1%81%D0%B0%D0%BC%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0">Самопроверка</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-openide">Установка OpenIDE</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-kotlin-%D0%B2-openide">Первый запуск Kotlin</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D1%8B%D0%B9-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%B2-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B5">Резерв в браузере</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B8-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4">Переменные, типы и вывод</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D0%B4%D0%B2%D0%B0-%D0%BA%D0%BE%D1%80%D0%BE%D1%82%D0%BA%D0%B8%D1%85-%D1%83%D0%BF%D1%80%D0%B0%D0%B6%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F">Два упражнения</a></li>
+<li><a href="034-kotlin-playground-basics.html#%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0">Первая проверка</a></li>
 </ul>
 </nav>
-<h2 id="запуск-в-kotlin-playground">Запуск в Kotlin Playground</h2>
+<h2 id="установка-openide">Установка OpenIDE</h2>
+<p><img alt="Как выбрать способ работы: запуск в OpenIDE, запуск в браузере или запись без запуска" src="assets/034-00-kotlin-launch-flow.svg"></p>
 <ol>
-<li>Откройте <a href="https://play.kotlinlang.org/">Kotlin Playground</a>. Выберите <strong>JVM</strong>, если в переключателе среды указано другое значение. JVM — среда выполнения, с которой мы работаем в этих примерах.</li>
-<li>Замените весь код в редакторе примером ниже. В каждом примере статьи есть своя функция <code>main</code>, поэтому вставляйте один пример за раз.</li>
-<li>Нажмите <strong>Run</strong> (кнопка с треугольником) и найдите результат в панели вывода.</li>
+<li>На <a href="https://openide.ru/download/">странице загрузки</a> выберите бесплатную редакцию <strong>OpenIDE</strong>. Для обычного Windows-компьютера с процессором Intel или AMD подойдёт сборка x64. Если OpenIDE уже установлена, откройте её.</li>
+<li>Запустите установщик на рабочем компьютере, где это разрешено. При запросе прав, которых у вас нет, запишите, на каком шаге остановились, и переходите к браузерному запуску.</li>
+<li>Откройте OpenIDE. Если при первом запуске появится выбор технологий, выберите <strong>Java и Kotlin</strong>.</li>
+</ol>
+<p>Порядок установки описан в <a href="https://docs.openide.ru/getting-started/install/">документации OpenIDE</a>.</p>
+<h2 id="первый-запуск-kotlin-в-openide">Первый запуск Kotlin в OpenIDE</h2>
+<ol>
+<li>Нажмите <strong>Новый проект</strong> и выберите <strong>Kotlin</strong>. Назовите проект <code>KotlinPractice</code> и сохраните в своей рабочей папке.</li>
+<li>В поле системы сборки выберите <strong>IntelliJ</strong>. В поле <strong>JDK</strong> выберите установленный JDK или загрузите предложенный мастером. JDK нужен для компиляции и запуска проекта. Если есть флажок <strong>Add sample code</strong>, включите его.</li>
+<li>Откройте созданный файл <code>Main.kt</code>. Если образец не создан, нажмите правой кнопкой по папке исходников и создайте файл <strong>Kotlin Class/File</strong> типа <strong>File</strong> с именем <code>Main</code>. Вставьте программу. Если в файле есть строка <code>package</code>, оставьте её над <code>main</code>.</li>
 </ol>
 <div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Группа «Старт»&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Запись открыта&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Kotlin работает&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Ожидаемый вывод</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Группа «Старт»
-Запись открыта
-</code></pre></div>
-<p>Замените <code>Старт</code> на <code>Практика</code> и запустите код ещё раз. Измениться должна первая строка, вторая должна сохранить прежний текст.</p>
-<h2 id="что-делает-main-и-как-работает-вывод">Что делает main и как работает вывод</h2>
-<p><code>fun</code> объявляет функцию, а <code>main</code> — имя функции, с которой Kotlin начинает выполнение этой программы. Круглые скобки <code>()</code> в объявлении здесь пусты. В фигурных скобках находится тело функции. В наших примерах команды в теле выполняются сверху вниз.</p>
-<p>Вызов <code>println(...)</code> выводит переданное значение и завершает строку. Текст в обычных двойных кавычках <code>"..."</code> — строковое значение. Сами ограничивающие кавычки при выводе исчезают, а кавычки-ёлочки <code>«»</code> внутри текста сохраняются. Если поменять два вызова <code>println</code> местами, изменится порядок строк вывода.</p>
-<h2 id="имена-типы-и-значения">Имена, типы и значения</h2>
-<p>В записи <code>val capacity: Int = 24</code> имя <code>capacity</code> обозначает вместимость, <code>Int</code> задаёт тип, а <code>24</code> — начальное значение. Имена помогают понять, какую роль играет каждое число.</p>
-<table>
-<thead>
-<tr>
-<th>Тип</th>
-<th>Пример значения</th>
-<th>Когда нужен</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Int</code></td>
-<td><code>24</code></td>
-<td>Целое число, например количество мест</td>
-</tr>
-<tr>
-<td><code>Double</code></td>
-<td><code>1.5</code></td>
-<td>Число с дробной частью, например длительность в часах</td>
-</tr>
-<tr>
-<td><code>String</code></td>
-<td><code>"Старт"</code></td>
-<td>Строка, например название группы</td>
-</tr>
-<tr>
-<td><code>Boolean</code></td>
-<td><code>true</code></td>
-<td>Признак с двумя значениями <code>true</code> и <code>false</code></td>
-</tr>
-</tbody>
-</table>
-<p>Выведем каждое значение отдельной строкой.</p>
+<ol start="4">
+<li>Нажмите зелёный треугольник рядом с <code>main</code>. В окне <strong>Run</strong> должна появиться строка <code>Kotlin работает</code>. Измените текст в кавычках и снова запустите программу. Новый вывод показывает, что вы запустили свой код.</li>
+</ol>
+<p>См. <a href="https://docs.openide.ru/getting-started/create-project/">создание проекта в OpenIDE</a>.</p>
+<h2 id="резервный-запуск-в-браузере">Резервный запуск в браузере</h2>
+<p>Если IDE не открылась, недоступен JDK или Kotlin-проект не удалось запустить, запишите шаг и текст ошибки. В любом из двух браузерных редакторов вставьте ту же программу с <code>fun main()</code>.</p>
+<ul>
+<li><a href="https://play.kotlinlang.org/">Kotlin Playground</a> — выберите <strong>JVM</strong> и нажмите <strong>Run</strong>.</li>
+<li><a href="https://kotlin.codeutility.io/ru/">Kotlin CodeUtility</a> — откройте русскоязычный редактор и нажмите <strong>Запустить</strong>.</li>
+</ul>
+<p>Проверьте, что после изменения текста меняется вывод. Запускайте по одной полной программе и копируйте каждое решение в отдельный файл <code>.kt</code> в своей рабочей папке. Если ни один способ запуска не сработал, запишите, что произошло, и подготовьте код и ожидаемый вывод с пометкой «без запуска».</p>
+<h2 id="переменные-типы-и-вывод">Переменные, типы и вывод</h2>
+<p><code>fun main()</code> — начало выполнения программы. Команды внутри фигурных скобок идут сверху вниз, а <code>println</code> выводит значение и переводит курсор на новую строку.</p>
 <div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">groupName</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Старт&quot;</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">capacity</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">24</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">sessionHours</span><span class="p">:</span><span class="w"> </span><span class="kt">Double</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1.5</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">registrationOpen</span><span class="p">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
-
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">groupName</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">sessionHours</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">registrationOpen</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">step</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>
+<span class="w">    </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">position</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">step</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Позиция: </span><span class="si">$</span><span class="n">position</span><span class="s">&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Ожидаемый вывод</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Старт
-24
-1.5
-true
-</code></pre></div>
-<p>Kotlin может определить тип по начальному значению. Например, <code>val capacity = 24</code> объявляет <code>capacity</code> с типом <code>Int</code>, а <code>val groupName = "Старт"</code> — с типом <code>String</code>. Тип влияет на допустимые операции. С числом <code>24</code> можно выполнить вычитание, а строка <code>"24"</code> содержит два символа.</p>
-<h2 id="когда-использовать-val-и-var">Когда использовать val и var</h2>
-<p>В течение одного расчёта вместимость группы остаётся прежней, а число занятых мест может измениться. Применим <code>val</code> для вместимости и <code>var</code> для занятых мест.</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">capacity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">24</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">occupiedSeats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span>
-
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">occupiedSeats</span><span class="p">)</span>
-
-<span class="w">    </span><span class="n">occupiedSeats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">occupiedSeats</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">occupiedSeats</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Ожидаемый вывод</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">24
-18
-19
-</code></pre></div>
-<p>В строке <code>occupiedSeats = occupiedSeats + 1</code> сначала вычисляется правая часть. Kotlin берёт прежнее значение <code>18</code>, прибавляет <code>1</code> и записывает результат <code>19</code> в <code>occupiedSeats</code>.</p>
-<aside class="callout" data-callout="important">
-<p class="callout-title">Выбор объявления</p><p>Используйте <code>val</code>, если после объявления присваивать другое значение этому имени не потребуется. Используйте <code>var</code>, когда программа должна присваивать новые значения того же типа.</p>
+<p>Сначала у <code>position</code> значение <code>3</code>. Строка присваивания прибавляет <code>2</code> и сохраняет <code>5</code> обратно в переменной. В строке вывода <code>$position</code> подставляет текущее значение.</p>
+<aside class="callout" data-callout="note">
+<p class="callout-title">Как выбрать объявление</p><p>Используйте <code>val</code> для значения, которое дальше в программе не меняется, и <code>var</code>, если будете присваивать новое значение. Kotlin определяет тип по записи значения.</p>
 </aside>
-<h2 id="разбор-типичных-ошибок">Разбор типичных ошибок</h2>
 <table>
 <thead>
 <tr>
-<th>Что произошло</th>
-<th>Что проверить</th>
+<th>Значение</th>
+<th>Тип</th>
+<th>Что представляет</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>println</code> не распознаёт название группы</td>
-<td>Для текста используйте прямые двойные кавычки, например <code>println("Старт")</code>.</td>
+<td><code>3</code></td>
+<td><code>Int</code></td>
+<td>Целое число</td>
 </tr>
 <tr>
-<td><code>occupiedSeats</code> нельзя изменить после первого присваивания</td>
-<td>Проверьте, объявлено ли оно с <code>var</code>.</td>
+<td><code>2.5</code></td>
+<td><code>Double</code></td>
+<td>Число с дробной частью</td>
 </tr>
 <tr>
-<td><code>var occupiedSeats = 18</code> принимает число, а <code>occupiedSeats = "19"</code> вызывает ошибку</td>
-<td>Из начального значения выведен тип <code>Int</code>. Уберите кавычки у нового целого числа.</td>
+<td><code>"Kotlin работает"</code></td>
+<td><code>String</code></td>
+<td>Текст</td>
 </tr>
 <tr>
-<td>В редактор вставлены два примера, компилятор сообщает о конфликте</td>
-<td>Оставьте одну функцию <code>main</code>.</td>
-</tr>
-<tr>
-<td>Сообщение об ошибке указывает на конец строки или программы</td>
-<td>Проверьте пары кавычек, круглых и фигурных скобок, начиная с выделенной строки и строки перед ней.</td>
+<td><code>true</code></td>
+<td><code>Boolean</code></td>
+<td>Логическое значение</td>
 </tr>
 </tbody>
 </table>
-<p>Откройте последний работающий пример, внесите одну ошибку из таблицы и запустите программу. Найдите строку по диагностике, исправьте её и повторите запуск. Такой опыт помогает отличить сообщения компилятора от вывода программы.</p>
-<h2 id="практика-и-самопроверка">Практика и самопроверка</h2>
+<p>Дробное число в коде пишется через точку. Кавычки превращают запись в текст, поэтому <code>"3" + "2"</code> даёт <code>"32"</code>, а <code>3 + 2</code> даёт <code>5</code>.</p>
+<h2 id="два-коротких-упражнения">Два коротких упражнения</h2>
 <ol>
-<li>В примере с типами задайте группе имя <code>Резерв</code>, вместимость <code>20</code>, длительность <code>2.5</code> часа и признак <code>false</code>. Перед запуском запишите четыре ожидаемые строки. Проверьте порядок и то, что дробное число в коде записано через точку.</li>
-<li>В примере с <code>var</code> задайте вместимость <code>20</code> и начальное число занятых мест <code>17</code>. После записи двух новых участников выведите обновлённое число занятых мест. Ожидаемые строки — <code>20</code>, <code>17</code>, <code>19</code>. Объясните, почему <code>capacity</code> можно оставить <code>val</code>.</li>
-<li>Измените объявление <code>occupiedSeats</code> на <code>val</code>, сохранив строку обновления. Объясните причину ошибки и верните рабочее объявление. Убедитесь, что число занятых мест снова меняется с <code>17</code> на <code>19</code>.</li>
+<li><strong>Сумма двух чисел.</strong> Объявите два целых числа со значениями <code>8</code> и <code>5</code>. Выведите строку <code>Сумма: …</code>. Затем замените <code>5</code> на <code>-5</code>. Перед каждым запуском вычислите ожидаемую сумму устно.</li>
+<li><strong>Счётчик шагов.</strong> Начните с <code>var steps = 10</code>. Увеличьте значение на <code>3</code>, затем на <code>2</code>. Выведите значение после каждого изменения. Перед запуском предскажите обе строки.</li>
 </ol>
-<aside class="callout" data-callout="check">
-<p class="callout-title">Что должно получиться</p><p>Вы можете показать одну запускаемую функцию <code>main</code>, объяснить типы её значений и найти строку, которая меняет число занятых мест. Для результата упражнения 2 вручную определите, сколько из 20 мест осталось. На следующей паре этот расчёт выполнит программа.</p>
-</aside></main>
+<p>Сохраните программы отдельно, например <code>WarmupSum.kt</code> и <code>WarmupSteps.kt</code>. В OpenIDE запускайте <code>main</code> нужного файла.</p>
+<h2 id="первая-проверка">Первая проверка</h2>
+<p>К концу задания 34 подготовьте к показу короткий отчёт и один запуск.</p>
+<ul>
+<li><strong>OpenIDE работает.</strong> Покажите окно проекта и вывод Kotlin. Назовите, какие упражнения удалось выполнить.</li>
+<li><strong>OpenIDE установилась, но Kotlin не запустился, или установка остановилась.</strong> Назовите шаг и текст ошибки. Покажите, какой сайт сработал, что удалось на нём запустить и какие короткие задачи получились.</li>
+<li><strong>Запуск недоступен.</strong> Покажите запись о попытках и подготовленный код или ожидаемый вывод. Отметьте, что запуска не было.</li>
+</ul>
+<p>После этого переходите к <a href="035-kotlin-calculations-and-strings.html">основному блоку задач</a>. Следующий показ преподавателю будет <a href="037-kotlin-actions-and-boundary-tests.html">в конце задания 37</a>.</p></main>
   </div>
   <footer class="site-footer">
     <a href="../qr.html">QR</a>

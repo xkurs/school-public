@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="432" viewBox="0 0 440 432" role="img" aria-labelledby="title desc">
+  <title id="title">Как проверить решение</title>
+  <desc id="desc">Выбрать набор данных, предсказать вывод, запустить программу и сравнить вывод с прогнозом. Если вывод отличается, разобраться и повторить проверку на тех же данных.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#24627d"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="430" rx="15" fill="#fff" stroke="#c9dce4"/>
+  <g font-family="Arial, sans-serif" fill="#123247" text-anchor="middle">
+    <text x="220" y="31" font-size="21" font-weight="700">Как проверить решение</text>
+    <rect x="67" y="49" width="250" height="43" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="192" y="76.5" font-size="18" font-weight="600">Выбрать набор данных</text>
+    <path d="M192 92V111" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <rect x="67" y="111" width="250" height="43" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="192" y="138.5" font-size="18" font-weight="600">Предсказать вывод</text>
+    <path d="M192 154V173" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <rect x="67" y="173" width="250" height="43" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="192" y="200.5" font-size="18" font-weight="600">Запустить программу</text>
+    <path d="M192 216V236" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <path d="M192 236L314 274L192 312L70 274Z" fill="#fff2d6" stroke="#9a641d" stroke-width="1.6"/>
+    <text x="192" y="280" font-size="18" font-weight="600">Вывод совпал?</text>
+    <path d="M192 312V364" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="216" y="341" font-size="17" font-weight="700">Да</text>
+    <rect x="67" y="364" width="250" height="46" rx="24" fill="#e2f3eb" stroke="#287355" stroke-width="1.6"/>
+    <text x="192" y="393" font-size="18" font-weight="600">Отметить проверку</text>
+    <path d="M314 274H368V306" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="346" y="262" font-size="17" font-weight="700">Нет</text>
+    <rect x="293" y="306" width="132" height="50" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="359" y="337" font-size="18" font-weight="600">Найти ошибку</text>
+    <path d="M425 331H433V133H317" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="374" y="117" font-size="16" font-weight="600">Те же данные</text>
+  </g>
+</svg>

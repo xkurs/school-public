@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="../assets/style.css">
   <script defer src="../assets/offline.js"></script>
   
-  
+  <script src="../assets/math.js"></script>
+<script defer src="../assets/mathjax/es5/tex-svg.js"></script>
 </head>
 <body id="page-top">
   <a class="skip-link" href="#main-content">К содержанию</a>
@@ -26,113 +27,48 @@
   </header>
   <div class="layout">
     <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">035-kotlin-calculations-and-strings</li></ol></nav><h1 id="первые-программы-kotlin-вычисления-и-строки">Первые программы Kotlin: вычисления и строки</h1>
-<p>На <a href="034-kotlin-playground-basics.html">первой паре по Kotlin</a> мы выводили вместимость группы и число занятых мест. Теперь вычислим, сколько мест ещё свободно, и выведем результат понятной фразой. Каждый пример можно запустить целиком в режиме <strong>JVM</strong> в <a href="https://play.kotlinlang.org/">Kotlin Playground</a>. Все исходные значения уже записаны в программах.</p>
+<p>Начинаем общий блок задач под номерами 1–6. Первые две — про прямоугольник и перевод минут. Работайте в среде, которая запустилась на <a href="034-kotlin-playground-basics.html">задании 34</a>. Входные данные задавайте в начале программы, чтобы менять их между запусками.</p>
 <nav aria-label="Содержание" class="article-contents">
 <p class="callout-title">Содержание</p><ul>
-<li><a href="035-kotlin-calculations-and-strings.html#%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D1%8F%D0%B5%D0%BC-%D1%87%D0%B8%D1%81%D0%BB%D0%BE-%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%BC%D0%B5%D1%81%D1%82">Расчёт свободных мест</a></li>
-<li><a href="035-kotlin-calculations-and-strings.html#%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%86%D0%B5%D0%BB%D1%8B%D1%85-%D1%87%D0%B8%D1%81%D0%B5%D0%BB-%D0%B8-%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BE%D0%BA">Деление и остаток</a></li>
-<li><a href="035-kotlin-calculations-and-strings.html#%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%BE%D0%B2%D1%8B%D0%B5-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B">Строковые шаблоны</a></li>
-<li><a href="035-kotlin-calculations-and-strings.html#%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80-%D1%82%D0%B8%D0%BF%D0%B8%D1%87%D0%BD%D1%8B%D1%85-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA">Типичные ошибки</a></li>
-<li><a href="035-kotlin-calculations-and-strings.html#%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0-%D0%B8-%D1%81%D0%B0%D0%BC%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0">Самопроверка</a></li>
+<li><a href="035-kotlin-calculations-and-strings.html#%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%B0">Вычисления и вывод</a></li>
+<li><a href="035-kotlin-calculations-and-strings.html#%D1%86%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BE%D0%BA">Деление и остаток</a></li>
+<li><a href="035-kotlin-calculations-and-strings.html#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-1-%D0%B8-2">Задачи 1 и 2</a></li>
+<li><a href="035-kotlin-calculations-and-strings.html#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%8C-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B">Как сохранить результаты</a></li>
 </ul>
 </nav>
-<h2 id="вычисляем-число-свободных-мест">Вычисляем число свободных мест</h2>
-<p>Если в группе 24 места и 18 уже заняты, вычитаем 18 из 24. Обозначим исходные значения <code>capacity</code> и <code>occupiedSeats</code>, а результат — <code>freeSeats</code>. При запуске программа сама вычислит новое значение <code>freeSeats</code> для заданных чисел.</p>
+<h2 id="вычисления-и-вывод-результата">Вычисления и вывод результата</h2>
+<p>Пусть длина стороны квадрата <span class="arithmatex">\(a = 2.5\)</span> см. Его периметр <span class="arithmatex">\(P = 4a\)</span>. Сохраним сторону и результат в отдельных переменных.</p>
 <div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">capacity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">24</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">occupiedSeats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">freeSeats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">capacity</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">occupiedSeats</span>
-
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">freeSeats</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">side</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2.5</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">perimeter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">side</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Периметр: </span><span class="si">$</span><span class="n">perimeter</span><span class="s"> см&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Площадь: </span><span class="si">${</span><span class="n">side</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">side</span><span class="si">}</span><span class="s"> см²&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Ожидаемый вывод</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">6
-</code></pre></div>
-<p>Здесь все три значения имеют тип <code>Int</code>. В следующем запуске замените <code>18</code> на <code>21</code>. Программа должна вывести <code>3</code>, хотя строку с формулой менять не нужно.</p>
-<p>Сложение записывается знаком <code>+</code>, вычитание — знаком <code>-</code>, умножение — знаком <code>*</code>. Например, если в три группы добавили по два места, выражение <code>24 + 3 * 2</code> даст <code>30</code>. Kotlin сначала выполнит умножение. Скобками можно задать другой порядок. Выражение <code>(24 + 3) * 2</code> даст <code>54</code> и соответствует другой задаче, удвоению суммы.</p>
-<h2 id="деление-целых-чисел-и-остаток">Деление целых чисел и остаток</h2>
-<p>Представим, что 18 участников рассаживаются по пять человек за стол. Вычислим количество полностью занятых столов и сколько человек сядет за следующий стол. В обоих вычислениях используем положительные целые числа.</p>
+<p>Первая строка выводит <code>Периметр: 10.0 см</code>, вторая — <code>Площадь: 6.25 см²</code>. В строковом шаблоне <code>$perimeter</code> подставляет переменную, а <code>${side * side}</code> подставляет результат выражения. Операция <code>*</code> означает умножение. Скобки меняют порядок действий, например <code>2 * (3 + 4)</code> даёт <code>14</code>.</p>
+<h2 id="целочисленное-деление-и-остаток">Целочисленное деление и остаток</h2>
+<p>Из 17 яблок раскладываем по 5 яблок в пакет. При делении двух целых чисел <code>/</code> даёт число полных пакетов, а <code>%</code> — остаток.</p>
+<p><img alt="Две ветви вычисления: целочисленное деление даёт 3 пакета, остаток даёт 2 яблока" src="assets/035-00-integer-division-flow.svg"></p>
 <div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">participants</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">seatsPerTable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">fullTables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">participants</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">seatsPerTable</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">remainingPeople</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">participants</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">seatsPerTable</span>
-
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">fullTables</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">remainingPeople</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">apples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">17</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">perBag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">bags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">apples</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">perBag</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">apples</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">perBag</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Полных пакетов: </span><span class="si">$</span><span class="n">bags</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Осталось яблок: </span><span class="si">$</span><span class="n">left</span><span class="s">&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Ожидаемый вывод</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">3
-3
-</code></pre></div>
-<p>При делении двух <code>Int</code> результат тоже целый. В нашем примере <code>18 / 5</code> даёт <code>3</code>, то есть полностью заняты три стола. Знак <code>%</code> даёт остаток от деления. Три стола вмещают 15 участников, поэтому <code>18 % 5</code> равно <code>3</code>. Чтобы проверить оба результата, восстановите число участников как <code>3 * 5 + 3</code>.</p>
-<aside class="callout" data-callout="note">
-<p class="callout-title">Если нужна дробная часть</p><p>Переведём 90 минут в часы. Выражение <code>90 / 60</code> даёт целое <code>1</code>, а <code>90.0 / 60.0</code> даёт <code>1.5</code> типа <code>Double</code>. Первое выражение подходит для подсчёта полных часов, второе — для длительности с дробной частью.</p>
-</aside>
-<h2 id="строковые-шаблоны">Строковые шаблоны</h2>
-<p>Само по себе число <code>6</code> трудно истолковать. Строка <code>Свободных мест: 6</code> поясняет результат. В Kotlin знак <code>$</code> перед именем подставляет значение в строку. Запись <code>${...}</code> позволяет подставить результат выражения.</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Kotlin</span></div><pre><code class="language-kotlin"><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">groupName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Старт&quot;</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">capacity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">24</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">occupiedSeats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">freeSeats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">capacity</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">occupiedSeats</span>
-
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Группа «</span><span class="si">$</span><span class="n">groupName</span><span class="s">»&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Свободных мест: </span><span class="si">$</span><span class="n">freeSeats</span><span class="s">&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;После записи одного участника останется </span><span class="si">${</span><span class="n">freeSeats</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">1</span><span class="si">}</span><span class="s"> мест&quot;</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Ожидаемый вывод</p>
-<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Группа «Старт»
-Свободных мест: 6
-После записи одного участника останется 5 мест
-</code></pre></div>
-<p>Последняя строка показывает прогноз для случая, когда есть хотя бы одно свободное место. Выражение <code>${freeSeats - 1}</code> вычисляет значение для вывода. После него <code>freeSeats</code> по-прежнему равно <code>6</code>. Если нужно показать значение, а за ним сразу букву, обозначьте границу имени скобками. Например, при <code>val length = 5</code> строка <code>"${length}м"</code> даёт <code>5м</code>.</p>
-<aside class="callout" data-callout="important">
-<p class="callout-title">Отдельно расчёт и подпись</p><p>Сохраните вычисленное число в <code>freeSeats</code> и подставьте его в строку. Так можно проверить сам расчёт, а затем использовать число в новом выражении или в условии.</p>
-</aside>
-<h2 id="разбор-типичных-ошибок">Разбор типичных ошибок</h2>
-<table>
-<thead>
-<tr>
-<th>Наблюдение при проверке</th>
-<th>Причина и исправление</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>"24" + "18"</code> даёт <code>2418</code></td>
-<td>Кавычки создают строки, и <code>+</code> их соединяет. Для вычисления задайте оба значения числами.</td>
-</tr>
-<tr>
-<td><code>18 / 5</code> даёт <code>3</code></td>
-<td>Два операнда типа <code>Int</code> дают целое частное. Для дробного результата можно записать оба числа с десятичной точкой.</td>
-</tr>
-<tr>
-<td>В выводе появилось <code>6 - 1</code></td>
-<td>Строка <code>"$freeSeats - 1"</code> подставляет только значение <code>freeSeats</code>, а остальные символы остаются текстом. Для вычисления нужна запись <code>"${freeSeats - 1}"</code>.</td>
-</tr>
-<tr>
-<td>При делении целых чисел на ноль программа завершается с ошибкой</td>
-<td>В примере <code>seatsPerTable</code> должно быть положительным. Проверку входных значений добавим, когда изучим условия.</td>
-</tr>
-<tr>
-<td>Свободных мест получилось <code>-2</code></td>
-<td>Проверьте порядок вычитания и исходные данные. Если записано 26 участников при 24 местах, <code>-2</code> показывает превышение вместимости на два места. Программа пока выводит результат вычитания для любых заданных чисел.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="практика-и-самопроверка">Практика и самопроверка</h2>
+<p>Получатся 3 пакета и 2 яблока. Проверка обратным действием: <span class="arithmatex">\(3 \cdot 5 + 2 = 17\)</span>. Если нужно дробное частное, один операнд должен быть дробным. Например, <code>17 / 5.0</code> даёт <code>3.4</code>.</p>
+<h2 id="задачи-1-и-2">Задачи 1 и 2</h2>
 <ol>
-<li>Создайте программу, которая выводит <code>Группа «Практика»</code> и <code>Свободных мест: 5</code> при вместимости <code>20</code> и <code>15</code> занятых местах. Используйте формулу и строковый шаблон. Затем смените число занятых мест на <code>20</code>. Второй запуск должен показать <code>Свободных мест: 0</code>.</li>
-<li>Рассадите 22 человека по пять за стол. Программа должна вывести <code>Полных столов: 4</code> и <code>Остаток: 2</code>. Проверьте вычисления вторым запуском с 25 участниками. Сверьте результаты с равенствами <code>22 = 4 * 5 + 2</code> и <code>25 = 5 * 5 + 0</code>.</li>
-<li>Возьмите свой расчёт из задания 1 и задайте <code>21</code> занятое место. Перед запуском запишите ожидаемый результат. Объясните, какое сообщение было бы уместно при переполнении группы и какое при отсутствии свободных мест. Код условий напишем на следующей паре.</li>
+<li><strong>Прямоугольник.</strong> Даны длина и ширина в сантиметрах. Найдите периметр и площадь, выведите оба значения с единицами измерения. Проверьте пары сторон <code>7.5</code> и <code>4.0</code>, затем <code>3.0</code> и <code>3.0</code>. До запуска вычислите ответы по формулам <span class="arithmatex">\(P = 2(a + b)\)</span> и <span class="arithmatex">\(S = ab\)</span>.</li>
+<li><strong>Часы и минуты.</strong> Дано целое неотрицательное число минут. Выведите количество полных часов и оставшихся минут отдельно. Проверьте <code>135</code>, затем <code>60</code> минут. Для полного часа и остатка используйте разные операции.</li>
 </ol>
-<aside class="callout" data-callout="check">
-<p class="callout-title">Что должно получиться</p><p>Вы можете предсказать вывод при замене одного исходного числа, объяснить смысл <code>/</code> и <code>%</code> на данных задачи и подставить число или результат выражения в строку.</p>
-</aside></main>
+<aside class="callout" data-callout="tip">
+<p class="callout-title">Если результат отличается от расчёта</p><p>Для прямоугольника проверьте скобки в формуле периметра и точку в дробных числах. Для перевода минут проверьте, что <code>/</code> и <code>%</code> применены к целым значениям и делителю <code>60</code>.</p>
+</aside>
+<h2 id="как-сохранить-результаты">Как сохранить результаты</h2>
+<p>Сохраните каждую задачу в отдельном файле, например <code>Task01.kt</code> и <code>Task02.kt</code>. Запишите номер задачи, проверенные данные и фактический вывод. Если запустить программу не удалось, пометьте свои расчёты «ожидаемый результат, без запуска». Список пригодится для общего показа в конце задания 37. Дальше — <a href="036-kotlin-conditions-ranges-and-loops.html">условия и циклы в задачах 3 и 4</a>.</p></main>
   </div>
   <footer class="site-footer">
     <a href="../qr.html">QR</a>

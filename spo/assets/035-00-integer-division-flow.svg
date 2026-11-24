@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="297" viewBox="0 0 440 297" role="img" aria-labelledby="title desc">
+  <title id="title">Целая часть и остаток</title>
+  <desc id="desc">Для 17 яблок по пять в пакете деление 17 на 5 даёт три полных пакета, остаток 17 по модулю 5 равен двум яблокам. Результаты можно проверить обратным действием.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#24627d"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="295" rx="15" fill="#fff" stroke="#c9dce4"/>
+  <g font-family="Arial, sans-serif" fill="#123247" text-anchor="middle">
+    <text x="220" y="31" font-size="21" font-weight="700">Целая часть и остаток</text>
+    <rect x="80" y="50" width="280" height="50" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="220" y="81" font-size="18" font-weight="600">17 яблок, по 5 на пакет</text>
+    <path d="M165 100V111H114V132" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <path d="M275 100V111H326V132" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <rect x="19" y="132" width="190" height="64" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="114" y="158.5" font-size="18" font-weight="600">17 / 5 = 3<tspan x="114" dy="23">3 полных пакета</tspan></text>
+    <rect x="231" y="132" width="190" height="64" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="326" y="158.5" font-size="18" font-weight="600">17 % 5 = 2<tspan x="326" dy="23">2 яблока осталось</tspan></text>
+    <path d="M114 196V213H165V235" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <path d="M326 196V213H275V235" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <rect x="90" y="235" width="260" height="42" rx="24" fill="#e2f3eb" stroke="#287355" stroke-width="1.6"/>
+    <text x="220" y="262" font-size="18" font-weight="600">Проверка: 3 × 5 + 2 = 17</text>
+  </g>
+</svg>

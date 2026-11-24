@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="359" viewBox="0 0 440 359" role="img" aria-labelledby="title desc">
+  <title id="title">Подсказка к задаче №4</title>
+  <desc id="desc">Выбрать начальную сумму. Пока есть очередное число в диапазоне 1..n, обновлять сумму и брать следующее. Что прибавлять к сумме? Когда числа закончатся, вывести итог.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#24627d"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="357" rx="15" fill="#fff" stroke="#c9dce4"/>
+  <g font-family="Arial, sans-serif" fill="#123247" text-anchor="middle">
+    <text x="220" y="31" font-size="21" font-weight="700">Подсказка к задаче №4</text>
+    <rect x="48" y="51" width="200" height="47" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="148" y="80.5" font-size="18" font-weight="600">Начальная сумма: ?</text>
+    <path d="M148 98V120" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <path d="M148 120L266 164L148 208L30 164Z" fill="#fff2d6" stroke="#9a641d" stroke-width="1.6"/>
+    <text x="148" y="158" font-size="18" font-weight="600">Есть число<tspan x="148" dy="24">из 1..n?</tspan></text>
+    <path d="M266 164H351V235" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="305" y="153" font-size="17" font-weight="600">Нет</text>
+    <rect x="282" y="235" width="137" height="58" rx="8" fill="#e2f3eb" stroke="#287355" stroke-width="1.6"/>
+    <text x="350.5" y="258" font-size="18" font-weight="600">Вывести<tspan x="350.5" dy="24">сумму</tspan></text>
+    <path d="M148 208V235" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="175" y="224" font-size="17" font-weight="600">Да</text>
+    <rect x="40" y="235" width="216" height="48" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="148" y="265" font-size="18" font-weight="600">Прибавить ? к сумме</text>
+    <path d="M148 283V302" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <rect x="40" y="302" width="216" height="39" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="148" y="327.5" font-size="18" font-weight="600">Следующее число</text>
+    <path d="M40 321H17V164H30" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+  </g>
+</svg>

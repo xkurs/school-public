@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="441" viewBox="0 0 440 441" role="img" aria-labelledby="title desc">
+  <title id="title">Подсказка к задаче №5</title>
+  <desc id="desc">После проверки допустимости входных данных перебрать кандидатов от одного до меньшего из двух чисел. Для каждого кандидата проверить, является ли он общим делителем. Как проверить оба остатка? Запоминать подходящий кандидат и продолжать перебор.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#24627d"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="438" height="439" rx="15" fill="#fff" stroke="#c9dce4"/>
+  <g font-family="Arial, sans-serif" fill="#123247" text-anchor="middle">
+    <text x="220" y="31" font-size="21" font-weight="700">Подсказка к задаче №5</text>
+    <rect x="30" y="50" width="236" height="58" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="148" y="73" font-size="18" font-weight="600">Кандидаты от 1<tspan x="148" dy="24">до меньшего числа</tspan></text>
+    <path d="M148 108V126" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <path d="M148 126L265 167L148 208L31 167Z" fill="#fff2d6" stroke="#9a641d" stroke-width="1.6"/>
+    <text x="148" y="161" font-size="18" font-weight="600">Следующий<tspan x="148" dy="24">кандидат есть?</tspan></text>
+    <path d="M265 167H347V237" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="306" y="155" font-size="17" font-weight="600">Нет</text>
+    <rect x="269" y="237" width="157" height="64" rx="8" fill="#e2f3eb" stroke="#287355" stroke-width="1.6"/>
+    <text x="347.5" y="263" font-size="18" font-weight="600">Вывести<tspan x="347.5" dy="24">делитель</tspan></text>
+    <path d="M148 208V231" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="177" y="224" font-size="17" font-weight="600">Да</text>
+    <path d="M148 231L255 276L148 321L41 276Z" fill="#fff2d6" stroke="#9a641d" stroke-width="1.6"/>
+    <text x="148" y="270" font-size="18" font-weight="600">Делит оба?<tspan x="148" dy="24">Остатки: ?</tspan></text>
+    <path d="M148 321V355" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="175" y="342" font-size="17" font-weight="600">Да</text>
+    <rect x="42" y="355" width="212" height="62" rx="8" fill="#e7f4fa" stroke="#397894" stroke-width="1.6"/>
+    <text x="148" y="380" font-size="18" font-weight="600">Запомнить кандидата<tspan x="148" dy="24">и продолжить</tspan></text>
+    <path d="M255 276H263V426H18V167H31" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="285" y="322" font-size="16" font-weight="600">Нет</text>
+    <path d="M42 386H18" fill="none" stroke="#24627d" stroke-width="2.2" stroke-linejoin="round"/>
+  </g>
+</svg>
