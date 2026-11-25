@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="270" viewBox="0 0 540 270" role="img" aria-labelledby="title desc">
+  <title id="title">Направления полей в плоской электромагнитной волне</title>
+  <desc id="desc">Электрическое поле показано вверх, магнитное поле — по наклонной оси, а распространение волны — вправо. Эти направления в пространстве взаимно перпендикулярны.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#1e3a8a"/>
+    </marker>
+  </defs>
+  <rect width="540" height="270" rx="16" fill="#f8fafc"/>
+  <g fill="none" stroke="#1e3a8a" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M220 134V52"/>
+    <path d="M220 134 113 208"/>
+    <path d="M220 134H484"/>
+  </g>
+  <circle cx="220" cy="134" r="5" fill="#1e3a8a"/>
+  <g fill="#172554" font-family="Arial, sans-serif" font-size="22">
+    <text x="237" y="48">E — электрическое поле</text>
+    <text x="30" y="242">B — магнитное поле</text>
+    <text x="277" y="121">Направление волны</text>
+  </g>
+</svg>

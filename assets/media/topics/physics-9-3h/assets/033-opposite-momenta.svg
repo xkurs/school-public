@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="185" viewBox="0 0 560 185" role="img" aria-labelledby="title desc">
+  <title id="title">Импульсы после выброса из покоя</title>
+  <desc id="desc">Выброшенная порция вещества получает импульс влево, оставшаяся часть тела — такой же по модулю импульс вправо.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#1d4ed8"/>
+    </marker>
+  </defs>
+  <rect width="560" height="185" rx="14" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#172554">
+    <text x="280" y="35" font-weight="bold">После выброса из покоя</text>
+    <text x="141" y="154">Порция вещества</text>
+    <text x="419" y="154">Оставшаяся часть</text>
+  </g>
+  <circle cx="206" cy="95" r="16" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="322" y="66" width="66" height="58" rx="9" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <g fill="none" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M177 95H63"/>
+    <path d="M403 95H517"/>
+  </g>
+</svg>

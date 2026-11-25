@@ -162,6 +162,11 @@
       "title": "25.11.2026"
     },
     {
+      "source": "schedules/personal/2026-11-26.md",
+      "output": "schedules/personal/2026-11-26.html",
+      "title": "26.11.2026"
+    },
+    {
       "source": "schedules/personal/2026-11-28.md",
       "output": "schedules/personal/2026-11-28.html",
       "title": "28.11.2026"
@@ -1727,6 +1732,11 @@
       "title": "Физика 11. Электромагнитная индукция. Магнитный поток. Закон Фарадея"
     },
     {
+      "source": "topics/physics-11-2h/023-electromagnetic-waves-and-spectrum.md",
+      "output": "topics/physics-11-2h/electromagnetic-waves-and-spectrum.html",
+      "title": "Электромагнитные волны, их свойства и скорость. Шкала электромагнитных волн"
+    },
+    {
       "source": "topics/physics-11-2h/012-free-mechanical-and-harmonic-oscillations.md",
       "output": "topics/physics-11-2h/free-mechanical-and-harmonic-oscillations.html",
       "title": "Свободные механические и гармонические колебания. Превращение энергии"
@@ -1865,6 +1875,11 @@
       "source": "topics/physics-7-2h/004-temperature-measurement-with-thermometer-and-sensor.md",
       "output": "topics/physics-7-2h/temperature-measurement-with-thermometer-and-sensor.html",
       "title": "Измерение температуры термометром и датчиком"
+    },
+    {
+      "source": "topics/physics-8-2h/023-air-humidity-problems.md",
+      "output": "topics/physics-8-2h/air-humidity-problems.html",
+      "title": "Решение задач на определение влажности воздуха"
     },
     {
       "source": "topics/physics-8-2h/001-basic-principles-of-molecular-kinetic-theory.md",
@@ -2020,6 +2035,11 @@
       "source": "topics/physics-9-3h/004-nonuniform-linear-motion-average-and-instantaneous-speed.md",
       "output": "topics/physics-9-3h/nonuniform-linear-motion-average-and-instantaneous-speed.html",
       "title": "Неравномерное прямолинейное движение"
+    },
+    {
+      "source": "topics/physics-9-3h/033-reaction-motion.md",
+      "output": "topics/physics-9-3h/reaction-motion.html",
+      "title": "Урок-конференция «Реактивное движение в природе и технике»"
     },
     {
       "source": "topics/physics-9-3h/020-sliding-friction-coefficient-lab.md",
@@ -2482,6 +2502,7 @@
     "topics/physics-11-2h/assets/017-rms-comparison.svg",
     "topics/physics-11-2h/assets/021-transverse-and-longitudinal-waves.svg",
     "topics/physics-11-2h/assets/021-wave-space-and-time.svg",
+    "topics/physics-11-2h/assets/023-electromagnetic-wave-directions.svg",
     "topics/physics-7-2h/assets/016-density-comparison.svg",
     "topics/physics-7-2h/assets/016-density-relations.svg",
     "topics/physics-7-2h/assets/016-displacement-volume.svg",
@@ -2502,10 +2523,11 @@
     "topics/physics-9-3h/assets/030-variant-2-coordinate.svg",
     "topics/physics-9-3h/assets/030-variant-2-velocity.svg",
     "topics/physics-9-3h/assets/031-elastic-and-inelastic-collisions.svg",
-    "topics/physics-9-3h/assets/032-opposite-momenta.svg"
+    "topics/physics-9-3h/assets/032-opposite-momenta.svg",
+    "topics/physics-9-3h/assets/033-opposite-momenta.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "30ea3dcee82eeb4b50d715402f8913ba78960cde339d17a8efc45bff4baa63d4",
+  "source_digest": "329ac9b7ce0175df684d8f9a3c495be337b6bb480b9ec954518d26bc99601f3f",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2593,6 +2615,7 @@
     "assets/media/topics/physics-11-2h/assets/017-rms-comparison.svg": "58974c7e9c7cec5dc1c4ecc179b71b240965a7db951089c39886e3a0134516df",
     "assets/media/topics/physics-11-2h/assets/021-transverse-and-longitudinal-waves.svg": "1707044af6cf29df68070863ccd365ba0c9b5766cba89ff1367df85bc2e6fd9d",
     "assets/media/topics/physics-11-2h/assets/021-wave-space-and-time.svg": "b7dfbb456894afb306f71ff07cf5b46e6838d94d3eb695d9bbed620193302b77",
+    "assets/media/topics/physics-11-2h/assets/023-electromagnetic-wave-directions.svg": "1e712ccdf9a741f42842d383a529956751a5c883122b5107075af5da21041ec4",
     "assets/media/topics/physics-7-2h/assets/016-density-comparison.svg": "cab5fd2aa7cceff3918b40b8c10cc3ad0fe68b08d9ea80b0c560367258e7dc7d",
     "assets/media/topics/physics-7-2h/assets/016-density-relations.svg": "37321f92b2879edec604b27d10d004d4d69004526f853fb37df6e7e69b79a38c",
     "assets/media/topics/physics-7-2h/assets/016-displacement-volume.svg": "a4ec81d812e628252211d1984cbab2e1255c3cb4ad7929a6975b0ff9c1d69c7b",
@@ -2614,14 +2637,15 @@
     "assets/media/topics/physics-9-3h/assets/030-variant-2-velocity.svg": "1e794132bb4ad2bfadeb62fdd8b5660310c4dee399659790fc68c3437791990c",
     "assets/media/topics/physics-9-3h/assets/031-elastic-and-inelastic-collisions.svg": "d4f9c0b641ab2c615895f640e2a8813aab881ec037ee007db6bf2685daca9ace",
     "assets/media/topics/physics-9-3h/assets/032-opposite-momenta.svg": "bfcd74b4f3d5da42d8667a452b3f17124996b40f258846c70012750010ca56f5",
+    "assets/media/topics/physics-9-3h/assets/033-opposite-momenta.svg": "f4362742b851fba2ecc7aa63dbd420be22a91e8dfa31d2d1f6024230dd14317e",
     "assets/offline.js": "032a1d98ff91bb1793d9c79fe1ec30587208609440453156c532c22ed28a3a29",
     "assets/site-qr.svg": "16bc79deb9d4a3b2a3335861d0950eeef92de31e7988e96c7eec68fd5bff3b21",
     "assets/style.css": "9f64a71622e15037ec206d9a705f18d1371ad74ae34043c7e7526b20e9211fe4",
-    "calendar/2026-10.html": "f57746f7e64fbc71818d13f25f11eed7a2b48252d420d893871ff8bb755536bb",
-    "calendar/2026-11.html": "220ff14512d12dc741727370ed4f00f16e0e2104b4f4d0a6dc6dee09730aa40a",
+    "calendar/2026-10.html": "a0b4f0a124c8274453f6476ce6c4c5840e6dfcc676fb04c2956358537229eb21",
+    "calendar/2026-11.html": "acd4aff5d4288d49707021a2e3858812fc3da593b3b2ef731a59271a83c5d726",
     "CNAME": "a88e58d2742981a3f92b2ca125fdde4b4072ab55106487f4973ceb23b7e66a12",
     "favicon.ico": "db28c1f3a1477b9fe964d09306431d787457f1e95d61dd0effcc461d20837f4c",
-    "index.html": "1ebfad7a52dd418978d92bb9d0112ee4770b0b52137932d47d69ee057a6610a4",
+    "index.html": "355a1e7cebe44d883f7dbed4d73700173fc80cd0b34781b6215132f537e74647",
     "manifest.webmanifest": "ba674853c58c5a3c0e5e39fead502e046df483b587a4424326be2fb40560a5e0",
     "qr.html": "549fe586e688c0cf7938d5be55f295609bfbf1fe238d507e722c8cd169a8c188",
     "schedules/personal/2026-10-14.html": "ac3bb7b43fc66286dee7dd406af63b67db61b077ccd7aa70722d83fc42622ca6",
@@ -2652,6 +2676,7 @@
     "schedules/personal/2026-11-23.html": "d0623571c1ad56aede308be67f9a2656cab4d4748afa67abbc7e50e578d9c790",
     "schedules/personal/2026-11-24.html": "940753a255a9dfbc54287133cb14535ea58527f5f62814f08c596cbf08b3c9f2",
     "schedules/personal/2026-11-25.html": "9ef06202aa72ec2f93a8dedc475200cb1bf38d773f39979cea5213eca28ace53",
+    "schedules/personal/2026-11-26.html": "c39a2cecc3081197a4e5818f1b889e38ae760a2879e8ce5db566270de43b4648",
     "schedules/personal/2026-11-28.html": "3480f42016dcf87ae534e67fe76913dc6108f7a6ef61d173e5398d09557279c0",
     "spo/001-mobile-app-types.html": "4c8b231f8a3104f28f80e65461a4df79d65dd4abef949f0487c9ba5be767c040",
     "spo/002-technology-choice-and-diagnostics.html": "394a7cdc6291fc7e162eaa99bf664e3034cbdc2aef25d47f22ffb0b77a3a2e06",
@@ -3349,7 +3374,7 @@
     "spo/assets/037-00-common-divisor-hint.svg": "78a8d2052d912151901581f9efc3a3938b8e1da7d9b26507f95438cd4a0ce729",
     "spo/assets/037-00-test-a-case-flow.svg": "4ab2a3e956a621b65291d171fa32c68f2624c66ff339baba381a37752cca4b5b",
     "spo/index.html": "95a794909ad63e7c00166bf7091b54031c3830b353db8ea8dc274be90043c027",
-    "sw.js": "491a3b29297f1997023cc8fbae5e363023837b143d0e63ba247b467583de5c3c",
+    "sw.js": "787135f7e10542dbe97ce0dc94e4208554c1a2dbf58603d848968eb7daf5a6c0",
     "topics/index.html": "e77b04bb2c4f69a5f6e78d10fab12e996ae17d255c4bf4e3997ba6744e859ea2",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "0bbe42f81771180014583c447a893e6369589c0fcd98298fdc550c2ecbc76cdb",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "ab69b7abfd625f5c3422c61e17df28e27f8a28da47e45385b4312e9853503ada",
@@ -3364,7 +3389,7 @@
     "topics/physics-10-2h/elastic-force-hookes-law-and-weight.html": "2aa55c7be98ee03389bc6930de3cbd59f4fe5b854a9b01b820652e08e4cb2d2a",
     "topics/physics-10-2h/friction-coefficient-and-fluid-resistance.html": "19c71c96cbadadf15a27d2110d911237c703b44381ae8ad708892f059096360b",
     "topics/physics-10-2h/galilean-relativity-inertial-frames-and-newtons-first-law.html": "71dc3b9e32d59f72c8dc5d9e0412fe14b2fa39e6f4b707c301a66f0c63cf3236",
-    "topics/physics-10-2h/index.html": "44dd852cb1cb9f327aaebf04e1543c0713a67a187bf263a22d100640fddeaf04",
+    "topics/physics-10-2h/index.html": "a1c18de3f0992ee593a0f85ff220232848d1b863fe9ba2721dc0f41874a06a1f",
     "topics/physics-10-2h/kinematics-dynamics-conservation-test.html": "f727fac9d98511499eb70accfae81e707d46f6b8c122209d6dd8debdf96f6ad0",
     "topics/physics-10-2h/mechanical-motion-relativity-displacement-velocity-and-acceleration.html": "d0232ea178aaf6ca9ecbbc79b22716ebbc30d69978666e58a7f8973a52dacb64",
     "topics/physics-10-2h/molecular-mass-and-avogadro-constant.html": "306cd33aabaabcde5e747dc0c2ca2ebf6259b2e2cfd54450dbcc37859e42f709",
@@ -3379,9 +3404,10 @@
     "topics/physics-11-2h/alternating-current-rms-and-power.html": "348f783a6fe2a488544cf5388df9e130e821730fecfa2815292c4b8a55623793",
     "topics/physics-11-2h/ampere-force-and-current-loop-in-magnetic-field.html": "b67827e5b8ccd96700f812a7cab4bfaae22c8d383b618acc36dcce20f90958f3",
     "topics/physics-11-2h/electromagnetic-induction-magnetic-flux-and-faradays-law.html": "58c52240a0ea4c9028f7e4971cf95367dec8a32a7e6007b94f5cfa441dc4edc1",
+    "topics/physics-11-2h/electromagnetic-waves-and-spectrum.html": "e23f1d7c6d7429e1c1a74090709aaa5adf98a284500cf33d835ad2798ad17ee2",
     "topics/physics-11-2h/free-mechanical-and-harmonic-oscillations.html": "9bc3ed2def7bf2d202f33fe9e3a7623aec4c3e7fcf1e2aa09679df123aad64a8",
     "topics/physics-11-2h/ideal-lc-circuit-and-oscillation-analogy.html": "f2112e3fe98ff3268d291bd349fdbc3c0ca08b84d0a0fe3e386fb5ba68c38e18",
-    "topics/physics-11-2h/index.html": "6d20b1c2385690499a539371f0afca94da1ac7b4633d3942d12d2c429f84f42b",
+    "topics/physics-11-2h/index.html": "696e272db52d3794cda7610151cb3f4bba76fad60a3dfb595cc0d6079958f082",
     "topics/physics-11-2h/inductance-self-induction-and-magnetic-field-energy.html": "f1efe6a93f3c1fc12b535d27c0ce2f74b1afb7d1f50ae59078f78f561b8f53ea",
     "topics/physics-11-2h/lorentz-force-and-its-work.html": "97611e67826226d73d1326e7589c7fe14743caac0fc17f9ba50fec68d7b8ac08",
     "topics/physics-11-2h/magnetic-field-and-electromagnetic-induction-test.html": "00dc14d9d4e03735f60b807e4a39c2305718c078b6dfdbf58d24b081e8de0fa2",
@@ -3407,6 +3433,7 @@
     "topics/physics-7-2h/speed-and-speed-units.html": "d52d8d6eb658967d2db4d2bb84c11967dafdc57256ecbb466d0d0cb6ef21bf89",
     "topics/physics-7-2h/structure-of-matter-and-discrete-model.html": "887f563ebf3adebd4c5db819d3dde6d8a86d5aa04af3cb42836020ee3e07aca1",
     "topics/physics-7-2h/temperature-measurement-with-thermometer-and-sensor.html": "275afce861f69b4f19d430bb624caf8332d12a3b8ad014bcae0966e268073be1",
+    "topics/physics-8-2h/air-humidity-problems.html": "419bfea7b5653b56793e1435f0d0998719c26aa7ce3262cbecdeb1f3a32b5d31",
     "topics/physics-8-2h/basic-principles-of-molecular-kinetic-theory.html": "2484683f8cafa0744be0f2f5b4c2cdb492b2342da97b7b799cc19a3e00081b84",
     "topics/physics-8-2h/boiling-and-specific-latent-heat.html": "676cada49efbaf104f1e2422457e9395c133abc77e05facb3b1de4f45005a785",
     "topics/physics-8-2h/crystalline-and-amorphous-bodies.html": "c2ec69df3865a41a948d4b02c9e84d1552645ab0a4f3aa971d6276f9c58b9335",
@@ -3415,7 +3442,7 @@
     "topics/physics-8-2h/heat-quantity-and-specific-heat-capacity.html": "f631128921ba9ab525903527902ce1ab610b657024576bf75d418a68bb020f2c",
     "topics/physics-8-2h/heating-and-cooling-heat-calculations.html": "0fffee21575d684ca533411942e21457fdf59d2d9ad699069bdbd7cdb26ab42a",
     "topics/physics-8-2h/ice-specific-latent-heat-lab.html": "1b6b5b71aa40aa3b463800bde7d10baf8cb33b777536f104cfcebcfb69ce085d",
-    "topics/physics-8-2h/index.html": "ff323f4b32dbb52225cf77aa26854ba3c4ad190be35774461828b22b0b6e42ec",
+    "topics/physics-8-2h/index.html": "6188dcdb367735522ae37f0ea7607805e975f98a652317cc4e502d980d535aec",
     "topics/physics-8-2h/internal-energy-and-ways-of-changing-it.html": "8654f3d290f20a2f9f80a7a2fc17bdfa0f2b28d053ee39e73fac38e5874ed9eb",
     "topics/physics-8-2h/mass-and-size-of-atoms-and-molecules.html": "bf99a6c4860196b6f326298844361844980a4f06af15a7f002697922af533037",
     "topics/physics-8-2h/melting-solidification-and-specific-latent-heat.html": "c75b016931e2c7067b6dd75472c70d7ff74b22448495ebdc7c41c218b5cc7979",
@@ -3429,7 +3456,7 @@
     "topics/physics-9-3h/friction-force.html": "708bcdf22870363760014e2a2d9fb7b4cd73de5d3616269fabb170d28a1b8269",
     "topics/physics-9-3h/gravity-and-universal-gravitation-problems.html": "ec981e785ade6a9d1570f8f681d5326e5ffc9a1a010507628aef763ef74761c7",
     "topics/physics-9-3h/gravity-and-universal-gravitation.html": "34497dbdf1a7cb59882e3565caac2a0d28f70239f23b3f24af9bb175e7dc5bfb",
-    "topics/physics-9-3h/index.html": "804f6cc2224e74b111a6eec9936c8f28a4fbf0830a91da8c19faf284fe8c450b",
+    "topics/physics-9-3h/index.html": "b3651bab6f57009390dab85a0a0fc315413bf19642c65c8991050f7d09e4d2e7",
     "topics/physics-9-3h/mechanical-motion-and-material-point.html": "e03bbc4b33c685d47be5d7d84f7b3f66d095d015fa83900f3d77488849be2edb",
     "topics/physics-9-3h/momentum-and-collisions.html": "7cada2155ebae17434ad04d141f881d9e1e27c49b641fcaf2f132a3498055f0a",
     "topics/physics-9-3h/momentum-conservation-problems.html": "39ba94db34c6ca82633b69fb259bfa6dd9d2e9f076e737e7e35ff17cfff7d459",
@@ -3438,6 +3465,7 @@
     "topics/physics-9-3h/newtons-first-law-and-force-vector.html": "35a5b3afbc949528499ca883d5393dfc68a4b31149120d3a808feb8a185d3c05",
     "topics/physics-9-3h/newtons-laws-elasticity-and-friction-problems.html": "bfbaf36df07819c29f54c5c037ee85411ed27614bfd13a0c9c8c3940e165e085",
     "topics/physics-9-3h/nonuniform-linear-motion-average-and-instantaneous-speed.html": "e7fc1a02360fcc20f8dbbe033a337251b5114ef7750500453c9cac1c3700e835",
+    "topics/physics-9-3h/reaction-motion.html": "92ddac0ce480e8d84206cf1e203d74920fecac7d6963e04faa7862c3fababa9b",
     "topics/physics-9-3h/sliding-friction-coefficient-lab.html": "f872a06c7c5ad1629cb59d775bc6df13a441db8a73f78d20cf83f699b75d4482",
     "topics/physics-9-3h/speed-of-uniformly-accelerated-motion-and-velocity-graph.html": "ad653dd9b144e42120a254e06bb2bb628833c222cd88d9a1968bce12140d12df",
     "topics/physics-9-3h/spring-stiffness-lab.html": "e9230b7c74bce91e3690d4e8064ff4525e0f2ff90ed61542f5140e4b3c77c864",
@@ -3445,5 +3473,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "08c9f3d77717f91f658b494a96538fdd210eb1ea76afdd29bb1c8911a107103c",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "641ad2b8db03fd19f832c6f9d5267f9bc080dca1afb067edfe2514cbbe793a42"
   },
-  "manifest_digest": "eab5310c7ed41b7cb1dd9d35566ff9a12455d157d164c3f7ed6c8e044a368a8f"
+  "manifest_digest": "00cf8b6fd09097b44f54d794afbb4937be8ea3c1b195fcec4127ecf1ac852259"
 }
