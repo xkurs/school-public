@@ -19,13 +19,18 @@
   <a class="skip-link" href="#main-content">К содержанию</a>
   <header class="site-header">
     <p class="site-title"><span class="site-wordmark">shkolar<img class="site-brand-icon" src="../assets/icons/header-tree.png" alt=".">site</span></p>
+    <nav class="site-section-links" aria-label="Разделы сайта">
+      <a href="index.html">СПО</a>
+      <a href="../topics/index.html">Школа</a>
+      <a href="../qr.html">QR</a>
+    </nav>
     <section class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
       <p id="site-update-status" role="status" aria-live="polite"></p>
       <button type="button" id="site-update-reload" hidden>Обновить версию</button>
     </section>
   </header>
   <div class="layout">
-    <main id="main-content"><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">024-form-submit-and-error-messages</li></ol></nav><h1 id="обработка-формы-и-вывод-результата-с-сообщениями-об-ошибках">Обработка формы и вывод результата с сообщениями об ошибках</h1>
+    <main id="main-content"><h1 id="обработка-формы-и-вывод-результата-с-сообщениями-об-ошибках">Обработка формы и вывод результата с сообщениями об ошибках</h1>
 <p><strong>Сегодня форма начнёт отвечать на нажатие кнопки.</strong> Продолжайте свою папку проекта и свой <code>form.html</code> после пары 14. Функция <code>getResult</code> и две числовые величины уже написаны на паре 20; перенесём их в новый файл без изменений.</p>
 <p><strong>Результат:</strong> при отправке формы страница не перезагружается, а под кнопкой появляется сообщение с названием выбранной позиции и итогом или причиной отказа. Рабочий ритм: <strong>изменить → сохранить → обновить страницу → проверить</strong>. Новый файл один — <code>form.js</code> рядом с <code>form.html</code>. Прежние <code>conditions.js</code>, <code>catalog.js</code> и <code>script.js</code> сохраните.</p>
 <h2 id="1-место-для-сообщения">1. Место для сообщения</h2>
@@ -215,12 +220,7 @@
 <td>Забыли вернуть <code>required</code> или убрать <code>novalidate</code></td>
 </tr>
 </tbody>
-</table></main>
+</table><nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">024-form-submit-and-error-messages</li></ol></nav></main>
   </div>
-  <footer class="site-footer">
-    <a href="../qr.html">QR</a>
-    <a href="../topics/index.html">Школа</a>
-    <a href="index.html">СПО</a>
-  </footer>
 </body>
 </html>

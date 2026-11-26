@@ -171,7 +171,7 @@ main {
 }
 
 .breadcrumbs {
-  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
   color: #526176;
   font-size: 0.9rem;
   overflow-wrap: anywhere;
@@ -534,19 +534,16 @@ aside.callout {
 .screen-preview:has(.choice-routes:checked) .panel-routes,
 .screen-preview:has(.choice-booking:checked) .panel-booking { display: block; }
 
-.site-footer {
+.site-section-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  width: min(72rem, calc(100% - 2rem));
-  margin: 1rem auto;
-  padding-top: .5rem;
-  color: #34475a;
+  max-width: 100%;
   font-size: .875rem;
 }
-.site-footer a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+.site-section-links a { display: inline-flex; align-items: center; min-height: 2.75rem; }
 
 .site-updates {
   text-align: center;

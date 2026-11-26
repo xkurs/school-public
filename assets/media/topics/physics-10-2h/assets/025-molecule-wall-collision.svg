@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 256" role="img" aria-labelledby="title description">
+  <title id="title">Упругий удар молекулы о стенку</title>
+  <desc id="description">Верхняя стрелка показывает движение к стенке, нижняя — отскок. Стрелка внизу направлена вправо и показывает импульс, переданный стенке.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#175477"/>
+    </marker>
+    <marker id="wall-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#843d16"/>
+    </marker>
+  </defs>
+  <rect width="400" height="256" rx="12" fill="#f5f8fc"/>
+  <rect x="309" y="40" width="29" height="151" fill="#d6e0e9"/>
+  <path d="M309 40v151" stroke="#304962" stroke-width="4"/>
+  <g font-family="system-ui, sans-serif" font-size="19" fill="#172c3e">
+    <text x="323" y="27" text-anchor="middle">Стенка</text>
+    <text x="20" y="65">До удара</text>
+    <text x="20" y="139">После удара</text>
+    <text x="20" y="230">Импульс стенке</text>
+    <text x="190" y="84" text-anchor="middle">vₓ</text>
+    <text x="190" y="159" text-anchor="middle">−vₓ</text>
+  </g>
+  <g fill="#175477">
+    <circle cx="86" cy="103" r="8"/>
+    <circle cx="285" cy="177" r="8"/>
+  </g>
+  <g stroke="#175477" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M106 103H286"/>
+    <path d="M265 177H85"/>
+  </g>
+  <path d="M213 223H350" stroke="#843d16" stroke-width="4" marker-end="url(#wall-arrow)"/>
+</svg>

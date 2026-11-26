@@ -16,8 +16,6 @@
   let checking = false;
   let lastCheck = 0;
   let changed = false;
-  let statusEpoch = 0;
-  let version = "";
   const watched = new WeakSet();
   function show(message = "", updating = false, offerReload = false) {
     if (panel) panel.hidden = !message && !offerReload;
@@ -30,23 +28,7 @@
       reload.hidden = !offerReload;
     }
   }
-  function ask(worker) {
-    return new Promise(resolve => {
-      if (!worker || typeof MessageChannel === "undefined") return resolve(null);
-      const channel = new MessageChannel();
-      const finish = value => {
-        clearTimeout(timer);
-        channel.port1.close();
-        resolve(value);
-      };
-      const timer = setTimeout(() => finish(null), 2500);
-      channel.port1.onmessage = event => finish(event.data);
-      try { worker.postMessage({ type: "GET_STATUS" }, [channel.port2]); }
-      catch { finish(null); }
-    });
-  }
-  async function showState() {
-    const epoch = ++statusEpoch;
+  function showState() {
     if (registration?.installing && registration.installing.state !== "redundant") {
       show("Идёт обновление", true);
       return;
@@ -55,11 +37,7 @@
       show("", false, true);
       return;
     }
-    if (changed) { show("", false, true); return; }
-    const state = await ask(registration?.active || navigator.serviceWorker.controller);
-    if (epoch !== statusEpoch) return;
-    if (state?.ready && /^[a-f0-9]{64}$/.test(state.version)) version = state.version.slice(0, 12);
-    show(version ? "Версия " + version : "");
+    show("", false, changed);
   }
   function watch(worker) {
     if (!worker || watched.has(worker)) return;
@@ -84,20 +62,20 @@
     // with another update, especially when several tabs regain connectivity.
     if ((registration.installing && registration.installing.state !== "redundant") || registration.waiting) {
       activateWaiting();
-      await showState();
+      showState();
       return;
     }
     if (!force && Date.now() - lastCheck < 60000) return;
     lastCheck = Date.now();
-    if (navigator.onLine === false) { await showState(); return; }
+    if (navigator.onLine === false) { showState(); return; }
     checking = true;
     try {
       await registration.update();
       watch(registration.installing);
       activateWaiting();
-      await showState();
+      showState();
     } catch {
-      await showState();
+      showState();
     } finally {
       checking = false;
     }
