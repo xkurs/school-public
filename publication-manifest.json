@@ -2538,7 +2538,7 @@
     "topics/physics-9-3h/assets/033-opposite-momenta.svg"
   ],
   "stamp_version": 1,
-  "source_digest": "0e179df5a0ff70aa19b28c71fecbcf8f968aec62a114a7215c2b77f2529bc76b",
+  "source_digest": "193a51b2cd9fc738bc146c54ba09abc54e967b1b678cdb5ba9b104967fd2db27",
   "output_files": {
     ".gitattributes": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -2652,7 +2652,7 @@
     "assets/media/topics/physics-9-3h/assets/033-opposite-momenta.svg": "f4362742b851fba2ecc7aa63dbd420be22a91e8dfa31d2d1f6024230dd14317e",
     "assets/offline.js": "db55ca0e8d04ac811e481082f816f97396483e28567d454ffe3c34c46a5bb5a9",
     "assets/site-qr.svg": "16bc79deb9d4a3b2a3335861d0950eeef92de31e7988e96c7eec68fd5bff3b21",
-    "assets/style.css": "2e4ef2092a360f2724f8320da84c7047fa22459d9fde1c69a139c8a038908b17",
+    "assets/style.css": "f2ff4a8af253cc548659d97597dffa5745a816bcedfe31a4b817e92f0bb9ec8c",
     "calendar/2026-10.html": "b502fadbefb7a4939aec494014d4f89dbdbe58dd8b3ccf5ebb77afceca2d7dae",
     "calendar/2026-11.html": "b0e2a5e8ff7e6a995a2b942de02a5ade2d92263c052392a46f59103a75a35feb",
     "CNAME": "a88e58d2742981a3f92b2ca125fdde4b4072ab55106487f4973ceb23b7e66a12",
@@ -3387,7 +3387,7 @@
     "spo/assets/037-00-common-divisor-hint.svg": "78a8d2052d912151901581f9efc3a3938b8e1da7d9b26507f95438cd4a0ce729",
     "spo/assets/037-00-test-a-case-flow.svg": "4ab2a3e956a621b65291d171fa32c68f2624c66ff339baba381a37752cca4b5b",
     "spo/index.html": "2213610eb0aba8ebcdbd7503b403fc39dbae073c6bc589894c9a2de9190fba3f",
-    "sw.js": "0666d23f9f8a5d051e8e9a3fce601e104eef01715d01ae75b8008b46e57409d3",
+    "sw.js": "ce3cb9004f4d01962c3fb318541376987ed3822ec9e226b064b9835ba5293dea",
     "topics/index.html": "fcd82d04b472797fc6d857a7ad6f5912f188f67efaba1a69100b32dec5905fcf",
     "topics/informatics-10-1h/computer-safety-and-principles-of-operation.html": "6c87889dee1e3ccde9539c307c373a415535b4d0ef79c359cff2b6ea06ead7a3",
     "topics/informatics-10-1h/computer-technology-development-trends.html": "4559e7213a947572e1316c0ec07c3ef70ad0f26f156a2e0d8792f1ede43e2a43",
@@ -3487,5 +3487,5 @@
     "topics/physics-9-3h/uniform-rectilinear-motion.html": "ab3003b250d796f12a19da59e956a0026bfe6b78ab0e4afdc6e44791784107d2",
     "topics/physics-9-3h/uniformly-accelerated-motion-and-acceleration.html": "b3fb531d129b709b5ab57508ac4f0b42fd02946169f1755ee089a540ab2e8aea"
   },
-  "manifest_digest": "12b05becee865042f19ed7a63ff541a149d51bbf0a81bae6a123a91148f5750c"
+  "manifest_digest": "e4a07eae586ec6d3ed062e4072dbcebe533fc27fba0f1216da1d8cf9eec0a091"
 }
