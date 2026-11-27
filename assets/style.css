@@ -156,7 +156,7 @@ main img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-inline: auto;
+  margin-inline: 0;
 }
 
 main mark {
@@ -268,7 +268,7 @@ table {
   display: block;
   width: max-content;
   max-width: 100%;
-  margin-inline: auto;
+  margin-inline: 0;
   overflow-x: auto;
   border-collapse: collapse;
 }
@@ -418,7 +418,7 @@ pre {
   display: block;
   width: min(100%, 640px);
   height: auto;
-  margin: 1rem auto;
+  margin-block: 1rem;
 }
 .visual-lesson .callout {
   border-radius: .3rem;
@@ -538,7 +538,7 @@ aside.callout {
 .screen-choice:focus-visible + .screen-tab { outline: 3px solid #3182ce; outline-offset: 3px; }
 .screen-panel { display: none; }
 .screen-panels { padding-block: 1rem; }
-.screen-panel img { display: block; width: min(100%, 360px); height: auto; margin-inline: auto; }
+.screen-panel img { display: block; width: min(100%, 360px); height: auto; }
 .screen-preview:has(.choice-home:checked) .panel-home,
 .screen-preview:has(.choice-routes:checked) .panel-routes,
 .screen-preview:has(.choice-booking:checked) .panel-booking { display: block; }
