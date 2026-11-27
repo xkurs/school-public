@@ -76,6 +76,10 @@ ol.calendar-grid { list-style: none; margin: .5rem 0 0; padding: 0; }
   .calendar-controls, .calendar-weekdays, .calendar-grid { gap: .2rem; }
   .calendar-day > time, .calendar-day > a { padding: .3rem .15rem; justify-content: center; }
 }
+@media (min-width: 48rem) and (hover: hover) and (pointer: fine) {
+  .calendar-start .calendar-controls button,
+  .calendar-start .calendar-day { min-height: 4.125rem; }
+}
 
 body {
   margin: 0;
