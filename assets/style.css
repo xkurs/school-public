@@ -138,8 +138,9 @@ body {
 }
 
 .layout {
+  --content-padding: clamp(1rem, 3vw, 2.5rem);
   width: min(72rem, calc(100% - 2rem));
-  margin: 1.5rem auto;
+  margin: .75rem auto 1.5rem;
 }
 
 main {
@@ -167,11 +168,15 @@ main mark {
 
 main {
   min-width: 0;
-  padding: clamp(1rem, 3vw, 2.5rem);
+  padding: var(--content-padding);
 }
+
+main > h1:first-child { margin-block-start: 0; }
+main > :last-child { margin-block-end: 0; }
 
 .breadcrumbs {
   margin-top: 1.25rem;
+  padding-inline: var(--content-padding);
   color: #526176;
   font-size: 0.9rem;
   overflow-wrap: anywhere;
