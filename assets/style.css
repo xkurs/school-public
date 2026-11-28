@@ -568,7 +568,7 @@ aside.callout {
 }
 #site-update-status { max-width: 72rem; margin: 0 auto; }
 .site-quote {
-  margin: 0 auto .75rem;
+  margin: 0 auto 1.5rem;
   max-width: 48rem;
   text-align: center;
   color: #102f51;
