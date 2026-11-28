@@ -1,4 +1,4 @@
-/* Fresh online pages, verified offline snapshots, and explicit update controls. */
+/* Fresh online pages, verified offline snapshots, and automatic page refresh. */
 (() => {
   "use strict";
   const script = document.currentScript;
@@ -10,45 +10,27 @@
   const root = new URL("../", script.src);
   if (root.origin !== page.origin) return;
   const panel = document.getElementById?.("site-updates");
-  const status = document.getElementById?.("site-update-status");
-  const reload = document.getElementById?.("site-update-reload");
   let registration;
   let checking = false;
   let lastCheck = 0;
-  let changed = false;
+  let controller = navigator.serviceWorker.controller;
+  let reloading = false;
   const watched = new WeakSet();
-  function show(message = "", updating = false, offerReload = false) {
-    if (panel) panel.hidden = !message && !offerReload;
-    if (status) {
-      status.textContent = message;
-      status.hidden = !message;
-      status.className = updating ? "is-updating" : "";
-    }
-    if (reload) {
-      reload.hidden = !offerReload;
-    }
+  function updateInProgress() {
+    return Boolean(
+      (registration?.installing && registration.installing.state !== "redundant") ||
+      registration?.waiting || registration?.active?.state === "activating"
+    );
   }
   function showState() {
-    if (registration?.installing && registration.installing.state !== "redundant") {
-      show("Идёт обновление", true);
-      return;
-    }
-    if (registration?.waiting) {
-      show("", false, true);
-      return;
-    }
-    show("", false, changed);
+    if (panel) panel.hidden = !updateInProgress();
   }
   function watch(worker) {
     if (!worker || watched.has(worker)) return;
     watched.add(worker);
     worker.addEventListener("statechange", () => {
-      if (worker.state === "redundant") {
-        showState();
-      } else {
-        activateWaiting();
-        showState();
-      }
+      if (worker.state !== "redundant") activateWaiting();
+      showState();
     });
   }
   function activateWaiting() {
@@ -60,7 +42,7 @@
     if (!registration || checking) return;
     // Registration already checks on page load. Avoid overlapping that install
     // with another update, especially when several tabs regain connectivity.
-    if ((registration.installing && registration.installing.state !== "redundant") || registration.waiting) {
+    if (updateInProgress()) {
       activateWaiting();
       showState();
       return;
@@ -80,19 +62,25 @@
       checking = false;
     }
   }
-  reload?.addEventListener("click", () => {
-    activateWaiting();
-    location.reload();
-  });
   navigator.serviceWorker.addEventListener?.("controllerchange", () => {
-    changed = true;
-    showState(); // Never interrupt a lesson by reloading automatically.
+    const next = navigator.serviceWorker.controller;
+    // Initial installation can claim the page without making its document stale.
+    const replaced = controller && next && controller !== next;
+    controller = next;
+    if (replaced && !reloading) {
+      reloading = true;
+      location.reload();
+    } else {
+      showState();
+    }
   });
   navigator.serviceWorker.register(new URL("sw.js", root).href, {
     scope: root.href, updateViaCache: "none"
   }).then(result => {
     registration = result;
     watch(result.installing);
+    watch(result.waiting);
+    watch(result.active);
     activateWaiting();
     result.addEventListener?.("updatefound", () => {
       watch(result.installing);

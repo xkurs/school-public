@@ -566,9 +566,8 @@ aside.callout {
   font-size: 1rem;
   overflow-wrap: anywhere;
 }
-#site-update-status { max-width: 72rem; margin: 0 auto; }
 .site-quote {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto;
   max-width: 48rem;
   text-align: center;
   color: #102f51;
@@ -643,37 +642,7 @@ aside.callout {
   outline: 2px solid #075db8;
   outline-offset: 4px;
 }
-.site-updates .is-updating {
-  color: #b91c1c;
-  animation: update-pulse 1.5s ease-in-out infinite;
-}
-@keyframes update-pulse {
-  50% { opacity: .4; }
-}
-.site-updates button {
-  min-height: 2.75rem;
-  padding: .25rem .85rem;
-  margin: 0.2rem;
-  border: 1px solid #607386;
-  border-radius: 0.3rem;
-  background: #fff;
-  color: #243647;
-  font: inherit;
-  cursor: pointer;
-}
-.site-updates #site-update-reload {
-  background: transparent;
-  border-color: #b91c1c;
-  color: #b91c1c;
-  animation: update-pulse 1.5s ease-in-out infinite;
-}
-@media (prefers-reduced-motion: reduce) {
-  .site-updates .is-updating,
-  .site-updates #site-update-reload { animation: none; }
-}
-.site-updates button:focus-visible { outline: 3px solid #3182ce; outline-offset: 3px; }
-.site-updates button:disabled { opacity: 0.65; cursor: wait; }
-.site-updates[hidden], .site-updates button[hidden] { display: none; }
+.site-updates[hidden] { display: none; }
 
 @media (max-width: 48rem) {
   .section-cards {
