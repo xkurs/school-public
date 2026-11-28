@@ -173,6 +173,7 @@ main {
   padding: var(--content-padding);
 }
 
+main h1 { overflow-wrap: anywhere; }
 main > h1:first-child { margin-block-start: 0; }
 main > :last-child { margin-block-end: 0; }
 

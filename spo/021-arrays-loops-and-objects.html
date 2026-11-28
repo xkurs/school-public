@@ -31,52 +31,8 @@
   </header>
   <div class="layout">
     <main id="main-content"><div class="lesson-code-style"><h1 id="javascript-массивы-циклы-и-простые-объекты">JavaScript — массивы, циклы и простые объекты</h1>
-<p><a id="individual-assignments"></a></p>
-<details class="callout" data-callout="example">
-<summary class="callout-title">Индивидуальные задания</summary><ul>
-<li><a href="assets/021-01.html">Вариант 01</a></li>
-<li><a href="assets/021-02.html">Вариант 02</a></li>
-<li><a href="assets/021-03.html">Вариант 03</a></li>
-<li><a href="assets/021-04.html">Вариант 04</a></li>
-<li><a href="assets/021-05.html">Вариант 05</a></li>
-<li><a href="assets/021-06.html">Вариант 06</a></li>
-<li><a href="assets/021-07.html">Вариант 07</a></li>
-<li><a href="assets/021-08.html">Вариант 08</a></li>
-<li><a href="assets/021-09.html">Вариант 09</a></li>
-<li><a href="assets/021-10.html">Вариант 10</a></li>
-<li><a href="assets/021-11.html">Вариант 11</a></li>
-<li><a href="assets/021-12.html">Вариант 12</a></li>
-<li><a href="assets/021-13.html">Вариант 13</a></li>
-<li><a href="assets/021-14.html">Вариант 14</a></li>
-<li><a href="assets/021-15.html">Вариант 15</a></li>
-<li><a href="assets/021-16.html">Вариант 16</a></li>
-<li><a href="assets/021-17.html">Вариант 17</a></li>
-<li><a href="assets/021-18.html">Вариант 18</a></li>
-<li><a href="assets/021-19.html">Вариант 19</a></li>
-<li><a href="assets/021-20.html">Вариант 20</a></li>
-<li><a href="assets/021-21.html">Вариант 21</a></li>
-<li><a href="assets/021-22.html">Вариант 22</a></li>
-<li><a href="assets/021-23.html">Вариант 23</a></li>
-<li><a href="assets/021-24.html">Вариант 24</a></li>
-<li><a href="assets/021-25.html">Вариант 25</a></li>
-<li><a href="assets/021-26.html">Вариант 26</a></li>
-<li><a href="assets/021-27.html">Вариант 27</a></li>
-<li><a href="assets/021-28.html">Вариант 28</a></li>
-<li><a href="assets/021-29.html">Вариант 29</a></li>
-<li><a href="assets/021-30.html">Вариант 30</a></li>
-<li><a href="assets/021-31.html">Вариант 31</a></li>
-<li><a href="assets/021-32.html">Вариант 32</a></li>
-<li><a href="assets/021-33.html">Вариант 33</a></li>
-<li><a href="assets/021-34.html">Вариант 34</a></li>
-<li><a href="assets/021-35.html">Вариант 35</a></li>
-<li><a href="assets/021-36.html">Вариант 36</a></li>
-<li><a href="assets/021-37.html">Вариант 37</a></li>
-<li><a href="assets/021-38.html">Вариант 38</a></li>
-<li><a href="assets/021-39.html">Вариант 39</a></li>
-</ul>
-</details>
 <p>Свяжем функцию <code class="code-inline language-javascript"><span class="nx">getResult</span></code> из <a href="020-conditions-and-functions.html">пары 20</a> с каталогом: карточки → объекты → массив → цикл → расчёт выбранной записи.</p>
-<p><strong>Результат:</strong> <code>catalog.js</code> в своей папке <code>VariantNN-web</code>: три карточки, общий вывод, выбор по названию и расчёт. Карточки берите из своего <code>catalog.html</code> и листа пары 18; числа — из <a href="021-arrays-loops-and-objects.html#individual-assignments">своего листа пары 21</a>. Номер и данные прежнего проекта сохраняются. <a href="assets/021-00.html">Пример 00</a> — отдельное учебное задание.</p>
+<p><strong>Результат:</strong> <code>catalog.js</code> в своей папке <code>VariantNN-web</code>: три карточки, общий вывод, выбор по названию и расчёт. Карточки возьмите из своего <code>catalog.html</code>, числа — из расчёта пары 20. Если своего проекта нет, используйте данные из раздела <a href="021-arrays-loops-and-objects.html#%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80">«Демонстрационный пример»</a>.</p>
 <p>Три карточки каталога и шесть элементов формы — разные вещи. Данные из HTML переносите вручную; сегодня программа выводит в консоль, страницу не меняет.</p>
 <h2 id="1-подготовьте-запуск-и-сохраните-работающую-функцию">1. Подготовьте запуск и сохраните работающую функцию</h2>
 <p><strong>Проверьте:</strong> откройте главную и консоль (<code>F12</code> → <strong>Console / Консоль</strong>). В <code>conditions.js</code> должны работать свой расчёт и ошибка пустого количества.</p>
@@ -168,12 +124,12 @@
 <h2 id="5-соедините-выбранную-карточку-с-расчётом-пары-20">5. Соедините выбранную карточку с расчётом пары 20</h2>
 <p>Схема показывает весь алгоритм; сначала добавьте выбор и вызов, затем счётчик из шага 6. Готовая функция пары 20 остаётся отдельным блоком.</p>
 <p><img alt="Цикл с возвратом обеих ветвей к следующей карточке и вызовом функции только при совпадении" src="assets/021-00-catalog-loop.svg"></p>
-<p>После массива, <strong>до цикла</strong>, объявите данные выбора по своему листу пары 19:</p>
+<p>После массива, <strong>до цикла</strong>, объявите данные выбора по данным расчёта пары 19:</p>
 <table>
 <thead>
 <tr>
 <th>Имя в программе</th>
-<th>Данные своего листа</th>
+<th>Данные расчёта</th>
 </tr>
 </thead>
 <tbody>
@@ -372,7 +328,108 @@
 <p><img alt="Выбор записи, цикл, вызов расчёта и проверка счётчика, третья часть catalog.js." src="assets/021-00-code-js-03-f3148a083a8a54fc1db79863da787a010c4274f366df70862db344451b746370.png"></p>
 <p><a href="assets/021-00-code-js-03-f3148a083a8a54fc1db79863da787a010c4274f366df70862db344451b746370.png">Открыть обход и итог крупно</a></p>
 </details>
-<p>В опыте с повторяющимся названием намеренно получаются два расчёта: счётчик выявляет неоднозначные данные, а не блокирует выполнение заранее. После опыта восстановите название второй записи. Если трудно проследить весь цикл, отдельно разберите один проход с несовпадением и один с совпадением. Затем выполните программу и сверьте результат.</p></div></main>
+<p>В опыте с повторяющимся названием намеренно получаются два расчёта: счётчик выявляет неоднозначные данные, а не блокирует выполнение заранее. После опыта восстановите название второй записи. Если трудно проследить весь цикл, отдельно разберите один проход с несовпадением и один с совпадением. Затем выполните программу и сверьте результат.</p>
+<h2 id="демонстрационный-пример">Демонстрационный пример</h2>
+<details>
+<summary>Открыть пример</summary>
+<p><strong>Постоянный пример преподавателя.</strong> Тема учебных наборов продолжает <a href="020-conditions-and-functions.html#%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80">пару 20</a>. Номер 00 студентам не назначается: в своём проекте используйте собственные карточки и данные пары 19.</p>
+<h3 id="задание">Задание</h3>
+<p>Создайте небольшой консольный каталог учебных наборов. Программа должна хранить три карточки массивом объектов, показать все карточки одним циклом, найти выбранный набор по точному названию и рассчитать результат только для него функцией пары 20. В конце покажите, сколько записей совпало с выбранным названием. При отсутствии совпадений сообщите об этом; при нескольких — предупредите о повторяющихся названиях.</p>
+<p>Программа получает количество как строку в коде. Форма, DOM и события пока не используются. Итог появляется в консоли, а не на HTML-странице.</p>
+<h3 id="данные-карточек">Данные карточек</h3>
+<p>Все названия и характеристики синтетические. У каждого объекта одинаковые свойства: <code class="code-inline language-javascript"><span class="nx">position</span></code>, <code class="code-inline language-javascript"><span class="nx">name</span></code>, <code class="code-inline language-javascript"><span class="nx">specs</span></code>, <code class="code-inline language-javascript"><span class="nx">description</span></code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><code class="code-inline language-javascript"><span class="nx">position</span></code></th>
+<th><code class="code-inline language-javascript"><span class="nx">name</span></code></th>
+<th><code class="code-inline language-javascript"><span class="nx">specs</span></code></th>
+<th><code class="code-inline language-javascript"><span class="nx">description</span></code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Базовый набор</td>
+<td>Для одного участника</td>
+<td>Материалы для первого упражнения</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Расширенный набор</td>
+<td>Для двух участников</td>
+<td>Материалы для совместного упражнения</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Набор для команды</td>
+<td>Для небольшой группы</td>
+<td>Материалы для общего проекта</td>
+</tr>
+</tbody>
+</table>
+<p>Данные выбора: <code class="code-inline language-javascript"><span class="nx">selectedName</span></code> — «Базовый набор», <code class="code-inline language-javascript"><span class="nx">quantityText</span></code> — <code class="code-inline language-javascript"><span class="s2">&quot;2&quot;</span></code>, <code class="code-inline language-javascript"><span class="nx">unitValue</span></code> — 150 условных рублей за набор, <code class="code-inline language-javascript"><span class="nx">extraValue</span></code> — 50 условных рублей за одну доставку всего заказа. Цены известны только для выбранного базового набора; характеристик остальных наборов они не определяют. Не добавляйте цену каждому объекту.</p>
+<p>Используйте уже собранную функцию <code class="code-inline language-javascript"><span class="nf">getResult</span><span class="p">(</span><span class="nx">quantityText</span><span class="p">,</span><span class="w"> </span><span class="nx">unitAmount</span><span class="p">,</span><span class="w"> </span><span class="nx">extraAmount</span><span class="p">)</span></code>. Она проверяет пустой ввод, преобразование в конечное число и положительное целое количество. При ошибке возвращает текст причины, при успехе — строку <code>Итого:</code> с результатом формулы «значение на единицу × количество + одна общая добавка».</p>
+<h3 id="порядок-выполнения">Порядок выполнения</h3>
+<ol>
+<li>Создайте <code>catalog.js</code> рядом с учебной HTML-страницей и подключите его в <code class="code-inline language-javascript"><span class="nx">head</span></code> через <code class="code-inline language-javascript"><span class="nx">script</span></code> с <code class="code-inline language-javascript"><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;catalog.js&quot;</span></code> и <code class="code-inline language-javascript"><span class="nx">defer</span></code>. Для отдельного показа достаточно страницы с заголовком «Учебный каталог» и пояснением о консоли; HTML не должен содержать готовый вычисленный итог.</li>
+<li>Перенесите собственное объявление функции пары 20, сохранив её контракт. Ниже создайте массив <code class="code-inline language-javascript"><span class="nx">catalog</span></code> из трёх объектов по таблице.</li>
+<li>Через индекс выведите название первой и последней записи, убедитесь в правильности, затем уберите временный вывод.</li>
+<li>Объявите данные выбора и <code class="code-inline language-javascript"><span class="nx">foundCount</span></code>, начав счётчик с нуля. Покажите количество объектов массива.</li>
+<li>Напишите один <code class="code-inline language-javascript"><span class="k">for</span><span class="p">...</span><span class="k">of</span></code>: для каждого объекта покажите номер и название, характеристику и описание.</li>
+<li>В том же цикле сравните название текущего объекта с <code class="code-inline language-javascript"><span class="nx">selectedName</span></code>. Только при совпадении увеличьте счётчик, выведите выбранное название и возвращённое функцией сообщение. Аргументы вызова: строковое количество, <code class="code-inline language-javascript"><span class="nx">unitValue</span></code>, <code class="code-inline language-javascript"><span class="nx">extraValue</span></code>. Отдельно поясните единицу расчёта — условные рубли.</li>
+<li>После цикла выведите счётчик, сообщение при нуле и предупреждение при значении больше одного.</li>
+</ol>
+<p>Не вписывайте сумму 350 прямо в команду вывода: она должна получиться вычислением. Не печатайте карточки тремя независимыми готовыми блоками: повторение выполняет цикл.</p>
+<h3 id="ожидаемый-результат">Ожидаемый результат</h3>
+<p>При исходных данных в консоли находятся три блока карточек. Между блоками могут быть дополнительные подписи; важны содержание и связь с данными. Для выбранной первой записи присутствуют строки:</p>
+<div class="code-block"><div class="code-block-header"><span class="code-language">Текст</span></div><pre><code class="language-text">Выбрано для расчёта: Базовый набор
+Итого: 350
+Единица расчёта: усл. руб.
+</code></pre></div>
+<p>Сначала показано «Записей: 3», после обхода — «Найдено записей: 1». У остальных двух карточек расчёта нет.</p>
+<h3 id="проверка-изменением">Проверка изменением</h3>
+<table>
+<thead>
+<tr>
+<th>Изменение перед новым запуском</th>
+<th>Ожидаемый результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Количество <code class="code-inline language-javascript"><span class="s2">&quot;3&quot;</span></code></td>
+<td><code>Итого: 500</code>; найдено 1</td>
+</tr>
+<tr>
+<td>Количество <code class="code-inline language-javascript"><span class="s2">&quot;   &quot;</span></code></td>
+<td><code>Ошибка: укажите количество</code>; найдено 1</td>
+</tr>
+<tr>
+<td>Количество <code class="code-inline language-javascript"><span class="s2">&quot;два&quot;</span></code></td>
+<td><code>Ошибка: введите число</code>; найдено 1</td>
+</tr>
+<tr>
+<td>Количество <code class="code-inline language-javascript"><span class="s2">&quot;0&quot;</span></code> или <code class="code-inline language-javascript"><span class="s2">&quot;1.5&quot;</span></code></td>
+<td>Ошибка положительного целого количества; найдено 1</td>
+</tr>
+<tr>
+<td>Выбранное название «Нет такого набора»</td>
+<td>Все три карточки выведены; найдено 0; сообщение об отсутствии записи; расчёта нет</td>
+</tr>
+<tr>
+<td>Первые два объекта поменяны местами</td>
+<td>Блоки идут в новом порядке; рассчитывается всё ещё базовый набор</td>
+</tr>
+<tr>
+<td>Название второй записи временно совпадает с первой</td>
+<td>Найдено 2, два расчёта и предупреждение о повторе</td>
+</tr>
+</tbody>
+</table>
+<p>После каждого опыта восстановите исходные данные. Покажите преподавателю массив, один объект, обращение к свойству, условие и счётчик. Объясните, почему неверное количество не меняет число найденных записей. Для быстрого продолжения выберите поиск по части названия или контроль пустых описаний из статьи пары.</p>
+<p>Подсказки с изображениями кода находятся в <a href="021-arrays-loops-and-objects.html#%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80%D0%B0">основной статье пары 21</a>.</p>
+</details></div></main>
     <nav class="breadcrumbs" aria-label="Навигационная цепочка"><ol><li><a href="../index.html">Старт</a></li><li><a href="index.html">СПО</a></li><li aria-current="page">JavaScript — массивы, циклы и простые объекты</li></ol></nav>
   </div>
 </body>
