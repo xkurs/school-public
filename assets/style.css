@@ -566,7 +566,83 @@ aside.callout {
   font-size: 1rem;
   overflow-wrap: anywhere;
 }
-.site-updates p { max-width: 72rem; margin: 0 auto; }
+#site-update-status { max-width: 72rem; margin: 0 auto; }
+.site-quote {
+  margin: 0 auto .75rem;
+  max-width: 48rem;
+  text-align: center;
+  color: #102f51;
+}
+
+.site-quote blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.site-quote .quote-disclosure {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.quote-disclosure > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.quote-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.quote-disclosure > summary:focus-visible {
+  outline: 2px solid #075db8;
+  outline-offset: 5px;
+}
+
+.site-quote .quote-translation {
+  position: absolute;
+  z-index: 2;
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: min(36rem, calc(100vw - 3rem));
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: #172c46;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+  font-style: normal;
+  text-shadow: none;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.45;
+}
+
+.site-quote cite {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: 0.8rem;
+  font-style: normal;
+}
+
+.site-quote a {
+  color: #102f51;
+  text-decoration-color: rgb(16 47 81 / 55%);
+  text-underline-offset: 0.2em;
+}
+
+.site-quote a:focus-visible {
+  outline: 2px solid #075db8;
+  outline-offset: 4px;
+}
 .site-updates .is-updating {
   color: #b91c1c;
   animation: update-pulse 1.5s ease-in-out infinite;

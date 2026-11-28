@@ -12,6 +12,7 @@
   <meta name="theme-color" content="#172554">
   <link rel="stylesheet" href="../../assets/style.css">
   <script defer src="../../assets/offline.js"></script>
+  <script defer src="../../assets/quotes.js"></script>
   
   <script src="../../assets/math.js"></script>
 <script defer src="../../assets/mathjax/es5/tex-svg.js"></script>
@@ -20,15 +21,24 @@
   <a class="skip-link" href="#main-content">К содержанию</a>
   <header class="site-header">
     <p class="site-title"><span class="site-wordmark">shkolar<img class="site-brand-icon" src="../../assets/icons/header-tree.png" alt=".">site</span></p>
+    <section class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
+      <figure class="site-quote" id="daily-quote" hidden>
+        <blockquote>
+          <details class="quote-disclosure" data-quote-disclosure>
+            <summary lang="la" data-quote-latin></summary>
+            <p class="quote-translation" data-quote-translation lang="ru"></p>
+          </details>
+        </blockquote>
+        <figcaption><cite><a data-quote-source></a></cite></figcaption>
+      </figure>
+      <p id="site-update-status" role="status" aria-live="polite"></p>
+      <button type="button" id="site-update-reload" hidden>Обновить версию</button>
+    </section>
     <nav class="site-section-links" aria-label="Разделы сайта">
       <a href="../../spo/index.html">СПО</a>
       <a href="../index.html">Школа</a>
       <a href="../../qr.html">QR</a>
     </nav>
-    <section class="site-updates" id="site-updates" hidden aria-label="Обновление сайта">
-      <p id="site-update-status" role="status" aria-live="polite"></p>
-      <button type="button" id="site-update-reload" hidden>Обновить версию</button>
-    </section>
   </header>
   <div class="layout">
     <main id="main-content"><h1 id="сила-как-характеристика-взаимодействия-тел-сила-упругости-закон-гука">Сила как характеристика взаимодействия тел. Сила упругости. Закон Гука</h1>
